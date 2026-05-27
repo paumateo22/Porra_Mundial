@@ -1,0 +1,53 @@
+{
+    "habilitadores": {
+        "acierto_1x2": 1,
+        "acierto_exacto": 1,
+        "racha_eliminatorias": 1,
+        "bono_clasificacion_grupos": 1,
+        "bono_posicion_grupos": 1,
+        "ganador_perdedor_jornada": 1,
+        "sorpresas_decepciones": 1,
+        "sorpresa": 1,
+        "decepcion": 1,
+        "mvp": 1,
+        "bota_oro": 1,
+        "guante_oro": 1,
+        "mejor_joven": 1,
+        "gol_torneo": 1,
+        "fair_play": 1,
+        "campeon": 1,
+        "subcampeon": 1,
+        "tercer_puesto": 1
+    },
+    "puntuaciones": {
+        "partidos": {
+            "acierto_1x2": 1,
+            "acierto_exacto": 3
+        },
+        "jornadas": {
+            "ganador": 2,
+            "perdedor": -2
+        },
+        "fase_grupos": {
+            "acierto_clasificado": 1,
+            "acierto_posicion_exacta": 2
+        },
+        "premios_finales": {
+            "sorpresa": 5,
+            "decepcion": 5,
+            "mvp": 5,
+            "bota_oro": 5,
+            "guante_oro": 5,
+            "mejor_joven": 5,
+            "gol_torneo": 10,
+            "fair_play": 5,
+            "campeon": 5,
+            "subcampeon": 5,
+            "tercer_puesto": 5
+        }
+    },
+    "multiplicadores": {
+        "base": 1.0,
+        "incremento_racha_por_fase": 0.5
+    }
+}
