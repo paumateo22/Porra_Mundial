@@ -374,204 +374,140 @@
     "dieciseisavos.1": [
         {
             "id_partido": 73,
-            "local": "República Checa",
-            "visitante": "Suiza",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 74,
-            "local": "Ecuador",
-            "visitante": "Marruecos",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 75,
-            "local": "Países Bajos",
-            "visitante": "Brasil",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 76,
-            "local": "Haití",
-            "visitante": "Japón",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 77,
-            "local": "Francia",
-            "visitante": "Irán",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 78,
-            "local": "Curazao",
-            "visitante": "Senegal",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 79,
-            "local": "Sudáfrica",
-            "visitante": "Costa de Marfil",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 80,
-            "local": "Panamá",
-            "visitante": "Colombia",
             "fase": "dieciseisavos"
         }
     ],
     "dieciseisavos.2": [
         {
             "id_partido": 81,
-            "local": "Paraguay",
-            "visitante": "Irak",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 82,
-            "local": "Bélgica",
-            "visitante": "Uruguay",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 83,
-            "local": "Uzbekistán",
-            "visitante": "Ghana",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 84,
-            "local": "España",
-            "visitante": "Argelia",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 85,
-            "local": "Canadá",
-            "visitante": "Suecia",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 86,
-            "local": "Argentina",
-            "visitante": "Arabia Saudita",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 87,
-            "local": "RD Congo",
-            "visitante": "Australia",
             "fase": "dieciseisavos"
         },
         {
             "id_partido": 88,
-            "local": "Estados Unidos",
-            "visitante": "Egipto",
             "fase": "dieciseisavos"
         }
     ],
     "octavos": [
         {
             "id_partido": 89,
-            "local": "Ecuador",
-            "visitante": "Francia",
             "fase": "octavos"
         },
         {
             "id_partido": 90,
-            "local": "Suiza",
-            "visitante": "Países Bajos",
             "fase": "octavos"
         },
         {
             "id_partido": 91,
-            "local": "Japón",
-            "visitante": "Senegal",
             "fase": "octavos"
         },
         {
             "id_partido": 92,
-            "local": "Costa de Marfil",
-            "visitante": "Panamá",
             "fase": "octavos"
         },
         {
             "id_partido": 93,
-            "local": "Ghana",
-            "visitante": "España",
             "fase": "octavos"
         },
         {
             "id_partido": 94,
-            "local": "Irak",
-            "visitante": "Bélgica",
             "fase": "octavos"
         },
         {
             "id_partido": 95,
-            "local": "Argentina",
-            "visitante": "Egipto",
             "fase": "octavos"
         },
         {
             "id_partido": 96,
-            "local": "Suecia",
-            "visitante": "Australia",
             "fase": "octavos"
         }
     ],
     "cuartos": [
         {
             "id_partido": 97,
-            "local": "Francia",
-            "visitante": "Países Bajos",
             "fase": "cuartos"
         },
         {
             "id_partido": 98,
-            "local": "España",
-            "visitante": "Irak",
             "fase": "cuartos"
         },
         {
             "id_partido": 99,
-            "local": "Japón",
-            "visitante": "Costa de Marfil",
             "fase": "cuartos"
         },
         {
             "id_partido": 100,
-            "local": "Argentina",
-            "visitante": "Australia",
             "fase": "cuartos"
         }
     ],
     "semifinales": [
         {
             "id_partido": 101,
-            "local": "Países Bajos",
-            "visitante": "Irak",
             "fase": "semifinales"
         },
         {
             "id_partido": 102,
-            "local": "Japón",
-            "visitante": "Argentina",
             "fase": "semifinales"
         }
     ],
     "finales": [
         {
             "id_partido": 103,
-            "local": "Irak",
-            "visitante": "Japón",
             "fase": "tercer_puesto"
         },
         {
             "id_partido": 104,
-            "local": "Países Bajos",
-            "visitante": "Argentina",
             "fase": "final"
         }
     ]

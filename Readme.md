@@ -1,6 +1,6 @@
 ## 📋 TODO: Próximos Pasos (Fase de Despliegue y Visualización)
 
-- [ ] **1. Orquestador Central (`main.py`)**
+- [X] **1. Orquestador Central (`main.py`)**
   - Crear un menú interactivo en consola para ejecutar todo el pipeline de forma centralizada (Extraer SofaScore -> Procesar OCR -> Correr Motores de Puntuación).
 
 - [ ] **2. Testing End-to-End (Simulacro Completo)**

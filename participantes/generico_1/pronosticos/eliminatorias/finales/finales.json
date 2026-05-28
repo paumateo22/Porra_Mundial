@@ -1,0 +1,22 @@
+{
+    "participante": "generico_1",
+    "fase_origen": "finales",
+    "predicciones": {
+        "finales": [
+            {
+                "local": "Irak",
+                "visitante": "Japón",
+                "goles_local": 2,
+                "goles_visitante": 3,
+                "pasa": "Japón"
+            },
+            {
+                "local": "Países Bajos",
+                "visitante": "Argentina",
+                "goles_local": 4,
+                "goles_visitante": 1,
+                "pasa": "Países Bajos"
+            }
+        ]
+    }
+}

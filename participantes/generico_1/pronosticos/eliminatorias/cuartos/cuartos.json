@@ -1,0 +1,68 @@
+{
+    "participante": "generico_1",
+    "fase_origen": "cuartos",
+    "predicciones": {
+        "cuartos": [
+            {
+                "local": "Francia",
+                "visitante": "Países Bajos",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Países Bajos"
+            },
+            {
+                "local": "España",
+                "visitante": "Irak",
+                "goles_local": 0,
+                "goles_visitante": 1,
+                "pasa": "Irak"
+            },
+            {
+                "local": "Japón",
+                "visitante": "Costa de Marfil",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Japón"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Australia",
+                "goles_local": 1,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            }
+        ],
+        "semifinales": [
+            {
+                "local": "Países Bajos",
+                "visitante": "Irak",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Países Bajos"
+            },
+            {
+                "local": "Japón",
+                "visitante": "Argentina",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Argentina"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Irak",
+                "visitante": "Japón",
+                "goles_local": 2,
+                "goles_visitante": 3,
+                "pasa": "Japón"
+            },
+            {
+                "local": "Países Bajos",
+                "visitante": "Argentina",
+                "goles_local": 4,
+                "goles_visitante": 1,
+                "pasa": "Países Bajos"
+            }
+        ]
+    }
+}

@@ -230,5 +230,21 @@ def procesar_fase_eliminatoria_completa(fase_origen):
                 json.dump(porra_completa, f, ensure_ascii=False, indent=4)
             print(f"\n💾 Guardado Super-JSON en: {ruta_json_salida.relative_to(ROOT_DIR)}")
 
+def menu_interactivo_ocr():
+    print("\n" + "="*50)
+    print(" 📸 MÓDULO OCR: PROCESAMIENTO MASIVO DE CAPTURAS")
+    print("="*50)
+    print("\nFases disponibles para procesar:")
+    print(" - dieciseisavos\n - octavos\n - cuartos\n - semifinales\n - finales")
+    
+    fase_elegida = input("\n👉 Escribe la fase origen que quieres procesar: ").strip().lower()
+    
+    if fase_elegida not in FASES_ORDENADAS:
+        print("\n❌ Error: Fase no reconocida. Asegúrate de escribirla correctamente.")
+        return
+        
+    print(f"\n🚀 Iniciando lectura masiva para la carpeta: {fase_elegida.upper()}")
+    procesar_fase_eliminatoria_completa(fase_elegida)
+
 if __name__ == "__main__":
-    procesar_fase_eliminatoria_completa("dieciseisavos")
+    menu_interactivo_ocr()

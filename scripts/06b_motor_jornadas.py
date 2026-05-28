@@ -63,7 +63,12 @@ def ejecutar_06b_motor_jornadas():
         if not partidos_jornada: continue
             
         # El 06a guardó los partidos con la clave "Local_vs_Visitante"
-        claves_busqueda = [f"{p['local']}_vs_{p['visitante']}" for p in partidos_jornada]
+        claves_busqueda = []
+        for p in partidos_jornada:
+            if "id_partido" in p:
+                claves_busqueda.append(f"ID_{p['id_partido']}")
+            else:
+                claves_busqueda.append(f"{p['local']}_vs_{p['visitante']}")
         
         # Conteo de aciertos para esta jornada específica
         aciertos_jornada = {}

@@ -202,7 +202,7 @@ def ejecutar_06a_motor_partidos():
                         if is_1x2: informe_06a[jugador]["total_aciertos_1x2"] += 1
                         if is_ex: informe_06a[jugador]["total_aciertos_exactos"] += 1
                         
-                        clave_partido = f"{p_real['local']}_vs_{p_real['visitante']}"
+                        clave_partido = f"ID_{p_real['id_partido']}"
                         informe_06a[jugador]["historial_jornadas"][clave_partido] = {"acierto_1x2": is_1x2}
 
                         # --- REGISTRO PERSONAL ---
