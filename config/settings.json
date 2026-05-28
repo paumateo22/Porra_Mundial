@@ -49,5 +49,10 @@
     "multiplicadores": {
         "base": 1.0,
         "incremento_racha_por_fase": 0.5
+    },
+    "desempates": {
+        "criterio_1": "acierto_1x2",
+        "criterio_2": "acierto_exacto",
+        "criterio_3": "campeon"
     }
 }
