@@ -1,36 +1,36 @@
 {
-    "participante": "generico_1",
+    "participante": "generico_2",
     "fase_origen": "semifinales",
     "predicciones": {
         "semifinales": [
             {
                 "local": "Noruega",
                 "visitante": "Portugal",
-                "goles_local": 1,
-                "goles_visitante": 3,
+                "goles_local": 0,
+                "goles_visitante": 1,
                 "pasa": "Portugal"
             },
             {
                 "local": "Francia",
                 "visitante": "Argentina",
-                "goles_local": 0,
-                "goles_visitante": 2,
-                "pasa": "Argentina"
+                "goles_local": 1,
+                "goles_visitante": 0,
+                "pasa": "Francia"
             }
         ],
         "finales": [
             {
                 "local": "Noruega",
-                "visitante": "Francia",
+                "visitante": "Argentina",
                 "goles_local": 1,
                 "goles_visitante": 2,
-                "pasa": "Francia"
+                "pasa": "Argentina"
             },
             {
                 "local": "Portugal",
-                "visitante": "Argentina",
-                "goles_local": 1,
-                "goles_visitante": 0,
+                "visitante": "Francia",
+                "goles_local": 2,
+                "goles_visitante": 1,
                 "pasa": "Portugal"
             }
         ]

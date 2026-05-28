@@ -1,5 +1,5 @@
 {
-    "participante": "generico_1",
+    "participante": "generico_2",
     "fase_origen": "finales",
     "predicciones": {
         "finales": [
@@ -13,8 +13,8 @@
             {
                 "local": "Portugal",
                 "visitante": "Francia",
-                "goles_local": 1,
-                "goles_visitante": 2,
+                "goles_local": 0,
+                "goles_visitante": 1,
                 "pasa": "Francia"
             }
         ]

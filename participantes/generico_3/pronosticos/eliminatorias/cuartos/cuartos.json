@@ -1,0 +1,68 @@
+{
+    "participante": "generico_3",
+    "fase_origen": "cuartos",
+    "predicciones": {
+        "cuartos": [
+            {
+                "local": "Noruega",
+                "visitante": "Países Bajos",
+                "goles_local": 1,
+                "goles_visitante": 0,
+                "pasa": "Noruega"
+            },
+            {
+                "local": "Portugal",
+                "visitante": "Bélgica",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Portugal"
+            },
+            {
+                "local": "Francia",
+                "visitante": "Inglaterra",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "Francia"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Colombia",
+                "goles_local": 1,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            }
+        ],
+        "semifinales": [
+            {
+                "local": "Noruega",
+                "visitante": "Portugal",
+                "goles_local": 2,
+                "goles_visitante": 3,
+                "pasa": "Portugal"
+            },
+            {
+                "local": "Francia",
+                "visitante": "Argentina",
+                "goles_local": 3,
+                "goles_visitante": 2,
+                "pasa": "Francia"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Noruega",
+                "visitante": "Argentina",
+                "goles_local": 1,
+                "goles_visitante": 3,
+                "pasa": "Argentina"
+            },
+            {
+                "local": "Portugal",
+                "visitante": "Francia",
+                "goles_local": 0,
+                "goles_visitante": 1,
+                "pasa": "Francia"
+            }
+        ]
+    }
+}

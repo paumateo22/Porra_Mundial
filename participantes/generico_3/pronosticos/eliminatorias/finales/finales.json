@@ -1,21 +1,21 @@
 {
-    "participante": "generico_1",
+    "participante": "generico_3",
     "fase_origen": "finales",
     "predicciones": {
         "finales": [
             {
                 "local": "Noruega",
                 "visitante": "Argentina",
-                "goles_local": 1,
-                "goles_visitante": 0,
+                "goles_local": 2,
+                "goles_visitante": 1,
                 "pasa": "Noruega"
             },
             {
                 "local": "Portugal",
                 "visitante": "Francia",
-                "goles_local": 1,
-                "goles_visitante": 2,
-                "pasa": "Francia"
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Portugal"
             }
         ]
     }

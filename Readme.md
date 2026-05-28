@@ -1,15 +1,17 @@
-## 📋 TODO: Próximos Pasos (Fase de Despliegue y Visualización)
+# 🏆 Clasificación Oficial - Porra Mundial 2026 🏆
+    
+*Última actualización: 28/05/2026 17:46*
 
-- [X] **1. Orquestador Central (`main.py`)**
-  - Crear un menú interactivo en consola para ejecutar todo el pipeline de forma centralizada (Extraer SofaScore -> Procesar OCR -> Correr Motores de Puntuación).
+Bienvenidos al panel oficial de la Porra. Aquí podéis consultar la clasificación general en tiempo real. 
+Para ver el desglose exacto de tus puntos, entra en tu carpeta personal dentro de `participantes/`.
 
-- [ ] **2. Testing End-to-End (Simulacro Completo)**
-  - Montar un escenario de prueba con un jugador ficticio y resultados falsos.
-  - Ejecutar el flujo del `00` al `06c` y validar matemáticamente que las sumas, los multiplicadores de racha y el sistema de desempate automático no tienen fisuras.
+### 📊 Ranking General
 
-- [ ] **3. Generador de Vistas GitHub (`07_generador_vistas.py`)**
-  - Automatizar la creación y actualización del `README.md` principal con la tabla de clasificación general.
-  - Generar un `README.md` dinámico dentro de la carpeta de cada participante (traduciendo su `historial_puntos.json` en gráficas, medallas y un listado visual de aciertos ✅/❌).
+| Pos | Jugador | Pts Base (Part+Jorn) | Pts Grupos | Pts Podio+Extra | **TOTAL** |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| 🥇 1º | **[Generico 2](participantes/generico_2/README.md)** | 316.00 | 32 | 15.00 | **363.0** |
+| 🥈 2º | **[Generico 3](participantes/generico_3/README.md)** | 113.50 | 28 | 0.00 | **141.5** |
+| 🥉 3º | **[Generico 1](participantes/generico_1/README.md)** | 30.00 | 23 | 0.00 | **53.0** |
 
-- [ ] **4. Preparación de Realidad Estática**
-  - Crear la plantilla `data/resultados/premios_reales.json` para tenerla lista el día de la final y rellenarla manualmente con los ganadores de los premios extra (MVP, Bota de Oro, Sorpresa...).
+---
+*🤖 Sistema automatizado de puntuación desarrollado en Python.*

@@ -78,8 +78,7 @@ def mostrar_menu():
                     ejecutar_script("06c_motor_cierre.py")
                     
         elif opcion == "6":
-            print("\n🚧 Opción en construcción (Script 07).")
-            # ejecutar_script("07_generador_vistas.py")
+            ejecutar_script("07_generador_vistas.py")
             
         elif opcion == "9":
             print("\n🎲 Creando un multiverso alternativo...")
@@ -91,7 +90,8 @@ def mostrar_menu():
                 if ejecutar_script("06a_motor_partidos.py"):
                     if ejecutar_script("06b_motor_jornadas.py"):
                         if ejecutar_script("06c_motor_cierre.py"):
-                            print("✅ ¡Datos actualizados! (Aquí iría el script 07 en el futuro)")
+                            if ejecutar_script("07_generador_vistas.py"):
+                                print("✅ ¡Datos actualizados! (Aquí iría el script 07 en el futuro)")
                             
         elif opcion == "0":
             print("\n👋 ¡Cerrando la sala de máquinas! Hasta pronto.")
