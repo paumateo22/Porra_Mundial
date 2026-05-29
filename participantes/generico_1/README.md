@@ -6,7 +6,6 @@
 ## 📅 Historial Cronológico de Partidos
 
 Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
-
 ### 📌 J1.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -22,6 +21,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Haití** vs **Escocia** | **11 - 1** | **0 - 2** | ❌ | --- | x1.0 | **0.0** |
 | **Canadá** vs **Bosnia-Herzegovina** | **1 - 1** | **2 - 1** | ❌ | --- | x1.0 | **0.0** |
 | **Qatar** vs **Suiza** | **1 - 11** | **1 - 2** | ✅ | --- | x1.0 | **1.0** |
+
+> **Resumen de la J1.1:** Has logrado **4** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
 
 ### 📌 J1.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -39,6 +40,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Francia** vs **Senegal** | **0 - 0** | **2 - 1** | ❌ | --- | x1.0 | **0.0** |
 | **Irak** vs **Noruega** | **0 - 0** | **1 - 3** | ❌ | --- | x1.0 | **0.0** |
 
+> **Resumen de la J1.2:** Has logrado **3** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+
 ### 📌 J2.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -54,6 +57,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Brasil** vs **Haití** | **1 - 1** | **3 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Suiza** vs **Bosnia-Herzegovina** | **1 - 1** | **2 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Canadá** vs **Qatar** | **11 - 1** | **3 - 1** | ✅ | --- | x1.0 | **1.0** |
+
+> **Resumen de la J2.1:** Has logrado **2** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
 
 ### 📌 J2.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -71,6 +76,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Francia** vs **Irak** | **0 - 0** | **3 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Noruega** vs **Senegal** | **0 - 0** | **4 - 2** | ❌ | --- | x1.0 | **0.0** |
 
+> **Resumen de la J2.2:** Has logrado **1** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+
 ### 📌 J3.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -86,6 +93,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Marruecos** vs **Haití** | **1 - 1** | **2 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Bosnia-Herzegovina** vs **Qatar** | **1 - 11** | **0 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Suiza** vs **Canadá** | **1 - 1** | **1 - 1** | ✅ | 🎯 | x1.0 | **4.0** |
+
+> **Resumen de la J3.1:** Has logrado **4** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
 
 ### 📌 J3.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -103,6 +112,70 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Senegal** vs **Irak** | **0 - 0** | **3 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Noruega** vs **Francia** | **0 - 0** | **1 - 3** | ❌ | --- | x1.0 | **0.0** |
 
+> **Resumen de la J3.2:** Has logrado **2** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+
+
+---
+## 📊 BALANCE DE FASE DE GRUPOS
+**Puntos obtenidos en partidos:** 28.0 pts
+**Puntos extra de jornadas:** -12 pts
+**TOTAL FASE DE GRUPOS (Sin contar bonos de pase): 16.0 pts**
+
+### Análisis de los 48 Equipos (Pase a Eliminatorias)
+| Equipo | Pasa (Tú) | Pos (Tú) | Pasa (Real) | Pos (Real) | Acierto Pase | Acierto Exacto |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Alemania** | ❌ | 4º | ✅ | 2º | --- | --- |
+| **Arabia Saudita** | ✅ | 2º | ✅ | 3º | 🎯 | --- |
+| **Argelia** | ✅ | 2º | ❌ | 3º | --- | --- |
+| **Argentina** | ✅ | 1º | ✅ | 1º | 🎯 | 🎯 |
+| **Australia** | ✅ | 3º | ❌ | 3º | --- | 🎯 |
+| **Austria** | ❌ | 3º | ✅ | 2º | --- | --- |
+| **Bosnia-Herzegovina** | ❌ | 4º | ❌ | 3º | 🎯 | --- |
+| **Brasil** | ✅ | 2º | ✅ | 1º | 🎯 | --- |
+| **Bélgica** | ✅ | 1º | ✅ | 1º | 🎯 | 🎯 |
+| **Cabo Verde** | ❌ | 4º | ❌ | 4º | 🎯 | 🎯 |
+| **Canadá** | ✅ | 1º | ✅ | 1º | 🎯 | 🎯 |
+| **Colombia** | ✅ | 3º | ✅ | 1º | 🎯 | --- |
+| **Corea del Sur** | ❌ | 3º | ✅ | 3º | --- | 🎯 |
+| **Costa de Marfil** | ✅ | 3º | ✅ | 3º | 🎯 | 🎯 |
+| **Croacia** | ❌ | 3º | ✅ | 3º | --- | 🎯 |
+| **Curazao** | ✅ | 2º | ❌ | 4º | --- | --- |
+| **Ecuador** | ✅ | 1º | ✅ | 1º | 🎯 | 🎯 |
+| **Egipto** | ✅ | 2º | ✅ | 2º | 🎯 | 🎯 |
+| **Escocia** | ❌ | 4º | ✅ | 3º | --- | --- |
+| **España** | ✅ | 1º | ✅ | 1º | 🎯 | 🎯 |
+| **Estados Unidos** | ✅ | 2º | ✅ | 1º | 🎯 | --- |
+| **Francia** | ✅ | 1º | ✅ | 1º | 🎯 | 🎯 |
+| **Ghana** | ✅ | 2º | ✅ | 2º | 🎯 | 🎯 |
+| **Haití** | ✅ | 1º | ❌ | 4º | --- | --- |
+| **Inglaterra** | ❌ | 4º | ✅ | 1º | --- | --- |
+| **Irak** | ✅ | 3º | ❌ | 4º | --- | --- |
+| **Irán** | ✅ | 3º | ✅ | 3º | 🎯 | 🎯 |
+| **Japón** | ✅ | 2º | ✅ | 3º | 🎯 | --- |
+| **Jordania** | ❌ | 4º | ❌ | 4º | 🎯 | 🎯 |
+| **Marruecos** | ✅ | 3º | ✅ | 2º | 🎯 | --- |
+| **México** | ❌ | 4º | ✅ | 1º | --- | --- |
+| **Noruega** | ❌ | 4º | ✅ | 2º | --- | --- |
+| **Nueva Zelanda** | ❌ | 4º | ❌ | 4º | 🎯 | 🎯 |
+| **Panamá** | ✅ | 1º | ❌ | 4º | --- | --- |
+| **Paraguay** | ✅ | 1º | ✅ | 2º | 🎯 | --- |
+| **Países Bajos** | ✅ | 1º | ✅ | 1º | 🎯 | 🎯 |
+| **Portugal** | ❌ | 4º | ✅ | 2º | --- | --- |
+| **Qatar** | ❌ | 3º | ❌ | 4º | 🎯 | --- |
+| **RD Congo** | ✅ | 1º | ❌ | 3º | --- | --- |
+| **República Checa** | ✅ | 2º | ✅ | 2º | 🎯 | 🎯 |
+| **Senegal** | ✅ | 2º | ✅ | 3º | 🎯 | --- |
+| **Sudáfrica** | ✅ | 1º | ❌ | 4º | --- | --- |
+| **Suecia** | ✅ | 3º | ✅ | 2º | 🎯 | --- |
+| **Suiza** | ✅ | 2º | ✅ | 2º | 🎯 | 🎯 |
+| **Turquía** | ❌ | 4º | ❌ | 4º | 🎯 | 🎯 |
+| **Túnez** | ❌ | 4º | ❌ | 4º | 🎯 | 🎯 |
+| **Uruguay** | ✅ | 3º | ✅ | 2º | 🎯 | --- |
+| **Uzbekistán** | ✅ | 2º | ❌ | 4º | --- | --- |
+
+**Bono total por aciertos en Fase de Grupos:** +23 pts
+
+---
 ### 📌 DIECISEISAVOS.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -114,6 +187,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Alemania** vs **Noruega** | **2 - 0** | **0 - 1** | ❌ | --- | x1.0 | **0.0** |
 | **México** vs **Costa de Marfil** | **1 - 3** | **3 - 1** | ❌ | --- | x1.5 | **0.0** |
 | **Inglaterra** vs **Senegal** | **0 - 1** | **3 - 2** | ❌ | --- | x1.5 | **0.0** |
+
+> **Resumen de la DIECISEISAVOS.1:** Has logrado **3** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
 
 ### 📌 DIECISEISAVOS.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -127,6 +202,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Colombia** vs **Croacia** | **1 - 2** | **3 - 1** | ❌ | --- | x1.5 | **0.0** |
 | **Paraguay** vs **Egipto** | **1 - 0** | **3 - 2** | ✅ | --- | x2.0 | **2.0** |
 
+> **Resumen de la DIECISEISAVOS.2:** Has logrado **6** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+
 ### 📌 OCTAVOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -139,6 +216,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Argentina** vs **Paraguay** | **0 - 2** | **2 - 1** | ❌ | --- | x2.5 | **0.0** |
 | **Canadá** vs **Colombia** | **1 - 2** | **0 - 1** | ✅ | --- | x1.5 | **1.5** |
 
+> **Resumen de la OCTAVOS:** Has logrado **4** aciertos (1X2). Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
+
 ### 📌 CUARTOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -147,16 +226,21 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Brasil** vs **Inglaterra** | **1 - 0** | **2 - 3** | ❌ | --- | x1.5 | **0.0** |
 | **Argentina** vs **Colombia** | **1 - 2** | **1 - 2** | ✅ | 🎯 | x2.5 | **10.0** |
 
+> **Resumen de la CUARTOS:** Has logrado **2** aciertos (1X2). Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+
 ### 📌 SEMIFINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Francia** vs **España** | **1 - 0** | **1 - 3** | ❌ | --- | x2.0 | **0.0** |
 | **Inglaterra** vs **Colombia** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.0 | **8.0** |
 
+> **Resumen de la SEMIFINALES:** Has logrado **1** aciertos (1X2). Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
+
 ### 📌 FINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| *Aún no hay resultados para esta jornada.* | - | - | - | - | - | - |
+
+> *Jornada pendiente o sin procesar.*
 
 
 ---
