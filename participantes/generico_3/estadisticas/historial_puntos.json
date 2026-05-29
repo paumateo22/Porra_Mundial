@@ -1,6 +1,6 @@
 {
     "jugador": "Generico 3",
-    "puntos_totales": 207.0,
+    "puntos_totales": 245.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -804,50 +804,9 @@
             "resultado": "Ganador"
         }
     },
-    "premios_finales": {
-        "podio": {
-            "campeon_acertado": null,
-            "subcampeon_acertado": null,
-            "tercero_acertado": null,
-            "puntos_conseguidos": 0
-        },
-        "formularios": {
-            "aciertos_exactos": {},
-            "puntos_conseguidos": 0
-        }
-    },
+    "premios_finales": {},
     "resolucion_fase_grupos": {
-        "equipos_acertados": [
-            "República Checa",
-            "Corea del Sur",
-            "Suiza",
-            "Canadá",
-            "Brasil",
-            "Marruecos",
-            "Escocia",
-            "Paraguay",
-            "Ecuador",
-            "Costa de Marfil",
-            "Alemania",
-            "Países Bajos",
-            "Japón",
-            "Suecia",
-            "Bélgica",
-            "Egipto",
-            "España",
-            "Uruguay",
-            "Francia",
-            "Noruega",
-            "Senegal",
-            "Argentina",
-            "Austria",
-            "Colombia",
-            "Portugal",
-            "Inglaterra",
-            "Croacia",
-            "Ghana"
-        ],
-        "puntos_conseguidos": 28
+        "puntos_conseguidos": 66
     },
     "posicion_final_ranking": 1
 }

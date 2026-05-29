@@ -1,4 +1,4 @@
-Posicion,Jugador,Puntos_Partidos,Puntos_Jornadas,Puntos_Grupos,Puntos_Podio,Puntos_Forms,Aciertos_1X2,Aciertos_Exactos,TOTAL
-1,Generico 3,165.0,14,28,0,0,74,17,207.0
-2,Generico 2,132.5,0,28,10,0,63,15,170.5
-3,Generico 1,92.0,-14,23,0,0,32,9,101.0
+Posicion,Jugador,Puntos_Partidos,Puntos_Jornadas,Puntos_Grupos,Puntos_Podio,Puntos_Forms,TOTAL
+1,generico_3,165.0,14,66,0,0,245.0
+2,generico_2,132.5,0,54,0,0,186.5
+3,generico_1,92.0,-14,49,0,0,127.0

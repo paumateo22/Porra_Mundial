@@ -252,15 +252,14 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                 
                 # --- TABLA 48 EQUIPOS ---
                 md += "### Análisis de los 48 Equipos (Pase a Eliminatorias)\n"
-                md += "| Equipo | Pasa (Tú) | Pos (Tú) | Pasa (Real) | Pos (Real) | Acierto Pase | Acierto Exacto |\n"
-                md += "| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n"
+                md += "| Equipo | Pasa (Tú) | Pos (Tú) | Pasa (Real) | Pos (Real) | Acierto Pase | Acierto Posición | Puntos |\n"
+                md += "| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n"
                 
                 pos_pred = calcular_clasificacion_grupos(base_pred.get("fase_grupos", {}))
                 pos_real = calcular_clasificacion_grupos(realidad_dict.get("fase_grupos", {}))
                 pasan_pred = base_pred.get("clasificados_a_dieciseisavos", [])
                 pasan_real = realidad_dict.get("clasificados_a_dieciseisavos", [])
                 
-                # Para mostrar puntos sumados por acierto de grupos (si procede)
                 pts_por_grupos = libro.get("resolucion_fase_grupos", {}).get("puntos_conseguidos", 0)
                 
                 for eq in sorted(list(pos_real.keys())):
@@ -269,10 +268,27 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                     p_rl = "✅" if eq in pasan_real else "❌"
                     pos_rl = f"{pos_real.get(eq, '-')}º"
                     
-                    acierto_pase = "🎯" if (eq in pasan_pred) == (eq in pasan_real) else "---"
-                    acierto_exacto = "🎯" if pos_pred.get(eq) == pos_real.get(eq) else "---"
-                    
-                    md += f"| **{eq}** | {p_tu} | {pos_tu} | {p_rl} | {pos_rl} | {acierto_pase} | {acierto_exacto} |\n"
+                    # NUEVA LÓGICA ESTRICTA DE PUNTUACIÓN VISUAL
+                    if eq in pasan_real:
+                        if eq in pasan_pred:
+                            acierto_pase = "🎯 (+1)"
+                            pts_eq = 1
+                            if pos_pred.get(eq) == pos_real.get(eq):
+                                acierto_exacto = "🎯 (+2)"
+                                pts_eq += 2
+                            else:
+                                acierto_exacto = "❌"
+                        else:
+                            acierto_pase = "❌"
+                            acierto_exacto = "❌"
+                            pts_eq = 0
+                    else:
+                        # Si la selección no ha pasado, es irrelevante lo que pusieras.
+                        acierto_pase = "-"
+                        acierto_exacto = "-"
+                        pts_eq = 0
+                        
+                    md += f"| **{eq}** | {p_tu} | {pos_tu} | {p_rl} | {pos_rl} | {acierto_pase} | {acierto_exacto} | **{pts_eq}** |\n"
                 
                 md += f"\n**Bono total por aciertos en Fase de Grupos:** +{pts_por_grupos} pts\n\n---\n"
 
@@ -281,7 +297,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
         with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f:
             f.write(md)
             
-    print("✅ READMEs personales generados con recuentos de Jornada y Tabla de 48 equipos.")
+    print("✅ READMEs personales generados con recuentos de Jornada y Tabla de 48 equipos actualizada.")
 
 def ejecutar_generador_vistas():
     print("=======================================================")

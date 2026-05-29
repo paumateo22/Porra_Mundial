@@ -75,7 +75,9 @@ def mostrar_menu():
             print("\n🔄 Iniciando cálculo en cascada...")
             if ejecutar_script("06a_motor_partidos.py"):
                 if ejecutar_script("06b_motor_jornadas.py"):
-                    ejecutar_script("06c_motor_cierre.py")
+                    if ejecutar_script("06c_motor_fase_grupos.py"):
+                        if ejecutar_script("06d_motor_cierre.py"):
+                            pass
                     
         elif opcion == "6":
             ejecutar_script("07_generador_vistas.py")
@@ -89,9 +91,10 @@ def mostrar_menu():
             if ejecutar_script("05_scraper_sofascore.py"):
                 if ejecutar_script("06a_motor_partidos.py"):
                     if ejecutar_script("06b_motor_jornadas.py"):
-                        if ejecutar_script("06c_motor_cierre.py"):
-                            if ejecutar_script("07_generador_vistas.py"):
-                                print("✅ ¡Datos actualizados! (Aquí iría el script 07 en el futuro)")
+                        if ejecutar_script("06c_motor_fase_grupos.py"):
+                            if ejecutar_script("06d_motor_cierre.py"):
+                                if ejecutar_script("07_generador_vistas.py"):
+                                    print("\n✅ ¡ACTUALIZACIÓN TOTAL COMPLETADA! Todo listo para subir a GitHub.")
                             
         elif opcion == "0":
             print("\n👋 ¡Cerrando la sala de máquinas! Hasta pronto.")
