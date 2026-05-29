@@ -4,64 +4,64 @@
     "predicciones": {
         "cuartos": [
             {
-                "local": "Noruega",
-                "visitante": "Países Bajos",
-                "goles_local": 0,
-                "goles_visitante": 1,
-                "pasa": "Países Bajos"
-            },
-            {
-                "local": "Portugal",
-                "visitante": "Bélgica",
-                "goles_local": 1,
-                "goles_visitante": 2,
-                "pasa": "Bélgica"
-            },
-            {
                 "local": "Francia",
-                "visitante": "Inglaterra",
+                "visitante": "Marruecos",
                 "goles_local": 2,
                 "goles_visitante": 1,
                 "pasa": "Francia"
             },
             {
-                "local": "Argentina",
-                "visitante": "Colombia",
-                "goles_local": 2,
-                "goles_visitante": 3,
-                "pasa": "Colombia"
-            }
-        ],
-        "semifinales": [
-            {
-                "local": "Países Bajos",
+                "local": "España",
                 "visitante": "Bélgica",
-                "goles_local": 1,
-                "goles_visitante": 0,
-                "pasa": "Países Bajos"
+                "goles_local": 0,
+                "goles_visitante": 1,
+                "pasa": "Bélgica"
             },
             {
-                "local": "Francia",
+                "local": "Brasil",
+                "visitante": "Inglaterra",
+                "goles_local": 1,
+                "goles_visitante": 0,
+                "pasa": "Brasil"
+            },
+            {
+                "local": "Argentina",
                 "visitante": "Colombia",
                 "goles_local": 1,
                 "goles_visitante": 2,
                 "pasa": "Colombia"
             }
         ],
-        "finales": [
+        "semifinales": [
             {
-                "local": "Bélgica",
-                "visitante": "Francia",
-                "goles_local": 1,
-                "goles_visitante": 0,
+                "local": "Francia",
+                "visitante": "Bélgica",
+                "goles_local": 0,
+                "goles_visitante": 1,
                 "pasa": "Bélgica"
             },
             {
-                "local": "Países Bajos",
+                "local": "Brasil",
+                "visitante": "Colombia",
+                "goles_local": 3,
+                "goles_visitante": 2,
+                "pasa": "Brasil"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Francia",
                 "visitante": "Colombia",
                 "goles_local": 1,
                 "goles_visitante": 0,
-                "pasa": "Países Bajos"
+                "pasa": "Francia"
+            },
+            {
+                "local": "Bélgica",
+                "visitante": "Brasil",
+                "goles_local": 3,
+                "goles_visitante": 1,
+                "pasa": "Bélgica"
             }
         ]
     }

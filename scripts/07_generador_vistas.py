@@ -123,6 +123,10 @@ El formato de las jornadas es **Exactos/1x2**. Los colores indican: <span style=
 def generar_readmes_personales():
     dir_participantes = ROOT_DIR / "participantes"
     jugadores = [p for p in dir_participantes.iterdir() if p.is_dir()]
+    
+    # Cargamos el molde de las jornadas para saber el orden cronológico
+    jornadas_ruta = ROOT_DIR / "config" / "jornadas.json"
+    jornadas_dict = cargar_json(jornadas_ruta) or {}
 
     for jugador_dir in jugadores:
         nombre = jugador_dir.name.replace('_', ' ').title()
@@ -134,34 +138,54 @@ def generar_readmes_personales():
 
         posicion = libro.get("posicion_final_ranking", "-")
         total = libro.get("puntos_totales", 0)
+        desglose_p = libro.get("desglose_partidos", {})
 
-        # Construir Markdown Personal (Estructura base, luego lo detallaremos si quieres)
         md = f"""# 👤 Perfil de Jugador: {nombre}
 ### Posición Actual: **{posicion}º** | Puntos Totales: **{total}**
 
 ---
 
-## 📈 Resumen de Rendimiento
-"""
-        # Desglose de Jornadas
-        md += "### 📅 Resumen de Jornadas\n"
-        jornadas = libro.get("desglose_jornadas", {})
-        if jornadas:
-            for j, info in jornadas.items():
-                if isinstance(info, dict):
-                    icono = "🟡" if info["resultado"] == "Ganador" else ("🔴" if info["resultado"] == "Perdedor" else "⚪")
-                    md += f"- **{j}:** {info['aciertos_1x2']} aciertos 1X2 | Bono: {info['puntos_bono']} pts {icono}\n"
-        else:
-            md += "*Aún no hay datos de jornadas.*\n"
+## 📅 Historial Cronológico de Partidos
 
-        md += "\n---\n*Para consultar el desglose exacto partido a partido, abre tu archivo `estadisticas/historial_puntos.json`.*"
-        md += "\n\n[⬅️ Volver a la clasificación general](../../README.md)"
+Aquí tienes el detalle exacto de tus pronósticos, ordenados jornada a jornada.
+
+"""
+        # Dibujamos los partidos ordenados leyendo el config/jornadas.json
+        for j_key, partidos_jornada in jornadas_dict.items():
+            md += f"### 📌 {j_key.upper()}\n"
+            md += "| Partido | Acierto 1X2 | Acierto Exacto | Multiplicador | Puntos |\n"
+            md += "| :--- | :---: | :---: | :---: | :---: |\n"
+            
+            partidos_encontrados = False
+            for p in partidos_jornada:
+                clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
+                
+                info_partido = desglose_p.get(clave)
+                if info_partido:
+                    partidos_encontrados = True
+                    nombre_mostrar = clave.replace("ID_", "Partido #").replace("_vs_", " ⚡ ")
+                    
+                    # Formateo visual
+                    icono_1x2 = "✅" if info_partido.get("acierto_1x2") else "❌"
+                    icono_ex = "🎯" if info_partido.get("acierto_exacto") else "---"
+                    pts = info_partido.get("puntos_conseguidos", 0)
+                    mult = info_partido.get("multiplicador_aplicado", 1.0)
+                    str_mult = f"x{mult}" if mult > 1.0 else "-"
+                    
+                    md += f"| **{nombre_mostrar}** | {icono_1x2} | {icono_ex} | {str_mult} | **{pts}** |\n"
+            
+            if not partidos_encontrados:
+                md += "| *Aún no hay resultados evaluados para esta jornada.* | - | - | - | - |\n"
+            
+            md += "\n"
+
+        md += "\n---\n[⬅️ Volver a la clasificación general](../../README.md)"
 
         with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f:
             f.write(md)
             
-    print("✅ READMEs personales de todos los jugadores generados con éxito.")
-
+    print("✅ READMEs personales generados con el historial cronológico por jornadas.")
+    
 def ejecutar_generador_vistas():
     print("=======================================================")
     print(" 🎨 INICIANDO GENERADOR DE VISTAS (MARKDOWN) 🎨")

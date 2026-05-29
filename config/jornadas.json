@@ -2,513 +2,409 @@
     "J1.1": [
         {
             "local": "Estados Unidos",
-            "visitante": "Paraguay",
-            "grupo": "Grupo D"
+            "visitante": "Paraguay"
         },
         {
             "local": "Australia",
-            "visitante": "Turquía",
-            "grupo": "Grupo D"
+            "visitante": "Turquía"
         },
         {
             "local": "Países Bajos",
-            "visitante": "Japón",
-            "grupo": "Grupo F"
+            "visitante": "Japón"
         },
         {
             "local": "Suecia",
-            "visitante": "Túnez",
-            "grupo": "Grupo F"
+            "visitante": "Túnez"
         },
         {
             "local": "Alemania",
-            "visitante": "Curazao",
-            "grupo": "Grupo E"
+            "visitante": "Curazao"
         },
         {
             "local": "Costa de Marfil",
-            "visitante": "Ecuador",
-            "grupo": "Grupo E"
+            "visitante": "Ecuador"
         },
         {
             "local": "México",
-            "visitante": "Sudáfrica",
-            "grupo": "Grupo A"
+            "visitante": "Sudáfrica"
         },
         {
             "local": "Corea del Sur",
-            "visitante": "República Checa",
-            "grupo": "Grupo A"
+            "visitante": "República Checa"
         },
         {
             "local": "Brasil",
-            "visitante": "Marruecos",
-            "grupo": "Grupo C"
+            "visitante": "Marruecos"
         },
         {
             "local": "Haití",
-            "visitante": "Escocia",
-            "grupo": "Grupo C"
+            "visitante": "Escocia"
         },
         {
             "local": "Canadá",
-            "visitante": "Bosnia-Herzegovina",
-            "grupo": "Grupo B"
+            "visitante": "Bosnia-Herzegovina"
         },
         {
             "local": "Qatar",
-            "visitante": "Suiza",
-            "grupo": "Grupo B"
+            "visitante": "Suiza"
         }
     ],
     "J1.2": [
         {
             "local": "Argentina",
-            "visitante": "Argelia",
-            "grupo": "Grupo J"
+            "visitante": "Argelia"
         },
         {
             "local": "Austria",
-            "visitante": "Jordania",
-            "grupo": "Grupo J"
+            "visitante": "Jordania"
         },
         {
             "local": "Portugal",
-            "visitante": "RD Congo",
-            "grupo": "Grupo K"
+            "visitante": "RD Congo"
         },
         {
             "local": "Uzbekistán",
-            "visitante": "Colombia",
-            "grupo": "Grupo K"
+            "visitante": "Colombia"
         },
         {
             "local": "Inglaterra",
-            "visitante": "Croacia",
-            "grupo": "Grupo L"
+            "visitante": "Croacia"
         },
         {
             "local": "Ghana",
-            "visitante": "Panamá",
-            "grupo": "Grupo L"
+            "visitante": "Panamá"
         },
         {
             "local": "Bélgica",
-            "visitante": "Egipto",
-            "grupo": "Grupo G"
+            "visitante": "Egipto"
         },
         {
             "local": "Irán",
-            "visitante": "Nueva Zelanda",
-            "grupo": "Grupo G"
+            "visitante": "Nueva Zelanda"
         },
         {
             "local": "España",
-            "visitante": "Cabo Verde",
-            "grupo": "Grupo H"
+            "visitante": "Cabo Verde"
         },
         {
             "local": "Arabia Saudita",
-            "visitante": "Uruguay",
-            "grupo": "Grupo H"
+            "visitante": "Uruguay"
         },
         {
             "local": "Francia",
-            "visitante": "Senegal",
-            "grupo": "Grupo I"
+            "visitante": "Senegal"
         },
         {
             "local": "Irak",
-            "visitante": "Noruega",
-            "grupo": "Grupo I"
+            "visitante": "Noruega"
         }
     ],
     "J2.1": [
         {
             "local": "Estados Unidos",
-            "visitante": "Australia",
-            "grupo": "Grupo D"
+            "visitante": "Australia"
         },
         {
             "local": "Turquía",
-            "visitante": "Paraguay",
-            "grupo": "Grupo D"
+            "visitante": "Paraguay"
         },
         {
             "local": "Países Bajos",
-            "visitante": "Suecia",
-            "grupo": "Grupo F"
+            "visitante": "Suecia"
         },
         {
             "local": "Túnez",
-            "visitante": "Japón",
-            "grupo": "Grupo F"
+            "visitante": "Japón"
         },
         {
             "local": "Alemania",
-            "visitante": "Costa de Marfil",
-            "grupo": "Grupo E"
+            "visitante": "Costa de Marfil"
         },
         {
             "local": "Ecuador",
-            "visitante": "Curazao",
-            "grupo": "Grupo E"
+            "visitante": "Curazao"
         },
         {
             "local": "República Checa",
-            "visitante": "Sudáfrica",
-            "grupo": "Grupo A"
+            "visitante": "Sudáfrica"
         },
         {
             "local": "México",
-            "visitante": "Corea del Sur",
-            "grupo": "Grupo A"
+            "visitante": "Corea del Sur"
         },
         {
             "local": "Escocia",
-            "visitante": "Marruecos",
-            "grupo": "Grupo C"
+            "visitante": "Marruecos"
         },
         {
             "local": "Brasil",
-            "visitante": "Haití",
-            "grupo": "Grupo C"
+            "visitante": "Haití"
         },
         {
             "local": "Suiza",
-            "visitante": "Bosnia-Herzegovina",
-            "grupo": "Grupo B"
+            "visitante": "Bosnia-Herzegovina"
         },
         {
             "local": "Canadá",
-            "visitante": "Qatar",
-            "grupo": "Grupo B"
+            "visitante": "Qatar"
         }
     ],
     "J2.2": [
         {
             "local": "Argentina",
-            "visitante": "Austria",
-            "grupo": "Grupo J"
+            "visitante": "Austria"
         },
         {
             "local": "Jordania",
-            "visitante": "Argelia",
-            "grupo": "Grupo J"
+            "visitante": "Argelia"
         },
         {
             "local": "Portugal",
-            "visitante": "Uzbekistán",
-            "grupo": "Grupo K"
+            "visitante": "Uzbekistán"
         },
         {
             "local": "Colombia",
-            "visitante": "RD Congo",
-            "grupo": "Grupo K"
+            "visitante": "RD Congo"
         },
         {
             "local": "Inglaterra",
-            "visitante": "Ghana",
-            "grupo": "Grupo L"
+            "visitante": "Ghana"
         },
         {
             "local": "Panamá",
-            "visitante": "Croacia",
-            "grupo": "Grupo L"
+            "visitante": "Croacia"
         },
         {
             "local": "Bélgica",
-            "visitante": "Irán",
-            "grupo": "Grupo G"
+            "visitante": "Irán"
         },
         {
             "local": "Nueva Zelanda",
-            "visitante": "Egipto",
-            "grupo": "Grupo G"
+            "visitante": "Egipto"
         },
         {
             "local": "España",
-            "visitante": "Arabia Saudita",
-            "grupo": "Grupo H"
+            "visitante": "Arabia Saudita"
         },
         {
             "local": "Uruguay",
-            "visitante": "Cabo Verde",
-            "grupo": "Grupo H"
+            "visitante": "Cabo Verde"
         },
         {
             "local": "Francia",
-            "visitante": "Irak",
-            "grupo": "Grupo I"
+            "visitante": "Irak"
         },
         {
             "local": "Noruega",
-            "visitante": "Senegal",
-            "grupo": "Grupo I"
+            "visitante": "Senegal"
         }
     ],
     "J3.1": [
         {
             "local": "Paraguay",
-            "visitante": "Australia",
-            "grupo": "Grupo D"
+            "visitante": "Australia"
         },
         {
             "local": "Turquía",
-            "visitante": "Estados Unidos",
-            "grupo": "Grupo D"
+            "visitante": "Estados Unidos"
         },
         {
             "local": "Japón",
-            "visitante": "Suecia",
-            "grupo": "Grupo F"
+            "visitante": "Suecia"
         },
         {
             "local": "Túnez",
-            "visitante": "Países Bajos",
-            "grupo": "Grupo F"
+            "visitante": "Países Bajos"
         },
         {
             "local": "Curazao",
-            "visitante": "Costa de Marfil",
-            "grupo": "Grupo E"
+            "visitante": "Costa de Marfil"
         },
         {
             "local": "Ecuador",
-            "visitante": "Alemania",
-            "grupo": "Grupo E"
+            "visitante": "Alemania"
         },
         {
             "local": "Sudáfrica",
-            "visitante": "Corea del Sur",
-            "grupo": "Grupo A"
+            "visitante": "Corea del Sur"
         },
         {
             "local": "República Checa",
-            "visitante": "México",
-            "grupo": "Grupo A"
+            "visitante": "México"
         },
         {
             "local": "Escocia",
-            "visitante": "Brasil",
-            "grupo": "Grupo C"
+            "visitante": "Brasil"
         },
         {
             "local": "Marruecos",
-            "visitante": "Haití",
-            "grupo": "Grupo C"
+            "visitante": "Haití"
         },
         {
             "local": "Bosnia-Herzegovina",
-            "visitante": "Qatar",
-            "grupo": "Grupo B"
+            "visitante": "Qatar"
         },
         {
             "local": "Suiza",
-            "visitante": "Canadá",
-            "grupo": "Grupo B"
+            "visitante": "Canadá"
         }
     ],
     "J3.2": [
         {
             "local": "Argelia",
-            "visitante": "Austria",
-            "grupo": "Grupo J"
+            "visitante": "Austria"
         },
         {
             "local": "Jordania",
-            "visitante": "Argentina",
-            "grupo": "Grupo J"
+            "visitante": "Argentina"
         },
         {
             "local": "RD Congo",
-            "visitante": "Uzbekistán",
-            "grupo": "Grupo K"
+            "visitante": "Uzbekistán"
         },
         {
             "local": "Colombia",
-            "visitante": "Portugal",
-            "grupo": "Grupo K"
+            "visitante": "Portugal"
         },
         {
             "local": "Croacia",
-            "visitante": "Ghana",
-            "grupo": "Grupo L"
+            "visitante": "Ghana"
         },
         {
             "local": "Panamá",
-            "visitante": "Inglaterra",
-            "grupo": "Grupo L"
+            "visitante": "Inglaterra"
         },
         {
             "local": "Nueva Zelanda",
-            "visitante": "Bélgica",
-            "grupo": "Grupo G"
+            "visitante": "Bélgica"
         },
         {
             "local": "Egipto",
-            "visitante": "Irán",
-            "grupo": "Grupo G"
+            "visitante": "Irán"
         },
         {
             "local": "Cabo Verde",
-            "visitante": "Arabia Saudita",
-            "grupo": "Grupo H"
+            "visitante": "Arabia Saudita"
         },
         {
             "local": "Uruguay",
-            "visitante": "España",
-            "grupo": "Grupo H"
+            "visitante": "España"
         },
         {
             "local": "Senegal",
-            "visitante": "Irak",
-            "grupo": "Grupo I"
+            "visitante": "Irak"
         },
         {
             "local": "Noruega",
-            "visitante": "Francia",
-            "grupo": "Grupo I"
+            "visitante": "Francia"
         }
     ],
     "dieciseisavos.1": [
         {
-            "id_partido": 73,
-            "fase": "dieciseisavos"
+            "id_partido": 73
         },
         {
-            "id_partido": 74,
-            "fase": "dieciseisavos"
+            "id_partido": 74
         },
         {
-            "id_partido": 75,
-            "fase": "dieciseisavos"
+            "id_partido": 75
         },
         {
-            "id_partido": 76,
-            "fase": "dieciseisavos"
+            "id_partido": 76
         },
         {
-            "id_partido": 77,
-            "fase": "dieciseisavos"
+            "id_partido": 77
         },
         {
-            "id_partido": 78,
-            "fase": "dieciseisavos"
+            "id_partido": 78
         },
         {
-            "id_partido": 79,
-            "fase": "dieciseisavos"
+            "id_partido": 79
         },
         {
-            "id_partido": 80,
-            "fase": "dieciseisavos"
+            "id_partido": 80
         }
     ],
     "dieciseisavos.2": [
         {
-            "id_partido": 81,
-            "fase": "dieciseisavos"
+            "id_partido": 81
         },
         {
-            "id_partido": 82,
-            "fase": "dieciseisavos"
+            "id_partido": 82
         },
         {
-            "id_partido": 83,
-            "fase": "dieciseisavos"
+            "id_partido": 83
         },
         {
-            "id_partido": 84,
-            "fase": "dieciseisavos"
+            "id_partido": 84
         },
         {
-            "id_partido": 85,
-            "fase": "dieciseisavos"
+            "id_partido": 85
         },
         {
-            "id_partido": 86,
-            "fase": "dieciseisavos"
+            "id_partido": 86
         },
         {
-            "id_partido": 87,
-            "fase": "dieciseisavos"
+            "id_partido": 87
         },
         {
-            "id_partido": 88,
-            "fase": "dieciseisavos"
+            "id_partido": 88
         }
     ],
     "octavos": [
         {
-            "id_partido": 89,
-            "fase": "octavos"
+            "id_partido": 89
         },
         {
-            "id_partido": 90,
-            "fase": "octavos"
+            "id_partido": 90
         },
         {
-            "id_partido": 91,
-            "fase": "octavos"
+            "id_partido": 91
         },
         {
-            "id_partido": 92,
-            "fase": "octavos"
+            "id_partido": 92
         },
         {
-            "id_partido": 93,
-            "fase": "octavos"
+            "id_partido": 93
         },
         {
-            "id_partido": 94,
-            "fase": "octavos"
+            "id_partido": 94
         },
         {
-            "id_partido": 95,
-            "fase": "octavos"
+            "id_partido": 95
         },
         {
-            "id_partido": 96,
-            "fase": "octavos"
+            "id_partido": 96
         }
     ],
     "cuartos": [
         {
-            "id_partido": 97,
-            "fase": "cuartos"
+            "id_partido": 97
         },
         {
-            "id_partido": 98,
-            "fase": "cuartos"
+            "id_partido": 98
         },
         {
-            "id_partido": 99,
-            "fase": "cuartos"
+            "id_partido": 99
         },
         {
-            "id_partido": 100,
-            "fase": "cuartos"
+            "id_partido": 100
         }
     ],
     "semifinales": [
         {
-            "id_partido": 101,
-            "fase": "semifinales"
+            "id_partido": 101
         },
         {
-            "id_partido": 102,
-            "fase": "semifinales"
+            "id_partido": 102
         }
     ],
     "finales": [
         {
-            "id_partido": 103,
-            "fase": "tercer_puesto"
+            "id_partido": 103
         },
         {
-            "id_partido": 104,
-            "fase": "final"
+            "id_partido": 104
         }
     ]
 }

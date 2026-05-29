@@ -4,21 +4,21 @@
     "predicciones": {
         "cuartos": [
             {
-                "local": "Noruega",
-                "visitante": "Países Bajos",
-                "goles_local": 1,
-                "goles_visitante": 0,
-                "pasa": "Noruega"
+                "local": "Francia",
+                "visitante": "Marruecos",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "Francia"
             },
             {
-                "local": "Portugal",
+                "local": "España",
                 "visitante": "Bélgica",
-                "goles_local": 0,
+                "goles_local": 1,
                 "goles_visitante": 2,
                 "pasa": "Bélgica"
             },
             {
-                "local": "Francia",
+                "local": "Brasil",
                 "visitante": "Inglaterra",
                 "goles_local": 0,
                 "goles_visitante": 1,
@@ -27,18 +27,18 @@
             {
                 "local": "Argentina",
                 "visitante": "Colombia",
-                "goles_local": 1,
+                "goles_local": 0,
                 "goles_visitante": 2,
                 "pasa": "Colombia"
             }
         ],
         "semifinales": [
             {
-                "local": "Noruega",
+                "local": "Francia",
                 "visitante": "Bélgica",
-                "goles_local": 2,
+                "goles_local": 1,
                 "goles_visitante": 0,
-                "pasa": "Noruega"
+                "pasa": "Francia"
             },
             {
                 "local": "Inglaterra",
@@ -52,16 +52,16 @@
             {
                 "local": "Bélgica",
                 "visitante": "Colombia",
-                "goles_local": 3,
-                "goles_visitante": 1,
+                "goles_local": 1,
+                "goles_visitante": 0,
                 "pasa": "Bélgica"
             },
             {
-                "local": "Noruega",
+                "local": "Francia",
                 "visitante": "Inglaterra",
-                "goles_local": 2,
-                "goles_visitante": 1,
-                "pasa": "Noruega"
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Inglaterra"
             }
         ]
     }

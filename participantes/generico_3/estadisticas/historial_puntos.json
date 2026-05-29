@@ -1,6 +1,6 @@
 {
     "jugador": "Generico 3",
-    "puntos_totales": 141.5,
+    "puntos_totales": 207.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -506,29 +506,117 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
-        "ID_83": {
+        "ID_73": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (República Checa) / 1 (Suiza)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_74": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Ecuador) / 1 (Corea del Sur)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_75": {
             "fase": "dieciseisavos",
             "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
-            "racha_detectada": "1 (Portugal) / 1 (Ghana)",
+            "racha_detectada": "1 (Países Bajos) / 1 (Marruecos)",
             "puntos_conseguidos": 0.0
+        },
+        "ID_76": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Brasil) / 1 (Suecia)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_77": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (Francia) / 0 (Irán)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_78": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Alemania) / 1 (Noruega)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_79": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "0 (México) / 1 (Costa de Marfil)",
+            "puntos_conseguidos": 1.5
+        },
+        "ID_80": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Inglaterra) / 1 (Senegal)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_81": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "0 (Estados Unidos) / 1 (Japón)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_82": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (Bélgica) / 0 (Arabia Saudita)",
+            "puntos_conseguidos": 6.0
+        },
+        "ID_83": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Portugal) / 1 (Ghana)",
+            "puntos_conseguidos": 8.0
         },
         "ID_84": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (España) / 1 (Austria)",
-            "puntos_conseguidos": 8.0
+            "puntos_conseguidos": 2.0
+        },
+        "ID_85": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Canadá) / 1 (Escocia)",
+            "puntos_conseguidos": 0.0
         },
         "ID_86": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Argentina) / 1 (Uruguay)",
-            "puntos_conseguidos": 8.0
+            "puntos_conseguidos": 2.0
         },
         "ID_87": {
             "fase": "dieciseisavos",
@@ -538,21 +626,125 @@
             "racha_detectada": "1 (Colombia) / 1 (Croacia)",
             "puntos_conseguidos": 0.0
         },
+        "ID_88": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Paraguay) / 1 (Egipto)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_89": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Ecuador) / 1 (Francia)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_90": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Suiza) / 1 (Marruecos)",
+            "puntos_conseguidos": 10.0
+        },
+        "ID_91": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Brasil) / 1 (Noruega)",
+            "puntos_conseguidos": 10.0
+        },
+        "ID_92": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (México) / 1 (Inglaterra)",
+            "puntos_conseguidos": 0.0
+        },
         "ID_93": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Portugal) / 2 (España)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_94": {
             "fase": "octavos",
             "acierto_1x2": true,
             "acierto_exacto": false,
-            "multiplicador_aplicado": 2.5,
-            "racha_detectada": "1 (Portugal) / 2 (España)",
-            "puntos_conseguidos": 2.5
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "0 (Estados Unidos) / 2 (Bélgica)",
+            "puntos_conseguidos": 2.0
         },
-        "ID_100": {
+        "ID_95": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Argentina) / 2 (Paraguay)",
+            "puntos_conseguidos": 3.0
+        },
+        "ID_96": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "0 (Canadá) / 1 (Colombia)",
+            "puntos_conseguidos": 1.5
+        },
+        "ID_97": {
             "fase": "cuartos",
             "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.5,
-            "racha_detectada": "2 (Argentina) / 1 (Colombia)",
+            "racha_detectada": "1 (Francia) / 2 (Marruecos)",
             "puntos_conseguidos": 0.0
+        },
+        "ID_98": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (España) / 2 (Bélgica)",
+            "puntos_conseguidos": 2.5
+        },
+        "ID_99": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Brasil) / 1 (Inglaterra)",
+            "puntos_conseguidos": 2.5
+        },
+        "ID_100": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Argentina) / 2 (Colombia)",
+            "puntos_conseguidos": 3.0
+        },
+        "ID_101": {
+            "fase": "semifinales",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "0 (Francia) / 2 (España)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_102": {
+            "fase": "semifinales",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (Inglaterra) / 2 (Colombia)",
+            "puntos_conseguidos": 10.0
         }
     },
     "desglose_jornadas": {
@@ -563,13 +755,13 @@
         },
         "J1.2": {
             "aciertos_1x2": 11,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         },
         "J2.1": {
             "aciertos_1x2": 10,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         },
         "J2.2": {
             "aciertos_1x2": 12,
@@ -578,28 +770,38 @@
         },
         "J3.1": {
             "aciertos_1x2": 6,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         },
         "J3.2": {
             "aciertos_1x2": 9,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
+        },
+        "dieciseisavos.1": {
+            "aciertos_1x2": 4,
             "puntos_bono": 0,
             "resultado": "Neutral"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 5,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         },
         "octavos": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 5,
             "puntos_bono": 2,
             "resultado": "Ganador"
         },
         "cuartos": {
-            "aciertos_1x2": 0,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 3,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
+        },
+        "semifinales": {
+            "aciertos_1x2": 2,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
@@ -647,5 +849,5 @@
         ],
         "puntos_conseguidos": 28
     },
-    "posicion_final_ranking": 2
+    "posicion_final_ranking": 1
 }

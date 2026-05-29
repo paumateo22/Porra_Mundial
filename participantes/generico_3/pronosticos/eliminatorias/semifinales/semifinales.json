@@ -4,34 +4,34 @@
     "predicciones": {
         "semifinales": [
             {
-                "local": "Noruega",
-                "visitante": "Portugal",
-                "goles_local": 0,
-                "goles_visitante": 1,
-                "pasa": "Portugal"
-            },
-            {
                 "local": "Francia",
-                "visitante": "Argentina",
+                "visitante": "España",
                 "goles_local": 1,
                 "goles_visitante": 2,
-                "pasa": "Argentina"
+                "pasa": "España"
+            },
+            {
+                "local": "Inglaterra",
+                "visitante": "Colombia",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "Inglaterra"
             }
         ],
         "finales": [
             {
-                "local": "Noruega",
-                "visitante": "Francia",
-                "goles_local": 1,
-                "goles_visitante": 2,
+                "local": "Francia",
+                "visitante": "Colombia",
+                "goles_local": 2,
+                "goles_visitante": 1,
                 "pasa": "Francia"
             },
             {
-                "local": "Portugal",
-                "visitante": "Argentina",
+                "local": "España",
+                "visitante": "Inglaterra",
                 "goles_local": 1,
-                "goles_visitante": 3,
-                "pasa": "Argentina"
+                "goles_visitante": 2,
+                "pasa": "Inglaterra"
             }
         ]
     }

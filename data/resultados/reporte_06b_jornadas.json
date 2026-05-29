@@ -1,8 +1,8 @@
 {
     "generico_1": {
-        "puntos_partidos": 36.0,
-        "total_aciertos_1x2": 20,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 92.0,
+        "total_aciertos_1x2": 32,
+        "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -220,10 +220,43 @@
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
             },
+            "ID_73": {
+                "acierto_1x2": false
+            },
+            "ID_74": {
+                "acierto_1x2": false
+            },
+            "ID_75": {
+                "acierto_1x2": true
+            },
+            "ID_76": {
+                "acierto_1x2": true
+            },
+            "ID_77": {
+                "acierto_1x2": true
+            },
+            "ID_78": {
+                "acierto_1x2": false
+            },
+            "ID_79": {
+                "acierto_1x2": false
+            },
+            "ID_80": {
+                "acierto_1x2": false
+            },
+            "ID_81": {
+                "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": true
+            },
             "ID_83": {
                 "acierto_1x2": false
             },
             "ID_84": {
+                "acierto_1x2": true
+            },
+            "ID_85": {
                 "acierto_1x2": true
             },
             "ID_86": {
@@ -232,14 +265,53 @@
             "ID_87": {
                 "acierto_1x2": false
             },
+            "ID_88": {
+                "acierto_1x2": true
+            },
+            "ID_89": {
+                "acierto_1x2": true
+            },
+            "ID_90": {
+                "acierto_1x2": false
+            },
+            "ID_91": {
+                "acierto_1x2": false
+            },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": true
             },
+            "ID_94": {
+                "acierto_1x2": true
+            },
+            "ID_95": {
+                "acierto_1x2": false
+            },
+            "ID_96": {
+                "acierto_1x2": true
+            },
+            "ID_97": {
+                "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
+            },
+            "ID_99": {
+                "acierto_1x2": false
+            },
             "ID_100": {
+                "acierto_1x2": true
+            },
+            "ID_101": {
+                "acierto_1x2": false
+            },
+            "ID_102": {
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -6,
+        "puntos_jornadas": -14,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -271,30 +343,40 @@
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 3,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
+            },
             "dieciseisavos.2": {
-                "aciertos_1x2": 2,
+                "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 4,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             },
             "cuartos": {
+                "aciertos_1x2": 2,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
+            },
+            "semifinales": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         }
     },
     "generico_2": {
-        "puntos_partidos": 306.0,
-        "total_aciertos_1x2": 74,
-        "total_aciertos_exactos": 74,
+        "puntos_partidos": 132.5,
+        "total_aciertos_1x2": 63,
+        "total_aciertos_exactos": 15,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
@@ -327,37 +409,37 @@
                 "acierto_1x2": true
             },
             "Colombia_vs_Portugal": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Inglaterra_vs_Croacia": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Ghana_vs_Panamá": {
                 "acierto_1x2": true
             },
             "Inglaterra_vs_Ghana": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Panamá_vs_Croacia": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Croacia_vs_Ghana": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Panamá_vs_Inglaterra": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": true
             },
             "Irán_vs_Nueva Zelanda": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Bélgica_vs_Irán": {
                 "acierto_1x2": true
             },
             "Nueva Zelanda_vs_Egipto": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Nueva Zelanda_vs_Bélgica": {
                 "acierto_1x2": true
@@ -369,7 +451,7 @@
                 "acierto_1x2": true
             },
             "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "España_vs_Arabia Saudita": {
                 "acierto_1x2": true
@@ -399,31 +481,31 @@
                 "acierto_1x2": true
             },
             "Noruega_vs_Francia": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Australia_vs_Turquía": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": true
             },
             "Turquía_vs_Paraguay": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Paraguay_vs_Australia": {
                 "acierto_1x2": true
             },
             "Turquía_vs_Estados Unidos": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": true
             },
             "Suecia_vs_Túnez": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Países Bajos_vs_Suecia": {
                 "acierto_1x2": true
@@ -432,7 +514,7 @@
                 "acierto_1x2": true
             },
             "Japón_vs_Suecia": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
@@ -444,7 +526,7 @@
                 "acierto_1x2": true
             },
             "Alemania_vs_Costa de Marfil": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": true
@@ -453,10 +535,10 @@
                 "acierto_1x2": true
             },
             "Ecuador_vs_Alemania": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": true
@@ -465,13 +547,13 @@
                 "acierto_1x2": true
             },
             "México_vs_Corea del Sur": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Sudáfrica_vs_Corea del Sur": {
                 "acierto_1x2": true
             },
             "República Checa_vs_México": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": true
@@ -486,7 +568,7 @@
                 "acierto_1x2": true
             },
             "Escocia_vs_Brasil": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Marruecos_vs_Haití": {
                 "acierto_1x2": true
@@ -504,83 +586,165 @@
                 "acierto_1x2": true
             },
             "Bosnia-Herzegovina_vs_Qatar": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Suiza_vs_Canadá": {
+                "acierto_1x2": false
+            },
+            "ID_73": {
+                "acierto_1x2": false
+            },
+            "ID_74": {
+                "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": true
+            },
+            "ID_76": {
+                "acierto_1x2": false
+            },
+            "ID_77": {
+                "acierto_1x2": true
+            },
+            "ID_78": {
+                "acierto_1x2": true
+            },
+            "ID_79": {
+                "acierto_1x2": true
+            },
+            "ID_80": {
+                "acierto_1x2": false
+            },
+            "ID_81": {
+                "acierto_1x2": true
+            },
+            "ID_82": {
                 "acierto_1x2": true
             },
             "ID_83": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "ID_84": {
+                "acierto_1x2": true
+            },
+            "ID_85": {
                 "acierto_1x2": false
             },
             "ID_86": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "ID_87": {
+                "acierto_1x2": true
+            },
+            "ID_88": {
                 "acierto_1x2": false
+            },
+            "ID_89": {
+                "acierto_1x2": true
+            },
+            "ID_90": {
+                "acierto_1x2": false
+            },
+            "ID_91": {
+                "acierto_1x2": false
+            },
+            "ID_92": {
+                "acierto_1x2": true
             },
             "ID_93": {
                 "acierto_1x2": false
             },
+            "ID_94": {
+                "acierto_1x2": false
+            },
+            "ID_95": {
+                "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
+            },
+            "ID_97": {
+                "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
+            },
+            "ID_99": {
+                "acierto_1x2": true
+            },
             "ID_100": {
                 "acierto_1x2": true
+            },
+            "ID_101": {
+                "acierto_1x2": false
+            },
+            "ID_102": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 10,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
-                "aciertos_1x2": 12,
+                "aciertos_1x2": 8,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             },
             "J1.2": {
-                "aciertos_1x2": 12,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 8,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             },
             "J2.1": {
-                "aciertos_1x2": 12,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 9,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 12,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 9,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 12,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 5,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             },
             "J3.2": {
-                "aciertos_1x2": 12,
+                "aciertos_1x2": 8,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             },
             "dieciseisavos.2": {
-                "aciertos_1x2": 1,
+                "aciertos_1x2": 5,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             },
             "octavos": {
-                "aciertos_1x2": 0,
+                "aciertos_1x2": 3,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             },
             "cuartos": {
-                "aciertos_1x2": 1,
+                "aciertos_1x2": 3,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "semifinales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
     "generico_3": {
-        "puntos_partidos": 109.5,
-        "total_aciertos_1x2": 58,
-        "total_aciertos_exactos": 14,
+        "puntos_partidos": 165.0,
+        "total_aciertos_1x2": 74,
+        "total_aciertos_exactos": 17,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -798,11 +962,44 @@
             "Suiza_vs_Canadá": {
                 "acierto_1x2": false
             },
-            "ID_83": {
+            "ID_73": {
+                "acierto_1x2": true
+            },
+            "ID_74": {
+                "acierto_1x2": true
+            },
+            "ID_75": {
                 "acierto_1x2": false
+            },
+            "ID_76": {
+                "acierto_1x2": true
+            },
+            "ID_77": {
+                "acierto_1x2": false
+            },
+            "ID_78": {
+                "acierto_1x2": false
+            },
+            "ID_79": {
+                "acierto_1x2": true
+            },
+            "ID_80": {
+                "acierto_1x2": false
+            },
+            "ID_81": {
+                "acierto_1x2": false
+            },
+            "ID_82": {
+                "acierto_1x2": true
+            },
+            "ID_83": {
+                "acierto_1x2": true
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_85": {
+                "acierto_1x2": false
             },
             "ID_86": {
                 "acierto_1x2": true
@@ -810,14 +1007,53 @@
             "ID_87": {
                 "acierto_1x2": false
             },
+            "ID_88": {
+                "acierto_1x2": true
+            },
+            "ID_89": {
+                "acierto_1x2": false
+            },
+            "ID_90": {
+                "acierto_1x2": true
+            },
+            "ID_91": {
+                "acierto_1x2": true
+            },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
+                "acierto_1x2": false
+            },
+            "ID_94": {
+                "acierto_1x2": true
+            },
+            "ID_95": {
+                "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": true
+            },
+            "ID_97": {
+                "acierto_1x2": false
+            },
+            "ID_98": {
+                "acierto_1x2": true
+            },
+            "ID_99": {
                 "acierto_1x2": true
             },
             "ID_100": {
-                "acierto_1x2": false
+                "acierto_1x2": true
+            },
+            "ID_101": {
+                "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 14,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 7,
@@ -826,13 +1062,13 @@
             },
             "J1.2": {
                 "aciertos_1x2": 11,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             },
             "J2.1": {
                 "aciertos_1x2": 10,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             },
             "J2.2": {
                 "aciertos_1x2": 12,
@@ -841,28 +1077,38 @@
             },
             "J3.1": {
                 "aciertos_1x2": 6,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             },
             "J3.2": {
                 "aciertos_1x2": 9,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             },
             "dieciseisavos.2": {
-                "aciertos_1x2": 2,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 5,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             },
             "octavos": {
-                "aciertos_1x2": 1,
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             },
             "cuartos": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 3,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
+            },
+            "semifinales": {
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     }

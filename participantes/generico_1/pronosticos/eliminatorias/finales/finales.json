@@ -4,18 +4,18 @@
     "predicciones": {
         "finales": [
             {
-                "local": "Noruega",
-                "visitante": "Argentina",
+                "local": "Francia",
+                "visitante": "Colombia",
                 "goles_local": 1,
-                "goles_visitante": 0,
-                "pasa": "Noruega"
+                "goles_visitante": 3,
+                "pasa": "Colombia"
             },
             {
-                "local": "Portugal",
-                "visitante": "Francia",
-                "goles_local": 1,
-                "goles_visitante": 2,
-                "pasa": "Francia"
+                "local": "España",
+                "visitante": "Inglaterra",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "España"
             }
         ]
     }

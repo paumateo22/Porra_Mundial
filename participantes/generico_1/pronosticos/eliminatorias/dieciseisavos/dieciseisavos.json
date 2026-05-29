@@ -4,100 +4,100 @@
     "predicciones": {
         "dieciseisavos": [
             {
-                "local": "México",
-                "visitante": "Canadá",
-                "goles_local": 2,
-                "goles_visitante": 0,
-                "pasa": "México"
+                "local": "República Checa",
+                "visitante": "Suiza",
+                "goles_local": 3,
+                "goles_visitante": 2,
+                "pasa": "República Checa"
             },
             {
                 "local": "Ecuador",
-                "visitante": "Escocia",
+                "visitante": "Corea del Sur",
                 "goles_local": 1,
                 "goles_visitante": 2,
-                "pasa": "Escocia"
+                "pasa": "Corea del Sur"
             },
             {
                 "local": "Países Bajos",
-                "visitante": "Brasil",
-                "goles_local": 1,
+                "visitante": "Marruecos",
+                "goles_local": 0,
                 "goles_visitante": 2,
+                "pasa": "Marruecos"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Suecia",
+                "goles_local": 2,
+                "goles_visitante": 0,
                 "pasa": "Brasil"
             },
             {
-                "local": "Marruecos",
-                "visitante": "Suecia",
-                "goles_local": 0,
-                "goles_visitante": 3,
-                "pasa": "Suecia"
-            },
-            {
-                "local": "Noruega",
-                "visitante": "Arabia Saudita",
-                "goles_local": 0,
-                "goles_visitante": 1,
-                "pasa": "Arabia Saudita"
+                "local": "Francia",
+                "visitante": "Irán",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Francia"
             },
             {
                 "local": "Alemania",
-                "visitante": "Francia",
+                "visitante": "Noruega",
                 "goles_local": 2,
-                "goles_visitante": 1,
+                "goles_visitante": 0,
                 "pasa": "Alemania"
             },
             {
-                "local": "Corea del Sur",
+                "local": "México",
                 "visitante": "Costa de Marfil",
                 "goles_local": 1,
-                "goles_visitante": 2,
+                "goles_visitante": 3,
                 "pasa": "Costa de Marfil"
             },
             {
                 "local": "Inglaterra",
-                "visitante": "Argelia",
-                "goles_local": 1,
-                "goles_visitante": 0,
-                "pasa": "Inglaterra"
-            },
-            {
-                "local": "Paraguay",
                 "visitante": "Senegal",
-                "goles_local": 2,
-                "goles_visitante": 3,
+                "goles_local": 0,
+                "goles_visitante": 1,
                 "pasa": "Senegal"
             },
             {
-                "local": "Bélgica",
-                "visitante": "Estados Unidos",
+                "local": "Estados Unidos",
+                "visitante": "Japón",
                 "goles_local": 2,
-                "goles_visitante": 3,
+                "goles_visitante": 1,
                 "pasa": "Estados Unidos"
+            },
+            {
+                "local": "Bélgica",
+                "visitante": "Arabia Saudita",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Bélgica"
             },
             {
                 "local": "Portugal",
                 "visitante": "Ghana",
-                "goles_local": 0,
-                "goles_visitante": 2,
+                "goles_local": 2,
+                "goles_visitante": 3,
                 "pasa": "Ghana"
             },
             {
                 "local": "España",
                 "visitante": "Austria",
-                "goles_local": 3,
-                "goles_visitante": 0,
+                "goles_local": 2,
+                "goles_visitante": 1,
                 "pasa": "España"
             },
             {
-                "local": "Suiza",
-                "visitante": "Japón",
-                "goles_local": 1,
-                "goles_visitante": 2,
-                "pasa": "Japón"
+                "local": "Canadá",
+                "visitante": "Escocia",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "Canadá"
             },
             {
                 "local": "Argentina",
                 "visitante": "Uruguay",
-                "goles_local": 3,
+                "goles_local": 1,
                 "goles_visitante": 0,
                 "pasa": "Argentina"
             },
@@ -109,58 +109,58 @@
                 "pasa": "Croacia"
             },
             {
-                "local": "Turquía",
+                "local": "Paraguay",
                 "visitante": "Egipto",
                 "goles_local": 1,
                 "goles_visitante": 0,
-                "pasa": "Turquía"
+                "pasa": "Paraguay"
             }
         ],
         "octavos": [
             {
-                "local": "México",
-                "visitante": "Escocia",
+                "local": "República Checa",
+                "visitante": "Corea del Sur",
                 "goles_local": 2,
-                "goles_visitante": 1,
-                "pasa": "México"
+                "goles_visitante": 0,
+                "pasa": "República Checa"
             },
             {
-                "local": "Brasil",
-                "visitante": "Suecia",
-                "goles_local": 1,
-                "goles_visitante": 0,
+                "local": "Marruecos",
+                "visitante": "Brasil",
+                "goles_local": 0,
+                "goles_visitante": 1,
                 "pasa": "Brasil"
             },
             {
-                "local": "Arabia Saudita",
+                "local": "Francia",
                 "visitante": "Alemania",
-                "goles_local": 1,
-                "goles_visitante": 3,
-                "pasa": "Alemania"
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Francia"
             },
             {
                 "local": "Costa de Marfil",
-                "visitante": "Inglaterra",
-                "goles_local": 2,
-                "goles_visitante": 3,
-                "pasa": "Inglaterra"
+                "visitante": "Senegal",
+                "goles_local": 0,
+                "goles_visitante": 2,
+                "pasa": "Senegal"
             },
             {
-                "local": "Senegal",
-                "visitante": "Estados Unidos",
+                "local": "Estados Unidos",
+                "visitante": "Bélgica",
                 "goles_local": 1,
                 "goles_visitante": 0,
-                "pasa": "Senegal"
+                "pasa": "Estados Unidos"
             },
             {
                 "local": "Ghana",
                 "visitante": "España",
                 "goles_local": 1,
-                "goles_visitante": 0,
-                "pasa": "Ghana"
+                "goles_visitante": 2,
+                "pasa": "España"
             },
             {
-                "local": "Japón",
+                "local": "Canadá",
                 "visitante": "Argentina",
                 "goles_local": 1,
                 "goles_visitante": 2,
@@ -168,72 +168,72 @@
             },
             {
                 "local": "Croacia",
-                "visitante": "Turquía",
-                "goles_local": 3,
-                "goles_visitante": 2,
-                "pasa": "Croacia"
+                "visitante": "Paraguay",
+                "goles_local": 0,
+                "goles_visitante": 1,
+                "pasa": "Paraguay"
             }
         ],
         "cuartos": [
             {
-                "local": "México",
+                "local": "República Checa",
                 "visitante": "Brasil",
-                "goles_local": 1,
+                "goles_local": 0,
                 "goles_visitante": 3,
                 "pasa": "Brasil"
             },
             {
-                "local": "Alemania",
-                "visitante": "Inglaterra",
-                "goles_local": 1,
-                "goles_visitante": 0,
-                "pasa": "Alemania"
+                "local": "Francia",
+                "visitante": "Senegal",
+                "goles_local": 0,
+                "goles_visitante": 3,
+                "pasa": "Senegal"
             },
             {
-                "local": "Senegal",
-                "visitante": "Ghana",
-                "goles_local": 1,
-                "goles_visitante": 2,
-                "pasa": "Ghana"
+                "local": "Estados Unidos",
+                "visitante": "España",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "Estados Unidos"
             },
             {
                 "local": "Argentina",
-                "visitante": "Croacia",
-                "goles_local": 2,
-                "goles_visitante": 1,
-                "pasa": "Argentina"
+                "visitante": "Paraguay",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Paraguay"
             }
         ],
         "semifinales": [
             {
                 "local": "Brasil",
-                "visitante": "Alemania",
-                "goles_local": 2,
-                "goles_visitante": 3,
-                "pasa": "Alemania"
+                "visitante": "Senegal",
+                "goles_local": 0,
+                "goles_visitante": 1,
+                "pasa": "Senegal"
             },
             {
-                "local": "Ghana",
-                "visitante": "Argentina",
+                "local": "Estados Unidos",
+                "visitante": "Paraguay",
                 "goles_local": 2,
-                "goles_visitante": 0,
-                "pasa": "Ghana"
+                "goles_visitante": 3,
+                "pasa": "Paraguay"
             }
         ],
         "finales": [
             {
                 "local": "Brasil",
-                "visitante": "Argentina",
+                "visitante": "Estados Unidos",
                 "goles_local": 1,
                 "goles_visitante": 2,
-                "pasa": "Argentina"
+                "pasa": "Estados Unidos"
             },
             {
-                "local": "Alemania",
-                "visitante": "Ghana",
-                "goles_local": 3,
-                "goles_visitante": 1,
-                "pasa": "Alemania"
+                "local": "Senegal",
+                "visitante": "Paraguay",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Senegal"
             }
         ]
     }
