@@ -3,6 +3,7 @@ import json
 import csv
 from pathlib import Path
 from datetime import datetime
+from importlib import import_module
 
 # Conectar con la raíz del proyecto
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -185,7 +186,7 @@ Aquí tienes el detalle exacto de tus pronósticos, ordenados jornada a jornada.
             f.write(md)
             
     print("✅ READMEs personales generados con el historial cronológico por jornadas.")
-    
+
 def ejecutar_generador_vistas():
     print("=======================================================")
     print(" 🎨 INICIANDO GENERADOR DE VISTAS (MARKDOWN) 🎨")
@@ -193,6 +194,9 @@ def ejecutar_generador_vistas():
     
     if generar_readme_global():
         generar_readmes_personales()
+        print("\n📝 Generando periódico de resultados reales...")
+        import_module("08_generador_realidad_md").generar_readme_realidad()
+        
         print("\n🎉 ¡Tus vistas están listas! Sube los cambios a GitHub para ver la web.")
 
 if __name__ == "__main__":
