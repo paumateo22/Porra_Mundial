@@ -190,6 +190,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 """
         pts_partidos_grupos_acumulados = 0
         pts_bonos_grupos_acumulados = 0
+        pts_acumulados_historial = 0  # <--- NUEVA LÍNEA DE TIEMPO ACUMULADA
 
         for j_key, partidos_jornada in jornadas_dict.items():
             es_fase_grupos = j_key.startswith("J")
@@ -198,6 +199,10 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
             md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |\n"
             md += "| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n"
             
+            pts_partidos_jornada = 0
+            aciertos_jornada = 0
+            exactos_jornada = 0
+
             for p in partidos_jornada:
                 clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
                 info_p = desglose_p.get(clave)
@@ -217,18 +222,25 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                     texto_real = f"**{p_real.get('goles_local', '-')} - {p_real.get('goles_visitante', '-')}**" if p_real.get("estado") == "finished" else "⏳"
                     pts = info_p.get("puntos_conseguidos", 0)
                     
+                    # Contadores internos
+                    pts_partidos_jornada += pts
+                    if info_p.get('acierto_1x2'): aciertos_jornada += 1
+                    if info_p.get('acierto_exacto'): exactos_jornada += 1
+                    
                     if es_fase_grupos: pts_partidos_grupos_acumulados += pts
                     
                     md += f"| **{loc_real}** vs **{vis_real}** | {texto_pred} | {texto_real} | {'✅' if info_p.get('acierto_1x2') else '❌'} | {'🎯' if info_p.get('acierto_exacto') else '---'} | x{info_p.get('multiplicador_aplicado', 1.0)} | **{pts}** |\n"
             
             # BLOQUE RESUMEN DE JORNADA
             info_jornada = desglose_j.get(j_key)
+            bono_jornada = info_jornada.get("puntos_bono", 0) if info_jornada else 0
+            pts_totales_jornada = pts_partidos_jornada + bono_jornada
+            pts_acumulados_historial += pts_totales_jornada # Sumamos a la línea de tiempo global
+
             if info_jornada:
-                aciertos = info_jornada.get("aciertos_1x2", 0)
-                bono = info_jornada.get("puntos_bono", 0)
+                if es_fase_grupos: pts_bonos_grupos_acumulados += bono_jornada
                 resultado_str = info_jornada.get("resultado", "Neutral")
-                
-                if es_fase_grupos: pts_bonos_grupos_acumulados += bono
+                icono_res = "🥇" if resultado_str == "Ganador" else ("🔴" if resultado_str == "Perdedor" else "⚪")
 
                 # Calcular la posición en esta jornada
                 hits_jugadores = jornada_global_hits.get(j_key, {})
@@ -238,10 +250,15 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                     if idx > 0 and hits < sorted_hits[idx-1][1]: rank = idx + 1
                     if pid == nombre_id: break
                 
-                icono_res = "🥇" if resultado_str == "Ganador" else ("🔴" if resultado_str == "Perdedor" else "⚪")
-                md += f"\n> **Resumen de la {j_key.upper()}:** Has logrado **{aciertos}** aciertos (1X2). Quedaste en la posición **{rank}º**. | Resultado: {icono_res} **{resultado_str}** ({bono} pts)\n\n"
+                md += f"\n> **Resumen de la {j_key.upper()}:** **{exactos_jornada}/{aciertos_jornada}** *(Clavados/Aciertos)*. Quedaste en la posición **{rank}º**. | Resultado: {icono_res} **{resultado_str}** ({bono_jornada} pts)\n"
+                md += f"> **Puntos sumados esta jornada:** {pts_totales_jornada} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n"
             else:
-                md += "\n> *Jornada pendiente o sin procesar.*\n\n"
+                # Si hay datos de partidos pero no de jornada finalizada
+                if pts_totales_jornada > 0 or aciertos_jornada > 0:
+                    md += f"\n> **Resumen de la {j_key.upper()}:** **{exactos_jornada}/{aciertos_jornada}** *(Clavados/Aciertos)*.\n"
+                    md += f"> **Puntos sumados esta jornada:** {pts_totales_jornada} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n"
+                else:
+                    md += "\n> *Jornada pendiente o sin procesar.*\n\n"
 
             # --- CORTE: RECUENTO DE FASE DE GRUPOS ---
             if j_key == "J3.2":
@@ -262,20 +279,24 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                 
                 pts_por_grupos = libro.get("resolucion_fase_grupos", {}).get("puntos_conseguidos", 0)
                 
+                total_aciertos_pase = 0
+                total_aciertos_exactos_pos = 0
+
                 for eq in sorted(list(pos_real.keys())):
                     p_tu = "✅" if eq in pasan_pred else "❌"
                     pos_tu = f"{pos_pred.get(eq, '-')}º"
                     p_rl = "✅" if eq in pasan_real else "❌"
                     pos_rl = f"{pos_real.get(eq, '-')}º"
                     
-                    # NUEVA LÓGICA ESTRICTA DE PUNTUACIÓN VISUAL
                     if eq in pasan_real:
                         if eq in pasan_pred:
                             acierto_pase = "🎯 (+1)"
                             pts_eq = 1
+                            total_aciertos_pase += 1
                             if pos_pred.get(eq) == pos_real.get(eq):
                                 acierto_exacto = "🎯 (+2)"
                                 pts_eq += 2
+                                total_aciertos_exactos_pos += 1
                             else:
                                 acierto_exacto = "❌"
                         else:
@@ -283,21 +304,24 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                             acierto_exacto = "❌"
                             pts_eq = 0
                     else:
-                        # Si la selección no ha pasado, es irrelevante lo que pusieras.
                         acierto_pase = "-"
                         acierto_exacto = "-"
                         pts_eq = 0
                         
                     md += f"| **{eq}** | {p_tu} | {pos_tu} | {p_rl} | {pos_rl} | {acierto_pase} | {acierto_exacto} | **{pts_eq}** |\n"
                 
-                md += f"\n**Bono total por aciertos en Fase de Grupos:** +{pts_por_grupos} pts\n\n---\n"
+                # Actualizar línea de tiempo con el gran bono de Fase de Grupos
+                pts_acumulados_historial += pts_por_grupos
+
+                md += f"\n> **Resumen de Clasificados:** **{total_aciertos_exactos_pos}/{total_aciertos_pase}** *(Clavados/Aciertos Pase)*\n"
+                md += f"> **Bono sumado por Fase de Grupos:** +{pts_por_grupos} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n---\n"
 
         md += "\n---\n[⬅️ Volver a la clasificación general](../../README.md)"
 
         with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f:
             f.write(md)
             
-    print("✅ READMEs personales generados con recuentos de Jornada y Tabla de 48 equipos actualizada.")
+    print("✅ READMEs personales generados con contadores detallados (Clavados/Aciertos) y Total Acumulado en tiempo real.")
 
 def ejecutar_generador_vistas():
     print("=======================================================")

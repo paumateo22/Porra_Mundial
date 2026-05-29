@@ -22,7 +22,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Canadá** vs **Bosnia-Herzegovina** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x1.0 | **4.0** |
 | **Qatar** vs **Suiza** | **1 - 3** | **1 - 2** | ✅ | --- | x1.0 | **1.0** |
 
-> **Resumen de la J1.1:** Has logrado **7** aciertos (1X2). Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Resumen de la J1.1:** **3/7** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 16.0 pts | **TOTAL ACUMULADO:** 16.0 pts
 
 ### 📌 J1.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -40,7 +41,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Francia** vs **Senegal** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x1.0 | **4.0** |
 | **Irak** vs **Noruega** | **0 - 2** | **1 - 3** | ✅ | --- | x1.0 | **1.0** |
 
-> **Resumen de la J1.2:** Has logrado **11** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la J1.2:** **3/11** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 22.0 pts | **TOTAL ACUMULADO:** 38.0 pts
 
 ### 📌 J2.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -58,7 +60,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Suiza** vs **Bosnia-Herzegovina** | **2 - 1** | **2 - 0** | ✅ | --- | x1.0 | **1.0** |
 | **Canadá** vs **Qatar** | **2 - 1** | **3 - 1** | ✅ | --- | x1.0 | **1.0** |
 
-> **Resumen de la J2.1:** Has logrado **10** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la J2.1:** **0/10** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 12.0 pts | **TOTAL ACUMULADO:** 50.0 pts
 
 ### 📌 J2.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -76,7 +79,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Francia** vs **Irak** | **3 - 1** | **3 - 0** | ✅ | --- | x1.0 | **1.0** |
 | **Noruega** vs **Senegal** | **3 - 2** | **4 - 2** | ✅ | --- | x1.0 | **1.0** |
 
-> **Resumen de la J2.2:** Has logrado **12** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la J2.2:** **3/12** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 23.0 pts | **TOTAL ACUMULADO:** 73.0 pts
 
 ### 📌 J3.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -94,7 +98,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Bosnia-Herzegovina** vs **Qatar** | **2 - 0** | **0 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Suiza** vs **Canadá** | **3 - 1** | **1 - 1** | ❌ | --- | x1.0 | **0.0** |
 
-> **Resumen de la J3.1:** Has logrado **6** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la J3.1:** **1/6** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 11.0 pts | **TOTAL ACUMULADO:** 84.0 pts
 
 ### 📌 J3.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -112,7 +117,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Senegal** vs **Irak** | **2 - 0** | **3 - 0** | ✅ | --- | x1.0 | **1.0** |
 | **Noruega** vs **Francia** | **2 - 2** | **1 - 3** | ❌ | --- | x1.0 | **0.0** |
 
-> **Resumen de la J3.2:** Has logrado **9** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la J3.2:** **2/9** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 17.0 pts | **TOTAL ACUMULADO:** 101.0 pts
 
 
 ---
@@ -173,7 +179,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Uruguay** | ✅ | 2º | ✅ | 2º | 🎯 (+1) | 🎯 (+2) | **3** |
 | **Uzbekistán** | ✅ | 3º | ❌ | 4º | - | - | **0** |
 
-**Bono total por aciertos en Fase de Grupos:** +66 pts
+> **Resumen de Clasificados:** **19/28** *(Clavados/Aciertos Pase)*
+> **Bono sumado por Fase de Grupos:** +66 pts | **TOTAL ACUMULADO:** 167.0 pts
 
 ---
 ### 📌 DIECISEISAVOS.1
@@ -188,7 +195,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **México** vs **Costa de Marfil** | **2 - 0** | **3 - 1** | ✅ | --- | x1.5 | **1.5** |
 | **Inglaterra** vs **Senegal** | **1 - 2** | **3 - 2** | ❌ | --- | x2.0 | **0.0** |
 
-> **Resumen de la DIECISEISAVOS.1:** Has logrado **4** aciertos (1X2). Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Resumen de la DIECISEISAVOS.1:** **0/4** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 7.5 pts | **TOTAL ACUMULADO:** 174.5 pts
 
 ### 📌 DIECISEISAVOS.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -202,7 +210,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Colombia** vs **Croacia** | **0 - 1** | **3 - 1** | ❌ | --- | x2.0 | **0.0** |
 | **Paraguay** vs **Egipto** | **2 - 1** | **3 - 2** | ✅ | --- | x2.0 | **2.0** |
 
-> **Resumen de la DIECISEISAVOS.2:** Has logrado **5** aciertos (1X2). Quedaste en la posición **2º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+> **Resumen de la DIECISEISAVOS.2:** **2/5** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+> **Puntos sumados esta jornada:** 18.0 pts | **TOTAL ACUMULADO:** 192.5 pts
 
 ### 📌 OCTAVOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -216,7 +225,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Argentina** vs **Paraguay** | **1 - 0** | **2 - 1** | ✅ | --- | x3.0 | **3.0** |
 | **Canadá** vs **Colombia** | **1 - 2** | **0 - 1** | ✅ | --- | x1.5 | **1.5** |
 
-> **Resumen de la OCTAVOS:** Has logrado **5** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la OCTAVOS:** **2/5** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 28.5 pts | **TOTAL ACUMULADO:** 221.0 pts
 
 ### 📌 CUARTOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -226,7 +236,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Brasil** vs **Inglaterra** | **1 - 2** | **2 - 3** | ✅ | --- | x2.5 | **2.5** |
 | **Argentina** vs **Colombia** | **0 - 2** | **1 - 2** | ✅ | --- | x3.0 | **3.0** |
 
-> **Resumen de la CUARTOS:** Has logrado **3** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la CUARTOS:** **0/3** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 10.0 pts | **TOTAL ACUMULADO:** 231.0 pts
 
 ### 📌 SEMIFINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -234,7 +245,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Francia** vs **España** | **1 - 2** | **1 - 3** | ✅ | --- | x2.0 | **2.0** |
 | **Inglaterra** vs **Colombia** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | **10.0** |
 
-> **Resumen de la SEMIFINALES:** Has logrado **2** aciertos (1X2). Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Resumen de la SEMIFINALES:** **1/2** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
+> **Puntos sumados esta jornada:** 14.0 pts | **TOTAL ACUMULADO:** 245.0 pts
 
 ### 📌 FINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
