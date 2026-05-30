@@ -245,11 +245,15 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 > **Resumen de la SEMIFINALES:** **1/1** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
 > **Puntos sumados esta jornada:** 8.0 pts | **TOTAL ACUMULADO:** 127.0 pts
 
-### 📌 FINALES
+### 🥉 TERCER PUESTO
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **🥉 Francia** vs **Colombia** | **1 - 3** | **2 - 0** | ❌ | --- | x3.5 | - **Francia** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Colombia** +1.5: [1/8](pronosticos/eliminatorias/octavos/); [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
-| **🏆 España** vs **Inglaterra** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | - **España** +1.0: [1/8](pronosticos/eliminatorias/octavos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Inglaterra** +0.5: [Semis](pronosticos/eliminatorias/semifinales/) | **10.0** |
+| **Francia** vs **Colombia** | **1 - 3** | **2 - 0** | ❌ | --- | x3.5 | - **Francia** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Colombia** +1.5: [1/8](pronosticos/eliminatorias/octavos/); [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
+
+### 🏆 FINAL
+| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
+| **España** vs **Inglaterra** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | - **España** +1.0: [1/8](pronosticos/eliminatorias/octavos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Inglaterra** +0.5: [Semis](pronosticos/eliminatorias/semifinales/) | **10.0** |
 
 > **Resumen de la FINALES:** **1/1** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
 > **Puntos sumados esta jornada:** 12.0 pts | **TOTAL ACUMULADO:** 139.0 pts

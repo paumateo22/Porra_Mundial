@@ -204,18 +204,32 @@ def generar_readmes_personales():
             es_fase_grupos = j_key.startswith("J")
             fase_limpia = j_key.split(".")[0] if "." in j_key else j_key
             
-            md += f"### 📌 {j_key.upper()}\n"
-            if es_fase_grupos:
-                md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |\n"
-                md += "| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n"
-            else:
-                md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |\n"
-                md += "| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |\n"
+            # --- IMPRIMIR CABECERAS NORMALES (Excepto para Finales que van separadas) ---
+            if j_key.lower() != "finales":
+                md += f"### 📌 {j_key.upper()}\n"
+                if es_fase_grupos:
+                    md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |\n"
+                    md += "| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n"
+                else:
+                    md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |\n"
+                    md += "| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |\n"
             
             pts_partidos_jornada = aciertos_jornada = exactos_jornada = 0
             partidos_jugados = False
 
-            for p in partidos_jornada:
+            for idx_p, p in enumerate(partidos_jornada):
+                
+                # --- INYECCIÓN DE TABLAS SEPARADAS PARA FINALES ---
+                if j_key.lower() == "finales":
+                    if idx_p == 0:
+                        md += f"### 🥉 TERCER PUESTO\n"
+                        md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |\n"
+                        md += "| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |\n"
+                    elif idx_p == 1:
+                        md += f"\n### 🏆 FINAL\n"
+                        md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |\n"
+                        md += "| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |\n"
+                
                 clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
                 info_p = desglose_p.get(clave, {})
                 p_real = dict_reales.get(clave, {})
@@ -224,16 +238,19 @@ def generar_readmes_personales():
                 loc_real = p_real.get("local", "TBD")
                 vis_real = p_real.get("visitante", "TBD")
                 
-                # Gestión de iconos para Finales
-                if p_real.get("id_partido") == 103: loc_real = f"🥉 {loc_real}"
-                elif p_real.get("id_partido") == 104: loc_real = f"🏆 {loc_real}"
-                elif loc_real == "TBD" and "id_partido" in p: loc_real, vis_real = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
+                if loc_real == "TBD" and "id_partido" in p: 
+                    loc_real, vis_real = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
                     
                 if p_pred:
                     loc_pred, vis_pred = p_pred.get("local", ""), p_pred.get("visitante", "")
                     gl_pred, gv_pred = p_pred.get("goles_local", "-"), p_pred.get("goles_visitante", "-")
-                    texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*" if (loc_pred.replace('🥉 ','').replace('🏆 ','') != p_real.get("local") or vis_pred != vis_real) else f"**{gl_pred} - {gv_pred}**"
-                else: texto_pred = "-"
+                    
+                    if (loc_pred != p_real.get("local", "") or vis_pred != p_real.get("visitante", "")):
+                        texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*" 
+                    else: 
+                        texto_pred = f"**{gl_pred} - {gv_pred}**"
+                else: 
+                    texto_pred = "-"
 
                 estado = p_real.get("estado", "notstarted")
                 if estado == "finished":
