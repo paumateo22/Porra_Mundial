@@ -1,5 +1,6 @@
 import sys
 import json
+import math
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -7,14 +8,9 @@ sys.path.append(str(ROOT_DIR))
 
 # Mapeo estricto del torneo a valores numéricos (0 = Grupos, 5 = Final)
 MAPEO_FASES = {
-    "grupos": 0,
-    "dieciseisavos": 1,
-    "octavos": 2,
-    "cuartos": 3,
-    "semifinales": 4,
-    "tercer_puesto": 4,
-    "finales": 5,
-    "final": 5
+    "grupos": 0, "dieciseisavos": 1, "octavos": 2, 
+    "cuartos": 3, "semifinales": 4, "tercer_puesto": 4, 
+    "finales": 5, "final": 5
 }
 
 def cargar_json(ruta):
@@ -27,75 +23,37 @@ def guardar_json(datos, ruta):
         json.dump(datos, f, ensure_ascii=False, indent=4)
 
 def determinar_fase_caida_jugador(jugador, equipo):
-    """Busca la fase MÁS ALTA en la que el jugador puso a este equipo."""
     dir_jugador = ROOT_DIR / "participantes" / jugador / "pronosticos"
-    
-    # 1. Si no pasa de grupos en el base.json, es 0
     ruta_base = dir_jugador / "grupos" / f"{jugador}_base.json"
     if ruta_base.exists():
         base = cargar_json(ruta_base)
-        if equipo not in base.get("clasificados_a_dieciseisavos", []):
-            return 0
+        if equipo not in base.get("clasificados_a_dieciseisavos", []): return 0
 
-    # 2. Rastrear desde la final hacia atrás
-    ruta_finales = dir_jugador / "eliminatorias" / "finales" / "finales.json"
-    if ruta_finales.exists():
-        ocr_data = cargar_json(ruta_finales)
-        for p in ocr_data.get("predicciones", {}).get("finales", []) + ocr_data.get("predicciones", {}).get("final", []):
-            if p.get("local") == equipo or p.get("visitante") == equipo:
-                if p.get("id_partido") == 103: return 4 # 3er puesto es como semis
-                return 5
-
-    ruta_semis = dir_jugador / "eliminatorias" / "semifinales" / "semifinales.json"
-    if ruta_semis.exists():
-        ocr_data = cargar_json(ruta_semis)
-        for p in ocr_data.get("predicciones", {}).get("semifinales", []) + ocr_data.get("predicciones", {}).get("tercer_puesto", []):
-            if p.get("local") == equipo or p.get("visitante") == equipo: return 4
-
-    ruta_cuartos = dir_jugador / "eliminatorias" / "cuartos" / "cuartos.json"
-    if ruta_cuartos.exists():
-        ocr_data = cargar_json(ruta_cuartos)
-        for p in ocr_data.get("predicciones", {}).get("cuartos", []):
-            if p.get("local") == equipo or p.get("visitante") == equipo: return 3
-
-    ruta_octavos = dir_jugador / "eliminatorias" / "octavos" / "octavos.json"
-    if ruta_octavos.exists():
-        ocr_data = cargar_json(ruta_octavos)
-        for p in ocr_data.get("predicciones", {}).get("octavos", []):
-            if p.get("local") == equipo or p.get("visitante") == equipo: return 2
-
-    ruta_diecis = dir_jugador / "eliminatorias" / "dieciseisavos" / "dieciseisavos.json"
-    if ruta_diecis.exists():
-        ocr_data = cargar_json(ruta_diecis)
-        for p in ocr_data.get("predicciones", {}).get("dieciseisavos", []):
-            if p.get("local") == equipo or p.get("visitante") == equipo: return 1
-            
+    for fase, valor in [("finales", 5), ("semifinales", 4), ("cuartos", 3), ("octavos", 2), ("dieciseisavos", 1)]:
+        ruta_ocr = dir_jugador / "eliminatorias" / fase / f"{fase}.json"
+        if ruta_ocr.exists():
+            ocr_data = cargar_json(ruta_ocr)
+            for key in ["finales", "final", "semifinales", "tercer_puesto", "cuartos", "octavos", "dieciseisavos"]:
+                for p in ocr_data.get("predicciones", {}).get(key, []):
+                    if p.get("local") == equipo or p.get("visitante") == equipo:
+                        if p.get("id_partido") == 103: return 4
+                        return valor
     return 0
 
 def determinar_fase_caida_real(equipo, realidad_dict):
-    """Busca la fase MÁS ALTA que el equipo alcanzó en la realidad."""
-    if equipo not in realidad_dict.get("clasificados_a_dieciseisavos", []):
-        return 0
-        
+    if equipo not in realidad_dict.get("clasificados_a_dieciseisavos", []): return 0
     eliminatorias = realidad_dict.get("eliminatorias", {})
     
     for p in eliminatorias.get("finales", []) + eliminatorias.get("final", []):
-        if p.get("local") == equipo or p.get("visitante") == equipo:
-            if p.get("id_partido") == 103: return 4 # 3er puesto
-            return 5 # Gran Final
-            
+        if p.get("local") == equipo or p.get("visitante") == equipo: return 4 if p.get("id_partido") == 103 else 5
     for p in eliminatorias.get("semifinales", []) + eliminatorias.get("tercer_puesto", []):
         if p.get("local") == equipo or p.get("visitante") == equipo: return 4
-            
     for p in eliminatorias.get("cuartos", []):
         if p.get("local") == equipo or p.get("visitante") == equipo: return 3
-            
     for p in eliminatorias.get("octavos", []):
         if p.get("local") == equipo or p.get("visitante") == equipo: return 2
-            
     for p in eliminatorias.get("dieciseisavos", []):
         if p.get("local") == equipo or p.get("visitante") == equipo: return 1
-            
     return 0
 
 def ejecutar_06e_motor_sorpresas():
@@ -107,32 +65,27 @@ def ejecutar_06e_motor_sorpresas():
     realidad = cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json")
     reporte_previo = cargar_json(ROOT_DIR / "data" / "resultados" / "reporte_06b_jornadas.json")
 
-    if not settings or not realidad or not reporte_previo:
-        print("❌ Error: Faltan archivos de configuración o realidad para ejecutar el 06e.")
-        return
+    if not settings or not realidad or not reporte_previo: return
 
-    if settings.get("habilitadores", {}).get("sorpresas_decepciones", 0) == 0:
-        print("⚠️ El interruptor 'sorpresas_decepciones' está desactivado.")
-        return
+    if settings.get("habilitadores", {}).get("sorpresas_decepciones", 0) == 0: return
 
     conf = settings.get("sorpresas_decepciones_config", {})
-    umb_p_m = conf.get("distancia_minima_pronostico_media", 2.0)
-    umb_r_m = conf.get("distancia_minima_realidad_media", 2.0)
-    umb_r_p = conf.get("distancia_maxima_pronostico_realidad", 1.0)
+    umb_minimo = conf.get("umbral_minimo_global", 1.0)
+    mult_varianza = conf.get("multiplicador_varianza", 1.0)
+    umb_r_p = conf.get("distancia_maxima_pronostico_realidad", 1.0) # Margen de error fijo
     
     pts_sorpresa = settings.get("puntuaciones", {}).get("premios_finales", {}).get("sorpresa", 5)
     pts_decepcion = settings.get("puntuaciones", {}).get("premios_finales", {}).get("decepcion", 5)
 
     jugadores = list(reporte_previo.keys())
-    todos_equipos = set()
-    for grupo, partidos in realidad.get("fase_grupos", {}).items():
-        for p in partidos:
-            todos_equipos.add(p["local"])
-            todos_equipos.add(p["visitante"])
+    todos_equipos = {p["local"] for grp in realidad.get("fase_grupos", {}).values() for p in grp}.union(
+                    {p["visitante"] for grp in realidad.get("fase_grupos", {}).values() for p in grp})
     todos_equipos = sorted(list(todos_equipos))
 
     mapa_valores_caida = {eq: {"jugadores": {}, "realidad": 0, "media": 0.0} for eq in todos_equipos}
+    desviaciones_equipos = []
     
+    # --- PASADA 1: CALCULAR MEDIAS Y DESVIACIÓN ESTÁNDAR POR EQUIPO ---
     for eq in todos_equipos:
         suma_fases = 0
         mapa_valores_caida[eq]["realidad"] = determinar_fase_caida_real(eq, realidad)
@@ -142,48 +95,46 @@ def ejecutar_06e_motor_sorpresas():
             mapa_valores_caida[eq]["jugadores"][jug] = fase_p
             suma_fases += fase_p
             
-        mapa_valores_caida[eq]["media"] = round(suma_fases / len(jugadores), 2)
-
-    reporte_06e = {}
-    
-    for jug in jugadores:
-        reporte_06e[jug] = {
-            "puntos_sorpresas": 0,
-            "puntos_decepciones": 0,
-            "detalles_equipos": {}
-        }
+        media = suma_fases / len(jugadores)
+        mapa_valores_caida[eq]["media"] = round(media, 2)
         
-        total_sorpresas = 0
-        total_decepciones = 0
+        varianza = sum((mapa_valores_caida[eq]["jugadores"][j] - media)**2 for j in jugadores) / len(jugadores)
+        desviaciones_equipos.append(math.sqrt(varianza))
+
+    # --- CÁLCULO DEL UMBRAL GLOBAL ---
+    media_desviaciones = sum(desviaciones_equipos) / len(desviaciones_equipos) if desviaciones_equipos else 0
+    umbral_global = max(umb_minimo, round(media_desviaciones * mult_varianza, 2))
+    print(f"📊 Desviación media global de la comunidad: ±{umbral_global} fases.")
+
+    # --- PASADA 2: EVALUAR CON EL UMBRAL GLOBAL ---
+    reporte_06e = {}
+    for jug in jugadores:
+        reporte_06e[jug] = {"puntos_sorpresas": 0, "puntos_decepciones": 0, "detalles_equipos": {}}
+        total_sorpresas = total_decepciones = 0
 
         for eq in todos_equipos:
             P = mapa_valores_caida[eq]["jugadores"][jug]
             M = mapa_valores_caida[eq]["media"]
             R = mapa_valores_caida[eq]["realidad"]
+            U = umbral_global # <--- Umbral Dinámico Global para todos igual
 
-            cumple_p_m = abs(P - M) >= umb_p_m
-            cumple_r_m = abs(R - M) >= umb_r_m
+            cumple_p_m = abs(P - M) >= U
+            cumple_r_m = abs(R - M) >= U
             cumple_r_p = abs(R - P) <= umb_r_p
 
-            tipo_premio = "Ninguno"
-            puntos_ganados = 0
+            tipo_premio, puntos_ganados = "Ninguno", 0
 
             if cumple_p_m and cumple_r_m and cumple_r_p:
                 if R > M and P > M:
-                    tipo_premio = "Sorpresa"
-                    puntos_ganados = pts_sorpresa
+                    tipo_premio, puntos_ganados = "Sorpresa", pts_sorpresa
                     total_sorpresas += puntos_ganados
                 elif R < M and P < M:
-                    tipo_premio = "Decepción"
-                    puntos_ganados = pts_decepcion
+                    tipo_premio, puntos_ganados = "Decepción", pts_decepcion
                     total_decepciones += puntos_ganados
 
             reporte_06e[jug]["detalles_equipos"][eq] = {
-                "pronostico": P,
-                "media_grupo": M,
-                "realidad": R,
-                "resultado_calculo": tipo_premio,
-                "puntos": puntos_ganados
+                "pronostico": P, "media_grupo": M, "realidad": R, "umbral_aplicado": U,
+                "resultado_calculo": tipo_premio, "puntos": puntos_ganados
             }
 
         reporte_06e[jug]["puntos_sorpresas"] = total_sorpresas
@@ -202,8 +153,7 @@ def ejecutar_06e_motor_sorpresas():
 
         print(f"👤 {jug.title()}: Sorpresas (+{total_sorpresas} pts) | Decepciones (+{total_decepciones} pts)")
 
-    ruta_salida = ROOT_DIR / "data" / "resultados" / "reporte_06e_sorpresas.json"
-    guardar_json(reporte_06e, ruta_salida)
+    guardar_json(reporte_06e, ROOT_DIR / "data" / "resultados" / "reporte_06e_sorpresas.json")
     print(f"\n✅ Informe 06e guardado con éxito.")
 
 if __name__ == "__main__":

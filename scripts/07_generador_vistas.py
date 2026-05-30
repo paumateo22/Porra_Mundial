@@ -93,18 +93,15 @@ def limpiar_nombre_archivo(nombre):
 # =====================================================================
 # RENDERIZADOR DE IMÁGENES MATPLOTLIB (DASHBOARD SORPRESAS)
 # =====================================================================
-def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
-    """Dibuja un gauge horizontal con las zonas válidas altamente visibles."""
+def generar_grafico_sd_png(ruta_salida, equipo, P, M, R, U):
+    """Dibuja un gauge horizontal con las zonas válidas altamente visibles, usando el umbral dinámico global."""
     if not MATPLOTLIB_DISPONIBLE: return
     
     # Cast estricto para evitar que matplotlib use lógicas categóricas de strings
     P = int(P)
     M = float(M)
     R = int(R)
-    
-    # LEER LA CONFIGURACIÓN DINÁMICA
-    conf_sd = CONFIG.get("sorpresas_decepciones_config", {})
-    umb_p_m = float(conf_sd.get("distancia_minima_pronostico_media", 2.0))
+    U = float(U)
     
     fig, ax = plt.subplots(figsize=(6.5, 1.6), facecolor='white')
     ax.set_xlim(-0.5, 5.5)
@@ -120,9 +117,9 @@ def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
 
     ax.axhline(0, color='#9ca3af', linewidth=4, zorder=1)
 
-    # FRONTERAS DINÁMICAS BASADAS EN EL SETTINGS.JSON
-    frontera_decepcion = M - umb_p_m
-    frontera_sorpresa = M + umb_p_m
+    # FRONTERAS DINÁMICAS BASADAS EN EL UMBRAL (U)
+    frontera_decepcion = M - U
+    frontera_sorpresa = M + U
 
     if frontera_decepcion >= -0.5:
         ax.axvspan(-0.5, frontera_decepcion, color='#fca5a5', alpha=0.35, zorder=0)
@@ -153,7 +150,7 @@ def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
     plt.tight_layout(pad=0.2)
     plt.savefig(ruta_salida, dpi=120, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.close(fig)
-    
+
 def generar_readme_global():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
     if not ruta_csv.exists(): return False
@@ -420,7 +417,7 @@ def generar_readmes_personales():
             dir_graficos.mkdir(parents=True, exist_ok=True)
 
             md += "\n## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones\n"
-            md += "Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.\n\n"
+            md += "Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas (umbrales) se basan en la **varianza global** de todos los pronósticos, creando una regla de juego justa e idéntica para todas las selecciones.\n\n"
             
             md += "| Selección | Datos | Gráfico de Rendimiento | Estado |\n"
             md += "| :--- | :---: | :---: | :---: |\n"
@@ -429,21 +426,21 @@ def generar_readmes_personales():
                 P = datos_sd["pronostico"]
                 M = datos_sd["media_grupo"]
                 R = datos_sd["realidad"]
+                U = datos_sd.get("umbral_aplicado", 1.0)
                 puntos = datos_sd["puntos"]
                 resultado_txt = datos_sd["resultado_calculo"]
 
-                # Nombre de archivo sanitizado para evitar problemas de normalización de cadenas OS
                 nombre_archivo = limpiar_nombre_archivo(eq)
                 ruta_grafico = dir_graficos / nombre_archivo
                 
                 if MATPLOTLIB_DISPONIBLE:
-                    generar_grafico_sd_png(ruta_grafico, eq, P, M, R)
+                    generar_grafico_sd_png(ruta_grafico, eq, P, M, R, U)
 
                 if resultado_txt == "Sorpresa": estado_str = f"🟢 **+{puntos} Pts**<br>🔥 ¡Sorpresa!"
                 elif resultado_txt == "Decepción": estado_str = f"🔴 **+{puntos} Pts**<br>📉 ¡Decepción!"
                 else: estado_str = f"⚪ *Sin Premio*<br>({puntos} pts)"
 
-                valores_str = f"**Tú:** {P}<br>**Media:** {M}<br>**Real:** {R}"
+                valores_str = f"**Tú:** {P}<br>**Media:** {M}<br>**Real:** {R}<br>**Margen:** ±{U}"
 
                 md += f"| **{eq}** | {valores_str} | ![{eq}](estadisticas/graficos_sd/{nombre_archivo}) | {estado_str} |\n"
             
