@@ -5,54 +5,59 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisa
 ---
 
 ### 🏆 DIECISEISAVOS
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **República Checa** | **3** - **2** | **Suiza** | 🟢 República Checa |
-| **Ecuador** | **1** - **2** | **Corea del Sur** | 🟢 Corea del Sur |
-| **Países Bajos** | **0** - **2** | **Marruecos** | 🟢 Marruecos |
-| **Brasil** | **2** - **0** | **Suecia** | 🟢 Brasil |
-| **Francia** | **2** - **0** | **Irán** | 🟢 Francia |
-| **Alemania** | **2** - **0** | **Noruega** | 🟢 Alemania |
-| **México** | **1** - **3** | **Costa de Marfil** | 🟢 Costa de Marfil |
-| **Inglaterra** | **0** - **1** | **Senegal** | 🟢 Senegal |
-| **Estados Unidos** | **2** - **1** | **Japón** | 🟢 Estados Unidos |
-| **Bélgica** | **2** - **0** | **Arabia Saudita** | 🟢 Bélgica |
-| **Portugal** | **2** - **3** | **Ghana** | 🟢 Ghana |
-| **España** | **2** - **1** | **Austria** | 🟢 España |
-| **Canadá** | **2** - **1** | **Escocia** | 🟢 Canadá |
-| **Argentina** | **1** - **0** | **Uruguay** | 🟢 Argentina |
-| **Colombia** | **1** - **2** | **Croacia** | 🟢 Croacia |
-| **Paraguay** | **1** - **0** | **Egipto** | 🟢 Paraguay |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>República Checa</b> **3** - **2** <b>Suiza</b><br>🟢 Avanza: República Checa</td><td align='center'><b>República Checa</b> **2** - **3** <b>Suiza</b><br>🟢 Avanza: Suiza</td></tr>
+<tr><td align='center'><b>Ecuador</b> **1** - **2** <b>Corea del Sur</b><br>🟢 Avanza: Corea del Sur</td><td align='center'><b>Ecuador</b> **3** - **0** <b>Corea del Sur</b><br>🟢 Avanza: Ecuador</td></tr>
+<tr><td align='center'><b>Países Bajos</b> **0** - **2** <b>Marruecos</b><br>🟢 Avanza: Marruecos</td><td align='center'><b>Países Bajos</b> **2** - **3** <b>Marruecos</b><br>🟢 Avanza: Marruecos</td></tr>
+<tr><td align='center'><b>Brasil</b> **2** - **0** <b>Suecia</b><br>🟢 Avanza: Brasil</td><td align='center'><b>Brasil</b> **3** - **2** <b>Suecia</b><br>🟢 Avanza: Brasil</td></tr>
+<tr><td align='center'><b>Francia</b> **2** - **0** <b>Irán</b><br>🟢 Avanza: Francia</td><td align='center'><b>Francia</b> **1** - **0** <b>Irán</b><br>🟢 Avanza: Francia</td></tr>
+<tr><td align='center'><b>Alemania</b> **2** - **0** <b>Noruega</b><br>🟢 Avanza: Alemania</td><td align='center'><b>Alemania</b> **0** - **1** <b>Noruega</b><br>🟢 Avanza: Noruega</td></tr>
+<tr><td align='center'><b>México</b> **1** - **3** <b>Costa de Marfil</b><br>🟢 Avanza: Costa de Marfil</td><td align='center'><b>México</b> **3** - **1** <b>Costa de Marfil</b><br>🟢 Avanza: México</td></tr>
+<tr><td align='center'><b>Inglaterra</b> **0** - **1** <b>Senegal</b><br>🟢 Avanza: Senegal</td><td align='center'><b>Inglaterra</b> **3** - **2** <b>Senegal</b><br>🟢 Avanza: Inglaterra</td></tr>
+<tr><td align='center'><b>Estados Unidos</b> **2** - **1** <b>Japón</b><br>🟢 Avanza: Estados Unidos</td><td align='center'><b>Estados Unidos</b> **2** - **1** <b>Japón</b><br>🟢 Avanza: Estados Unidos</td></tr>
+<tr><td align='center'><b>Bélgica</b> **2** - **0** <b>Arabia Saudita</b><br>🟢 Avanza: Bélgica</td><td align='center'><b>Bélgica</b> **2** - **1** <b>Arabia Saudita</b><br>🟢 Avanza: Bélgica</td></tr>
+<tr><td align='center'><b>Portugal</b> **2** - **3** <b>Ghana</b><br>🟢 Avanza: Ghana</td><td align='center'><b>Portugal</b> **3** - **1** <b>Ghana</b><br>🟢 Avanza: Portugal</td></tr>
+<tr><td align='center'><b>España</b> **2** - **1** <b>Austria</b><br>🟢 Avanza: España</td><td align='center'><b>España</b> **2** - **1** <b>Austria</b><br>🟢 Avanza: España</td></tr>
+<tr><td align='center'><b>Canadá</b> **2** - **1** <b>Escocia</b><br>🟢 Avanza: Canadá</td><td align='center'><b>Canadá</b> **1** - **0** <b>Escocia</b><br>🟢 Avanza: Canadá</td></tr>
+<tr><td align='center'><b>Argentina</b> **1** - **0** <b>Uruguay</b><br>🟢 Avanza: Argentina</td><td align='center'><b>Argentina</b> **2** - **1** <b>Uruguay</b><br>🟢 Avanza: Argentina</td></tr>
+<tr><td align='center'><b>Colombia</b> **1** - **2** <b>Croacia</b><br>🟢 Avanza: Croacia</td><td align='center'><b>Colombia</b> **3** - **1** <b>Croacia</b><br>🟢 Avanza: Colombia</td></tr>
+<tr><td align='center'><b>Paraguay</b> **1** - **0** <b>Egipto</b><br>🟢 Avanza: Paraguay</td><td align='center'><b>Paraguay</b> **3** - **2** <b>Egipto</b><br>🟢 Avanza: Paraguay</td></tr>
+</table>
 
 ### 🏆 OCTAVOS
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **República Checa** | **2** - **0** | **Corea del Sur** | 🟢 República Checa |
-| **Marruecos** | **0** - **1** | **Brasil** | 🟢 Brasil |
-| **Francia** | **2** - **0** | **Alemania** | 🟢 Francia |
-| **Costa de Marfil** | **0** - **2** | **Senegal** | 🟢 Senegal |
-| **Estados Unidos** | **1** - **0** | **Bélgica** | 🟢 Estados Unidos |
-| **Ghana** | **1** - **2** | **España** | 🟢 España |
-| **Canadá** | **1** - **2** | **Argentina** | 🟢 Argentina |
-| **Croacia** | **0** - **1** | **Paraguay** | 🟢 Paraguay |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>República Checa</b> **2** - **0** <b>Corea del Sur</b><br>🟢 Avanza: República Checa</td><td align='center'><b>Ecuador</b> **2** - **3** <b>Francia</b><br>🟢 Avanza: Francia</td></tr>
+<tr><td align='center'><b>Marruecos</b> **0** - **1** <b>Brasil</b><br>🟢 Avanza: Brasil</td><td align='center'><b>Suiza</b> **1** - **2** <b>Marruecos</b><br>🟢 Avanza: Marruecos</td></tr>
+<tr><td align='center'><b>Francia</b> **2** - **0** <b>Alemania</b><br>🟢 Avanza: Francia</td><td align='center'><b>Brasil</b> **2** - **1** <b>Noruega</b><br>🟢 Avanza: Brasil</td></tr>
+<tr><td align='center'><b>Costa de Marfil</b> **0** - **2** <b>Senegal</b><br>🟢 Avanza: Senegal</td><td align='center'><b>México</b> **2** - **3** <b>Inglaterra</b><br>🟢 Avanza: Inglaterra</td></tr>
+<tr><td align='center'><b>Estados Unidos</b> **1** - **0** <b>Bélgica</b><br>🟢 Avanza: Estados Unidos</td><td align='center'><b>Portugal</b> **2** - **3** <b>España</b><br>🟢 Avanza: España</td></tr>
+<tr><td align='center'><b>Ghana</b> **1** - **2** <b>España</b><br>🟢 Avanza: España</td><td align='center'><b>Estados Unidos</b> **1** - **3** <b>Bélgica</b><br>🟢 Avanza: Bélgica</td></tr>
+<tr><td align='center'><b>Canadá</b> **1** - **2** <b>Argentina</b><br>🟢 Avanza: Argentina</td><td align='center'><b>Argentina</b> **2** - **1** <b>Paraguay</b><br>🟢 Avanza: Argentina</td></tr>
+<tr><td align='center'><b>Croacia</b> **0** - **1** <b>Paraguay</b><br>🟢 Avanza: Paraguay</td><td align='center'><b>Canadá</b> **0** - **1** <b>Colombia</b><br>🟢 Avanza: Colombia</td></tr>
+</table>
 
 ### 🏆 CUARTOS
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **República Checa** | **0** - **3** | **Brasil** | 🟢 Brasil |
-| **Francia** | **0** - **3** | **Senegal** | 🟢 Senegal |
-| **Estados Unidos** | **2** - **1** | **España** | 🟢 Estados Unidos |
-| **Argentina** | **1** - **2** | **Paraguay** | 🟢 Paraguay |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>República Checa</b> **0** - **3** <b>Brasil</b><br>🟢 Avanza: Brasil</td><td align='center'><b>Francia</b> **2** - **1** <b>Marruecos</b><br>🟢 Avanza: Francia</td></tr>
+<tr><td align='center'><b>Francia</b> **0** - **3** <b>Senegal</b><br>🟢 Avanza: Senegal</td><td align='center'><b>España</b> **3** - **2** <b>Bélgica</b><br>🟢 Avanza: España</td></tr>
+<tr><td align='center'><b>Estados Unidos</b> **2** - **1** <b>España</b><br>🟢 Avanza: Estados Unidos</td><td align='center'><b>Brasil</b> **2** - **3** <b>Inglaterra</b><br>🟢 Avanza: Inglaterra</td></tr>
+<tr><td align='center'><b>Argentina</b> **1** - **2** <b>Paraguay</b><br>🟢 Avanza: Paraguay</td><td align='center'><b>Argentina</b> **1** - **2** <b>Colombia</b><br>🟢 Avanza: Colombia</td></tr>
+</table>
 
 ### 🏆 SEMIFINALES
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **Brasil** | **0** - **1** | **Senegal** | 🟢 Senegal |
-| **Estados Unidos** | **2** - **3** | **Paraguay** | 🟢 Paraguay |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>Brasil</b> **0** - **1** <b>Senegal</b><br>🟢 Avanza: Senegal</td><td align='center'><b>Francia</b> **1** - **3** <b>España</b><br>🟢 Avanza: España</td></tr>
+<tr><td align='center'><b>Estados Unidos</b> **2** - **3** <b>Paraguay</b><br>🟢 Avanza: Paraguay</td><td align='center'><b>Inglaterra</b> **2** - **1** <b>Colombia</b><br>🟢 Avanza: Inglaterra</td></tr>
+</table>
 
 ### 🏆 FINALES
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **Brasil** | **1** - **2** | **Estados Unidos** | 🟢 Estados Unidos |
-| **Senegal** | **2** - **0** | **Paraguay** | 🟢 Senegal |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>🥉 Brasil</b> **1** - **2** <b>Estados Unidos</b><br>🟢 Avanza: Estados Unidos</td><td align='center'><b>🥉 Francia</b> **2** - **0** <b>Colombia</b><br>🟢 Avanza: Francia</td></tr>
+<tr><td align='center'><b>🏆 Senegal</b> **2** - **0** <b>Paraguay</b><br>🟢 Avanza: Senegal</td><td align='center'><b>🏆 España</b> **2** - **1** <b>Inglaterra</b><br>🟢 Avanza: España</td></tr>
+</table>
 

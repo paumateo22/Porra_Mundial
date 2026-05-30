@@ -5,22 +5,25 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Cuartos.
 ---
 
 ### 🏆 CUARTOS
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **Francia** | **2** - **1** | **Marruecos** | 🟢 Francia |
-| **España** | **1** - **2** | **Bélgica** | 🟢 Bélgica |
-| **Brasil** | **0** - **1** | **Inglaterra** | 🟢 Inglaterra |
-| **Argentina** | **0** - **2** | **Colombia** | 🟢 Colombia |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>Francia</b> **2** - **1** <b>Marruecos</b><br>🟢 Avanza: Francia</td><td align='center'><b>Francia</b> **2** - **1** <b>Marruecos</b><br>🟢 Avanza: Francia</td></tr>
+<tr><td align='center'><b>España</b> **1** - **2** <b>Bélgica</b><br>🟢 Avanza: Bélgica</td><td align='center'><b>España</b> **3** - **2** <b>Bélgica</b><br>🟢 Avanza: España</td></tr>
+<tr><td align='center'><b>Brasil</b> **0** - **1** <b>Inglaterra</b><br>🟢 Avanza: Inglaterra</td><td align='center'><b>Brasil</b> **2** - **3** <b>Inglaterra</b><br>🟢 Avanza: Inglaterra</td></tr>
+<tr><td align='center'><b>Argentina</b> **0** - **2** <b>Colombia</b><br>🟢 Avanza: Colombia</td><td align='center'><b>Argentina</b> **1** - **2** <b>Colombia</b><br>🟢 Avanza: Colombia</td></tr>
+</table>
 
 ### 🏆 SEMIFINALES
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **Francia** | **1** - **0** | **Bélgica** | 🟢 Francia |
-| **Inglaterra** | **1** - **0** | **Colombia** | 🟢 Inglaterra |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>Francia</b> **1** - **0** <b>Bélgica</b><br>🟢 Avanza: Francia</td><td align='center'><b>Francia</b> **1** - **3** <b>España</b><br>🟢 Avanza: España</td></tr>
+<tr><td align='center'><b>Inglaterra</b> **1** - **0** <b>Colombia</b><br>🟢 Avanza: Inglaterra</td><td align='center'><b>Inglaterra</b> **2** - **1** <b>Colombia</b><br>🟢 Avanza: Inglaterra</td></tr>
+</table>
 
 ### 🏆 FINALES
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **Bélgica** | **1** - **0** | **Colombia** | 🟢 Bélgica |
-| **Francia** | **1** - **2** | **Inglaterra** | 🟢 Inglaterra |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>🥉 Bélgica</b> **1** - **0** <b>Colombia</b><br>🟢 Avanza: Bélgica</td><td align='center'><b>🥉 Francia</b> **2** - **0** <b>Colombia</b><br>🟢 Avanza: Francia</td></tr>
+<tr><td align='center'><b>🏆 Francia</b> **1** - **2** <b>Inglaterra</b><br>🟢 Avanza: Inglaterra</td><td align='center'><b>🏆 España</b> **2** - **1** <b>Inglaterra</b><br>🟢 Avanza: España</td></tr>
+</table>
 

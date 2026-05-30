@@ -5,14 +5,16 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Semifinale
 ---
 
 ### 🏆 SEMIFINALES
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **Francia** | **2** - **0** | **España** | 🟢 Francia |
-| **Inglaterra** | **0** - **1** | **Colombia** | 🟢 Colombia |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>Francia</b> **2** - **0** <b>España</b><br>🟢 Avanza: Francia</td><td align='center'><b>Francia</b> **1** - **3** <b>España</b><br>🟢 Avanza: España</td></tr>
+<tr><td align='center'><b>Inglaterra</b> **0** - **1** <b>Colombia</b><br>🟢 Avanza: Colombia</td><td align='center'><b>Inglaterra</b> **2** - **1** <b>Colombia</b><br>🟢 Avanza: Inglaterra</td></tr>
+</table>
 
 ### 🏆 FINALES
-| Local | Resultado | Visitante | Avanza |
-| :--- | :---: | :--- | :---: |
-| **España** | **2** - **1** | **Inglaterra** | 🟢 España |
-| **Francia** | **1** - **0** | **Colombia** | 🟢 Francia |
+<table width='100%'>
+<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>
+<tr><td align='center'><b>🥉 España</b> **2** - **1** <b>Inglaterra</b><br>🟢 Avanza: España</td><td align='center'><b>🥉 Francia</b> **2** - **0** <b>Colombia</b><br>🟢 Avanza: Francia</td></tr>
+<tr><td align='center'><b>🏆 Francia</b> **1** - **0** <b>Colombia</b><br>🟢 Avanza: Francia</td><td align='center'><b>🏆 España</b> **2** - **1** <b>Inglaterra</b><br>🟢 Avanza: España</td></tr>
+</table>
 

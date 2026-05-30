@@ -37,7 +37,56 @@ def calcular_clasificacion_grupo(partidos_grupo):
 
     return sorted(tabla.items(), key=lambda x: (x[1]["pts"], x[1]["dif"], x[1]["gf"]), reverse=True)
 
-def generar_readme_grupos(jugador_dir, nombre, dict_reales):
+# =====================================================================
+# GENERADOR DE TABLAS LADO A LADO PARA ELIMINATORIAS Y GRUPOS
+# =====================================================================
+def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase):
+    html = "<table width='100%'>\n<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>\n"
+    for i, p_pred in enumerate(partidos_pred):
+        etiqueta = ""
+        if sub_fase == "finales":
+            if i == 0 and len(partidos_pred) > 1: etiqueta = "🥉 "
+            elif i == len(partidos_pred) - 1: etiqueta = "🏆 "
+        elif sub_fase == "tercer_puesto": etiqueta = "🥉 "
+        elif sub_fase == "final": etiqueta = "🏆 "
+
+        loc_pred = f"{etiqueta}{p_pred.get('local', '-')}"
+        vis_pred = p_pred.get("visitante", "-")
+        res_pred = formatear_resultado(p_pred)
+        avanza_pred = p_pred.get("pasa", p_pred.get("ganador", "-"))
+
+        p_real = reales_fase[i] if i < len(reales_fase) else {}
+        if p_real and p_real.get("estado") == "finished":
+            loc_real = f"{etiqueta}{p_real.get('local', '-')}"
+            vis_real = p_real.get("visitante", "-")
+            res_real = formatear_resultado(p_real)
+            
+            gl, gv = int(p_real.get("goles_local", 0)), int(p_real.get("goles_visitante", 0))
+            if gl > gv: avanza_real = p_real.get("local", "-")
+            elif gv > gl: avanza_real = p_real.get("visitante", "-")
+            else:
+                pl, pv = int(p_real.get("penaltis_local", 0)), int(p_real.get("penaltis_visitante", 0))
+                avanza_real = p_real.get("local", "-") if pl > pv else p_real.get("visitante", "-")
+        else:
+            loc_real_name = p_real.get("local", "TBD") if "local" in p_real else f"Eq. {p_real.get('id_partido','')}A"
+            vis_real_name = p_real.get("visitante", "TBD") if "visitante" in p_real else f"Eq. {p_real.get('id_partido','')}B"
+            loc_real, vis_real = f"{etiqueta}{loc_real_name}", vis_real_name
+            res_real = "⏳ Pendiente"
+            avanza_real = "-"
+
+        html += f"<tr><td align='center'><b>{loc_pred}</b> {res_pred} <b>{vis_pred}</b><br>🟢 Avanza: {avanza_pred}</td><td align='center'><b>{loc_real}</b> {res_real} <b>{vis_real}</b><br>🟢 Avanza: {avanza_real}</td></tr>\n"
+    html += "</table>\n"
+    return html
+
+def obtener_reales_fase(realidad_dict, sub_fase):
+    if sub_fase in ["finales", "final", "tercer_puesto"]:
+        reales = []
+        reales.extend(realidad_dict.get("eliminatorias", {}).get("tercer_puesto", []))
+        reales.extend(realidad_dict.get("eliminatorias", {}).get("final", []))
+        return reales
+    return realidad_dict.get("eliminatorias", {}).get(sub_fase, [])
+
+def generar_readme_grupos(jugador_dir, nombre, dict_reales, realidad_dict):
     nombre_id = jugador_dir.name
     ruta_json = jugador_dir / "pronosticos" / "grupos" / f"{nombre_id}_base.json"
     if not ruta_json.exists(): return
@@ -50,8 +99,8 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales):
 
     md = f"# 🌍 Pronóstico Inicial Completo - {nombre}\n\nAquí puedes consultar las tablas y el camino exacto hacia la final que predijo el jugador antes de empezar el torneo.\n\n---\n\n"
 
-    # 1. TABLAS DE GRUPOS ORDENADAS (A -> L)
-    for grupo, partidos in sorted(fase_grupos.items()):
+    # 1. TABLAS DE GRUPOS ORDENADAS ESTRICTAMENTE (A -> L)
+    for grupo, partidos in sorted(fase_grupos.items(), key=lambda x: x[0]):
         nombre_grupo = grupo.replace('_', ' ').upper()
         md += f"## 📊 {nombre_grupo}\n"
         md += "| Pos | Equipo | PJ | PG | PE | PP | GF | GC | DIF | PTS | Pase |\n"
@@ -63,19 +112,25 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales):
             md += f"| {pos_str} | **{eq}** | {stats['pj']} | {stats['pg']} | {stats['pe']} | {stats['pp']} | {stats['gf']} | {stats['gc']} | {stats['dif']} | **{stats['pts']}** | {pasa} |\n"
         
         # TABLA LADO A LADO CON HTML (Pronóstico vs Real)
-        md += "\n<details><summary><b>Ver Partidos del Grupo</b></summary><br>\n\n"
+        md += "\n<details><summary><b>Ver Partidos del Grupo (Tu Pronóstico vs Real)</b></summary><br>\n\n"
         md += "<table width='100%'>\n<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>\n"
         for p in partidos:
             loc, vis = p.get('local', '-'), p.get('visitante', '-')
             res_pred = formatear_resultado(p)
             
             p_real = dict_reales.get(f"{loc}_vs_{vis}", {})
-            res_real = formatear_resultado(p_real) if p_real and p_real.get("estado") == "finished" else "⏳ Pendiente"
+            if not p_real: p_real = dict_reales.get(f"{vis}_vs_{loc}", {}) # Por si SofaScore invierte localías
+
+            if p_real and p_real.get("estado") == "finished":
+                loc_real, vis_real = p_real.get("local", "-"), p_real.get("visitante", "-")
+                res_real = formatear_resultado(p_real)
+            else:
+                loc_real, vis_real, res_real = loc, vis, "⏳ Pendiente"
                 
-            md += f"<tr><td align='center'><b>{loc}</b> {res_pred} <b>{vis}</b></td><td align='center'><b>{loc}</b> {res_real} <b>{vis}</b></td></tr>\n"
+            md += f"<tr><td align='center'><b>{loc}</b> {res_pred} <b>{vis}</b></td><td align='center'><b>{loc_real}</b> {res_real} <b>{vis_real}</b></td></tr>\n"
         md += "</table>\n</details>\n\n---\n"
 
-    # 2. EL ÁRBOL HASTA LA FINAL (Si está en el JSON de grupos)
+    # 2. EL ÁRBOL HASTA LA FINAL (Si está en el JSON de grupos) LADO A LADO
     eliminatorias = datos.get("eliminatorias", {})
     if eliminatorias:
         md += "\n## ⚔️ Camino a la Final (Pronóstico Original)\n\n"
@@ -85,21 +140,13 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales):
             partidos_sub = eliminatorias.get(sub_fase, [])
             if partidos_sub:
                 md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
-                md += "| Local | Resultado | Visitante | Avanza |\n"
-                md += "| :--- | :---: | :--- | :---: |\n"
-                for i, p in enumerate(partidos_sub):
-                    etiqueta = ""
-                    if sub_fase in ["finales", "final", "tercer_puesto"]:
-                        etiqueta = "🥉 " if (i == 0 and len(partidos_sub) > 1) or sub_fase == "tercer_puesto" else "🏆 "
-                    
-                    res = formatear_resultado(p)
-                    avanza = p.get("pasa", p.get("ganador", "-"))
-                    md += f"| {etiqueta}**{p.get('local', '-')}** | {res} | **{p.get('visitante', '-')}** | 🟢 {avanza} |\n"
+                reales_fase = obtener_reales_fase(realidad_dict, sub_fase)
+                md += generar_html_eliminatorias(partidos_sub, reales_fase, sub_fase)
                 md += "\n"
 
     with open(jugador_dir / "pronosticos" / "grupos" / "README.md", 'w', encoding='utf-8') as f: f.write(md)
 
-def generar_readme_eliminatorias(jugador_dir, nombre):
+def generar_readme_eliminatorias(jugador_dir, nombre, realidad_dict):
     fases = ["dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
     for fase in fases:
         ruta_carpeta = jugador_dir / "pronosticos" / "eliminatorias" / fase
@@ -118,17 +165,8 @@ def generar_readme_eliminatorias(jugador_dir, nombre):
             if sub_fase in predicciones:
                 partidos = predicciones[sub_fase]
                 md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
-                md += "| Local | Resultado | Visitante | Avanza |\n"
-                md += "| :--- | :---: | :--- | :---: |\n"
-                
-                for i, p in enumerate(partidos):
-                    etiqueta = ""
-                    if sub_fase in ["finales", "final", "tercer_puesto"]:
-                        etiqueta = "🥉 " if (i == 0 and len(partidos) > 1) or sub_fase == "tercer_puesto" else "🏆 "
-                        
-                    res = formatear_resultado(p)
-                    avanza = p.get("pasa", p.get("ganador", "-"))
-                    md += f"| {etiqueta}**{p.get('local', '-')}** | {res} | **{p.get('visitante', '-')}** | 🟢 {avanza} |\n"
+                reales_fase = obtener_reales_fase(realidad_dict, sub_fase)
+                md += generar_html_eliminatorias(partidos, reales_fase, sub_fase)
                 md += "\n"
 
         with open(ruta_carpeta / "README.md", 'w', encoding='utf-8') as f: f.write(md)
@@ -149,8 +187,8 @@ def generar_readmes_pronosticos():
     
     for jugador_dir in jugadores:
         nombre = jugador_dir.name.replace('_', ' ').title()
-        generar_readme_grupos(jugador_dir, nombre, dict_reales)
-        generar_readme_eliminatorias(jugador_dir, nombre)
+        generar_readme_grupos(jugador_dir, nombre, dict_reales, realidad_dict)
+        generar_readme_eliminatorias(jugador_dir, nombre, realidad_dict)
         
     print("✅ Vistas de pronósticos internos generadas con éxito.")
 

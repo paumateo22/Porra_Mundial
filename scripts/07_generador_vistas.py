@@ -45,7 +45,7 @@ def calcular_clasificacion_grupos(fase_grupos):
     return posiciones
 
 # =====================================================================
-# RASTREADOR MATEMÁTICO EXACTO (COPIA DEL 06A)
+# RASTREADOR EXACTO (Para el desglose del multiplicador)
 # =====================================================================
 def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
     fases_cronologicas = ["grupos", "dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
@@ -64,7 +64,7 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
                 partidos_objetivo = base.get("eliminatorias", {}).get(fase_busqueda_infobae, [])
                 for p in partidos_objetivo:
                     if p.get("local") == equipo or p.get("visitante") == equipo:
-                        rastros.append(f"[Grupos](pronosticos/grupos/)")
+                        rastros.append(("Grupos", "pronosticos/grupos/"))
                         break
         else:
             ruta_ocr = jugador_dir / "pronosticos" / "eliminatorias" / fase_origen / f"{fase_origen}.json"
@@ -73,11 +73,11 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
                 partidos_objetivo = ocr_data.get("predicciones", {}).get(fase_busqueda_ocr, [])
                 for p in partidos_objetivo:
                     if p.get("local") == equipo or p.get("visitante") == equipo:
-                        nombre_link = "1/16" if fase_origen == "dieciseisavos" else ("1/8" if fase_origen == "octavos" else ("1/4" if fase_origen == "cuartos" else "Semis"))
-                        rastros.append(f"[{nombre_link}](pronosticos/eliminatorias/{fase_origen}/)")
+                        nombres_cortos = {"dieciseisavos": "1/16", "octavos": "1/8", "cuartos": "1/4", "semifinales": "Semis"}
+                        nombre_link = nombres_cortos.get(fase_origen, fase_origen)
+                        rastros.append((nombre_link, f"pronosticos/eliminatorias/{fase_origen}/"))
                         break
     return rastros
-# =====================================================================
 
 def generar_readme_global():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
@@ -151,8 +151,7 @@ def generar_readmes_personales():
     jornadas_dict = cargar_json(jornadas_ruta) or {}
     jornadas_keys_list = list(jornadas_dict.keys())
 
-    ruta_realidad = ROOT_DIR / "data" / "resultados" / "realidad_oficial.json"
-    realidad_dict = cargar_json(ruta_realidad) or {}
+    realidad_dict = cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
     dict_reales = {}
     for grupo, partidos in realidad_dict.get("fase_grupos", {}).items():
         for p in partidos: dict_reales[f"{p['local']}_vs_{p['visitante']}"] = p
@@ -224,7 +223,7 @@ def generar_readmes_personales():
                 loc_real = p_real.get("local", "TBD")
                 vis_real = p_real.get("visitante", "TBD")
                 
-                # Gestión Final vs Tercer Puesto
+                # Gestión de iconos para Finales
                 if p_real.get("id_partido") == 103: loc_real = f"🥉 {loc_real}"
                 elif p_real.get("id_partido") == 104: loc_real = f"🏆 {loc_real}"
                 elif loc_real == "TBD" and "id_partido" in p: loc_real, vis_real = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
@@ -232,8 +231,13 @@ def generar_readmes_personales():
                 if p_pred:
                     loc_pred, vis_pred = p_pred.get("local", ""), p_pred.get("visitante", "")
                     gl_pred, gv_pred = p_pred.get("goles_local", "-"), p_pred.get("goles_visitante", "-")
-                    texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*" if (loc_pred.replace('🥉 ','').replace('🏆 ','') != p_real.get("local") or vis_pred != vis_real) else f"**{gl_pred} - {gv_pred}**"
-                else: texto_pred = "-"
+                    # Quitamos iconos para comparar limpiamente
+                    if (loc_pred.replace('🥉 ','').replace('🏆 ','') != p_real.get("local", "") or vis_pred != p_real.get("visitante", "")):
+                        texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*"
+                    else:
+                        texto_pred = f"**{gl_pred} - {gv_pred}**"
+                else: 
+                    texto_pred = "-"
 
                 estado = p_real.get("estado", "notstarted")
                 if estado == "finished":
@@ -265,11 +269,13 @@ def generar_readmes_personales():
                         
                         detalles = []
                         if rastros_loc:
-                            links_loc = "; ".join(rastros_loc)
-                            detalles.append(f"- {eq_local_limpio} +{len(rastros_loc)*inc}: {links_loc}")
+                            total_inc = len(rastros_loc) * inc_racha
+                            links_loc = "; ".join([f"[{r[0]}]({r[1]})" for r in rastros_loc])
+                            detalles.append(f"- **{eq_local_limpio}** +{total_inc}: {links_loc}")
                         if rastros_vis:
-                            links_vis = "; ".join(rastros_vis)
-                            detalles.append(f"- {eq_vis_limpio} +{len(rastros_vis)*inc}: {links_vis}")
+                            total_inc = len(rastros_vis) * inc_racha
+                            links_vis = "; ".join([f"[{r[0]}]({r[1]})" for r in rastros_vis])
+                            detalles.append(f"- **{eq_vis_limpio}** +{total_inc}: {links_vis}")
                         
                         if detalles: texto_origen = "<br>".join(detalles)
                     

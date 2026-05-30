@@ -1,10 +1,7 @@
 # 👤 Perfil de Jugador: Generico 3
 ### Posición Actual: **1º** | Puntos Totales: **243.0**
-
 ---
-
 ## 📅 Historial Cronológico de Partidos
-
 Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 J1.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -186,14 +183,14 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 DIECISEISAVOS.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **República Checa** vs **Suiza** | **0 - 1** | **2 - 3** | ✅ | --- | x2.0 | **República Checa**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Suiza**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
-| **Ecuador** vs **Corea del Sur** | **4 - 3** | **3 - 0** | ✅ | --- | x2.0 | **Ecuador**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Corea del Sur**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
-| **Países Bajos** vs **Marruecos** | **2 - 1** | **2 - 3** | ❌ | --- | x2.0 | **Países Bajos**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Marruecos**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Brasil** vs **Suecia** | **2 - 1** | **3 - 2** | ✅ | --- | x2.0 | **Brasil**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Suecia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
-| **Francia** vs **Irán** | **0 - 1** | **1 - 0** | ❌ | --- | x1.5 | **Francia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Irán**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Alemania** vs **Noruega** | **3 - 1** | **0 - 1** | ❌ | --- | x2.0 | **Alemania**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Noruega**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **México** vs **Costa de Marfil** | **2 - 0** | **3 - 1** | ✅ | --- | x1.5 | **Costa de Marfil**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **1.5** |
-| **Inglaterra** vs **Senegal** | **1 - 2** | **3 - 2** | ❌ | --- | x2.0 | **Inglaterra**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Senegal**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
+| **República Checa** vs **Suiza** | **0 - 1** | **2 - 3** | ✅ | --- | x2.0 | - **República Checa** +0.5: [Grupos](pronosticos/grupos/)<br>- **Suiza** +0.5: [Grupos](pronosticos/grupos/) | **2.0** |
+| **Ecuador** vs **Corea del Sur** | **4 - 3** | **3 - 0** | ✅ | --- | x2.0 | - **Ecuador** +0.5: [Grupos](pronosticos/grupos/)<br>- **Corea del Sur** +0.5: [Grupos](pronosticos/grupos/) | **2.0** |
+| **Países Bajos** vs **Marruecos** | **2 - 1** | **2 - 3** | ❌ | --- | x2.0 | - **Países Bajos** +0.5: [Grupos](pronosticos/grupos/)<br>- **Marruecos** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **Brasil** vs **Suecia** | **2 - 1** | **3 - 2** | ✅ | --- | x2.0 | - **Brasil** +0.5: [Grupos](pronosticos/grupos/)<br>- **Suecia** +0.5: [Grupos](pronosticos/grupos/) | **2.0** |
+| **Francia** vs **Irán** | **0 - 1** | **1 - 0** | ❌ | --- | x1.5 | - **Francia** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **Alemania** vs **Noruega** | **3 - 1** | **0 - 1** | ❌ | --- | x2.0 | - **Alemania** +0.5: [Grupos](pronosticos/grupos/)<br>- **Noruega** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **México** vs **Costa de Marfil** | **2 - 0** | **3 - 1** | ✅ | --- | x1.5 | - **Costa de Marfil** +0.5: [Grupos](pronosticos/grupos/) | **1.5** |
+| **Inglaterra** vs **Senegal** | **1 - 2** | **3 - 2** | ❌ | --- | x2.0 | - **Inglaterra** +0.5: [Grupos](pronosticos/grupos/)<br>- **Senegal** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
 
 > **Resumen de la DIECISEISAVOS.1:** **0/4** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
 > **Puntos sumados esta jornada:** 7.5 pts | **TOTAL ACUMULADO:** 174.5 pts
@@ -201,14 +198,14 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 DIECISEISAVOS.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Estados Unidos** vs **Japón** | **1 - 2** | **2 - 1** | ❌ | --- | x1.5 | **Japón**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Bélgica** vs **Arabia Saudita** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x1.5 | **Bélgica**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Arabia Saudita**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **6.0** |
-| **Portugal** vs **Ghana** | **3 - 1** | **3 - 1** | ✅ | 🎯 | x2.0 | **Portugal**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Ghana**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **8.0** |
-| **España** vs **Austria** | **3 - 2** | **2 - 1** | ✅ | --- | x2.0 | **España**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Austria**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
-| **Canadá** vs **Escocia** | **1 - 2** | **1 - 0** | ❌ | --- | x2.0 | **Canadá**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Escocia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Argentina** vs **Uruguay** | **1 - 0** | **2 - 1** | ✅ | --- | x2.0 | **Argentina**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Uruguay**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
-| **Colombia** vs **Croacia** | **0 - 1** | **3 - 1** | ❌ | --- | x2.0 | **Colombia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Croacia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Paraguay** vs **Egipto** | **2 - 1** | **3 - 2** | ✅ | --- | x2.0 | **Paraguay**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Egipto**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
+| **Estados Unidos** vs **Japón** | **1 - 2** | **2 - 1** | ❌ | --- | x1.5 | - **Japón** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **Bélgica** vs **Arabia Saudita** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x1.5 | - **Bélgica** +0.5: [Grupos](pronosticos/grupos/) | **6.0** |
+| **Portugal** vs **Ghana** | **3 - 1** | **3 - 1** | ✅ | 🎯 | x2.0 | - **Portugal** +0.5: [Grupos](pronosticos/grupos/)<br>- **Ghana** +0.5: [Grupos](pronosticos/grupos/) | **8.0** |
+| **España** vs **Austria** | **3 - 2** | **2 - 1** | ✅ | --- | x2.0 | - **España** +0.5: [Grupos](pronosticos/grupos/)<br>- **Austria** +0.5: [Grupos](pronosticos/grupos/) | **2.0** |
+| **Canadá** vs **Escocia** | **1 - 2** | **1 - 0** | ❌ | --- | x2.0 | - **Canadá** +0.5: [Grupos](pronosticos/grupos/)<br>- **Escocia** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **Argentina** vs **Uruguay** | **1 - 0** | **2 - 1** | ✅ | --- | x2.0 | - **Argentina** +0.5: [Grupos](pronosticos/grupos/)<br>- **Uruguay** +0.5: [Grupos](pronosticos/grupos/) | **2.0** |
+| **Colombia** vs **Croacia** | **0 - 1** | **3 - 1** | ❌ | --- | x2.0 | - **Colombia** +0.5: [Grupos](pronosticos/grupos/)<br>- **Croacia** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **Paraguay** vs **Egipto** | **2 - 1** | **3 - 2** | ✅ | --- | x2.0 | - **Paraguay** +0.5: [Grupos](pronosticos/grupos/)<br>- **Egipto** +0.5: [Grupos](pronosticos/grupos/) | **2.0** |
 
 > **Resumen de la DIECISEISAVOS.2:** **2/5** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: 🔴 **Perdedor** (-2 pts)
 > **Puntos sumados esta jornada:** 18.0 pts | **TOTAL ACUMULADO:** 192.5 pts
@@ -216,14 +213,14 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 OCTAVOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Ecuador** vs **Francia** | **2 - 0** | **2 - 3** | ❌ | --- | x2.5 | **Ecuador**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Francia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Suiza** vs **Marruecos** | **1 - 2** | **1 - 2** | ✅ | 🎯 | x2.5 | **Suiza**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Marruecos**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **10.0** |
-| **Brasil** vs **Noruega** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | **Brasil**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Noruega**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **10.0** |
-| **México** vs **Inglaterra** | **2 - 0** | **2 - 3** | ❌ | --- | x2.0 | **México**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json))<br>**Inglaterra**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Portugal** vs **España** | **1 - 0** | **2 - 3** | ❌ | --- | x3.0 | **Portugal**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**España**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **Estados Unidos** vs **Bélgica** | **1 - 2** | **1 - 3** | ✅ | --- | x2.0 | **Bélgica**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
-| **Argentina** vs **Paraguay** | **1 - 0** | **2 - 1** | ✅ | --- | x3.0 | **Argentina**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Paraguay**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **3.0** |
-| **Canadá** vs **Colombia** | **1 - 2** | **0 - 1** | ✅ | --- | x1.5 | **Canadá**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Colombia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **1.5** |
+| **Ecuador** vs **Francia** | **2 - 0** | **2 - 3** | ❌ | --- | x2.5 | - **Ecuador** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/)<br>- **Francia** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **Suiza** vs **Marruecos** | **1 - 2** | **1 - 2** | ✅ | 🎯 | x2.5 | - **Suiza** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/)<br>- **Marruecos** +0.5: [Grupos](pronosticos/grupos/) | **10.0** |
+| **Brasil** vs **Noruega** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | - **Brasil** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/)<br>- **Noruega** +0.5: [Grupos](pronosticos/grupos/) | **10.0** |
+| **México** vs **Inglaterra** | **2 - 0** | **2 - 3** | ❌ | --- | x2.0 | - **México** +0.5: [1/16](pronosticos/eliminatorias/dieciseisavos/)<br>- **Inglaterra** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
+| **Portugal** vs **España** | **1 - 0** | **2 - 3** | ❌ | --- | x3.0 | - **Portugal** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/)<br>- **España** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/) | **0.0** |
+| **Estados Unidos** vs **Bélgica** | **1 - 2** | **1 - 3** | ✅ | --- | x2.0 | - **Bélgica** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/) | **2.0** |
+| **Argentina** vs **Paraguay** | **1 - 0** | **2 - 1** | ✅ | --- | x3.0 | - **Argentina** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/)<br>- **Paraguay** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/) | **3.0** |
+| **Canadá** vs **Colombia** | **1 - 2** | **0 - 1** | ✅ | --- | x1.5 | - **Colombia** +0.5: [Grupos](pronosticos/grupos/) | **1.5** |
 
 > **Resumen de la OCTAVOS:** **2/5** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
 > **Puntos sumados esta jornada:** 28.5 pts | **TOTAL ACUMULADO:** 221.0 pts
@@ -231,10 +228,10 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 CUARTOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Francia** vs **Marruecos** | **1 - 2** | **2 - 1** | ❌ | --- | x2.5 | **Francia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Marruecos**: +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **España** vs **Bélgica** | **3 - 0** | **3 - 2** | ✅ | --- | x2.5 | **España**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Bélgica**: +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.5** |
-| **Brasil** vs **Inglaterra** | **1 - 2** | **2 - 3** | ✅ | --- | x2.5 | **Brasil**: +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Inglaterra**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.5** |
-| **Argentina** vs **Colombia** | **0 - 2** | **1 - 2** | ✅ | --- | x3.0 | **Argentina**: +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Colombia**: +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **3.0** |
+| **Francia** vs **Marruecos** | **1 - 2** | **2 - 1** | ❌ | --- | x2.5 | - **Francia** +0.5: [Grupos](pronosticos/grupos/)<br>- **Marruecos** +1.0: [Grupos](pronosticos/grupos/); [1/8](pronosticos/eliminatorias/octavos/) | **0.0** |
+| **España** vs **Bélgica** | **3 - 0** | **3 - 2** | ✅ | --- | x2.5 | - **España** +0.5: [Grupos](pronosticos/grupos/)<br>- **Bélgica** +1.0: [1/16](pronosticos/eliminatorias/dieciseisavos/); [1/8](pronosticos/eliminatorias/octavos/) | **2.5** |
+| **Brasil** vs **Inglaterra** | **1 - 2** | **2 - 3** | ✅ | --- | x2.5 | - **Brasil** +1.0: [1/16](pronosticos/eliminatorias/dieciseisavos/); [1/8](pronosticos/eliminatorias/octavos/)<br>- **Inglaterra** +0.5: [Grupos](pronosticos/grupos/) | **2.5** |
+| **Argentina** vs **Colombia** | **0 - 2** | **1 - 2** | ✅ | --- | x3.0 | - **Argentina** +1.0: [Grupos](pronosticos/grupos/); [1/8](pronosticos/eliminatorias/octavos/)<br>- **Colombia** +1.0: [Grupos](pronosticos/grupos/); [1/8](pronosticos/eliminatorias/octavos/) | **3.0** |
 
 > **Resumen de la CUARTOS:** **0/3** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
 > **Puntos sumados esta jornada:** 10.0 pts | **TOTAL ACUMULADO:** 231.0 pts
@@ -242,8 +239,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 SEMIFINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Francia** vs **España** | **1 - 2** | **1 - 3** | ✅ | --- | x2.0 | **Francia**: +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**España**: +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **2.0** |
-| **Inglaterra** vs **Colombia** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | **Inglaterra**: +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Colombia**: +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **10.0** |
+| **Francia** vs **España** | **1 - 2** | **1 - 3** | ✅ | --- | x2.0 | - **España** +1.0: [Grupos](pronosticos/grupos/); [1/4](pronosticos/eliminatorias/cuartos/) | **2.0** |
+| **Inglaterra** vs **Colombia** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | - **Inglaterra** +0.5: [1/4](pronosticos/eliminatorias/cuartos/)<br>- **Colombia** +1.0: [Grupos](pronosticos/grupos/); [1/4](pronosticos/eliminatorias/cuartos/) | **10.0** |
 
 > **Resumen de la SEMIFINALES:** **1/2** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
 > **Puntos sumados esta jornada:** 14.0 pts | **TOTAL ACUMULADO:** 245.0 pts
@@ -251,8 +248,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 FINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Francia** vs **Colombia** | **0 - 1** | **2 - 0** | ❌ | --- | x2.5 | **Francia**: +0.5 ([Semis](pronosticos/eliminatorias/semifinales/semifinales.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Colombia**: +0.5 ([Semis](pronosticos/eliminatorias/semifinales/semifinales.json)), +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
-| **España** vs **Inglaterra** | **1 - 3** | **2 - 1** | ❌ | --- | x3.0 | **España**: +0.5 ([Semis](pronosticos/eliminatorias/semifinales/semifinales.json)), +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json))<br>**Inglaterra**: +0.5 ([Semis](pronosticos/eliminatorias/semifinales/semifinales.json)), +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_3_base.json)) | **0.0** |
+| **🥉 Francia** vs **Colombia** | **0 - 1** | **2 - 0** | ❌ | --- | x2.5 | - **Francia** +0.5: [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Colombia** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
+| **🏆 España** vs **Inglaterra** | **1 - 3** | **2 - 1** | ❌ | --- | x3.0 | - **España** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Inglaterra** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
 
 > **Resumen de la FINALES:** **0/0** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: 🔴 **Perdedor** (-2 pts)
 > **Puntos sumados esta jornada:** -2.0 pts | **TOTAL ACUMULADO:** 243.0 pts
