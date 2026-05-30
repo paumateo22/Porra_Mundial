@@ -45,7 +45,7 @@ def calcular_clasificacion_grupos(fase_grupos):
     return posiciones
 
 # =====================================================================
-# RASTREADOR EXACTO (Para el desglose del multiplicador)
+# RASTREADOR MATEMÁTICO EXACTO (Para el desglose del multiplicador)
 # =====================================================================
 def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
     fases_cronologicas = ["grupos", "dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
@@ -78,6 +78,7 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
                         rastros.append((nombre_link, f"pronosticos/eliminatorias/{fase_origen}/"))
                         break
     return rastros
+# =====================================================================
 
 def generar_readme_global():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
@@ -231,13 +232,8 @@ def generar_readmes_personales():
                 if p_pred:
                     loc_pred, vis_pred = p_pred.get("local", ""), p_pred.get("visitante", "")
                     gl_pred, gv_pred = p_pred.get("goles_local", "-"), p_pred.get("goles_visitante", "-")
-                    # Quitamos iconos para comparar limpiamente
-                    if (loc_pred.replace('🥉 ','').replace('🏆 ','') != p_real.get("local", "") or vis_pred != p_real.get("visitante", "")):
-                        texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*"
-                    else:
-                        texto_pred = f"**{gl_pred} - {gv_pred}**"
-                else: 
-                    texto_pred = "-"
+                    texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*" if (loc_pred.replace('🥉 ','').replace('🏆 ','') != p_real.get("local") or vis_pred != vis_real) else f"**{gl_pred} - {gv_pred}**"
+                else: texto_pred = "-"
 
                 estado = p_real.get("estado", "notstarted")
                 if estado == "finished":
