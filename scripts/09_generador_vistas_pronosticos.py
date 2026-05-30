@@ -129,7 +129,7 @@ def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase, mostrar_rea
     return html
 
 def obtener_reales_fase(realidad_dict, sub_fase):
-    if sub_fase in ["finales", "final", "tercer_puesto"]:
+    if sub_fase == "finales":
         reales = []
         reales.extend(realidad_dict.get("eliminatorias", {}).get("tercer_puesto", []))
         reales.extend(realidad_dict.get("eliminatorias", {}).get("final", []))
@@ -206,9 +206,18 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales, realidad_dict):
         for sub_fase in orden_logico:
             partidos_sub = eliminatorias.get(sub_fase, [])
             if partidos_sub:
-                md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
-                md += generar_html_eliminatorias(partidos_sub, [], sub_fase, mostrar_realidad=False)
-                md += "\n"
+                if sub_fase == "finales" and len(partidos_sub) >= 2:
+                    md += "### 🥉 TERCER PUESTO\n"
+                    md += generar_html_eliminatorias([partidos_sub[0]], [], "tercer_puesto", mostrar_realidad=False)
+                    md += "\n### 🏆 FINAL\n"
+                    md += generar_html_eliminatorias([partidos_sub[1]], [], "final", mostrar_realidad=False)
+                    md += "\n"
+                else:
+                    titulo = "FINAL" if sub_fase == "finales" else sub_fase.replace('_', ' ').upper()
+                    icono = "🏆" if sub_fase in ["finales", "final"] else ("🥉" if sub_fase == "tercer_puesto" else "🏆")
+                    md += f"### {icono} {titulo}\n"
+                    md += generar_html_eliminatorias(partidos_sub, [], sub_fase, mostrar_realidad=False)
+                    md += "\n"
 
     with open(jugador_dir / "pronosticos" / "grupos" / "README.md", 'w', encoding='utf-8') as f: f.write(md)
 
@@ -230,14 +239,25 @@ def generar_readme_eliminatorias(jugador_dir, nombre, realidad_dict):
         for sub_fase in orden_logico:
             if sub_fase in predicciones:
                 partidos = predicciones[sub_fase]
-                md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
                 
                 fase_mapeada = "finales" if sub_fase in ["final", "tercer_puesto", "finales"] else sub_fase
                 es_fase_actual = (fase_mapeada == fase)
-                
                 reales_fase = obtener_reales_fase(realidad_dict, sub_fase) if es_fase_actual else []
-                md += generar_html_eliminatorias(partidos, reales_fase, sub_fase, mostrar_realidad=es_fase_actual)
-                md += "\n"
+                
+                if sub_fase == "finales" and len(partidos) >= 2:
+                    md += "### 🥉 TERCER PUESTO\n"
+                    reales_tp = [reales_fase[0]] if len(reales_fase) > 0 else []
+                    md += generar_html_eliminatorias([partidos[0]], reales_tp, "tercer_puesto", mostrar_realidad=es_fase_actual)
+                    md += "\n### 🏆 FINAL\n"
+                    reales_fin = [reales_fase[1]] if len(reales_fase) > 1 else []
+                    md += generar_html_eliminatorias([partidos[1]], reales_fin, "final", mostrar_realidad=es_fase_actual)
+                    md += "\n"
+                else:
+                    titulo = "FINAL" if sub_fase == "finales" else sub_fase.replace('_', ' ').upper()
+                    icono = "🏆" if sub_fase in ["finales", "final"] else ("🥉" if sub_fase == "tercer_puesto" else "🏆")
+                    md += f"### {icono} {titulo}\n"
+                    md += generar_html_eliminatorias(partidos, reales_fase, sub_fase, mostrar_realidad=es_fase_actual)
+                    md += "\n"
 
         with open(ruta_carpeta / "README.md", 'w', encoding='utf-8') as f: f.write(md)
 

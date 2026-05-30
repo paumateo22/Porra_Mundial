@@ -321,7 +321,7 @@ Aquí puedes consultar las tablas y el camino exacto hacia la final que predijo 
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Noruega</b> <b style='font-size:1.1em;'>- - -</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Colombia</b></span></td></tr>
 </table>
 
-### 🏆 TERCER PUESTO
+### 🥉 TERCER PUESTO
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 España</b> <b style='font-size:1.1em;'>- - -</b> <b>Noruega</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>

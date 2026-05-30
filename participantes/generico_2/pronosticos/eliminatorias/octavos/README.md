@@ -33,10 +33,15 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Octavos.
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Argentina</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Estados Unidos</b></span></td></tr>
 </table>
 
-### 🏆 FINALES
+### 🥉 TERCER PUESTO
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Noruega</b> <b style='font-size:1.1em;'>0 - 2</b> <b>Argentina</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
+</table>
+
+### 🏆 FINAL
+<table width='100%'>
+<tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Suiza</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Estados Unidos</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Suiza</b></span></td></tr>
 </table>
 

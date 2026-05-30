@@ -54,10 +54,15 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisa
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Uruguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Uruguay</b></span></td></tr>
 </table>
 
-### 🏆 FINALES
+### 🥉 TERCER PUESTO
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Marruecos</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Marruecos</b></span></td></tr>
+</table>
+
+### 🏆 FINAL
+<table width='100%'>
+<tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Senegal</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Uruguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
 </table>
 

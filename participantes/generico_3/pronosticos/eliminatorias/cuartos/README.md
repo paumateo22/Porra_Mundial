@@ -20,10 +20,15 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Cuartos.
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Inglaterra</b> <b style='font-size:1.1em;'>0 - 2</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Colombia</b></span></td></tr>
 </table>
 
-### 🏆 FINALES
+### 🥉 TERCER PUESTO
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 España</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Inglaterra</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>
+</table>
+
+### 🏆 FINAL
+<table width='100%'>
+<tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Marruecos</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Marruecos</b></span></td></tr>
 </table>
 

@@ -321,7 +321,7 @@ Aquí puedes consultar las tablas y el camino exacto hacia la final que predijo 
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>- - -</b> <b>Portugal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Portugal</b></span></td></tr>
 </table>
 
-### 🏆 TERCER PUESTO
+### 🥉 TERCER PUESTO
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Marruecos</b> <b style='font-size:1.1em;'>- - -</b> <b>Francia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Francia</b></span></td></tr>

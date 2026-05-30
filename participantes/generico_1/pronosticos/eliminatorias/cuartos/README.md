@@ -20,10 +20,15 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Cuartos.
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Brasil</b> <b style='font-size:1.1em;'>3 - 2</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Brasil</b></span></td></tr>
 </table>
 
-### 🏆 FINALES
+### 🥉 TERCER PUESTO
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Francia</b> <b style='font-size:1.1em;'>1 - 0</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Francia</b></span></td></tr>
+</table>
+
+### 🏆 FINAL
+<table width='100%'>
+<tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
 <tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Bélgica</b> <b style='font-size:1.1em;'>3 - 1</b> <b>Brasil</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Bélgica</b></span></td></tr>
 </table>
 
