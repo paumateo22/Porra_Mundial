@@ -260,58 +260,58 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 
 
 ## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones
-Análisis de tu desviación respecto a la tendencia central de la comunidad. Obtienes puntos si apuestas contra la media general y la realidad te da la razón.
+Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.
 
-| Selección | Análisis de Desviación | Resultado |
-| :--- | :--- | :---: |
-| 🇩🇪 **Alemania** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇸🇦 **Arabia Saudita** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇩🇿 **Argelia** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇦🇷 **Argentina** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇦🇺 **Australia** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇦🇹 **Austria** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇧🇦 **Bosnia-Herzegovina** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇧🇷 **Brasil** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇧🇪 **Bélgica** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇻 **Cabo Verde** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇦 **Canadá** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇴 **Colombia** | **Pronóstico:** Final (5)<br>**Media:** Final (5.00)<br>**Realidad:** Semis (4) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇰🇷 **Corea del Sur** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇮 **Costa de Marfil** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇭🇷 **Croacia** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇼 **Curazao** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇪🇨 **Ecuador** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇪🇬 **Egipto** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🏴󠁧󠁢󠁳󠁣󠁴󠁿 **Escocia** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇪🇸 **España** | **Pronóstico:** Final (5)<br>**Media:** Final (5.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇺🇸 **Estados Unidos** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/16 (1.33)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇫🇷 **Francia** | **Pronóstico:** Final (5)<br>**Media:** Final (5.00)<br>**Realidad:** Semis (4) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇬🇭 **Ghana** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇭🇹 **Haití** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🏴󠁧󠁢󠁥󠁮󠁧󠁿 **Inglaterra** | **Pronóstico:** Grupos (0)<br>**Media:** 1/8 (1.67)<br>**Realidad:** Final (5) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇮🇶 **Irak** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇮🇷 **Irán** | **Pronóstico:** 1/16 (1)<br>**Media:** Grupos (0.33)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇯🇵 **Japón** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇯🇴 **Jordania** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇲🇦 **Marruecos** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇲🇽 **México** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇳🇴 **Noruega** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (1.33)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇳🇿 **Nueva Zelanda** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇵🇦 **Panamá** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇵🇾 **Paraguay** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇳🇱 **Países Bajos** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇵🇹 **Portugal** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (1.33)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇶🇦 **Qatar** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇩 **RD Congo** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇿 **República Checa** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇸🇳 **Senegal** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇿🇦 **Sudáfrica** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇸🇪 **Suecia** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇨🇭 **Suiza** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇹🇷 **Turquía** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇹🇳 **Túnez** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇺🇾 **Uruguay** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
-| 🇺🇿 **Uzbekistán** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| Selección | Gráfico de Rendimiento | Estado |
+| :--- | :---: | :---: |
+| **Alemania** | ![Alemania](estadisticas/graficos_sd/alemania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Arabia Saudita** | ![Arabia Saudita](estadisticas/graficos_sd/arabia_saudita_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Argelia** | ![Argelia](estadisticas/graficos_sd/argelia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Argentina** | ![Argentina](estadisticas/graficos_sd/argentina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Australia** | ![Australia](estadisticas/graficos_sd/australia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Austria** | ![Austria](estadisticas/graficos_sd/austria_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Bosnia-Herzegovina** | ![Bosnia-Herzegovina](estadisticas/graficos_sd/bosnia-herzegovina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Brasil** | ![Brasil](estadisticas/graficos_sd/brasil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Bélgica** | ![Bélgica](estadisticas/graficos_sd/bélgica_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Cabo Verde** | ![Cabo Verde](estadisticas/graficos_sd/cabo_verde_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Canadá** | ![Canadá](estadisticas/graficos_sd/canadá_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Colombia** | ![Colombia](estadisticas/graficos_sd/colombia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Corea del Sur** | ![Corea del Sur](estadisticas/graficos_sd/corea_del_sur_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Costa de Marfil** | ![Costa de Marfil](estadisticas/graficos_sd/costa_de_marfil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Croacia** | ![Croacia](estadisticas/graficos_sd/croacia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Curazao** | ![Curazao](estadisticas/graficos_sd/curazao_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Ecuador** | ![Ecuador](estadisticas/graficos_sd/ecuador_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Egipto** | ![Egipto](estadisticas/graficos_sd/egipto_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Escocia** | ![Escocia](estadisticas/graficos_sd/escocia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **España** | ![España](estadisticas/graficos_sd/españa_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Estados Unidos** | ![Estados Unidos](estadisticas/graficos_sd/estados_unidos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Francia** | ![Francia](estadisticas/graficos_sd/francia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Ghana** | ![Ghana](estadisticas/graficos_sd/ghana_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Haití** | ![Haití](estadisticas/graficos_sd/haití_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Inglaterra** | ![Inglaterra](estadisticas/graficos_sd/inglaterra_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Irak** | ![Irak](estadisticas/graficos_sd/irak_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Irán** | ![Irán](estadisticas/graficos_sd/irán_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Japón** | ![Japón](estadisticas/graficos_sd/japón_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Jordania** | ![Jordania](estadisticas/graficos_sd/jordania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Marruecos** | ![Marruecos](estadisticas/graficos_sd/marruecos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **México** | ![México](estadisticas/graficos_sd/méxico_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Noruega** | ![Noruega](estadisticas/graficos_sd/noruega_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Nueva Zelanda** | ![Nueva Zelanda](estadisticas/graficos_sd/nueva_zelanda_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Panamá** | ![Panamá](estadisticas/graficos_sd/panamá_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Paraguay** | ![Paraguay](estadisticas/graficos_sd/paraguay_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Países Bajos** | ![Países Bajos](estadisticas/graficos_sd/países_bajos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Portugal** | ![Portugal](estadisticas/graficos_sd/portugal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Qatar** | ![Qatar](estadisticas/graficos_sd/qatar_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **RD Congo** | ![RD Congo](estadisticas/graficos_sd/rd_congo_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **República Checa** | ![República Checa](estadisticas/graficos_sd/república_checa_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Senegal** | ![Senegal](estadisticas/graficos_sd/senegal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Sudáfrica** | ![Sudáfrica](estadisticas/graficos_sd/sudáfrica_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Suecia** | ![Suecia](estadisticas/graficos_sd/suecia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Suiza** | ![Suiza](estadisticas/graficos_sd/suiza_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Turquía** | ![Turquía](estadisticas/graficos_sd/turquía_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Túnez** | ![Túnez](estadisticas/graficos_sd/túnez_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Uruguay** | ![Uruguay](estadisticas/graficos_sd/uruguay_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Uzbekistán** | ![Uzbekistán](estadisticas/graficos_sd/uzbekistán_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 
 ---
 [⬅️ Volver a la clasificación general](../../README.md)

@@ -5,32 +5,15 @@ from pathlib import Path
 from datetime import datetime
 from importlib import import_module
 
+# Intentar importar matplotlib
+try:
+    import matplotlib.pyplot as plt
+    MATPLOTLIB_DISPONIBLE = True
+except ImportError:
+    MATPLOTLIB_DISPONIBLE = False
+
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR))
-
-# Diccionario de banderas para embellecer las tablas
-BANDERAS = {
-    "España": "🇪🇸", "Argentina": "🇦🇷", "Francia": "🇫🇷", "Inglaterra": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "Brasil": "🇧🇷",
-    "Portugal": "🇵🇹", "Bélgica": "🇧🇪", "Países Bajos": "🇳🇱", "Alemania": "🇩🇪", "Uruguay": "🇺🇾",
-    "Colombia": "🇨🇴", "Senegal": "🇸🇳", "Estados Unidos": "🇺🇸", "Marruecos": "🇲🇦", "Croacia": "🇭🇷",
-    "Japón": "🇯🇵", "Ecuador": "🇪🇨", "Canadá": "🇨🇦", "México": "🇲🇽", "Corea del Sur": "🇰🇷",
-    "Turquía": "🇹🇷", "Australia": "🇦🇺", "Suiza": "🇨🇭", "República Checa": "🇨🇿", "Paraguay": "🇵🇾",
-    "Noruega": "🇳🇴", "Costa de Marfil": "🇨🇮", "Haití": "🇭🇹", "Curazao": "🇨🇼", "RD Congo": "🇨🇩",
-    "Cabo Verde": "🇨🇻", "Panamá": "🇵🇦", "Ghana": "🇬🇭", "Uzbekistán": "🇺🇿", "Túnez": "🇹🇳",
-    "Argelia": "🇩🇿", "Jordania": "🇯🇴", "Austria": "🇦🇹", "Irak": "🇮🇶", "Irán": "🇮🇷",
-    "Nueva Zelanda": "🇳🇿", "Egipto": "🇪🇬", "Arabia Saudita": "🇸🇦", "Bosnia-Herzegovina": "🇧🇦",
-    "Qatar": "🇶🇦", "Escocia": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Suecia": "🇸🇪", "Sudáfrica": "🇿🇦", "Italia": "🇮🇹",
-    "Gales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Polonia": "🇵🇱", "Chile": "🇨🇱", "Perú": "🇵🇪", "Venezuela": "🇵🇪"
-}
-
-NOMBRES_FASES = {
-    0: "Grupos",
-    1: "1/16",
-    2: "1/8",
-    3: "1/4",
-    4: "Semis",
-    5: "Final"
-}
 
 def cargar_json(ruta):
     if not ruta.exists(): return None
@@ -68,9 +51,6 @@ def calcular_clasificacion_grupos(fase_grupos):
         for idx, (eq, stats) in enumerate(equipos_ordenados): posiciones[eq] = idx + 1
     return posiciones
 
-# =====================================================================
-# RASTREADOR MATEMÁTICO EXACTO (Para el desglose del multiplicador)
-# =====================================================================
 def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
     fases_cronologicas = ["grupos", "dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
     fase_busqueda_ocr = "finales" if fase_objetivo in ["final", "tercer_puesto", "finales"] else fase_objetivo
@@ -102,6 +82,52 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
                         rastros.append((nombre_link, f"pronosticos/eliminatorias/{fase_origen}/"))
                         break
     return rastros
+
+# =====================================================================
+# RENDERIZADOR DE IMÁGENES MATPLOTLIB (DASHBOARD SORPRESAS)
+# =====================================================================
+def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
+    """Dibuja un gauge horizontal limpio y profesional y lo guarda como PNG."""
+    if not MATPLOTLIB_DISPONIBLE: return
+    
+    # Configuramos fondo blanco fijo para que no se invisibilice en el Dark Mode de GitHub
+    fig, ax = plt.subplots(figsize=(6, 1.2), facecolor='white')
+    ax.set_xlim(-0.5, 5.5)
+    ax.set_ylim(-0.5, 0.5)
+
+    # Ocultar marcos y eje Y
+    ax.yaxis.set_visible(False)
+    for spine in ax.spines.values(): spine.set_visible(False)
+
+    # Nombres del eje X
+    fases = ["Grupos", "1/16", "1/8", "1/4", "Semis", "Final"]
+    ax.set_xticks(range(6))
+    ax.set_xticklabels(fases, fontsize=9, fontweight='bold', color='#374151')
+    ax.tick_params(axis='x', length=0, pad=8)
+
+    # Línea base gris neutra
+    ax.axhline(0, color='#d1d5db', linewidth=3, zorder=1)
+
+    # Dibujar zonas de activación de puntos
+    if M - 1.5 >= -0.5: # Zona Decepción (Roja)
+        ax.axvspan(-0.5, M - 1.5, color='#fee2e2', alpha=0.8, zorder=0, lw=0)
+    if M + 1.5 <= 5.5:  # Zona Sorpresa (Verde)
+        ax.axvspan(M + 1.5, 5.5, color='#dcfce7', alpha=0.8, zorder=0, lw=0)
+
+    # Colocar los Puntos en el espacio
+    ax.plot(M, 0, 'o', color='#9ca3af', markersize=14, zorder=3) # Circulo gris (Media)
+    ax.plot(P, 0, 's', color='#3b82f6', markersize=11, zorder=4) # Cuadrado azul (Pronóstico)
+    ax.plot(R, 0, '*', color='#eab308', markersize=20, markeredgecolor='black', markeredgewidth=0.5, zorder=5) # Estrella oro (Real)
+
+    # Anotaciones de texto sobre y bajo los puntos
+    ax.text(M, 0.18, "Media", ha='center', va='bottom', fontsize=8, color='#6b7280', fontweight='bold')
+    ax.text(P, -0.18, "Tú", ha='center', va='top', fontsize=8, color='#1d4ed8', fontweight='bold')
+    ax.text(R, 0.22, "Real", ha='center', va='bottom', fontsize=9, color='#a16207', fontweight='bold')
+
+    # Guardar sin márgenes inútiles
+    plt.tight_layout(pad=0.2)
+    plt.savefig(ruta_salida, dpi=120, bbox_inches='tight', facecolor=fig.get_facecolor())
+    plt.close(fig)
 
 def generar_readme_global():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
@@ -362,13 +388,16 @@ def generar_readmes_personales():
                 pts_acumulados_historial += pts_por_grupos
                 md += f"\n> **Resumen de Clasificados:** **{total_aciertos_exactos_pos}/{total_aciertos_pase}** *(Clavados/Aciertos Pase)*\n> **Bono sumado por Fase de Grupos:** +{pts_por_grupos} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n---\n"
 
-        # --- NUEVO BLOQUE: MATRIZ VISUAL DE SORPRESAS Y DECEPCIONES (TABLA LIMPIA) ---
+        # --- NUEVO BLOQUE: MATRIZ VISUAL DE SORPRESAS Y DECEPCIONES (CON GRÁFICOS) ---
         matriz_sd = libro.get("matriz_sorpresas_decepciones", {})
         if matriz_sd:
+            dir_graficos = jugador_dir / "estadisticas" / "graficos_sd"
+            dir_graficos.mkdir(parents=True, exist_ok=True)
+
             md += "\n## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones\n"
-            md += "Análisis de tu desviación respecto a la tendencia central de la comunidad. Obtienes puntos si apuestas contra la media general y la realidad te da la razón.\n\n"
-            md += "| Selección | Análisis de Desviación | Resultado |\n"
-            md += "| :--- | :--- | :---: |\n"
+            md += "Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.\n\n"
+            md += "| Selección | Gráfico de Rendimiento | Estado |\n"
+            md += "| :--- | :---: | :---: |\n"
 
             for eq, datos_sd in sorted(matriz_sd.items()):
                 P = datos_sd["pronostico"]
@@ -377,25 +406,22 @@ def generar_readmes_personales():
                 puntos = datos_sd["puntos"]
                 resultado_txt = datos_sd["resultado_calculo"]
 
-                P_txt = NOMBRES_FASES.get(P, str(P))
-                M_cercana = round(M)
-                M_txt = NOMBRES_FASES.get(M_cercana, str(M_cercana))
-                R_txt = NOMBRES_FASES.get(R, str(R)) if R > 0 else "Pendiente/Grupos"
+                nombre_archivo = f"{eq.replace(' ', '_').lower()}_sd.png"
+                ruta_grafico = dir_graficos / nombre_archivo
                 
-                bandera = BANDERAS.get(eq, "🏳️")
+                # Generamos y guardamos la imagen
+                if MATPLOTLIB_DISPONIBLE:
+                    generar_grafico_sd_png(ruta_grafico, eq, P, M, R)
 
-                desglose_str = (
-                    f"**Pronóstico:** {P_txt} ({P})<br>"
-                    f"**Media:** {M_txt} ({M:.2f})<br>"
-                    f"**Realidad:** {R_txt} ({R})"
-                )
+                if resultado_txt == "Sorpresa": estado_str = f"🟢 **+{puntos} Pts**<br>🔥 ¡Sorpresa!"
+                elif resultado_txt == "Decepción": estado_str = f"🔴 **+{puntos} Pts**<br>📉 ¡Decepción!"
+                else: estado_str = f"⚪ *Sin Premio*<br>({puntos} pts)"
 
-                if resultado_txt in ["Sorpresa", "Decepción"]:
-                    estado_str = f"🟢 **¡Puntúa! (+{puntos} pts)**<br>*{resultado_txt}*"
-                else:
-                    estado_str = f"🔴 **Sin premio**<br>*(0 pts)*"
-
-                md += f"| {bandera} **{eq}** | {desglose_str} | {estado_str} |\n"
+                # Inyectamos la imagen guardada en el README
+                md += f"| **{eq}** | ![{eq}](estadisticas/graficos_sd/{nombre_archivo}) | {estado_str} |\n"
+            
+            if not MATPLOTLIB_DISPONIBLE:
+                md += "\n> ⚠️ *Nota: Instala matplotlib (`pip install matplotlib`) y vuelve a ejecutar para visualizar los gráficos.*\n"
 
         md += "\n---\n[⬅️ Volver a la clasificación general](../../README.md)"
         with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f: f.write(md)
@@ -404,6 +430,10 @@ def ejecutar_generador_vistas():
     print("=======================================================")
     print(" 🎨 INICIANDO GENERADOR DE VISTAS (MARKDOWN) 🎨")
     print("=======================================================")
+    if not MATPLOTLIB_DISPONIBLE:
+        print("⚠️ AVISO: 'matplotlib' no está instalado. Los gráficos PNG no se generarán.")
+        print("💡 Ejecuta: pip install matplotlib")
+
     if generar_readme_global():
         generar_readmes_personales()
         try:
