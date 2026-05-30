@@ -82,8 +82,25 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
                         break
     return rastros
 
+def limpiar_nombre_archivo(nombre):
+    """Elimina eñes, acentos y espacios para asegurar la persistencia en disco de las imágenes."""
+    reemplazos = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ñ': 'n', ' ': '_'}
+    res = nombre.lower()
+    for orig, rep in reemplazos.items():
+        res = res.replace(orig, rep)
+    return "".join(c for c in res if c.isalnum() or c == '_') + "_sd.png"
+
+# =====================================================================
+# RENDERIZADOR DE IMÁGENES MATPLOTLIB (DASHBOARD SORPRESAS)
+# =====================================================================
 def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
+    """Dibuja un gauge horizontal con las zonas válidas altamente visibles."""
     if not MATPLOTLIB_DISPONIBLE: return
+    
+    # Cast estricto para evitar que matplotlib use lógicas categóricas de strings
+    P = int(P)
+    M = float(M)
+    R = int(R)
     
     fig, ax = plt.subplots(figsize=(6.5, 1.6), facecolor='white')
     ax.set_xlim(-0.5, 5.5)
@@ -397,7 +414,6 @@ def generar_readmes_personales():
             md += "\n## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones\n"
             md += "Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.\n\n"
             
-            # --- NUEVA ESTRUCTURA DE LA TABLA (Con la columna Datos Inyectada) ---
             md += "| Selección | Datos | Gráfico de Rendimiento | Estado |\n"
             md += "| :--- | :---: | :---: | :---: |\n"
 
@@ -408,7 +424,8 @@ def generar_readmes_personales():
                 puntos = datos_sd["puntos"]
                 resultado_txt = datos_sd["resultado_calculo"]
 
-                nombre_archivo = f"{eq.replace(' ', '_').lower()}_sd.png"
+                # Nombre de archivo sanitizado para evitar problemas de normalización de cadenas OS
+                nombre_archivo = limpiar_nombre_archivo(eq)
                 ruta_grafico = dir_graficos / nombre_archivo
                 
                 if MATPLOTLIB_DISPONIBLE:
@@ -418,10 +435,8 @@ def generar_readmes_personales():
                 elif resultado_txt == "Decepción": estado_str = f"🔴 **+{puntos} Pts**<br>📉 ¡Decepción!"
                 else: estado_str = f"⚪ *Sin Premio*<br>({puntos} pts)"
 
-                # --- NUEVA COLUMNA DE DATOS ---
                 valores_str = f"**Tú:** {P}<br>**Media:** {M}<br>**Real:** {R}"
 
-                # Inyectamos todo en la fila
                 md += f"| **{eq}** | {valores_str} | ![{eq}](estadisticas/graficos_sd/{nombre_archivo}) | {estado_str} |\n"
             
             if not MATPLOTLIB_DISPONIBLE:
