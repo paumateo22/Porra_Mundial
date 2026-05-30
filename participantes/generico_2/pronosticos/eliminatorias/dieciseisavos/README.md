@@ -28,36 +28,36 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisa
 ### 🏆 OCTAVOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Ecuador</b><br><span style='font-size:1em;'>🟢 <b>República Checa</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Marruecos</b> <b style='font-size:1.1em;'>1 - 0</b> <b>Suecia</b><br><span style='font-size:1em;'>🟢 <b>Marruecos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Noruega</b><br><span style='font-size:1em;'>🟢 <b>Noruega</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>México</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Bélgica</b><br><span style='font-size:1em;'>🟢 <b>Bélgica</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Portugal</b> <b style='font-size:1.1em;'>1 - 2</b> <b>España</b><br><span style='font-size:1em;'>🟢 <b>España</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Escocia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Uruguay</b><br><span style='font-size:1em;'>🟢 <b>Uruguay</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Colombia</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Egipto</b><br><span style='font-size:1em;'>🟢 <b>Colombia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Ecuador</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>República Checa</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Marruecos</b> <b style='font-size:1.1em;'>1 - 0</b> <b>Suecia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Marruecos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Noruega</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Noruega</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>México</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Bélgica</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Portugal</b> <b style='font-size:1.1em;'>1 - 2</b> <b>España</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Escocia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Uruguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Uruguay</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Colombia</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Egipto</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Colombia</b></span></td></tr>
 </table>
 
 ### 🏆 CUARTOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>1 - 3</b> <b>Marruecos</b><br><span style='font-size:1em;'>🟢 <b>Marruecos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Noruega</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>1 - 0</b> <b>España</b><br><span style='font-size:1em;'>🟢 <b>Bélgica</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Uruguay</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Colombia</b><br><span style='font-size:1em;'>🟢 <b>Uruguay</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>1 - 3</b> <b>Marruecos</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Marruecos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Noruega</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>1 - 0</b> <b>España</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Bélgica</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Uruguay</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Uruguay</b></span></td></tr>
 </table>
 
 ### 🏆 SEMIFINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Marruecos</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Uruguay</b><br><span style='font-size:1em;'>🟢 <b>Uruguay</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Marruecos</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Uruguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Uruguay</b></span></td></tr>
 </table>
 
 ### 🏆 FINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Marruecos</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Bélgica</b><br><span style='font-size:1em;'>🟢 <b>Marruecos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Senegal</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Uruguay</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Marruecos</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Marruecos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Senegal</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Uruguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
 </table>
 

@@ -20,23 +20,23 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Octavos.
 ### 🏆 CUARTOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Suiza</b><br><span style='font-size:1em;'>🟢 <b>Suiza</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Noruega</b> <b style='font-size:1.1em;'>0 - 1</b> <b>México</b><br><span style='font-size:1em;'>🟢 <b>México</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Bélgica</b><br><span style='font-size:1em;'>🟢 <b>España</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Paraguay</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Colombia</b><br><span style='font-size:1em;'>🟢 <b>Colombia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Suiza</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Suiza</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Noruega</b> <b style='font-size:1.1em;'>0 - 1</b> <b>México</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>México</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Paraguay</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Colombia</b></span></td></tr>
 </table>
 
 ### 🏆 SEMIFINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Suiza</b> <b style='font-size:1.1em;'>0 - 3</b> <b>México</b><br><span style='font-size:1em;'>🟢 <b>México</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Colombia</b><br><span style='font-size:1em;'>🟢 <b>Colombia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Suiza</b> <b style='font-size:1.1em;'>0 - 3</b> <b>México</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>México</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Colombia</b></span></td></tr>
 </table>
 
 ### 🏆 FINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Suiza</b> <b style='font-size:1.1em;'>2 - 1</b> <b>España</b><br><span style='font-size:1em;'>🟢 <b>Suiza</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 México</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Colombia</b><br><span style='font-size:1em;'>🟢 <b>México</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Suiza</b> <b style='font-size:1.1em;'>2 - 1</b> <b>España</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Suiza</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 México</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>México</b></span></td></tr>
 </table>
 

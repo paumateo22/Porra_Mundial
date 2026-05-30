@@ -60,11 +60,11 @@ def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase, mostrar_rea
         avanza_pred = p_pred.get("pasa", p_pred.get("ganador", "-"))
 
         if not mostrar_realidad:
-            # TABLA SIMPLE: Solo mostramos lo que pronosticó sin juzgar la realidad
+            # TABLA SIMPLE: Solo mostramos lo que pronosticó sin gamificación ni juicios
             html += f"<tr>"
             html += f"<td align='center' style='border:1px solid #e5e7eb; padding:10px;'>"
             html += f"<b>{loc_pred}</b> <b style='font-size:1.1em;'>{res_pred_raw}</b> <b>{vis_pred}</b><br>"
-            html += f"<span style='font-size:1em;'>🟢 <b>{avanza_pred}</b></span>"
+            html += f"<span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>{avanza_pred}</b></span>"
             html += f"</td>"
             html += f"</tr>\n"
         else:
@@ -207,7 +207,6 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales, realidad_dict):
             partidos_sub = eliminatorias.get(sub_fase, [])
             if partidos_sub:
                 md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
-                # Forzamos mostrar_realidad=False para las fases futuras de los grupos
                 md += generar_html_eliminatorias(partidos_sub, [], sub_fase, mostrar_realidad=False)
                 md += "\n"
 
@@ -233,7 +232,6 @@ def generar_readme_eliminatorias(jugador_dir, nombre, realidad_dict):
                 partidos = predicciones[sub_fase]
                 md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
                 
-                # Comprobamos si la fase que estamos pintando es la misma de la carpeta
                 fase_mapeada = "finales" if sub_fase in ["final", "tercer_puesto", "finales"] else sub_fase
                 es_fase_actual = (fase_mapeada == fase)
                 

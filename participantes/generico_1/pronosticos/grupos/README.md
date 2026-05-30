@@ -274,62 +274,62 @@ Aquí puedes consultar las tablas y el camino exacto hacia la final que predijo 
 ### 🏆 DIECISEISAVOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>- - -</b> <b>Suiza</b><br><span style='font-size:1em;'>🟢 <b>Suiza</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>- - -</b> <b>Marruecos</b><br><span style='font-size:1em;'>🟢 <b>Ecuador</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Países Bajos</b> <b style='font-size:1.1em;'>- - -</b> <b>Brasil</b><br><span style='font-size:1em;'>🟢 <b>Países Bajos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Haití</b> <b style='font-size:1.1em;'>- - -</b> <b>Japón</b><br><span style='font-size:1em;'>🟢 <b>Japón</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>- - -</b> <b>Irán</b><br><span style='font-size:1em;'>🟢 <b>Francia</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Curazao</b> <b style='font-size:1.1em;'>- - -</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Sudáfrica</b> <b style='font-size:1.1em;'>- - -</b> <b>Costa de Marfil</b><br><span style='font-size:1em;'>🟢 <b>Costa de Marfil</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Panamá</b> <b style='font-size:1.1em;'>- - -</b> <b>Colombia</b><br><span style='font-size:1em;'>🟢 <b>Panamá</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Paraguay</b> <b style='font-size:1.1em;'>- - -</b> <b>Irak</b><br><span style='font-size:1em;'>🟢 <b>Irak</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>- - -</b> <b>Uruguay</b><br><span style='font-size:1em;'>🟢 <b>Bélgica</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Uzbekistán</b> <b style='font-size:1.1em;'>- - -</b> <b>Ghana</b><br><span style='font-size:1em;'>🟢 <b>Ghana</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>- - -</b> <b>Argelia</b><br><span style='font-size:1em;'>🟢 <b>España</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Canadá</b> <b style='font-size:1.1em;'>- - -</b> <b>Suecia</b><br><span style='font-size:1em;'>🟢 <b>Suecia</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>- - -</b> <b>Arabia Saudita</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>RD Congo</b> <b style='font-size:1.1em;'>- - -</b> <b>Australia</b><br><span style='font-size:1em;'>🟢 <b>Australia</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>- - -</b> <b>Egipto</b><br><span style='font-size:1em;'>🟢 <b>Egipto</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>- - -</b> <b>Suiza</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Suiza</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>- - -</b> <b>Marruecos</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Ecuador</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Países Bajos</b> <b style='font-size:1.1em;'>- - -</b> <b>Brasil</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Países Bajos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Haití</b> <b style='font-size:1.1em;'>- - -</b> <b>Japón</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Japón</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>- - -</b> <b>Irán</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Francia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Curazao</b> <b style='font-size:1.1em;'>- - -</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Sudáfrica</b> <b style='font-size:1.1em;'>- - -</b> <b>Costa de Marfil</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Costa de Marfil</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Panamá</b> <b style='font-size:1.1em;'>- - -</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Panamá</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Paraguay</b> <b style='font-size:1.1em;'>- - -</b> <b>Irak</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Irak</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>- - -</b> <b>Uruguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Bélgica</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Uzbekistán</b> <b style='font-size:1.1em;'>- - -</b> <b>Ghana</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Ghana</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>- - -</b> <b>Argelia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Canadá</b> <b style='font-size:1.1em;'>- - -</b> <b>Suecia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Suecia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>- - -</b> <b>Arabia Saudita</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>RD Congo</b> <b style='font-size:1.1em;'>- - -</b> <b>Australia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Australia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>- - -</b> <b>Egipto</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Egipto</b></span></td></tr>
 </table>
 
 ### 🏆 OCTAVOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>- - -</b> <b>Francia</b><br><span style='font-size:1em;'>🟢 <b>Francia</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Suiza</b> <b style='font-size:1.1em;'>- - -</b> <b>Países Bajos</b><br><span style='font-size:1em;'>🟢 <b>Países Bajos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Japón</b> <b style='font-size:1.1em;'>- - -</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Japón</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Costa de Marfil</b> <b style='font-size:1.1em;'>- - -</b> <b>Panamá</b><br><span style='font-size:1em;'>🟢 <b>Costa de Marfil</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ghana</b> <b style='font-size:1.1em;'>- - -</b> <b>España</b><br><span style='font-size:1em;'>🟢 <b>España</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Irak</b> <b style='font-size:1.1em;'>- - -</b> <b>Bélgica</b><br><span style='font-size:1em;'>🟢 <b>Irak</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>- - -</b> <b>Egipto</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Suecia</b> <b style='font-size:1.1em;'>- - -</b> <b>Australia</b><br><span style='font-size:1em;'>🟢 <b>Australia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>- - -</b> <b>Francia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Francia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Suiza</b> <b style='font-size:1.1em;'>- - -</b> <b>Países Bajos</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Países Bajos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Japón</b> <b style='font-size:1.1em;'>- - -</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Japón</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Costa de Marfil</b> <b style='font-size:1.1em;'>- - -</b> <b>Panamá</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Costa de Marfil</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ghana</b> <b style='font-size:1.1em;'>- - -</b> <b>España</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Irak</b> <b style='font-size:1.1em;'>- - -</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Irak</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>- - -</b> <b>Egipto</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Suecia</b> <b style='font-size:1.1em;'>- - -</b> <b>Australia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Australia</b></span></td></tr>
 </table>
 
 ### 🏆 CUARTOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>- - -</b> <b>Países Bajos</b><br><span style='font-size:1em;'>🟢 <b>Países Bajos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>- - -</b> <b>Irak</b><br><span style='font-size:1em;'>🟢 <b>Irak</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Japón</b> <b style='font-size:1.1em;'>- - -</b> <b>Costa de Marfil</b><br><span style='font-size:1em;'>🟢 <b>Japón</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>- - -</b> <b>Australia</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>- - -</b> <b>Países Bajos</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Países Bajos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>España</b> <b style='font-size:1.1em;'>- - -</b> <b>Irak</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Irak</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Japón</b> <b style='font-size:1.1em;'>- - -</b> <b>Costa de Marfil</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Japón</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>- - -</b> <b>Australia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
 </table>
 
 ### 🏆 SEMIFINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Países Bajos</b> <b style='font-size:1.1em;'>- - -</b> <b>Irak</b><br><span style='font-size:1em;'>🟢 <b>Países Bajos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Japón</b> <b style='font-size:1.1em;'>- - -</b> <b>Argentina</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Países Bajos</b> <b style='font-size:1.1em;'>- - -</b> <b>Irak</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Países Bajos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Japón</b> <b style='font-size:1.1em;'>- - -</b> <b>Argentina</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
 </table>
 
 ### 🏆 TERCER PUESTO
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Irak</b> <b style='font-size:1.1em;'>- - -</b> <b>Japón</b><br><span style='font-size:1em;'>🟢 <b>Japón</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Irak</b> <b style='font-size:1.1em;'>- - -</b> <b>Japón</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Japón</b></span></td></tr>
 </table>
 
 ### 🏆 FINAL
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Países Bajos</b> <b style='font-size:1.1em;'>- - -</b> <b>Argentina</b><br><span style='font-size:1em;'>🟢 <b>Países Bajos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Países Bajos</b> <b style='font-size:1.1em;'>- - -</b> <b>Argentina</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Países Bajos</b></span></td></tr>
 </table>
 

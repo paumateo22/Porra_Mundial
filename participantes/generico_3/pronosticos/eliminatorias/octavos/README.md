@@ -20,23 +20,23 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Octavos.
 ### 🏆 CUARTOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Marruecos</b><br><span style='font-size:1em;'>🟢 <b>Ecuador</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Brasil</b> <b style='font-size:1.1em;'>2 - 1</b> <b>México</b><br><span style='font-size:1em;'>🟢 <b>Brasil</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Portugal</b> <b style='font-size:1.1em;'>0 - 2</b> <b>Bélgica</b><br><span style='font-size:1em;'>🟢 <b>Bélgica</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>3 - 0</b> <b>Colombia</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>2 - 1</b> <b>Marruecos</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Ecuador</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Brasil</b> <b style='font-size:1.1em;'>2 - 1</b> <b>México</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Brasil</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Portugal</b> <b style='font-size:1.1em;'>0 - 2</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Bélgica</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>3 - 0</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
 </table>
 
 ### 🏆 SEMIFINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Brasil</b><br><span style='font-size:1em;'>🟢 <b>Brasil</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Argentina</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ecuador</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Brasil</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Brasil</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Bélgica</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Argentina</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
 </table>
 
 ### 🏆 FINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Ecuador</b> <b style='font-size:1.1em;'>1 - 3</b> <b>Bélgica</b><br><span style='font-size:1em;'>🟢 <b>Bélgica</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Brasil</b> <b style='font-size:1.1em;'>1 - 3</b> <b>Argentina</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Ecuador</b> <b style='font-size:1.1em;'>1 - 3</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Bélgica</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Brasil</b> <b style='font-size:1.1em;'>1 - 3</b> <b>Argentina</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
 </table>
 

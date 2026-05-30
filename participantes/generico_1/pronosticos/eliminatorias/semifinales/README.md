@@ -14,7 +14,7 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Semifinale
 ### 🏆 FINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 España</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Colombia</b><br><span style='font-size:1em;'>🟢 <b>España</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Francia</b> <b style='font-size:1.1em;'>1 - 0</b> <b>Inglaterra</b><br><span style='font-size:1em;'>🟢 <b>Francia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 España</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Colombia</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Francia</b> <b style='font-size:1.1em;'>1 - 0</b> <b>Inglaterra</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Francia</b></span></td></tr>
 </table>
 

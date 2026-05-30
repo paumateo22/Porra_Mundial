@@ -28,36 +28,36 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisa
 ### 🏆 OCTAVOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Corea del Sur</b><br><span style='font-size:1em;'>🟢 <b>República Checa</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Marruecos</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Brasil</b><br><span style='font-size:1em;'>🟢 <b>Brasil</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Alemania</b><br><span style='font-size:1em;'>🟢 <b>Francia</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Costa de Marfil</b> <b style='font-size:1.1em;'>0 - 2</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>1 - 0</b> <b>Bélgica</b><br><span style='font-size:1em;'>🟢 <b>Estados Unidos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ghana</b> <b style='font-size:1.1em;'>1 - 2</b> <b>España</b><br><span style='font-size:1em;'>🟢 <b>España</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Canadá</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Argentina</b><br><span style='font-size:1em;'>🟢 <b>Argentina</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Croacia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Paraguay</b><br><span style='font-size:1em;'>🟢 <b>Paraguay</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Corea del Sur</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>República Checa</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Marruecos</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Brasil</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Brasil</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Alemania</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Francia</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Costa de Marfil</b> <b style='font-size:1.1em;'>0 - 2</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>1 - 0</b> <b>Bélgica</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Estados Unidos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Ghana</b> <b style='font-size:1.1em;'>1 - 2</b> <b>España</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>España</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Canadá</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Argentina</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Argentina</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Croacia</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Paraguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Paraguay</b></span></td></tr>
 </table>
 
 ### 🏆 CUARTOS
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>0 - 3</b> <b>Brasil</b><br><span style='font-size:1em;'>🟢 <b>Brasil</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>0 - 3</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>2 - 1</b> <b>España</b><br><span style='font-size:1em;'>🟢 <b>Estados Unidos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Paraguay</b><br><span style='font-size:1em;'>🟢 <b>Paraguay</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>República Checa</b> <b style='font-size:1.1em;'>0 - 3</b> <b>Brasil</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Brasil</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Francia</b> <b style='font-size:1.1em;'>0 - 3</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>2 - 1</b> <b>España</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Estados Unidos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Argentina</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Paraguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Paraguay</b></span></td></tr>
 </table>
 
 ### 🏆 SEMIFINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Brasil</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>2 - 3</b> <b>Paraguay</b><br><span style='font-size:1em;'>🟢 <b>Paraguay</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Brasil</b> <b style='font-size:1.1em;'>0 - 1</b> <b>Senegal</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>Estados Unidos</b> <b style='font-size:1.1em;'>2 - 3</b> <b>Paraguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Paraguay</b></span></td></tr>
 </table>
 
 ### 🏆 FINALES
 <table width='100%'>
 <tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Brasil</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Estados Unidos</b><br><span style='font-size:1em;'>🟢 <b>Estados Unidos</b></span></td></tr>
-<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Senegal</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Paraguay</b><br><span style='font-size:1em;'>🟢 <b>Senegal</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🥉 Brasil</b> <b style='font-size:1.1em;'>1 - 2</b> <b>Estados Unidos</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Estados Unidos</b></span></td></tr>
+<tr><td align='center' style='border:1px solid #e5e7eb; padding:10px;'><b>🏆 Senegal</b> <b style='font-size:1.1em;'>2 - 0</b> <b>Paraguay</b><br><span style='font-size:0.95em; color:#6b7280;'>Avanza: <b>Senegal</b></span></td></tr>
 </table>
 
