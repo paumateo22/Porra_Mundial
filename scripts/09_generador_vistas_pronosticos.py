@@ -38,10 +38,13 @@ def calcular_clasificacion_grupo(partidos_grupo):
     return sorted(tabla.items(), key=lambda x: (x[1]["pts"], x[1]["dif"], x[1]["gf"]), reverse=True)
 
 # =====================================================================
-# EL CEREBRO DE VISUALIZACIÓN SIDE-BY-SIDE ULTRA LIMPIO
+# EL CEREBRO DE VISUALIZACIÓN (SOPORTA MODO DOBLE O SIMPLE)
 # =====================================================================
-def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase):
-    html = "<table width='100%'>\n<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>\n"
+def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase, mostrar_realidad=True):
+    if mostrar_realidad:
+        html = "<table width='100%'>\n<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>\n"
+    else:
+        html = "<table width='100%'>\n<tr><th style='text-align:center;'>Tu Pronóstico (Hoja de Ruta Futura)</th></tr>\n"
     
     for i, p_pred in enumerate(partidos_pred):
         etiqueta = ""
@@ -56,64 +59,71 @@ def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase):
         res_pred_raw = formatear_resultado_html(p_pred)
         avanza_pred = p_pred.get("pasa", p_pred.get("ganador", "-"))
 
-        p_real = reales_fase[i] if i < len(reales_fase) else {}
-        color_fondo = "white"
-        
-        if p_real and p_real.get("estado") == "finished":
-            loc_real = f"{etiqueta}{p_real.get('local', '-')}"
-            vis_real = p_real.get("visitante", "-")
-            res_real_raw = formatear_resultado_html(p_real)
-            
-            gl, gv = int(p_real.get("goles_local", 0)), int(p_real.get("goles_visitante", 0))
-            if gl > gv: avanza_real = p_real.get("local", "-")
-            elif gv > gl: avanza_real = p_real.get("visitante", "-")
-            else:
-                pl, pv = int(p_real.get("penaltis_local", 0)), int(p_real.get("penaltis_visitante", 0))
-                avanza_real = p_real.get("local", "-") if pl > pv else p_real.get("visitante", "-")
-
-            # Fondos de gamificación por acierto exacto o 1x2
-            sig_p = "1" if int(p_pred.get("goles_local",0)) > int(p_pred.get("goles_visitante",0)) else ("2" if int(p_pred.get("goles_visitante",0)) > int(p_pred.get("goles_local",0)) else "X")
-            sig_r = "1" if gl > gv else ("2" if gv > gl else "X")
-            ex_p = f"{p_pred.get('goles_local')}-{p_pred.get('goles_visitante')}"
-            ex_r = f"{gl}-{gv}"
-
-            if sig_p != sig_r: color_fondo = "#fee2e2"
-            else:
-                if ex_p != ex_r: color_fondo = "#fef9c3"
-                else: color_fondo = "#dcfce7"
-            
-            # Lógica de icono de avance (Solo en Tu Pronóstico)
-            icono_pred = "🟢" if avanza_pred == avanza_real else "🔴"
-            
+        if not mostrar_realidad:
+            # TABLA SIMPLE: Solo mostramos lo que pronosticó sin juzgar la realidad
             html += f"<tr>"
-            html += f"<td align='center' style='background-color:{color_fondo}; border:1px solid #e5e7eb; padding:10px;'>"
-            html += f"<b>{loc_pred}</b> <b style='font-size:1.1em;'>{res_pred_raw}</b> <b>{vis_pred}</b><br>"
-            html += f"<span style='font-size:1em;'>{icono_pred} <b>{avanza_pred}</b></span>"
-            html += f"</td>"
-            
             html += f"<td align='center' style='border:1px solid #e5e7eb; padding:10px;'>"
-            html += f"<b>{loc_real}</b> <b style='font-size:1.1em;'>{res_real_raw}</b> <b>{vis_real}</b><br>"
-            html += f"<span style='font-size:1em;'><b>{avanza_real}</b></span>"
+            html += f"<b>{loc_pred}</b> <b style='font-size:1.1em;'>{res_pred_raw}</b> <b>{vis_pred}</b><br>"
+            html += f"<span style='font-size:1em;'>🟢 <b>{avanza_pred}</b></span>"
             html += f"</td>"
             html += f"</tr>\n"
         else:
-            # Partido pendiente o futuro
-            loc_real_name = p_real.get("local", "TBD") if "local" in p_real else f"Eq. {p_real.get('id_partido','')}A"
-            vis_real_name = p_real.get("visitante", "TBD") if "visitante" in p_real else f"Eq. {p_real.get('id_partido','')}B"
-            loc_real, vis_real = f"{etiqueta}{loc_real_name}", vis_real_name
-            res_real_raw = "⏳ Pendiente"
+            # TABLA DOBLE LADO A LADO: Gamificada con realidad
+            p_real = reales_fase[i] if i < len(reales_fase) else {}
+            color_fondo = "white"
             
-            html += f"<tr>"
-            html += f"<td align='center' style='background-color:{color_fondo}; border:1px solid #e5e7eb; padding:10px;'>"
-            html += f"<b>{loc_pred}</b> <b style='font-size:1.1em;'>{res_pred_raw}</b> <b>{vis_pred}</b><br>"
-            html += f"<span style='font-size:1em;'>⚪ <b>{avanza_pred}</b></span>"
-            html += f"</td>"
-            
-            html += f"<td align='center' style='border:1px solid #e5e7eb; padding:10px;'>"
-            html += f"<b>{loc_real}</b> <b style='font-size:1.1em;'>{res_real_raw}</b> <b>{vis_real}</b><br>"
-            html += f"<span style='color:#6b7280; font-size:1em;'>⏳ Pendiente</span>"
-            html += f"</td>"
-            html += f"</tr>\n"
+            if p_real and p_real.get("estado") == "finished":
+                loc_real = f"{etiqueta}{p_real.get('local', '-')}"
+                vis_real = p_real.get("visitante", "-")
+                res_real_raw = formatear_resultado_html(p_real)
+                
+                gl, gv = int(p_real.get("goles_local", 0)), int(p_real.get("goles_visitante", 0))
+                if gl > gv: avanza_real = p_real.get("local", "-")
+                elif gv > gl: avanza_real = p_real.get("visitante", "-")
+                else:
+                    pl, pv = int(p_real.get("penaltis_local", 0)), int(p_real.get("penaltis_visitante", 0))
+                    avanza_real = p_real.get("local", "-") if pl > pv else p_real.get("visitante", "-")
+
+                sig_p = "1" if int(p_pred.get("goles_local",0)) > int(p_pred.get("goles_visitante",0)) else ("2" if int(p_pred.get("goles_visitante",0)) > int(p_pred.get("goles_local",0)) else "X")
+                sig_r = "1" if gl > gv else ("2" if gv > gl else "X")
+                ex_p = f"{p_pred.get('goles_local')}-{p_pred.get('goles_visitante')}"
+                ex_r = f"{gl}-{gv}"
+
+                if sig_p != sig_r: color_fondo = "#fee2e2"
+                else:
+                    if ex_p != ex_r: color_fondo = "#fef9c3"
+                    else: color_fondo = "#dcfce7"
+                
+                icono_pred = "🟢" if avanza_pred == avanza_real else "🔴"
+                
+                html += f"<tr>"
+                html += f"<td align='center' style='background-color:{color_fondo}; border:1px solid #e5e7eb; padding:10px;'>"
+                html += f"<b>{loc_pred}</b> <b style='font-size:1.1em;'>{res_pred_raw}</b> <b>{vis_pred}</b><br>"
+                html += f"<span style='font-size:1em;'>{icono_pred} <b>{avanza_pred}</b></span>"
+                html += f"</td>"
+                
+                html += f"<td align='center' style='border:1px solid #e5e7eb; padding:10px;'>"
+                html += f"<b>{loc_real}</b> <b style='font-size:1.1em;'>{res_real_raw}</b> <b>{vis_real}</b><br>"
+                html += f"<span style='font-size:1em;'><b>{avanza_real}</b></span>"
+                html += f"</td>"
+                html += f"</tr>\n"
+            else:
+                loc_real_name = p_real.get("local", "TBD") if "local" in p_real else f"Eq. {p_real.get('id_partido','')}A"
+                vis_real_name = p_real.get("visitante", "TBD") if "visitante" in p_real else f"Eq. {p_real.get('id_partido','')}B"
+                loc_real, vis_real = f"{etiqueta}{loc_real_name}", vis_real_name
+                res_real_raw = "⏳ Pendiente"
+                
+                html += f"<tr>"
+                html += f"<td align='center' style='background-color:{color_fondo}; border:1px solid #e5e7eb; padding:10px;'>"
+                html += f"<b>{loc_pred}</b> <b style='font-size:1.1em;'>{res_pred_raw}</b> <b>{vis_pred}</b><br>"
+                html += f"<span style='font-size:1em;'>⚪ <b>{avanza_pred}</b></span>"
+                html += f"</td>"
+                
+                html += f"<td align='center' style='border:1px solid #e5e7eb; padding:10px;'>"
+                html += f"<b>{loc_real}</b> <b style='font-size:1.1em;'>{res_real_raw}</b> <b>{vis_real}</b><br>"
+                html += f"<span style='color:#6b7280; font-size:1em;'>⏳ Pendiente</span>"
+                html += f"</td>"
+                html += f"</tr>\n"
             
     html += "</table>\n"
     return html
@@ -139,7 +149,6 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales, realidad_dict):
 
     md = f"# 🌍 Pronóstico Inicial Completo - {nombre}\n\nAquí puedes consultar las tablas y el camino exacto hacia la final que predijo el jugador antes de empezar el torneo.\n\n---\n\n"
 
-    # 1. TABLAS DE GRUPOS ORDENADAS ESTRICTAMENTE (A -> L)
     for grupo, partidos in sorted(fase_grupos.items(), key=lambda x: x[0]):
         nombre_grupo = grupo.replace('_', ' ').upper()
         md += f"## 📊 {nombre_grupo}\n"
@@ -151,7 +160,6 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales, realidad_dict):
             pos_str, pasa = f"**{idx + 1}º**", ("✅" if eq in clasificados else "❌")
             md += f"| {pos_str} | **{eq}** | {stats['pj']} | {stats['pg']} | {stats['pe']} | {stats['pp']} | {stats['gf']} | {stats['gc']} | {stats['dif']} | **{stats['pts']}** | {pasa} |\n"
         
-        # TABLA LADO A LADO HTML PARA GRUPOS (Limpia, sin textos redundantes)
         md += "\n<details><summary><b>Ver Partidos del Grupo (Tu Pronóstico vs Real)</b></summary><br>\n\n"
         html_grupos = "<table width='100%'>\n<tr><th width='50%' style='text-align:center;'>Tu Pronóstico</th><th width='50%' style='text-align:center;'>Resultado Real</th></tr>\n"
         
@@ -190,18 +198,17 @@ def generar_readme_grupos(jugador_dir, nombre, dict_reales, realidad_dict):
         html_grupos += "</table>\n</details>\n\n---\n"
         md += html_grupos
 
-    # 2. EL ÁRBOL COMPLETO HASTA LA FINAL LADO A LADO
     eliminatorias = datos.get("eliminatorias", {})
     if eliminatorias:
-        md += "\n## ⚔️ Camino a la Final (Pronóstico Original vs Realidad)\n\n"
+        md += "\n## ⚔️ Camino a la Final (Hoja de Ruta Futura)\n\n"
         orden_logico = ["dieciseisavos", "octavos", "cuartos", "semifinales", "tercer_puesto", "final", "finales"]
         
         for sub_fase in orden_logico:
             partidos_sub = eliminatorias.get(sub_fase, [])
             if partidos_sub:
                 md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
-                reales_fase = obtener_reales_fase(realidad_dict, sub_fase)
-                md += generar_html_eliminatorias(partidos_sub, reales_fase, sub_fase)
+                # Forzamos mostrar_realidad=False para las fases futuras de los grupos
+                md += generar_html_eliminatorias(partidos_sub, [], sub_fase, mostrar_realidad=False)
                 md += "\n"
 
     with open(jugador_dir / "pronosticos" / "grupos" / "README.md", 'w', encoding='utf-8') as f: f.write(md)
@@ -225,8 +232,13 @@ def generar_readme_eliminatorias(jugador_dir, nombre, realidad_dict):
             if sub_fase in predicciones:
                 partidos = predicciones[sub_fase]
                 md += f"### 🏆 {sub_fase.replace('_', ' ').upper()}\n"
-                reales_fase = obtener_reales_fase(realidad_dict, sub_fase)
-                md += generar_html_eliminatorias(partidos, reales_fase, sub_fase)
+                
+                # Comprobamos si la fase que estamos pintando es la misma de la carpeta
+                fase_mapeada = "finales" if sub_fase in ["final", "tercer_puesto", "finales"] else sub_fase
+                es_fase_actual = (fase_mapeada == fase)
+                
+                reales_fase = obtener_reales_fase(realidad_dict, sub_fase) if es_fase_actual else []
+                md += generar_html_eliminatorias(partidos, reales_fase, sub_fase, mostrar_realidad=es_fase_actual)
                 md += "\n"
 
         with open(ruta_carpeta / "README.md", 'w', encoding='utf-8') as f: f.write(md)
