@@ -102,6 +102,10 @@ def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
     M = float(M)
     R = int(R)
     
+    # LEER LA CONFIGURACIÓN DINÁMICA
+    conf_sd = CONFIG.get("sorpresas_decepciones_config", {})
+    umb_p_m = float(conf_sd.get("distancia_minima_pronostico_media", 2.0))
+    
     fig, ax = plt.subplots(figsize=(6.5, 1.6), facecolor='white')
     ax.set_xlim(-0.5, 5.5)
     ax.set_ylim(-0.7, 0.7)
@@ -116,17 +120,21 @@ def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
 
     ax.axhline(0, color='#9ca3af', linewidth=4, zorder=1)
 
-    if M - 1.5 >= -0.5:
-        ax.axvspan(-0.5, M - 1.5, color='#fca5a5', alpha=0.35, zorder=0)
-        ax.axvline(M - 1.5, color='#ef4444', linestyle='--', linewidth=2, zorder=2)
-        ax.text((-0.5 + M - 1.5)/2, 0.45, "ZONA\nDECEPCIÓN", ha='center', va='center', 
+    # FRONTERAS DINÁMICAS BASADAS EN EL SETTINGS.JSON
+    frontera_decepcion = M - umb_p_m
+    frontera_sorpresa = M + umb_p_m
+
+    if frontera_decepcion >= -0.5:
+        ax.axvspan(-0.5, frontera_decepcion, color='#fca5a5', alpha=0.35, zorder=0)
+        ax.axvline(frontera_decepcion, color='#ef4444', linestyle='--', linewidth=2, zorder=2)
+        ax.text((-0.5 + frontera_decepcion)/2, 0.45, "ZONA\nDECEPCIÓN", ha='center', va='center', 
                 fontsize=7, color='#b91c1c', fontweight='black', 
                 bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 
-    if M + 1.5 <= 5.5:
-        ax.axvspan(M + 1.5, 5.5, color='#86efac', alpha=0.35, zorder=0)
-        ax.axvline(M + 1.5, color='#22c55e', linestyle='--', linewidth=2, zorder=2)
-        ax.text((M + 1.5 + 5.5)/2, 0.45, "ZONA\nSORPRESA", ha='center', va='center', 
+    if frontera_sorpresa <= 5.5:
+        ax.axvspan(frontera_sorpresa, 5.5, color='#86efac', alpha=0.35, zorder=0)
+        ax.axvline(frontera_sorpresa, color='#22c55e', linestyle='--', linewidth=2, zorder=2)
+        ax.text((frontera_sorpresa + 5.5)/2, 0.45, "ZONA\nSORPRESA", ha='center', va='center', 
                 fontsize=7, color='#15803d', fontweight='black', 
                 bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 
@@ -145,7 +153,7 @@ def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
     plt.tight_layout(pad=0.2)
     plt.savefig(ruta_salida, dpi=120, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.close(fig)
-
+    
 def generar_readme_global():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
     if not ruta_csv.exists(): return False
