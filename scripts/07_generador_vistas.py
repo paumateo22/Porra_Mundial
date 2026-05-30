@@ -15,7 +15,6 @@ def cargar_json(ruta):
         return json.load(f)
 
 def calcular_clasificacion_grupos(fase_grupos):
-    """Calcula la posición (1º, 2º, 3º, 4º) de cada equipo en su grupo."""
     posiciones = {}
     for grupo, partidos in fase_grupos.items():
         tabla = {}
@@ -42,11 +41,7 @@ def calcular_clasificacion_grupos(fase_grupos):
             posiciones[eq] = idx + 1
     return posiciones
 
-# =====================================================================
-# FUNCIONES DETECTIVE PARA EL DESGLOSE DE MULTIPLICADORES
-# =====================================================================
 def generar_enlace_fase(fase_key, nombre_id):
-    """Genera el hipervínculo Markdown relativo a la carpeta del jugador."""
     if fase_key.startswith("J"):
         return f"[Grupos](pronosticos/grupos/{nombre_id}_base.json)"
     elif "dieciseisavos" in fase_key:
@@ -62,33 +57,25 @@ def generar_enlace_fase(fase_key, nombre_id):
     return f"[{fase_key}](#)"
 
 def rastrear_origen(equipo, index_fase_actual, desglose_p, dict_reales, jornadas_keys_list, jornadas_dict):
-    """Rastrea hacia atrás en qué fases previas se acertó la victoria de este equipo."""
     rastros = []
     for idx in range(index_fase_actual - 1, -1, -1):
         fase_previa = jornadas_keys_list[idx]
-        # Buscar si el equipo jugó en esa jornada anterior
         for p in jornadas_dict.get(fase_previa, []):
             clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
             p_real = dict_reales.get(clave, {})
             
-            # Si el equipo estuvo en ese partido real
             if p_real.get("local") == equipo or p_real.get("visitante") == equipo:
                 info_p = desglose_p.get(clave, {})
-                # Y el jugador acertó que pasaba/ganaba (acierto 1x2)
                 if info_p.get("acierto_1x2"):
-                    # Evitamos duplicar 'Grupos' si acertó dos partidos del mismo equipo
                     fase_general = "J" if fase_previa.startswith("J") else fase_previa
                     if not any(fase_general in r for r in rastros):
                         rastros.append(fase_previa)
                 break
     return rastros
-# =====================================================================
 
 def generar_readme_global():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
-    if not ruta_csv.exists():
-        print("❌ Error: No existe el ranking_oficial.csv.")
-        return False
+    if not ruta_csv.exists(): return False
 
     jornadas_ruta = ROOT_DIR / "config" / "jornadas.json"
     jornadas_dict = cargar_json(jornadas_ruta) or {}
@@ -97,8 +84,7 @@ def generar_readme_global():
     ranking = []
     with open(ruta_csv, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        for row in reader:
-            ranking.append(row)
+        for row in reader: ranking.append(row)
 
     fecha_act = datetime.now().strftime("%d/%m/%Y %H:%M")
     headers = ["Pos", "Jugador"] + jornadas_keys + ["Pts Sorpresa", "Pts Decepción", "Premios", "TOTAL"]
@@ -142,17 +128,14 @@ El formato de las jornadas es **Exactos/1x2**. Los colores indican: <span style=
             exactos = 0
             for p in jornadas_dict.get(j_key, []):
                 clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
-                if desglose_p.get(clave, {}).get("acierto_exacto", False):
-                    exactos += 1
+                if desglose_p.get(clave, {}).get("acierto_exacto", False): exactos += 1
             
             aciertos_1x2 = info_j.get("aciertos_1x2", 0)
             texto_celda = f"{exactos}/{aciertos_1x2}"
             resultado = info_j.get("resultado", "")
             
-            if resultado == "Ganador":
-                texto_celda = f'<span style="color:goldenrod; font-weight:bold;">{texto_celda}</span>'
-            elif resultado == "Perdedor":
-                texto_celda = f'<span style="color:red; font-weight:bold;">{texto_celda}</span>'
+            if resultado == "Ganador": texto_celda = f'<span style="color:goldenrod; font-weight:bold;">{texto_celda}</span>'
+            elif resultado == "Perdedor": texto_celda = f'<span style="color:red; font-weight:bold;">{texto_celda}</span>'
                 
             jornadas_columnas.append(texto_celda)
 
@@ -164,8 +147,7 @@ El formato de las jornadas es **Exactos/1x2**. Los colores indican: <span style=
         md += "| " + " | ".join(fila) + " |\n"
 
     md += "\n---\n*🤖 Motor automatizado de puntuación.*\n"
-    with open(ROOT_DIR / "README.md", 'w', encoding='utf-8') as f:
-        f.write(md)
+    with open(ROOT_DIR / "README.md", 'w', encoding='utf-8') as f: f.write(md)
     print("✅ README.md global generado con éxito.")
     return True
 
@@ -200,18 +182,27 @@ def generar_readmes_personales():
         libro = cargar_json(jugador_dir / "estadisticas" / "historial_puntos.json")
         if not libro: continue
 
+        # --- EXTRACCIÓN DE PRONÓSTICOS INTELIGENTE ---
+        dict_preds = {}
         ruta_base = jugador_dir / "pronosticos" / "grupos" / f"{nombre_id}_base.json"
         base_pred = cargar_json(ruta_base) or {}
-        dict_preds = {}
         for grupo, partidos in base_pred.get("fase_grupos", {}).items():
             for p in partidos: dict_preds[f"{p['local']}_vs_{p['visitante']}"] = p
 
-        for fase in ["dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]:
-            ruta_fase = jugador_dir / "pronosticos" / "eliminatorias" / fase / f"{fase}.json"
-            preds = (cargar_json(ruta_fase) or {}).get("predicciones", {}).get(fase, [])
-            reales_fase = realidad_dict.get("eliminatorias", {}).get("tercer_puesto", []) + realidad_dict.get("eliminatorias", {}).get("final", []) if fase == "finales" else realidad_dict.get("eliminatorias", {}).get(fase, [])
-            for i, p_real in enumerate(reales_fase):
-                if i < len(preds): dict_preds[f"ID_{p_real['id_partido']}"] = preds[i]
+        # Buscamos en todas las fases por si un JSON contiene las siguientes
+        for fase_origen in ["dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]:
+            ruta_fase = jugador_dir / "pronosticos" / "eliminatorias" / fase_origen / f"{fase_origen}.json"
+            datos = cargar_json(ruta_fase) or {}
+            predicciones = datos.get("predicciones", {})
+            
+            for fase_destino, preds in predicciones.items():
+                if fase_destino in ["finales", "final", "tercer_puesto"]:
+                    reales_fase = realidad_dict.get("eliminatorias", {}).get("tercer_puesto", []) + realidad_dict.get("eliminatorias", {}).get("final", [])
+                else:
+                    reales_fase = realidad_dict.get("eliminatorias", {}).get(fase_destino, [])
+                
+                for i, p_real in enumerate(reales_fase):
+                    if i < len(preds): dict_preds[f"ID_{p_real['id_partido']}"] = preds[i]
 
         posicion = libro.get("posicion_final_ranking", "-")
         desglose_p = libro.get("desglose_partidos", {})
@@ -237,7 +228,6 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
             
             md += f"### 📌 {j_key.upper()}\n"
             
-            # Cabeceras dinámicas según si hay desglose de multiplicador o no
             if es_fase_grupos:
                 md += "| Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |\n"
                 md += "| :--- | :---: | :---: | :---: | :---: | :---: | :---: |\n"
@@ -248,53 +238,67 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
             pts_partidos_jornada = 0
             aciertos_jornada = 0
             exactos_jornada = 0
+            partidos_jugados = False
 
             for p in partidos_jornada:
                 clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
-                info_p = desglose_p.get(clave)
-                if info_p:
-                    p_real = dict_reales.get(clave, {})
-                    p_pred = dict_preds.get(clave, {})
+                info_p = desglose_p.get(clave, {})
+                p_real = dict_reales.get(clave, {})
+                p_pred = dict_preds.get(clave, {})
+                
+                loc_real = p_real.get("local", "TBD")
+                vis_real = p_real.get("visitante", "TBD")
+                
+                # Para mostrar las eliminatorias futuras limpias
+                if loc_real == "TBD" and "id_partido" in p:
+                    loc_real, vis_real = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
                     
-                    loc_real, vis_real = p_real.get("local", "L"), p_real.get("visitante", "V")
-                    
-                    if p_pred:
-                        loc_pred, vis_pred = p_pred.get("local", ""), p_pred.get("visitante", "")
-                        gl_pred, gv_pred = p_pred.get("goles_local", "-"), p_pred.get("goles_visitante", "-")
-                        texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*" if (loc_pred != loc_real or vis_pred != vis_real) else f"**{gl_pred} - {gv_pred}**"
-                    else:
-                        texto_pred = "-"
+                if p_pred:
+                    loc_pred, vis_pred = p_pred.get("local", ""), p_pred.get("visitante", "")
+                    gl_pred, gv_pred = p_pred.get("goles_local", "-"), p_pred.get("goles_visitante", "-")
+                    texto_pred = f"*{loc_pred} {gl_pred}-{gv_pred} {vis_pred}*" if (loc_pred != loc_real or vis_pred != vis_real) else f"**{gl_pred} - {gv_pred}**"
+                else:
+                    texto_pred = "-"
 
-                    texto_real = f"**{p_real.get('goles_local', '-')} - {p_real.get('goles_visitante', '-')}**" if p_real.get("estado") == "finished" else "⏳"
-                    pts = info_p.get("puntos_conseguidos", 0)
-                    mult = info_p.get('multiplicador_aplicado', 1.0)
-                    
+                estado = p_real.get("estado", "notstarted")
+                if estado == "finished":
+                    partidos_jugados = True
+                    texto_real = f"**{p_real.get('goles_local', '-')} - {p_real.get('goles_visitante', '-')}**"
+                    icono_1x2 = '✅' if info_p.get('acierto_1x2') else '❌'
+                    icono_ex = '🎯' if info_p.get('acierto_exacto') else '---'
+                else:
+                    texto_real = "⏳"
+                    icono_1x2 = "⏳"
+                    icono_ex = "⏳"
+
+                pts = info_p.get("puntos_conseguidos", 0)
+                mult = info_p.get('multiplicador_aplicado', 1.0)
+                
+                if estado == "finished" and info_p:
                     pts_partidos_jornada += pts
                     if info_p.get('acierto_1x2'): aciertos_jornada += 1
                     if info_p.get('acierto_exacto'): exactos_jornada += 1
                     if es_fase_grupos: pts_partidos_grupos_acumulados += pts
-                    
-                    # Generación de fila según la fase
-                    if es_fase_grupos:
-                        md += f"| **{loc_real}** vs **{vis_real}** | {texto_pred} | {texto_real} | {'✅' if info_p.get('acierto_1x2') else '❌'} | {'🎯' if info_p.get('acierto_exacto') else '---'} | x{mult} | **{pts}** |\n"
-                    else:
-                        texto_origen = "-"
-                        if mult > 1.0:
-                            rastros_loc = rastrear_origen(loc_real, index_fase_actual, desglose_p, dict_reales, jornadas_keys_list, jornadas_dict)
-                            rastros_vis = rastrear_origen(vis_real, index_fase_actual, desglose_p, dict_reales, jornadas_keys_list, jornadas_dict)
-                            
-                            detalles = []
-                            if rastros_loc:
-                                links_loc = ", ".join([f"+0.5 ({generar_enlace_fase(f, nombre_id)})" for f in rastros_loc])
-                                detalles.append(f"**{loc_real}**: {links_loc}")
-                            if rastros_vis:
-                                links_vis = ", ".join([f"+0.5 ({generar_enlace_fase(f, nombre_id)})" for f in rastros_vis])
-                                detalles.append(f"**{vis_real}**: {links_vis}")
-                            
-                            if detalles:
-                                texto_origen = "<br>".join(detalles)
+                
+                if es_fase_grupos:
+                    md += f"| **{loc_real}** vs **{vis_real}** | {texto_pred} | {texto_real} | {icono_1x2} | {icono_ex} | x{mult} | **{pts}** |\n"
+                else:
+                    texto_origen = "-"
+                    if mult > 1.0 and estado == "finished":
+                        rastros_loc = rastrear_origen(loc_real, index_fase_actual, desglose_p, dict_reales, jornadas_keys_list, jornadas_dict)
+                        rastros_vis = rastrear_origen(vis_real, index_fase_actual, desglose_p, dict_reales, jornadas_keys_list, jornadas_dict)
                         
-                        md += f"| **{loc_real}** vs **{vis_real}** | {texto_pred} | {texto_real} | {'✅' if info_p.get('acierto_1x2') else '❌'} | {'🎯' if info_p.get('acierto_exacto') else '---'} | x{mult} | {texto_origen} | **{pts}** |\n"
+                        detalles = []
+                        if rastros_loc:
+                            links_loc = ", ".join([f"+0.5 ({generar_enlace_fase(f, nombre_id)})" for f in rastros_loc])
+                            detalles.append(f"**{loc_real}**: {links_loc}")
+                        if rastros_vis:
+                            links_vis = ", ".join([f"+0.5 ({generar_enlace_fase(f, nombre_id)})" for f in rastros_vis])
+                            detalles.append(f"**{vis_real}**: {links_vis}")
+                        
+                        if detalles: texto_origen = "<br>".join(detalles)
+                    
+                    md += f"| **{loc_real}** vs **{vis_real}** | {texto_pred} | {texto_real} | {icono_1x2} | {icono_ex} | x{mult} | {texto_origen} | **{pts}** |\n"
             
             # BLOQUE RESUMEN DE JORNADA
             info_jornada = desglose_j.get(j_key)
@@ -317,9 +321,9 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                 md += f"\n> **Resumen de la {j_key.upper()}:** **{exactos_jornada}/{aciertos_jornada}** *(Clavados/Aciertos)*. Quedaste en la posición **{rank}º**. | Resultado: {icono_res} **{resultado_str}** ({bono_jornada} pts)\n"
                 md += f"> **Puntos sumados esta jornada:** {pts_totales_jornada} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n"
             else:
-                if pts_totales_jornada > 0 or aciertos_jornada > 0:
-                    md += f"\n> **Resumen de la {j_key.upper()}:** **{exactos_jornada}/{aciertos_jornada}** *(Clavados/Aciertos)*.\n"
-                    md += f"> **Puntos sumados esta jornada:** {pts_totales_jornada} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n"
+                if partidos_jugados:
+                    md += f"\n> **Resumen Parcial de la {j_key.upper()}:** **{exactos_jornada}/{aciertos_jornada}** *(Clavados/Aciertos)*.\n"
+                    md += f"> **Puntos sumados hasta ahora:** {pts_totales_jornada} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n"
                 else:
                     md += "\n> *Jornada pendiente o sin procesar.*\n\n"
 
@@ -358,8 +362,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
                                 acierto_exacto = "🎯 (+2)"
                                 pts_eq += 2
                                 total_aciertos_exactos_pos += 1
-                            else:
-                                acierto_exacto = "❌"
+                            else: acierto_exacto = "❌"
                         else:
                             acierto_pase = "❌"
                             acierto_exacto = "❌"
@@ -378,8 +381,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 
         md += "\n---\n[⬅️ Volver a la clasificación general](../../README.md)"
 
-        with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f:
-            f.write(md)
+        with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f: f.write(md)
             
     print("✅ READMEs personales generados con enlaces al JSON y desglose visual de multiplicadores.")
 
@@ -390,15 +392,11 @@ def ejecutar_generador_vistas():
     
     if generar_readme_global():
         generar_readmes_personales()
-        
         try:
-            # 1. Tabla de resultados oficiales
             import_module("08_generador_realidad_md").generar_readme_realidad()
-            # 2. Galerías de las predicciones internas
             import_module("09_generador_vistas_pronosticos").generar_readmes_pronosticos()
         except ModuleNotFoundError as e:
             print(f"⚠️ Módulo no encontrado: {e}")
-            
         print("\n🎉 ¡Tus vistas están listas! Sube los cambios a GitHub para ver la web.")
 
 if __name__ == "__main__":

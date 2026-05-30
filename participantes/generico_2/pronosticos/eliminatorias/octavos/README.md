@@ -30,3 +30,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Octavos.
 | **Suiza** | **2** - **1** | **Noruega** | 🟢 Suiza |
 | **Estados Unidos** | **2** - **0** | **Argentina** | 🟢 Estados Unidos |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **Noruega** | **0** - **2** | **Argentina** | 🟢 Argentina |
+| **Suiza** | **2** - **0** | **Estados Unidos** | 🟢 Suiza |
+

@@ -50,3 +50,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisa
 | **Brasil** | **0** - **1** | **Senegal** | 🟢 Senegal |
 | **Estados Unidos** | **2** - **3** | **Paraguay** | 🟢 Paraguay |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **Brasil** | **1** - **2** | **Estados Unidos** | 🟢 Estados Unidos |
+| **Senegal** | **2** - **0** | **Paraguay** | 🟢 Senegal |
+

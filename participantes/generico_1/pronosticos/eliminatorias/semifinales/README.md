@@ -10,3 +10,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Semifinale
 | **Francia** | **1** - **0** | **España** | 🟢 Francia |
 | **Inglaterra** | **2** - **1** | **Colombia** | 🟢 Inglaterra |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **España** | **2** - **0** | **Colombia** | 🟢 España |
+| **Francia** | **1** - **0** | **Inglaterra** | 🟢 Francia |
+

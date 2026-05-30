@@ -30,3 +30,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Octavos.
 | **Suiza** | **0** - **3** | **México** | 🟢 México |
 | **España** | **0** - **1** | **Colombia** | 🟢 Colombia |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **Suiza** | **2** - **1** | **España** | 🟢 Suiza |
+| **México** | **2** - **1** | **Colombia** | 🟢 México |
+

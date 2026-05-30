@@ -1,8 +1,8 @@
 {
     "generico_1": {
-        "puntos_partidos": 92.0,
-        "total_aciertos_1x2": 32,
-        "total_aciertos_exactos": 9,
+        "puntos_partidos": 102.0,
+        "total_aciertos_1x2": 33,
+        "total_aciertos_exactos": 10,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -309,9 +309,15 @@
             },
             "ID_102": {
                 "acierto_1x2": true
+            },
+            "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -14,
+        "puntos_jornadas": -12,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -367,6 +373,11 @@
                 "aciertos_1x2": 1,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "finales": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         },
         "puntos_grupos": 49
@@ -681,9 +692,15 @@
             },
             "ID_102": {
                 "acierto_1x2": false
+            },
+            "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 8,
@@ -736,6 +753,11 @@
                 "resultado": "Ganador"
             },
             "semifinales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
+            },
+            "finales": {
                 "aciertos_1x2": 0,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
@@ -1053,9 +1075,15 @@
             },
             "ID_102": {
                 "acierto_1x2": true
+            },
+            "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 14,
+        "puntos_jornadas": 12,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 7,
@@ -1111,6 +1139,11 @@
                 "aciertos_1x2": 2,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         },
         "puntos_grupos": 66

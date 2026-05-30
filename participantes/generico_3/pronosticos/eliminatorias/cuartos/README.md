@@ -18,3 +18,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Cuartos.
 | **Marruecos** | **3** - **1** | **España** | 🟢 Marruecos |
 | **Inglaterra** | **0** - **2** | **Colombia** | 🟢 Colombia |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **España** | **2** - **0** | **Inglaterra** | 🟢 España |
+| **Marruecos** | **2** - **1** | **Colombia** | 🟢 Marruecos |
+

@@ -30,3 +30,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Octavos.
 | **Ecuador** | **0** - **1** | **Brasil** | 🟢 Brasil |
 | **Bélgica** | **0** - **1** | **Argentina** | 🟢 Argentina |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **Ecuador** | **1** - **3** | **Bélgica** | 🟢 Bélgica |
+| **Brasil** | **1** - **3** | **Argentina** | 🟢 Argentina |
+

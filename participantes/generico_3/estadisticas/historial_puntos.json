@@ -1,6 +1,6 @@
 {
     "jugador": "Generico 3",
-    "puntos_totales": 245.0,
+    "puntos_totales": 243.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -745,6 +745,22 @@
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "1 (Inglaterra) / 2 (Colombia)",
             "puntos_conseguidos": 10.0
+        },
+        "ID_103": {
+            "fase": "finales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (Francia) / 2 (Colombia)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_104": {
+            "fase": "finales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (España) / 2 (Inglaterra)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -802,6 +818,11 @@
             "aciertos_1x2": 2,
             "puntos_bono": 2,
             "resultado": "Ganador"
+        },
+        "finales": {
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {},

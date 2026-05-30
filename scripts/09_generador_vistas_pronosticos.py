@@ -115,8 +115,8 @@ def generar_readme_eliminatorias(jugador_dir, nombre):
         md += f"Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los {fase.capitalize()}.\n\n"
         md += "---\n\n"
 
-        # Iteramos solo sobre las llaves que existen en su JSON de forma ordenada
-        orden_logico = ["dieciseisavos", "octavos", "cuartos", "semifinales", "tercer_puesto", "final"]
+        # Añadimos "finales" a la lista para que coincida con tu JSON
+        orden_logico = ["dieciseisavos", "octavos", "cuartos", "semifinales", "tercer_puesto", "final", "finales"]
         
         for sub_fase in orden_logico:
             if sub_fase in predicciones:
@@ -137,7 +137,7 @@ def generar_readme_eliminatorias(jugador_dir, nombre):
         ruta_md = ruta_carpeta / "README.md"
         with open(ruta_md, 'w', encoding='utf-8') as f:
             f.write(md)
-
+            
 def generar_readmes_pronosticos():
     print("=======================================================")
     print(" 🎨 [09] GENERANDO MUSEOS DE PRONÓSTICOS (CARPETAS LOCALES) ")

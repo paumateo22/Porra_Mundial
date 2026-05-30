@@ -1,5 +1,5 @@
 # 👤 Perfil de Jugador: Generico 2
-### Posición Actual: **2º** | Puntos Totales: **186.5**
+### Posición Actual: **2º** | Puntos Totales: **184.5**
 
 ---
 
@@ -251,8 +251,11 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 📌 FINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
+| **Francia** vs **Colombia** | **2 - 3** | **2 - 0** | ❌ | --- | x3.0 | **Francia**: +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)), +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_2_base.json))<br>**Colombia**: +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_2_base.json)) | **0.0** |
+| **España** vs **Inglaterra** | **1 - 2** | **2 - 1** | ❌ | --- | x2.5 | **España**: +0.5 ([1/16](pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json)), +0.5 ([Grupos](pronosticos/grupos/generico_2_base.json))<br>**Inglaterra**: +0.5 ([1/4](pronosticos/eliminatorias/cuartos/cuartos.json)), +0.5 ([1/8](pronosticos/eliminatorias/octavos/octavos.json)) | **0.0** |
 
-> *Jornada pendiente o sin procesar.*
+> **Resumen de la FINALES:** **0/0** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+> **Puntos sumados esta jornada:** -2.0 pts | **TOTAL ACUMULADO:** 184.5 pts
 
 
 ---

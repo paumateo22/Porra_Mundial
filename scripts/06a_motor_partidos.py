@@ -15,7 +15,7 @@ def cargar_configuracion():
         return json.load(f)
 
 CONFIG = cargar_configuracion()
-FASES_ORDENADAS = ["dieciseisavos", "octavos", "cuartos", "semifinales", "final"]
+FASES_ORDENADAS = ["dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
 
 def cargar_realidad():
     ruta = ROOT_DIR / "data" / "resultados" / "realidad_oficial.json"
@@ -58,7 +58,6 @@ def calcular_puntos_partido(pronostico_loc, pronostico_vis, real_loc, real_vis, 
         multiplicador += (racha_loc * inc) + (racha_vis * inc)
         
     puntos_finales = pts_base * multiplicador
-    # Devolvemos también el multiplicador para el desglose visual del jugador
     return puntos_finales, acierto_1x2, acierto_exacto, multiplicador
 
 def calcular_racha_equipo(jugador, equipo, fase_objetivo):
@@ -145,13 +144,14 @@ def ejecutar_06a_motor_partidos():
                 partidos_predichos = porra_base.get("fase_grupos", {}).get(grupo, [])
                 
                 for p_real in partidos_reales:
-                    if p_real["estado"] == "notstarted": continue
+                    if p_real.get("estado", "notstarted") == "notstarted": continue
                     
                     for p_pred in partidos_predichos:
-                        if p_pred["local"] == p_real["local"] and p_pred["visitante"] == p_real["visitante"]:
+                        if p_pred.get("local") == p_real.get("local") and p_pred.get("visitante") == p_real.get("visitante"):
+                            # USO DE .GET() PARA EVITAR KEYERRORS
                             pts, is_1x2, is_ex, mult = calcular_puntos_partido(
-                                int(p_pred["goles_local"]), int(p_pred["goles_visitante"]),
-                                int(p_real["goles_local"]), int(p_real["goles_visitante"])
+                                int(p_pred.get("goles_local", 0)), int(p_pred.get("goles_visitante", 0)),
+                                int(p_real.get("goles_local", 0)), int(p_real.get("goles_visitante", 0))
                             )
                             
                             informe_06a[jugador]["puntos_partidos"] += pts
@@ -161,7 +161,6 @@ def ejecutar_06a_motor_partidos():
                             clave_partido = f"{p_real['local']}_vs_{p_real['visitante']}"
                             informe_06a[jugador]["historial_jornadas"][clave_partido] = {"acierto_1x2": is_1x2}
                             
-                            # --- REGISTRO PERSONAL ---
                             libro_cuentas["desglose_partidos"][clave_partido] = {
                                 "fase": "grupos",
                                 "acierto_1x2": is_1x2,
@@ -169,55 +168,66 @@ def ejecutar_06a_motor_partidos():
                                 "multiplicador_aplicado": mult,
                                 "puntos_conseguidos": pts
                             }
-                            # -------------------------
                             break
 
-        # 2. PROCESAR ELIMINATORIAS (Archivos del OCR)
+        # 2. PROCESAR ELIMINATORIAS (Evaluación por Índice y Mapeo Correcto de Finales)
         for fase in FASES_ORDENADAS:
             ruta_fase = dir_participantes / jugador / "pronosticos" / "eliminatorias" / fase / f"{fase}.json"
-            if not ruta_fase.exists(): continue
-                
-            with open(ruta_fase, 'r', encoding='utf-8') as f:
-                porra_fase = json.load(f)
-                
-            predicciones = porra_fase.get("predicciones", {}).get(fase, [])
-            reales = realidad.get("eliminatorias", {}).get(fase, [])
             
-            for p_real in reales:
-                if p_real["estado"] == "notstarted": continue
+            predicciones = []
+            if ruta_fase.exists():
+                with open(ruta_fase, 'r', encoding='utf-8') as f:
+                    porra_fase = json.load(f)
+                predicciones = porra_fase.get("predicciones", {}).get(fase, [])
                 
-                for p_pred in predicciones:
-                    if p_pred["local"] == p_real["local"] and p_pred["visitante"] == p_real["visitante"]:
-                        
+            # Mapeo de la realidad para juntar 3º puesto y final
+            reales = []
+            if fase == "finales":
+                reales.extend(realidad.get("eliminatorias", {}).get("tercer_puesto", []))
+                reales.extend(realidad.get("eliminatorias", {}).get("final", []))
+            else:
+                reales = realidad.get("eliminatorias", {}).get(fase, [])
+                
+            # Evaluamos por índice cronológico
+            for i, p_real in enumerate(reales):
+                if p_real.get("estado", "notstarted") == "notstarted": continue
+                
+                pts, is_1x2, is_ex, mult = 0, False, False, 1.0
+                racha_l, racha_v = 0, 0
+                racha_txt = "Fallo de cruce"
+                
+                if i < len(predicciones):
+                    p_pred = predicciones[i]
+                    
+                    if p_pred.get("local") == p_real.get("local") and p_pred.get("visitante") == p_real.get("visitante"):
                         racha_l = calcular_racha_equipo(jugador, p_real["local"], fase)
                         racha_v = calcular_racha_equipo(jugador, p_real["visitante"], fase)
                         
                         pts, is_1x2, is_ex, mult = calcular_puntos_partido(
-                            int(p_pred["goles_local"]), int(p_pred["goles_visitante"]),
-                            int(p_real["goles_local"]), int(p_real["goles_visitante"]),
+                            int(p_pred.get("goles_local", 0)), int(p_pred.get("goles_visitante", 0)),
+                            int(p_real.get("goles_local", 0)), int(p_real.get("goles_visitante", 0)),
                             racha_loc=racha_l, racha_vis=racha_v
                         )
+                        racha_txt = f"{racha_l} ({p_real['local']}) / {racha_v} ({p_real['visitante']})"
                         
-                        informe_06a[jugador]["puntos_partidos"] += pts
-                        if is_1x2: informe_06a[jugador]["total_aciertos_1x2"] += 1
-                        if is_ex: informe_06a[jugador]["total_aciertos_exactos"] += 1
-                        
-                        clave_partido = f"ID_{p_real['id_partido']}"
-                        informe_06a[jugador]["historial_jornadas"][clave_partido] = {"acierto_1x2": is_1x2}
+                informe_06a[jugador]["puntos_partidos"] += pts
+                if is_1x2: informe_06a[jugador]["total_aciertos_1x2"] += 1
+                if is_ex: informe_06a[jugador]["total_aciertos_exactos"] += 1
+                
+                # REGISTRAMOS SIEMPRE (incluso con 0 puntos si falló los equipos)
+                clave_partido = f"ID_{p_real['id_partido']}"
+                informe_06a[jugador]["historial_jornadas"][clave_partido] = {"acierto_1x2": is_1x2}
 
-                        # --- REGISTRO PERSONAL ---
-                        libro_cuentas["desglose_partidos"][clave_partido] = {
-                            "fase": fase,
-                            "acierto_1x2": is_1x2,
-                            "acierto_exacto": is_ex,
-                            "multiplicador_aplicado": mult,
-                            "racha_detectada": f"{racha_l} ({p_real['local']}) / {racha_v} ({p_real['visitante']})",
-                            "puntos_conseguidos": pts
-                        }
-                        # -------------------------
-                        break
+                libro_cuentas["desglose_partidos"][clave_partido] = {
+                    "fase": fase,
+                    "acierto_1x2": is_1x2,
+                    "acierto_exacto": is_ex,
+                    "multiplicador_aplicado": mult,
+                    "racha_detectada": racha_txt,
+                    "puntos_conseguidos": pts
+                }
 
-        # Guardar el Libro de Cuentas Personal de este jugador (Primera versión)
+        # Guardar el Libro de Cuentas Personal de este jugador
         ruta_libro = dir_participantes / jugador / "estadisticas" / "historial_puntos.json"
         guardar_json(libro_cuentas, ruta_libro)
 

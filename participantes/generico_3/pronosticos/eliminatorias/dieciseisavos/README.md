@@ -50,3 +50,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisa
 | **Brasil** | **1** - **0** | **Senegal** | 🟢 Brasil |
 | **Bélgica** | **2** - **1** | **Paraguay** | 🟢 Bélgica |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **Senegal** | **1** - **0** | **Paraguay** | 🟢 Senegal |
+| **Brasil** | **2** - **1** | **Bélgica** | 🟢 Brasil |
+

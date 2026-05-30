@@ -18,3 +18,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Cuartos.
 | **Francia** | **1** - **0** | **Bélgica** | 🟢 Francia |
 | **Inglaterra** | **1** - **0** | **Colombia** | 🟢 Inglaterra |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **Bélgica** | **1** - **0** | **Colombia** | 🟢 Bélgica |
+| **Francia** | **1** - **2** | **Inglaterra** | 🟢 Inglaterra |
+

@@ -50,3 +50,9 @@ Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisa
 | **Marruecos** | **0** - **1** | **Senegal** | 🟢 Senegal |
 | **Bélgica** | **0** - **1** | **Uruguay** | 🟢 Uruguay |
 
+### 🏆 FINALES
+| Local | Resultado | Visitante | Avanza |
+| :--- | :---: | :--- | :---: |
+| **Marruecos** | **2** - **1** | **Bélgica** | 🟢 Marruecos |
+| **Senegal** | **2** - **1** | **Uruguay** | 🟢 Senegal |
+
