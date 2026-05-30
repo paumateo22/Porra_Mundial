@@ -115,9 +115,9 @@ def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
         ax.axvspan(M + 1.5, 5.5, color='#dcfce7', alpha=0.8, zorder=0, lw=0)
 
     # Colocar los Puntos en el espacio
-    ax.plot(M, 0, 'o', color='#9ca3af', markersize=14, zorder=3) # Circulo gris (Media)
-    ax.plot(P, 0, 's', color='#3b82f6', markersize=11, zorder=4) # Cuadrado azul (Pronóstico)
-    ax.plot(R, 0, '*', color='#eab308', markersize=20, markeredgecolor='black', markeredgewidth=0.5, zorder=5) # Estrella oro (Real)
+    ax.plot(M, 0, 'o', color="#d41a1a", markersize=14, zorder=3) # Circulo gris (Media)
+    ax.plot(P, 0, 's', color="#1cdf25", markersize=11, zorder=4) # Cuadrado azul (Pronóstico)
+    ax.plot(R, 0, '*', color="#106eda", markersize=20, markeredgecolor='black', markeredgewidth=0.5, zorder=5) # Estrella oro (Real)
 
     # Anotaciones de texto sobre y bajo los puntos
     ax.text(M, 0.18, "Media", ha='center', va='bottom', fontsize=8, color='#6b7280', fontweight='bold')
