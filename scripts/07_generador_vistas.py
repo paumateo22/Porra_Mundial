@@ -87,44 +87,57 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
 # RENDERIZADOR DE IMÁGENES MATPLOTLIB (DASHBOARD SORPRESAS)
 # =====================================================================
 def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
-    """Dibuja un gauge horizontal limpio y profesional y lo guarda como PNG."""
+    """Dibuja un gauge horizontal con las zonas válidas altamente visibles."""
     if not MATPLOTLIB_DISPONIBLE: return
     
-    # Configuramos fondo blanco fijo para que no se invisibilice en el Dark Mode de GitHub
-    fig, ax = plt.subplots(figsize=(6, 1.2), facecolor='white')
+    fig, ax = plt.subplots(figsize=(6.5, 1.6), facecolor='white')
     ax.set_xlim(-0.5, 5.5)
-    ax.set_ylim(-0.5, 0.5)
+    ax.set_ylim(-0.7, 0.7)
 
-    # Ocultar marcos y eje Y
     ax.yaxis.set_visible(False)
     for spine in ax.spines.values(): spine.set_visible(False)
 
-    # Nombres del eje X
     fases = ["Grupos", "1/16", "1/8", "1/4", "Semis", "Final"]
     ax.set_xticks(range(6))
     ax.set_xticklabels(fases, fontsize=9, fontweight='bold', color='#374151')
-    ax.tick_params(axis='x', length=0, pad=8)
+    ax.tick_params(axis='x', length=0, pad=10)
 
-    # Línea base gris neutra
-    ax.axhline(0, color='#d1d5db', linewidth=3, zorder=1)
+    # Línea base troncal
+    ax.axhline(0, color='#9ca3af', linewidth=4, zorder=1)
 
-    # Dibujar zonas de activación de puntos
-    if M - 1.5 >= -0.5: # Zona Decepción (Roja)
-        ax.axvspan(-0.5, M - 1.5, color='#fee2e2', alpha=0.8, zorder=0, lw=0)
-    if M + 1.5 <= 5.5:  # Zona Sorpresa (Verde)
-        ax.axvspan(M + 1.5, 5.5, color='#dcfce7', alpha=0.8, zorder=0, lw=0)
+    # --- ZONAS DE ACTIVACIÓN (UMBRALES VISIBLES) ---
+    if M - 1.5 >= -0.5:
+        # Fondo rojo más fuerte y frontera
+        ax.axvspan(-0.5, M - 1.5, color='#fca5a5', alpha=0.35, zorder=0)
+        ax.axvline(M - 1.5, color='#ef4444', linestyle='--', linewidth=2, zorder=2)
+        # Etiqueta interna
+        ax.text((-0.5 + M - 1.5)/2, 0.45, "ZONA\nDECEPCIÓN", ha='center', va='center', 
+                fontsize=7, color='#b91c1c', fontweight='black', 
+                bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 
-    # Colocar los Puntos en el espacio
-    ax.plot(M, 0, 'o', color="#d41a1a", markersize=14, zorder=3) # Circulo gris (Media)
-    ax.plot(P, 0, 's', color="#1cdf25", markersize=11, zorder=4) # Cuadrado azul (Pronóstico)
-    ax.plot(R, 0, '*', color="#106eda", markersize=20, markeredgecolor='black', markeredgewidth=0.5, zorder=5) # Estrella oro (Real)
+    if M + 1.5 <= 5.5:
+        # Fondo verde más fuerte y frontera
+        ax.axvspan(M + 1.5, 5.5, color='#86efac', alpha=0.35, zorder=0)
+        ax.axvline(M + 1.5, color='#22c55e', linestyle='--', linewidth=2, zorder=2)
+        # Etiqueta interna
+        ax.text((M + 1.5 + 5.5)/2, 0.45, "ZONA\nSORPRESA", ha='center', va='center', 
+                fontsize=7, color='#15803d', fontweight='black', 
+                bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 
-    # Anotaciones de texto sobre y bajo los puntos
-    ax.text(M, 0.18, "Media", ha='center', va='bottom', fontsize=8, color='#6b7280', fontweight='bold')
-    ax.text(P, -0.18, "Tú", ha='center', va='top', fontsize=8, color='#1d4ed8', fontweight='bold')
-    ax.text(R, 0.22, "Real", ha='center', va='bottom', fontsize=9, color='#a16207', fontweight='bold')
+    # --- MARCADORES ---
+    ax.plot(M, 0, 'o', color='#4b5563', markersize=14, zorder=3) # Circulo (Media)
+    ax.plot(P, 0, 's', color='#3b82f6', markersize=12, zorder=4) # Cuadrado (Pronóstico)
+    ax.plot(R, 0, '*', color='#eab308', markersize=22, markeredgecolor='black', markeredgewidth=0.5, zorder=5) # Estrella (Real)
 
-    # Guardar sin márgenes inútiles
+    # --- ETIQUETAS DE LOS MARCADORES (Con lógica anti-colapso) ---
+    y_media = 0.2
+    y_tu = -0.25
+    y_real = -0.5 if P == R else 0.35 # Si la estrella y el cuadrado están juntos, bajamos el texto Real
+
+    ax.text(M, y_media, "Media", ha='center', va='bottom', fontsize=8, color='#4b5563', fontweight='bold')
+    ax.text(P, y_tu, "Tú", ha='center', va='top', fontsize=9, color='#1d4ed8', fontweight='bold')
+    ax.text(R, y_real, "Realidad", ha='center', va='center', fontsize=9, color='#a16207', fontweight='bold')
+
     plt.tight_layout(pad=0.2)
     plt.savefig(ruta_salida, dpi=120, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.close(fig)
@@ -388,7 +401,7 @@ def generar_readmes_personales():
                 pts_acumulados_historial += pts_por_grupos
                 md += f"\n> **Resumen de Clasificados:** **{total_aciertos_exactos_pos}/{total_aciertos_pase}** *(Clavados/Aciertos Pase)*\n> **Bono sumado por Fase de Grupos:** +{pts_por_grupos} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n---\n"
 
-        # --- NUEVO BLOQUE: MATRIZ VISUAL DE SORPRESAS Y DECEPCIONES (CON GRÁFICOS) ---
+        # --- MATRIZ VISUAL DE SORPRESAS Y DECEPCIONES (CON GRÁFICOS) ---
         matriz_sd = libro.get("matriz_sorpresas_decepciones", {})
         if matriz_sd:
             dir_graficos = jugador_dir / "estadisticas" / "graficos_sd"
@@ -409,7 +422,7 @@ def generar_readmes_personales():
                 nombre_archivo = f"{eq.replace(' ', '_').lower()}_sd.png"
                 ruta_grafico = dir_graficos / nombre_archivo
                 
-                # Generamos y guardamos la imagen
+                # Generamos y guardamos la imagen súper visible
                 if MATPLOTLIB_DISPONIBLE:
                     generar_grafico_sd_png(ruta_grafico, eq, P, M, R)
 
@@ -417,7 +430,7 @@ def generar_readmes_personales():
                 elif resultado_txt == "Decepción": estado_str = f"🔴 **+{puntos} Pts**<br>📉 ¡Decepción!"
                 else: estado_str = f"⚪ *Sin Premio*<br>({puntos} pts)"
 
-                # Inyectamos la imagen guardada en el README
+                # Inyectamos la imagen guardada
                 md += f"| **{eq}** | ![{eq}](estadisticas/graficos_sd/{nombre_archivo}) | {estado_str} |\n"
             
             if not MATPLOTLIB_DISPONIBLE:
