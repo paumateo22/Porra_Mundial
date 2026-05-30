@@ -8,6 +8,30 @@ from importlib import import_module
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR))
 
+# Diccionario de banderas para embellecer las tablas
+BANDERAS = {
+    "España": "🇪🇸", "Argentina": "🇦🇷", "Francia": "🇫🇷", "Inglaterra": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "Brasil": "🇧🇷",
+    "Portugal": "🇵🇹", "Bélgica": "🇧🇪", "Países Bajos": "🇳🇱", "Alemania": "🇩🇪", "Uruguay": "🇺🇾",
+    "Colombia": "🇨🇴", "Senegal": "🇸🇳", "Estados Unidos": "🇺🇸", "Marruecos": "🇲🇦", "Croacia": "🇭🇷",
+    "Japón": "🇯🇵", "Ecuador": "🇪🇨", "Canadá": "🇨🇦", "México": "🇲🇽", "Corea del Sur": "🇰🇷",
+    "Turquía": "🇹🇷", "Australia": "🇦🇺", "Suiza": "🇨🇭", "República Checa": "🇨🇿", "Paraguay": "🇵🇾",
+    "Noruega": "🇳🇴", "Costa de Marfil": "🇨🇮", "Haití": "🇭🇹", "Curazao": "🇨🇼", "RD Congo": "🇨🇩",
+    "Cabo Verde": "🇨🇻", "Panamá": "🇵🇦", "Ghana": "🇬🇭", "Uzbekistán": "🇺🇿", "Túnez": "🇹🇳",
+    "Argelia": "🇩🇿", "Jordania": "🇯🇴", "Austria": "🇦🇹", "Irak": "🇮🇶", "Irán": "🇮🇷",
+    "Nueva Zelanda": "🇳🇿", "Egipto": "🇪🇬", "Arabia Saudita": "🇸🇦", "Bosnia-Herzegovina": "🇧🇦",
+    "Qatar": "🇶🇦", "Escocia": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Suecia": "🇸🇪", "Sudáfrica": "🇿🇦", "Italia": "🇮🇹",
+    "Gales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Polonia": "🇵🇱", "Chile": "🇨🇱", "Perú": "🇵🇪", "Venezuela": "🇵🇪"
+}
+
+NOMBRES_FASES = {
+    0: "Grupos",
+    1: "1/16",
+    2: "1/8",
+    3: "1/4",
+    4: "Semis",
+    5: "Final"
+}
+
 def cargar_json(ruta):
     if not ruta.exists(): return None
     with open(ruta, 'r', encoding='utf-8') as f: return json.load(f)
@@ -78,7 +102,6 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
                         rastros.append((nombre_link, f"pronosticos/eliminatorias/{fase_origen}/"))
                         break
     return rastros
-# =====================================================================
 
 def generar_readme_global():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
@@ -204,7 +227,6 @@ def generar_readmes_personales():
             es_fase_grupos = j_key.startswith("J")
             fase_limpia = j_key.split(".")[0] if "." in j_key else j_key
             
-            # --- IMPRIMIR CABECERAS NORMALES (Excepto para Finales que van separadas) ---
             if j_key.lower() != "finales":
                 md += f"### 📌 {j_key.upper()}\n"
                 if es_fase_grupos:
@@ -219,7 +241,6 @@ def generar_readmes_personales():
 
             for idx_p, p in enumerate(partidos_jornada):
                 
-                # --- INYECCIÓN DE TABLAS SEPARADAS PARA FINALES ---
                 if j_key.lower() == "finales":
                     if idx_p == 0:
                         md += f"### 🥉 TERCER PUESTO\n"
@@ -341,12 +362,12 @@ def generar_readmes_personales():
                 pts_acumulados_historial += pts_por_grupos
                 md += f"\n> **Resumen de Clasificados:** **{total_aciertos_exactos_pos}/{total_aciertos_pase}** *(Clavados/Aciertos Pase)*\n> **Bono sumado por Fase de Grupos:** +{pts_por_grupos} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n---\n"
 
-        # --- NUEVO BLOQUE: MATRIZ VISUAL DE SORPRESAS Y DECEPCIONES ---
+        # --- NUEVO BLOQUE: MATRIZ VISUAL DE SORPRESAS Y DECEPCIONES (TABLA LIMPIA) ---
         matriz_sd = libro.get("matriz_sorpresas_decepciones", {})
         if matriz_sd:
             md += "\n## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones\n"
-            md += "Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.\n\n"
-            md += "| Selección | Mapa de Desviación y Rangos del Torneo | Estado |\n"
+            md += "Análisis de tu desviación respecto a la tendencia central de la comunidad. Obtienes puntos si apuestas contra la media general y la realidad te da la razón.\n\n"
+            md += "| Selección | Análisis de Desviación | Resultado |\n"
             md += "| :--- | :--- | :---: |\n"
 
             for eq, datos_sd in sorted(matriz_sd.items()):
@@ -356,33 +377,25 @@ def generar_readmes_personales():
                 puntos = datos_sd["puntos"]
                 resultado_txt = datos_sd["resultado_calculo"]
 
-                # Construcción del eje visual geométrico de 6 bloques (0 al 5)
-                eje_visual = []
-                for fase_idx in range(6):
-                    # Marcadores de posición prioritarios
-                    if fase_idx == P and fase_idx == R: marker = "📌🎯"  # Coincidencia exacta
-                    elif fase_idx == P: marker = "📌"                  # Tu pronóstico
-                    elif fase_idx == R: marker = "🎯"                  # La realidad
-                    elif abs(fase_idx - M) < 0.5: marker = "⚪"         # Centro aproximado de la media
-                    else:
-                        # Colorear las zonas de activación de umbrales según la media
-                        if fase_idx <= M - 1.5: marker = "🟥"          # Zona Decepción Activa
-                        elif fase_idx >= M + 1.5: marker = "🟩"         # Zona Sorpresa Activa
-                        else: marker = "░"                             # Zona Neutra / Inactiva
-                        
-                    eje_visual.append(f" `{marker}` ")
-
-                # Unir el eje con conectores visuales planos
-                barra_grafica = "──".join(eje_visual)
+                P_txt = NOMBRES_FASES.get(P, str(P))
+                M_cercana = round(M)
+                M_txt = NOMBRES_FASES.get(M_cercana, str(M_cercana))
+                R_txt = NOMBRES_FASES.get(R, str(R)) if R > 0 else "Pendiente/Grupos"
                 
-                # Formatear la columna de estado y medallas ganadas
-                if resultado_txt == "Sorpresa": estado_str = f"🟢 **+{puntos} Pts**<br>🔥 ¡Sorpresa!"
-                elif resultado_txt == "Decepción": estado_str = f"🔴 **+{puntos} Pts**<br>📉 ¡Decepción!"
-                else: estado_str = f"⚪ *Sin Premio*<br>({puntos} pts)"
+                bandera = BANDERAS.get(eq, "🏳️")
 
-                md += f"| **{eq}** | <br>G {barra_grafica} F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \\| Media del Grupo: **{M}**</span> | {estado_str} |\n"
-            
-            md += "\n> 💡 **Guía Visual del Eje:** `⚪` Media del grupo \\| `📌` Tu Pronóstico \\| `🎯` Resultado Real \\| `🟩` Umbral de Sorpresa Valido \\| `🟥` Umbral de Decepción Valido.\n"
+                desglose_str = (
+                    f"**Pronóstico:** {P_txt} ({P})<br>"
+                    f"**Media:** {M_txt} ({M:.2f})<br>"
+                    f"**Realidad:** {R_txt} ({R})"
+                )
+
+                if resultado_txt in ["Sorpresa", "Decepción"]:
+                    estado_str = f"🟢 **¡Puntúa! (+{puntos} pts)**<br>*{resultado_txt}*"
+                else:
+                    estado_str = f"🔴 **Sin premio**<br>*(0 pts)*"
+
+                md += f"| {bandera} **{eq}** | {desglose_str} | {estado_str} |\n"
 
         md += "\n---\n[⬅️ Volver a la clasificación general](../../README.md)"
         with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f: f.write(md)

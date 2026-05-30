@@ -260,60 +260,58 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 
 
 ## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones
-Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.
+Análisis de tu desviación respecto a la tendencia central de la comunidad. Obtienes puntos si apuestas contra la media general y la realidad te da la razón.
 
-| Selección | Mapa de Desviación y Rangos del Torneo | Estado |
+| Selección | Análisis de Desviación | Resultado |
 | :--- | :--- | :---: |
-| **Alemania** | <br>G  `📌` ── `🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Arabia Saudita** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Argelia** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Argentina** | <br>G  `🟥` ── `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **3.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Australia** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Austria** | <br>G  `📌` ── `🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Bosnia-Herzegovina** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Brasil** | <br>G  `🟥` ── `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **3.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Bélgica** | <br>G  `🟥` ── `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **3.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Cabo Verde** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Canadá** | <br>G  `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **2.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Colombia** | <br>G  `🟥` ── `🟥` ── `🟥` ── `🟥` ── `🎯` ── `📌`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **5.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Corea del Sur** | <br>G  `📌` ── `🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Costa de Marfil** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Croacia** | <br>G  `📌` ── `🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Curazao** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Ecuador** | <br>G  `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **2.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Egipto** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Escocia** | <br>G  `📌` ── `🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **España** | <br>G  `🎯` ── `🟥` ── `🟥` ── `🟥` ── `░` ── `📌`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **5.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Estados Unidos** | <br>G  `░` ── `⚪` ── `📌🎯` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.33**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Francia** | <br>G  `🟥` ── `🟥` ── `🟥` ── `🟥` ── `🎯` ── `📌`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **5.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Ghana** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Haití** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Inglaterra** | <br>G  `📌` ── `░` ── `⚪` ── `░` ── `🟩` ── `🎯`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.67**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Irak** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Irán** | <br>G  `⚪` ── `📌🎯` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.33**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Japón** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Jordania** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Marruecos** | <br>G  `🟥` ── `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **3.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **México** | <br>G  `📌` ── `░` ── `🎯` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Noruega** | <br>G  `📌` ── `⚪` ── `🎯` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.33**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Nueva Zelanda** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Panamá** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Paraguay** | <br>G  `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **2.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Países Bajos** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Portugal** | <br>G  `📌` ── `⚪` ── `🎯` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.33**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Qatar** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **RD Congo** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **República Checa** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Senegal** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Sudáfrica** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Suecia** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Suiza** | <br>G  `🟥` ── `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **2.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Turquía** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Túnez** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Uruguay** | <br>G  `░` ── `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **1.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-| **Uzbekistán** | <br>G  `📌🎯` ── `░` ── `🟩` ── `🟩` ── `🟩` ── `🟩`  F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \| Media del Grupo: **0.0**</span> | ⚪ *Sin Premio*<br>(0 pts) |
-
-> 💡 **Guía Visual del Eje:** `⚪` Media del grupo \| `📌` Tu Pronóstico \| `🎯` Resultado Real \| `🟩` Umbral de Sorpresa Valido \| `🟥` Umbral de Decepción Valido.
+| 🇩🇪 **Alemania** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇸🇦 **Arabia Saudita** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇩🇿 **Argelia** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇦🇷 **Argentina** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇦🇺 **Australia** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇦🇹 **Austria** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇧🇦 **Bosnia-Herzegovina** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇧🇷 **Brasil** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇧🇪 **Bélgica** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇻 **Cabo Verde** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇦 **Canadá** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇴 **Colombia** | **Pronóstico:** Final (5)<br>**Media:** Final (5.00)<br>**Realidad:** Semis (4) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇰🇷 **Corea del Sur** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇮 **Costa de Marfil** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇭🇷 **Croacia** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇼 **Curazao** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇪🇨 **Ecuador** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇪🇬 **Egipto** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🏴󠁧󠁢󠁳󠁣󠁴󠁿 **Escocia** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (0.67)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇪🇸 **España** | **Pronóstico:** Final (5)<br>**Media:** Final (5.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇺🇸 **Estados Unidos** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/16 (1.33)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇫🇷 **Francia** | **Pronóstico:** Final (5)<br>**Media:** Final (5.00)<br>**Realidad:** Semis (4) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇬🇭 **Ghana** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇭🇹 **Haití** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🏴󠁧󠁢󠁥󠁮󠁧󠁿 **Inglaterra** | **Pronóstico:** Grupos (0)<br>**Media:** 1/8 (1.67)<br>**Realidad:** Final (5) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇮🇶 **Irak** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇮🇷 **Irán** | **Pronóstico:** 1/16 (1)<br>**Media:** Grupos (0.33)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇯🇵 **Japón** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇯🇴 **Jordania** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇲🇦 **Marruecos** | **Pronóstico:** 1/4 (3)<br>**Media:** 1/4 (3.00)<br>**Realidad:** 1/4 (3) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇲🇽 **México** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇳🇴 **Noruega** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (1.33)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇳🇿 **Nueva Zelanda** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇵🇦 **Panamá** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇵🇾 **Paraguay** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇳🇱 **Países Bajos** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇵🇹 **Portugal** | **Pronóstico:** Grupos (0)<br>**Media:** 1/16 (1.33)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇶🇦 **Qatar** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇩 **RD Congo** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇿 **República Checa** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇸🇳 **Senegal** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇿🇦 **Sudáfrica** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇸🇪 **Suecia** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇨🇭 **Suiza** | **Pronóstico:** 1/8 (2)<br>**Media:** 1/8 (2.00)<br>**Realidad:** 1/8 (2) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇹🇷 **Turquía** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇹🇳 **Túnez** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇺🇾 **Uruguay** | **Pronóstico:** 1/16 (1)<br>**Media:** 1/16 (1.00)<br>**Realidad:** 1/16 (1) | 🔴 **Sin premio**<br>*(0 pts)* |
+| 🇺🇿 **Uzbekistán** | **Pronóstico:** Grupos (0)<br>**Media:** Grupos (0.00)<br>**Realidad:** Pendiente/Grupos (0) | 🔴 **Sin premio**<br>*(0 pts)* |
 
 ---
 [⬅️ Volver a la clasificación general](../../README.md)
