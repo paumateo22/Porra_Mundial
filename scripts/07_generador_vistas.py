@@ -5,7 +5,6 @@ from pathlib import Path
 from datetime import datetime
 from importlib import import_module
 
-# Intentar importar matplotlib
 try:
     import matplotlib.pyplot as plt
     MATPLOTLIB_DISPONIBLE = True
@@ -83,11 +82,7 @@ def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
                         break
     return rastros
 
-# =====================================================================
-# RENDERIZADOR DE IMÁGENES MATPLOTLIB (DASHBOARD SORPRESAS)
-# =====================================================================
 def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
-    """Dibuja un gauge horizontal con las zonas válidas altamente visibles."""
     if not MATPLOTLIB_DISPONIBLE: return
     
     fig, ax = plt.subplots(figsize=(6.5, 1.6), facecolor='white')
@@ -102,37 +97,29 @@ def generar_grafico_sd_png(ruta_salida, equipo, P, M, R):
     ax.set_xticklabels(fases, fontsize=9, fontweight='bold', color='#374151')
     ax.tick_params(axis='x', length=0, pad=10)
 
-    # Línea base troncal
     ax.axhline(0, color='#9ca3af', linewidth=4, zorder=1)
 
-    # --- ZONAS DE ACTIVACIÓN (UMBRALES VISIBLES) ---
     if M - 1.5 >= -0.5:
-        # Fondo rojo más fuerte y frontera
         ax.axvspan(-0.5, M - 1.5, color='#fca5a5', alpha=0.35, zorder=0)
         ax.axvline(M - 1.5, color='#ef4444', linestyle='--', linewidth=2, zorder=2)
-        # Etiqueta interna
         ax.text((-0.5 + M - 1.5)/2, 0.45, "ZONA\nDECEPCIÓN", ha='center', va='center', 
                 fontsize=7, color='#b91c1c', fontweight='black', 
                 bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 
     if M + 1.5 <= 5.5:
-        # Fondo verde más fuerte y frontera
         ax.axvspan(M + 1.5, 5.5, color='#86efac', alpha=0.35, zorder=0)
         ax.axvline(M + 1.5, color='#22c55e', linestyle='--', linewidth=2, zorder=2)
-        # Etiqueta interna
         ax.text((M + 1.5 + 5.5)/2, 0.45, "ZONA\nSORPRESA", ha='center', va='center', 
                 fontsize=7, color='#15803d', fontweight='black', 
                 bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 
-    # --- MARCADORES ---
-    ax.plot(M, 0, 'o', color='#4b5563', markersize=14, zorder=3) # Circulo (Media)
-    ax.plot(P, 0, 's', color='#3b82f6', markersize=12, zorder=4) # Cuadrado (Pronóstico)
-    ax.plot(R, 0, '*', color='#eab308', markersize=22, markeredgecolor='black', markeredgewidth=0.5, zorder=5) # Estrella (Real)
+    ax.plot(M, 0, 'o', color='#4b5563', markersize=14, zorder=3)
+    ax.plot(P, 0, 's', color='#3b82f6', markersize=12, zorder=4)
+    ax.plot(R, 0, '*', color='#eab308', markersize=22, markeredgecolor='black', markeredgewidth=0.5, zorder=5)
 
-    # --- ETIQUETAS DE LOS MARCADORES (Con lógica anti-colapso) ---
     y_media = 0.2
     y_tu = -0.25
-    y_real = -0.5 if P == R else 0.35 # Si la estrella y el cuadrado están juntos, bajamos el texto Real
+    y_real = -0.5 if P == R else 0.35
 
     ax.text(M, y_media, "Media", ha='center', va='bottom', fontsize=8, color='#4b5563', fontweight='bold')
     ax.text(P, y_tu, "Tú", ha='center', va='top', fontsize=9, color='#1d4ed8', fontweight='bold')
@@ -409,8 +396,10 @@ def generar_readmes_personales():
 
             md += "\n## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones\n"
             md += "Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.\n\n"
-            md += "| Selección | Gráfico de Rendimiento | Estado |\n"
-            md += "| :--- | :---: | :---: |\n"
+            
+            # --- NUEVA ESTRUCTURA DE LA TABLA (Con la columna Datos Inyectada) ---
+            md += "| Selección | Datos | Gráfico de Rendimiento | Estado |\n"
+            md += "| :--- | :---: | :---: | :---: |\n"
 
             for eq, datos_sd in sorted(matriz_sd.items()):
                 P = datos_sd["pronostico"]
@@ -422,7 +411,6 @@ def generar_readmes_personales():
                 nombre_archivo = f"{eq.replace(' ', '_').lower()}_sd.png"
                 ruta_grafico = dir_graficos / nombre_archivo
                 
-                # Generamos y guardamos la imagen súper visible
                 if MATPLOTLIB_DISPONIBLE:
                     generar_grafico_sd_png(ruta_grafico, eq, P, M, R)
 
@@ -430,11 +418,16 @@ def generar_readmes_personales():
                 elif resultado_txt == "Decepción": estado_str = f"🔴 **+{puntos} Pts**<br>📉 ¡Decepción!"
                 else: estado_str = f"⚪ *Sin Premio*<br>({puntos} pts)"
 
-                # Inyectamos la imagen guardada
-                md += f"| **{eq}** | ![{eq}](estadisticas/graficos_sd/{nombre_archivo}) | {estado_str} |\n"
+                # --- NUEVA COLUMNA DE DATOS ---
+                valores_str = f"**Tú:** {P}<br>**Media:** {M}<br>**Real:** {R}"
+
+                # Inyectamos todo en la fila
+                md += f"| **{eq}** | {valores_str} | ![{eq}](estadisticas/graficos_sd/{nombre_archivo}) | {estado_str} |\n"
             
             if not MATPLOTLIB_DISPONIBLE:
                 md += "\n> ⚠️ *Nota: Instala matplotlib (`pip install matplotlib`) y vuelve a ejecutar para visualizar los gráficos.*\n"
+
+            md += "\n> 💡 **Guía Visual del Eje:** `⚪` Media del grupo \\| `📌` Tu Pronóstico \\| `🎯` Resultado Real \\| `🟩` Umbral de Sorpresa Valido \\| `🟥` Umbral de Decepción Valido.\n"
 
         md += "\n---\n[⬅️ Volver a la clasificación general](../../README.md)"
         with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f: f.write(md)

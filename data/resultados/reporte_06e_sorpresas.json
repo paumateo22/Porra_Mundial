@@ -139,7 +139,7 @@
             "España": {
                 "pronostico": 5,
                 "media_grupo": 5.0,
-                "realidad": 0,
+                "realidad": 5,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
@@ -481,7 +481,7 @@
             "España": {
                 "pronostico": 5,
                 "media_grupo": 5.0,
-                "realidad": 0,
+                "realidad": 5,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
@@ -823,7 +823,7 @@
             "España": {
                 "pronostico": 5,
                 "media_grupo": 5.0,
-                "realidad": 0,
+                "realidad": 5,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },

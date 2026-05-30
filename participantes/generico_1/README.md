@@ -262,56 +262,58 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones
 Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.
 
-| Selección | Gráfico de Rendimiento | Estado |
-| :--- | :---: | :---: |
-| **Alemania** | ![Alemania](estadisticas/graficos_sd/alemania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Arabia Saudita** | ![Arabia Saudita](estadisticas/graficos_sd/arabia_saudita_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Argelia** | ![Argelia](estadisticas/graficos_sd/argelia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Argentina** | ![Argentina](estadisticas/graficos_sd/argentina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Australia** | ![Australia](estadisticas/graficos_sd/australia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Austria** | ![Austria](estadisticas/graficos_sd/austria_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Bosnia-Herzegovina** | ![Bosnia-Herzegovina](estadisticas/graficos_sd/bosnia-herzegovina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Brasil** | ![Brasil](estadisticas/graficos_sd/brasil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Bélgica** | ![Bélgica](estadisticas/graficos_sd/bélgica_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Cabo Verde** | ![Cabo Verde](estadisticas/graficos_sd/cabo_verde_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Canadá** | ![Canadá](estadisticas/graficos_sd/canadá_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Colombia** | ![Colombia](estadisticas/graficos_sd/colombia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Corea del Sur** | ![Corea del Sur](estadisticas/graficos_sd/corea_del_sur_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Costa de Marfil** | ![Costa de Marfil](estadisticas/graficos_sd/costa_de_marfil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Croacia** | ![Croacia](estadisticas/graficos_sd/croacia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Curazao** | ![Curazao](estadisticas/graficos_sd/curazao_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Ecuador** | ![Ecuador](estadisticas/graficos_sd/ecuador_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Egipto** | ![Egipto](estadisticas/graficos_sd/egipto_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Escocia** | ![Escocia](estadisticas/graficos_sd/escocia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **España** | ![España](estadisticas/graficos_sd/españa_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Estados Unidos** | ![Estados Unidos](estadisticas/graficos_sd/estados_unidos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Francia** | ![Francia](estadisticas/graficos_sd/francia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Ghana** | ![Ghana](estadisticas/graficos_sd/ghana_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Haití** | ![Haití](estadisticas/graficos_sd/haití_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Inglaterra** | ![Inglaterra](estadisticas/graficos_sd/inglaterra_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Irak** | ![Irak](estadisticas/graficos_sd/irak_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Irán** | ![Irán](estadisticas/graficos_sd/irán_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Japón** | ![Japón](estadisticas/graficos_sd/japón_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Jordania** | ![Jordania](estadisticas/graficos_sd/jordania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Marruecos** | ![Marruecos](estadisticas/graficos_sd/marruecos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **México** | ![México](estadisticas/graficos_sd/méxico_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Noruega** | ![Noruega](estadisticas/graficos_sd/noruega_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Nueva Zelanda** | ![Nueva Zelanda](estadisticas/graficos_sd/nueva_zelanda_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Panamá** | ![Panamá](estadisticas/graficos_sd/panamá_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Paraguay** | ![Paraguay](estadisticas/graficos_sd/paraguay_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Países Bajos** | ![Países Bajos](estadisticas/graficos_sd/países_bajos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Portugal** | ![Portugal](estadisticas/graficos_sd/portugal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Qatar** | ![Qatar](estadisticas/graficos_sd/qatar_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **RD Congo** | ![RD Congo](estadisticas/graficos_sd/rd_congo_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **República Checa** | ![República Checa](estadisticas/graficos_sd/república_checa_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Senegal** | ![Senegal](estadisticas/graficos_sd/senegal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Sudáfrica** | ![Sudáfrica](estadisticas/graficos_sd/sudáfrica_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Suecia** | ![Suecia](estadisticas/graficos_sd/suecia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Suiza** | ![Suiza](estadisticas/graficos_sd/suiza_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Turquía** | ![Turquía](estadisticas/graficos_sd/turquía_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Túnez** | ![Túnez](estadisticas/graficos_sd/túnez_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Uruguay** | ![Uruguay](estadisticas/graficos_sd/uruguay_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Uzbekistán** | ![Uzbekistán](estadisticas/graficos_sd/uzbekistán_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| Selección | Datos | Gráfico de Rendimiento | Estado |
+| :--- | :---: | :---: | :---: |
+| **Alemania** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1 | ![Alemania](estadisticas/graficos_sd/alemania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Arabia Saudita** | **Tú:** 1<br>**Media:** 0.67<br>**Real:** 1 | ![Arabia Saudita](estadisticas/graficos_sd/arabia_saudita_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Argelia** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Argelia](estadisticas/graficos_sd/argelia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Argentina** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3 | ![Argentina](estadisticas/graficos_sd/argentina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Australia** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Australia](estadisticas/graficos_sd/australia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Austria** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1 | ![Austria](estadisticas/graficos_sd/austria_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Bosnia-Herzegovina** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Bosnia-Herzegovina](estadisticas/graficos_sd/bosnia-herzegovina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Brasil** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3 | ![Brasil](estadisticas/graficos_sd/brasil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Bélgica** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3 | ![Bélgica](estadisticas/graficos_sd/bélgica_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Cabo Verde** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Cabo Verde](estadisticas/graficos_sd/cabo_verde_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Canadá** | **Tú:** 2<br>**Media:** 2.0<br>**Real:** 2 | ![Canadá](estadisticas/graficos_sd/canadá_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Colombia** | **Tú:** 5<br>**Media:** 5.0<br>**Real:** 4 | ![Colombia](estadisticas/graficos_sd/colombia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Corea del Sur** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1 | ![Corea del Sur](estadisticas/graficos_sd/corea_del_sur_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Costa de Marfil** | **Tú:** 1<br>**Media:** 0.67<br>**Real:** 1 | ![Costa de Marfil](estadisticas/graficos_sd/costa_de_marfil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Croacia** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1 | ![Croacia](estadisticas/graficos_sd/croacia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Curazao** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Curazao](estadisticas/graficos_sd/curazao_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Ecuador** | **Tú:** 2<br>**Media:** 2.0<br>**Real:** 2 | ![Ecuador](estadisticas/graficos_sd/ecuador_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Egipto** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![Egipto](estadisticas/graficos_sd/egipto_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Escocia** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1 | ![Escocia](estadisticas/graficos_sd/escocia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **España** | **Tú:** 5<br>**Media:** 5.0<br>**Real:** 5 | ![España](estadisticas/graficos_sd/españa_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Estados Unidos** | **Tú:** 2<br>**Media:** 1.33<br>**Real:** 2 | ![Estados Unidos](estadisticas/graficos_sd/estados_unidos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Francia** | **Tú:** 5<br>**Media:** 5.0<br>**Real:** 4 | ![Francia](estadisticas/graficos_sd/francia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Ghana** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![Ghana](estadisticas/graficos_sd/ghana_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Haití** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Haití](estadisticas/graficos_sd/haití_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Inglaterra** | **Tú:** 0<br>**Media:** 1.67<br>**Real:** 5 | ![Inglaterra](estadisticas/graficos_sd/inglaterra_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Irak** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Irak](estadisticas/graficos_sd/irak_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Irán** | **Tú:** 1<br>**Media:** 0.33<br>**Real:** 1 | ![Irán](estadisticas/graficos_sd/irán_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Japón** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![Japón](estadisticas/graficos_sd/japón_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Jordania** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Jordania](estadisticas/graficos_sd/jordania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Marruecos** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3 | ![Marruecos](estadisticas/graficos_sd/marruecos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **México** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 2 | ![México](estadisticas/graficos_sd/méxico_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Noruega** | **Tú:** 0<br>**Media:** 1.33<br>**Real:** 2 | ![Noruega](estadisticas/graficos_sd/noruega_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Nueva Zelanda** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Nueva Zelanda](estadisticas/graficos_sd/nueva_zelanda_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Panamá** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Panamá](estadisticas/graficos_sd/panamá_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Paraguay** | **Tú:** 2<br>**Media:** 2.0<br>**Real:** 2 | ![Paraguay](estadisticas/graficos_sd/paraguay_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Países Bajos** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![Países Bajos](estadisticas/graficos_sd/países_bajos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Portugal** | **Tú:** 0<br>**Media:** 1.33<br>**Real:** 2 | ![Portugal](estadisticas/graficos_sd/portugal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Qatar** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Qatar](estadisticas/graficos_sd/qatar_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **RD Congo** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![RD Congo](estadisticas/graficos_sd/rd_congo_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **República Checa** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![República Checa](estadisticas/graficos_sd/república_checa_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Senegal** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![Senegal](estadisticas/graficos_sd/senegal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Sudáfrica** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Sudáfrica](estadisticas/graficos_sd/sudáfrica_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Suecia** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![Suecia](estadisticas/graficos_sd/suecia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Suiza** | **Tú:** 2<br>**Media:** 2.0<br>**Real:** 2 | ![Suiza](estadisticas/graficos_sd/suiza_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Turquía** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Turquía](estadisticas/graficos_sd/turquía_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Túnez** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Túnez](estadisticas/graficos_sd/túnez_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Uruguay** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1 | ![Uruguay](estadisticas/graficos_sd/uruguay_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Uzbekistán** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0 | ![Uzbekistán](estadisticas/graficos_sd/uzbekistán_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+
+> 💡 **Guía Visual del Eje:** `⚪` Media del grupo \| `📌` Tu Pronóstico \| `🎯` Resultado Real \| `🟩` Umbral de Sorpresa Valido \| `🟥` Umbral de Decepción Valido.
 
 ---
 [⬅️ Volver a la clasificación general](../../README.md)
