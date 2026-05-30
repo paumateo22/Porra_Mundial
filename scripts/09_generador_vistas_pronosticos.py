@@ -82,7 +82,7 @@ def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase):
                 if ex_p != ex_r: color_fondo = "#fef9c3"
                 else: color_fondo = "#dcfce7"
             
-            # Lógica de icono de avance
+            # Lógica de icono de avance (Solo en Tu Pronóstico)
             icono_pred = "🟢" if avanza_pred == avanza_real else "🔴"
             
             html += f"<tr>"
@@ -93,7 +93,7 @@ def generar_html_eliminatorias(partidos_pred, reales_fase, sub_fase):
             
             html += f"<td align='center' style='border:1px solid #e5e7eb; padding:10px;'>"
             html += f"<b>{loc_real}</b> <b style='font-size:1.1em;'>{res_real_raw}</b> <b>{vis_real}</b><br>"
-            html += f"<span style='font-size:1em;'>🟢 <b>{avanza_real}</b></span>"
+            html += f"<span style='font-size:1em;'><b>{avanza_real}</b></span>"
             html += f"</td>"
             html += f"</tr>\n"
         else:
