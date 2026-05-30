@@ -341,6 +341,49 @@ def generar_readmes_personales():
                 pts_acumulados_historial += pts_por_grupos
                 md += f"\n> **Resumen de Clasificados:** **{total_aciertos_exactos_pos}/{total_aciertos_pase}** *(Clavados/Aciertos Pase)*\n> **Bono sumado por Fase de Grupos:** +{pts_por_grupos} pts | **TOTAL ACUMULADO:** {pts_acumulados_historial} pts\n\n---\n"
 
+        # --- NUEVO BLOQUE: MATRIZ VISUAL DE SORPRESAS Y DECEPCIONES ---
+        matriz_sd = libro.get("matriz_sorpresas_decepciones", {})
+        if matriz_sd:
+            md += "\n## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones\n"
+            md += "Este gráfico analiza tu desviación respecto a la tendencia central de la comunidad. Las zonas coloreadas delimitan los rangos válidos para puntuar.\n\n"
+            md += "| Selección | Mapa de Desviación y Rangos del Torneo | Estado |\n"
+            md += "| :--- | :--- | :---: |\n"
+
+            for eq, datos_sd in sorted(matriz_sd.items()):
+                P = datos_sd["pronostico"]
+                M = datos_sd["media_grupo"]
+                R = datos_sd["realidad"]
+                puntos = datos_sd["puntos"]
+                resultado_txt = datos_sd["resultado_calculo"]
+
+                # Construcción del eje visual geométrico de 6 bloques (0 al 5)
+                eje_visual = []
+                for fase_idx in range(6):
+                    # Marcadores de posición prioritarios
+                    if fase_idx == P and fase_idx == R: marker = "📌🎯"  # Coincidencia exacta
+                    elif fase_idx == P: marker = "📌"                  # Tu pronóstico
+                    elif fase_idx == R: marker = "🎯"                  # La realidad
+                    elif abs(fase_idx - M) < 0.5: marker = "⚪"         # Centro aproximado de la media
+                    else:
+                        # Colorear las zonas de activación de umbrales según la media
+                        if fase_idx <= M - 1.5: marker = "🟥"          # Zona Decepción Activa
+                        elif fase_idx >= M + 1.5: marker = "🟩"         # Zona Sorpresa Activa
+                        else: marker = "░"                             # Zona Neutra / Inactiva
+                        
+                    eje_visual.append(f" `{marker}` ")
+
+                # Unir el eje con conectores visuales planos
+                barra_grafica = "──".join(eje_visual)
+                
+                # Formatear la columna de estado y medallas ganadas
+                if resultado_txt == "Sorpresa": estado_str = f"🟢 **+{puntos} Pts**<br>🔥 ¡Sorpresa!"
+                elif resultado_txt == "Decepción": estado_str = f"🔴 **+{puntos} Pts**<br>📉 ¡Decepción!"
+                else: estado_str = f"⚪ *Sin Premio*<br>({puntos} pts)"
+
+                md += f"| **{eq}** | <br>G {barra_grafica} F<br><span style='font-size:0.82em; color:#6b7280;'>Leyenda del eje: **G** (Grupos:0) ➔ **1/16**:1 ➔ **1/8**:2 ➔ **1/4**:3 ➔ **Semis**:4 ➔ **F** (Final:5) \\| Media del Grupo: **{M}**</span> | {estado_str} |\n"
+            
+            md += "\n> 💡 **Guía Visual del Eje:** `⚪` Media del grupo \\| `📌` Tu Pronóstico \\| `🎯` Resultado Real \\| `🟩` Umbral de Sorpresa Valido \\| `🟥` Umbral de Decepción Valido.\n"
+
         md += "\n---\n[⬅️ Volver a la clasificación general](../../README.md)"
         with open(jugador_dir / "README.md", 'w', encoding='utf-8') as f: f.write(md)
 

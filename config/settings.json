@@ -46,6 +46,11 @@
             "tercer_puesto": 5
         }
     },
+    "sorpresas_decepciones_config": {
+        "distancia_minima_pronostico_media": 2.0,
+        "distancia_minima_realidad_media": 2.0,
+        "distancia_maxima_pronostico_realidad": 1.0
+    },
     "multiplicadores": {
         "base": 1.0,
         "incremento_racha_por_fase": 0.5
