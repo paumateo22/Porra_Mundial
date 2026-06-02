@@ -1,4 +1,4 @@
-# ⚔️ Cuadro Predictivo desde Semifinales - Generico 2
+# ⚔️ Cuadro Predictivo desde Semifinales - Pau
 
 Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Semifinales.
 

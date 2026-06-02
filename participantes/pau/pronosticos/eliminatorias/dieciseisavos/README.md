@@ -1,4 +1,4 @@
-# ⚔️ Cuadro Predictivo desde Dieciseisavos - Generico 2
+# ⚔️ Cuadro Predictivo desde Dieciseisavos - Pau
 
 Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Dieciseisavos.
 

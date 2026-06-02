@@ -1,4 +1,4 @@
-# ⚔️ Cuadro Predictivo desde Finales - Generico 2
+# ⚔️ Cuadro Predictivo desde Finales - Pau
 
 Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Finales.
 
