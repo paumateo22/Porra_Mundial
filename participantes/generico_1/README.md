@@ -1,5 +1,5 @@
 # 👤 Perfil de Jugador: Generico 1
-### Posición Actual: **3º** | Puntos Totales: **139.0**
+### Posición Actual: **3º** | Puntos Totales: **151.0**
 ---
 ## 📅 Historial Cronológico de Partidos
 Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
@@ -19,8 +19,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Canadá** vs **Bosnia-Herzegovina** | **1 - 1** | **2 - 1** | ❌ | --- | x1.0 | **0.0** |
 | **Qatar** vs **Suiza** | **1 - 11** | **1 - 2** | ✅ | --- | x1.0 | **1.0** |
 
-> **Resumen de la J1.1:** **2/4** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** 8.0 pts | **TOTAL ACUMULADO:** 8.0 pts
+> **Resumen de la J1.1:** **2/4** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 10.0 pts | **TOTAL ACUMULADO:** 10.0 pts
 
 ### 📌 J1.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -38,8 +38,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Francia** vs **Senegal** | **0 - 0** | **2 - 1** | ❌ | --- | x1.0 | **0.0** |
 | **Irak** vs **Noruega** | **0 - 0** | **1 - 3** | ❌ | --- | x1.0 | **0.0** |
 
-> **Resumen de la J1.2:** **0/3** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** 1.0 pts | **TOTAL ACUMULADO:** 9.0 pts
+> **Resumen de la J1.2:** **0/3** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 3.0 pts | **TOTAL ACUMULADO:** 13.0 pts
 
 ### 📌 J2.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -57,8 +57,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Suiza** vs **Bosnia-Herzegovina** | **1 - 1** | **2 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Canadá** vs **Qatar** | **11 - 1** | **3 - 1** | ✅ | --- | x1.0 | **1.0** |
 
-> **Resumen de la J2.1:** **0/2** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** 0.0 pts | **TOTAL ACUMULADO:** 9.0 pts
+> **Resumen de la J2.1:** **0/2** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 2.0 pts | **TOTAL ACUMULADO:** 15.0 pts
 
 ### 📌 J2.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -76,8 +76,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Francia** vs **Irak** | **0 - 0** | **3 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Noruega** vs **Senegal** | **0 - 0** | **4 - 2** | ❌ | --- | x1.0 | **0.0** |
 
-> **Resumen de la J2.2:** **0/1** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** -1.0 pts | **TOTAL ACUMULADO:** 8.0 pts
+> **Resumen de la J2.2:** **0/1** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 1.0 pts | **TOTAL ACUMULADO:** 16.0 pts
 
 ### 📌 J3.1
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -95,8 +95,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Bosnia-Herzegovina** vs **Qatar** | **1 - 11** | **0 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Suiza** vs **Canadá** | **1 - 1** | **1 - 1** | ✅ | 🎯 | x1.0 | **4.0** |
 
-> **Resumen de la J3.1:** **2/4** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** 8.0 pts | **TOTAL ACUMULADO:** 16.0 pts
+> **Resumen de la J3.1:** **2/4** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 10.0 pts | **TOTAL ACUMULADO:** 26.0 pts
 
 ### 📌 J3.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Pts |
@@ -114,15 +114,15 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Senegal** vs **Irak** | **0 - 0** | **3 - 0** | ❌ | --- | x1.0 | **0.0** |
 | **Noruega** vs **Francia** | **0 - 0** | **1 - 3** | ❌ | --- | x1.0 | **0.0** |
 
-> **Resumen de la J3.2:** **0/2** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** 0.0 pts | **TOTAL ACUMULADO:** 16.0 pts
+> **Resumen de la J3.2:** **0/2** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: ⚪ **Neutral** (0 pts)
+> **Puntos sumados esta jornada:** 2.0 pts | **TOTAL ACUMULADO:** 28.0 pts
 
 
 ---
 ## 📊 BALANCE DE FASE DE GRUPOS
 **Puntos obtenidos en partidos:** 28.0 pts
-**Puntos extra de jornadas:** -12 pts
-**TOTAL FASE DE GRUPOS (Sin contar bonos de pase): 16.0 pts**
+**Puntos extra de jornadas:** 0 pts
+**TOTAL FASE DE GRUPOS (Sin contar bonos de pase): 28.0 pts**
 
 ### Análisis de los 48 Equipos (Pase a Eliminatorias)
 | Equipo | Pasa (Tú) | Pos (Tú) | Pasa (Real) | Pos (Real) | Acierto Pase | Acierto Posición | Puntos |
@@ -177,7 +177,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Uzbekistán** | ✅ | 2º | ❌ | 4º | - | - | **0** |
 
 > **Resumen de Clasificados:** **13/23** *(Clavados/Aciertos Pase)*
-> **Bono sumado por Fase de Grupos:** +49 pts | **TOTAL ACUMULADO:** 65.0 pts
+> **Bono sumado por Fase de Grupos:** +49 pts | **TOTAL ACUMULADO:** 77.0 pts
 
 ---
 ### 📌 DIECISEISAVOS.1
@@ -192,8 +192,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **México** vs **Costa de Marfil** | **1 - 3** | **3 - 1** | ❌ | --- | x1.5 | - **Costa de Marfil** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
 | **Inglaterra** vs **Senegal** | **0 - 1** | **3 - 2** | ❌ | --- | x1.5 | - **Senegal** +0.5: [Grupos](pronosticos/grupos/) | **0.0** |
 
-> **Resumen de la DIECISEISAVOS.1:** **0/3** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** 4.0 pts | **TOTAL ACUMULADO:** 69.0 pts
+> **Resumen de la DIECISEISAVOS.1:** **0/3** *(Clavados/Aciertos)*. Quedaste en la posición **4º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+> **Puntos sumados esta jornada:** 4.0 pts | **TOTAL ACUMULADO:** 81.0 pts
 
 ### 📌 DIECISEISAVOS.2
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
@@ -208,7 +208,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Paraguay** vs **Egipto** | **1 - 0** | **3 - 2** | ✅ | --- | x2.0 | - **Paraguay** +0.5: [Grupos](pronosticos/grupos/)<br>- **Egipto** +0.5: [Grupos](pronosticos/grupos/) | **2.0** |
 
 > **Resumen de la DIECISEISAVOS.2:** **2/6** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
-> **Puntos sumados esta jornada:** 23.5 pts | **TOTAL ACUMULADO:** 92.5 pts
+> **Puntos sumados esta jornada:** 23.5 pts | **TOTAL ACUMULADO:** 104.5 pts
 
 ### 📌 OCTAVOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
@@ -223,7 +223,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Canadá** vs **Colombia** | **1 - 2** | **0 - 1** | ✅ | --- | x1.5 | - **Canadá** +0.5: [1/16](pronosticos/eliminatorias/dieciseisavos/) | **1.5** |
 
 > **Resumen de la OCTAVOS:** **0/4** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
-> **Puntos sumados esta jornada:** 8.5 pts | **TOTAL ACUMULADO:** 101.0 pts
+> **Puntos sumados esta jornada:** 8.5 pts | **TOTAL ACUMULADO:** 113.0 pts
 
 ### 📌 CUARTOS
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
@@ -233,8 +233,8 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Brasil** vs **Inglaterra** | **1 - 0** | **2 - 3** | ❌ | --- | x1.5 | - **Brasil** +0.5: [1/16](pronosticos/eliminatorias/dieciseisavos/) | **0.0** |
 | **Argentina** vs **Colombia** | **1 - 2** | **1 - 2** | ✅ | 🎯 | x2.5 | - **Argentina** +1.0: [Grupos](pronosticos/grupos/); [1/16](pronosticos/eliminatorias/dieciseisavos/)<br>- **Colombia** +0.5: [1/8](pronosticos/eliminatorias/octavos/) | **10.0** |
 
-> **Resumen de la CUARTOS:** **2/2** *(Clavados/Aciertos)*. Quedaste en la posición **3º**. | Resultado: 🔴 **Perdedor** (-2 pts)
-> **Puntos sumados esta jornada:** 18.0 pts | **TOTAL ACUMULADO:** 119.0 pts
+> **Resumen de la CUARTOS:** **2/2** *(Clavados/Aciertos)*. Quedaste en la posición **4º**. | Resultado: 🔴 **Perdedor** (-2 pts)
+> **Puntos sumados esta jornada:** 18.0 pts | **TOTAL ACUMULADO:** 131.0 pts
 
 ### 📌 SEMIFINALES
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
@@ -243,7 +243,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **Inglaterra** vs **Colombia** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.0 | - **Colombia** +1.0: [1/8](pronosticos/eliminatorias/octavos/); [1/4](pronosticos/eliminatorias/cuartos/) | **8.0** |
 
 > **Resumen de la SEMIFINALES:** **1/1** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: ⚪ **Neutral** (0 pts)
-> **Puntos sumados esta jornada:** 8.0 pts | **TOTAL ACUMULADO:** 127.0 pts
+> **Puntos sumados esta jornada:** 8.0 pts | **TOTAL ACUMULADO:** 139.0 pts
 
 ### 🥉 TERCER PUESTO
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
@@ -256,7 +256,7 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 | **España** vs **Inglaterra** | **2 - 1** | **2 - 1** | ✅ | 🎯 | x2.5 | - **España** +1.0: [1/8](pronosticos/eliminatorias/octavos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Inglaterra** +0.5: [Semis](pronosticos/eliminatorias/semifinales/) | **10.0** |
 
 > **Resumen de la FINALES:** **1/1** *(Clavados/Aciertos)*. Quedaste en la posición **1º**. | Resultado: 🥇 **Ganador** (2 pts)
-> **Puntos sumados esta jornada:** 12.0 pts | **TOTAL ACUMULADO:** 139.0 pts
+> **Puntos sumados esta jornada:** 12.0 pts | **TOTAL ACUMULADO:** 151.0 pts
 
 
 ## 🎯 Matriz de Desviaciones: Sorpresas y Decepciones
@@ -264,43 +264,43 @@ Este gráfico analiza tu desviación respecto a la tendencia central de la comun
 
 | Selección | Datos | Gráfico de Rendimiento | Estado |
 | :--- | :---: | :---: | :---: |
-| **Alemania** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Alemania](estadisticas/graficos_sd/alemania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Arabia Saudita** | **Tú:** 1<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Arabia Saudita](estadisticas/graficos_sd/arabia_saudita_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Alemania** | **Tú:** 0<br>**Media:** 0.75<br>**Real:** 1<br>**Margen:** ±1.0 | ![Alemania](estadisticas/graficos_sd/alemania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Arabia Saudita** | **Tú:** 1<br>**Media:** 0.75<br>**Real:** 1<br>**Margen:** ±1.0 | ![Arabia Saudita](estadisticas/graficos_sd/arabia_saudita_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Argelia** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Argelia](estadisticas/graficos_sd/argelia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Argentina** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3<br>**Margen:** ±1.0 | ![Argentina](estadisticas/graficos_sd/argentina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Australia** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Australia](estadisticas/graficos_sd/australia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Austria** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Austria](estadisticas/graficos_sd/austria_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Austria** | **Tú:** 0<br>**Media:** 0.75<br>**Real:** 1<br>**Margen:** ±1.0 | ![Austria](estadisticas/graficos_sd/austria_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Bosnia-Herzegovina** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Bosnia-Herzegovina](estadisticas/graficos_sd/bosniaherzegovina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Brasil** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3<br>**Margen:** ±1.0 | ![Brasil](estadisticas/graficos_sd/brasil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Bélgica** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3<br>**Margen:** ±1.0 | ![Bélgica](estadisticas/graficos_sd/belgica_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Cabo Verde** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Cabo Verde](estadisticas/graficos_sd/cabo_verde_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Canadá** | **Tú:** 2<br>**Media:** 2.0<br>**Real:** 2<br>**Margen:** ±1.0 | ![Canadá](estadisticas/graficos_sd/canada_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Colombia** | **Tú:** 5<br>**Media:** 5.0<br>**Real:** 4<br>**Margen:** ±1.0 | ![Colombia](estadisticas/graficos_sd/colombia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Corea del Sur** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Corea del Sur](estadisticas/graficos_sd/corea_del_sur_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Costa de Marfil** | **Tú:** 1<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Costa de Marfil](estadisticas/graficos_sd/costa_de_marfil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Croacia** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Croacia](estadisticas/graficos_sd/croacia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Corea del Sur** | **Tú:** 0<br>**Media:** 0.75<br>**Real:** 1<br>**Margen:** ±1.0 | ![Corea del Sur](estadisticas/graficos_sd/corea_del_sur_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Costa de Marfil** | **Tú:** 1<br>**Media:** 0.75<br>**Real:** 1<br>**Margen:** ±1.0 | ![Costa de Marfil](estadisticas/graficos_sd/costa_de_marfil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Croacia** | **Tú:** 0<br>**Media:** 0.75<br>**Real:** 1<br>**Margen:** ±1.0 | ![Croacia](estadisticas/graficos_sd/croacia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Curazao** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Curazao](estadisticas/graficos_sd/curazao_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Ecuador** | **Tú:** 2<br>**Media:** 2.0<br>**Real:** 2<br>**Margen:** ±1.0 | ![Ecuador](estadisticas/graficos_sd/ecuador_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Egipto** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1<br>**Margen:** ±1.0 | ![Egipto](estadisticas/graficos_sd/egipto_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Escocia** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Escocia](estadisticas/graficos_sd/escocia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Escocia** | **Tú:** 0<br>**Media:** 0.75<br>**Real:** 1<br>**Margen:** ±1.0 | ![Escocia](estadisticas/graficos_sd/escocia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **España** | **Tú:** 5<br>**Media:** 5.0<br>**Real:** 5<br>**Margen:** ±1.0 | ![España](estadisticas/graficos_sd/espana_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Estados Unidos** | **Tú:** 2<br>**Media:** 1.33<br>**Real:** 2<br>**Margen:** ±1.0 | ![Estados Unidos](estadisticas/graficos_sd/estados_unidos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Estados Unidos** | **Tú:** 2<br>**Media:** 1.5<br>**Real:** 2<br>**Margen:** ±1.0 | ![Estados Unidos](estadisticas/graficos_sd/estados_unidos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Francia** | **Tú:** 5<br>**Media:** 5.0<br>**Real:** 4<br>**Margen:** ±1.0 | ![Francia](estadisticas/graficos_sd/francia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Ghana** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1<br>**Margen:** ±1.0 | ![Ghana](estadisticas/graficos_sd/ghana_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Haití** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Haití](estadisticas/graficos_sd/haiti_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Inglaterra** | **Tú:** 0<br>**Media:** 1.67<br>**Real:** 5<br>**Margen:** ±1.0 | ![Inglaterra](estadisticas/graficos_sd/inglaterra_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Inglaterra** | **Tú:** 0<br>**Media:** 2.5<br>**Real:** 5<br>**Margen:** ±1.0 | ![Inglaterra](estadisticas/graficos_sd/inglaterra_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Irak** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Irak](estadisticas/graficos_sd/irak_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Irán** | **Tú:** 1<br>**Media:** 0.33<br>**Real:** 1<br>**Margen:** ±1.0 | ![Irán](estadisticas/graficos_sd/iran_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Irán** | **Tú:** 1<br>**Media:** 0.5<br>**Real:** 1<br>**Margen:** ±1.0 | ![Irán](estadisticas/graficos_sd/iran_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Japón** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1<br>**Margen:** ±1.0 | ![Japón](estadisticas/graficos_sd/japon_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Jordania** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Jordania](estadisticas/graficos_sd/jordania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Marruecos** | **Tú:** 3<br>**Media:** 3.0<br>**Real:** 3<br>**Margen:** ±1.0 | ![Marruecos](estadisticas/graficos_sd/marruecos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **México** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 2<br>**Margen:** ±1.0 | ![México](estadisticas/graficos_sd/mexico_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Noruega** | **Tú:** 0<br>**Media:** 1.33<br>**Real:** 2<br>**Margen:** ±1.0 | ![Noruega](estadisticas/graficos_sd/noruega_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **México** | **Tú:** 0<br>**Media:** 0.5<br>**Real:** 2<br>**Margen:** ±1.0 | ![México](estadisticas/graficos_sd/mexico_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Noruega** | **Tú:** 0<br>**Media:** 1.5<br>**Real:** 2<br>**Margen:** ±1.0 | ![Noruega](estadisticas/graficos_sd/noruega_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Nueva Zelanda** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Nueva Zelanda](estadisticas/graficos_sd/nueva_zelanda_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Panamá** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Panamá](estadisticas/graficos_sd/panama_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Paraguay** | **Tú:** 2<br>**Media:** 2.0<br>**Real:** 2<br>**Margen:** ±1.0 | ![Paraguay](estadisticas/graficos_sd/paraguay_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Países Bajos** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1<br>**Margen:** ±1.0 | ![Países Bajos](estadisticas/graficos_sd/paises_bajos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Portugal** | **Tú:** 0<br>**Media:** 1.33<br>**Real:** 2<br>**Margen:** ±1.0 | ![Portugal](estadisticas/graficos_sd/portugal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
+| **Portugal** | **Tú:** 0<br>**Media:** 1.5<br>**Real:** 2<br>**Margen:** ±1.0 | ![Portugal](estadisticas/graficos_sd/portugal_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Qatar** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Qatar](estadisticas/graficos_sd/qatar_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **RD Congo** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![RD Congo](estadisticas/graficos_sd/rd_congo_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **República Checa** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 1<br>**Margen:** ±1.0 | ![República Checa](estadisticas/graficos_sd/republica_checa_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |

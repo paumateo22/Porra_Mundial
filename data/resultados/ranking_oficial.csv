@@ -1,4 +1,5 @@
 Posicion,Jugador,Puntos_Partidos,Puntos_Jornadas,Puntos_Grupos,Puntos_Podio,Puntos_Forms,TOTAL
 1,generico_3,165.0,12,66,0,0,243.0
 2,generico_2,132.5,-2,54,0,0,184.5
-3,generico_1,102.0,-12,49,0,0,139.0
+3,generico_1,102.0,0,49,0,0,151.0
+4,generico_4,29.0,-16,0,0,0,13.0
