@@ -1,4 +1,4 @@
-# ⚔️ Cuadro Predictivo desde Octavos - Generico 2
+# ⚔️ Cuadro Predictivo desde Octavos - Generico 4
 
 Esta es la hoja de ruta que imaginó el jugador cuando arrancaron los Octavos.
 
