@@ -56,6 +56,10 @@ def ejecutar_06c_motor_grupos():
         print("❌ Error: Faltan archivos clave para el 06c. Ejecuta 06b primero.")
         return
 
+    # Extraemos habilitadores y puntuaciones del config
+    hab_clasif = settings.get("habilitadores", {}).get("bono_clasificacion_grupos", 1)
+    hab_pos = settings.get("habilitadores", {}).get("bono_posicion_grupos", 1)
+    
     pts_clasificado = settings.get("puntuaciones", {}).get("fase_grupos", {}).get("acierto_clasificado", 1)
     pts_posicion = settings.get("puntuaciones", {}).get("fase_grupos", {}).get("acierto_posicion_exacta", 2)
 
@@ -79,8 +83,9 @@ def ejecutar_06c_motor_grupos():
         # NUEVA LÓGICA: Recorremos SOLO las selecciones que han pasado en la Realidad
         for eq in pasan_real:
             if eq in pasan_pred:
-                puntos_jugador += pts_clasificado
-                if pos_real.get(eq) == pos_pred.get(eq):
+                if hab_clasif == 1:
+                    puntos_jugador += pts_clasificado
+                if hab_pos == 1 and pos_real.get(eq) == pos_pred.get(eq):
                     puntos_jugador += pts_posicion
         
         reporte_06c[jugador]["puntos_grupos"] = puntos_jugador

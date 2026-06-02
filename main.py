@@ -75,8 +75,9 @@ def mostrar_menu():
                 if ejecutar_script("06b_motor_jornadas.py"):
                     if ejecutar_script("06c_motor_fase_grupos.py"):
                         if ejecutar_script("06e_motor_sorpresas.py"):
-                            if ejecutar_script("06d_motor_cierre.py"):
-                                pass
+                            if ejecutar_script("06f_motor_premios.py"):
+                                if ejecutar_script("06d_motor_cierre.py"):
+                                    pass
                     
         elif opcion == "6":
             ejecutar_script("07_generador_vistas.py")

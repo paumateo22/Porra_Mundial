@@ -1,6 +1,5 @@
 import sys
 import json
-import os
 from pathlib import Path
 from curl_cffi import requests
 
@@ -8,154 +7,185 @@ from curl_cffi import requests
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR))
 
-# IDs del Mundial 2026 en SofaScore (Ajustar cuando SofaScore lo cree oficialmente, usamos el 16 de tu enlace por ahora)
+# ====================================================================
+# IDs DEL MUNDIAL 2026 (SofaScore)
+# ====================================================================
 UNIQUE_TOURNAMENT_ID = 16
-SEASON_ID = 58210  # ID sacado de tu URL: #id:58210
+SEASON_ID = 58210  # ID actual de SofaScore para 2026. Revisar días antes del torneo.
+
+# Diccionario traductor base (Se ampliará cuando se clasifiquen los 48 equipos)
+TRADUCCIONES = {
+    "Netherlands": "Países Bajos", "USA": "Estados Unidos", "Argentina": "Argentina",
+    "Australia": "Australia", "France": "Francia", "Poland": "Polonia",
+    "England": "Inglaterra", "Senegal": "Senegal", "Japan": "Japón",
+    "Croatia": "Croacia", "Brazil": "Brasil", "South Korea": "Corea del Sur",
+    "Morocco": "Marruecos", "Spain": "España", "Portugal": "Portugal",
+    "Switzerland": "Suiza", "Germany": "Alemania", "Belgium": "Bélgica",
+    "Cameroon": "Camerún", "Canada": "Canadá", "Costa Rica": "Costa Rica",
+    "Denmark": "Dinamarca", "Ecuador": "Ecuador", "Ghana": "Ghana",
+    "Iran": "Irán", "Mexico": "México", "Qatar": "Qatar",
+    "Saudi Arabia": "Arabia Saudí", "Serbia": "Serbia", "Tunisia": "Túnez",
+    "Uruguay": "Uruguay", "Wales": "Gales"
+}
 
 def obtener_partidos_mundial():
-    """
-    Se conecta a la API de SofaScore y extrae todos los partidos del Mundial 2026.
-    """
-    # Endpoint para sacar todos los eventos de un torneo en una temporada
-    url = f"https://api.sofascore.com/api/v1/unique-tournament/{UNIQUE_TOURNAMENT_ID}/season/{SEASON_ID}/events"
-    
     headers = {
         "Origin": "https://www.sofascore.com",
-        "Referer": "https://www.sofascore.com/"
+        "Referer": "https://www.sofascore.com/",
+        "Accept-Language": "es-ES,es;q=0.9" # Forzamos castellano
     }
     
     print(f"🔍 Buscando partidos del Mundial 2026 (Torneo: {UNIQUE_TOURNAMENT_ID}, Temp: {SEASON_ID})...")
     
-    try:
-        # Usamos curl_cffi para saltarnos la protección de Cloudflare de SofaScore
-        respuesta = requests.get(url, headers=headers, impersonate="chrome110")
-        
-        if respuesta.status_code != 200:
-            print(f"❌ Error al obtener los partidos: Estado {respuesta.status_code}")
-            return []
+    todos_los_eventos = []
+    pagina = 0
+    
+    while True:
+        url = f"https://api.sofascore.com/api/v1/unique-tournament/{UNIQUE_TOURNAMENT_ID}/season/{SEASON_ID}/events/last/{pagina}"
+        try:
+            # Usamos curl_cffi para saltarnos la protección antibots
+            respuesta = requests.get(url, headers=headers, impersonate="chrome110")
+            if respuesta.status_code != 200: 
+                break
+                
+            datos = respuesta.json()
+            eventos_pagina = datos.get('events', [])
+            todos_los_eventos.extend(eventos_pagina)
             
-        datos = respuesta.json()
-        eventos = datos.get('events', [])
-        
-        print(f"✅ ¡Éxito! Encontrados {len(eventos)} partidos en el servidor.")
-        return eventos
-        
-    except Exception as e:
-        print(f"❌ Error inesperado en el crawler: {e}")
-        return []
+            # Si no hay más páginas, cortamos el bucle
+            if not datos.get('hasNextPage', False) or not eventos_pagina: 
+                break
+            pagina += 1
+            
+        except Exception as e:
+            print(f"❌ Error de conexión con SofaScore: {e}")
+            break
+            
+    print(f"✅ Extraídos {len(todos_los_eventos)} partidos en bruto del servidor.")
+    return todos_los_eventos
 
 def estructurar_resultados_oficiales(eventos_crudos):
-    """
-    Filtra los eventos crudos, se queda solo con los partidos ya jugados (o en juego)
-    y los estructura en nuestro formato estándar.
-    """
     resultados = {
         "fase_grupos": {},
+        "clasificados_a_dieciseisavos": [],
         "eliminatorias": {
-            "dieciseisavos": [],
-            "octavos": [],
-            "cuartos": [],
-            "semifinales": [],
-            "tercer_puesto": [],
-            "final": []
+            "dieciseisavos": [], "octavos": [], "cuartos": [],
+            "semifinales": [], "tercer_puesto": [], "final": []
         }
     }
     
     partidos_procesados = 0
     
     for evento in eventos_crudos:
-        # Extraemos datos clave
         estado = evento.get('status', {}).get('type')
         
-        # Si el partido no ha empezado ('notstarted'), no nos sirve para dar puntos todavía
-        if estado == 'notstarted':
-            continue
+        # Mapeamos nombres blindados por el diccionario
+        local_eng = evento.get('homeTeam', {}).get('name', 'TBD')
+        visitante_eng = evento.get('awayTeam', {}).get('name', 'TBD')
+        local = TRADUCCIONES.get(local_eng, local_eng)
+        visitante = TRADUCCIONES.get(visitante_eng, visitante_eng)
+        
+        score_home = evento.get('homeScore', {})
+        score_away = evento.get('awayScore', {})
+        
+        penaltis_loc = score_home.get('penalties', 0)
+        penaltis_vis = score_away.get('penalties', 0)
+        
+        # Extraemos goles reales (restando penaltis) como STRINGS. Si no ha empezado, un guion.
+        goles_loc_str = str(score_home.get('current', 0) - penaltis_loc) if estado != 'notstarted' else "-"
+        goles_vis_str = str(score_away.get('current', 0) - penaltis_vis) if estado != 'notstarted' else "-"
+        
+        pasa = "TBD"
+        if estado == 'finished':
+            if int(goles_loc_str) > int(goles_vis_str): pasa = local
+            elif int(goles_vis_str) > int(goles_loc_str): pasa = visitante
+            else:
+                if penaltis_loc > penaltis_vis: pasa = local
+                elif penaltis_vis > penaltis_loc: pasa = visitante
+                else: pasa = "Empate"
+        
+        nombre_ronda = evento.get('roundInfo', {}).get('name', '').lower()
+        
+        # 1. FASE DE GRUPOS
+        if not ("16" in nombre_ronda or "quarter" in nombre_ronda or "semi" in nombre_ronda or "final" in nombre_ronda or "3rd" in nombre_ronda or "1/8" in nombre_ronda or "1/4" in nombre_ronda or "32" in nombre_ronda):
+            grupo_crudo = evento.get('tournament', {}).get('groupName', 'Group Desconocido')
+            grupo = grupo_crudo.replace("Group", "Grupo").strip()
             
-        # Equipos
-        local = evento.get('homeTeam', {}).get('name', 'Desconocido')
-        visitante = evento.get('awayTeam', {}).get('name', 'Desconocido')
-        
-        # Goles (si el partido está en curso, cogerá los goles actuales. Si terminó, los finales)
-        goles_loc = evento.get('homeScore', {}).get('current', 0)
-        goles_vis = evento.get('awayScore', {}).get('current', 0)
-        
-        # Ganador (calculado para simplificar la vida al motor de puntuaciones)
-        ganador = local if goles_loc > goles_vis else (visitante if goles_vis > goles_loc else "Empate")
-        
-        # En SofaScore, las fases se distinguen por el 'roundInfo'
-        ronda_info = evento.get('roundInfo', {})
-        nombre_ronda = ronda_info.get('name', '')
-        
-        partido_formateado = {
-            "id_sofascore": evento.get('id'),
-            "local": local,
-            "visitante": visitante,
-            "goles_local": goles_loc,
-            "goles_visitante": goles_vis,
-            "ganador": ganador,
-            "estado": estado # 'finished' o 'inprogress'
-        }
-        
-        # --- CLASIFICADOR DE FASES ---
-        # (Lógica estándar de SofaScore para Mundiales)
-        if "Group" in nombre_ronda:
-            grupo = nombre_ronda.replace("Round", "").strip() # Ej: "Group A"
             if grupo not in resultados["fase_grupos"]:
                 resultados["fase_grupos"][grupo] = []
-            resultados["fase_grupos"][grupo].append(partido_formateado)
+                
+            resultados["fase_grupos"][grupo].append({
+                "local": local,
+                "visitante": visitante,
+                "goles_local": goles_loc_str,
+                "goles_visitante": goles_vis_str,
+                "estado": estado
+            })
             
-        elif "Round of 32" in nombre_ronda or "1/16" in nombre_ronda:
-            resultados["eliminatorias"]["dieciseisavos"].append(partido_formateado)
+        # 2. ELIMINATORIAS (Sin IDs numéricos, pura cadena de texto)
+        else:
+            partido_elim = {
+                "local": local,
+                "visitante": visitante,
+                "pasa": pasa,
+                "estado": estado,
+                "goles_local": goles_loc_str,
+                "goles_visitante": goles_vis_str
+            }
             
-        elif "Round of 16" in nombre_ronda or "1/8" in nombre_ronda:
-            resultados["eliminatorias"]["octavos"].append(partido_formateado)
-            
-        elif "Quarter" in nombre_ronda or "1/4" in nombre_ronda:
-            resultados["eliminatorias"]["cuartos"].append(partido_formateado)
-            
-        elif "Semi" in nombre_ronda or "1/2" in nombre_ronda:
-            resultados["eliminatorias"]["semifinales"].append(partido_formateado)
-            
-        elif "3rd" in nombre_ronda or "Third" in nombre_ronda:
-            resultados["eliminatorias"]["tercer_puesto"].append(partido_formateado)
-            
-        elif "Final" in nombre_ronda:
-            resultados["eliminatorias"]["final"].append(partido_formateado)
-            
+            if "32" in nombre_ronda or "1/16" in nombre_ronda or "dieciseisavos" in nombre_ronda:
+                resultados["eliminatorias"]["dieciseisavos"].append(partido_elim)
+            elif "16" in nombre_ronda or "1/8" in nombre_ronda or "octavos" in nombre_ronda:
+                resultados["eliminatorias"]["octavos"].append(partido_elim)
+            elif "quarter" in nombre_ronda or "1/4" in nombre_ronda or "cuartos" in nombre_ronda:
+                resultados["eliminatorias"]["cuartos"].append(partido_elim)
+            elif "semi" in nombre_ronda or "1/2" in nombre_ronda:
+                resultados["eliminatorias"]["semifinales"].append(partido_elim)
+            elif "3rd" in nombre_ronda or "third" in nombre_ronda or "tercer" in nombre_ronda:
+                partido_elim["ganador"] = pasa 
+                resultados["eliminatorias"]["tercer_puesto"].append(partido_elim)
+            elif "final" in nombre_ronda:
+                partido_elim["ganador"] = pasa
+                resultados["eliminatorias"]["final"].append(partido_elim)
+
         partidos_procesados += 1
+
+    # Ordenar los grupos de la A a la Z
+    resultados["fase_grupos"] = dict(sorted(resultados["fase_grupos"].items()))
+    
+    # Deducir clasificados leyendo la primera ronda eliminatoria
+    ronda_corte = "dieciseisavos" if resultados["eliminatorias"]["dieciseisavos"] else "octavos"
+    equipos_clasificados = set()
+    for p in resultados["eliminatorias"][ronda_corte]:
+        if p["local"] != "TBD": equipos_clasificados.add(p["local"])
+        if p["visitante"] != "TBD": equipos_clasificados.add(p["visitante"])
         
-    print(f"📊 Se han estructurado {partidos_procesados} partidos jugados/en juego.")
+    resultados["clasificados_a_dieciseisavos"] = sorted(list(equipos_clasificados))
+    
+    print(f"📊 Se han estructurado {partidos_procesados} partidos en el formato oficial.")
     return resultados
 
-def extraer_realidad_mundial():
+def ejecutar_05_scraper():
     print("=======================================================")
-    print(" 🚀 INICIANDO EXTRACCIÓN DE RESULTADOS OFICIALES 🚀")
+    print(" 📥 [05] ACTUALIZANDO REALIDAD DESDE SOFASCORE 📥")
     print("=======================================================")
     
-    # 1. Bajar todo el JSON crudo del Mundial
     eventos_crudos = obtener_partidos_mundial()
-    
-    if not eventos_crudos:
-        print("⚠️ No se pudo obtener el calendario. Abortando.")
+    if not eventos_crudos: 
+        print("⚠️ No hay datos en SofaScore para este torneo todavía. Manteniendo realidad anterior.")
         return
         
-    # 2. Convertirlo a nuestra estructura de la Porra
     resultados_limpios = estructurar_resultados_oficiales(eventos_crudos)
     
-    # 3. Preparar la carpeta de guardado
+    # Preparar el guardado en la carpeta "cerebro"
     carpeta_resultados = ROOT_DIR / "data" / "resultados"
     carpeta_resultados.mkdir(parents=True, exist_ok=True)
-    
     ruta_guardado = carpeta_resultados / "realidad_oficial.json"
     
-    # 4. Guardarlo como el archivo maestro
     with open(ruta_guardado, 'w', encoding='utf-8') as f:
         json.dump(resultados_limpios, f, ensure_ascii=False, indent=4)
         
-    print(f"💾 Realidad oficial guardada en: {ruta_guardado.relative_to(ROOT_DIR)}")
-    print("=======================================================")
-    print(" 🏁 EXTRACCIÓN DE SOFASCORE FINALIZADA")
-    print("=======================================================")
+    print(f"💾 ¡Realidad oficial actualizada con éxito en: {ruta_guardado.relative_to(ROOT_DIR)}")
 
 if __name__ == "__main__":
-    extraer_realidad_mundial()
+    ejecutar_05_scraper()

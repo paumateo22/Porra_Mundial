@@ -64,8 +64,7 @@ def calcular_racha_equipo(jugador, equipo, fase_objetivo):
     racha = 0
     fases_cronologicas = ["grupos", "dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
     
-    fase_busqueda_ocr = "finales" if fase_objetivo in ["final", "tercer_puesto"] else fase_objetivo
-    fase_busqueda_infobae = fase_objetivo
+    fase_busqueda_ocr = "finales" if fase_objetivo in ["final", "tercer_puesto", "finales"] else fase_objetivo
     
     idx_limite = fases_cronologicas.index(fase_busqueda_ocr) if fase_busqueda_ocr in fases_cronologicas else 0
     
@@ -78,7 +77,12 @@ def calcular_racha_equipo(jugador, equipo, fase_objetivo):
                 with open(ruta_base, 'r', encoding='utf-8') as f:
                     base = json.load(f)
                     
-                partidos_objetivo = base.get("eliminatorias", {}).get(fase_busqueda_infobae, [])
+                # CORRECCIÓN AQUÍ: Si buscamos para "finales", miramos tanto final como tercer puesto
+                if fase_objetivo == "finales":
+                    partidos_objetivo = base.get("eliminatorias", {}).get("final", []) + base.get("eliminatorias", {}).get("tercer_puesto", [])
+                else:
+                    partidos_objetivo = base.get("eliminatorias", {}).get(fase_objetivo, [])
+                    
                 for p in partidos_objetivo:
                     if p.get("local") == equipo or p.get("visitante") == equipo:
                         racha += 1
@@ -148,7 +152,6 @@ def ejecutar_06a_motor_partidos():
                     
                     for p_pred in partidos_predichos:
                         if p_pred.get("local") == p_real.get("local") and p_pred.get("visitante") == p_real.get("visitante"):
-                            # USO DE .GET() PARA EVITAR KEYERRORS
                             pts, is_1x2, is_ex, mult = calcular_puntos_partido(
                                 int(p_pred.get("goles_local", 0)), int(p_pred.get("goles_visitante", 0)),
                                 int(p_real.get("goles_local", 0)), int(p_real.get("goles_visitante", 0))
@@ -170,7 +173,7 @@ def ejecutar_06a_motor_partidos():
                             }
                             break
 
-        # 2. PROCESAR ELIMINATORIAS (Evaluación por Índice y Mapeo Correcto de Finales)
+        # 2. PROCESAR ELIMINATORIAS
         for fase in FASES_ORDENADAS:
             ruta_fase = dir_participantes / jugador / "pronosticos" / "eliminatorias" / fase / f"{fase}.json"
             
@@ -188,7 +191,6 @@ def ejecutar_06a_motor_partidos():
             else:
                 reales = realidad.get("eliminatorias", {}).get(fase, [])
                 
-            # Evaluamos por índice cronológico
             for i, p_real in enumerate(reales):
                 if p_real.get("estado", "notstarted") == "notstarted": continue
                 
@@ -214,7 +216,6 @@ def ejecutar_06a_motor_partidos():
                 if is_1x2: informe_06a[jugador]["total_aciertos_1x2"] += 1
                 if is_ex: informe_06a[jugador]["total_aciertos_exactos"] += 1
                 
-                # REGISTRAMOS SIEMPRE (incluso con 0 puntos si falló los equipos)
                 clave_partido = f"ID_{p_real['id_partido']}"
                 informe_06a[jugador]["historial_jornadas"][clave_partido] = {"acierto_1x2": is_1x2}
 
@@ -227,11 +228,9 @@ def ejecutar_06a_motor_partidos():
                     "puntos_conseguidos": pts
                 }
 
-        # Guardar el Libro de Cuentas Personal de este jugador
         ruta_libro = dir_participantes / jugador / "estadisticas" / "historial_puntos.json"
         guardar_json(libro_cuentas, ruta_libro)
 
-    # 3. GUARDAR INFORME PARA 06B Y 06C
     ruta_guardado = ROOT_DIR / "data" / "resultados" / "reporte_06a_partidos.json"
     guardar_json(informe_06a, ruta_guardado)
         

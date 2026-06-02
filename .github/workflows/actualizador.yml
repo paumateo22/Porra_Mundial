@@ -1,0 +1,46 @@
+name: Actualizar Porra Mundial
+
+on:
+  # Esto crea un botón para ejecutarlo a mano desde la web o el móvil
+  workflow_dispatch: 
+
+# Permisos para que el bot pueda sobreescribir los JSON y los PNGs
+permissions:
+  contents: write
+
+jobs:
+  motor-puntuacion:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar librerías
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ejecutar Cascada de Motores (Actualización Total)
+        run: |
+          # python scripts/05_scraper_sofascore.py
+          python scripts/06a_motor_partidos.py
+          python scripts/06b_motor_jornadas.py
+          python scripts/06c_motor_fase_grupos.py
+          python scripts/06e_motor_sorpresas.py
+          python scripts/06f_motor_premios.py
+          python scripts/06d_motor_cierre.py
+          python scripts/07_generador_vistas.py
+
+      - name: Guardar cambios y subir a GitHub (Auto-Commit)
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          # Si no hay cambios reales en los puntos, no hace commit para no ensuciar el historial
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-Update: Motores y Gráficas ejecutados" && git push)
