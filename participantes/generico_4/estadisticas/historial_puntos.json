@@ -1,0 +1,1226 @@
+{
+    "jugador": "Generico 2",
+    "puntos_totales": 182.5,
+    "desglose_partidos": {
+        "Argentina_vs_Argelia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Austria_vs_Jordania": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Argentina_vs_Austria": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Jordania_vs_Argelia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Argelia_vs_Austria": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Jordania_vs_Argentina": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Portugal_vs_RD Congo": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Uzbekistán_vs_Colombia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Portugal_vs_Uzbekistán": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Colombia_vs_RD Congo": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "RD Congo_vs_Uzbekistán": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Colombia_vs_Portugal": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Inglaterra_vs_Croacia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Ghana_vs_Panamá": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Inglaterra_vs_Ghana": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Panamá_vs_Croacia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Croacia_vs_Ghana": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Panamá_vs_Inglaterra": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Bélgica_vs_Egipto": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Irán_vs_Nueva Zelanda": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Bélgica_vs_Irán": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Nueva Zelanda_vs_Egipto": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Nueva Zelanda_vs_Bélgica": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Egipto_vs_Irán": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "España_vs_Cabo Verde": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Arabia Saudita_vs_Uruguay": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "España_vs_Arabia Saudita": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Uruguay_vs_Cabo Verde": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Cabo Verde_vs_Arabia Saudita": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Uruguay_vs_España": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Francia_vs_Senegal": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Irak_vs_Noruega": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Francia_vs_Irak": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Noruega_vs_Senegal": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Senegal_vs_Irak": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Noruega_vs_Francia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Estados Unidos_vs_Paraguay": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Australia_vs_Turquía": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Estados Unidos_vs_Australia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Turquía_vs_Paraguay": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Paraguay_vs_Australia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Turquía_vs_Estados Unidos": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Países Bajos_vs_Japón": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Suecia_vs_Túnez": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Países Bajos_vs_Suecia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Túnez_vs_Japón": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Japón_vs_Suecia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Túnez_vs_Países Bajos": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Alemania_vs_Curazao": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Costa de Marfil_vs_Ecuador": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Alemania_vs_Costa de Marfil": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Ecuador_vs_Curazao": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Curazao_vs_Costa de Marfil": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Ecuador_vs_Alemania": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "México_vs_Sudáfrica": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Corea del Sur_vs_República Checa": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "República Checa_vs_Sudáfrica": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "México_vs_Corea del Sur": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Sudáfrica_vs_Corea del Sur": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "República Checa_vs_México": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Brasil_vs_Marruecos": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Haití_vs_Escocia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Escocia_vs_Marruecos": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Brasil_vs_Haití": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Escocia_vs_Brasil": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Marruecos_vs_Haití": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Canadá_vs_Bosnia-Herzegovina": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Qatar_vs_Suiza": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Suiza_vs_Bosnia-Herzegovina": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Canadá_vs_Qatar": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Bosnia-Herzegovina_vs_Qatar": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Suiza_vs_Canadá": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "ID_73": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (República Checa) / 1 (Suiza)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_74": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Ecuador) / 1 (Corea del Sur)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_75": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Países Bajos) / 1 (Marruecos)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_76": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Brasil) / 1 (Suecia)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_77": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (Francia) / 0 (Irán)",
+            "puntos_conseguidos": 1.5
+        },
+        "ID_78": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Alemania) / 1 (Noruega)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_79": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "racha_detectada": "0 (México) / 0 (Costa de Marfil)",
+            "puntos_conseguidos": 1.0
+        },
+        "ID_80": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "0 (Inglaterra) / 1 (Senegal)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_81": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Estados Unidos) / 1 (Japón)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_82": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Bélgica) / 1 (Arabia Saudita)",
+            "puntos_conseguidos": 8.0
+        },
+        "ID_83": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Portugal) / 1 (Ghana)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_84": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (España) / 1 (Austria)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_85": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Canadá) / 1 (Escocia)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_86": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Argentina) / 1 (Uruguay)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_87": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Colombia) / 1 (Croacia)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_88": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Paraguay) / 1 (Egipto)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_89": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (Ecuador) / 2 (Francia)",
+            "puntos_conseguidos": 2.5
+        },
+        "ID_90": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (Suiza) / 2 (Marruecos)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_91": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (Brasil) / 2 (Noruega)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_92": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (México) / 0 (Inglaterra)",
+            "puntos_conseguidos": 1.5
+        },
+        "ID_93": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Portugal) / 2 (España)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_94": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (Estados Unidos) / 2 (Bélgica)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_95": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Argentina) / 1 (Paraguay)",
+            "puntos_conseguidos": 2.0
+        },
+        "ID_96": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "1 (Canadá) / 2 (Colombia)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_97": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Francia) / 2 (Marruecos)",
+            "puntos_conseguidos": 12.0
+        },
+        "ID_98": {
+            "fase": "cuartos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (España) / 1 (Bélgica)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_99": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "0 (Brasil) / 1 (Inglaterra)",
+            "puntos_conseguidos": 1.5
+        },
+        "ID_100": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Argentina) / 1 (Colombia)",
+            "puntos_conseguidos": 2.5
+        },
+        "ID_101": {
+            "fase": "semifinales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Francia) / 1 (España)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_102": {
+            "fase": "semifinales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Inglaterra) / 1 (Colombia)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_103": {
+            "fase": "finales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.5,
+            "racha_detectada": "3 (Francia) / 2 (Colombia)",
+            "puntos_conseguidos": 0.0
+        },
+        "ID_104": {
+            "fase": "finales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (España) / 2 (Inglaterra)",
+            "puntos_conseguidos": 0.0
+        }
+    },
+    "desglose_jornadas": {
+        "J1.1": {
+            "aciertos_1x2": 8,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
+        },
+        "J1.2": {
+            "aciertos_1x2": 8,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
+        },
+        "J2.1": {
+            "aciertos_1x2": 9,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
+        },
+        "J2.2": {
+            "aciertos_1x2": 9,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
+        },
+        "J3.1": {
+            "aciertos_1x2": 5,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
+        },
+        "J3.2": {
+            "aciertos_1x2": 8,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
+        },
+        "dieciseisavos.1": {
+            "aciertos_1x2": 5,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
+        },
+        "dieciseisavos.2": {
+            "aciertos_1x2": 5,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
+        },
+        "octavos": {
+            "aciertos_1x2": 3,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
+        },
+        "cuartos": {
+            "aciertos_1x2": 3,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
+        },
+        "semifinales": {
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
+        },
+        "finales": {
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
+        }
+    },
+    "premios_finales": {
+        "formularios": {
+            "detalles": {
+                "sorpresa": 0,
+                "decepcion": 0
+            }
+        }
+    },
+    "resolucion_fase_grupos": {
+        "puntos_conseguidos": 54
+    },
+    "matriz_sorpresas_decepciones": {
+        "Alemania": {
+            "pronostico": 1,
+            "media_grupo": 0.75,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Arabia Saudita": {
+            "pronostico": 1,
+            "media_grupo": 0.75,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Argelia": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Argentina": {
+            "pronostico": 3,
+            "media_grupo": 3.0,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Australia": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Austria": {
+            "pronostico": 1,
+            "media_grupo": 0.75,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Bosnia-Herzegovina": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Brasil": {
+            "pronostico": 3,
+            "media_grupo": 3.0,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Bélgica": {
+            "pronostico": 3,
+            "media_grupo": 3.0,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Cabo Verde": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Canadá": {
+            "pronostico": 2,
+            "media_grupo": 2.0,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Colombia": {
+            "pronostico": 5,
+            "media_grupo": 5.0,
+            "realidad": 4,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Corea del Sur": {
+            "pronostico": 1,
+            "media_grupo": 0.75,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Costa de Marfil": {
+            "pronostico": 0,
+            "media_grupo": 0.75,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Croacia": {
+            "pronostico": 1,
+            "media_grupo": 0.75,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Curazao": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Ecuador": {
+            "pronostico": 2,
+            "media_grupo": 2.0,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Egipto": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Escocia": {
+            "pronostico": 1,
+            "media_grupo": 0.75,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "España": {
+            "pronostico": 5,
+            "media_grupo": 5.0,
+            "realidad": 5,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Estados Unidos": {
+            "pronostico": 2,
+            "media_grupo": 1.5,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Francia": {
+            "pronostico": 5,
+            "media_grupo": 5.0,
+            "realidad": 4,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Ghana": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Haití": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Inglaterra": {
+            "pronostico": 0,
+            "media_grupo": 2.5,
+            "realidad": 5,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Irak": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Irán": {
+            "pronostico": 0,
+            "media_grupo": 0.5,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Japón": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Jordania": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Marruecos": {
+            "pronostico": 3,
+            "media_grupo": 3.0,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "México": {
+            "pronostico": 0,
+            "media_grupo": 0.5,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Noruega": {
+            "pronostico": 2,
+            "media_grupo": 1.5,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Nueva Zelanda": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Panamá": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Paraguay": {
+            "pronostico": 2,
+            "media_grupo": 2.0,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Países Bajos": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Portugal": {
+            "pronostico": 2,
+            "media_grupo": 1.5,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Qatar": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "RD Congo": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "República Checa": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Senegal": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Sudáfrica": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Suecia": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Suiza": {
+            "pronostico": 2,
+            "media_grupo": 2.0,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Turquía": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Túnez": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Uruguay": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Uzbekistán": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        }
+    },
+    "posicion_final_ranking": 3
+}
