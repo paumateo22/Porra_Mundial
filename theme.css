@@ -1,0 +1,113 @@
+:root {
+    /* Paleta de Colores Principal */
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --text-main: #e0e0e0;
+    
+    /* Colores de Estado */
+    --gold: goldenrod;       /* Dorado para Ganadores */
+    --maroon: #ff4c4c;       /* Rojo Coral brillante para Perdedores (Mejor legibilidad) */
+    --accent: #2b5876;       /* Azul acento para cabeceras */
+    --table-header: #a9b7c6; /* Azul acero para los títulos de tabla */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+    /* 🖼️ PARA PONER IMAGEN DE FONDO, QUITA LOS COMENTARIOS (/* */) A ESTAS LÍNEAS: */
+    /* background-image: url('ruta/a/tu/imagen.jpg'); */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+}
+
+header { background: linear-gradient(135deg, #1a2a6c, #112240, var(--accent)); padding: 40px 20px 40px 60px; text-align: center; border-bottom: 3px solid var(--gold); box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+h1 { margin: 0; color: var(--gold); font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+h2 { color: var(--gold); margin: 0; }
+.container { width: 95%; max-width: 1200px; margin: 30px auto; }
+
+/* Sidebar / Menú Lateral */
+.sidenav { height: 100%; width: 0; position: fixed; z-index: 1000; top: 0; left: 0; background-color: #111; overflow-x: hidden; transition: 0.4s; padding-top: 60px; box-shadow: 2px 0 10px rgba(0,0,0,0.8); }
+.sidenav a { padding: 15px 25px; text-decoration: none; font-size: 1.1em; color: #b0c4de; display: block; transition: 0.3s; border-bottom: 1px solid #222; }
+.sidenav a:hover { color: var(--gold); background-color: #222; }
+.sidenav .closebtn { position: absolute; top: 0; right: 20px; font-size: 36px; border-bottom: none; }
+.menu-btn { position: fixed; top: 20px; left: 15px; font-size: 24px; cursor: pointer; color: var(--gold); z-index: 900; background: rgba(0,0,0,0.6); padding: 5px 12px; border-radius: 5px; border: 1px solid var(--gold); transition: 0.3s; }
+.menu-btn:hover { background: var(--gold); color: #000; }
+
+/* Secciones Desplegables (Details/Summary) */
+details { margin-bottom: 30px; background: var(--bg-card); border-radius: 10px; padding: 15px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); border: 1px solid #333; }
+summary { cursor: pointer; outline: none; list-style: none; user-select: none; }
+summary::-webkit-details-marker { display: none; }
+summary h2 { display: flex; justify-content: space-between; align-items: center; border: none; }
+summary h2::after { content: '▼'; font-size: 0.6em; color: gray; transition: 0.3s; }
+details[open] summary h2::after { content: '▲'; color: var(--gold); }
+details[open] summary { border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 15px; }
+
+/* Estilos de Tablas */
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background-color: var(--bg-card); white-space: nowrap; }
+th, td { padding: 12px 15px; text-align: center; border-bottom: 1px solid #333; font-size: 0.95em; }
+th { background-color: #252525; color: var(--table-header); text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px; }
+tr:last-child td { border-bottom: none; }
+tr:hover { background-color: #2a2a2a; }
+
+/* Clases de colores para la tabla */
+.ganador-jornada { color: var(--gold); font-weight: bold; text-shadow: 0 0 5px rgba(218, 165, 32, 0.4); }
+.perdedor-jornada { color: var(--maroon); font-weight: bold; text-shadow: 0 0 5px rgba(255, 76, 76, 0.4); }
+.pts-totales { font-size: 1.2em; font-weight: 900; color: #fff; }
+
+/* Grid de Tarjetas */
+.jugadores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding-top: 10px; }
+.card { background-color: #151515; border: 1px solid #333; border-radius: 10px; padding: 25px 20px; text-align: center; text-decoration: none; color: white; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.4); }
+.card:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: 0 8px 20px rgba(218, 165, 32, 0.15); }
+.card h3 { margin: 0 0 10px 0; font-size: 1.5em; color: var(--text-main); }
+.btn-back { display: inline-block; margin-bottom: 20px; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+.btn-back:hover { background-color: var(--gold); color: #000; }
+.img-fluid { max-width: 100%; height: auto; border-radius: 5px; }
+
+/* =========================================
+   ESTILOS PARA EL BRACKET Y GRUPOS
+   ========================================= */
+
+/* Grupos más anchos para que respiren */
+.groups-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; padding-top: 10px; }
+
+/* Envoltorio del Cuadro (Scroll horizontal si no cabe) */
+.bracket-wrapper { overflow-x: auto; padding: 20px; background: var(--bg-card); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); border: 1px solid #333; margin-top: 15px; }
+
+/* Contenedor Flex: Lados al Centro */
+.bracket { display: flex; justify-content: space-between; min-width: 1000px; gap: 15px; }
+
+/* Lados (Izquierda y Derecha) */
+.bracket-side { display: flex; gap: 12px; flex: 1; }
+
+/* Columnas de cada ronda (compactadas para no bajar mucho) */
+.bracket-round { display: flex; flex-direction: column; justify-content: center; gap: 8px; flex: 1; min-width: 135px; }
+
+/* Centro (Final arriba, Tercer Puesto abajo) */
+.bracket-center { display: flex; flex-direction: column; justify-content: space-between; align-items: center; min-width: 160px; padding: 10px 0; }
+.center-round { display: flex; flex-direction: column; width: 100%; gap: 8px; align-items: center; }
+
+/* Títulos de las rondas */
+.round-title { text-align: center; color: var(--table-header); font-size: 0.85em; text-transform: uppercase; margin-bottom: 5px; border-bottom: 1px dashed #444; padding-bottom: 3px; font-weight: bold; width: 100%; }
+
+/* Estilo de cada Partido */
+.bracket-match { background: #252525; border: 1px solid #444; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.5); transition: transform 0.2s; width: 100%; }
+.bracket-match:hover { transform: scale(1.05); border-color: gray; z-index: 10; position: relative; }
+
+/* Equipos y Goles */
+.bracket-team { display: flex; justify-content: space-between; align-items: center; padding: 4px 8px; font-size: 0.8em; border-bottom: 1px solid #333; color: #aaa; }
+.bracket-team:last-child { border-bottom: none; }
+
+/* Resaltado del Ganador */
+.bracket-team.winner { background: rgba(218, 165, 32, 0.15); color: var(--gold); font-weight: bold; }
+
+/* Truncar nombres largos (Bosnia-Herzegovina...) */
+.team-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 85px; display: inline-block; }
+.team-score { font-weight: bold; background: #111; padding: 1px 6px; border-radius: 4px; color: white; font-size: 0.9em; }
+.winner .team-score { background: var(--gold); color: #000; }
