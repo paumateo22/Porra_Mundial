@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Generico 3 - Porra Mundial</title>
+    
+<style>
+    :root { --bg-dark: #121212; --bg-card: #1e1e1e; --gold: #ffd700; --text-main: #e0e0e0; --accent: #2b5876; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-dark); color: var(--text-main); margin: 0; padding: 0; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #1a2a6c, #112240, var(--accent)); padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--gold); box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+    h1 { margin: 0; color: var(--gold); font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+    h2 { color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 40px; }
+    .container { width: 95%; max-width: 1100px; margin: 30px auto; }
+    
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: var(--bg-card); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    th, td { padding: 12px 15px; text-align: center; border-bottom: 1px solid #333; }
+    th { background-color: #252525; color: var(--gold); text-transform: uppercase; font-size: 0.9em; letter-spacing: 1px; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover { background-color: #2a2a2a; }
+    
+    .jugadores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 30px; }
+    .card { background-color: var(--bg-card); border: 1px solid #333; border-radius: 10px; padding: 25px 20px; text-align: center; text-decoration: none; color: white; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+    .card:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: 0 8px 20px rgba(255,215,0,0.15); }
+    .card h3 { margin: 0 0 10px 0; font-size: 1.5em; color: var(--text-main); }
+    
+    .btn-back { display: inline-block; margin-bottom: 20px; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+    .btn-back:hover { background-color: var(--gold); color: #000; }
+    
+    .win { color: var(--gold); font-weight: bold; }
+    .lose { color: #ff4d4d; font-weight: bold; }
+    .img-fluid { max-width: 100%; height: auto; border-radius: 5px; }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>👤 Dashboard: Generico 3</h1>
+        <p>Posición: <strong>1º</strong> | Puntos Totales: <strong style="color:var(--gold); font-size:1.2em;">243.0</strong></p>
+    </header>
+    <div class="container">
+        <a href="../../../index.html" class="btn-back">⬅️ Volver a la Clasificación</a>
+        
+        <h2>Matriz de Sorpresas y Decepciones</h2>
+        <div style="overflow-x: auto;">
+            <table>
+                <tr>
+                    <th>Selección</th>
+                    <th>Gráfico de Rendimiento</th>
+                    <th>Datos (P/M/R)</th>
+                    <th>Resultado</th>
+                </tr>
+
+                <tr>
+                    <td style="font-weight:bold;">Alemania</td>
+                    <td><img src="../estadisticas/graficos_sd/alemania_sd.png" class="img-fluid" alt="Gráfico Alemania" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 0.67<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Arabia Saudita</td>
+                    <td><img src="../estadisticas/graficos_sd/arabia_saudita_sd.png" class="img-fluid" alt="Gráfico Arabia Saudita" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.67<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Argelia</td>
+                    <td><img src="../estadisticas/graficos_sd/argelia_sd.png" class="img-fluid" alt="Gráfico Argelia" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Argentina</td>
+                    <td><img src="../estadisticas/graficos_sd/argentina_sd.png" class="img-fluid" alt="Gráfico Argentina" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>3</strong><br>Media: 3.0<br>Real: 3
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Australia</td>
+                    <td><img src="../estadisticas/graficos_sd/australia_sd.png" class="img-fluid" alt="Gráfico Australia" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Austria</td>
+                    <td><img src="../estadisticas/graficos_sd/austria_sd.png" class="img-fluid" alt="Gráfico Austria" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 0.67<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Bosnia-Herzegovina</td>
+                    <td><img src="../estadisticas/graficos_sd/bosniaherzegovina_sd.png" class="img-fluid" alt="Gráfico Bosnia-Herzegovina" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Brasil</td>
+                    <td><img src="../estadisticas/graficos_sd/brasil_sd.png" class="img-fluid" alt="Gráfico Brasil" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>3</strong><br>Media: 3.0<br>Real: 3
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Bélgica</td>
+                    <td><img src="../estadisticas/graficos_sd/belgica_sd.png" class="img-fluid" alt="Gráfico Bélgica" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>3</strong><br>Media: 3.0<br>Real: 3
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Cabo Verde</td>
+                    <td><img src="../estadisticas/graficos_sd/cabo_verde_sd.png" class="img-fluid" alt="Gráfico Cabo Verde" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Canadá</td>
+                    <td><img src="../estadisticas/graficos_sd/canada_sd.png" class="img-fluid" alt="Gráfico Canadá" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>2</strong><br>Media: 2.0<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Colombia</td>
+                    <td><img src="../estadisticas/graficos_sd/colombia_sd.png" class="img-fluid" alt="Gráfico Colombia" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>5</strong><br>Media: 5.0<br>Real: 4
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Corea del Sur</td>
+                    <td><img src="../estadisticas/graficos_sd/corea_del_sur_sd.png" class="img-fluid" alt="Gráfico Corea del Sur" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 0.67<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Costa de Marfil</td>
+                    <td><img src="../estadisticas/graficos_sd/costa_de_marfil_sd.png" class="img-fluid" alt="Gráfico Costa de Marfil" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 0.67<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Croacia</td>
+                    <td><img src="../estadisticas/graficos_sd/croacia_sd.png" class="img-fluid" alt="Gráfico Croacia" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 0.67<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Curazao</td>
+                    <td><img src="../estadisticas/graficos_sd/curazao_sd.png" class="img-fluid" alt="Gráfico Curazao" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Ecuador</td>
+                    <td><img src="../estadisticas/graficos_sd/ecuador_sd.png" class="img-fluid" alt="Gráfico Ecuador" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>2</strong><br>Media: 2.0<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Egipto</td>
+                    <td><img src="../estadisticas/graficos_sd/egipto_sd.png" class="img-fluid" alt="Gráfico Egipto" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Escocia</td>
+                    <td><img src="../estadisticas/graficos_sd/escocia_sd.png" class="img-fluid" alt="Gráfico Escocia" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 0.67<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">España</td>
+                    <td><img src="../estadisticas/graficos_sd/espana_sd.png" class="img-fluid" alt="Gráfico España" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>5</strong><br>Media: 5.0<br>Real: 5
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Estados Unidos</td>
+                    <td><img src="../estadisticas/graficos_sd/estados_unidos_sd.png" class="img-fluid" alt="Gráfico Estados Unidos" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 1.33<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Francia</td>
+                    <td><img src="../estadisticas/graficos_sd/francia_sd.png" class="img-fluid" alt="Gráfico Francia" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>5</strong><br>Media: 5.0<br>Real: 4
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Ghana</td>
+                    <td><img src="../estadisticas/graficos_sd/ghana_sd.png" class="img-fluid" alt="Gráfico Ghana" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Haití</td>
+                    <td><img src="../estadisticas/graficos_sd/haiti_sd.png" class="img-fluid" alt="Gráfico Haití" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Inglaterra</td>
+                    <td><img src="../estadisticas/graficos_sd/inglaterra_sd.png" class="img-fluid" alt="Gráfico Inglaterra" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>5</strong><br>Media: 1.67<br>Real: 5
+                    </td>
+                    <td><span class='win'>🔥 +10 Pts<br>¡Sorpresa!</span></td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Irak</td>
+                    <td><img src="../estadisticas/graficos_sd/irak_sd.png" class="img-fluid" alt="Gráfico Irak" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Irán</td>
+                    <td><img src="../estadisticas/graficos_sd/iran_sd.png" class="img-fluid" alt="Gráfico Irán" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.33<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Japón</td>
+                    <td><img src="../estadisticas/graficos_sd/japon_sd.png" class="img-fluid" alt="Gráfico Japón" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Jordania</td>
+                    <td><img src="../estadisticas/graficos_sd/jordania_sd.png" class="img-fluid" alt="Gráfico Jordania" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Marruecos</td>
+                    <td><img src="../estadisticas/graficos_sd/marruecos_sd.png" class="img-fluid" alt="Gráfico Marruecos" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>3</strong><br>Media: 3.0<br>Real: 3
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">México</td>
+                    <td><img src="../estadisticas/graficos_sd/mexico_sd.png" class="img-fluid" alt="Gráfico México" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Noruega</td>
+                    <td><img src="../estadisticas/graficos_sd/noruega_sd.png" class="img-fluid" alt="Gráfico Noruega" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>2</strong><br>Media: 1.33<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Nueva Zelanda</td>
+                    <td><img src="../estadisticas/graficos_sd/nueva_zelanda_sd.png" class="img-fluid" alt="Gráfico Nueva Zelanda" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Panamá</td>
+                    <td><img src="../estadisticas/graficos_sd/panama_sd.png" class="img-fluid" alt="Gráfico Panamá" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Paraguay</td>
+                    <td><img src="../estadisticas/graficos_sd/paraguay_sd.png" class="img-fluid" alt="Gráfico Paraguay" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>2</strong><br>Media: 2.0<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Países Bajos</td>
+                    <td><img src="../estadisticas/graficos_sd/paises_bajos_sd.png" class="img-fluid" alt="Gráfico Países Bajos" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Portugal</td>
+                    <td><img src="../estadisticas/graficos_sd/portugal_sd.png" class="img-fluid" alt="Gráfico Portugal" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>2</strong><br>Media: 1.33<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Qatar</td>
+                    <td><img src="../estadisticas/graficos_sd/qatar_sd.png" class="img-fluid" alt="Gráfico Qatar" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">RD Congo</td>
+                    <td><img src="../estadisticas/graficos_sd/rd_congo_sd.png" class="img-fluid" alt="Gráfico RD Congo" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">República Checa</td>
+                    <td><img src="../estadisticas/graficos_sd/republica_checa_sd.png" class="img-fluid" alt="Gráfico República Checa" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Senegal</td>
+                    <td><img src="../estadisticas/graficos_sd/senegal_sd.png" class="img-fluid" alt="Gráfico Senegal" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Sudáfrica</td>
+                    <td><img src="../estadisticas/graficos_sd/sudafrica_sd.png" class="img-fluid" alt="Gráfico Sudáfrica" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Suecia</td>
+                    <td><img src="../estadisticas/graficos_sd/suecia_sd.png" class="img-fluid" alt="Gráfico Suecia" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Suiza</td>
+                    <td><img src="../estadisticas/graficos_sd/suiza_sd.png" class="img-fluid" alt="Gráfico Suiza" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>2</strong><br>Media: 2.0<br>Real: 2
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Turquía</td>
+                    <td><img src="../estadisticas/graficos_sd/turquia_sd.png" class="img-fluid" alt="Gráfico Turquía" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Túnez</td>
+                    <td><img src="../estadisticas/graficos_sd/tunez_sd.png" class="img-fluid" alt="Gráfico Túnez" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Uruguay</td>
+                    <td><img src="../estadisticas/graficos_sd/uruguay_sd.png" class="img-fluid" alt="Gráfico Uruguay" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>1</strong><br>Media: 1.0<br>Real: 1
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">Uzbekistán</td>
+                    <td><img src="../estadisticas/graficos_sd/uzbekistan_sd.png" class="img-fluid" alt="Gráfico Uzbekistán" onerror="this.style.display='none'"></td>
+                    <td style="font-size:0.9em; text-align:left; padding-left:20px;">
+                        Tú: <strong>0</strong><br>Media: 0.0<br>Real: 0
+                    </td>
+                    <td><span style='color:gray;'>Sin Premio</span><br>(0 pts)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

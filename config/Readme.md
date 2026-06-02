@@ -1,30 +1,28 @@
-### 📝 Tareas Pendientes - Porra Mundial 2026
+# 📝 Tareas Pendientes - Porra Mundial 2026
 
-- [x] **1. Diseñar las Vistas Individuales (Perfiles de Jugador):** ¡Completado! Transformado en un dashboard profesional con historial, multiplicadores trazables, balances y la Matriz Gráfica de Desviaciones con `matplotlib`.
+## 🚀 Tareas Completadas
+- [x] **1. Diseñar las Vistas Individuales (Perfiles de Jugador):** ¡Completado! Transformado en un dashboard con historial y la Matriz Gráfica de Desviaciones con matplotlib.
+- [x] **2. Revisar la Extracción de Puntos Extra (Sorpresa/Decepción):** ¡Completado! Motor 06e funcional con varianza global.
+- [x] **5. Configurar Triggers Remotos desde el Móvil:** ¡Completado! GitHub Actions configurado e integrado mediante API REST con HTTP Shortcuts.
+- [x] **7. Motor de Premios Subjetivos (Google Forms):** ¡Completado!
+- [x] **8. Archivo de Dependencias (requirements.txt):** ¡Completado!
+- [x] **9. Aplicar Lógica de Desempates:** ¡Completado!
+- [x] **10. Blindaje del Scraper de SofaScore:** ¡Completado! El 05 ahora traduce los equipos, gestiona los penaltis y evita los IDs para una búsqueda bidireccional perfecta.
 
-- [x] **2. Revisar la Extracción de Puntos Extra (Sorpresa/Decepción):**
-  ¡Completado! Automatizado matemáticamente con el motor `06e` calculando la varianza global de la comunidad para crear umbrales dinámicos. Ya no depende de los formularios.
+---
 
-- [ ] **3. Despliegue y Pruebas en GitHub Pages:**
-  Hacer el primer `git push` real al repositorio de GitHub. Activar la opción de "GitHub Pages" en la configuración del repositorio. Verificar que los colores HTML (`goldenrod`, `red`), los enlaces y los PNGs de las gráficas funcionan y se ven correctamente.
+## 🌐 FASE WEB Y FRONTEND (NUEVO)
+- [ ] **11. (NUEVA) Doble Renderizado en el Script 07:** Modificar el motor `07_generador_vistas.py` para que, además de escupir los `README.md` de siempre para el repo, genere archivos `.html` con etiquetas `<style>` y estructura web real (tanto para el `index.html` del ranking como para los dashboards individuales).
+- [ ] **3. Despliegue y Pruebas en GitHub Pages:** Asegurar que los enlaces entre los `.html` de la web fluyen bien y que las rutas de las imágenes de Matplotlib cargan correctamente en el frontend.
 
-- [ ] **4. Pruebas de Resiliencia (Casos Extremos):**
-  ¿Qué pasa si un participante se olvida de mandar su captura de octavos y falta su `.json`? Hay que asegurarse de que el motor no crashee y simplemente le asigne 0 puntos en esa jornada.
+---
 
-- [ ] **5. Configurar Triggers Remotos desde el Móvil:**
-  Vincular las GitHub Actions (`workflow_dispatch` o `repository_dispatch`) con el teléfono móvil. Crear un acceso directo para poder ejecutar el cálculo de puntos y la actualización de vistas en la nube con un solo toque.
+## 🛡️ FASE DE ROBUSTEZ Y PLAN B
+- [ ] **4. Pruebas de Resiliencia (Casos Extremos):** ¿Qué pasa si un participante se olvida de mandar su captura de octavos y falta su `.json`? Hay que asegurarse de que el motor no crashee y simplemente le asigne 0 puntos en esa jornada.
+- [ ] **12. (NUEVA) Configurar el Piloto Automático (Opcional):** Añadir un disparador de tiempo (*schedule*) en el archivo YML de GitHub Actions para que los días de partido el sistema busque datos de SofaScore de forma autónoma.
 
-- [ ] **6. Limpieza de Datos de Prueba:**
-  Una vez terminemos los testeos, vaciar las carpetas de los usuarios de prueba, borrar el `jornadas.json` y el `realidad_oficial.json` generados artificialmente, y dejar el sistema completamente limpio.
+---
 
-- [ ] **7. Motor de Premios Subjetivos (Google Forms):**
-  Crear un script (ej. `06f_motor_premios.py`) que lea el CSV de Google Forms para otorgar los puntos fijos del resto de galardones: MVP, Bota de Oro, Guante de Oro, Mejor Joven y Gol del Torneo.
-
-- [ ] **8. Archivo de Dependencias (`requirements.txt`):**
-  Crear este archivo en la raíz para que GitHub Actions sepa que tiene que instalar `matplotlib` antes de ejecutar el generador de vistas, permitiendo crear las imágenes PNG en la nube.
-
-- [ ] **9. Aplicar Lógica de Desempates:**
-  Asegurar que el motor de cierre (`06d`) use los criterios definidos en el `settings.json` (`criterio_1`, `criterio_2`, etc.) para ordenar automáticamente a los jugadores empatados a puntos en el CSV del ranking.
-
-- [ ] **10. Blindaje del Scraper de SofaScore:**
-  Planear un "Plan B" (como un input manual desde la consola) por si el scraper se cae un día crítico debido a cambios en la web o bloqueos durante el torneo.
+## 🏁 FASE FINAL PRE-MUNDIAL
+- [ ] **13. (NUEVA) Redactar el "Manual del Administrador":** Dejar un pequeño `.md` privado con los pasos exactos que tú como admin debes hacer durante el mes: añadir capturas OCR, cómo rellenar `premios_oficiales.json`, etc.
+- [ ] **6. Limpieza de Datos de Prueba:** Vaciar las carpetas de los usuarios de prueba, borrar el `realidad_oficial.json` y dejar el sistema completamente limpio para el Día 1.
