@@ -1,171 +1,4 @@
 {
-    "generico_4": {
-        "puntos_partidos": 29.0,
-        "total_aciertos_1x2": 16,
-        "total_aciertos_exactos": 2,
-        "historial_jornadas": {
-            "ID_73": {
-                "acierto_1x2": false
-            },
-            "ID_74": {
-                "acierto_1x2": true
-            },
-            "ID_75": {
-                "acierto_1x2": true
-            },
-            "ID_76": {
-                "acierto_1x2": false
-            },
-            "ID_77": {
-                "acierto_1x2": true
-            },
-            "ID_78": {
-                "acierto_1x2": true
-            },
-            "ID_79": {
-                "acierto_1x2": true
-            },
-            "ID_80": {
-                "acierto_1x2": false
-            },
-            "ID_81": {
-                "acierto_1x2": true
-            },
-            "ID_82": {
-                "acierto_1x2": true
-            },
-            "ID_83": {
-                "acierto_1x2": true
-            },
-            "ID_84": {
-                "acierto_1x2": true
-            },
-            "ID_85": {
-                "acierto_1x2": false
-            },
-            "ID_86": {
-                "acierto_1x2": false
-            },
-            "ID_87": {
-                "acierto_1x2": true
-            },
-            "ID_88": {
-                "acierto_1x2": false
-            },
-            "ID_89": {
-                "acierto_1x2": true
-            },
-            "ID_90": {
-                "acierto_1x2": false
-            },
-            "ID_91": {
-                "acierto_1x2": false
-            },
-            "ID_92": {
-                "acierto_1x2": true
-            },
-            "ID_93": {
-                "acierto_1x2": false
-            },
-            "ID_94": {
-                "acierto_1x2": false
-            },
-            "ID_95": {
-                "acierto_1x2": true
-            },
-            "ID_96": {
-                "acierto_1x2": false
-            },
-            "ID_97": {
-                "acierto_1x2": true
-            },
-            "ID_98": {
-                "acierto_1x2": false
-            },
-            "ID_99": {
-                "acierto_1x2": true
-            },
-            "ID_100": {
-                "acierto_1x2": true
-            },
-            "ID_101": {
-                "acierto_1x2": false
-            },
-            "ID_102": {
-                "acierto_1x2": false
-            },
-            "ID_103": {
-                "acierto_1x2": false
-            },
-            "ID_104": {
-                "acierto_1x2": false
-            }
-        },
-        "puntos_jornadas": -16,
-        "desglose_jornadas": {
-            "J1.1": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "J1.2": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "J2.1": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "J2.2": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "J3.1": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "J3.2": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "dieciseisavos.1": {
-                "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
-            },
-            "dieciseisavos.2": {
-                "aciertos_1x2": 5,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "octavos": {
-                "aciertos_1x2": 3,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "cuartos": {
-                "aciertos_1x2": 3,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
-            },
-            "semifinales": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            },
-            "finales": {
-                "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
-            }
-        },
-        "puntos_grupos": 0
-    },
     "generico_1": {
         "puntos_partidos": 102.0,
         "total_aciertos_1x2": 33,
@@ -484,37 +317,37 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -12,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             },
             "J1.2": {
                 "aciertos_1x2": 3,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             },
             "J2.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             },
             "J2.2": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             },
             "J3.1": {
                 "aciertos_1x2": 4,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             },
             "J3.2": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             },
             "dieciseisavos.1": {
                 "aciertos_1x2": 3,
