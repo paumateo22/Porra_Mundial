@@ -37,6 +37,7 @@ jobs:
           python scripts/06d_motor_cierre.py
           python scripts/07_generador_vistas.py
           python scripts/07b_generador_html.py
+          python scripts/07c_generador_dashboards.py
 
       - name: Guardar cambios y subir a GitHub (Auto-Commit)
         run: |

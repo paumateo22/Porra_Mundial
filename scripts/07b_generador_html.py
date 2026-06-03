@@ -11,6 +11,8 @@ def cargar_json(ruta):
     if not ruta.exists(): return None
     with open(ruta, 'r', encoding='utf-8') as f: return json.load(f)
 
+CONFIG = cargar_json(ROOT_DIR / "config" / "settings.json") or {"multiplicadores": {"incremento_racha_por_fase": 0.5}}
+
 def calcular_clasificacion_grupos(fase_grupos):
     posiciones = {}
     for grupo, partidos in fase_grupos.items():
@@ -43,14 +45,47 @@ def limpiar_nombre_archivo(nombre):
     for orig, rep in reemplazos.items(): res = res.replace(orig, rep)
     return "".join(c for c in res if c.isalnum() or c == '_') + "_sd.png"
 
+def obtener_racha_fases(jugador_dir, equipo, fase_objetivo):
+    fases_cronologicas = ["grupos", "dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
+    fase_busqueda_ocr = "finales" if fase_objetivo in ["final", "tercer_puesto", "finales"] else fase_objetivo
+    fase_busqueda_infobae = "finales" if fase_objetivo in ["final", "tercer_puesto"] else fase_objetivo
+
+    idx_limite = fases_cronologicas.index(fase_busqueda_ocr) if fase_busqueda_ocr in fases_cronologicas else 0
+    rastros = []
+
+    for i in range(idx_limite):
+        fase_origen = fases_cronologicas[i]
+        if fase_origen == "grupos":
+            ruta_base = jugador_dir / "pronosticos" / "grupos" / f"{jugador_dir.name}_base.json"
+            if ruta_base.exists():
+                base = cargar_json(ruta_base)
+                for p in base.get("eliminatorias", {}).get(fase_busqueda_infobae, []):
+                    if p.get("local") == equipo or p.get("visitante") == equipo:
+                        rastros.append(("Grupos", f"participantes/{jugador_dir.name}/pronosticos/grupos/{jugador_dir.name}_base.json"))
+                        break
+        else:
+            ruta_ocr = jugador_dir / "pronosticos" / "eliminatorias" / fase_origen / f"{fase_origen}.json"
+            if ruta_ocr.exists():
+                ocr_data = cargar_json(ruta_ocr)
+                for p in ocr_data.get("predicciones", {}).get(fase_busqueda_ocr, []):
+                    if p.get("local") == equipo or p.get("visitante") == equipo:
+                        nombres_cortos = {"dieciseisavos": "1/16", "octavos": "1/8", "cuartos": "1/4", "semifinales": "Semis"}
+                        nombre_link = nombres_cortos.get(fase_origen, fase_origen)
+                        rastros.append((nombre_link, f"participantes/{jugador_dir.name}/pronosticos/eliminatorias/{fase_origen}/{fase_origen}.json"))
+                        break
+    return rastros
+
 def get_sidebar_html(depth=""):
     return f"""
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{depth}instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro</a>
         <a href="{depth}index.html">🏠 Clasificación Global</a>
         <a href="{depth}calendario.html">📅 Calendario Oficial</a>
         <a href="{depth}participantes.html">👥 Participantes</a>
-        <a href="#" style="color:gray;">📈 Análisis de Datos (Pronto)</a>
+        <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">🔗 Infobae</a>
+        <a href="https://www.livefutbol.com/competition/co139/fifa-copa-mundial/standings-calculator/" target="_blank">🔗 LiveFutbol</a>
+        <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">🔗 SofaScore</a>
     </div>
     <div class="menu-btn" onclick="openNav()">&#9776;</div>
     <script>
@@ -59,8 +94,83 @@ def get_sidebar_html(depth=""):
     </script>
     """
 
+def get_header_html(title, subtitle, depth="", show_participa=False):
+    participa_btn = f'<br><a href="{depth}instrucciones.html" class="btn-participa">¡PARTICIPA AHORA!</a>' if show_participa else ""
+    return f"""
+    <header>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+        <div class="top-nav">
+            <a href="{depth}index.html" class="home-btn">🏠 Inicio</a>
+            <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Infobae</a>
+            <a href="https://www.livefutbol.com/competition/co139/fifa-copa-mundial/standings-calculator/" target="_blank">LiveFutbol</a>
+            <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">SofaScore</a>
+        </div>
+        {participa_btn}
+    </header>
+    """
+
 # =====================================================================
-# PÁGINA 1: INDEX (RANKING)
+# INSTRUCCIONES HTML
+# =====================================================================
+def generar_instrucciones_html():
+    html = f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones y Registro - Porra Mundial</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    {get_sidebar_html("")}
+    {get_header_html("📖 Instrucciones & Registro", "Todo lo que necesitas saber para participar en la Porra Mundial 2026", "")}
+    <div class="container">
+        <h2>Registro en 3 Pasos</h2>
+        
+        <div class="instrucciones-box">
+            <h3>Paso 1: Fase de Grupos (Infobae)</h3>
+            <p>Primero, debes pronosticar todos los resultados de la fase de grupos usando el simulador de Infobae.</p>
+            <p>🔗 <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Abrir Simulador Infobae</a></p>
+            <p><i>Nota: Copia el enlace de tus resultados para el siguiente paso.</i></p>
+        </div>
+
+        <div class="instrucciones-box">
+            <h3>Paso 2: Registro Oficial y Premios (Google Forms)</h3>
+            <p>Rellena el formulario oficial. Aquí deberás pegar el enlace de Infobae con tu pronóstico y votar por los premios extra (MVP, Bota de Oro, Jugador Joven).</p>
+            <p>🔗 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdd_VDG4fUwA3l9eLJa0EmKJ64NeoMYGZv6YvPE_VnrhBTYMg/viewform?usp=dialog" target="_blank">Rellenar Formulario Oficial</a></p>
+        </div>
+
+        <div class="instrucciones-box">
+            <h3>Paso 3: Eliminatorias (LiveFutbol)</h3>
+            <p>Finalmente, usa LiveFutbol para pronosticar todas las fases de eliminatoria (desde Dieciseisavos hasta la Final. En cada fase tendrás que volver a pronosticar desde la fase actual hasta la final).</p>
+            <p>🔗 <a href="https://www.livefutbol.com/competition/co139/fifa-copa-mundial/standings-calculator/" target="_blank">Abrir Calculadora LiveFutbol</a></p>
+            <p><i>Nota: El motor leerá las capturas de este bracket automáticamente.</i></p>
+        </div>
+
+        <details>
+            <summary><h2>📜 Reglamento y Funcionamiento</h2></summary>
+            <div style="padding: 10px;">
+                <p>El sistema se actualiza en tiempo real de forma automática extrayendo datos de la API oficial.</p>
+                <ul>
+                    <li><strong>Acierto de Signo (1X2):</strong> Otorga 1 punto base.</li>
+                    <li><strong>Acierto Exacto:</strong> Otorga {CONFIG.get("puntuacion", {}).get("acierto_exacto", 3)} puntos si clavas el resultado numérico.</li>
+                    <li><strong>Multiplicadores:</strong> En eliminatorias, si un equipo que pusiste que pasaba llega lejos en la vida real, tus puntos se multiplicarán dependiendo de la racha desde donde lo pronosticaste.</li>
+                    <li><strong>Bonos de Jornada:</strong> El jugador con más aciertos exactos de cada ronda se lleva el bono "Ganador", y el peor pierde puntos.</li>
+                </ul>
+                <p>El proyecto es Open Source y está automatizado mediante GitHub Actions.</p>
+                <p>🔗 <a href="https://github.com/paumateo22/Porra_Mundial" target="_blank" style="color:var(--gold);">Ver Repositorio en GitHub</a></p>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
+"""
+    with open(ROOT_DIR / "instrucciones.html", 'w', encoding='utf-8') as f:
+        f.write(html)
+
+# =====================================================================
+# INDEX (RANKING Y ÚLTIMOS PARTIDOS)
 # =====================================================================
 def generar_index_html():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
@@ -72,6 +182,10 @@ def generar_index_html():
     realidad_dict = cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
     pos_real = calcular_clasificacion_grupos(realidad_dict.get("fase_grupos", {}))
     pasan_real = realidad_dict.get("clasificados_a_dieciseisavos", [])
+
+    # Obtener dinámicamente los puntos base definidos en settings.json
+    pts_1x2_val = CONFIG.get("puntuacion", {}).get("acierto_1x2", 1)
+    pts_ex_val = CONFIG.get("puntuacion", {}).get("acierto_exacto", 3)
 
     fecha_act = datetime.now().strftime("%d/%m/%Y %H:%M")
     
@@ -85,12 +199,10 @@ def generar_index_html():
 </head>
 <body>
     {get_sidebar_html("")}
-    <header>
-        <h1>🏆 Porra Mundial 2026</h1>
-        <p>Panel de Estadísticas Oficiales | Actualizado: {fecha_act}</p>
-    </header>
+    {get_header_html("🏆 Porra Mundial 2026", f"Panel de Estadísticas Oficiales | Actualizado: {fecha_act}", "", show_participa=True)}
     <div class="container">
 """
+    
     jugadores_datos = []
     with open(ruta_csv, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -101,7 +213,6 @@ def generar_index_html():
             
             libro = cargar_json(ruta_libro) or {}
             base_pred = cargar_json(ruta_base) or {}
-            
             premios = libro.get("premios_finales", {}).get("formularios", {}).get("detalles", {})
             pts_extra_totales = float(row.get('Puntos_Podio', 0)) + float(row.get('Puntos_Forms', 0))
             
@@ -134,6 +245,7 @@ def generar_index_html():
                 "libro": libro
             })
 
+    # SECCIÓN 1: RESUMEN GENERAL
     html += """
         <details open>
             <summary><h2>📊 Resumen General</h2></summary>
@@ -150,7 +262,6 @@ def generar_index_html():
         if j['pos_csv'] == "1": pos_display = "🥇 1º"
         elif j['pos_csv'] == "2": pos_display = "🥈 2º"
         elif j['pos_csv'] == "3": pos_display = "🥉 3º"
-        
         html += f"""
                     <tr>
                         <td>{pos_display}</td>
@@ -166,7 +277,133 @@ def generar_index_html():
                 </table>
             </div>
         </details>
+"""
 
+    # SECCIÓN 2: ÚLTIMOS PARTIDOS (Plegados por defecto, sin emojis, con desglose)
+    ultimos_terminados = []
+    for g, partidos in realidad_dict.get("fase_grupos", {}).items():
+        for p in partidos:
+            if p.get("estado") == "finished": ultimos_terminados.append({"fase": g, "data": p, "limpia": "grupos"})
+    
+    fases_elim = [("dieciseisavos", "1/16"), ("octavos", "1/8"), ("cuartos", "1/4"), ("semifinales", "Semis"), ("tercer_puesto", "3º Puesto"), ("final", "Final")]
+    for clave, nombre in fases_elim:
+        for p in realidad_dict.get("eliminatorias", {}).get(clave, []):
+            if p.get("estado") == "finished": ultimos_terminados.append({"fase": nombre, "data": p, "limpia": clave})
+            
+    ultimos_4 = ultimos_terminados[-4:]
+    ultimos_4.reverse()
+
+    html += """
+        <h2 style="margin-top:40px;">🔥 Últimos Partidos 
+            <a href="calendario.html" style="font-size:0.5em; float:right; color:var(--table-header); text-decoration:none; margin-top:10px;">Ver Calendario ➡️</a>
+        </h2>
+        <div class="latest-grid" style="margin-bottom:40px;">
+    """
+    
+    if not ultimos_4:
+        html += "<p style='color:gray;'>Aún no hay partidos finalizados.</p>"
+    else:
+        jugadores_dirs = [p for p in (ROOT_DIR / "participantes").iterdir() if p.is_dir()]
+        for u_match in ultimos_4:
+            fase_txt = u_match["fase"]
+            p_real = u_match["data"]
+            loc_r = p_real.get("local", "")
+            vis_r = p_real.get("visitante", "")
+            clave = f"ID_{p_real['id_partido']}" if "id_partido" in p_real else f"{loc_r}_vs_{vis_r}"
+            
+            stats_match = []
+            for j_dir in jugadores_dirs:
+                libro_j = cargar_json(j_dir / "estadisticas" / "historial_puntos.json") or {}
+                info_p = libro_j.get("desglose_partidos", {}).get(clave)
+                if not info_p: continue
+                
+                pred_txt = "-"
+                ruta_base = j_dir / "pronosticos" / "grupos" / f"{j_dir.name}_base.json"
+                base_pred = cargar_json(ruta_base) or {}
+                dict_preds = {}
+                for g_k, p_list in base_pred.get("fase_grupos", {}).items():
+                    for pp in p_list: dict_preds[f"{pp['local']}_vs_{pp['visitante']}"] = pp
+                for f_k in ["dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]:
+                    f_data = cargar_json(j_dir / "pronosticos" / "eliminatorias" / f_k / f"{f_k}.json") or {}
+                    for f_dest, p_list in f_data.get("predicciones", {}).items():
+                        r_fase = realidad_dict.get("eliminatorias", {}).get("tercer_puesto", []) + realidad_dict.get("eliminatorias", {}).get("final", []) if f_dest in ["finales", "final", "tercer_puesto"] else realidad_dict.get("eliminatorias", {}).get(f_dest, [])
+                        for i, p_rl in enumerate(r_fase):
+                            if i < len(p_list): dict_preds[f"ID_{p_rl['id_partido']}"] = p_list[i]
+
+                p_pred = dict_preds.get(clave, {})
+                if p_pred:
+                    loc_p, vis_p = p_pred.get("local", ""), p_pred.get("visitante", "")
+                    if loc_p != loc_r or vis_p != vis_r:
+                        pred_txt = f"{loc_p} {p_pred.get('goles_local','-')}-{p_pred.get('goles_visitante','-')} {vis_p}"
+                    else:
+                        pred_txt = f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}"
+
+                # Diseño Semántico y LÓGICA DINÁMICA DE DESGLOSE DE PUNTOS
+                acierto_ex = info_p.get("acierto_exacto", False)
+                acierto_1x2 = info_p.get("acierto_1x2", False)
+                mult = info_p.get("multiplicador_aplicado", 1.0)
+                pts_finales = info_p.get("puntos_conseguidos", 0)
+                
+                if acierto_ex: 
+                    pred_styled = f"<span class='pred-exact'>{pred_txt}</span>"
+                    desglose_html = f"<span style='color:#ccc; font-size:0.85em;'>[ {pts_1x2_val} <span class='pred-1x2'>Acierto</span> + {pts_ex_val} <span class='pred-exact'>Exacto</span> ] &times; {mult}</span>"
+                elif acierto_1x2: 
+                    pred_styled = f"<span class='pred-1x2'>{pred_txt}</span>"
+                    desglose_html = f"<span style='color:#ccc; font-size:0.85em;'>[ {pts_1x2_val} <span class='pred-1x2'>Acierto</span> ] &times; {mult}</span>"
+                else: 
+                    pred_styled = f"<span class='pred-miss'>{pred_txt}</span>"
+                    desglose_html = f"<span style='color:gray; font-size:0.85em;'>0 pts</span>"
+
+                # Multiplicador Desplegable
+                mult_html = f"x{mult}"
+                if mult > 1.0:
+                    r_loc = obtener_racha_fases(j_dir, p_real.get("local"), u_match["limpia"])
+                    r_vis = obtener_racha_fases(j_dir, p_real.get("visitante"), u_match["limpia"])
+                    content_html = ""
+                    if r_loc:
+                        content_html += f"<strong>{p_real.get('local')}:</strong><br>"
+                        for r in r_loc: content_html += f"<a href='{r[1]}' target='_blank' class='mult-link'>+{CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a><br>"
+                    if r_vis:
+                        content_html += f"<strong>{p_real.get('visitante')}:</strong><br>"
+                        for r in r_vis: content_html += f"<a href='{r[1]}' target='_blank' class='mult-link'>+{CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a><br>"
+                    
+                    if content_html:
+                        mult_html = f"<details class='mult-details'><summary>x{mult} ▼</summary><div class='mult-content'>{content_html}</div></details>"
+
+                stats_match.append({
+                    "nombre": j_dir.name.replace('_', ' ').title(),
+                    "id": j_dir.name,
+                    "pts": pts_finales,
+                    "mult": mult_html,
+                    "pred": pred_styled,
+                    "desglose": desglose_html
+                })
+
+            stats_match = sorted(stats_match, key=lambda x: x['pts'], reverse=True)
+
+            html += f"""
+            <details class="match-card">
+                <summary>
+                    <div class="match-header">{fase_txt}</div>
+                    <div class="match-score">{loc_r} <span>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span> {vis_r}</div>
+                </summary>
+                <div class="match-breakdown">
+                    <table style="font-size:0.9em; background:transparent;">
+                        <tr>
+                            <th style="background:#111;">Jugador</th>
+                            <th style="background:#111;">Pronóstico</th>
+                            <th style="background:#111; width:70px;">Mult.</th>
+                            <th style="background:#111;">Cálculo</th>
+                            <th style="background:#111;">Pts</th>
+                        </tr>"""
+            for st in stats_match:
+                html += f"<tr><td><a href='participantes/{st['id']}/vistas/dashboard.html' style='color:#b0c4de; text-decoration:none;'>{st['nombre']}</a></td><td>{st['pred']}</td><td>{st['mult']}</td><td>{st['desglose']}</td><td style='color:var(--gold); font-weight:bold; font-size:1.1em;'>{st['pts']}</td></tr>"
+            html += """</table></div></details>"""
+            
+    html += "</div>"
+
+    # SECCIÓN 3: RENDIMIENTO POR JORNADAS
+    html += """
         <details open>
             <summary><h2>📅 Rendimiento por Jornadas</h2></summary>
             <div class="table-wrapper">
@@ -221,256 +458,83 @@ def generar_index_html():
     return True
 
 # =====================================================================
-# PÁGINA 2: PARTICIPANTES
+# RESTO DE VISTAS (Participantes, Calendario)
 # =====================================================================
 def generar_participantes_html():
     dir_participantes = ROOT_DIR / "participantes"
     jugadores = [p for p in dir_participantes.iterdir() if p.is_dir()]
-    
-    html = f"""<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participantes - Porra Mundial</title>
-    <link rel="stylesheet" href="theme.css">
-</head>
-<body>
-    {get_sidebar_html("")}
-    <header>
-        <h1>👥 Participantes</h1>
-        <p>Dashboards Individuales y Gráficos de Rendimiento</p>
-    </header>
-    <div class="container">
-        <div class="jugadores-grid">
-"""
-    for jugador_dir in jugadores:
-        nombre = jugador_dir.name.replace('_', ' ').title()
-        html += f"""
-            <a href="participantes/{jugador_dir.name}/vistas/dashboard.html" class="card">
-                <h3>{nombre}</h3>
-                <p>Ver Gráficas y Detalle 📊</p>
-            </a>"""
-            
-    html += """
-        </div>
-    </div>
-</body>
-</html>
-"""
-    with open(ROOT_DIR / "participantes.html", 'w', encoding='utf-8') as f:
-        f.write(html)
+    html = f"""<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Participantes - Porra Mundial</title><link rel="stylesheet" href="theme.css"></head><body>{get_sidebar_html("")}{get_header_html("👥 Participantes", "Dashboards Individuales y Gráficos de Rendimiento", "")}<div class="container"><div class="jugadores-grid">"""
+    for jugador_dir in jugadores: html += f"""<a href="participantes/{jugador_dir.name}/vistas/dashboard.html" class="card"><h3>{jugador_dir.name.replace('_', ' ').title()}</h3><p>Ver Gráficas y Detalle 📊</p></a>"""
+    html += "</div></div></body></html>"
+    with open(ROOT_DIR / "participantes.html", 'w', encoding='utf-8') as f: f.write(html)
 
-
-# =====================================================================
-# PÁGINA 3: CALENDARIO OFICIAL (MODO BRACKET CENTRADO Y GRUPOS ANCHOS)
-# =====================================================================
 def render_partido_bracket(p):
-    """Genera la caja HTML de un partido individual para el bracket"""
-    loc = p.get('local', 'TBD')
-    vis = p.get('visitante', 'TBD')
-    gl = p.get('goles_local', '-')
-    gv = p.get('goles_visitante', '-')
+    loc, vis = p.get('local', 'TBD'), p.get('visitante', 'TBD')
+    gl, gv = p.get('goles_local', '-'), p.get('goles_visitante', '-')
     ganador = p.get('ganador') if 'ganador' in p else p.get('pasa', 'TBD')
-    
     c_loc = "winner" if ganador == loc and ganador != "TBD" else ""
     c_vis = "winner" if ganador == vis and ganador != "TBD" else ""
-    
-    return f"""
-    <div class='bracket-match'>
-        <div class='bracket-team {c_loc}'><span class='team-name' title='{loc}'>{loc}</span> <span class='team-score'>{gl}</span></div>
-        <div class='bracket-team {c_vis}'><span class='team-name' title='{vis}'>{vis}</span> <span class='team-score'>{gv}</span></div>
-    </div>"""
+    return f"""<div class='bracket-match'><div class='bracket-team {c_loc}'><span class='team-name' title='{loc}'>{loc}</span> <span class='team-score'>{gl}</span></div><div class='bracket-team {c_vis}'><span class='team-name' title='{vis}'>{vis}</span> <span class='team-score'>{gv}</span></div></div>"""
 
 def generar_calendario_html():
     realidad_dict = cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
-    
-    html = f"""<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario - Porra Mundial</title>
-    <link rel="stylesheet" href="theme.css">
-</head>
-<body>
-    {get_sidebar_html("")}
-    <header>
-        <h1>📅 Calendario Oficial</h1>
-        <p>Resultados y Cuadro de Eliminatorias en Tiempo Real</p>
-    </header>
-    <div class="container">
-"""
-    # 1. FASE DE GRUPOS (Clase groups-grid)
+    html = f"""<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Calendario - Porra Mundial</title><link rel="stylesheet" href="theme.css"></head><body>{get_sidebar_html("")}{get_header_html("📅 Calendario Oficial", "Resultados y Cuadro de Eliminatorias en Tiempo Real", "")}<div class="container">"""
     fase_grupos = realidad_dict.get("fase_grupos", {})
     if fase_grupos:
         html += "<details open><summary><h2>🌍 Fase de Grupos</h2></summary><div class='groups-grid'>"
         for grupo, partidos in sorted(fase_grupos.items()):
-            html += f"""
-            <div class="card" style="padding:15px; cursor:default;">
-                <h3 style="color:var(--gold); border-bottom:1px solid #333; padding-bottom:5px;">{grupo}</h3>
-                <table style="width:100%; font-size:0.9em; margin-top:10px;">"""
-            for p in partidos:
-                gl = p.get('goles_local', '-')
-                gv = p.get('goles_visitante', '-')
-                est = "⏳" if p.get('estado') == "notstarted" else "✅"
-                html += f"<tr><td style='text-align:right; border:none; padding:5px;'>{p['local']}</td><td style='border:none; font-weight:bold; padding:5px;'>{gl} - {gv}</td><td style='text-align:left; border:none; padding:5px;'>{p['visitante']}</td><td style='border:none;'>{est}</td></tr>"
+            html += f"""<div class="card" style="padding:15px; cursor:default;"><h3 style="color:var(--gold); border-bottom:1px solid #333; padding-bottom:5px;">{grupo}</h3><table style="width:100%; font-size:0.9em; margin-top:10px;">"""
+            for p in partidos: html += f"<tr><td style='text-align:right; border:none; padding:5px;'>{p['local']}</td><td style='border:none; font-weight:bold; padding:5px;'>{p.get('goles_local', '-')} - {p.get('goles_visitante', '-')}</td><td style='text-align:left; border:none; padding:5px;'>{p['visitante']}</td><td style='border:none;'>{'⏳' if p.get('estado') == 'notstarted' else '✅'}</td></tr>"
             html += "</table></div>"
         html += "</div></details>"
 
-    # 2. ELIMINATORIAS (Bracket Lados al Centro)
     eliminatorias = realidad_dict.get("eliminatorias", {})
     if eliminatorias:
-        html += "<details open><summary><h2>⚔️ Cuadro de Eliminatorias</h2></summary>"
-        html += "<div class='bracket-wrapper'><div class='bracket'>"
-        
-        # --- LADO IZQUIERDO ---
+        html += "<details open><summary><h2>⚔️ Cuadro de Eliminatorias</h2></summary><div class='bracket-wrapper'><div class='bracket'>"
         html += "<div class='bracket-side left-side'>"
-        fases_izq = [("dieciseisavos", "1/16"), ("octavos", "1/8"), ("cuartos", "1/4"), ("semifinales", "Semis")]
-        for clave, nombre in fases_izq:
+        for clave, nombre in [("dieciseisavos", "1/16"), ("octavos", "1/8"), ("cuartos", "1/4"), ("semifinales", "Semis")]:
             partidos = eliminatorias.get(clave, [])
             if not partidos and clave == "dieciseisavos": continue
-            mitad = (len(partidos) + 1) // 2  # Extrae la primera mitad del array
-            partidos_lado = partidos[:mitad] if partidos else []
-            
-            if partidos_lado:
+            mitad = (len(partidos) + 1) // 2
+            if partidos[:mitad]:
                 html += f"<div class='bracket-round'><div class='round-title'>{nombre}</div>"
-                for p in partidos_lado: html += render_partido_bracket(p)
+                for p in partidos[:mitad]: html += render_partido_bracket(p)
                 html += "</div>"
-        html += "</div>"
-
-        # --- CENTRO (FINAL ARRIBA, 3º PUESTO ABAJO) ---
-        html += "<div class='bracket-center'>"
-        
+        html += "</div><div class='bracket-center'>"
         final = eliminatorias.get("final", [])
         html += "<div class='center-round'><div class='round-title' style='color:var(--gold);'>🏆 FINAL</div>"
         for p in final: html += render_partido_bracket(p)
         html += "</div>"
-        
         tercer = eliminatorias.get("tercer_puesto", [])
         if tercer:
             html += "<div class='center-round' style='margin-top:auto;'><div class='round-title' style='color:#a9b7c6;'>🥉 3º Puesto</div>"
             for p in tercer: html += render_partido_bracket(p)
             html += "</div>"
-            
-        html += "</div>"
-
-        # --- LADO DERECHO (Orden Inverso para simetría visual) ---
-        html += "<div class='bracket-side right-side'>"
-        fases_der = [("semifinales", "Semis"), ("cuartos", "1/4"), ("octavos", "1/8"), ("dieciseisavos", "1/16")]
-        for clave, nombre in fases_der:
+        html += "</div><div class='bracket-side right-side'>"
+        for clave, nombre in [("semifinales", "Semis"), ("cuartos", "1/4"), ("octavos", "1/8"), ("dieciseisavos", "1/16")]:
             partidos = eliminatorias.get(clave, [])
             if not partidos and clave == "dieciseisavos": continue
-            mitad = (len(partidos) + 1) // 2  # Extrae la segunda mitad del array
-            partidos_lado = partidos[mitad:] if partidos else []
-            
-            if partidos_lado:
+            mitad = (len(partidos) + 1) // 2
+            if partidos[mitad:]:
                 html += f"<div class='bracket-round'><div class='round-title'>{nombre}</div>"
-                for p in partidos_lado: html += render_partido_bracket(p)
+                for p in partidos[mitad:]: html += render_partido_bracket(p)
                 html += "</div>"
-        html += "</div>"
-        
-        html += "</div></div></details>"
-
+        html += "</div></div></div></details>"
     html += "</div></body></html>"
-    with open(ROOT_DIR / "calendario.html", 'w', encoding='utf-8') as f:
-        f.write(html)
-
-
-# =====================================================================
-# DASHBOARDS PERSONALES
-# =====================================================================
-def generar_dashboards_html():
-    dir_participantes = ROOT_DIR / "participantes"
-    jugadores = [p for p in dir_participantes.iterdir() if p.is_dir()]
-    
-    for jugador_dir in jugadores:
-        nombre = jugador_dir.name.replace('_', ' ').title()
-        libro = cargar_json(jugador_dir / "estadisticas" / "historial_puntos.json")
-        if not libro: continue
-        
-        posicion = libro.get("posicion_final_ranking", "-")
-        pts_totales = libro.get("puntos_totales", 0)
-        
-        dir_vistas = jugador_dir / "vistas"
-        dir_vistas.mkdir(parents=True, exist_ok=True)
-        
-        html = f"""<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de {nombre}</title>
-    <link rel="stylesheet" href="../../../theme.css">
-</head>
-<body>
-    {get_sidebar_html("../../../")}
-    <header>
-        <h1>👤 Dashboard: {nombre}</h1>
-        <p>Posición Actual: <strong>{posicion}º</strong> | Puntos Totales: <strong style="color:var(--gold); font-size:1.2em;">{pts_totales}</strong></p>
-    </header>
-    <div class="container">
-        
-        <details open>
-            <summary><h2>🎯 Matriz de Sorpresas y Decepciones</h2></summary>
-            <div class="table-wrapper">
-                <table>
-                    <tr>
-                        <th>Selección</th>
-                        <th>Gráfico de Desviación</th>
-                        <th>Datos (Tú / Media / Real)</th>
-                        <th>Resultado</th>
-                    </tr>
-"""
-        matriz_sd = libro.get("matriz_sorpresas_decepciones", {})
-        if matriz_sd:
-            for eq, datos in sorted(matriz_sd.items()):
-                P, M, R = datos["pronostico"], datos["media_grupo"], datos["realidad"]
-                puntos, res_txt = datos["puntos"], datos["resultado_calculo"]
-                
-                estado_html = f"<span style='color:gray;'>Sin Premio</span><br>({puntos} pts)"
-                if res_txt == "Sorpresa": estado_html = f"<span class='ganador-jornada'>🔥 +{puntos} Pts<br>¡Sorpresa!</span>"
-                elif res_txt == "Decepción": estado_html = f"<span class='perdedor-jornada'>📉 +{puntos} Pts<br>¡Decepción!</span>"
-                
-                img_name = limpiar_nombre_archivo(eq)
-                html += f"""
-                    <tr>
-                        <td style="font-weight:bold;">{eq}</td>
-                        <td><img src="../estadisticas/graficos_sd/{img_name}" class="img-fluid" alt="Gráfico {eq}" onerror="this.style.display='none'"></td>
-                        <td style="font-size:0.9em; text-align:left; padding-left:20px;">
-                            Tú: <strong>{P}</strong><br>Media: {M}<br>Real: {R}
-                        </td>
-                        <td>{estado_html}</td>
-                    </tr>"""
-        else:
-            html += "<tr><td colspan='4'>Aún no hay datos de varianza calculados.</td></tr>"
-            
-        html += """
-                </table>
-            </div>
-        </details>
-    </div>
-</body>
-</html>
-"""
-        with open(dir_vistas / "dashboard.html", 'w', encoding='utf-8') as f:
-            f.write(html)
+    with open(ROOT_DIR / "calendario.html", 'w', encoding='utf-8') as f: f.write(html)
 
 def ejecutar_07b():
     print("=======================================================")
-    print(" 🌐 [07B] INICIANDO RENDERIZADO HTML FRONTEND 🌐")
+    print(" 🌐 [07B] INICIANDO RENDERIZADO HTML FRONTEND (GLOBAL) 🌐")
     print("=======================================================")
+    generar_instrucciones_html()
     generar_participantes_html()
-    print("✅ participantes.html generado.")
     generar_calendario_html()
-    print("✅ calendario.html (Resultados Reales y Cuadro) generado.")
-    
-    if generar_index_html():
+    if generar_index_html(): 
         print("✅ index.html global generado con éxito.")
-        generar_dashboards_html()
-        print("✅ Dashboards HTML enlazados y generados.")
-    else:
+    else: 
         print("❌ Error: No se encontró el ranking_oficial.csv")
+    print("✅ Web base completada (Dashboards individuales en 07c).")
 
 if __name__ == "__main__":
     ejecutar_07b()

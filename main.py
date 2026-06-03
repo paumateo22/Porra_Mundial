@@ -46,7 +46,7 @@ def mostrar_menu():
         print("  5. 🧮 Ejecutar Motor de Puntuación (06a -> 06b -> 06c -> 06e -> 06f -> 06d)")
         
         print("\n--- 📊 FASE 3: VISUALIZACIÓN ---")
-        print("  6. 🎨 Generar Vistas Web / GitHub (07 + 07b)")
+        print("  6. 🎨 Generar Vistas Web / GitHub (07 + 07b + 07c)")
         
         print("\n--- 🛠️  HERRAMIENTAS DE DESARROLLADOR ---")
         print("  9. 🎲 Ejecutar Simulador de Mundial Completo (99)")
@@ -81,7 +81,9 @@ def mostrar_menu():
                     
         elif opcion == "6":
             if ejecutar_script("07_generador_vistas.py"):
-                ejecutar_script("07b_generador_html.py")
+                if ejecutar_script("07b_generador_html.py"):
+                    if ejecutar_script("07c_generador_dashboards.py"):
+                        pass
             
         elif opcion == "9":
             print("\n🎲 Creando un multiverso alternativo...")
