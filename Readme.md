@@ -1,6 +1,6 @@
 # 🏆 Clasificación Oficial - Porra Mundial 2026 🏆
 
-*Última actualización: 04/06/2026 01:09*
+*Última actualización: 04/06/2026 22:49*
 
 Bienvenidos al panel oficial de la Porra. Aquí podéis consultar la clasificación general en tiempo real. 
 El formato de las jornadas es **Exactos/1x2**. Los colores indican: <span style="color:goldenrod">**Ganador**</span> de la jornada y <span style="color:red">**Perdedor**</span>.

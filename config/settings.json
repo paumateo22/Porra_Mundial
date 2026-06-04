@@ -47,7 +47,7 @@
     "sorpresas_decepciones_config": {
         "umbral_minimo_global": 1.0,
         "multiplicador_varianza": 1.0,
-        "distancia_maxima_pronostico_realidad": 1.0
+        "distancia_maxima_pronostico_realidad": 1.01
     },
     "multiplicadores": {
         "base": 1.0,

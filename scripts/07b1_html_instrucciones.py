@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(ROOT_DIR / "scripts"))
+import html_utils
+
+def generar_instrucciones_html():
+    html = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,36 +15,8 @@
     <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-    
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro</a>
-        <a href="index.html">🏠 Clasificación Global</a>
-        <a href="calendario.html">📅 Calendario Oficial</a>
-        <a href="participantes.html">👥 Participantes</a>
-        <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">🔗 Infobae</a>
-        <a href="https://www.livefutbol.com/competition/co139/fifa-copa-mundial/standings-calculator/" target="_blank">🔗 LiveFutbol</a>
-        <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">🔗 SofaScore</a>
-    </div>
-    <div class="menu-btn" onclick="openNav()">&#9776;</div>
-    <script>
-        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
-        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
-    </script>
-    
-    
-    <header>
-        <h1>📖 Instrucciones & Registro</h1>
-        <p>Todo lo que necesitas saber para participar en la Porra Mundial 2026</p>
-        <div class="top-nav">
-            <a href="index.html" class="home-btn">🏠 Inicio</a>
-            <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Infobae</a>
-            <a href="https://www.livefutbol.com/competition/co139/fifa-copa-mundial/standings-calculator/" target="_blank">LiveFutbol</a>
-            <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">SofaScore</a>
-        </div>
-        
-    </header>
-    
+    {html_utils.get_sidebar_html("")}
+    {html_utils.get_header_html("📖 Instrucciones & Registro", "Todo lo que necesitas saber para participar en la Porra Mundial 2026", "")}
     <div class="container">
         <h2>Registro en 3 Pasos</h2>
         <div class="instrucciones-box">
@@ -61,7 +41,7 @@
                 <p>El sistema se actualiza en tiempo real de forma automática extrayendo datos de la API oficial.</p>
                 <ul>
                     <li><strong>Acierto de Signo (1X2):</strong> Otorga 1 punto base.</li>
-                    <li><strong>Acierto Exacto:</strong> Otorga 3 puntos.</li>
+                    <li><strong>Acierto Exacto:</strong> Otorga {html_utils.CONFIG.get("puntuacion", {}).get("acierto_exacto", 3)} puntos.</li>
                     <li><strong>Multiplicadores:</strong> En eliminatorias, si un equipo que pusiste que pasaba llega lejos en la vida real, tus puntos se multiplicarán dependiendo de la racha desde donde lo pronosticaste.</li>
                     <li><strong>Bonos de Jornada:</strong> El jugador con más aciertos exactos de cada ronda se lleva el bono "Ganador", y el peor pierde puntos.</li>
                 </ul>
@@ -70,3 +50,10 @@
     </div>
 </body>
 </html>
+"""
+    with open(ROOT_DIR / "instrucciones.html", 'w', encoding='utf-8') as f:
+        f.write(html)
+    print("✅ instrucciones.html generado.")
+
+if __name__ == "__main__":
+    generar_instrucciones_html()

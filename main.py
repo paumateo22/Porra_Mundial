@@ -46,7 +46,7 @@ def mostrar_menu():
         print("  5. 🧮 Ejecutar Motor de Puntuación (06a -> 06b -> 06c -> 06e -> 06f -> 06d)")
         
         print("\n--- 📊 FASE 3: VISUALIZACIÓN ---")
-        print("  6. 🎨 Generar Vistas Web / GitHub (07 + 07b + 07c)")
+        print("  6. 🎨 Generar Vistas Web / GitHub (07 + 07b1-4 + 07b5)")
         
         print("\n--- 🛠️  HERRAMIENTAS DE DESARROLLADOR ---")
         print("  9. 🎲 Ejecutar Simulador de Mundial Completo (99)")
@@ -81,9 +81,11 @@ def mostrar_menu():
                     
         elif opcion == "6":
             if ejecutar_script("07_generador_vistas.py"):
-                if ejecutar_script("07b_generador_html.py"):
-                    if ejecutar_script("07c_generador_dashboards.py"):
-                        pass
+                ejecutar_script("07b1_html_instrucciones.py")
+                ejecutar_script("07b2_html_participantes.py")
+                ejecutar_script("07b3_html_calendario.py")
+                ejecutar_script("07b4_html_index.py")
+                ejecutar_script("07b5_html_dashboards.py")
             
         elif opcion == "9":
             print("\n🎲 Creando un multiverso alternativo...")
@@ -99,8 +101,12 @@ def mostrar_menu():
                                 if ejecutar_script("06f_motor_premios.py"):
                                     if ejecutar_script("06d_motor_cierre.py"):
                                         if ejecutar_script("07_generador_vistas.py"):
-                                            if ejecutar_script("07b_generador_html.py"):
-                                                print("\n✅ ¡ACTUALIZACIÓN TOTAL COMPLETADA! Todo listo para subir a GitHub.")
+                                            ejecutar_script("07b1_html_instrucciones.py")
+                                            ejecutar_script("07b2_html_participantes.py")
+                                            ejecutar_script("07b3_html_calendario.py")
+                                            if ejecutar_script("07b4_html_index.py"):
+                                                if ejecutar_script("07b5_html_dashboards.py"):
+                                                    print("\n✅ ¡ACTUALIZACIÓN TOTAL COMPLETADA! Todo listo para subir a GitHub.")
                     
         elif opcion == "0":
             print("\n👋 ¡Cerrando la sala de máquinas! Hasta pronto.")
