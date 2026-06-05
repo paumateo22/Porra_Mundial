@@ -152,8 +152,8 @@ def ejecutar_06e_motor_sorpresas():
             R = mapa_valores_caida[eq]["realidad"]
             U = umbral_global
 
-            cumple_p_m = abs(P - M) >= U
-            cumple_r_m = abs(R - M) >= U
+            cumple_p_m = abs(P - M) > U
+            cumple_r_m = abs(R - M) > U
             cumple_r_p = abs(R - P) <= umb_r_p
 
             tipo_premio, puntos_ganados = "Ninguno", 0

@@ -268,7 +268,7 @@ Este gráfico analiza tu desviación respecto a la tendencia central de la comun
 | **Arabia Saudita** | **Tú:** 0<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Arabia Saudita](estadisticas/graficos_sd/arabia_saudita_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Argelia** | **Tú:** 1<br>**Media:** 1.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Argelia](estadisticas/graficos_sd/argelia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Argentina** | **Tú:** 3<br>**Media:** 3.67<br>**Real:** 3<br>**Margen:** ±1.0 | ![Argentina](estadisticas/graficos_sd/argentina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Australia** | **Tú:** 0<br>**Media:** 1.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Australia](estadisticas/graficos_sd/australia_sd.png) | 🔴 **+10 Pts**<br>📉 ¡Decepción! |
+| **Australia** | **Tú:** 0<br>**Media:** 1.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Australia](estadisticas/graficos_sd/australia_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Austria** | **Tú:** 1<br>**Media:** 0.67<br>**Real:** 1<br>**Margen:** ±1.0 | ![Austria](estadisticas/graficos_sd/austria_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Bosnia-Herzegovina** | **Tú:** 1<br>**Media:** 0.67<br>**Real:** 0<br>**Margen:** ±1.0 | ![Bosnia-Herzegovina](estadisticas/graficos_sd/bosniaherzegovina_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Brasil** | **Tú:** 2<br>**Media:** 1.67<br>**Real:** 3<br>**Margen:** ±1.0 | ![Brasil](estadisticas/graficos_sd/brasil_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
@@ -291,7 +291,7 @@ Este gráfico analiza tu desviación respecto a la tendencia central de la comun
 | **Inglaterra** | **Tú:** 3<br>**Media:** 1.0<br>**Real:** 5<br>**Margen:** ±1.0 | ![Inglaterra](estadisticas/graficos_sd/inglaterra_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Irak** | **Tú:** 0<br>**Media:** 1.33<br>**Real:** 0<br>**Margen:** ±1.0 | ![Irak](estadisticas/graficos_sd/irak_sd.png) | 🔴 **+10 Pts**<br>📉 ¡Decepción! |
 | **Irán** | **Tú:** 0<br>**Media:** 0.33<br>**Real:** 1<br>**Margen:** ±1.0 | ![Irán](estadisticas/graficos_sd/iran_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
-| **Japón** | **Tú:** 1<br>**Media:** 2.0<br>**Real:** 1<br>**Margen:** ±1.0 | ![Japón](estadisticas/graficos_sd/japon_sd.png) | 🔴 **+10 Pts**<br>📉 ¡Decepción! |
+| **Japón** | **Tú:** 1<br>**Media:** 2.0<br>**Real:** 1<br>**Margen:** ±1.0 | ![Japón](estadisticas/graficos_sd/japon_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Jordania** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 0<br>**Margen:** ±1.0 | ![Jordania](estadisticas/graficos_sd/jordania_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **Marruecos** | **Tú:** 5<br>**Media:** 3.33<br>**Real:** 3<br>**Margen:** ±1.0 | ![Marruecos](estadisticas/graficos_sd/marruecos_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |
 | **México** | **Tú:** 0<br>**Media:** 0.0<br>**Real:** 2<br>**Margen:** ±1.0 | ![México](estadisticas/graficos_sd/mexico_sd.png) | ⚪ *Sin Premio*<br>(0 pts) |

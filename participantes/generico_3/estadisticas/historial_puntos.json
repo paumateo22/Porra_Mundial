@@ -829,7 +829,7 @@
         "formularios": {
             "detalles": {
                 "sorpresa": 10,
-                "decepcion": 40
+                "decepcion": 20
             }
         }
     },
@@ -874,8 +874,8 @@
             "media_grupo": 1.0,
             "realidad": 0,
             "umbral_aplicado": 1.0,
-            "resultado_calculo": "Decepción",
-            "puntos": 10
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         },
         "Austria": {
             "pronostico": 1,
@@ -1058,8 +1058,8 @@
             "media_grupo": 2.0,
             "realidad": 1,
             "umbral_aplicado": 1.0,
-            "resultado_calculo": "Decepción",
-            "puntos": 10
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         },
         "Jordania": {
             "pronostico": 0,

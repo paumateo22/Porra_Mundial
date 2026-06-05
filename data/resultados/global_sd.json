@@ -12,15 +12,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -40,16 +40,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 0,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -68,15 +68,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -96,15 +96,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -124,18 +124,18 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 0,
-                "puntos": 10,
-                "resultado": "Decepción"
-            },
-            {
                 "jugador_id": "generico_2",
                 "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
             }
         ]
     },
@@ -152,15 +152,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -180,15 +180,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -208,15 +208,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -236,15 +236,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -264,15 +264,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -292,16 +292,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 2,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -320,18 +320,18 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 5,
-                "puntos": 10,
-                "resultado": "Sorpresa"
-            },
-            {
                 "jugador_id": "generico_2",
                 "jugador_nombre": "Generico 2",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 5,
+                "puntos": 10,
+                "resultado": "Sorpresa"
             }
         ]
     },
@@ -348,16 +348,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 2,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -376,16 +376,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 0,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -404,16 +404,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 2,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -432,15 +432,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -460,16 +460,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 2,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -488,15 +488,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -516,15 +516,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -544,18 +544,18 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "generico_3",
                 "jugador_nombre": "Generico 3",
                 "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 5,
-                "puntos": 10,
-                "resultado": "Sorpresa"
             }
         ]
     },
@@ -572,16 +572,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 0,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -600,16 +600,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 3,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 4,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -628,15 +628,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -656,15 +656,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -684,16 +684,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 3,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 0,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -712,15 +712,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 10,
                 "resultado": "Decepción"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 10,
                 "resultado": "Decepción"
@@ -740,15 +740,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -768,18 +768,18 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 1,
-                "puntos": 10,
-                "resultado": "Decepción"
-            },
-            {
                 "jugador_id": "generico_2",
                 "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
             }
         ]
     },
@@ -796,15 +796,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -824,16 +824,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 5,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 4,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -852,15 +852,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -880,16 +880,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 4,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 3,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -908,16 +908,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 0,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -936,15 +936,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -964,16 +964,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 3,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 2,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -992,15 +992,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 10,
                 "resultado": "Decepción"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 10,
                 "resultado": "Decepción"
@@ -1020,16 +1020,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 2,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 5,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -1048,15 +1048,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1076,15 +1076,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1104,16 +1104,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 3,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -1132,15 +1132,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1160,15 +1160,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1188,15 +1188,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1216,15 +1216,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1244,16 +1244,16 @@
                 "resultado": "Decepción"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 2,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 3,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -1272,15 +1272,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1300,15 +1300,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1328,16 +1328,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_3",
-                "jugador_nombre": "Generico 3",
-                "fase_pronostico": 1,
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "generico_2",
-                "jugador_nombre": "Generico 2",
-                "fase_pronostico": 0,
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }

@@ -1,6 +1,8 @@
 import sys
 import csv
 from pathlib import Path
+import math
+
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR / "scripts"))
@@ -10,6 +12,7 @@ PTS_1X2 = html_utils.CONFIG.get("puntuacion", {}).get("acierto_1x2", 1)
 PTS_EX = html_utils.CONFIG.get("puntuacion", {}).get("acierto_exacto", 3)
 PTS_PASE = html_utils.CONFIG.get("puntuacion", {}).get("acierto_pase_grupo", 1)
 PTS_POS = html_utils.CONFIG.get("puntuacion", {}).get("acierto_posicion_grupo", 2)
+UMB_R_P = html_utils.CONFIG.get("sorpresas_decepciones_config", {}).get("distancia_maxima_pronostico_realidad", 1.0)
 
 def safe_num(val, is_float=False):
     try: return float(val) if is_float else int(val)
@@ -36,7 +39,6 @@ def format_fase(fase):
     return mapeo.get(fase.lower(), fase.upper())
 
 def map_fase_to_num(val):
-    """Mapeo robusto que primero intenta extraer el valor numérico guardado en el JSON."""
     try:
         return float(val)
     except (ValueError, TypeError):
@@ -57,8 +59,6 @@ def generar_dashboards_html():
     jornadas_dict = html_utils.cargar_json(ROOT_DIR / "config" / "jornadas.json") or {}
     jornadas_keys = list(jornadas_dict.keys())
     realidad_dict = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
-    
-    # Cargar el Diccionario Maestro de SD
     global_sd = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "global_sd.json") or {}
     
     pos_real = html_utils.calcular_clasificacion_grupos(realidad_dict.get("fase_grupos", {}))
@@ -134,7 +134,6 @@ def generar_dashboards_html():
     <title>Perfil de {nombre}</title>
     <link rel="stylesheet" href="../../../theme.css">
     <style>
-        /* Sticky Nav Especial */
         .sticky-nav {{ position: sticky; top: 0; z-index: 1000; background: rgba(18,18,18,0.95); padding: 12px; border-bottom: 2px solid var(--gold); display: flex; gap: 10px; justify-content: center; overflow-x: auto; flex-wrap: nowrap; backdrop-filter: blur(5px); box-shadow: 0 4px 10px rgba(0,0,0,0.5); }}
         .sticky-nav a {{ text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; background:#333; color:white; padding:8px 15px; border-radius:4px; border:1px solid #444; transition:0.3s; }}
         .sticky-nav a:hover {{ background:var(--gold); color:black; border-color:var(--gold); }}
@@ -157,11 +156,13 @@ def generar_dashboards_html():
         .sd-indicator {{ display: block; padding: 4px; border-radius: 4px; font-size: 0.85em; font-weight: bold; margin-bottom: 5px; width: 100%; box-sizing: border-box; text-align: center; border:1px solid transparent; }}
         .ind-real {{ background: var(--gold); color: black; }}
         .ind-media {{ background: white; color: black; box-shadow: 0 0 5px white; }}
-        .ind-tu {{ background: #3b82f6; color: white; }}
         .sd-player-pill {{ display: block; background: #252525; font-size: 0.85em; padding: 6px; border-radius: 4px; color: #ccc; text-align: center; border: 1px solid transparent; transition: 0.2s; }}
         .sd-player-pill:hover {{ border-color: var(--gold); background: #333; color: white; }}
         .sd-player-pill.win-sorp {{ background: rgba(74, 222, 128, 0.15); border-color: #4ade80; color: #4ade80; font-weight: bold; }}
         .sd-player-pill.win-dec {{ background: rgba(248, 113, 113, 0.15); border-color: #f87171; color: #f87171; font-weight: bold; }}
+        .ind-tu-pill {{ background: #3b82f6 !important; color: white !important; font-weight: bold; border-color: #2563eb !important; }}
+        .ind-tu-pill.win-sorp {{ background: #22c55e !important; color: black !important; border-color: #16a34a !important; }}
+        .ind-tu-pill.win-dec {{ background: #ef4444 !important; color: black !important; border-color: #dc2626 !important; }}
     </style>
     <script>
         function openTab(tabName) {{
@@ -392,7 +393,7 @@ def generar_dashboards_html():
                     </div>
                 </div>
                 """
-            html += "</div>" # Cierre grid partidos
+            html += "</div>"
 
             info_dj = desglose_j.get(j_key, {})
             res_bono = info_dj.get("resultado", "Neutral")
@@ -406,7 +407,7 @@ def generar_dashboards_html():
                 Resultado: {res_bono} ({signo}{res_val} pts)<br>
                 TOTAL JORNADA: {pts_jornada + res_val} pts
             </div></details>"""
-        html += "</div>" # Cierre Tab JaJ
+        html += "</div>"
 
         # PESTAÑA GRUPOS GaG
         html += """<div id="tab-grupos-gag" class="tab-content">
@@ -506,6 +507,14 @@ def generar_dashboards_html():
                     loc_r, vis_r = p_real.get("local", "TBD"), p_real.get("visitante", "TBD")
                     if loc_r == "TBD" and "id_partido" in p: loc_r, vis_r = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
                     
+                    # Subtítulo para Tercer Puesto o Final
+                    subtitle_html = ""
+                    if j_key.lower() == "finales":
+                        if "103" in str(p.get("id_partido", "")):
+                            subtitle_html = "<div style='text-align:center; color:#a9b7c6; font-size:0.85em; font-weight:bold; margin-bottom:10px;'>🥉 3º Puesto</div>"
+                        elif "104" in str(p.get("id_partido", "")):
+                            subtitle_html = "<div style='text-align:center; color:var(--gold); font-size:0.85em; font-weight:bold; margin-bottom:10px;'>🏆 Final</div>"
+
                     if p_pred:
                         loc_p, vis_p = p_pred.get("local", ""), p_pred.get("visitante", "")
                         pred_txt = f"{loc_p} {p_pred.get('goles_local','-')}-{p_pred.get('goles_visitante','-')} {vis_p}" if (loc_p != loc_r or vis_p != vis_r) else f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}"
@@ -551,6 +560,7 @@ def generar_dashboards_html():
                     html += f"""
                     <div style="background:#111; border:1px solid #222; border-radius:4px; padding:15px; display:flex; flex-direction:column; justify-content:space-between;">
                         <div>
+                            {subtitle_html}
                             <div style="display:flex; justify-content:space-between; margin-bottom:15px; font-size:1.1em; font-weight:bold;">
                                 <span style="flex:1; text-align:right;">{loc_r}</span>
                                 <span style="flex:0.3; text-align:center; color:white; background:#222; border-radius:4px; padding:2px; margin:0 10px;">{real_txt}</span>
@@ -614,7 +624,9 @@ def generar_dashboards_html():
                 html += f"""<div class="sd-flag-btn" style="{color_style}" onclick="showSD('{eq_id}')">{eq}</div>"""
             html += "</div><div id='sd-details-container'>"
             
-            def get_x_percent(val): return max(0, min(100, ((val) / 5.0) * 100.0))
+            # Ajuste matemático: (val + 0.5) / 6.0 centra los valores enteros (0=Grupos, 1=1/16, etc.) en las columnas CSS
+            def get_x_percent(val): return max(0, min(100, ((val + 0.5) / 6.0) * 100.0))
+
 
             for eq, datos_global in sorted(global_sd.items()):
                 eq_id = limpiar_nombre_id(eq)
@@ -628,45 +640,81 @@ def generar_dashboards_html():
                 puntos_tu = datos_tu.get("puntos", 0)
                 res_tu = datos_tu.get("resultado_calculo", "")
                 
-                w_dec = get_x_percent(M_val - U_val)
-                left_sorp = get_x_percent(M_val + U_val)
+                # --- ALINEACIÓN EXACTA CON LOS MÁRGENES DE LAS FASES ---
+                # Si da 1.3 -> math.floor(1.3) = 1.0 (Se echa atrás al margen entre 1/16 y 1/8)
+                limite_rojo_visual = math.floor(M_val - U_val)
+                
+                # Si da 3.3 -> math.ceil(3.3) = 4.0 (Se echa al margen entre 1/4 y 1/2, protegiendo 1/4)
+                limite_verde_visual = math.ceil(M_val + U_val)
+                
+                # --- CALCULO DE PORCENTAJES CON LOS NUEVOS LÍMITES AJUSTADOS ---
+                w_dec = get_x_percent(math.ceil(M_val - U_val))
+
+                # Si da 3.3 -> math.ceil(3.3) = 4.0 (Empieza visualmente justo en el inicio de la fase)
+                left_sorp = get_x_percent(math.ceil(M_val + U_val))
                 w_sorp = 100.0 - left_sorp
-                pos_M = get_x_percent(M_val)
+
+                pos_M = get_x_percent(M_val - 0.5)
+                
+                # Calculo de la ventana dorada (R_val ± UMB_R_P)
+                gold_left = get_x_percent(R_val - UMB_R_P)
+                gold_right = get_x_percent(R_val + UMB_R_P)
+                w_gold = gold_right - gold_left
 
                 timeline_html = f"""
                 <div style="overflow-x:auto; padding-bottom:10px;">
                     <div style="position:relative; width:100%; min-width:700px; border:1px solid #333; border-radius:6px; background:#111; overflow:hidden; margin-top:20px; display:flex;">
-                        <div style="position:absolute; top:0; left:0; height:100%; width:{w_dec}%; background:rgba(248, 113, 113, 0.15); border-right:2px dashed #f87171; pointer-events:none; z-index:1;"></div>
-                        <div style="position:absolute; top:0; left:{left_sorp}%; height:100%; width:{w_sorp}%; background:rgba(74, 222, 128, 0.15); border-left:2px dashed #4ade80; pointer-events:none; z-index:1;"></div>
                         
+                        <!-- Fondos Rojos y Verdes Estrictos -->
+                        <div style="position:absolute; top:0; left:0; height:100%; width:{w_dec}%; background:rgba(248, 113, 113, 0.2); border-right:2px dashed #f87171; pointer-events:none; z-index:1;"></div>
+                        <div style="position:absolute; top:0; left:{left_sorp}%; height:100%; width:{w_sorp}%; background:rgba(74, 222, 128, 0.2); border-left:2px dashed #4ade80; pointer-events:none; z-index:1;"></div>
+                        
+                        <!-- Fondo Dorado (Ventana Coincidencia) -->
+                        <div style="position:absolute; top:0; left:{gold_left}%; height:100%; width:{w_gold}%; background:rgba(218, 165, 32, 0.12); border-left:1.5px dashed rgba(218, 165, 32, 0.4); border-right:1.5px dashed rgba(218, 165, 32, 0.4); pointer-events:none; z-index:0; transform:scaleX(1.5); transform-origin:center;"></div>
+
+                        <!-- Línea de Media -->
                         <div style="position:absolute; top:0; left:{pos_M}%; height:100%; width:2px; background:white; pointer-events:none; z-index:2; display:flex; justify-content:center;">
                             <div style="background:white; color:black; font-weight:bold; font-size:0.8em; padding:2px 6px; border-radius:4px; margin-top:5px; white-space:nowrap; transform:translateX(-50%); box-shadow:0 0 5px white;">Media {M_val:.1f}</div>
                         </div>
                 """
+
+
+
                 for idx_fase, nom_fase in enumerate(nombres_columnas_sd):
                     inds_html = ""
                     if idx_fase == R_val: inds_html += "<div class='sd-indicator ind-real'>Real</div>"
-                    if idx_fase == P_val: inds_html += "<div class='sd-indicator ind-tu'>Tú</div>"
                     
                     pills_html = ""
                     for p_data in datos_global.get("predicciones", []):
                         if p_data["fase_pronostico"] == idx_fase:
                             pts_val = p_data["puntos"]
                             p_id = p_data["jugador_id"]
-                            link = f"../../{p_id}/vistas/dashboard.html"
+                            
+                            is_tu = (p_id == jugador_dir.name)
+                            nombre_mostrar = "Tú" if is_tu else p_data["jugador_nombre"]
                             
                             if pts_val > 0:
-                                c_win = "win-dec" if idx_fase <= (M_val - U_val) else "win-sorp"
-                                pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill {c_win}'>{p_data['jugador_nombre']} <span style='float:right;'>+{pts_val}</span></div></a>"
+                                c_win = "win-dec" if p_data["resultado"] == "Decepción" else "win-sorp"
+                                pill_content = f"{nombre_mostrar} <span style='float:right;'>+{pts_val}</span>"
+                                
+                                if is_tu:
+                                    pills_html += f"<div class='sd-player-pill ind-tu-pill {c_win}'>{pill_content}</div>"
+                                else:
+                                    link = f"../../{p_id}/vistas/dashboard.html"
+                                    pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill {c_win}'>{pill_content}</div></a>"
                             else:
-                                pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill'>{p_data['jugador_nombre']}</div></a>"
+                                if is_tu:
+                                    pills_html += f"<div class='sd-player-pill ind-tu-pill'>{nombre_mostrar}</div>"
+                                else:
+                                    link = f"../../{p_id}/vistas/dashboard.html"
+                                    pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill'>{nombre_mostrar}</div></a>"
                                 
                     timeline_html += f"""
                         <div style="flex:1; padding:10px; border-right:1px solid #333; display:flex; flex-direction:column; align-items:center; z-index:3; position:relative;">
-                            <div style="min-height:50px; width:100%; display:flex; flex-direction:column; gap:4px; align-items:center; margin-top:25px;">
+                            <div style="min-height:28px; width:100%; display:flex; flex-direction:column; gap:4px; align-items:center; margin-top:35px;">
                                 {inds_html}
                             </div>
-                            <div style="font-size:0.75em; color:var(--table-header); text-transform:uppercase; border-top:1px dashed #444; border-bottom:1px dashed #444; padding:5px 0; margin:10px 0; width:100%; letter-spacing:1px; text-align:center;">{nom_fase}</div>
+                            <div style="font-size:0.75em; color:var(--table-header); text-transform:uppercase; border-top:1px dashed #444; border-bottom:1px dashed #444; padding:5px 0; margin:10px 0; width:100%; letter-spacing:1px; text-align:center; font-weight:bold;">{nom_fase}</div>
                             <div style="width:100%; display:flex; flex-direction:column; gap:6px;">
                                 {pills_html}
                             </div>

@@ -828,8 +828,8 @@
     "premios_finales": {
         "formularios": {
             "detalles": {
-                "sorpresa": 10,
-                "decepcion": 40
+                "sorpresa": 0,
+                "decepcion": 20
             }
         }
     },
@@ -874,8 +874,8 @@
             "media_grupo": 1.0,
             "realidad": 0,
             "umbral_aplicado": 1.0,
-            "resultado_calculo": "Decepción",
-            "puntos": 10
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         },
         "Austria": {
             "pronostico": 1,
@@ -994,8 +994,8 @@
             "media_grupo": 4.0,
             "realidad": 5,
             "umbral_aplicado": 1.0,
-            "resultado_calculo": "Sorpresa",
-            "puntos": 10
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         },
         "Estados Unidos": {
             "pronostico": 1,
@@ -1058,8 +1058,8 @@
             "media_grupo": 2.0,
             "realidad": 1,
             "umbral_aplicado": 1.0,
-            "resultado_calculo": "Decepción",
-            "puntos": 10
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         },
         "Jordania": {
             "pronostico": 0,
