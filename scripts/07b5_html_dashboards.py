@@ -189,6 +189,7 @@ def generar_dashboards_html():
     {html_utils.get_header_html(f"👤 Dashboard: {nombre}", f"Posición Actual: <strong>{pos_display}</strong> | Puntos Totales: <strong style='color:var(--gold); font-size:1.2em;'>{j_row.get('TOTAL', 0)}</strong>", "../../../")}
     
     <div class="sticky-nav">
+        <a href="pronostico_grupos.html">📓 Pronósticos</a>
         <a href="#info">📊 Info General</a>
         <a href="#ultimos">🔥 Últimos</a>
         <a href="#grupos">🌍 Grupos</a>
@@ -198,7 +199,26 @@ def generar_dashboards_html():
     </div>
 
     <div class="container">
-"""
+    """
+        # ==========================================
+        # 0. PRONÓSTICOS (CÁPSULA DEL TIEMPO)
+        # ==========================================
+        html += f"""
+        <details id="pronosticos" class="jornada-details" open style="margin-bottom: 20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
+            <summary style="cursor:pointer; border:none; outline:none;">
+                <h2 style="display:inline-block; margin-top:0; color:var(--gold);">📓 Tus Pronósticos (Cápsula del Tiempo)</h2>
+            </summary>
+            <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+                <a href="pronostico_grupos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">🌍 Grupos</a>
+                <a href="pronostico_dieciseisavos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ 1/16</a>
+                <a href="pronostico_octavos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ 1/8</a>
+                <a href="pronostico_cuartos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ 1/4</a>
+                <a href="pronostico_semifinales.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ Semis</a>
+                <a href="pronostico_finales.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">🏆 Finales</a>
+                <a href="pronostico_premios.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">🎖️ Premios</a>
+            </div>
+        </details>
+        """
         # ==========================================
         # 1. INFORMACIÓN GENERAL (ANCHO COMPLETO)
         # ==========================================
@@ -305,9 +325,19 @@ def generar_dashboards_html():
                     r_loc = html_utils.obtener_racha_fases(jugador_dir, p_real.get("local"), fase_limpia)
                     r_vis = html_utils.obtener_racha_fases(jugador_dir, p_real.get("visitante"), fase_limpia)
                     
-                    r_loc_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
-                    r_vis_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) if r_vis else "<span style='color:gray;'>-</span>"
+                    # CAMBIO: Extracción de la fase de r[1] limpiando el .json para formar el enlace
+                    r_loc_html = "<br>".join([f"<a href='pronostico_{r[1].strip('/').split('/')[-1].replace('.json', '')}.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
+                    r_vis_html = "<br>".join([f"<a href='pronostico_{r[1].strip('/').split('/')[-1].replace('.json', '')}.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) if r_vis else "<span style='color:gray;'>-</span>"
                     
+                    # Comprobante corrector (reemplaza cualquier variante que termine en base.html)
+                    if "base.html" in r_loc_html:
+                        import re
+                        r_loc_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_loc_html)
+
+                    if "base.html" in r_vis_html:
+                        import re
+                        r_vis_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_vis_html)
+
                     mult_html += f"""
                     <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
                         <div style="flex:1; padding-right:5px;"><strong>{p_real.get('local')}</strong><br>{r_loc_html}</div>
@@ -548,9 +578,19 @@ def generar_dashboards_html():
                         r_loc = html_utils.obtener_racha_fases(jugador_dir, p_real.get("local"), fase_limpia)
                         r_vis = html_utils.obtener_racha_fases(jugador_dir, p_real.get("visitante"), fase_limpia)
                         
-                        r_loc_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
-                        r_vis_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) if r_vis else "<span style='color:gray;'>-</span>"
-                        
+                        # CAMBIO: Extracción de la fase de r[1] limpiando el .json para formar el enlace
+                        r_loc_html = "<br>".join([f"<a href='pronostico_{r[1].strip('/').split('/')[-1].replace('.json', '')}.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
+                        r_vis_html = "<br>".join([f"<a href='pronostico_{r[1].strip('/').split('/')[-1].replace('.json', '')}.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) if r_vis else "<span style='color:gray;'>-</span>"
+
+                        # Comprobante corrector (reemplaza cualquier variante que termine en base.html)
+                        if "base.html" in r_loc_html:
+                            import re
+                            r_loc_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_loc_html)
+
+                        if "base.html" in r_vis_html:
+                            import re
+                            r_vis_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_vis_html)
+                                                
                         mult_html += f"""
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
                             <div style="flex:1; padding-right:5px;"><strong>{p_real.get('local')}</strong><br>{r_loc_html}</div>

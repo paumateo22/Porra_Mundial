@@ -86,7 +86,7 @@ def mostrar_menu():
                 ejecutar_script("07b3_html_calendario.py")
                 ejecutar_script("07b4_html_index.py")
                 ejecutar_script("07b5_html_dashboards.py")
-            
+                ejecutar_script("07b6_html_pronosticos.py")
         elif opcion == "9":
             print("\n🎲 Creando un multiverso alternativo...")
             ejecutar_script("99_simulador_realidad.py")
@@ -106,7 +106,8 @@ def mostrar_menu():
                                             ejecutar_script("07b3_html_calendario.py")
                                             if ejecutar_script("07b4_html_index.py"):
                                                 if ejecutar_script("07b5_html_dashboards.py"):
-                                                    print("\n✅ ¡ACTUALIZACIÓN TOTAL COMPLETADA! Todo listo para subir a GitHub.")
+                                                    if ejecutar_script("07b6_html_pronosticos.py"):
+                                                        print("\n✅ ¡ACTUALIZACIÓN TOTAL COMPLETADA! Todo listo para subir a GitHub.")
                     
         elif opcion == "0":
             print("\n👋 ¡Cerrando la sala de máquinas! Hasta pronto.")

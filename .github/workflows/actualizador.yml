@@ -41,6 +41,7 @@ jobs:
           python scripts/07b3_html_calendario.py
           python scripts/07b4_html_index.py
           python scripts/07b5_html_dashboards.py
+          python scripts/07b6_html_pronosticos.py
 
       - name: Guardar cambios y subir a GitHub (Auto-Commit)
         run: |

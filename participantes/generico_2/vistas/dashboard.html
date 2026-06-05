@@ -89,6 +89,7 @@
     
     
     <div class="sticky-nav">
+        <a href="pronostico_grupos.html">📓 Pronósticos</a>
         <a href="#info">📊 Info General</a>
         <a href="#ultimos">🔥 Últimos</a>
         <a href="#grupos">🌍 Grupos</a>
@@ -98,7 +99,22 @@
     </div>
 
     <div class="container">
-
+    
+        <details id="pronosticos" class="jornada-details" open style="margin-bottom: 20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
+            <summary style="cursor:pointer; border:none; outline:none;">
+                <h2 style="display:inline-block; margin-top:0; color:var(--gold);">📓 Tus Pronósticos (Cápsula del Tiempo)</h2>
+            </summary>
+            <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+                <a href="pronostico_grupos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">🌍 Grupos</a>
+                <a href="pronostico_dieciseisavos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ 1/16</a>
+                <a href="pronostico_octavos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ 1/8</a>
+                <a href="pronostico_cuartos.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ 1/4</a>
+                <a href="pronostico_semifinales.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">⚔️ Semis</a>
+                <a href="pronostico_finales.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">🏆 Finales</a>
+                <a href="pronostico_premios.html" style="text-decoration:none; padding:8px 15px; border-radius:4px; background:#222; color:white; border:1px solid #444; font-weight:bold; transition:0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='#444'; this.style.color='white';">🎖️ Premios</a>
+            </div>
+        </details>
+        
         <details id="info" class="jornada-details" open>
             <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0;">📊 Información General</h2></summary>
             <div class="table-wrapper" style="margin-bottom: 20px;">
@@ -142,8 +158,8 @@
                 <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                     <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 3.0</span></div>
                     <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                        <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
-                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Inglaterra</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                        <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Inglaterra</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
                     </div></div>
                             </details>
                         </div>
@@ -169,8 +185,8 @@
                 <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                     <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 3.5</span></div>
                     <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                        <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
-                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                        <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
                     </div></div>
                             </details>
                         </div>
@@ -196,8 +212,8 @@
                 <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                     <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.0</span></div>
                     <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                        <div style="flex:1; padding-right:5px;"><strong>Inglaterra</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
-                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
+                        <div style="flex:1; padding-right:5px;"><strong>Inglaterra</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
+                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
                     </div></div>
                             </details>
                         </div>
@@ -223,8 +239,8 @@
                 <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                     <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.5</span></div>
                     <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                        <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
-                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>España</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                        <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
+                        <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>España</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                     </div></div>
                             </details>
                         </div>
@@ -1859,8 +1875,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>República Checa</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Suiza</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>República Checa</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Suiza</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -1885,8 +1901,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Ecuador</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Corea del Sur</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Ecuador</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Corea del Sur</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -1911,8 +1927,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Países Bajos</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Marruecos</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Países Bajos</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Marruecos</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -1937,8 +1953,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Brasil</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Suecia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Brasil</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Suecia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -1963,7 +1979,7 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 1.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                             <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Irán</strong><br><span style='color:gray;'>-</span></div>
                         </div></div>
                                 </details>
@@ -1989,8 +2005,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Alemania</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Noruega</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Alemania</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Noruega</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2038,7 +2054,7 @@
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 1.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
                             <div style="flex:1; padding-right:5px;"><strong>Inglaterra</strong><br><span style='color:gray;'>-</span></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Senegal</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Senegal</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2068,8 +2084,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Estados Unidos</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Japón</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Estados Unidos</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Japón</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2094,8 +2110,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> + <span class='pred-exact'>3 Ex</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Bélgica</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Arabia Saudita</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Bélgica</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Arabia Saudita</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2120,8 +2136,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Portugal</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Ghana</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Portugal</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Ghana</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2146,8 +2162,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Austria</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Austria</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2172,8 +2188,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Canadá</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Escocia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Canadá</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Escocia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2198,8 +2214,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Argentina</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Uruguay</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Argentina</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Uruguay</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2224,8 +2240,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Colombia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Croacia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Colombia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Croacia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2250,8 +2266,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Paraguay</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Egipto</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Paraguay</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Egipto</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2281,8 +2297,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Ecuador</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Francia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Ecuador</strong><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Francia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2307,8 +2323,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Suiza</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Marruecos</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Suiza</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Marruecos</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2333,8 +2349,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Brasil</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Noruega</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Brasil</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Noruega</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2359,7 +2375,7 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 1.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>México</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>México</strong><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                             <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Inglaterra</strong><br><span style='color:gray;'>-</span></div>
                         </div></div>
                                 </details>
@@ -2385,8 +2401,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 3.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Portugal</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>España</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Portugal</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>España</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2411,8 +2427,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Estados Unidos</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Bélgica</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Estados Unidos</strong><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Bélgica</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2437,8 +2453,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Argentina</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Paraguay</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Argentina</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Paraguay</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2463,8 +2479,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Canadá</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Canadá</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2494,8 +2510,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> + <span class='pred-exact'>3 Ex</span> ] &times; 3.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/octavos/octavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/8)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Marruecos</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_octavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/8)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Marruecos</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2520,8 +2536,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Bélgica</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Bélgica</strong><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2547,7 +2563,7 @@
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 1.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
                             <div style="flex:1; padding-right:5px;"><strong>Brasil</strong><br><span style='color:gray;'>-</span></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Inglaterra</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/octavos/octavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/8)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Inglaterra</strong><br><a href='pronostico_octavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/8)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2572,8 +2588,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>1 Ac</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Argentina</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/octavos/octavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/8)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/dieciseisavos/dieciseisavos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Argentina</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_octavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/8)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='pronostico_dieciseisavos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/16)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2603,8 +2619,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>España</strong><br><a href='../../../participantes/generico_2/pronosticos/grupos/generico_2_base.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>España</strong><br><a href='pronostico_grupos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Grupos)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2629,8 +2645,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 2.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Inglaterra</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Inglaterra</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2660,8 +2676,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 3.5</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>Francia</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Colombia</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
                         </div></div>
                                 </details>
                             </div>
@@ -2686,8 +2702,8 @@
                     <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                         <div style="margin-bottom:8px;"><span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; 3.0</span></div>
                         <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;">
-                            <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
-                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Inglaterra</strong><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/cuartos/cuartos.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='../../../participantes/generico_2/pronosticos/eliminatorias/semifinales/semifinales.json' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                            <div style="flex:1; padding-right:5px;"><strong>España</strong><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>Inglaterra</strong><br><a href='pronostico_cuartos.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (1/4)</a><br><a href='pronostico_semifinales.html' target='_blank' style='color:#88b04b; text-decoration:none;'>+0.5 (Semis)</a></div>
                         </div></div>
                                 </details>
                             </div>

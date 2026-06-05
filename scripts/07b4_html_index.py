@@ -182,10 +182,51 @@ def generar_index_html():
                     r_loc = html_utils.obtener_racha_fases(j["dir_path"], p_real.get("local"), u_match["limpia"])
                     r_vis = html_utils.obtener_racha_fases(j["dir_path"], p_real.get("visitante"), u_match["limpia"])
                     content_html = ""
+                    
                     if r_loc:
-                        content_html += f"<strong>{p_real.get('local')}:</strong><br>" + "<br>".join([f"<a href='{r[1]}' target='_blank' class='mult-link'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) + "<br>"
+                        # Corrección en la generación de enlaces locales
+                        links_loc = []
+                        for r in r_loc:
+                            href_val = r[1]
+                            
+                            # 1. Detectar el nombre limpio de la fase antes de alterar la ruta
+                            nombre_fase = href_val.strip('/').split('/')[-1].replace('.json', '')
+                            
+                            # 2. Si es la base, forzamos a que sea 'grupos'
+                            if nombre_fase.endswith("_base") or nombre_fase == "base" or "base.html" in href_val:
+                                nombre_fase = "grupos"
+                                
+                            # 3. Construir la ruta correcta apuntando a la carpeta /vistas/ del participante
+                            # Usamos j["dir_path"] que contiene '.../participantes/generico_1' y le añadimos /vistas/
+                            import os
+                            dir_vistas = os.path.join(j["dir_path"], "vistas").replace("\\", "/")
+                            href_val = f"file:///{dir_vistas}/pronostico_{nombre_fase}.html"
+                                
+                            links_loc.append(f"<a href='{href_val}' target='_blank' class='mult-link'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>")
+                            
+                        content_html += f"<strong>{p_real.get('local')}:</strong><br>" + "<br>".join(links_loc) + "<br>"
+                        
                     if r_vis:
-                        content_html += f"<strong>{p_real.get('visitante')}:</strong><br>" + "<br>".join([f"<a href='{r[1]}' target='_blank' class='mult-link'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) + "<br>"
+                        # Corrección en la generación de enlaces visitantes
+                        links_vis = []
+                        for r in r_vis:
+                            href_val = r[1]
+                            
+                            # 1. Detectar el nombre limpio de la fase antes de alterar la ruta
+                            nombre_fase = href_val.strip('/').split('/')[-1].replace('.json', '')
+                            
+                            # 2. Si es la base, forzamos a que sea 'grupos'
+                            if nombre_fase.endswith("_base") or nombre_fase == "base" or "base.html" in href_val:
+                                nombre_fase = "grupos"
+                                
+                            # 3. Construir la ruta correcta apuntando a la carpeta /vistas/ del participante
+                            import os
+                            dir_vistas = os.path.join(j["dir_path"], "vistas").replace("\\", "/")
+                            href_val = f"file:///{dir_vistas}/pronostico_{nombre_fase}.html"
+                                
+                            links_vis.append(f"<a href='{href_val}' target='_blank' class='mult-link'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>")
+                            
+                        content_html += f"<strong>{p_real.get('visitante')}:</strong><br>" + "<br>".join(links_vis) + "<br>"
                     
                     if content_html:
                         mult_html = f"<details class='mult-details'><summary>x{mult} ▼</summary><div class='mult-content'>{content_html}</div></details>"
@@ -198,7 +239,7 @@ def generar_index_html():
             stats_match.sort(key=lambda x: x['pts'], reverse=True)
 
             html += f"""
-            <details class="match-card">
+            <details class="match-card" open>
                 <summary>
                     <div class="match-header" style="text-align: center;">{fase_txt}</div>
                     <div class="match-score">{loc_r} <span>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span> {vis_r}</div>
