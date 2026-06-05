@@ -134,7 +134,7 @@ def generar_dashboards_html():
     <title>Perfil de {nombre}</title>
     <link rel="stylesheet" href="../../../theme.css">
     <style>
-        .sticky-nav {{ position: sticky; top: 0; z-index: 1000; background: rgba(18,18,18,0.95); padding: 12px; border-bottom: 2px solid var(--gold); display: flex; gap: 10px; justify-content: center; overflow-x: auto; flex-wrap: nowrap; backdrop-filter: blur(5px); box-shadow: 0 4px 10px rgba(0,0,0,0.5); }}
+        .sticky-nav {{ position: sticky; top: 0; z-index: 100; background: rgba(18,18,18,0.95); padding: 12px; border-bottom: 2px solid var(--gold); display: flex; gap: 10px; justify-content: center; overflow-x: auto; flex-wrap: nowrap; backdrop-filter: blur(5px); box-shadow: 0 4px 10px rgba(0,0,0,0.5); }}
         .sticky-nav a {{ text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; background:#333; color:white; padding:8px 15px; border-radius:4px; border:1px solid #444; transition:0.3s; }}
         .sticky-nav a:hover {{ background:var(--gold); color:black; border-color:var(--gold); }}
 
@@ -156,6 +156,7 @@ def generar_dashboards_html():
         .sd-indicator {{ display: block; padding: 4px; border-radius: 4px; font-size: 0.85em; font-weight: bold; margin-bottom: 5px; width: 100%; box-sizing: border-box; text-align: center; border:1px solid transparent; }}
         .ind-real {{ background: var(--gold); color: black; }}
         .ind-media {{ background: white; color: black; box-shadow: 0 0 5px white; }}
+        .ind-tu {{ background: #3b82f6; color: white; }}
         .sd-player-pill {{ display: block; background: #252525; font-size: 0.85em; padding: 6px; border-radius: 4px; color: #ccc; text-align: center; border: 1px solid transparent; transition: 0.2s; }}
         .sd-player-pill:hover {{ border-color: var(--gold); background: #333; color: white; }}
         .sd-player-pill.win-sorp {{ background: rgba(74, 222, 128, 0.15); border-color: #4ade80; color: #4ade80; font-weight: bold; }}
@@ -641,48 +642,50 @@ def generar_dashboards_html():
                 res_tu = datos_tu.get("resultado_calculo", "")
                 
                 # --- ALINEACIÓN EXACTA CON LOS MÁRGENES DE LAS FASES ---
-                # Si da 1.3 -> math.floor(1.3) = 1.0 (Se echa atrás al margen entre 1/16 y 1/8)
-                limite_rojo_visual = math.floor(M_val - U_val)
+                # Cálculo de límites lógicos enteros con desigualdad ESTRICTA (< y >)
+                # math.ceil(x) - 1: asegura que los enteros exactos no se incluyan en rojo
+                # math.floor(x) + 1: asegura que los enteros exactos no se incluyan en verde
+                limite_rojo_visual = math.ceil(M_val - U_val) - 1
+                limite_verde_visual = math.floor(M_val + U_val) + 1
                 
-                # Si da 3.3 -> math.ceil(3.3) = 4.0 (Se echa al margen entre 1/4 y 1/2, protegiendo 1/4)
-                limite_verde_visual = math.ceil(M_val + U_val)
-                
-                # --- CALCULO DE PORCENTAJES CON LOS NUEVOS LÍMITES AJUSTADOS ---
-                w_dec = get_x_percent(math.ceil(M_val - U_val))
+                # --- CALCULO DE PORCENTAJES CON ALINEACIÓN A BORDES ---
+                # Para el rojo, queremos que cubra hasta el borde DERECHO de la fase (+0.5)
+                w_dec = get_x_percent(limite_rojo_visual + 0.5)
 
-                # Si da 3.3 -> math.ceil(3.3) = 4.0 (Empieza visualmente justo en el inicio de la fase)
-                left_sorp = get_x_percent(math.ceil(M_val + U_val))
+                # Para el verde, queremos que empiece en el borde IZQUIERDO de la fase (-0.5)
+                left_sorp = get_x_percent(limite_verde_visual - 0.5)
                 w_sorp = 100.0 - left_sorp
 
-                pos_M = get_x_percent(M_val - 0.5)
+                pos_M = get_x_percent(M_val)
                 
                 # Calculo de la ventana dorada (R_val ± UMB_R_P)
                 gold_left = get_x_percent(R_val - UMB_R_P)
                 gold_right = get_x_percent(R_val + UMB_R_P)
                 w_gold = gold_right - gold_left
 
+                # === 1. INICIALIZAMOS timeline_html ===
                 timeline_html = f"""
                 <div style="overflow-x:auto; padding-bottom:10px;">
                     <div style="position:relative; width:100%; min-width:700px; border:1px solid #333; border-radius:6px; background:#111; overflow:hidden; margin-top:20px; display:flex;">
                         
-                        <!-- Fondos Rojos y Verdes Estrictos -->
                         <div style="position:absolute; top:0; left:0; height:100%; width:{w_dec}%; background:rgba(248, 113, 113, 0.2); border-right:2px dashed #f87171; pointer-events:none; z-index:1;"></div>
                         <div style="position:absolute; top:0; left:{left_sorp}%; height:100%; width:{w_sorp}%; background:rgba(74, 222, 128, 0.2); border-left:2px dashed #4ade80; pointer-events:none; z-index:1;"></div>
                         
-                        <!-- Fondo Dorado (Ventana Coincidencia) -->
-                        <div style="position:absolute; top:0; left:{gold_left}%; height:100%; width:{w_gold}%; background:rgba(218, 165, 32, 0.12); border-left:1.5px dashed rgba(218, 165, 32, 0.4); border-right:1.5px dashed rgba(218, 165, 32, 0.4); pointer-events:none; z-index:0; transform:scaleX(1.5); transform-origin:center;"></div>
-
-                        <!-- Línea de Media -->
-                        <div style="position:absolute; top:0; left:{pos_M}%; height:100%; width:2px; background:white; pointer-events:none; z-index:2; display:flex; justify-content:center;">
-                            <div style="background:white; color:black; font-weight:bold; font-size:0.8em; padding:2px 6px; border-radius:4px; margin-top:5px; white-space:nowrap; transform:translateX(-50%); box-shadow:0 0 5px white;">Media {M_val:.1f}</div>
-                        </div>
+                        <div style="position:absolute; top:0; left:{gold_left}%; height:100%; width:{w_gold}%; background:rgba(218, 165, 32, 0.08); border-left:1.5px dashed rgba(218, 165, 32, 0.4); border-right:1.5px dashed rgba(218, 165, 32, 0.4); pointer-events:none; z-index:2; transform:scaleX(1.5); transform-origin:center;"></div>
                 """
 
+                # Calculamos a qué columna (fase) pertenece la Media basándonos estrictamente en sus unidades (entero)
+                M_idx = int(M_val)
 
-
+                # === 2. BUCLE DE LAS COLUMNAS ===
                 for idx_fase, nom_fase in enumerate(nombres_columnas_sd):
                     inds_html = ""
-                    if idx_fase == R_val: inds_html += "<div class='sd-indicator ind-real'>Real</div>"
+                    
+                    if idx_fase == M_idx:
+                        inds_html += f"<div class='sd-indicator' style='background:white; color:black; box-shadow:0 0 5px white; border:1px solid #ccc;'>Media {M_val:.1f}</div>"
+                    
+                    if idx_fase == R_val: 
+                        inds_html += "<div class='sd-indicator ind-real'>Real</div>"
                     
                     pills_html = ""
                     for p_data in datos_global.get("predicciones", []):
@@ -709,9 +712,11 @@ def generar_dashboards_html():
                                     link = f"../../{p_id}/vistas/dashboard.html"
                                     pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill'>{nombre_mostrar}</div></a>"
                                 
+                    # === 3. AÑADIMOS AL timeline_html ===
+                    # Se ha aumentado el 'height' a 75px y el 'margin-top' a 15px
                     timeline_html += f"""
                         <div style="flex:1; padding:10px; border-right:1px solid #333; display:flex; flex-direction:column; align-items:center; z-index:3; position:relative;">
-                            <div style="min-height:28px; width:100%; display:flex; flex-direction:column; gap:4px; align-items:center; margin-top:35px;">
+                            <div style="height:75px; width:100%; display:flex; flex-direction:column; justify-content:flex-end; gap:4px; align-items:center; margin-top:15px;">
                                 {inds_html}
                             </div>
                             <div style="font-size:0.75em; color:var(--table-header); text-transform:uppercase; border-top:1px dashed #444; border-bottom:1px dashed #444; padding:5px 0; margin:10px 0; width:100%; letter-spacing:1px; text-align:center; font-weight:bold;">{nom_fase}</div>
@@ -719,6 +724,8 @@ def generar_dashboards_html():
                                 {pills_html}
                             </div>
                         </div>"""
+                
+                # === 4. CERRAMOS EL TIMELINE ===
                 timeline_html += "</div></div>"
 
                 html += f"""
