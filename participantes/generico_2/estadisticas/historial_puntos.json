@@ -750,16 +750,16 @@
             "fase": "finales",
             "acierto_1x2": false,
             "acierto_exacto": false,
-            "multiplicador_aplicado": 3.5,
-            "racha_detectada": "3 (Francia) / 2 (Colombia)",
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Francia) / 1 (Colombia)",
             "puntos_conseguidos": 0.0
         },
         "ID_104": {
             "fase": "finales",
             "acierto_1x2": false,
             "acierto_exacto": false,
-            "multiplicador_aplicado": 3.0,
-            "racha_detectada": "2 (España) / 2 (Inglaterra)",
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (España) / 1 (Inglaterra)",
             "puntos_conseguidos": 0.0
         }
     },

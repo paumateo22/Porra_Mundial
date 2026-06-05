@@ -46,7 +46,7 @@ def mostrar_menu():
         print("  5. 🧮 Ejecutar Motor de Puntuación (06a -> 06b -> 06c -> 06e -> 06f -> 06d)")
         
         print("\n--- 📊 FASE 3: VISUALIZACIÓN ---")
-        print("  6. 🎨 Generar Vistas Web / GitHub (07 + 07b1-4 + 07b5)")
+        print("  6. 🎨 Generar Vistas Web / GitHub (07 + 07b1-4 + 07b5 + 07b6)")
         
         print("\n--- 🛠️  HERRAMIENTAS DE DESARROLLADOR ---")
         print("  9. 🎲 Ejecutar Simulador de Mundial Completo (99)")

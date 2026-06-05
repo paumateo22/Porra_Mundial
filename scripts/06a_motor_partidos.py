@@ -77,7 +77,6 @@ def calcular_racha_equipo(jugador, equipo, fase_objetivo):
                 with open(ruta_base, 'r', encoding='utf-8') as f:
                     base = json.load(f)
                     
-                # CORRECCIÓN AQUÍ: Si buscamos para "finales", miramos tanto final como tercer puesto
                 if fase_objetivo == "finales":
                     partidos_objetivo = base.get("eliminatorias", {}).get("final", []) + base.get("eliminatorias", {}).get("tercer_puesto", [])
                 else:
@@ -94,7 +93,21 @@ def calcular_racha_equipo(jugador, equipo, fase_objetivo):
                 with open(ruta_ocr, 'r', encoding='utf-8') as f:
                     ocr_data = json.load(f)
                     
-                partidos_objetivo = ocr_data.get("predicciones", {}).get(fase_busqueda_ocr, [])
+                # Aislamos matemáticamente si es 3º Puesto o Final dentro del OCR
+                if fase_objetivo in ["final", "tercer_puesto"]:
+                    partidos_finales = ocr_data.get("predicciones", {}).get("finales", [])
+                    partidos_objetivo = []
+                    if len(partidos_finales) == 2:
+                        if fase_objetivo == "tercer_puesto":
+                            partidos_objetivo = [partidos_finales[0]]
+                        elif fase_objetivo == "final":
+                            partidos_objetivo = [partidos_finales[1]]
+                    elif len(partidos_finales) == 1:
+                        if fase_objetivo == "final":
+                            partidos_objetivo = [partidos_finales[0]]
+                else:
+                    partidos_objetivo = ocr_data.get("predicciones", {}).get(fase_objetivo, [])
+                    
                 for p in partidos_objetivo:
                     if p.get("local") == equipo or p.get("visitante") == equipo:
                         racha += 1
@@ -183,14 +196,23 @@ def ejecutar_06a_motor_partidos():
                     porra_fase = json.load(f)
                 predicciones = porra_fase.get("predicciones", {}).get(fase, [])
                 
-            # Mapeo de la realidad para juntar 3º puesto y final
+            # Mapeo de la realidad para juntar 3º puesto y final inyectando una flag oculta '_fase_exacta'
             reales = []
             if fase == "finales":
-                reales.extend(realidad.get("eliminatorias", {}).get("tercer_puesto", []))
-                reales.extend(realidad.get("eliminatorias", {}).get("final", []))
+                for p in realidad.get("eliminatorias", {}).get("tercer_puesto", []):
+                    p_copy = p.copy()
+                    p_copy["_fase_exacta"] = "tercer_puesto"
+                    reales.append(p_copy)
+                for p in realidad.get("eliminatorias", {}).get("final", []):
+                    p_copy = p.copy()
+                    p_copy["_fase_exacta"] = "final"
+                    reales.append(p_copy)
             else:
-                reales = realidad.get("eliminatorias", {}).get(fase, [])
-                
+                for p in realidad.get("eliminatorias", {}).get(fase, []):
+                    p_copy = p.copy()
+                    p_copy["_fase_exacta"] = fase
+                    reales.append(p_copy)
+                    
             for i, p_real in enumerate(reales):
                 if p_real.get("estado", "notstarted") == "notstarted": continue
                 
@@ -202,8 +224,10 @@ def ejecutar_06a_motor_partidos():
                     p_pred = predicciones[i]
                     
                     if p_pred.get("local") == p_real.get("local") and p_pred.get("visitante") == p_real.get("visitante"):
-                        racha_l = calcular_racha_equipo(jugador, p_real["local"], fase)
-                        racha_v = calcular_racha_equipo(jugador, p_real["visitante"], fase)
+                        fase_exacta = p_real.get("_fase_exacta", fase)
+                        
+                        racha_l = calcular_racha_equipo(jugador, p_real["local"], fase_exacta)
+                        racha_v = calcular_racha_equipo(jugador, p_real["visitante"], fase_exacta)
                         
                         pts, is_1x2, is_ex, mult = calcular_puntos_partido(
                             int(p_pred.get("goles_local", 0)), int(p_pred.get("goles_visitante", 0)),

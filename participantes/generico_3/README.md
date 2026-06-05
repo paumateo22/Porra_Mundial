@@ -248,12 +248,12 @@ Aquí tienes el detalle exacto de tus pronósticos y resultados oficiales.
 ### 🥉 TERCER PUESTO
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Francia** vs **Colombia** | **0 - 1** | **2 - 0** | ❌ | --- | x3.0 | - **Francia** +0.5: [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Colombia** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
+| **Francia** vs **Colombia** | **0 - 1** | **2 - 0** | ❌ | --- | x2.0 | - **Francia** +0.5: [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Colombia** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
 
 ### 🏆 FINAL
 | Partido Oficial | Tu Pronóstico | Resultado Real | 1X2 | Exacto | Mult. | Origen Extra | Pts |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
-| **España** vs **Inglaterra** | **1 - 3** | **2 - 1** | ❌ | --- | x3.5 | - **España** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Inglaterra** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
+| **España** vs **Inglaterra** | **1 - 3** | **2 - 1** | ❌ | --- | x2.0 | - **España** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/)<br>- **Inglaterra** +1.0: [1/4](pronosticos/eliminatorias/cuartos/); [Semis](pronosticos/eliminatorias/semifinales/) | **0.0** |
 
 > **Resumen de la FINALES:** **0/0** *(Clavados/Aciertos)*. Quedaste en la posición **2º**. | Resultado: 🔴 **Perdedor** (-2 pts)
 > **Puntos sumados esta jornada:** -2.0 pts | **TOTAL ACUMULADO:** 243.0 pts
