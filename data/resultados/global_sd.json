@@ -1,0 +1,1346 @@
+{
+    "Alemania": {
+        "media": 1.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Arabia Saudita": {
+        "media": 0.67,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Argelia": {
+        "media": 1.0,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Argentina": {
+        "media": 3.67,
+        "realidad": 3,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Australia": {
+        "media": 1.0,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
+            }
+        ]
+    },
+    "Austria": {
+        "media": 0.67,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Bosnia-Herzegovina": {
+        "media": 0.67,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Brasil": {
+        "media": 1.67,
+        "realidad": 3,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Bélgica": {
+        "media": 2.0,
+        "realidad": 3,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Cabo Verde": {
+        "media": 0.0,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Canadá": {
+        "media": 1.33,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Colombia": {
+        "media": 2.67,
+        "realidad": 4,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 5,
+                "puntos": 10,
+                "resultado": "Sorpresa"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Corea del Sur": {
+        "media": 1.0,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Costa de Marfil": {
+        "media": 1.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Croacia": {
+        "media": 1.0,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Curazao": {
+        "media": 0.33,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Ecuador": {
+        "media": 1.67,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Egipto": {
+        "media": 1.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Escocia": {
+        "media": 0.67,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "España": {
+        "media": 4.0,
+        "realidad": 5,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 5,
+                "puntos": 10,
+                "resultado": "Sorpresa"
+            }
+        ]
+    },
+    "Estados Unidos": {
+        "media": 0.67,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Francia": {
+        "media": 3.33,
+        "realidad": 4,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Ghana": {
+        "media": 1.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Haití": {
+        "media": 0.33,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Inglaterra": {
+        "media": 1.0,
+        "realidad": 5,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Irak": {
+        "media": 1.33,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
+            }
+        ]
+    },
+    "Irán": {
+        "media": 0.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Japón": {
+        "media": 2.0,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 10,
+                "resultado": "Decepción"
+            }
+        ]
+    },
+    "Jordania": {
+        "media": 0.0,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Marruecos": {
+        "media": 3.33,
+        "realidad": 3,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "México": {
+        "media": 0.0,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Noruega": {
+        "media": 2.33,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Nueva Zelanda": {
+        "media": 0.33,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Panamá": {
+        "media": 0.67,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Paraguay": {
+        "media": 2.0,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Países Bajos": {
+        "media": 2.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 10,
+                "resultado": "Decepción"
+            }
+        ]
+    },
+    "Portugal": {
+        "media": 2.33,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Qatar": {
+        "media": 0.0,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "RD Congo": {
+        "media": 0.33,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "República Checa": {
+        "media": 1.67,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Senegal": {
+        "media": 1.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Sudáfrica": {
+        "media": 0.33,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Suecia": {
+        "media": 1.33,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Suiza": {
+        "media": 2.0,
+        "realidad": 2,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Turquía": {
+        "media": 1.67,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Túnez": {
+        "media": 0.0,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Uruguay": {
+        "media": 1.0,
+        "realidad": 1,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Uzbekistán": {
+        "media": 0.67,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "generico_1",
+                "jugador_nombre": "Generico 1",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_3",
+                "jugador_nombre": "Generico 3",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "generico_2",
+                "jugador_nombre": "Generico 2",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    }
+}

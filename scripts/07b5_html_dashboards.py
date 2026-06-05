@@ -58,6 +58,9 @@ def generar_dashboards_html():
     jornadas_keys = list(jornadas_dict.keys())
     realidad_dict = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
     
+    # Cargar el Diccionario Maestro de SD
+    global_sd = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "global_sd.json") or {}
+    
     pos_real = html_utils.calcular_clasificacion_grupos(realidad_dict.get("fase_grupos", {}))
     pasan_real = realidad_dict.get("clasificados_a_dieciseisavos", [])
     
@@ -69,25 +72,6 @@ def generar_dashboards_html():
             if "id_partido" in p: dict_reales[f"ID_{p['id_partido']}"] = p
 
     nombres_columnas_sd = ["GRUPOS", "1/16", "1/8", "1/4", "1/2", "FINAL"]
-
-    global_sd = {}
-    for j_dir in jugadores:
-        libro = html_utils.cargar_json(j_dir / "estadisticas" / "historial_puntos.json")
-        if not libro: continue
-        for eq, datos in libro.get("matriz_sorpresas_decepciones", {}).items():
-            if eq not in global_sd:
-                global_sd[eq] = {
-                    "media": safe_num(datos["media_grupo"], is_float=True),
-                    "real": map_fase_to_num(datos["realidad"]),
-                    "predicciones": []
-                }
-            global_sd[eq]["predicciones"].append({
-                "jugador": j_dir.name.replace('_', ' ').title(),
-                "jug_id": j_dir.name,
-                "fase_id": map_fase_to_num(datos["pronostico"]),
-                "pts": safe_num(datos["puntos"], is_float=True),
-                "res_calc": datos.get("resultado_calculo", "Neutral")
-            })
 
     rankings_jornada = {}
     for j_key in jornadas_keys:
@@ -604,7 +588,7 @@ def generar_dashboards_html():
         # 6. SORPRESAS Y DECEPCIONES (TIMELINE ABSOLUTA)
         # ==========================================
         matriz_sd = libro.get("matriz_sorpresas_decepciones", {})
-        if matriz_sd:
+        if global_sd:
             pts_sorpresa_tot = sum(d['puntos'] for d in matriz_sd.values() if d['resultado_calculo'] == 'Sorpresa')
             pts_decepcion_tot = sum(d['puntos'] for d in matriz_sd.values() if d['resultado_calculo'] == 'Decepción')
             
@@ -630,14 +614,19 @@ def generar_dashboards_html():
                 html += f"""<div class="sd-flag-btn" style="{color_style}" onclick="showSD('{eq_id}')">{eq}</div>"""
             html += "</div><div id='sd-details-container'>"
             
-            def get_x_percent(val): return max(0, min(100, ((val + 0.5) / 6.0) * 100.0))
+            def get_x_percent(val): return max(0, min(100, ((val) / 5.0) * 100.0))
 
-            for eq, datos in sorted(matriz_sd.items()):
+            for eq, datos_global in sorted(global_sd.items()):
                 eq_id = limpiar_nombre_id(eq)
-                M_val = safe_num(datos["media_grupo"], is_float=True)
-                R_val = safe_num(map_fase_to_num(datos["realidad"]))
-                P_val = safe_num(map_fase_to_num(datos["pronostico"]))
-                U_val = safe_num(datos.get("umbral_aplicado", 1.0), is_float=True)
+                M_val = datos_global["media"]
+                R_val = datos_global["realidad"]
+                U_val = datos_global["umbral"]
+                
+                # Datos del jugador actual para esta tarjeta
+                datos_tu = matriz_sd.get(eq, {})
+                P_val = map_fase_to_num(datos_tu.get("pronostico", -1))
+                puntos_tu = datos_tu.get("puntos", 0)
+                res_tu = datos_tu.get("resultado_calculo", "")
                 
                 w_dec = get_x_percent(M_val - U_val)
                 left_sorp = get_x_percent(M_val + U_val)
@@ -660,17 +649,17 @@ def generar_dashboards_html():
                     if idx_fase == P_val: inds_html += "<div class='sd-indicator ind-tu'>Tú</div>"
                     
                     pills_html = ""
-                    for p_data in global_sd.get(eq, {}).get("predicciones", []):
-                        if p_data["fase_id"] == idx_fase:
-                            pts_val = p_data["pts"]
-                            p_id = limpiar_nombre_id(p_data["jugador"])
+                    for p_data in datos_global.get("predicciones", []):
+                        if p_data["fase_pronostico"] == idx_fase:
+                            pts_val = p_data["puntos"]
+                            p_id = p_data["jugador_id"]
                             link = f"../../{p_id}/vistas/dashboard.html"
                             
                             if pts_val > 0:
                                 c_win = "win-dec" if idx_fase <= (M_val - U_val) else "win-sorp"
-                                pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill {c_win}'>{p_data['jugador']} <span style='float:right;'>+{pts_val}</span></div></a>"
+                                pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill {c_win}'>{p_data['jugador_nombre']} <span style='float:right;'>+{pts_val}</span></div></a>"
                             else:
-                                pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill'>{p_data['jugador']}</div></a>"
+                                pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill'>{p_data['jugador_nombre']}</div></a>"
                                 
                     timeline_html += f"""
                         <div style="flex:1; padding:10px; border-right:1px solid #333; display:flex; flex-direction:column; align-items:center; z-index:3; position:relative;">
@@ -689,8 +678,8 @@ def generar_dashboards_html():
                     <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #444; padding-bottom:10px;">
                         <h3 style="margin:0; color:var(--gold); font-size:1.5em;">{eq}</h3>
                         <div style="text-align:right;">
-                            <span style="font-size:1.2em; font-weight:bold; color:var(--gold);">{datos['puntos']} pts</span><br>
-                            <span style="font-size:0.8em; color:gray;">Resultado: {datos['resultado_calculo']}</span>
+                            <span style="font-size:1.2em; font-weight:bold; color:var(--gold);">{puntos_tu} pts</span><br>
+                            <span style="font-size:0.8em; color:gray;">Resultado: {res_tu if res_tu else "Ninguno"}</span>
                         </div>
                     </div>
                     {timeline_html}
