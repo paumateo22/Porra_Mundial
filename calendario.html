@@ -30,6 +30,13 @@
             position: fixed; /* Obligatorio para que funcione z-index */
             z-index: 2147483647; /* El z-index máximo posible en navegadores */
         }
+        
+        /* Asegura que el botón de hamburguesa flote correctamente debajo del menú desplegado */
+        .menu-btn {
+            position: fixed;     
+            z-index: 2147483640; 
+            cursor: pointer;     
+        }
     </style>
 
     <div id="mySidenav" class="sidenav">

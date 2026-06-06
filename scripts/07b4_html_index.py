@@ -7,6 +7,66 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR / "scripts"))
 import html_utils
 
+def get_racha_links_local(jugador_dir, equipo, fase_objetivo):
+    """
+    Calcula la racha real separando 3º Puesto y Final, y devuelve 
+    directamente los enlaces HTML web (relativos) formateados.
+    """
+    racha_links = []
+    racha_count = 0
+    fases_cronologicas = ["grupos", "dieciseisavos", "octavos", "cuartos", "semifinales", "finales"]
+    
+    fase_busqueda = "finales" if fase_objetivo in ["final", "tercer_puesto", "finales"] else fase_objetivo
+    idx_limite = fases_cronologicas.index(fase_busqueda) if fase_busqueda in fases_cronologicas else 0
+    jug_id = jugador_dir.name
+    inc = html_utils.CONFIG.get("multiplicadores", {}).get("incremento_racha_por_fase", 0.5)
+    
+    for i in range(idx_limite):
+        fase_origen = fases_cronologicas[i]
+        encontrado = False
+        
+        if fase_origen == "grupos":
+            ruta_base = jugador_dir / "pronosticos" / "grupos" / f"{jug_id}_base.json"
+            if ruta_base.exists():
+                base = html_utils.cargar_json(ruta_base) or {}
+                if fase_objetivo in ["final", "tercer_puesto", "finales"]:
+                    partidos_objetivo = base.get("eliminatorias", {}).get("final", []) + base.get("eliminatorias", {}).get("tercer_puesto", [])
+                else:
+                    partidos_objetivo = base.get("eliminatorias", {}).get(fase_objetivo, [])
+                    
+                encontrado = any(p.get("local") == equipo or p.get("visitante") == equipo for p in partidos_objetivo)
+        else:
+            ruta_ocr = jugador_dir / "pronosticos" / "eliminatorias" / fase_origen / f"{fase_origen}.json"
+            if ruta_ocr.exists():
+                ocr_data = html_utils.cargar_json(ruta_ocr) or {}
+                
+                # Aislamiento estricto entre 3º Puesto y Final
+                if fase_objetivo in ["final", "tercer_puesto"]:
+                    partidos_finales = ocr_data.get("predicciones", {}).get("finales", [])
+                    partidos_objetivo = []
+                    if len(partidos_finales) >= 2:
+                        if fase_objetivo == "tercer_puesto": partidos_objetivo = [partidos_finales[0]]
+                        elif fase_objetivo == "final": partidos_objetivo = [partidos_finales[1]]
+                    elif len(partidos_finales) == 1:
+                        if fase_objetivo == "final": partidos_objetivo = [partidos_finales[0]]
+                else:
+                    partidos_objetivo = ocr_data.get("predicciones", {}).get(fase_objetivo, [])
+                    
+                encontrado = any(p.get("local") == equipo or p.get("visitante") == equipo for p in partidos_objetivo)
+                
+        if encontrado:
+            racha_count += 1
+            # Mapeamos el nombre de la fase para que quede visualmente bonito
+            nombres_fases = {"grupos": "Grupos", "dieciseisavos": "1/16", "octavos": "1/8", "cuartos": "1/4", "semifinales": "Semis", "finales": "Finales"}
+            fase_texto = nombres_fases.get(fase_origen, fase_origen.capitalize())
+            
+            # Construimos el enlace web relativo
+            href_val = f"participantes/{jug_id}/vistas/pronostico_{fase_origen}.html"
+            racha_links.append(f"<a href='{href_val}' target='_blank' class='mult-link'>+{inc} ({fase_texto})</a>")
+            
+    return racha_links
+
+
 def generar_index_html():
     ruta_csv = ROOT_DIR / "data" / "resultados" / "ranking_oficial.csv"
     if not ruta_csv.exists(): 
@@ -176,59 +236,23 @@ def generar_index_html():
                     pred_styled = f"<span class='pred-miss'>{pred_txt}</span>"
                     desglose_html = f"<span style='color:gray; font-size:0.85em;'>0 pts</span>"
 
-                # Multiplicador Desplegable
+                # Multiplicador Desplegable usando la nueva función depurada
                 mult_html = f"x{mult}"
                 if mult > 1.0:
-                    r_loc = html_utils.obtener_racha_fases(j["dir_path"], p_real.get("local"), u_match["limpia"])
-                    r_vis = html_utils.obtener_racha_fases(j["dir_path"], p_real.get("visitante"), u_match["limpia"])
-                    content_html = ""
+                    links_loc = get_racha_links_local(j["dir_path"], p_real.get("local"), u_match["limpia"])
+                    links_vis = get_racha_links_local(j["dir_path"], p_real.get("visitante"), u_match["limpia"])
                     
-                    if r_loc:
-                        # Corrección en la generación de enlaces locales
-                        links_loc = []
-                        for r in r_loc:
-                            href_val = r[1]
-                            
-                            # 1. Detectar el nombre limpio de la fase antes de alterar la ruta
-                            nombre_fase = href_val.strip('/').split('/')[-1].replace('.json', '')
-                            
-                            # 2. Si es la base, forzamos a que sea 'grupos'
-                            if nombre_fase.endswith("_base") or nombre_fase == "base" or "base.html" in href_val:
-                                nombre_fase = "grupos"
-                                
-                            # 3. Construir la ruta correcta apuntando a la carpeta /vistas/ del participante
-                            # Usamos j["dir_path"] que contiene '.../participantes/generico_1' y le añadimos /vistas/
-                            import os
-                            dir_vistas = os.path.join(j["dir_path"], "vistas").replace("\\", "/")
-                            href_val = f"file:///{dir_vistas}/pronostico_{nombre_fase}.html"
-                                
-                            links_loc.append(f"<a href='{href_val}' target='_blank' class='mult-link'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>")
-                            
-                        content_html += f"<strong>{p_real.get('local')}:</strong><br>" + "<br>".join(links_loc) + "<br>"
+                    if links_loc or links_vis:
+                        r_loc_html = "<br>".join(links_loc) if links_loc else "<span style='color:gray;'>-</span>"
+                        r_vis_html = "<br>".join(links_vis) if links_vis else "<span style='color:gray;'>-</span>"
                         
-                    if r_vis:
-                        # Corrección en la generación de enlaces visitantes
-                        links_vis = []
-                        for r in r_vis:
-                            href_val = r[1]
-                            
-                            # 1. Detectar el nombre limpio de la fase antes de alterar la ruta
-                            nombre_fase = href_val.strip('/').split('/')[-1].replace('.json', '')
-                            
-                            # 2. Si es la base, forzamos a que sea 'grupos'
-                            if nombre_fase.endswith("_base") or nombre_fase == "base" or "base.html" in href_val:
-                                nombre_fase = "grupos"
-                                
-                            # 3. Construir la ruta correcta apuntando a la carpeta /vistas/ del participante
-                            import os
-                            dir_vistas = os.path.join(j["dir_path"], "vistas").replace("\\", "/")
-                            href_val = f"file:///{dir_vistas}/pronostico_{nombre_fase}.html"
-                                
-                            links_vis.append(f"<a href='{href_val}' target='_blank' class='mult-link'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>")
-                            
-                        content_html += f"<strong>{p_real.get('visitante')}:</strong><br>" + "<br>".join(links_vis) + "<br>"
-                    
-                    if content_html:
+                        # RESTAURADO: El contenedor flex para poner a izquierda y derecha
+                        content_html = f"""
+                        <div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em; padding-top:5px;">
+                            <div style="flex:1; padding-right:5px;"><strong>{p_real.get('local')}</strong><br>{r_loc_html}</div>
+                            <div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>{p_real.get('visitante')}</strong><br>{r_vis_html}</div>
+                        </div>"""
+                        
                         mult_html = f"<details class='mult-details'><summary>x{mult} ▼</summary><div class='mult-content'>{content_html}</div></details>"
 
                 stats_match.append({
