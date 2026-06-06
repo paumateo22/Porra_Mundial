@@ -33,7 +33,7 @@ def generar_instrucciones_html():
         <div class="instrucciones-box">
             <h3>Paso 3: Eliminatorias (LiveFutbol)</h3>
             <p>Finalmente, usa LiveFutbol para pronosticar todas las fases de eliminatoria.</p>
-            <p>🔗 <a href="https://www.livefutbol.com/competition/co139/fifa-copa-mundial/standings-calculator/" target="_blank">Abrir Calculadora LiveFutbol</a></p>
+            <p>🔗 <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a></p>
         </div>
         <details>
             <summary><h2>📜 Reglamento y Funcionamiento</h2></summary>
