@@ -12,7 +12,7 @@ def generar_indice_jornadas():
     print("=======================================================")
     
     # Leemos la base de generico_1 como molde
-    ruta_base = ROOT_DIR / "participantes" / "generico_1" / "pronosticos" / "grupos" / "generico_1_base.json"
+    ruta_base = ROOT_DIR / "participantes" / "pau" / "pronosticos" / "grupos" / "pau_base.json"
     
     if not ruta_base.exists():
         print(f"❌ Error: No se encuentra el archivo {ruta_base}")

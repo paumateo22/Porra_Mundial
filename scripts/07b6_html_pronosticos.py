@@ -1,6 +1,7 @@
 import sys
 import json
 from pathlib import Path
+from datetime import datetime
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR / "scripts"))
@@ -42,6 +43,21 @@ def get_nav_html(fase_actual):
     
     nav += "\n    </div>"
     return nav
+
+def esta_bloqueado(fase):
+    """Comprueba si la fase actual tiene un bloqueo de tiempo en settings.json"""
+    horarios = html_utils.CONFIG.get("horarios", {})
+    fecha_str = horarios.get(f"apertura_{fase}")
+    if not fecha_str:
+        return False, ""
+    
+    try:
+        fecha_apertura = datetime.fromisoformat(fecha_str)
+        if datetime.now() < fecha_apertura:
+            return True, fecha_apertura.strftime("%d/%m/%Y a las %H:%M")
+    except ValueError:
+        pass
+    return False, ""
 
 def render_bracket_futuro(eliminatorias_dict, fase_inicio):
     """Genera el árbol (bracket) de torneo convergente para la proyección futura."""
@@ -260,6 +276,18 @@ def generar_vistas_pronosticos():
                 with open(dir_vistas / f"pronostico_{fase}.html", 'w', encoding='utf-8') as f: f.write(html)
                 continue
 
+            bloqueado, fecha_apertura = esta_bloqueado(fase)
+            if bloqueado:
+                html += f"""
+                <div style="background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
+                    <div style="font-size:3.5em; margin-bottom:15px;">🔒</div>
+                    <h2 style="color:var(--gold); margin-top:0;">Pronóstico Protegido</h2>
+                    <p style="color:#ddd; font-size:1.1em; margin-bottom:5px;">El pronóstico de <strong>{nombre}</strong> ha sido recibido y está guardado a salvo.</p>
+                    <p style="color:gray; font-size:0.95em;">Se revelará públicamente el <strong>{fecha_apertura}</strong> (Hora Peninsular).</p>
+                </div></div></body></html>"""
+                with open(dir_vistas / f"pronostico_{fase}.html", 'w', encoding='utf-8') as f: f.write(html)
+                continue
+
             # --- SECCIÓN 1: COMPARATIVA DE LA FASE ACTUAL ---
             if fase == "grupos":
                 html += f"""
@@ -285,7 +313,9 @@ def generar_vistas_pronosticos():
                         p_real = dict_reales.get(clave, {})
                         p_pred = dict_preds.get(clave, {})
                         
-                        loc_r, vis_r = p_real.get("local", "TBD"), p_real.get("visitante", "TBD")
+                        # ESCUDO: Si no hay realidad, cogemos el nombre de jornadas_dict (p)
+                        loc_r = p_real.get("local") or p.get("local", "TBD")
+                        vis_r = p_real.get("visitante") or p.get("visitante", "TBD")
                         pred_txt = f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}" if p_pred else "-"
                         real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
                         
@@ -373,7 +403,9 @@ def generar_vistas_pronosticos():
                         p_real = dict_reales.get(clave, {})
                         p_pred = dict_preds.get(clave, {})
                         
-                        loc_r, vis_r = p_real.get("local", "TBD"), p_real.get("visitante", "TBD")
+                        # ESCUDO: Si no hay realidad, busca en jornadas_dict el local o un placeholder
+                        loc_r = p_real.get("local") or p.get("local") or p.get("placeholder_local", "TBD")
+                        vis_r = p_real.get("visitante") or p.get("visitante") or p.get("placeholder_visitante", "TBD")
                         if loc_r == "TBD" and "id_partido" in p: loc_r, vis_r = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
                         
                         subtitle_html = ""
@@ -405,12 +437,15 @@ def generar_vistas_pronosticos():
                         if ac_ex: exactos_j += 1
                         pts_jornada += pts
                         
+                        import re
                         mult_html = f"""<div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;"><div style="margin-bottom:8px;">{desglose_html}</div>"""
                         if mult > 1.0 and p_real.get("estado") == "finished":
                             r_loc = html_utils.obtener_racha_fases(j_dir, p_real.get("local"), fase_limpia)
                             r_vis = html_utils.obtener_racha_fases(j_dir, p_real.get("visitante"), fase_limpia)
                             r_loc_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
                             r_vis_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) if r_vis else "<span style='color:gray;'>-</span>"
+                            if "base.html" in r_loc_html: r_loc_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_loc_html)
+                            if "base.html" in r_vis_html: r_vis_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_vis_html)
                             mult_html += f"""<div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;"><div style="flex:1; padding-right:5px;"><strong>{p_real.get('local')}</strong><br>{r_loc_html}</div><div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>{p_real.get('visitante')}</strong><br>{r_vis_html}</div></div>"""
                         mult_html += "</div>"
                             
@@ -470,7 +505,7 @@ def generar_vistas_pronosticos():
         # ==========================================
         # 2. PREMIOS INDIVIDUALES
         # ==========================================
-        ruta_premios = j_dir / "premios" / "premios_formulario.json"
+        ruta_premios = j_dir / "pronosticos" / "premios" / "premios_formulario.json"
         premios_pred = html_utils.cargar_json(ruta_premios) or {}
         
         html = f"""<!DOCTYPE html>
@@ -491,6 +526,18 @@ def generar_vistas_pronosticos():
         if not premios_pred:
             html += f"""<div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
                 <h3>Aún no has rellenado el formulario de Premios Individuales.</h3>
+            </div></div></body></html>"""
+            with open(dir_vistas / "pronostico_premios.html", 'w', encoding='utf-8') as f: f.write(html)
+            continue
+
+        bloqueado_premios, fecha_apertura_premios = esta_bloqueado("premios")
+        if bloqueado_premios:
+            html += f"""
+            <div style="background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
+                <div style="font-size:3.5em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0;">Pronóstico Protegido</h2>
+                <p style="color:#ddd; font-size:1.1em; margin-bottom:5px;">El pronóstico de <strong>{nombre}</strong> ha sido recibido y está guardado a salvo.</p>
+                <p style="color:gray; font-size:0.95em;">Se revelará públicamente el <strong>{fecha_apertura_premios}</strong> (Hora Peninsular).</p>
             </div></div></body></html>"""
             with open(dir_vistas / "pronostico_premios.html", 'w', encoding='utf-8') as f: f.write(html)
             continue

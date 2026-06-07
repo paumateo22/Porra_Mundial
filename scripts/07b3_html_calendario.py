@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+from turtle import width
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR / "scripts"))
@@ -30,15 +31,15 @@ def generar_calendario_html():
     <style>
         /* Estilos específicos para forzar el bracket al ancho completo */
         .bracket-full-width {{ width: 100%; max-width: 100%; padding: 0 20px; box-sizing: border-box; margin: 30px auto; }}
-        .true-bracket {{ display: flex; width: 100%; justify-content: center; gap: 15px; font-size: 0.85em; overflow-x: auto; padding-bottom: 20px; min-height: 500px; }}
-        .bracket-col-wrapper {{ display: flex; flex-direction: column; flex: 1; min-width: 130px; }}
+        .true-bracket {{display:flex;width:100%;justify-content:center;gap:8px;font-size:0.75em;overflow:hidden;padding-bottom:20px;min-height:500px;}}
+        .bracket-col-wrapper {{display:flex;flex-direction:column;flex:1;min-width:95px;}}
         .bracket-col {{ display: flex; flex-direction: column; justify-content: space-around; flex: 1; gap: 10px; }}
-        .bracket-center-wrapper {{ display: flex; flex-direction: column; flex: 1.2; min-width: 150px; justify-content: center; gap: 60px; margin: 0 10px; }}
+        .bracket-center-wrapper {{display:flex;flex-direction:column;flex:1.1;min-width:110px;justify-content:center;gap:40px;margin:0 5px;}}
         .bracket-match {{ background: #222; border: 1px solid #444; border-radius: 4px; overflow: hidden; width: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.5); }}
         .bracket-team {{ display: flex; justify-content: space-between; padding: 5px 8px; border-bottom: 1px solid #333; color: #ccc; align-items: center; }}
         .bracket-team:last-child {{ border-bottom: none; }}
         .bracket-team.winner {{ background: rgba(218, 165, 32, 0.15); color: var(--gold); font-weight: bold; }}
-        .team-name {{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 90px; }}
+        .team-name {{max-width:70px;}}
         .team-score {{ background: #111; padding: 2px 6px; border-radius: 3px; color: #fff; font-weight: bold; font-size: 0.9em; }}
         .winner .team-score {{ background: var(--gold); color: #000; }}
         .round-header {{ text-align: center; font-weight: bold; color: var(--table-header); margin-bottom: 15px; border-bottom: 1px solid #444; padding-bottom: 5px; text-transform: uppercase; font-size: 0.95em; }}

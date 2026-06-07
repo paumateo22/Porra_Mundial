@@ -57,5 +57,15 @@
         "criterio_1": "acierto_1x2",
         "criterio_2": "acierto_exacto",
         "criterio_3": "campeon"
+    },
+    "horarios": {
+        "inicio_fase_grupos": "2026-11-21T19:00:00",
+        "apertura_grupos": "2026-06-11T21:00:00",
+        "apertura_dieciseisavos": "2026-06-28T21:00:00",
+        "apertura_octavos": "2026-07-04T19:00:00",
+        "apertura_cuartos": "2026-07-09T22:00:00",
+        "apertura_semifinales": "2026-07-14T21:00:00",
+        "apertura_finales": "2026-07-18T23:00:00",
+        "apertura_premios": "2026-06-11T21:00:00"
     }
 }

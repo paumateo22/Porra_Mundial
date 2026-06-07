@@ -39,7 +39,7 @@ def mostrar_menu():
         
         print("\n--- 🗄️  FASE 1: EXTRACCIÓN Y DATOS ---")
         print("  2. 📸 Procesar Capturas OCR de Eliminatorias (02)")
-        print("  3. 📅 Regenerar Índice de Jornadas (00)")
+        print("  3. 📅 Regenerar Índice de Jornadas (00 + 00b)")
         print("  4. 📥 Actualizar Realidad Oficial SofaScore (05)")
         
         print("\n--- ⚙️  FASE 2: CÁLCULO DE PUNTOS ---")
@@ -67,7 +67,8 @@ def mostrar_menu():
             ejecutar_script("02_extractor_livefutbol.py")
             
         elif opcion == "3":
-            ejecutar_script("00_generador_calendario.py")
+            if ejecutar_script("00_generador_calendario.py"):
+                ejecutar_script("00b_esqueleto_eliminatorias.py")
             
         elif opcion == "4":
             ejecutar_script("05_scraper_sofascore.py")
