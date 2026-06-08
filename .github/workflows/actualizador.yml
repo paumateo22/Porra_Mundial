@@ -4,10 +4,6 @@ on:
   # Esto crea un botón para ejecutarlo a mano desde la web o el móvil
   workflow_dispatch: 
 
-  push:
-    branches:
-      - main
-
 # Permisos para que el bot pueda sobreescribir los JSON y los PNGs
 permissions:
   contents: write
