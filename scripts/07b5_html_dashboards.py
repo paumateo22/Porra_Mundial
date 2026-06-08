@@ -500,7 +500,9 @@ def generar_dashboards_html():
         # ==========================================
         # 4. BALANCE FASE DE GRUPOS (Tarjetas)
         # ==========================================
-        if not bloqueado_grupos:
+        bloqueado_balance, _ = esta_bloqueado("fin_fase_grupos")
+
+        if not bloqueado_balance:
             pts_bono_fase = libro.get("resolucion_fase_grupos", {}).get("puntos_conseguidos", 0)
             html += f"""
             <details id="balance" class="jornada-details" open>
@@ -669,7 +671,9 @@ def generar_dashboards_html():
         # ==========================================
         # 6. SORPRESAS Y DECEPCIONES (TIMELINE ABSOLUTA)
         # ==========================================
-        if not bloqueado_grupos:
+        bloqueado_sd, _ = esta_bloqueado("fin_fase_grupos")
+
+        if not bloqueado_sd:
             matriz_sd = libro.get("matriz_sorpresas_decepciones", {})
             if global_sd:
                 pts_sorpresa_tot = sum(d['puntos'] for d in matriz_sd.values() if d['resultado_calculo'] == 'Sorpresa')
