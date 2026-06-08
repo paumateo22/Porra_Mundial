@@ -1,0 +1,22 @@
+{
+    "participante": "generico_3",
+    "fase_origen": "finales",
+    "predicciones": {
+        "finales": [
+            {
+                "local": "Francia",
+                "visitante": "Colombia",
+                "goles_local": 0,
+                "goles_visitante": 1,
+                "pasa": "Colombia"
+            },
+            {
+                "local": "España",
+                "visitante": "Inglaterra",
+                "goles_local": 1,
+                "goles_visitante": 3,
+                "pasa": "Inglaterra"
+            }
+        ]
+    }
+}

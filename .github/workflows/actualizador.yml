@@ -35,7 +35,7 @@ jobs:
           python scripts/06e_motor_sorpresas.py
           python scripts/06f_motor_premios.py
           python scripts/06d_motor_cierre.py
-          python scripts/07_generador_vistas.py
+          # python scripts/07_generador_vistas.py
           python scripts/07b1_html_instrucciones.py
           python scripts/07b2_html_participantes.py
           python scripts/07b3_html_calendario.py

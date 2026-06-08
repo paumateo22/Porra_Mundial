@@ -1,0 +1,38 @@
+{
+    "participante": "generico_1",
+    "fase_origen": "semifinales",
+    "predicciones": {
+        "semifinales": [
+            {
+                "local": "Francia",
+                "visitante": "España",
+                "goles_local": 1,
+                "goles_visitante": 0,
+                "pasa": "Francia"
+            },
+            {
+                "local": "Inglaterra",
+                "visitante": "Colombia",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "Inglaterra"
+            }
+        ],
+        "finales": [
+            {
+                "local": "España",
+                "visitante": "Colombia",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "España"
+            },
+            {
+                "local": "Francia",
+                "visitante": "Inglaterra",
+                "goles_local": 1,
+                "goles_visitante": 0,
+                "pasa": "Francia"
+            }
+        ]
+    }
+}
