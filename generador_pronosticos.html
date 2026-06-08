@@ -76,16 +76,273 @@
     </script>
     
     
-    <header>
-        <h1>🛠️ Simulador y Generador</h1>
-        <p>Crea, experimenta y descarga tus pronósticos oficiales.</p>
-        <div class="top-nav">
-            <a href="index.html" class="home-btn">🏠 Inicio</a>
-            <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Infobae</a>
-            <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
-            <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">SofaScore</a>
+    <header style="padding: 20px 10px; padding-bottom: 30px;">
+        <style>
+            .header-main-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1300px;
+                margin: 0 auto;
+                gap: 15px;
+            }
+
+            .header-center {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                min-width: 380px;
+            }
+
+            .blob-widget {
+                background: var(--gold, #DAA520);
+                color: black;
+                width: 420px;
+                padding: 15px 25px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 2px solid #111;
+                box-shadow: -4px 6px 0px rgba(0,0,0,0.4);
+                overflow: hidden;
+            }
+
+            .left-blob {
+                border-radius: 40px 15px 50px 20px;
+                width: 380px;
+                height: 220px;
+                min-height: 180px;
+            }
+
+            .right-blob-top {
+                border-radius: 20px 40px 10px 20px;
+                min-height: 80px;
+            }
+
+            .right-blob-bottom {
+                border-radius: 10px 20px 40px 15px;
+                min-height: 100px;
+            }
+
+            .right-widgets-stack {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                width: 280px;
+            }
+
+            .blob-title {
+                font-family: Arial, sans-serif;
+                font-weight: 900;
+                font-size: 1.05em;
+                margin: 0 0 10px 0;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-align: center;
+                border-bottom: 1px dashed rgba(0,0,0,0.35);
+                padding-bottom: 6px;
+            }
+
+            .phase-row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .phase-label {
+                font-size: 0.78em;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 4px;
+                text-align: center;
+            }
+
+            .phase-timer {
+                font-size: 2em;
+                font-family: monospace;
+                font-weight: 1500;
+                background: rgba(0,0,0,0.1);
+                padding: 4px 10px;
+                border-radius: 8px;
+                border: 1px solid rgba(0,0,0,0.2);
+                display: inline-block;
+            }
+
+            .btn-pred-now {
+                display: inline-block;
+                background: #111;
+                color: var(--gold);
+                font-size: 0.95em;
+                font-weight: 900;
+                padding: 8px 16px;
+                border-radius: 30px;
+                text-decoration: none;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                border: 2px solid #111;
+                transition: 0.3s;
+                margin: 4px auto;
+                text-align: center;
+            }
+
+            .btn-pred-now:hover {
+                background: transparent;
+                color: #111;
+            }
+
+            @media (max-width: 950px) {
+                .header-main-container {
+                    flex-direction: column;
+                    gap: 25px;
+                }
+
+                .blob-widget,
+                .left-blob,
+                .right-widgets-stack {
+                    width: 100%;
+                    max-width: 380px;
+                }
+
+                .blob-widget {
+                    height: auto;
+                    min-height: 100px;
+                    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+                    border-radius: 25px !important;
+                }
+            }
+        </style>
+
+        <div class="header-main-container">
+            <!-- WIDGET IZQUIERDO -->
+            <div class="blob-widget left-blob">
+                <div class="blob-title" id="w-fase-name">CARGANDO FASE...</div>
+
+                <div id="w-predict-container" style="min-height: 52px; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                    <div class="phase-label">Apertura Pronosticos</div>
+                    <div class="phase-timer" id="w-timer-pred">--:--:--</div>
+                </div>
+
+                <div class="phase-row" style="margin-top:6px; margin-bottom:0;">
+                    <div class="phase-label" style="font-size:1em;">Comienzo de Fase</div>
+                    <div class="phase-timer" id="w-timer-start" style="color:#d9381e;">--:--:--</div>
+                </div>
+            </div>
+
+            <!-- CENTRO -->
+            <div class="header-center">
+                <h1 style="margin-top:0; font-size: 2.2em;">🛠️ Simulador y Generador</h1>
+                <p style="font-size: 0.9em;">Crea, experimenta y descarga tus pronósticos oficiales.</p>
+                <div class="top-nav" style="margin: 10px 0;">
+                    <a href="index.html" class="home-btn">🏠 Inicio</a>
+                    <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Infobae</a>
+                    <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
+                    <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">SofaScore</a>
+                </div>
+                
+            </div>
+
+            <!-- WIDGETS DERECHOS (apilados verticalmente) -->
+            <div class="right-widgets-stack">
+
+                <!-- ÚLTIMO PARTIDO -->
+                <div class="blob-widget right-blob-top">
+                    <div class="blob-title">ÚLTIMO PARTIDO</div>
+                    <div style='color:#555; padding-top:20px; font-weight:bold;'>No se ha jugado ningún partido todavía</div>
+                </div>
+
+                <!-- PRÓXIMO PARTIDO -->
+                <div class="blob-widget right-blob-bottom">
+                    <div class="blob-title">PRÓXIMO PARTIDO</div>
+                    
+        <div style="font-weight:bold; color:#111; letter-spacing:1px; margin-bottom:10px; font-size:1.1em;">GRUPO A</div>
+        <div style="font-size:1.15em; color:black; font-weight:900; margin-bottom:8px; line-height:1.3;">
+            México - Sudáfrica
         </div>
+        <div style="font-size:1.2em; color:#333; font-weight:500; border-top:1px dashed rgba(0,0,0,0.3); padding-top:5px; margin-bottom:5px;">
+            Inicio: 11/06 21:00
+        </div>
+        <div id="w-timer-next-match" style="font-size:2em; font-weight:1500; color:#d9381e; font-family:monospace;">--:--:--</div>
         
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            const FASES_TORNEO = [{"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": "2026-06-11T21:00:00", "link": "https://www.infobae.com/mundial-2026/simulador/"}, {"id": "dieciseisavos", "name": "Dieciseisavos (1/16)", "predict": "2026-06-28T08:00:00", "start": "2026-06-28T21:00:00", "link": "generador_pronosticos.html"}, {"id": "octavos", "name": "Octavos (1/8)", "predict": "2026-07-04T06:00:00", "start": "2026-07-04T19:00:00", "link": "generador_pronosticos.html"}, {"id": "cuartos", "name": "Cuartos (1/4)", "predict": "2026-07-08T00:30:00", "start": "2026-07-09T22:00:00", "link": "generador_pronosticos.html"}, {"id": "semifinales", "name": "Semifinales", "predict": "2026-07-12T06:00:00", "start": "2026-07-14T21:00:00", "link": "generador_pronosticos.html"}, {"id": "finales", "name": "Finales", "predict": "2026-07-15T23:59:00", "start": "2026-07-18T23:00:00", "link": "generador_pronosticos.html"}];
+            const NEXT_MATCH_ISO = "2026-06-11T21:00:00";
+
+            function formatDiff(ms) {
+                if (ms <= 0) return "00:00:00";
+                let d = Math.floor(ms / (1000 * 60 * 60 * 24));
+                let h = Math.floor((ms / (1000 * 60 * 60)) % 24);
+                let m = Math.floor((ms / 1000 / 60) % 60);
+                let s = Math.floor((ms / 1000) % 60);
+
+                let res = "";
+                if (d > 0) res += d + "d, ";
+                res += h.toString().padStart(2, "0") + ":" + m.toString().padStart(2, "0") + ":" + s.toString().padStart(2, "0");
+                return res;
+            }
+
+            function updateWidgets() {
+                const now = new Date();
+
+                // Widget izquierdo
+                let currentFase = null;
+                for (let i = 0; i < FASES_TORNEO.length; i++) {
+                    if (FASES_TORNEO[i].start && new Date(FASES_TORNEO[i].start) > now) {
+                        currentFase = FASES_TORNEO[i];
+                        break;
+                    }
+                }
+
+                if (!currentFase) {
+                    document.getElementById("w-fase-name").innerText = "TORNEO FINALIZADO";
+                    document.getElementById("w-predict-container").innerHTML = "<div style='font-size:1em; font-weight:bold; text-align:center;'>Gracias por jugar</div>";
+                    document.getElementById("w-timer-start").innerHTML = "CERRADO";
+                } else {
+                    document.getElementById("w-fase-name").innerText = currentFase.name;
+
+                    const startPredict = new Date(currentFase.predict);
+                    const endPredict = new Date(currentFase.start);
+                    const predContainer = document.getElementById("w-predict-container");
+
+                    if (now < startPredict) {
+                        predContainer.innerHTML = `<div class="phase-label">Apertura Pronosticos</div><div class="phase-timer">${formatDiff(startPredict - now)}</div>`;
+                    } else if (now >= startPredict && now < endPredict) {
+                        predContainer.innerHTML = `<a href="${currentFase.link}" class="btn-pred-now">¡PRONOSTICAR AHORA!</a>`;
+                    } else {
+                        predContainer.innerHTML = `<div class="phase-label">Pronosticos</div><div class="phase-timer">CERRADOS</div>`;
+                    }
+
+                    document.getElementById("w-timer-start").innerText = formatDiff(endPredict - now);
+                }
+
+                // Widgets derechos - countdown próximo partido
+                if (NEXT_MATCH_ISO) {
+                    const matchDate = new Date(NEXT_MATCH_ISO);
+                    const timerEl = document.getElementById("w-timer-next-match");
+
+                    if (timerEl) {
+                        if (now < matchDate) {
+                            timerEl.innerText = formatDiff(matchDate - now);
+                        } else {
+                            timerEl.innerText = "¡EN JUEGO!";
+                            timerEl.style.color = "green";
+                        }
+                    }
+                }
+            }
+
+            setInterval(updateWidgets, 1000);
+            updateWidgets();
+        </script>
     </header>
     
     
@@ -136,7 +393,7 @@
     </div>
 
     <script>
-        const TODAS_FASES = {"dieciseisavos": [{"id_partido": 73, "local": "2A", "visitante": "2B", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 74, "local": "1E", "visitante": "3A/3B/3C/3D/3F", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 75, "local": "1F", "visitante": "2C", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 76, "local": "1C", "visitante": "2F", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 77, "local": "1I", "visitante": "3C/3D/3F/3G/3H", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 78, "local": "2E", "visitante": "2I", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 79, "local": "1A", "visitante": "3C/3E/3F/3H/3I", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 80, "local": "1L", "visitante": "3E/3H/3I/3J/3K", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 81, "local": "1D", "visitante": "3B/3E/3F/3I/3J", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 82, "local": "1G", "visitante": "3A/3E/3H/3I/3J", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 83, "local": "2K", "visitante": "2L", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 84, "local": "1H", "visitante": "2J", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 85, "local": "1B", "visitante": "3E/3F/3G/3I/3J", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 86, "local": "1J", "visitante": "2H", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 87, "local": "1K", "visitante": "3D/3E/3I/3J/3L", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 88, "local": "2D", "visitante": "2G", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "octavos": [{"id_partido": 89, "local": "Ganador 73", "visitante": "Ganador 74", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 90, "local": "Ganador 75", "visitante": "Ganador 76", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 91, "local": "Ganador 77", "visitante": "Ganador 78", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 92, "local": "Ganador 79", "visitante": "Ganador 80", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 93, "local": "Ganador 81", "visitante": "Ganador 82", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 94, "local": "Ganador 83", "visitante": "Ganador 84", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 95, "local": "Ganador 85", "visitante": "Ganador 86", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 96, "local": "Ganador 87", "visitante": "Ganador 88", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "cuartos": [{"id_partido": 97, "local": "Ganador 89", "visitante": "Ganador 90", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 98, "local": "Ganador 91", "visitante": "Ganador 92", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 99, "local": "Ganador 93", "visitante": "Ganador 94", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 100, "local": "Ganador 95", "visitante": "Ganador 96", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "semifinales": [{"id_partido": 101, "local": "Ganador 97", "visitante": "Ganador 98", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 102, "local": "Ganador 99", "visitante": "Ganador 100", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "finales": [{"id_partido": 103, "local": "Perdedor 101", "visitante": "Perdedor 102", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 104, "local": "Ganador 101", "visitante": "Ganador 102", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}]};
+        const TODAS_FASES = {"dieciseisavos": [{"id_partido": 73, "local": "1E", "visitante": "3A/3B/3C/3D/3F", "fecha": "2026-06-29T22:30:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 74, "local": "1I", "visitante": "3C/3D/3F/3G/3H", "fecha": "2026-06-30T23:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 75, "local": "2A", "visitante": "2B", "fecha": "2026-06-28T21:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 76, "local": "1F", "visitante": "2C", "fecha": "2026-06-30T03:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 77, "local": "2K", "visitante": "2L", "fecha": "2026-07-03T01:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 78, "local": "1H", "visitante": "2J", "fecha": "2026-07-02T21:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 79, "local": "1D", "visitante": "3B/3E/3F/3I/3J", "fecha": "2026-07-02T02:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 80, "local": "1G", "visitante": "3A/3E/3H/3I/3J", "fecha": "2026-07-01T22:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 81, "local": "1C", "visitante": "2F", "fecha": "2026-06-29T19:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 82, "local": "2E", "visitante": "2I", "fecha": "2026-06-30T19:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 83, "local": "1A", "visitante": "3C/3E/3F/3H/3I", "fecha": "2026-07-01T03:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 84, "local": "1L", "visitante": "3E/3H/3I/3J/3K", "fecha": "2026-07-01T18:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 85, "local": "1J", "visitante": "2H", "fecha": "2026-07-04T00:00:01", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 86, "local": "2D", "visitante": "2G", "fecha": "2026-07-03T20:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 87, "local": "1B", "visitante": "3E/3F/3G/3I/3J", "fecha": "2026-07-03T05:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 88, "local": "1K", "visitante": "3D/3E/3I/3J/3L", "fecha": "2026-07-04T03:30:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "octavos": [{"id_partido": 89, "local": "Ganador 73", "visitante": "Ganador 74", "fecha": "2026-07-04T23:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 90, "local": "Ganador 75", "visitante": "Ganador 76", "fecha": "2026-07-04T19:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 91, "local": "Ganador 77", "visitante": "Ganador 78", "fecha": "2026-07-06T21:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 92, "local": "Ganador 79", "visitante": "Ganador 80", "fecha": "2026-07-07T02:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 93, "local": "Ganador 81", "visitante": "Ganador 82", "fecha": "2026-07-05T22:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 94, "local": "Ganador 83", "visitante": "Ganador 84", "fecha": "2026-07-06T02:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 95, "local": "Ganador 85", "visitante": "Ganador 86", "fecha": "2026-07-07T18:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 96, "local": "Ganador 87", "visitante": "Ganador 88", "fecha": "2026-07-07T22:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "cuartos": [{"id_partido": 97, "local": "Ganador 89", "visitante": "Ganador 90", "fecha": "2026-07-09T22:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 98, "local": "Ganador 91", "visitante": "Ganador 92", "fecha": "2026-07-10T21:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 99, "local": "Ganador 93", "visitante": "Ganador 94", "fecha": "2026-07-11T23:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 100, "local": "Ganador 95", "visitante": "Ganador 96", "fecha": "2026-07-12T03:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "semifinales": [{"id_partido": 101, "local": "Ganador 97", "visitante": "Ganador 98", "fecha": "2026-07-14T21:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 102, "local": "Ganador 99", "visitante": "Ganador 100", "fecha": "2026-07-15T21:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}], "finales": [{"id_partido": 103, "local": "Perdedor 101", "visitante": "Perdedor 102", "fecha": "2026-07-18T23:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}, {"id_partido": 104, "local": "Ganador 101", "visitante": "Ganador 102", "fecha": "2026-07-19T21:00:00", "estado": "notstarted", "goles_local": "", "goles_visitante": ""}]};
         const FASES_ORDEN = ["dieciseisavos", "octavos", "cuartos", "semifinales", "finales"];
         
         let FASE_TARGET = "dieciseisavos";

@@ -4,6 +4,7 @@
             {
                 "local": "Argentina",
                 "visitante": "Argelia",
+                "fecha": "2026-06-17T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -11,6 +12,7 @@
             {
                 "local": "Austria",
                 "visitante": "Jordania",
+                "fecha": "2026-06-17T06:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -18,6 +20,7 @@
             {
                 "local": "Argentina",
                 "visitante": "Austria",
+                "fecha": "2026-06-22T19:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -25,6 +28,7 @@
             {
                 "local": "Jordania",
                 "visitante": "Argelia",
+                "fecha": "2026-06-23T05:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -32,6 +36,7 @@
             {
                 "local": "Argelia",
                 "visitante": "Austria",
+                "fecha": "2026-06-28T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -39,6 +44,7 @@
             {
                 "local": "Jordania",
                 "visitante": "Argentina",
+                "fecha": "2026-06-28T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -48,6 +54,7 @@
             {
                 "local": "Portugal",
                 "visitante": "RD Congo",
+                "fecha": "2026-06-17T19:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -55,6 +62,7 @@
             {
                 "local": "Uzbekistán",
                 "visitante": "Colombia",
+                "fecha": "2026-06-18T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -62,6 +70,7 @@
             {
                 "local": "Portugal",
                 "visitante": "Uzbekistán",
+                "fecha": "2026-06-23T19:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -69,6 +78,7 @@
             {
                 "local": "Colombia",
                 "visitante": "RD Congo",
+                "fecha": "2026-06-24T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -76,6 +86,7 @@
             {
                 "local": "RD Congo",
                 "visitante": "Uzbekistán",
+                "fecha": "2026-06-28T01:30:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -83,6 +94,7 @@
             {
                 "local": "Colombia",
                 "visitante": "Portugal",
+                "fecha": "2026-06-28T01:30:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -92,6 +104,7 @@
             {
                 "local": "Inglaterra",
                 "visitante": "Croacia",
+                "fecha": "2026-06-17T22:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -99,6 +112,7 @@
             {
                 "local": "Ghana",
                 "visitante": "Panamá",
+                "fecha": "2026-06-18T01:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -106,6 +120,7 @@
             {
                 "local": "Inglaterra",
                 "visitante": "Ghana",
+                "fecha": "2026-06-23T22:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -113,6 +128,7 @@
             {
                 "local": "Panamá",
                 "visitante": "Croacia",
+                "fecha": "2026-06-24T01:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -120,6 +136,7 @@
             {
                 "local": "Croacia",
                 "visitante": "Ghana",
+                "fecha": "2026-06-27T23:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -127,6 +144,7 @@
             {
                 "local": "Panamá",
                 "visitante": "Inglaterra",
+                "fecha": "2026-06-27T23:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -136,6 +154,7 @@
             {
                 "local": "Bélgica",
                 "visitante": "Egipto",
+                "fecha": "2026-06-15T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -143,6 +162,7 @@
             {
                 "local": "Irán",
                 "visitante": "Nueva Zelanda",
+                "fecha": "2026-06-16T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -150,6 +170,7 @@
             {
                 "local": "Bélgica",
                 "visitante": "Irán",
+                "fecha": "2026-06-21T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -157,6 +178,7 @@
             {
                 "local": "Nueva Zelanda",
                 "visitante": "Egipto",
+                "fecha": "2026-06-22T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -164,6 +186,7 @@
             {
                 "local": "Nueva Zelanda",
                 "visitante": "Bélgica",
+                "fecha": "2026-06-27T05:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -171,6 +194,7 @@
             {
                 "local": "Egipto",
                 "visitante": "Irán",
+                "fecha": "2026-06-27T05:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -180,6 +204,7 @@
             {
                 "local": "España",
                 "visitante": "Cabo Verde",
+                "fecha": "2026-06-15T18:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -187,6 +212,7 @@
             {
                 "local": "Arabia Saudita",
                 "visitante": "Uruguay",
+                "fecha": "2026-06-16T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -194,6 +220,7 @@
             {
                 "local": "España",
                 "visitante": "Arabia Saudita",
+                "fecha": "2026-06-21T18:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -201,6 +228,7 @@
             {
                 "local": "Uruguay",
                 "visitante": "Cabo Verde",
+                "fecha": "2026-06-22T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -208,6 +236,7 @@
             {
                 "local": "Cabo Verde",
                 "visitante": "Arabia Saudita",
+                "fecha": "2026-06-27T02:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -215,6 +244,7 @@
             {
                 "local": "Uruguay",
                 "visitante": "España",
+                "fecha": "2026-06-27T02:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -224,6 +254,7 @@
             {
                 "local": "Francia",
                 "visitante": "Senegal",
+                "fecha": "2026-06-16T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -231,6 +262,7 @@
             {
                 "local": "Irak",
                 "visitante": "Noruega",
+                "fecha": "2026-06-17T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -238,6 +270,7 @@
             {
                 "local": "Francia",
                 "visitante": "Irak",
+                "fecha": "2026-06-22T23:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -245,6 +278,7 @@
             {
                 "local": "Noruega",
                 "visitante": "Senegal",
+                "fecha": "2026-06-23T02:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -252,6 +286,7 @@
             {
                 "local": "Senegal",
                 "visitante": "Irak",
+                "fecha": "2026-06-26T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -259,6 +294,7 @@
             {
                 "local": "Noruega",
                 "visitante": "Francia",
+                "fecha": "2026-06-26T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -268,6 +304,7 @@
             {
                 "local": "Estados Unidos",
                 "visitante": "Paraguay",
+                "fecha": "2026-06-13T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -275,6 +312,7 @@
             {
                 "local": "Australia",
                 "visitante": "Turquía",
+                "fecha": "2026-06-14T06:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -282,6 +320,7 @@
             {
                 "local": "Estados Unidos",
                 "visitante": "Australia",
+                "fecha": "2026-06-19T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -289,6 +328,7 @@
             {
                 "local": "Turquía",
                 "visitante": "Paraguay",
+                "fecha": "2026-06-19T05:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -296,6 +336,7 @@
             {
                 "local": "Paraguay",
                 "visitante": "Australia",
+                "fecha": "2026-06-26T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -303,6 +344,7 @@
             {
                 "local": "Turquía",
                 "visitante": "Estados Unidos",
+                "fecha": "2026-06-26T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -312,6 +354,7 @@
             {
                 "local": "Países Bajos",
                 "visitante": "Japón",
+                "fecha": "2026-06-14T22:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -319,6 +362,7 @@
             {
                 "local": "Suecia",
                 "visitante": "Túnez",
+                "fecha": "2026-06-15T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -326,6 +370,7 @@
             {
                 "local": "Países Bajos",
                 "visitante": "Suecia",
+                "fecha": "2026-06-20T19:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -333,6 +378,7 @@
             {
                 "local": "Túnez",
                 "visitante": "Japón",
+                "fecha": "2026-06-21T06:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -340,6 +386,7 @@
             {
                 "local": "Japón",
                 "visitante": "Suecia",
+                "fecha": "2026-06-26T01:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -347,6 +394,7 @@
             {
                 "local": "Túnez",
                 "visitante": "Países Bajos",
+                "fecha": "2026-06-26T01:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -356,6 +404,7 @@
             {
                 "local": "Alemania",
                 "visitante": "Curazao",
+                "fecha": "2026-06-14T19:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -363,6 +412,7 @@
             {
                 "local": "Costa de Marfil",
                 "visitante": "Ecuador",
+                "fecha": "2026-06-15T01:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -370,6 +420,7 @@
             {
                 "local": "Alemania",
                 "visitante": "Costa de Marfil",
+                "fecha": "2026-06-20T22:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -377,6 +428,7 @@
             {
                 "local": "Ecuador",
                 "visitante": "Curazao",
+                "fecha": "2026-06-21T02:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -384,6 +436,7 @@
             {
                 "local": "Curazao",
                 "visitante": "Costa de Marfil",
+                "fecha": "2026-06-25T22:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -391,6 +444,7 @@
             {
                 "local": "Ecuador",
                 "visitante": "Alemania",
+                "fecha": "2026-06-25T22:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -400,6 +454,7 @@
             {
                 "local": "México",
                 "visitante": "Sudáfrica",
+                "fecha": "2026-06-11T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -407,6 +462,7 @@
             {
                 "local": "Corea del Sur",
                 "visitante": "República Checa",
+                "fecha": "2026-06-12T04:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -414,6 +470,7 @@
             {
                 "local": "República Checa",
                 "visitante": "Sudáfrica",
+                "fecha": "2026-06-18T18:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -421,6 +478,7 @@
             {
                 "local": "México",
                 "visitante": "Corea del Sur",
+                "fecha": "2026-06-19T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -428,6 +486,7 @@
             {
                 "local": "Sudáfrica",
                 "visitante": "Corea del Sur",
+                "fecha": "2026-06-25T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -435,6 +494,7 @@
             {
                 "local": "República Checa",
                 "visitante": "México",
+                "fecha": "2026-06-25T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -444,6 +504,7 @@
             {
                 "local": "Brasil",
                 "visitante": "Marruecos",
+                "fecha": "2026-06-14T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -451,6 +512,7 @@
             {
                 "local": "Haití",
                 "visitante": "Escocia",
+                "fecha": "2026-06-14T03:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -458,6 +520,7 @@
             {
                 "local": "Escocia",
                 "visitante": "Marruecos",
+                "fecha": "2026-06-20T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -465,6 +528,7 @@
             {
                 "local": "Brasil",
                 "visitante": "Haití",
+                "fecha": "2026-06-20T02:30:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -472,6 +536,7 @@
             {
                 "local": "Escocia",
                 "visitante": "Brasil",
+                "fecha": "2026-06-25T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -479,6 +544,7 @@
             {
                 "local": "Marruecos",
                 "visitante": "Haití",
+                "fecha": "2026-06-25T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -488,6 +554,7 @@
             {
                 "local": "Canadá",
                 "visitante": "Bosnia-Herzegovina",
+                "fecha": "2026-06-12T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -495,6 +562,7 @@
             {
                 "local": "Qatar",
                 "visitante": "Suiza",
+                "fecha": "2026-06-13T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -502,6 +570,7 @@
             {
                 "local": "Suiza",
                 "visitante": "Bosnia-Herzegovina",
+                "fecha": "2026-06-18T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -509,6 +578,7 @@
             {
                 "local": "Canadá",
                 "visitante": "Qatar",
+                "fecha": "2026-06-19T00:00:01",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -516,6 +586,7 @@
             {
                 "local": "Bosnia-Herzegovina",
                 "visitante": "Qatar",
+                "fecha": "2026-06-24T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -523,6 +594,7 @@
             {
                 "local": "Suiza",
                 "visitante": "Canadá",
+                "fecha": "2026-06-24T21:00:00",
                 "goles_local": "",
                 "goles_visitante": "",
                 "estado": "notstarted"
@@ -534,128 +606,144 @@
         "dieciseisavos": [
             {
                 "id_partido": 73,
-                "local": "2A",
-                "visitante": "2B",
+                "local": "1E",
+                "visitante": "3A/3B/3C/3D/3F",
+                "fecha": "2026-06-29T22:30:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 74,
-                "local": "1E",
-                "visitante": "3A/3B/3C/3D/3F",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
-            },
-            {
-                "id_partido": 77,
                 "local": "1I",
                 "visitante": "3C/3D/3F/3G/3H",
+                "fecha": "2026-06-30T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 75,
-                "local": "1F",
-                "visitante": "2C",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
-            },
-            {
-                "id_partido": 83,
-                "local": "2K",
-                "visitante": "2L",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
-            },
-            {
-                "id_partido": 84,
-                "local": "1H",
-                "visitante": "2J",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
-            },
-            {
-                "id_partido": 81,
-                "local": "1D",
-                "visitante": "3B/3E/3F/3I/3J",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
-            },
-            {
-                "id_partido": 82,
-                "local": "1G",
-                "visitante": "3A/3E/3H/3I/3J",
+                "local": "2A",
+                "visitante": "2B",
+                "fecha": "2026-06-28T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 76,
-                "local": "1C",
-                "visitante": "2F",
+                "local": "1F",
+                "visitante": "2C",
+                "fecha": "2026-06-30T03:00:00",
+                "estado": "notstarted",
+                "goles_local": "",
+                "goles_visitante": ""
+            },
+            {
+                "id_partido": 77,
+                "local": "2K",
+                "visitante": "2L",
+                "fecha": "2026-07-03T01:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 78,
-                "local": "2E",
-                "visitante": "2I",
+                "local": "1H",
+                "visitante": "2J",
+                "fecha": "2026-07-02T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 79,
-                "local": "1A",
-                "visitante": "3C/3E/3F/3H/3I",
+                "local": "1D",
+                "visitante": "3B/3E/3F/3I/3J",
+                "fecha": "2026-07-02T02:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 80,
+                "local": "1G",
+                "visitante": "3A/3E/3H/3I/3J",
+                "fecha": "2026-07-01T22:00:00",
+                "estado": "notstarted",
+                "goles_local": "",
+                "goles_visitante": ""
+            },
+            {
+                "id_partido": 81,
+                "local": "1C",
+                "visitante": "2F",
+                "fecha": "2026-06-29T19:00:00",
+                "estado": "notstarted",
+                "goles_local": "",
+                "goles_visitante": ""
+            },
+            {
+                "id_partido": 82,
+                "local": "2E",
+                "visitante": "2I",
+                "fecha": "2026-06-30T19:00:00",
+                "estado": "notstarted",
+                "goles_local": "",
+                "goles_visitante": ""
+            },
+            {
+                "id_partido": 83,
+                "local": "1A",
+                "visitante": "3C/3E/3F/3H/3I",
+                "fecha": "2026-07-01T03:00:00",
+                "estado": "notstarted",
+                "goles_local": "",
+                "goles_visitante": ""
+            },
+            {
+                "id_partido": 84,
                 "local": "1L",
                 "visitante": "3E/3H/3I/3J/3K",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
-            },
-            {
-                "id_partido": 86,
-                "local": "1J",
-                "visitante": "2H",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
-            },
-            {
-                "id_partido": 88,
-                "local": "2D",
-                "visitante": "2G",
+                "fecha": "2026-07-01T18:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 85,
-                "local": "1B",
-                "visitante": "3E/3F/3G/3I/3J",
+                "local": "1J",
+                "visitante": "2H",
+                "fecha": "2026-07-04T00:00:01",
+                "estado": "notstarted",
+                "goles_local": "",
+                "goles_visitante": ""
+            },
+            {
+                "id_partido": 86,
+                "local": "2D",
+                "visitante": "2G",
+                "fecha": "2026-07-03T20:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
             },
             {
                 "id_partido": 87,
+                "local": "1B",
+                "visitante": "3E/3F/3G/3I/3J",
+                "fecha": "2026-07-03T05:00:00",
+                "estado": "notstarted",
+                "goles_local": "",
+                "goles_visitante": ""
+            },
+            {
+                "id_partido": 88,
                 "local": "1K",
                 "visitante": "3D/3E/3I/3J/3L",
+                "fecha": "2026-07-04T03:30:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -666,6 +754,7 @@
                 "id_partido": 89,
                 "local": "Ganador 73",
                 "visitante": "Ganador 74",
+                "fecha": "2026-07-04T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -674,6 +763,7 @@
                 "id_partido": 90,
                 "local": "Ganador 75",
                 "visitante": "Ganador 76",
+                "fecha": "2026-07-04T19:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -682,6 +772,7 @@
                 "id_partido": 91,
                 "local": "Ganador 77",
                 "visitante": "Ganador 78",
+                "fecha": "2026-07-06T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -690,6 +781,7 @@
                 "id_partido": 92,
                 "local": "Ganador 79",
                 "visitante": "Ganador 80",
+                "fecha": "2026-07-07T02:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -698,6 +790,7 @@
                 "id_partido": 93,
                 "local": "Ganador 81",
                 "visitante": "Ganador 82",
+                "fecha": "2026-07-05T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -706,6 +799,7 @@
                 "id_partido": 94,
                 "local": "Ganador 83",
                 "visitante": "Ganador 84",
+                "fecha": "2026-07-06T02:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -714,6 +808,7 @@
                 "id_partido": 95,
                 "local": "Ganador 85",
                 "visitante": "Ganador 86",
+                "fecha": "2026-07-07T18:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -722,6 +817,7 @@
                 "id_partido": 96,
                 "local": "Ganador 87",
                 "visitante": "Ganador 88",
+                "fecha": "2026-07-07T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -732,6 +828,7 @@
                 "id_partido": 97,
                 "local": "Ganador 89",
                 "visitante": "Ganador 90",
+                "fecha": "2026-07-09T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -740,6 +837,7 @@
                 "id_partido": 98,
                 "local": "Ganador 91",
                 "visitante": "Ganador 92",
+                "fecha": "2026-07-10T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -748,6 +846,7 @@
                 "id_partido": 99,
                 "local": "Ganador 93",
                 "visitante": "Ganador 94",
+                "fecha": "2026-07-11T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -756,6 +855,7 @@
                 "id_partido": 100,
                 "local": "Ganador 95",
                 "visitante": "Ganador 96",
+                "fecha": "2026-07-12T03:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -766,6 +866,7 @@
                 "id_partido": 101,
                 "local": "Ganador 97",
                 "visitante": "Ganador 98",
+                "fecha": "2026-07-14T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -774,6 +875,7 @@
                 "id_partido": 102,
                 "local": "Ganador 99",
                 "visitante": "Ganador 100",
+                "fecha": "2026-07-15T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -784,6 +886,7 @@
                 "id_partido": 103,
                 "local": "Perdedor 101",
                 "visitante": "Perdedor 102",
+                "fecha": "2026-07-18T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
@@ -794,6 +897,7 @@
                 "id_partido": 104,
                 "local": "Ganador 101",
                 "visitante": "Ganador 102",
+                "fecha": "2026-07-19T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
                 "goles_visitante": ""
