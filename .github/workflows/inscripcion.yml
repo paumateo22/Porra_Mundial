@@ -33,7 +33,7 @@ jobs:
 
       - name: Extraer y generar carpetas de jugadores
         run: |
-          python scripts/05b_extractor_jugadores.py
+          python scripts/01_extractor_infobae.py
 
       - name: Guardar cambios y subir a GitHub (Auto-Commit)
         run: |
