@@ -1,6 +1,8 @@
 import sys
 import json
+import re
 from pathlib import Path
+from datetime import datetime, timezone, timedelta
 from curl_cffi import requests
 
 # Conectar con la raíz del proyecto
@@ -13,39 +15,107 @@ sys.path.append(str(ROOT_DIR))
 UNIQUE_TOURNAMENT_ID = 16
 SEASON_ID = 58210  # ID actual de SofaScore para 2026. Revisar días antes del torneo.
 
-# Diccionario traductor base (Se ampliará cuando se clasifiquen los 48 equipos)
-TRADUCCIONES = {
-    "Netherlands": "Países Bajos", "USA": "Estados Unidos", "Argentina": "Argentina",
-    "Australia": "Australia", "France": "Francia", "Poland": "Polonia",
-    "England": "Inglaterra", "Senegal": "Senegal", "Japan": "Japón",
-    "Croatia": "Croacia", "Brazil": "Brasil", "South Korea": "Corea del Sur",
-    "Morocco": "Marruecos", "Spain": "España", "Portugal": "Portugal",
-    "Switzerland": "Suiza", "Germany": "Alemania", "Belgium": "Bélgica",
-    "Cameroon": "Camerún", "Canada": "Canadá", "Costa Rica": "Costa Rica",
-    "Denmark": "Dinamarca", "Ecuador": "Ecuador", "Ghana": "Ghana",
-    "Iran": "Irán", "Mexico": "México", "Qatar": "Qatar",
-    "Saudi Arabia": "Arabia Saudita", "Serbia": "Serbia", "Tunisia": "Túnez",
-    "Uruguay": "Uruguay", "Wales": "Gales",
-    # Nuevos para 2026
-    "Czech Republic": "República Checa", "Czechia": "República Checa",
-    "South Africa": "Sudáfrica", "Norway": "Noruega", "Sweden": "Suecia",
-    "Colombia": "Colombia", "Chile": "Chile", "Paraguay": "Paraguay",
-    "Panama": "Panamá", "Bolivia": "Bolivia", "Peru": "Perú",
-    "Ivory Coast": "Costa de Marfil", "Cote d'Ivoire": "Costa de Marfil",
-    "Netherlands": "Países Bajos", "Austria": "Austria", "Algeria": "Argelia",
-    "Jordan": "Jordania", "RD Congo": "RD Congo",
-    "DR Congo": "RD Congo", "Democratic Republic of Congo": "RD Congo",
-    "Uzbekistan": "Uzbekistán", "New Zealand": "Nueva Zelanda",
-    "Scotland": "Escocia", "Haiti": "Haití", "Iraq": "Irak",
-    "Bosnia and Herzegovina": "Bosnia-Herzegovina",
-    "Cape Verde": "Cabo Verde", "Curacao": "Curazao",
-    "Turkey": "Turquía", "Turkiye": "Turquía",
-    "Tunisia": "Túnez",
-}
+# Zona horaria de España en verano (junio/julio 2026) = UTC+2
+# Nuestros ISOs están en hora local española, SofaScore devuelve UTC puro.
+# Al convertir nuestros ISOs a timestamp restamos este offset para comparar contra UTC.
+OFFSET_LOCAL_UTC = timedelta(hours=2)
 
-# Tolerancia en segundos para el matching por fecha (15 minutos)
+# Tolerancia para el matching por fecha: ±15 minutos
 TOLERANCIA_FECHA_SEGUNDOS = 900
 
+# Mapeo exacto de roundInfo_name de SofaScore → clave interna
+# Usamos comparación EXACTA (== en minúsculas) para evitar falsos positivos
+# como "semifinals" conteniendo "final".
+RONDA_A_FASE = {
+    "round of 32":      "dieciseisavos",   # por si 2026 usa este nombre
+    "round of 16":      "octavos",
+    "quarterfinals":    "cuartos",
+    "semifinals":       "semifinales",
+    "match for 3rd place": "tercer_puesto",
+    "final":            "final",
+}
+
+# Diccionario traductor inglés → español para equipos en eliminatorias.
+# Solo se usa en eliminatorias; en grupos solo actualizamos goles/estado.
+# TODO: completar/ajustar cuando comiencen los partidos del Mundial 2026
+# y veamos exactamente cómo escribe SofaScore cada nombre.
+TRADUCCIONES = {
+    # Confirmados en test 2022
+    "Argentina":            "Argentina",
+    "Australia":            "Australia",
+    "Belgium":              "Bélgica",
+    "Brazil":               "Brasil",
+    "Canada":               "Canadá",
+    "Croatia":              "Croacia",
+    "Denmark":              "Dinamarca",
+    "Ecuador":              "Ecuador",
+    "England":              "Inglaterra",
+    "France":               "Francia",
+    "Germany":              "Alemania",
+    "Ghana":                "Ghana",
+    "Iran":                 "Irán",
+    "Japan":                "Japón",
+    "Mexico":               "México",
+    "Morocco":              "Marruecos",
+    "Netherlands":          "Países Bajos",
+    "Poland":               "Polonia",
+    "Portugal":             "Portugal",
+    "Qatar":                "Qatar",
+    "Saudi Arabia":         "Arabia Saudita",
+    "Senegal":              "Senegal",
+    "Serbia":               "Serbia",
+    "South Korea":          "Corea del Sur",
+    "Spain":                "España",
+    "Switzerland":          "Suiza",
+    "Tunisia":              "Túnez",
+    "Uruguay":              "Uruguay",
+    "USA":                  "Estados Unidos",
+    "Wales":                "Gales",
+    # Probables para 2026 — ajustar si SofaScore usa otro nombre
+    "Algeria":              "Argelia",
+    "Austria":              "Austria",
+    "Bolivia":              "Bolivia",
+    "Bosnia and Herzegovina": "Bosnia-Herzegovina",
+    "Bosnia & Herzegovina": "Bosnia-Herzegovina",
+    "Cape Verde":           "Cabo Verde",
+    "Chile":                "Chile",
+    "Colombia":             "Colombia",
+    "Costa Rica":           "Costa Rica",
+    "Cuba":                 "Cuba",
+    "Curacao":              "Curazao",
+    "Czech Republic":       "República Checa",
+    "Czechia":              "República Checa",
+    "DR Congo":             "RD Congo",
+    "Democratic Republic of Congo": "RD Congo",
+    "Egypt":                "Egipto",
+    "Haiti":                "Haití",
+    "Honduras":             "Honduras",
+    "Indonesia":            "Indonesia",
+    "Iraq":                 "Irak",
+    "Ivory Coast":          "Costa de Marfil",
+    "Cote d'Ivoire":        "Costa de Marfil",
+    "Jamaica":              "Jamaica",
+    "Jordan":               "Jordania",
+    "New Zealand":          "Nueva Zelanda",
+    "Nigeria":              "Nigeria",
+    "Norway":               "Noruega",
+    "Panama":               "Panamá",
+    "Paraguay":             "Paraguay",
+    "Peru":                 "Perú",
+    "Scotland":             "Escocia",
+    "South Africa":         "Sudáfrica",
+    "Sweden":               "Suecia",
+    "Turkey":               "Turquía",
+    "Turkiye":              "Turquía",
+    "Ukraine":              "Ucrania",
+    "Uzbekistan":           "Uzbekistán",
+    "Venezuela":            "Venezuela",
+}
+
+
+# ====================================================================
+# DESCARGA
+# ====================================================================
 
 def obtener_partidos_mundial():
     headers = {
@@ -60,7 +130,10 @@ def obtener_partidos_mundial():
     pagina = 0
 
     while True:
-        url = f"https://api.sofascore.com/api/v1/unique-tournament/{UNIQUE_TOURNAMENT_ID}/season/{SEASON_ID}/events/last/{pagina}"
+        url = (
+            f"https://api.sofascore.com/api/v1/unique-tournament/{UNIQUE_TOURNAMENT_ID}"
+            f"/season/{SEASON_ID}/events/last/{pagina}"
+        )
         try:
             respuesta = requests.get(url, headers=headers, impersonate="chrome110")
             if respuesta.status_code != 200:
@@ -82,10 +155,49 @@ def obtener_partidos_mundial():
     return todos_los_eventos
 
 
+# ====================================================================
+# ESTRUCTURACIÓN
+# ====================================================================
+
+def calcular_goles_y_pasa(evento, local_es, visitante_es):
+    """Extrae goles sin penaltis y determina qué equipo pasa."""
+    estado = evento.get('status', {}).get('type')
+    score_home = evento.get('homeScore', {})
+    score_away = evento.get('awayScore', {})
+
+    penaltis_loc = score_home.get('penalties') or 0
+    penaltis_vis = score_away.get('penalties') or 0
+
+    if estado == 'notstarted':
+        return "", "", "TBD"
+
+    goles_loc = str((score_home.get('current') or 0) - penaltis_loc)
+    goles_vis = str((score_away.get('current') or 0) - penaltis_vis)
+
+    pasa = "TBD"
+    if estado == 'finished':
+        gl, gv = int(goles_loc), int(goles_vis)
+        if gl > gv:
+            pasa = local_es
+        elif gv > gl:
+            pasa = visitante_es
+        else:
+            # Empate en tiempo reglamentario → penaltis
+            if penaltis_loc > penaltis_vis:
+                pasa = local_es
+            elif penaltis_vis > penaltis_loc:
+                pasa = visitante_es
+
+    return goles_loc, goles_vis, pasa
+
+
 def estructurar_resultados_oficiales(eventos_crudos):
     """
-    Convierte los eventos crudos de SofaScore a un diccionario estructurado.
-    Incluye el timestamp Unix del partido para poder usarlo en el matching por fecha.
+    Clasifica los eventos en fase_grupos y eliminatorias.
+
+    - Fase de grupos: NO traduce nombres (solo goles/estado se usarán en el merge).
+    - Eliminatorias:  SÍ traduce nombres (se inyectarán cuando los placeholders se resuelvan).
+    - Guarda _timestamp UTC para el matching por fecha.
     """
     resultados = {
         "fase_grupos": {},
@@ -96,51 +208,34 @@ def estructurar_resultados_oficiales(eventos_crudos):
         }
     }
 
-    partidos_procesados = 0
-
     for evento in eventos_crudos:
-        estado = evento.get('status', {}).get('type')
-
-        local_eng = evento.get('homeTeam', {}).get('name', 'TBD')
-        visitante_eng = evento.get('awayTeam', {}).get('name', 'TBD')
-        local = TRADUCCIONES.get(local_eng, local_eng)
-        visitante = TRADUCCIONES.get(visitante_eng, visitante_eng)
-
-        score_home = evento.get('homeScore', {})
-        score_away = evento.get('awayScore', {})
-
-        penaltis_loc = score_home.get('penalties', 0)
-        penaltis_vis = score_away.get('penalties', 0)
-
-        goles_loc_str = str(score_home.get('current', 0) - penaltis_loc) if estado != 'notstarted' else ""
-        goles_vis_str = str(score_away.get('current', 0) - penaltis_vis) if estado != 'notstarted' else ""
-
-        pasa = "TBD"
-        if estado == 'finished':
-            if goles_loc_str and goles_vis_str:
-                if int(goles_loc_str) > int(goles_vis_str):
-                    pasa = local
-                elif int(goles_vis_str) > int(goles_loc_str):
-                    pasa = visitante
-                else:
-                    if penaltis_loc > penaltis_vis:
-                        pasa = local
-                    elif penaltis_vis > penaltis_loc:
-                        pasa = visitante
-                    else:
-                        pasa = "Empate"
-
-        nombre_ronda = evento.get('roundInfo', {}).get('name', '').lower()
-
-        # Timestamp Unix del partido (para matching por fecha en eliminatorias)
+        estado         = evento.get('status', {}).get('type')
+        nombre_ronda   = evento.get('roundInfo', {}).get('name', '')
+        nombre_ronda_n = nombre_ronda.strip().lower()  # normalizado para comparación
         timestamp_unix = evento.get('startTimestamp', 0)
 
-        es_eliminatoria = any(kw in nombre_ronda for kw in [
-            "16", "quarter", "semi", "final", "3rd", "1/8", "1/4", "32", "1/16", "round of"
-        ])
+        # ---- Determinar si es fase de grupos o eliminatoria ----
+        fase_interna = RONDA_A_FASE.get(nombre_ronda_n)  # None si es grupos
 
-        if not es_eliminatoria:
+        if fase_interna is None:
             # FASE DE GRUPOS
+            # No necesitamos traducir los nombres porque el merge de grupos
+            # solo actualizará goles/estado (matching por nombre ya en español).
+            local_raw     = evento.get('homeTeam', {}).get('name', 'TBD')
+            visitante_raw = evento.get('awayTeam', {}).get('name', 'TBD')
+
+            score_home = evento.get('homeScore', {})
+            score_away = evento.get('awayScore', {})
+            penaltis_loc = score_home.get('penalties') or 0
+            penaltis_vis = score_away.get('penalties') or 0
+
+            if estado == 'notstarted':
+                goles_loc_str = ""
+                goles_vis_str = ""
+            else:
+                goles_loc_str = str((score_home.get('current') or 0) - penaltis_loc)
+                goles_vis_str = str((score_away.get('current') or 0) - penaltis_vis)
+
             grupo_crudo = evento.get('tournament', {}).get('groupName', 'Group Desconocido')
             grupo = grupo_crudo.replace("Group", "Grupo").strip()
 
@@ -148,217 +243,228 @@ def estructurar_resultados_oficiales(eventos_crudos):
                 resultados["fase_grupos"][grupo] = []
 
             resultados["fase_grupos"][grupo].append({
-                "local": local,
-                "visitante": visitante,
-                "goles_local": goles_loc_str,
+                "local":           local_raw,      # en inglés, solo para el matching interno
+                "visitante":       visitante_raw,
+                "goles_local":     goles_loc_str,
                 "goles_visitante": goles_vis_str,
-                "estado": estado,
-                "_timestamp": timestamp_unix  # Auxiliar, se elimina tras el merge
+                "estado":          estado,
+                "_timestamp":      timestamp_unix
             })
 
         else:
-            # ELIMINATORIAS
+            # ELIMINATORIAS — aquí sí traducimos porque inyectaremos los nombres
+            local_eng     = evento.get('homeTeam', {}).get('name', 'TBD')
+            visitante_eng = evento.get('awayTeam', {}).get('name', 'TBD')
+            local_es      = TRADUCCIONES.get(local_eng, local_eng)
+            visitante_es  = TRADUCCIONES.get(visitante_eng, visitante_eng)
+
+            goles_loc, goles_vis, pasa = calcular_goles_y_pasa(evento, local_es, visitante_es)
+
             partido_elim = {
-                "local": local,
-                "visitante": visitante,
-                "pasa": pasa,
-                "estado": estado,
-                "goles_local": goles_loc_str,
-                "goles_visitante": goles_vis_str,
-                "_timestamp": timestamp_unix  # Auxiliar, se elimina tras el merge
+                "local":           local_es,
+                "visitante":       visitante_es,
+                "pasa":            pasa,
+                "estado":          estado,
+                "goles_local":     goles_loc,
+                "goles_visitante": goles_vis,
+                "_timestamp":      timestamp_unix
             }
 
-            if "32" in nombre_ronda or "1/16" in nombre_ronda or "round of 32" in nombre_ronda:
-                resultados["eliminatorias"]["dieciseisavos"].append(partido_elim)
-            elif "16" in nombre_ronda or "1/8" in nombre_ronda or "round of 16" in nombre_ronda:
-                resultados["eliminatorias"]["octavos"].append(partido_elim)
-            elif "quarter" in nombre_ronda or "1/4" in nombre_ronda:
-                resultados["eliminatorias"]["cuartos"].append(partido_elim)
-            elif "semi" in nombre_ronda or "1/2" in nombre_ronda:
-                resultados["eliminatorias"]["semifinales"].append(partido_elim)
-            elif "3rd" in nombre_ronda or "third" in nombre_ronda or "tercer" in nombre_ronda:
+            if fase_interna in ("tercer_puesto", "final"):
                 partido_elim["ganador"] = pasa
-                resultados["eliminatorias"]["tercer_puesto"].append(partido_elim)
-            elif "final" in nombre_ronda:
-                partido_elim["ganador"] = pasa
-                resultados["eliminatorias"]["final"].append(partido_elim)
 
-        partidos_procesados += 1
+            resultados["eliminatorias"][fase_interna].append(partido_elim)
 
     resultados["fase_grupos"] = dict(sorted(resultados["fase_grupos"].items()))
 
-    # Deducir clasificados desde los equipos reales en dieciseisavos
+    # Deducir clasificados desde los equipos conocidos en dieciseisavos (o octavos)
     ronda_corte = "dieciseisavos" if resultados["eliminatorias"]["dieciseisavos"] else "octavos"
-    equipos_clasificados = set()
+    clasificados = set()
     for p in resultados["eliminatorias"][ronda_corte]:
-        if p["local"] != "TBD":
-            equipos_clasificados.add(p["local"])
-        if p["visitante"] != "TBD":
-            equipos_clasificados.add(p["visitante"])
+        if p["local"] not in ("TBD", ""):
+            clasificados.add(p["local"])
+        if p["visitante"] not in ("TBD", ""):
+            clasificados.add(p["visitante"])
+    resultados["clasificados_a_dieciseisavos"] = sorted(list(clasificados))
 
-    resultados["clasificados_a_dieciseisavos"] = sorted(list(equipos_clasificados))
-
-    print(f"📊 Se han estructurado {partidos_procesados} partidos en el formato oficial temporal.")
     return resultados
 
 
-def iso_a_timestamp(fecha_iso: str) -> int:
-    """Convierte una fecha ISO 8601 sin zona horaria a timestamp Unix (UTC)."""
-    from datetime import datetime, timezone
+# ====================================================================
+# CONVERSIÓN DE FECHAS
+# ====================================================================
+
+def iso_local_a_timestamp_utc(fecha_iso: str) -> int:
+    """
+    Convierte una fecha ISO en hora local española (UTC+2 en verano)
+    a timestamp Unix UTC, para poder comparar contra los timestamps de SofaScore.
+    """
     if not fecha_iso:
         return 0
     try:
-        # Asumimos hora local de España (UTC+2 en verano, donde se juega el torneo)
-        # Pero los JSONs están en hora local ya, así que comparamos directamente
-        dt = datetime.fromisoformat(fecha_iso)
-        # Devolvemos segundos desde epoch sin ajuste TZ (comparación relativa)
-        return int(dt.timestamp())
+        dt_local = datetime.fromisoformat(fecha_iso)
+        # Restamos el offset para obtener UTC
+        dt_utc = dt_local - OFFSET_LOCAL_UTC
+        return int(dt_utc.replace(tzinfo=timezone.utc).timestamp())
     except Exception:
         return 0
 
 
-def hacer_update_selectivo(realidad_actual, resultados_nuevos):
-    """
-    Actualiza la realidad oficial con los datos de SofaScore.
-
-    FASE DE GRUPOS: Matching por nombre de equipo (local + visitante).
-    ELIMINATORIAS: Matching por fecha/hora del partido (tolerancia ±15 min).
-                   Esto resuelve el problema de los placeholders (1E, 3A/3B...).
-                   Cuando SofaScore ya sabe quiénes juegan, inyectamos los nombres
-                   reales en el JSON, preservando id_partido y fecha originales.
-    """
-
-    # ---- 1. FASE DE GRUPOS (matching por nombre) ----
-    for grupo, partidos_actuales in realidad_actual.get("fase_grupos", {}).items():
-        partidos_nuevos = resultados_nuevos.get("fase_grupos", {}).get(grupo, [])
-
-        for p_act in partidos_actuales:
-            for p_nuevo in partidos_nuevos:
-                mismos_equipos_directos = (
-                    p_act.get("local") == p_nuevo["local"] and
-                    p_act.get("visitante") == p_nuevo["visitante"]
-                )
-                mismos_equipos_invertidos = (
-                    p_act.get("local") == p_nuevo["visitante"] and
-                    p_act.get("visitante") == p_nuevo["local"]
-                )
-
-                if mismos_equipos_directos:
-                    p_act["goles_local"] = p_nuevo["goles_local"]
-                    p_act["goles_visitante"] = p_nuevo["goles_visitante"]
-                    p_act["estado"] = p_nuevo["estado"]
-                    break
-                elif mismos_equipos_invertidos:
-                    # SofaScore invirtió el orden local/visitante (raro pero posible)
-                    p_act["goles_local"] = p_nuevo["goles_visitante"]
-                    p_act["goles_visitante"] = p_nuevo["goles_local"]
-                    p_act["estado"] = p_nuevo["estado"]
-                    break
-
-    # ---- 2. ELIMINATORIAS (matching por fecha) ----
-    for fase, partidos_actuales in realidad_actual.get("eliminatorias", {}).items():
-        partidos_nuevos = resultados_nuevos.get("eliminatorias", {}).get(fase, [])
-
-        if not partidos_nuevos:
-            continue
-
-        # Construimos un índice de los partidos de SofaScore por timestamp
-        # para hacer el lookup en O(1)
-        index_sofascore = {}  # timestamp_unix -> partido_sofascore
-        for p_nuevo in partidos_nuevos:
-            ts = p_nuevo.get("_timestamp", 0)
-            if ts:
-                index_sofascore[ts] = p_nuevo
-
-        for p_act in partidos_actuales:
-            # Convertimos la fecha ISO del partido actual a timestamp
-            ts_act = iso_a_timestamp(p_act.get("fecha", ""))
-            if not ts_act:
-                continue
-
-            # Buscamos el partido de SofaScore más cercano en tiempo
-            mejor_match = None
-            menor_diff = float('inf')
-
-            for ts_nuevo, p_nuevo in index_sofascore.items():
-                diff = abs(ts_act - ts_nuevo)
-                if diff < menor_diff:
-                    menor_diff = diff
-                    mejor_match = p_nuevo
-
-            # Solo hacemos el merge si la diferencia es menor a la tolerancia
-            if mejor_match and menor_diff <= TOLERANCIA_FECHA_SEGUNDOS:
-                p_nuevo = mejor_match
-
-                # SIEMPRE actualizamos goles y estado
-                p_act["goles_local"] = p_nuevo["goles_local"]
-                p_act["goles_visitante"] = p_nuevo["goles_visitante"]
-                p_act["estado"] = p_nuevo["estado"]
-
-                if p_nuevo.get("pasa") and p_nuevo["pasa"] != "TBD":
-                    p_act["pasa"] = p_nuevo["pasa"]
-
-                if p_nuevo.get("ganador"):
-                    p_act["ganador"] = p_nuevo["ganador"]
-
-                # INYECCIÓN DE EQUIPOS REALES cuando los placeholders ya se conocen
-                # Un placeholder es cualquier valor que no sea un nombre de país real.
-                # Lo detectamos comprobando si contiene "/" o es mayúscula corta (1E, 2A, etc.)
-                local_actual = p_act.get("local", "")
-                visitante_actual = p_act.get("visitante", "")
-
-                local_es_placeholder = _es_placeholder(local_actual)
-                visitante_es_placeholder = _es_placeholder(visitante_actual)
-
-                local_sofascore = p_nuevo.get("local", "")
-                visitante_sofascore = p_nuevo.get("visitante", "")
-
-                if local_es_placeholder and local_sofascore and local_sofascore != "TBD":
-                    p_act["local"] = local_sofascore
-                    print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: "
-                          f"'{local_actual}' → '{local_sofascore}'")
-
-                if visitante_es_placeholder and visitante_sofascore and visitante_sofascore != "TBD":
-                    p_act["visitante"] = visitante_sofascore
-                    print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: "
-                          f"'{visitante_actual}' → '{visitante_sofascore}'")
-
-    # ---- 3. Actualizar clasificados si SofaScore ya los tiene ----
-    if resultados_nuevos.get("clasificados_a_dieciseisavos"):
-        realidad_actual["clasificados_a_dieciseisavos"] = resultados_nuevos["clasificados_a_dieciseisavos"]
-
-    return realidad_actual
-
+# ====================================================================
+# HELPERS
+# ====================================================================
 
 def _es_placeholder(nombre: str) -> bool:
     """
-    Detecta si un nombre de equipo es un placeholder (1E, 2A, 3A/3B/3C..., Ganador 73, etc.)
+    Devuelve True si el nombre es un placeholder (1E, 3A/3B/3C, Ganador 73...)
     en lugar de un nombre de país real.
     """
     if not nombre:
         return False
-
-    # Formatos de placeholder conocidos:
-    # - "1E", "2A", "3A/3B/3C/3D/3F"  → posiciones de grupo
-    # - "Ganador 73", "Perdedor 101"    → resultados de partidos anteriores
-    import re
-
-    # Placeholder tipo posición: empieza por dígito + letra(s) o tiene "/"
-    if re.match(r'^\d[A-Z]', nombre):
+    if re.match(r'^\d[A-Z]', nombre):   # "1E", "2A", "3F"
         return True
-    if "/" in nombre:
+    if "/" in nombre:                    # "3A/3B/3C/3D/3F"
         return True
-
-    # Placeholder tipo "Ganador N" o "Perdedor N"
     if re.match(r'^(Ganador|Perdedor)\s+\d+$', nombre, re.IGNORECASE):
         return True
-
-    # Placeholder tipo "Eq. 73A"
     if re.match(r'^Eq\.\s+\d+', nombre):
         return True
-
     return False
 
+
+# ====================================================================
+# MERGE SELECTIVO
+# ====================================================================
+
+def hacer_update_selectivo(realidad_actual, resultados_nuevos):
+    """
+    Actualiza realidad_oficial.json con los datos de SofaScore.
+
+    FASE DE GRUPOS:
+        Matching por nombre de equipo (local + visitante, ya en español en nuestro JSON).
+        Solo sobreescribe goles_local, goles_visitante y estado.
+        NO toca local/visitante (ya están bien desde el principio).
+
+    ELIMINATORIAS:
+        Matching por fecha/hora UTC con tolerancia ±15 min.
+        Sobreescribe goles, estado y pasa.
+        Si el local/visitante actual es un placeholder, lo sustituye por el nombre
+        real que devuelve SofaScore (ya traducido al español).
+    """
+
+    # ---- 1. FASE DE GRUPOS: matching por nombre ----
+    for grupo, partidos_actuales in realidad_actual.get("fase_grupos", {}).items():
+        # Construimos un índice rápido por (local_en_inglés, visitante_en_inglés)
+        # de los partidos nuevos
+        index_grupos = {}
+        for p_nuevo in resultados_nuevos.get("fase_grupos", {}).get(grupo, []):
+            key_directo  = (p_nuevo["local"],     p_nuevo["visitante"])
+            key_invertido = (p_nuevo["visitante"], p_nuevo["local"])
+            index_grupos[key_directo]  = ("directo",   p_nuevo)
+            index_grupos[key_invertido] = ("invertido", p_nuevo)
+
+        for p_act in partidos_actuales:
+            # Nuestro JSON tiene los nombres en español → los traducimos al inglés
+            # para buscar en el índice de SofaScore.
+            # Estrategia más robusta: buscar directamente comparando los valores
+            # en inglés que SofaScore devuelve contra los valores traducidos que tenemos.
+            local_act = p_act.get("local", "")
+            vis_act   = p_act.get("visitante", "")
+
+            match_found = None
+            invertido   = False
+
+            for p_nuevo in resultados_nuevos.get("fase_grupos", {}).get(grupo, []):
+                loc_n = TRADUCCIONES.get(p_nuevo["local"], p_nuevo["local"])
+                vis_n = TRADUCCIONES.get(p_nuevo["visitante"], p_nuevo["visitante"])
+
+                if loc_n == local_act and vis_n == vis_act:
+                    match_found = p_nuevo
+                    invertido   = False
+                    break
+                elif loc_n == vis_act and vis_n == local_act:
+                    match_found = p_nuevo
+                    invertido   = True
+                    break
+
+            if match_found:
+                if not invertido:
+                    p_act["goles_local"]     = match_found["goles_local"]
+                    p_act["goles_visitante"] = match_found["goles_visitante"]
+                else:
+                    # SofaScore tiene los equipos al revés
+                    p_act["goles_local"]     = match_found["goles_visitante"]
+                    p_act["goles_visitante"] = match_found["goles_local"]
+                p_act["estado"] = match_found["estado"]
+
+    # ---- 2. ELIMINATORIAS: matching por fecha UTC ----
+    for fase, partidos_actuales in realidad_actual.get("eliminatorias", {}).items():
+        partidos_nuevos = resultados_nuevos.get("eliminatorias", {}).get(fase, [])
+        if not partidos_nuevos:
+            continue
+
+        # Índice timestamp_utc → partido nuevo
+        index_elim = {
+            p["_timestamp"]: p
+            for p in partidos_nuevos
+            if p.get("_timestamp")
+        }
+
+        for p_act in partidos_actuales:
+            ts_act = iso_local_a_timestamp_utc(p_act.get("fecha", ""))
+            if not ts_act:
+                continue
+
+            # Buscar el partido más cercano en tiempo
+            mejor_match  = None
+            menor_diff   = float('inf')
+            for ts_nuevo, p_nuevo in index_elim.items():
+                diff = abs(ts_act - ts_nuevo)
+                if diff < menor_diff:
+                    menor_diff  = diff
+                    mejor_match = p_nuevo
+
+            if not mejor_match or menor_diff > TOLERANCIA_FECHA_SEGUNDOS:
+                continue
+
+            p_nuevo = mejor_match
+
+            # Actualizar goles, estado y quién pasa
+            p_act["goles_local"]     = p_nuevo["goles_local"]
+            p_act["goles_visitante"] = p_nuevo["goles_visitante"]
+            p_act["estado"]          = p_nuevo["estado"]
+
+            if p_nuevo.get("pasa") and p_nuevo["pasa"] != "TBD":
+                p_act["pasa"] = p_nuevo["pasa"]
+
+            if p_nuevo.get("ganador"):
+                p_act["ganador"] = p_nuevo["ganador"]
+
+            # Inyectar nombres reales si los actuales son placeholders
+            local_act = p_act.get("local", "")
+            vis_act   = p_act.get("visitante", "")
+
+            if _es_placeholder(local_act) and p_nuevo["local"] not in ("TBD", ""):
+                print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: "
+                      f"'{local_act}' → '{p_nuevo['local']}'")
+                p_act["local"] = p_nuevo["local"]
+
+            if _es_placeholder(vis_act) and p_nuevo["visitante"] not in ("TBD", ""):
+                print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: "
+                      f"'{vis_act}' → '{p_nuevo['visitante']}'")
+                p_act["visitante"] = p_nuevo["visitante"]
+
+    # ---- 3. Clasificados ----
+    if resultados_nuevos.get("clasificados_a_dieciseisavos"):
+        realidad_actual["clasificados_a_dieciseisavos"] = \
+            resultados_nuevos["clasificados_a_dieciseisavos"]
+
+    return realidad_actual
+
+
+# ====================================================================
+# PUNTO DE ENTRADA
+# ====================================================================
 
 def ejecutar_05_scraper():
     print("=======================================================")
@@ -367,7 +473,7 @@ def ejecutar_05_scraper():
 
     eventos_crudos = obtener_partidos_mundial()
     if not eventos_crudos:
-        print("⚠️ No hay datos en SofaScore para este torneo todavía. Manteniendo realidad anterior.")
+        print("⚠️ No hay datos en SofaScore todavía. Manteniendo realidad anterior.")
         return
 
     resultados_nuevos = estructurar_resultados_oficiales(eventos_crudos)
@@ -376,7 +482,11 @@ def ejecutar_05_scraper():
     carpeta_resultados.mkdir(parents=True, exist_ok=True)
     ruta_guardado = carpeta_resultados / "realidad_oficial.json"
 
-    realidad_actual = {"fase_grupos": {}, "clasificados_a_dieciseisavos": [], "eliminatorias": {}}
+    realidad_actual = {
+        "fase_grupos": {},
+        "clasificados_a_dieciseisavos": [],
+        "eliminatorias": {}
+    }
     if ruta_guardado.exists():
         with open(ruta_guardado, 'r', encoding='utf-8') as f:
             try:
@@ -387,19 +497,19 @@ def ejecutar_05_scraper():
     print("\n🔄 Iniciando merge selectivo...")
     realidad_actualizada = hacer_update_selectivo(realidad_actual, resultados_nuevos)
 
-    # Limpiar campos auxiliares "_timestamp" que no deben persistir en el JSON
-    for grupo, partidos in realidad_actualizada.get("fase_grupos", {}).items():
+    # Limpiar campos auxiliares antes de escribir
+    for partidos in realidad_actualizada.get("fase_grupos", {}).values():
         for p in partidos:
             p.pop("_timestamp", None)
-    for fase, partidos in realidad_actualizada.get("eliminatorias", {}).items():
+    for partidos in realidad_actualizada.get("eliminatorias", {}).values():
         for p in partidos:
             p.pop("_timestamp", None)
 
     with open(ruta_guardado, 'w', encoding='utf-8') as f:
         json.dump(realidad_actualizada, f, ensure_ascii=False, indent=4)
 
-    print(f"\n💾 ¡Realidad oficial actualizada con éxito en: {ruta_guardado.relative_to(ROOT_DIR)}")
-    print("   (Update selectivo: grupos por nombre, eliminatorias por fecha)")
+    print(f"\n💾 Realidad oficial actualizada en: {ruta_guardado.relative_to(ROOT_DIR)}")
+    print("   Grupos → matching por nombre | Eliminatorias → matching por fecha UTC")
 
 
 if __name__ == "__main__":
