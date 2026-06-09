@@ -399,6 +399,9 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
             setInterval(updateWidgets, 1000);
             updateWidgets();
         </script>
+
+        <script data-goatcounter="https://porramundial.goatcounter.com/count"async src="//gc.zgo.at/count.js"></script>
+        
     </header>
     """
 
