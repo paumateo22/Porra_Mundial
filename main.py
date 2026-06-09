@@ -49,7 +49,7 @@ def mostrar_menu():
         print("  6. 🎨 Generar Vistas GitHub (07)")
 
         print("\n--- 📊 FASE 3: VISUALIZACIÓN ---")
-        print("  7. 🎨 Generar Vistas Web (07b1-4 + 07b5 + 07b6 + 07b7)")
+        print("  7. 🎨 Generar Vistas Web (07b1-4 + 07b5 + 07b6 + 07b7 + 07b8)")
         
         print("\n--- 🛠️  HERRAMIENTAS DE DESARROLLADOR ---")
         print("  9. 🎲 Ejecutar Simulador de Mundial Completo (99)")
@@ -95,6 +95,7 @@ def mostrar_menu():
                 ejecutar_script("07b5_html_dashboards.py")
                 ejecutar_script("07b6_html_pronosticos.py")
                 ejecutar_script("07b7_html_generador.py")
+                ejecutar_script("07b8_html_jornadas.py")
         elif opcion == "9":
             print("\n🎲 Creando un multiverso alternativo...")
             ejecutar_script("99_simulador_realidad.py")
@@ -116,7 +117,8 @@ def mostrar_menu():
                                                 if ejecutar_script("07b5_html_dashboards.py"):
                                                     if ejecutar_script("07b6_html_pronosticos.py"):
                                                         if ejecutar_script("07b7_html_generador.py"):
-                                                            print("\n✅ ¡ACTUALIZACIÓN TOTAL COMPLETADA! Todo listo para subir a GitHub.")
+                                                            if ejecutar_script("07b8_html_jornadas.py"):
+                                                                print("\n✅ ¡ACTUALIZACIÓN TOTAL COMPLETADA! Todo listo para subir a GitHub.")
                     
         elif opcion == "0":
             print("\n👋 ¡Cerrando la sala de máquinas! Hasta pronto.")
