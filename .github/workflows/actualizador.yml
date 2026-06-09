@@ -44,6 +44,8 @@ jobs:
           python scripts/07b5_html_dashboards.py
           python scripts/07b6_html_pronosticos.py
           python scripts/07b7_html_generador.py
+          python scripts/07b8_html_jornadas.py
+          
 
       - name: Guardar cambios y subir a GitHub (Auto-Commit)
         run: |
