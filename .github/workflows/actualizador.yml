@@ -28,7 +28,8 @@ jobs:
 
       - name: Ejecutar Cascada de Motores (Actualización Total)
         run: |
-          # python scripts/05_scraper_sofascore.py
+          python scripts/05_extractor_sofascore.py
+          python scripts/05e_motor_avances.py
           python scripts/06a_motor_partidos.py
           python scripts/06b_motor_jornadas.py
           python scripts/06c_motor_fase_grupos.py

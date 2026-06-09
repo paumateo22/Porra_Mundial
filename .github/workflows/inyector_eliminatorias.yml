@@ -1,0 +1,52 @@
+name: Inyectar Cuadro de Eliminatorias
+
+on:
+  push:
+    # Se activará ÚNICAMENTE cuando modifiques este archivo exacto
+    paths:
+      - 'eliminatorias.txt'
+    branches:
+      - main
+
+# Permisos: 'contents' para hacer el commit, 'actions' para llamar al actualizador global
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  inyectar-equipos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar librerías
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Inyectar equipos en realidad_oficial.json
+        run: |
+          python scripts/05d_inyector_eliminatorias.py
+
+      - name: Guardar cambios y subir a GitHub (Auto-Commit)
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/resultados/realidad_oficial.json
+          
+          # Solo comitea si el script realmente ha modificado el JSON
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-Update: Cuadro de 1/16 inyectado manualmente" && git push)
+
+      - name: Lanzar el actualizador global (Cascada)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Arrancamos el otro Action para recalcular puntos y regenerar HTMLs con los nuevos cruces
+          gh workflow run actualizador.yml
