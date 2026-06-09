@@ -65,7 +65,7 @@
         <a href="calendario.html">📅 Calendario Oficial</a>
         <a href="jornadas.html">📈 Análisis por Jornadas</a>
         <a href="participantes.html">👥 Participantes</a>
-        <a href="instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro</a>
+        <a href="instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro & Reglamento</a>
         <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">🔗 Infobae</a>
         <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
         <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">🔗 SofaScore</a>
@@ -237,7 +237,7 @@
             <!-- CENTRO -->
             <div class="header-center">
                 <h1 style="margin-top:0; font-size: 2.2em;">📊 Dashboard de Jornadas</h1>
-                <p style="font-size: 0.9em;">Análisis detallado por bloque | Actualizado: 09/06/2026 09:48</p>
+                <p style="font-size: 0.9em;">Análisis detallado por bloque | Actualizado: 09/06/2026 10:48</p>
                 <div class="top-nav" style="margin: 10px 0;">
                     <a href="index.html" class="home-btn">🏠 Inicio</a>
                     <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Infobae</a>
@@ -253,29 +253,30 @@
                 <!-- ÚLTIMO PARTIDO -->
                 <div class="blob-widget right-blob-top">
                     <div class="blob-title">ÚLTIMO PARTIDO</div>
-                    
-        <div style="font-weight:bold; color:#111; letter-spacing:1px; margin-bottom:10px; font-size:1.1em;">FINAL</div>
-        <div style="font-size:1.15em; color:black; font-weight:900; margin-bottom:8px; line-height:1.3;">
-            Ganador 101 <span style="background:#111; color:white; padding:2px 8px; border-radius:4px; margin:0 5px;">1-2</span> Ganador 102
-        </div>
-        <div style="font-size:0.85em; color:#333; font-weight:bold; border-top:1px dashed rgba(0,0,0,0.3); padding-top:5px;">
-            Finalizado: 19/07 21:00
-        </div>
-        
+                    <div style='color:#555; padding-top:20px; font-weight:bold;'>No se ha jugado ningún partido todavía</div>
                 </div>
 
                 <!-- PRÓXIMO PARTIDO -->
                 <div class="blob-widget right-blob-bottom">
                     <div class="blob-title">PRÓXIMO PARTIDO</div>
-                    <div style='color:#555; padding-top:20px; font-weight:bold;'>TBD</div>
+                    
+        <div style="font-weight:bold; color:#111; letter-spacing:1px; margin-bottom:10px; font-size:1.1em;">GRUPO A</div>
+        <div style="font-size:1.15em; color:black; font-weight:900; margin-bottom:8px; line-height:1.3;">
+            México - Sudáfrica
+        </div>
+        <div style="font-size:1.2em; color:#333; font-weight:500; border-top:1px dashed rgba(0,0,0,0.3); padding-top:5px; margin-bottom:5px;">
+            Inicio: 11/06 21:00
+        </div>
+        <div id="w-timer-next-match" style="font-size:2em; font-weight:1500; color:#d9381e; font-family:monospace;">--:--:--</div>
+        
                 </div>
 
             </div>
         </div>
 
         <script>
-            const FASES_TORNEO = [{"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": "2026-01-11T21:00:00", "link": "https://www.infobae.com/mundial-2026/simulador/"}, {"id": "dieciseisavos", "name": "Dieciseisavos (1/16)", "predict": "2026-01-28T08:00:00", "start": "2026-01-28T21:00:00", "link": "generador_pronosticos.html"}, {"id": "octavos", "name": "Octavos (1/8)", "predict": "2026-01-04T06:00:00", "start": "2026-01-04T19:00:00", "link": "generador_pronosticos.html"}, {"id": "cuartos", "name": "Cuartos (1/4)", "predict": "2026-01-08T00:30:00", "start": "2026-01-09T22:00:00", "link": "generador_pronosticos.html"}, {"id": "semifinales", "name": "Semifinales", "predict": "2026-01-12T06:00:00", "start": "2026-01-14T21:00:00", "link": "generador_pronosticos.html"}, {"id": "finales", "name": "Finales", "predict": "2026-01-15T23:59:00", "start": "2026-07-18T23:00:00", "link": "generador_pronosticos.html"}];
-            const NEXT_MATCH_ISO = "";
+            const FASES_TORNEO = [{"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": "2026-06-11T21:00:00", "link": "https://www.infobae.com/mundial-2026/simulador/"}, {"id": "dieciseisavos", "name": "Dieciseisavos (1/16)", "predict": "2026-06-28T08:00:00", "start": "2026-06-28T21:00:00", "link": "generador_pronosticos.html"}, {"id": "octavos", "name": "Octavos (1/8)", "predict": "2026-07-04T06:00:00", "start": "2026-07-04T19:00:00", "link": "generador_pronosticos.html"}, {"id": "cuartos", "name": "Cuartos (1/4)", "predict": "2026-07-08T00:30:00", "start": "2026-07-09T22:00:00", "link": "generador_pronosticos.html"}, {"id": "semifinales", "name": "Semifinales", "predict": "2026-07-12T06:00:00", "start": "2026-07-14T21:00:00", "link": "generador_pronosticos.html"}, {"id": "finales", "name": "Finales", "predict": "2026-07-15T23:59:00", "start": "2026-07-18T23:00:00", "link": "generador_pronosticos.html"}];
+            const NEXT_MATCH_ISO = "2026-06-11T21:00:00";
 
             function formatDiff(ms) {
                 if (ms <= 0) return "00:00:00";
@@ -348,86 +349,72 @@
     
     <div class="sticky-nav" id="jornadas-nav">
 <button class="nav-btn active" onclick="openJornada('J1.1', this)">J1.1</button><button class="nav-btn " onclick="openJornada('J1.2', this)">J1.2</button><button class="nav-btn " onclick="openJornada('J2.1', this)">J2.1</button><button class="nav-btn " onclick="openJornada('J2.2', this)">J2.2</button><button class="nav-btn " onclick="openJornada('J3.1', this)">J3.1</button><button class="nav-btn " onclick="openJornada('J3.2', this)">J3.2</button><button class="nav-btn " onclick="openJornada('dieciseisavos.1', this)">1/16-1</button><button class="nav-btn " onclick="openJornada('dieciseisavos.2', this)">1/16-2</button><button class="nav-btn " onclick="openJornada('octavos', this)">Octavos</button><button class="nav-btn " onclick="openJornada('cuartos', this)">Cuartos</button><button class="nav-btn " onclick="openJornada('semifinales', this)">Semifinales</button><button class="nav-btn " onclick="openJornada('finales', this)">Finales</button></div><div class='container'><div id="J1.1" class="tab-content active">
-            <div class="mvp-card">
-                <div class="mvp-title">MVP de la Jornada</div>
-                <div class="mvp-name">Pau</div>
-                <div class="mvp-pts">8.0 Puntos</div>
-            </div>
-            <div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Est - Par</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Aus - Tur</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Paí - Jap</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Sue - Tún</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ale - Cur</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Cos - Ecu</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Méx - Sud</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Cor - Rep</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Bra - Mar</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Hai - Esc</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Can - Bos</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Qat - Sui</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>3 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>4 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>8.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>4 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 4</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>4.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>11 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 11</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>1.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>1.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-J1.1"></canvas>
-        </div>
-        </div><div id="J1.2" class="tab-content ">
-            <div class="mvp-card">
-                <div class="mvp-title">MVP de la Jornada</div>
-                <div class="mvp-name">Generico 2</div>
-                <div class="mvp-pts">18.0 Puntos</div>
-            </div>
-            <div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Arg - Arg</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Aus - Jor</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Por - RD </span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Uzb - Col</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ing - Cro</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Gha - Pan</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Bél - Egi</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Irá - Nue</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Esp - Cab</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ara - Uru</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Fra - Sen</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ira - Nor</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>1 - 1</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 4</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>4 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 4</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>18.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>0 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>8.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>4 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>5 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>4.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>0 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-J1.2"></canvas>
-        </div>
-        </div><div id="J2.1" class="tab-content ">
-            <div class="mvp-card">
-                <div class="mvp-title">MVP de la Jornada</div>
-                <div class="mvp-name">Pau</div>
-                <div class="mvp-pts">8.0 Puntos</div>
-            </div>
-            <div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Est - Aus</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Tur - Par</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Paí - Sue</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Tún - Jap</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ale - Cos</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ecu - Cur</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Rep - Sud</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Méx - Cor</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Esc - Mar</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Bra - Hai</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Sui - Bos</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Can - Qat</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 4</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td class='cell-pts'>8.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>1 - 11</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 21</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>5 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>4 - 15</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>11 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td class='cell-pts'>5.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>4 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>7 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td class='cell-pts'>5.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td class='cell-pts'>2.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-J2.1"></canvas>
-        </div>
-        </div><div id="J2.2" class="tab-content ">
-            <div class="mvp-card">
-                <div class="mvp-title">MVP de la Jornada</div>
-                <div class="mvp-name">Generico 3</div>
-                <div class="mvp-pts">11.0 Puntos</div>
-            </div>
-            <div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Arg - Aus</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Jor - Arg</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Por - Uzb</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Col - RD </span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ing - Gha</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Pan - Cro</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Bél - Irá</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Nue - Egi</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Esp - Ara</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Uru - Cab</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Fra - Ira</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Nor - Sen</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>5 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>11.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>4 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>11.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>4 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>5 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>5 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>10.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>0 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 20</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>20 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-J2.2"></canvas>
-        </div>
-        </div><div id="J3.1" class="tab-content ">
-            <div class="mvp-card">
-                <div class="mvp-title">MVP de la Jornada</div>
-                <div class="mvp-name">Generico 1</div>
-                <div class="mvp-pts">7.0 Puntos</div>
-            </div>
-            <div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Par - Aus</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Tur - Est</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Jap - Sue</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Tún - Paí</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Cur - Cos</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Ecu - Ale</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Sud - Cor</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Rep - Méx</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Esc - Bra</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Mar - Hai</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Bos - Qat</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Sui - Can</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>11 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 11</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>12 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 11</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>7.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>3 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 4</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>5 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>3.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>4 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>3.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-J3.1"></canvas>
-        </div>
-        </div><div id="J3.2" class="tab-content ">
-            <div class="mvp-card">
-                <div class="mvp-title">MVP de la Jornada</div>
-                <div class="mvp-name">Generico 3</div>
-                <div class="mvp-pts">12.0 Puntos</div>
-            </div>
-            <div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Arg - Aus</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Jor - Arg</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>RD  - Uzb</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Col - Por</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Cro - Gha</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Pan - Ing</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Nue - Bél</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Egi - Irá</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Cab - Ara</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Uru - Esp</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Sen - Ira</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Nor - Fra</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>12.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 1</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td class='cell-pts'>12.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>2 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 4</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:var(--gold); font-weight:bold;'>4.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 2</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>4 - 1</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>4 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>7.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 10</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>20 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:var(--gold); font-weight:bold;'>1.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-J3.2"></canvas>
-        </div>
-        </div><div id="dieciseisavos.1" class="tab-content "><div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>4 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>4 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-dieciseisavos.1"></canvas>
-        </div>
-        </div><div id="dieciseisavos.2" class="tab-content "><div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-dieciseisavos.2"></canvas>
-        </div>
-        </div><div id="octavos" class="tab-content "><div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 3</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-octavos"></canvas>
-        </div>
-        </div><div id="cuartos" class="tab-content "><div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>3 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-cuartos"></canvas>
-        </div>
-        </div><div id="semifinales" class="tab-content "><div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>Eq. - Eq.</span></th><th style='color:#ccc;'>TOTAL</th></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_1/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 1</a></td><td><span class='cell-pred'>1 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_2/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 2</a></td><td><span class='cell-pred'>2 - 0</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/generico_3/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Generico 3</a></td><td><span class='cell-pred'>1 - 2</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>2 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr><tr><td style='text-align:left; font-weight:bold;'><a href='participantes/pau/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>Pau</a></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td><span class='cell-pred'>0 - 1</span><span style='color:gray; font-weight:bold;'>0.0 pts</span></td><td class='cell-pts'>0.0</td></tr></table></div>
-        <div class="chart-container">
-            <canvas id="chart-semifinales"></canvas>
-        </div>
-        </div><div id="finales" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>11/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="J1.2" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>11/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="J2.1" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>11/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="J2.2" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>11/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="J3.1" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>11/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="J3.2" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>11/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="dieciseisavos.1" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>28/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="dieciseisavos.2" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>28/06/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="octavos" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>04/07/2026 19:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="cuartos" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>09/07/2026 22:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="semifinales" class="tab-content ">
+            <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
+                <div style="font-size:4em; margin-bottom:15px;">🔒</div>
+                <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
+                <p style="color:#ddd; font-size:1.2em; margin-bottom:5px;">Los datos de esta ronda están ocultos temporalmente.</p>
+                <p style="color:gray; font-size:1em;">Se revelarán el <strong>14/07/2026 21:00</strong> (Hora Peninsular).</p>
+            </div></div><div id="finales" class="tab-content ">
             <div style="background:#111; padding:60px 20px; text-align:center; border:1px solid #333; border-radius:12px; margin-top:20px;">
                 <div style="font-size:4em; margin-bottom:15px;">🔒</div>
                 <h2 style="color:var(--gold); margin-top:0; font-size:2em;">Jornada Protegida</h2>
@@ -444,402 +431,6 @@
             if(btnEl) btnEl.classList.add('active');
         }
     
-        setTimeout(() => {
-            const ctx_J1_1 = document.getElementById('chart-J1.1');
-            if (ctx_J1_1) {
-                new Chart(ctx_J1_1, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Pau", "Generico 2", "Generico 1", "Generico 3"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [8.0, 4.0, 1.0, 1.0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_J1_2 = document.getElementById('chart-J1.2');
-            if (ctx_J1_2) {
-                new Chart(ctx_J1_2, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 2", "Generico 3", "Pau", "Generico 1"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [18.0, 8.0, 4.0, 0.0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_J2_1 = document.getElementById('chart-J2.1');
-            if (ctx_J2_1) {
-                new Chart(ctx_J2_1, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Pau", "Generico 1", "Generico 2", "Generico 3"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [8.0, 5.0, 5.0, 2.0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_J2_2 = document.getElementById('chart-J2.2');
-            if (ctx_J2_2) {
-                new Chart(ctx_J2_2, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 3", "Pau", "Generico 2", "Generico 1"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [11.0, 11.0, 10.0, 0.0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_J3_1 = document.getElementById('chart-J3.1');
-            if (ctx_J3_1) {
-                new Chart(ctx_J3_1, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 1", "Generico 2", "Pau", "Generico 3"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [7.0, 3.0, 3.0, 0.0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_J3_2 = document.getElementById('chart-J3.2');
-            if (ctx_J3_2) {
-                new Chart(ctx_J3_2, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 3", "Pau", "Generico 2", "Generico 1"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [12.0, 12.0, 7.0, 0.0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_dieciseisavos_1 = document.getElementById('chart-dieciseisavos.1');
-            if (ctx_dieciseisavos_1) {
-                new Chart(ctx_dieciseisavos_1, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 1", "Generico 2", "Generico 3", "Pau"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [0, 0, 0, 0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_dieciseisavos_2 = document.getElementById('chart-dieciseisavos.2');
-            if (ctx_dieciseisavos_2) {
-                new Chart(ctx_dieciseisavos_2, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 1", "Generico 2", "Generico 3", "Pau"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [0, 0, 0, 0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_octavos = document.getElementById('chart-octavos');
-            if (ctx_octavos) {
-                new Chart(ctx_octavos, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 1", "Generico 2", "Generico 3", "Pau"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [0, 0, 0, 0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_cuartos = document.getElementById('chart-cuartos');
-            if (ctx_cuartos) {
-                new Chart(ctx_cuartos, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 1", "Generico 2", "Generico 3", "Pau"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [0, 0, 0, 0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
-        setTimeout(() => {
-            const ctx_semifinales = document.getElementById('chart-semifinales');
-            if (ctx_semifinales) {
-                new Chart(ctx_semifinales, {
-                    type: 'bar',
-                    data: {
-                        labels: ["Generico 1", "Generico 2", "Generico 3", "Pau"],
-                        datasets: [{
-                            label: 'Puntos Totales',
-                            data: [0, 0, 0, 0],
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) { return context.parsed.y + ' pts'; }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
-                });
-            }
-        }, 500);
-        
     </script>
 </body>
 </html>
