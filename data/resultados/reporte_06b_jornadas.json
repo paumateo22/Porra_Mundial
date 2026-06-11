@@ -15,14 +15,6 @@
         "puntos_jornadas": 0,
         "desglose_jornadas": {}
     },
-    "adrián_montes": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
-        "puntos_jornadas": 0,
-        "desglose_jornadas": {}
-    },
     "miguel_dykan": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
@@ -56,6 +48,14 @@
         "desglose_jornadas": {}
     },
     "pau": {
+        "puntos_partidos": 0,
+        "total_aciertos_1x2": 0,
+        "total_aciertos_exactos": 0,
+        "historial_jornadas": {},
+        "puntos_jornadas": 0,
+        "desglose_jornadas": {}
+    },
+    "adri": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
