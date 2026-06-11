@@ -24,6 +24,20 @@
                         document.getElementById(tabName).classList.add('active');
                         event.currentTarget.classList.add('active');
                     }
+                    
+                    // Función para forzar la apertura del candado en el cliente
+                    function verificarClaveFase() {
+                        const inputClave = document.getElementById("bypass-pass").value;
+                        const claveCorrecta = "22pau2005";
+                        if (inputClave === claveCorrecta) {
+                            document.getElementById("lock-screen-container").style.display = "none";
+                            document.getElementById("protected-content-container").style.display = "block";
+                        } else {
+                            const errEl = document.getElementById("bypass-error");
+                            errEl.style.display = "block";
+                            errEl.innerText = "⚠️ Contraseña incorrecta. Pídesela al administrador o al participante.";
+                        }
+                    }
                 </script>
             </head>
             <body>
@@ -345,6 +359,20 @@
         <a href="pronostico_premios.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:#333; color:white; border:1px solid #444;">Premios</a>
     </div>
                 <div class="container">
-            <div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
+            
+                <div id="lock-screen-container" style="display:block; background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
+                    <div style="font-size:3.5em; margin-bottom:15px;">🔒</div>
+                    <h2 style="color:var(--gold); margin-top:0;">Pronóstico Protegido</h2>
+                    <p style="color:#ddd; font-size:1.1em; margin-bottom:5px;">El pronóstico de <strong>Pau</strong> ha sido recibido y está guardado a salvo.</p>
+                    <p style="color:gray; font-size:0.95em; margin-bottom:25px;">Se revelará públicamente el <strong>09/07/2026 a las 22:00</strong> (Hora Peninsular).</p>
+                    
+                    <div style="max-width:320px; margin:0 auto; padding-top:20px; border-top:1px dashed #333;">
+                        <label style="display:block; font-size:0.85em; color:gray; margin-bottom:8px; font-weight:bold;">🔓 DESBLOQUEO MANUAL CON CONTRASEÑA</label>
+                        <input type="password" id="bypass-pass" placeholder="Introduce la clave de acceso" style="width:100%; padding:10px; border-radius:6px; border:1px solid #444; background:#222; color:white; box-sizing:border-box; text-align:center; margin-bottom:10px; font-size:1em;">
+                        <button onclick="verificarClaveFase()" style="width:100%; padding:10px; border-radius:6px; background:var(--gold); color:black; font-weight:bold; border:none; cursor:pointer; font-size:0.95em; transition:0.2s;">Desbloquear Vista</button>
+                        <p id="bypass-error" style="color:#ff4d4d; font-size:0.85em; margin-top:10px; display:none; font-weight:bold;"></p>
+                    </div>
+                </div>
+            <div id="protected-content-container" style="display:none;"><div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
                     <h3>El archivo de pronóstico para 1/4 no existe o no se rellenó.</h3>
-                </div></div></body></html>
+                </div></div></div></body></html>
