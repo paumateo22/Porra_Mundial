@@ -3,6 +3,7 @@ import json
 import csv  # Inyectamos csv para procesar el archivo de registro
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR / "scripts"))
@@ -53,10 +54,11 @@ def esta_bloqueado(fase):
         return False, ""
     
     try:
-        fecha_apertura = datetime.fromisoformat(fecha_str)
-        if datetime.now() < fecha_apertura:
+        fecha_apertura = datetime.fromisoformat(fecha_str).replace(tzinfo=ZoneInfo("Europe/Madrid"))
+        ahora = datetime.now(ZoneInfo("Europe/Madrid"))
+        if ahora < fecha_apertura:
             return True, fecha_apertura.strftime("%d/%m/%Y a las %H:%M")
-    except ValueError:
+    except Exception:
         pass
     return False, ""
 

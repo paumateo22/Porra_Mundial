@@ -2,6 +2,7 @@ import sys
 import csv
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR / "scripts"))
@@ -84,7 +85,7 @@ def generar_index_html():
     pts_1x2_val = html_utils.CONFIG.get("puntuacion", {}).get("acierto_1x2", 1)
     pts_ex_val = html_utils.CONFIG.get("puntuacion", {}).get("acierto_exacto", 3)
 
-    fecha_act = datetime.now().strftime("%d/%m/%Y %H:%M")
+    fecha_act = datetime.now(ZoneInfo("Europe/Madrid")).strftime("%d/%m/%Y %H:%M")
     
     html = f"""<!DOCTYPE html>
 <html lang="es">
