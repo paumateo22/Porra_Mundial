@@ -1,9 +1,16 @@
 {
     "Alemania": {
-        "media": 1.75,
+        "media": 1.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -14,6 +21,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -63,10 +77,17 @@
         ]
     },
     "Arabia Saudita": {
-        "media": 0.62,
+        "media": 0.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -77,6 +98,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -131,6 +159,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -140,6 +175,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -189,10 +231,17 @@
         ]
     },
     "Argentina": {
-        "media": 3.12,
+        "media": 3.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -204,6 +253,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -252,10 +308,17 @@
         ]
     },
     "Australia": {
-        "media": 0.38,
+        "media": 0.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -266,6 +329,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -320,6 +390,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 1,
@@ -329,6 +406,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -378,10 +462,17 @@
         ]
     },
     "Bosnia-Herzegovina": {
-        "media": 1.25,
+        "media": 1.3,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -392,6 +483,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -441,10 +539,17 @@
         ]
     },
     "Brasil": {
-        "media": 3.38,
+        "media": 3.5,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -456,6 +561,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -504,10 +616,17 @@
         ]
     },
     "Bélgica": {
-        "media": 1.88,
+        "media": 2.0,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -519,6 +638,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -572,6 +698,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -581,6 +714,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -630,10 +770,17 @@
         ]
     },
     "Canadá": {
-        "media": 0.88,
+        "media": 0.9,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -645,6 +792,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -693,10 +847,17 @@
         ]
     },
     "Colombia": {
-        "media": 2.12,
+        "media": 2.1,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -708,6 +869,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -756,10 +924,17 @@
         ]
     },
     "Corea del Sur": {
-        "media": 1.0,
+        "media": 0.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -771,6 +946,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -824,6 +1006,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -834,6 +1023,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -887,6 +1083,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 1,
@@ -896,6 +1099,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -950,6 +1160,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -959,6 +1176,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1008,10 +1232,17 @@
         ]
     },
     "Ecuador": {
-        "media": 1.75,
+        "media": 1.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1023,6 +1254,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1071,10 +1309,17 @@
         ]
     },
     "Egipto": {
-        "media": 1.38,
+        "media": 1.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1085,6 +1330,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1134,10 +1386,17 @@
         ]
     },
     "Escocia": {
-        "media": 1.25,
+        "media": 1.1,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1151,6 +1410,13 @@
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "miguel_dykan",
@@ -1202,6 +1468,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 5,
@@ -1211,6 +1484,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1260,10 +1540,17 @@
         ]
     },
     "Estados Unidos": {
-        "media": 1.25,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1274,6 +1561,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1323,10 +1617,17 @@
         ]
     },
     "Francia": {
-        "media": 3.75,
+        "media": 3.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1338,6 +1639,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1386,10 +1694,17 @@
         ]
     },
     "Ghana": {
-        "media": 1.0,
+        "media": 0.9,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1400,6 +1715,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1454,6 +1776,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -1463,6 +1792,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1512,10 +1848,17 @@
         ]
     },
     "Inglaterra": {
-        "media": 2.88,
+        "media": 3.1,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1526,6 +1869,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1580,6 +1930,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -1589,6 +1946,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1638,10 +2002,17 @@
         ]
     },
     "Irán": {
-        "media": 0.12,
+        "media": 0.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1653,6 +2024,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1701,10 +2079,17 @@
         ]
     },
     "Japón": {
-        "media": 0.88,
+        "media": 1.1,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1720,6 +2105,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
@@ -1730,8 +2122,8 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "quesadator",
@@ -1769,6 +2161,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -1778,6 +2177,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1827,10 +2233,17 @@
         ]
     },
     "Marruecos": {
-        "media": 1.88,
+        "media": 1.7,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1842,6 +2255,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1895,6 +2315,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 1,
@@ -1905,6 +2332,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1953,10 +2387,17 @@
         ]
     },
     "Noruega": {
-        "media": 2.12,
+        "media": 1.9,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -1972,6 +2413,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 2,
@@ -1982,8 +2430,8 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
             },
             {
                 "jugador_id": "quesadator",
@@ -2010,8 +2458,8 @@
                 "jugador_id": "adri",
                 "jugador_nombre": "Adri",
                 "fase_pronostico": 1,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
             }
         ]
     },
@@ -2020,6 +2468,13 @@
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2030,6 +2485,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2084,6 +2546,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -2093,6 +2562,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2142,10 +2618,17 @@
         ]
     },
     "Paraguay": {
-        "media": 0.88,
+        "media": 0.9,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2156,6 +2639,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2205,10 +2695,17 @@
         ]
     },
     "Países Bajos": {
-        "media": 2.75,
+        "media": 3.0,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2222,6 +2719,13 @@
                 "fase_pronostico": 1,
                 "puntos": 10,
                 "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
             },
             {
                 "jugador_id": "miguel_dykan",
@@ -2268,10 +2772,17 @@
         ]
     },
     "Portugal": {
-        "media": 4.38,
+        "media": 4.1,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2283,6 +2794,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2336,6 +2854,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -2345,6 +2870,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2394,10 +2926,17 @@
         ]
     },
     "RD Congo": {
-        "media": 0.38,
+        "media": 0.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2409,6 +2948,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2457,10 +3003,17 @@
         ]
     },
     "República Checa": {
-        "media": 0.88,
+        "media": 0.9,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2472,6 +3025,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2520,10 +3080,17 @@
         ]
     },
     "Senegal": {
-        "media": 1.25,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2534,6 +3101,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2583,10 +3157,17 @@
         ]
     },
     "Sudáfrica": {
-        "media": 0.38,
+        "media": 0.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2598,6 +3179,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2646,10 +3234,17 @@
         ]
     },
     "Suecia": {
-        "media": 1.0,
+        "media": 1.1,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2660,6 +3255,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2689,15 +3291,15 @@
                 "jugador_id": "carlinhos_jr",
                 "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "adri",
@@ -2709,10 +3311,17 @@
         ]
     },
     "Suiza": {
-        "media": 1.75,
+        "media": 1.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2724,6 +3333,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2772,10 +3388,17 @@
         ]
     },
     "Turquía": {
-        "media": 1.88,
+        "media": 2.0,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2787,6 +3410,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2835,10 +3465,17 @@
         ]
     },
     "Túnez": {
-        "media": 0.25,
+        "media": 0.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2849,6 +3486,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2898,10 +3542,17 @@
         ]
     },
     "Uruguay": {
-        "media": 1.12,
+        "media": 1.1,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
             {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
@@ -2912,6 +3563,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2966,6 +3624,13 @@
         "umbral": 1.0,
         "predicciones": [
             {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
                 "fase_pronostico": 0,
@@ -2975,6 +3640,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "adrián_montes",
+                "jugador_nombre": "Adrián Montes",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"

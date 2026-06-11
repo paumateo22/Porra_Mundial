@@ -1,11 +1,11 @@
 {
-    "javi": {
+    "álvaro": {
         "puntos_sorpresas": 0,
-        "puntos_decepciones": 30,
+        "puntos_decepciones": 0,
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -13,14 +13,14 @@
             },
             "Arabia Saudita": {
                 "pronostico": 1,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
             "Argelia": {
-                "pronostico": 0,
+                "pronostico": 1,
                 "media_grupo": 0.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
@@ -28,16 +28,16 @@
                 "puntos": 0
             },
             "Argentina": {
-                "pronostico": 3,
-                "media_grupo": 3.12,
+                "pronostico": 4,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
             "Australia": {
-                "pronostico": 1,
-                "media_grupo": 0.38,
+                "pronostico": 0,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -53,23 +53,23 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
             "Brasil": {
-                "pronostico": 2,
-                "media_grupo": 3.38,
+                "pronostico": 3,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
             "Bélgica": {
-                "pronostico": 1,
-                "media_grupo": 1.88,
+                "pronostico": 2,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -85,7 +85,7 @@
             },
             "Canadá": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -93,7 +93,397 @@
             },
             "Colombia": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Corea del Sur": {
+                "pronostico": 0,
+                "media_grupo": 0.8,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Costa de Marfil": {
+                "pronostico": 1,
+                "media_grupo": 1.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Curazao": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ecuador": {
+                "pronostico": 2,
+                "media_grupo": 1.8,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Egipto": {
+                "pronostico": 1,
+                "media_grupo": 1.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Escocia": {
+                "pronostico": 1,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "España": {
+                "pronostico": 5,
+                "media_grupo": 5.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Estados Unidos": {
+                "pronostico": 1,
+                "media_grupo": 1.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Francia": {
+                "pronostico": 3,
+                "media_grupo": 3.6,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ghana": {
+                "pronostico": 0,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Inglaterra": {
+                "pronostico": 5,
+                "media_grupo": 3.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irán": {
+                "pronostico": 1,
+                "media_grupo": 0.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Japón": {
+                "pronostico": 3,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Jordania": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.7,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "México": {
+                "pronostico": 2,
+                "media_grupo": 1.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Noruega": {
+                "pronostico": 1,
+                "media_grupo": 1.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Panamá": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Paraguay": {
+                "pronostico": 2,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Países Bajos": {
+                "pronostico": 4,
+                "media_grupo": 3.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Portugal": {
+                "pronostico": 2,
+                "media_grupo": 4.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "RD Congo": {
+                "pronostico": 0,
+                "media_grupo": 0.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "República Checa": {
+                "pronostico": 1,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suecia": {
+                "pronostico": 1,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 1,
+                "media_grupo": 1.6,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Turquía": {
+                "pronostico": 3,
+                "media_grupo": 2.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Túnez": {
+                "pronostico": 0,
+                "media_grupo": 0.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uzbekistán": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
+    },
+    "javi": {
+        "puntos_sorpresas": 0,
+        "puntos_decepciones": 30,
+        "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.8,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Arabia Saudita": {
+                "pronostico": 1,
+                "media_grupo": 0.6,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Argelia": {
+                "pronostico": 0,
+                "media_grupo": 0.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Argentina": {
+                "pronostico": 3,
+                "media_grupo": 3.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Australia": {
+                "pronostico": 1,
+                "media_grupo": 0.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bosnia-Herzegovina": {
+                "pronostico": 2,
+                "media_grupo": 1.3,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Brasil": {
+                "pronostico": 2,
+                "media_grupo": 3.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bélgica": {
+                "pronostico": 1,
+                "media_grupo": 2.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -101,7 +491,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -133,7 +523,7 @@
             },
             "Ecuador": {
                 "pronostico": 3,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -141,7 +531,7 @@
             },
             "Egipto": {
                 "pronostico": 2,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -149,7 +539,7 @@
             },
             "Escocia": {
                 "pronostico": 3,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -165,7 +555,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -173,7 +563,7 @@
             },
             "Francia": {
                 "pronostico": 4,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -181,7 +571,7 @@
             },
             "Ghana": {
                 "pronostico": 2,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -197,7 +587,7 @@
             },
             "Inglaterra": {
                 "pronostico": 1,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Decepción",
@@ -213,7 +603,7 @@
             },
             "Irán": {
                 "pronostico": 0,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -221,7 +611,7 @@
             },
             "Japón": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -237,7 +627,7 @@
             },
             "Marruecos": {
                 "pronostico": 4,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -253,7 +643,7 @@
             },
             "Noruega": {
                 "pronostico": 3,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -277,7 +667,7 @@
             },
             "Paraguay": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -285,7 +675,7 @@
             },
             "Países Bajos": {
                 "pronostico": 1,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Decepción",
@@ -293,7 +683,7 @@
             },
             "Portugal": {
                 "pronostico": 5,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -309,7 +699,7 @@
             },
             "RD Congo": {
                 "pronostico": 1,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -317,7 +707,7 @@
             },
             "República Checa": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -325,7 +715,7 @@
             },
             "Senegal": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -333,7 +723,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -341,7 +731,7 @@
             },
             "Suecia": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -349,7 +739,7 @@
             },
             "Suiza": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -357,7 +747,7 @@
             },
             "Turquía": {
                 "pronostico": 2,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -365,7 +755,7 @@
             },
             "Túnez": {
                 "pronostico": 0,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -373,7 +763,7 @@
             },
             "Uruguay": {
                 "pronostico": 1,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -395,7 +785,7 @@
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -403,7 +793,7 @@
             },
             "Arabia Saudita": {
                 "pronostico": 0,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -419,7 +809,7 @@
             },
             "Argentina": {
                 "pronostico": 4,
-                "media_grupo": 3.12,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -427,7 +817,7 @@
             },
             "Australia": {
                 "pronostico": 1,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -443,7 +833,7 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -451,7 +841,7 @@
             },
             "Brasil": {
                 "pronostico": 4,
-                "media_grupo": 3.38,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -459,7 +849,7 @@
             },
             "Bélgica": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -475,7 +865,7 @@
             },
             "Canadá": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -483,7 +873,7 @@
             },
             "Colombia": {
                 "pronostico": 3,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -491,7 +881,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -523,7 +913,7 @@
             },
             "Ecuador": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -531,7 +921,7 @@
             },
             "Egipto": {
                 "pronostico": 2,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -539,7 +929,7 @@
             },
             "Escocia": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -555,7 +945,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -563,7 +953,7 @@
             },
             "Francia": {
                 "pronostico": 5,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -571,7 +961,7 @@
             },
             "Ghana": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -587,7 +977,7 @@
             },
             "Inglaterra": {
                 "pronostico": 3,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -603,7 +993,7 @@
             },
             "Irán": {
                 "pronostico": 1,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -611,7 +1001,7 @@
             },
             "Japón": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -627,7 +1017,7 @@
             },
             "Marruecos": {
                 "pronostico": 3,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -643,7 +1033,7 @@
             },
             "Noruega": {
                 "pronostico": 3,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -667,7 +1057,7 @@
             },
             "Paraguay": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -675,7 +1065,7 @@
             },
             "Países Bajos": {
                 "pronostico": 1,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Decepción",
@@ -683,7 +1073,7 @@
             },
             "Portugal": {
                 "pronostico": 2,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -699,7 +1089,7 @@
             },
             "RD Congo": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -707,7 +1097,7 @@
             },
             "República Checa": {
                 "pronostico": 2,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -715,7 +1105,7 @@
             },
             "Senegal": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -723,7 +1113,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -731,7 +1121,7 @@
             },
             "Suecia": {
                 "pronostico": 2,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -739,7 +1129,7 @@
             },
             "Suiza": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -747,7 +1137,7 @@
             },
             "Turquía": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -755,7 +1145,7 @@
             },
             "Túnez": {
                 "pronostico": 0,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -763,7 +1153,397 @@
             },
             "Uruguay": {
                 "pronostico": 1,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uzbekistán": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
+    },
+    "adrián_montes": {
+        "puntos_sorpresas": 0,
+        "puntos_decepciones": 10,
+        "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.8,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Arabia Saudita": {
+                "pronostico": 0,
+                "media_grupo": 0.6,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Argelia": {
+                "pronostico": 0,
+                "media_grupo": 0.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Argentina": {
+                "pronostico": 3,
+                "media_grupo": 3.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Australia": {
+                "pronostico": 1,
+                "media_grupo": 0.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.3,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Brasil": {
+                "pronostico": 5,
+                "media_grupo": 3.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bélgica": {
+                "pronostico": 3,
+                "media_grupo": 2.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 2,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Corea del Sur": {
+                "pronostico": 0,
+                "media_grupo": 0.8,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Costa de Marfil": {
+                "pronostico": 2,
+                "media_grupo": 1.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Curazao": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ecuador": {
+                "pronostico": 2,
+                "media_grupo": 1.8,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Egipto": {
+                "pronostico": 2,
+                "media_grupo": 1.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Escocia": {
+                "pronostico": 0,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Decepción",
+                "puntos": 10
+            },
+            "España": {
+                "pronostico": 5,
+                "media_grupo": 5.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Estados Unidos": {
+                "pronostico": 1,
+                "media_grupo": 1.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Francia": {
+                "pronostico": 3,
+                "media_grupo": 3.6,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ghana": {
+                "pronostico": 1,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Inglaterra": {
+                "pronostico": 3,
+                "media_grupo": 3.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Japón": {
+                "pronostico": 1,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Jordania": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.7,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "México": {
+                "pronostico": 1,
+                "media_grupo": 1.5,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Noruega": {
+                "pronostico": 1,
+                "media_grupo": 1.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Panamá": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Paraguay": {
+                "pronostico": 0,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Países Bajos": {
+                "pronostico": 4,
+                "media_grupo": 3.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Portugal": {
+                "pronostico": 4,
+                "media_grupo": 4.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "RD Congo": {
+                "pronostico": 1,
+                "media_grupo": 0.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "República Checa": {
+                "pronostico": 1,
+                "media_grupo": 0.9,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 1,
+                "media_grupo": 0.4,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suecia": {
+                "pronostico": 2,
+                "media_grupo": 1.1,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 1,
+                "media_grupo": 1.6,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Turquía": {
+                "pronostico": 2,
+                "media_grupo": 2.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Túnez": {
+                "pronostico": 0,
+                "media_grupo": 0.2,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -785,7 +1565,7 @@
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -793,7 +1573,7 @@
             },
             "Arabia Saudita": {
                 "pronostico": 1,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -809,7 +1589,7 @@
             },
             "Argentina": {
                 "pronostico": 3,
-                "media_grupo": 3.12,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -817,7 +1597,7 @@
             },
             "Australia": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -833,7 +1613,7 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -841,7 +1621,7 @@
             },
             "Brasil": {
                 "pronostico": 4,
-                "media_grupo": 3.38,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -849,7 +1629,7 @@
             },
             "Bélgica": {
                 "pronostico": 3,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -865,7 +1645,7 @@
             },
             "Canadá": {
                 "pronostico": 2,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -873,7 +1653,7 @@
             },
             "Colombia": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -881,7 +1661,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 0,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -913,7 +1693,7 @@
             },
             "Ecuador": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -921,7 +1701,7 @@
             },
             "Egipto": {
                 "pronostico": 1,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -929,7 +1709,7 @@
             },
             "Escocia": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -945,7 +1725,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -953,7 +1733,7 @@
             },
             "Francia": {
                 "pronostico": 4,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -961,7 +1741,7 @@
             },
             "Ghana": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -977,7 +1757,7 @@
             },
             "Inglaterra": {
                 "pronostico": 3,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -993,7 +1773,7 @@
             },
             "Irán": {
                 "pronostico": 0,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1001,7 +1781,7 @@
             },
             "Japón": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1017,7 +1797,7 @@
             },
             "Marruecos": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1033,7 +1813,7 @@
             },
             "Noruega": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1057,7 +1837,7 @@
             },
             "Paraguay": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1065,7 +1845,7 @@
             },
             "Países Bajos": {
                 "pronostico": 3,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1073,7 +1853,7 @@
             },
             "Portugal": {
                 "pronostico": 5,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1089,7 +1869,7 @@
             },
             "RD Congo": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1097,7 +1877,7 @@
             },
             "República Checa": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1105,7 +1885,7 @@
             },
             "Senegal": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1113,7 +1893,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1121,7 +1901,7 @@
             },
             "Suecia": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1129,7 +1909,7 @@
             },
             "Suiza": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1137,7 +1917,7 @@
             },
             "Turquía": {
                 "pronostico": 2,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1145,7 +1925,7 @@
             },
             "Túnez": {
                 "pronostico": 0,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1153,7 +1933,7 @@
             },
             "Uruguay": {
                 "pronostico": 1,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1175,7 +1955,7 @@
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1183,7 +1963,7 @@
             },
             "Arabia Saudita": {
                 "pronostico": 1,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1199,7 +1979,7 @@
             },
             "Argentina": {
                 "pronostico": 3,
-                "media_grupo": 3.12,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1207,7 +1987,7 @@
             },
             "Australia": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1223,7 +2003,7 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1231,7 +2011,7 @@
             },
             "Brasil": {
                 "pronostico": 2,
-                "media_grupo": 3.38,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1239,7 +2019,7 @@
             },
             "Bélgica": {
                 "pronostico": 2,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1255,7 +2035,7 @@
             },
             "Canadá": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1263,7 +2043,7 @@
             },
             "Colombia": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1271,7 +2051,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 2,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1303,7 +2083,7 @@
             },
             "Ecuador": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1311,7 +2091,7 @@
             },
             "Egipto": {
                 "pronostico": 1,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1319,7 +2099,7 @@
             },
             "Escocia": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1335,7 +2115,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 0,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Decepción",
@@ -1343,7 +2123,7 @@
             },
             "Francia": {
                 "pronostico": 4,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1351,7 +2131,7 @@
             },
             "Ghana": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1367,7 +2147,7 @@
             },
             "Inglaterra": {
                 "pronostico": 3,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1383,7 +2163,7 @@
             },
             "Irán": {
                 "pronostico": 0,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1391,11 +2171,11 @@
             },
             "Japón": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
+                "resultado_calculo": "Decepción",
+                "puntos": 10
             },
             "Jordania": {
                 "pronostico": 0,
@@ -1407,7 +2187,7 @@
             },
             "Marruecos": {
                 "pronostico": 3,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1423,11 +2203,11 @@
             },
             "Noruega": {
                 "pronostico": 1,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
-                "resultado_calculo": "Decepción",
-                "puntos": 10
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
             },
             "Nueva Zelanda": {
                 "pronostico": 0,
@@ -1447,7 +2227,7 @@
             },
             "Paraguay": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1455,7 +2235,7 @@
             },
             "Países Bajos": {
                 "pronostico": 4,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1463,7 +2243,7 @@
             },
             "Portugal": {
                 "pronostico": 5,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1479,7 +2259,7 @@
             },
             "RD Congo": {
                 "pronostico": 1,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1487,7 +2267,7 @@
             },
             "República Checa": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1495,7 +2275,7 @@
             },
             "Senegal": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1503,7 +2283,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 2,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1511,7 +2291,7 @@
             },
             "Suecia": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1519,7 +2299,7 @@
             },
             "Suiza": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1527,7 +2307,7 @@
             },
             "Turquía": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1535,7 +2315,7 @@
             },
             "Túnez": {
                 "pronostico": 0,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1543,7 +2323,7 @@
             },
             "Uruguay": {
                 "pronostico": 2,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1565,7 +2345,7 @@
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1573,7 +2353,7 @@
             },
             "Arabia Saudita": {
                 "pronostico": 1,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1589,7 +2369,7 @@
             },
             "Argentina": {
                 "pronostico": 3,
-                "media_grupo": 3.12,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1597,7 +2377,7 @@
             },
             "Australia": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1613,7 +2393,7 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1621,7 +2401,7 @@
             },
             "Brasil": {
                 "pronostico": 3,
-                "media_grupo": 3.38,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1629,7 +2409,7 @@
             },
             "Bélgica": {
                 "pronostico": 3,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1645,7 +2425,7 @@
             },
             "Canadá": {
                 "pronostico": 2,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1653,7 +2433,7 @@
             },
             "Colombia": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1661,7 +2441,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1693,7 +2473,7 @@
             },
             "Ecuador": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1701,7 +2481,7 @@
             },
             "Egipto": {
                 "pronostico": 1,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1709,7 +2489,7 @@
             },
             "Escocia": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1725,7 +2505,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1733,7 +2513,7 @@
             },
             "Francia": {
                 "pronostico": 4,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1741,7 +2521,7 @@
             },
             "Ghana": {
                 "pronostico": 0,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1757,7 +2537,7 @@
             },
             "Inglaterra": {
                 "pronostico": 4,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1773,7 +2553,7 @@
             },
             "Irán": {
                 "pronostico": 0,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1781,7 +2561,7 @@
             },
             "Japón": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1797,7 +2577,7 @@
             },
             "Marruecos": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1813,7 +2593,7 @@
             },
             "Noruega": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1837,7 +2617,7 @@
             },
             "Paraguay": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1845,7 +2625,7 @@
             },
             "Países Bajos": {
                 "pronostico": 3,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1853,7 +2633,7 @@
             },
             "Portugal": {
                 "pronostico": 5,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1869,7 +2649,7 @@
             },
             "RD Congo": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1877,7 +2657,7 @@
             },
             "República Checa": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1885,7 +2665,7 @@
             },
             "Senegal": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1893,7 +2673,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1901,7 +2681,7 @@
             },
             "Suecia": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1909,7 +2689,7 @@
             },
             "Suiza": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1917,7 +2697,7 @@
             },
             "Turquía": {
                 "pronostico": 2,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1925,7 +2705,7 @@
             },
             "Túnez": {
                 "pronostico": 0,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1933,7 +2713,7 @@
             },
             "Uruguay": {
                 "pronostico": 1,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1951,11 +2731,11 @@
     },
     "carlinhos_jr": {
         "puntos_sorpresas": 0,
-        "puntos_decepciones": 0,
+        "puntos_decepciones": 10,
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1963,7 +2743,7 @@
             },
             "Arabia Saudita": {
                 "pronostico": 1,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1979,7 +2759,7 @@
             },
             "Argentina": {
                 "pronostico": 3,
-                "media_grupo": 3.12,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1987,7 +2767,7 @@
             },
             "Australia": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2003,7 +2783,7 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2011,7 +2791,7 @@
             },
             "Brasil": {
                 "pronostico": 5,
-                "media_grupo": 3.38,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2019,7 +2799,7 @@
             },
             "Bélgica": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2035,7 +2815,7 @@
             },
             "Canadá": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2043,7 +2823,7 @@
             },
             "Colombia": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2051,7 +2831,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2083,7 +2863,7 @@
             },
             "Ecuador": {
                 "pronostico": 4,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2091,7 +2871,7 @@
             },
             "Egipto": {
                 "pronostico": 1,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2099,7 +2879,7 @@
             },
             "Escocia": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2115,7 +2895,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2123,7 +2903,7 @@
             },
             "Francia": {
                 "pronostico": 2,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2131,7 +2911,7 @@
             },
             "Ghana": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2147,7 +2927,7 @@
             },
             "Inglaterra": {
                 "pronostico": 2,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2163,7 +2943,7 @@
             },
             "Irán": {
                 "pronostico": 0,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2171,7 +2951,7 @@
             },
             "Japón": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2187,7 +2967,7 @@
             },
             "Marruecos": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2203,7 +2983,7 @@
             },
             "Noruega": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2227,7 +3007,7 @@
             },
             "Paraguay": {
                 "pronostico": 3,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2235,7 +3015,7 @@
             },
             "Países Bajos": {
                 "pronostico": 3,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2243,7 +3023,7 @@
             },
             "Portugal": {
                 "pronostico": 4,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2259,7 +3039,7 @@
             },
             "RD Congo": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2267,7 +3047,7 @@
             },
             "República Checa": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2275,7 +3055,7 @@
             },
             "Senegal": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2283,7 +3063,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2291,15 +3071,15 @@
             },
             "Suecia": {
                 "pronostico": 0,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
+                "resultado_calculo": "Decepción",
+                "puntos": 10
             },
             "Suiza": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2307,7 +3087,7 @@
             },
             "Turquía": {
                 "pronostico": 2,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2315,7 +3095,7 @@
             },
             "Túnez": {
                 "pronostico": 2,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2323,7 +3103,7 @@
             },
             "Uruguay": {
                 "pronostico": 1,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2341,11 +3121,11 @@
     },
     "pau": {
         "puntos_sorpresas": 0,
-        "puntos_decepciones": 0,
+        "puntos_decepciones": 10,
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2353,7 +3133,7 @@
             },
             "Arabia Saudita": {
                 "pronostico": 0,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2369,7 +3149,7 @@
             },
             "Argentina": {
                 "pronostico": 3,
-                "media_grupo": 3.12,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2377,7 +3157,7 @@
             },
             "Australia": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2393,7 +3173,7 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2401,7 +3181,7 @@
             },
             "Brasil": {
                 "pronostico": 2,
-                "media_grupo": 3.38,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2409,7 +3189,7 @@
             },
             "Bélgica": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2425,7 +3205,7 @@
             },
             "Canadá": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2433,7 +3213,7 @@
             },
             "Colombia": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2441,7 +3221,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 2,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2473,7 +3253,7 @@
             },
             "Ecuador": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2481,7 +3261,7 @@
             },
             "Egipto": {
                 "pronostico": 1,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2489,7 +3269,7 @@
             },
             "Escocia": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2505,7 +3285,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2513,7 +3293,7 @@
             },
             "Francia": {
                 "pronostico": 4,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2521,7 +3301,7 @@
             },
             "Ghana": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2537,7 +3317,7 @@
             },
             "Inglaterra": {
                 "pronostico": 4,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2553,7 +3333,7 @@
             },
             "Irán": {
                 "pronostico": 0,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2561,7 +3341,7 @@
             },
             "Japón": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2577,7 +3357,7 @@
             },
             "Marruecos": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2593,7 +3373,7 @@
             },
             "Noruega": {
                 "pronostico": 3,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2617,7 +3397,7 @@
             },
             "Paraguay": {
                 "pronostico": 2,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2625,7 +3405,7 @@
             },
             "Países Bajos": {
                 "pronostico": 3,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2633,7 +3413,7 @@
             },
             "Portugal": {
                 "pronostico": 5,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2649,7 +3429,7 @@
             },
             "RD Congo": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2657,7 +3437,7 @@
             },
             "República Checa": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2665,7 +3445,7 @@
             },
             "Senegal": {
                 "pronostico": 2,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2673,7 +3453,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 0,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2681,15 +3461,15 @@
             },
             "Suecia": {
                 "pronostico": 0,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
+                "resultado_calculo": "Decepción",
+                "puntos": 10
             },
             "Suiza": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2697,7 +3477,7 @@
             },
             "Turquía": {
                 "pronostico": 3,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2705,7 +3485,7 @@
             },
             "Túnez": {
                 "pronostico": 0,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2713,7 +3493,7 @@
             },
             "Uruguay": {
                 "pronostico": 1,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2731,11 +3511,11 @@
     },
     "adri": {
         "puntos_sorpresas": 0,
-        "puntos_decepciones": 20,
+        "puntos_decepciones": 10,
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2743,7 +3523,7 @@
             },
             "Arabia Saudita": {
                 "pronostico": 0,
-                "media_grupo": 0.62,
+                "media_grupo": 0.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2759,7 +3539,7 @@
             },
             "Argentina": {
                 "pronostico": 3,
-                "media_grupo": 3.12,
+                "media_grupo": 3.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2767,7 +3547,7 @@
             },
             "Australia": {
                 "pronostico": 1,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2783,7 +3563,7 @@
             },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.3,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2791,7 +3571,7 @@
             },
             "Brasil": {
                 "pronostico": 5,
-                "media_grupo": 3.38,
+                "media_grupo": 3.5,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2799,7 +3579,7 @@
             },
             "Bélgica": {
                 "pronostico": 3,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2815,7 +3595,7 @@
             },
             "Canadá": {
                 "pronostico": 2,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2823,7 +3603,7 @@
             },
             "Colombia": {
                 "pronostico": 2,
-                "media_grupo": 2.12,
+                "media_grupo": 2.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2831,7 +3611,7 @@
             },
             "Corea del Sur": {
                 "pronostico": 0,
-                "media_grupo": 1.0,
+                "media_grupo": 0.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2863,7 +3643,7 @@
             },
             "Ecuador": {
                 "pronostico": 2,
-                "media_grupo": 1.75,
+                "media_grupo": 1.8,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2871,7 +3651,7 @@
             },
             "Egipto": {
                 "pronostico": 2,
-                "media_grupo": 1.38,
+                "media_grupo": 1.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2879,7 +3659,7 @@
             },
             "Escocia": {
                 "pronostico": 0,
-                "media_grupo": 1.25,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Decepción",
@@ -2895,7 +3675,7 @@
             },
             "Estados Unidos": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2903,7 +3683,7 @@
             },
             "Francia": {
                 "pronostico": 3,
-                "media_grupo": 3.75,
+                "media_grupo": 3.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2911,7 +3691,7 @@
             },
             "Ghana": {
                 "pronostico": 1,
-                "media_grupo": 1.0,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2927,7 +3707,7 @@
             },
             "Inglaterra": {
                 "pronostico": 3,
-                "media_grupo": 2.88,
+                "media_grupo": 3.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2943,7 +3723,7 @@
             },
             "Irán": {
                 "pronostico": 0,
-                "media_grupo": 0.12,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2951,7 +3731,7 @@
             },
             "Japón": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2967,7 +3747,7 @@
             },
             "Marruecos": {
                 "pronostico": 1,
-                "media_grupo": 1.88,
+                "media_grupo": 1.7,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2983,11 +3763,11 @@
             },
             "Noruega": {
                 "pronostico": 1,
-                "media_grupo": 2.12,
+                "media_grupo": 1.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
-                "resultado_calculo": "Decepción",
-                "puntos": 10
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
             },
             "Nueva Zelanda": {
                 "pronostico": 0,
@@ -3007,7 +3787,7 @@
             },
             "Paraguay": {
                 "pronostico": 0,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3015,7 +3795,7 @@
             },
             "Países Bajos": {
                 "pronostico": 4,
-                "media_grupo": 2.75,
+                "media_grupo": 3.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3023,7 +3803,7 @@
             },
             "Portugal": {
                 "pronostico": 4,
-                "media_grupo": 4.38,
+                "media_grupo": 4.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3039,7 +3819,7 @@
             },
             "RD Congo": {
                 "pronostico": 1,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3047,7 +3827,7 @@
             },
             "República Checa": {
                 "pronostico": 1,
-                "media_grupo": 0.88,
+                "media_grupo": 0.9,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3055,7 +3835,7 @@
             },
             "Senegal": {
                 "pronostico": 1,
-                "media_grupo": 1.25,
+                "media_grupo": 1.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3063,7 +3843,7 @@
             },
             "Sudáfrica": {
                 "pronostico": 1,
-                "media_grupo": 0.38,
+                "media_grupo": 0.4,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3071,7 +3851,7 @@
             },
             "Suecia": {
                 "pronostico": 2,
-                "media_grupo": 1.0,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3079,7 +3859,7 @@
             },
             "Suiza": {
                 "pronostico": 1,
-                "media_grupo": 1.75,
+                "media_grupo": 1.6,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3087,7 +3867,7 @@
             },
             "Turquía": {
                 "pronostico": 2,
-                "media_grupo": 1.88,
+                "media_grupo": 2.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3095,7 +3875,7 @@
             },
             "Túnez": {
                 "pronostico": 0,
-                "media_grupo": 0.25,
+                "media_grupo": 0.2,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -3103,7 +3883,7 @@
             },
             "Uruguay": {
                 "pronostico": 1,
-                "media_grupo": 1.12,
+                "media_grupo": 1.1,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",

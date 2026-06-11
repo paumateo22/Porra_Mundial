@@ -1,4 +1,10 @@
 {
+    "álvaro": {
+        "puntos_partidos": 0,
+        "total_aciertos_1x2": 0,
+        "total_aciertos_exactos": 0,
+        "historial_jornadas": {}
+    },
     "javi": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
@@ -6,6 +12,12 @@
         "historial_jornadas": {}
     },
     "manu": {
+        "puntos_partidos": 0,
+        "total_aciertos_1x2": 0,
+        "total_aciertos_exactos": 0,
+        "historial_jornadas": {}
+    },
+    "adrián_montes": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
