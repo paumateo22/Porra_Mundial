@@ -129,7 +129,7 @@ def obtener_partidos_mundial():
     print(f"🔍 Buscando partidos del Mundial 2026 (Torneo: {UNIQUE_TOURNAMENT_ID}, Temp: {SEASON_ID})...")
 
     # Bypass antibot avanzado
-    session = requests.Session(impersonate="safari15_5")
+    session = requests.Session(impersonate="chrome120")
     print("  🕵️ Haciendo visita de 'calentamiento' a la portada para coger cookies...")
     try:
         session.get("https://www.sofascore.com/", timeout=15)
