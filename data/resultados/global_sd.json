@@ -5,9 +5,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -33,9 +47,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -47,22 +61,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -75,8 +75,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -103,9 +117,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -117,23 +131,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -145,8 +145,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -173,8 +187,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -187,23 +201,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -215,9 +215,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 4,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -243,8 +257,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -257,23 +271,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 3,
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -285,8 +285,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -313,8 +327,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -327,23 +341,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -355,8 +355,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -383,8 +397,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -397,22 +411,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -425,8 +425,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -453,8 +467,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -467,23 +481,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -495,9 +495,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 3,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -523,8 +537,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -537,23 +551,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 5,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 5,
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -565,9 +565,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -593,9 +607,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 2,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -607,23 +621,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 3,
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -635,8 +635,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -663,8 +677,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -677,22 +691,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -705,8 +705,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -733,9 +747,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 0,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -747,23 +761,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -775,8 +775,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -803,8 +817,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -817,22 +831,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -845,9 +845,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -873,8 +887,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -887,22 +901,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -915,9 +915,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 1,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -943,9 +957,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 3,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -957,23 +971,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -985,8 +985,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1013,8 +1027,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1027,22 +1041,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1055,8 +1055,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1083,8 +1097,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1097,22 +1111,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1125,9 +1125,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1153,8 +1167,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1167,22 +1181,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 4,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1195,8 +1195,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1223,8 +1237,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1237,23 +1251,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -1265,8 +1265,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1293,8 +1307,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1307,25 +1321,11 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 0,
-                "puntos": 10,
-                "resultado": "Decepción"
             }
         ]
     },
@@ -1335,8 +1335,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1363,8 +1377,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1377,22 +1391,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 5,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 5,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1405,9 +1405,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1433,11 +1447,11 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 0,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
             },
             {
                 "jugador_id": "quesadator",
@@ -1447,22 +1461,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1475,9 +1475,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1503,8 +1517,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1517,22 +1531,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 4,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1545,9 +1545,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 0,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1573,8 +1587,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1587,23 +1601,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 1,
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -1615,8 +1615,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1643,8 +1657,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1657,22 +1671,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1685,9 +1685,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 5,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1713,9 +1727,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 3,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1727,23 +1741,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 4,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 3,
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -1755,8 +1755,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1783,8 +1797,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1797,22 +1811,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1825,29 +1825,8 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "javi",
-                "jugador_nombre": "Javi",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "manu",
-                "jugador_nombre": "Manu",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "miguel_dykan",
-                "jugador_nombre": "Miguel Dykan",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1860,13 +1839,6 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "quesadator",
-                "jugador_nombre": "Quesadator",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
                 "jugador_id": "carlinhos_jr",
                 "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
@@ -1874,37 +1846,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            }
-        ]
-    },
-    "Japón": {
-        "media": 1.11,
-        "realidad": 0,
-        "umbral": 1.0,
-        "predicciones": [
-            {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
                 "jugador_id": "javi",
                 "jugador_nombre": "Javi",
-                "fase_pronostico": 1,
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1918,6 +1862,41 @@
             {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
+    },
+    "Japón": {
+        "media": 1.11,
+        "realidad": 0,
+        "umbral": 1.0,
+        "predicciones": [
+            {
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1930,15 +1909,29 @@
                 "resultado": "Decepción"
             },
             {
-                "jugador_id": "quesadator",
-                "jugador_nombre": "Quesadator",
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "javi",
+                "jugador_nombre": "Javi",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "manu",
+                "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "miguel_dykan",
+                "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1951,9 +1944,16 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -1965,8 +1965,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1993,8 +2007,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2007,22 +2021,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2035,8 +2035,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2063,9 +2077,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 3,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2077,22 +2091,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2105,9 +2105,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 2,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2133,9 +2147,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2147,23 +2161,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -2175,9 +2175,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2203,9 +2217,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2217,22 +2231,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2245,8 +2245,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2273,8 +2287,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2287,22 +2301,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2315,8 +2315,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2343,8 +2357,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2357,22 +2371,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2385,9 +2385,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 2,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2413,9 +2427,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2427,23 +2441,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -2455,9 +2455,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2483,9 +2497,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 4,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2497,22 +2511,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2525,9 +2525,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 2,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2553,8 +2567,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2567,23 +2581,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 4,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 5,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 4,
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -2595,8 +2595,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2623,8 +2637,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2637,22 +2651,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2665,8 +2665,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2693,9 +2707,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2707,23 +2721,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -2735,9 +2735,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2763,9 +2777,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 0,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2777,22 +2791,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2805,8 +2805,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2833,8 +2847,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2847,22 +2861,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2875,8 +2875,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2903,9 +2917,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 2,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2917,23 +2931,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -2945,9 +2945,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2973,9 +2987,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2987,23 +3001,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 2,
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -3015,8 +3015,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3043,8 +3057,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3057,22 +3071,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3085,9 +3085,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 3,
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -3113,9 +3127,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
-                "fase_pronostico": 1,
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -3127,23 +3141,9 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 3,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
-                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             }
@@ -3155,9 +3155,23 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -3183,8 +3197,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3197,22 +3211,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 2,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3225,29 +3225,8 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "javi",
-                "jugador_nombre": "Javi",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "manu",
-                "jugador_nombre": "Manu",
-                "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "miguel_dykan",
-                "jugador_nombre": "Miguel Dykan",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3260,15 +3239,29 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "quesadator",
-                "jugador_nombre": "Quesadator",
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
+                "jugador_id": "javi",
+                "jugador_nombre": "Javi",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "manu",
+                "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "miguel_dykan",
+                "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3281,8 +3274,15 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3295,8 +3295,22 @@
         "umbral": 1.0,
         "predicciones": [
             {
-                "jugador_id": "álvaro",
-                "jugador_nombre": "Álvaro",
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3323,8 +3337,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "aitor",
-                "jugador_nombre": "Aitor",
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -3337,22 +3351,8 @@
                 "resultado": "Ninguno"
             },
             {
-                "jugador_id": "carlinhos_jr",
-                "jugador_nombre": "Carlinhos Jr",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "pau",
-                "jugador_nombre": "Pau",
-                "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
-            },
-            {
-                "jugador_id": "adri",
-                "jugador_nombre": "Adri",
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
