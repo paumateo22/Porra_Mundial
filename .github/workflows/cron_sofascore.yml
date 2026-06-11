@@ -3,7 +3,7 @@ name: Scraper Horario SofaScore
 on:
   schedule:
     # Se ejecuta en el minuto 0 de cada hora (* * * * * significa cada minuto, 0 es la hora en punto)
-    - cron: '0 * * * *'
+    - cron: '11,33,52 * * * *'
   # Dejamos el botón manual por si quieres forzar una actualización
   workflow_dispatch:
 
