@@ -1,3 +1,4 @@
 matplotlib
 requests
 curl_cffi
+tzdata
