@@ -1,12 +1,19 @@
 {
     "Alemania": {
-        "media": 1.67,
+        "media": 1.71,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -49,7 +56,7 @@
         ]
     },
     "Arabia Saudita": {
-        "media": 0.67,
+        "media": 0.71,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -57,6 +64,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -98,13 +112,20 @@
         ]
     },
     "Argelia": {
-        "media": 0.67,
+        "media": 0.57,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -147,7 +168,7 @@
         ]
     },
     "Argentina": {
-        "media": 3.17,
+        "media": 3.14,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -155,6 +176,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -196,7 +224,7 @@
         ]
     },
     "Australia": {
-        "media": 0.33,
+        "media": 0.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -204,6 +232,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -257,6 +292,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
@@ -294,13 +336,20 @@
         ]
     },
     "Bosnia-Herzegovina": {
-        "media": 1.33,
+        "media": 1.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -343,7 +392,7 @@
         ]
     },
     "Brasil": {
-        "media": 3.17,
+        "media": 3.14,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -351,6 +400,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 4,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -392,7 +448,7 @@
         ]
     },
     "Bélgica": {
-        "media": 1.5,
+        "media": 1.71,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -400,6 +456,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -453,6 +516,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -490,7 +560,7 @@
         ]
     },
     "Canadá": {
-        "media": 0.5,
+        "media": 0.71,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -498,6 +568,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -539,7 +616,7 @@
         ]
     },
     "Colombia": {
-        "media": 2.17,
+        "media": 2.14,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -547,6 +624,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -588,13 +672,20 @@
         ]
     },
     "Corea del Sur": {
-        "media": 1.17,
+        "media": 1.14,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -637,13 +728,20 @@
         ]
     },
     "Costa de Marfil": {
-        "media": 1.5,
+        "media": 1.43,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -698,6 +796,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
@@ -747,6 +852,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -784,13 +896,20 @@
         ]
     },
     "Ecuador": {
-        "media": 1.83,
+        "media": 1.71,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -833,7 +952,7 @@
         ]
     },
     "Egipto": {
-        "media": 1.33,
+        "media": 1.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -841,6 +960,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -882,7 +1008,7 @@
         ]
     },
     "Escocia": {
-        "media": 1.5,
+        "media": 1.43,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -890,6 +1016,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -943,6 +1076,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 5,
@@ -980,7 +1120,7 @@
         ]
     },
     "Estados Unidos": {
-        "media": 1.17,
+        "media": 1.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -988,6 +1128,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1029,7 +1176,7 @@
         ]
     },
     "Francia": {
-        "media": 3.83,
+        "media": 3.86,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1037,6 +1184,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 5,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1078,7 +1232,7 @@
         ]
     },
     "Ghana": {
-        "media": 1.17,
+        "media": 1.0,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1086,6 +1240,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1139,6 +1300,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -1176,7 +1344,7 @@
         ]
     },
     "Inglaterra": {
-        "media": 2.67,
+        "media": 2.86,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1184,6 +1352,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1237,6 +1412,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -1274,7 +1456,7 @@
         ]
     },
     "Irán": {
-        "media": 0.17,
+        "media": 0.14,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1282,6 +1464,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1323,13 +1512,20 @@
         ]
     },
     "Japón": {
-        "media": 0.83,
+        "media": 0.86,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1384,6 +1580,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -1421,7 +1624,7 @@
         ]
     },
     "Marruecos": {
-        "media": 2.17,
+        "media": 2.0,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1433,11 +1636,18 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
             },
             {
                 "jugador_id": "aitor",
@@ -1450,8 +1660,8 @@
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
             },
             {
                 "jugador_id": "javi",
@@ -1464,19 +1674,26 @@
                 "jugador_id": "carlinhos_jr",
                 "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
             }
         ]
     },
     "México": {
-        "media": 1.5,
+        "media": 1.57,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1519,7 +1736,7 @@
         ]
     },
     "Noruega": {
-        "media": 2.33,
+        "media": 2.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1527,6 +1744,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1575,6 +1799,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1629,6 +1860,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -1678,6 +1916,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -1715,7 +1960,7 @@
         ]
     },
     "Países Bajos": {
-        "media": 2.5,
+        "media": 2.57,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1725,6 +1970,13 @@
                 "fase_pronostico": 1,
                 "puntos": 10,
                 "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
             },
             {
                 "jugador_id": "miguel_dykan",
@@ -1764,7 +2016,7 @@
         ]
     },
     "Portugal": {
-        "media": 4.33,
+        "media": 4.43,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1772,6 +2024,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1825,6 +2084,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
@@ -1862,13 +2128,20 @@
         ]
     },
     "RD Congo": {
-        "media": 0.33,
+        "media": 0.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1911,7 +2184,7 @@
         ]
     },
     "República Checa": {
-        "media": 0.83,
+        "media": 0.86,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1919,6 +2192,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1960,13 +2240,20 @@
         ]
     },
     "Senegal": {
-        "media": 1.33,
+        "media": 1.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2009,13 +2296,20 @@
         ]
     },
     "Sudáfrica": {
-        "media": 0.33,
+        "media": 0.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2058,7 +2352,7 @@
         ]
     },
     "Suecia": {
-        "media": 0.83,
+        "media": 0.86,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -2066,6 +2360,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2107,13 +2408,20 @@
         ]
     },
     "Suiza": {
-        "media": 1.83,
+        "media": 1.86,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2156,7 +2464,7 @@
         ]
     },
     "Turquía": {
-        "media": 1.83,
+        "media": 1.86,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -2164,6 +2472,13 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -2205,13 +2520,20 @@
         ]
     },
     "Túnez": {
-        "media": 0.33,
+        "media": 0.29,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2254,13 +2576,20 @@
         ]
     },
     "Uruguay": {
-        "media": 1.17,
+        "media": 1.14,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -2310,6 +2639,13 @@
             {
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
