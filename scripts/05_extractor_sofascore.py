@@ -121,37 +121,62 @@ def obtener_partidos_mundial():
     headers = {
         "Origin": "https://www.sofascore.com",
         "Referer": "https://www.sofascore.com/",
-        "Accept-Language": "es-ES,es;q=0.9"
+        "Accept-Language": "es-ES,es;q=0.9",
+        "Cache-Control": "max-age=0",
+        "x-requested-with": "XMLHttpRequest"
     }
 
     print(f"🔍 Buscando partidos del Mundial 2026 (Torneo: {UNIQUE_TOURNAMENT_ID}, Temp: {SEASON_ID})...")
 
+    # Bypass antibot avanzado
+    session = requests.Session(impersonate="safari15_5")
+    print("  🕵️ Haciendo visita de 'calentamiento' a la portada para coger cookies...")
+    try:
+        session.get("https://www.sofascore.com/", timeout=15)
+    except:
+        pass
+
     todos_los_eventos = []
-    pagina = 0
+    eventos_ids = set() # Set para evitar duplicados entre last y next
 
-    while True:
-        url = (
-            f"https://api.sofascore.com/api/v1/unique-tournament/{UNIQUE_TOURNAMENT_ID}"
-            f"/season/{SEASON_ID}/events/last/{pagina}"
-        )
-        try:
-            respuesta = requests.get(url, headers=headers, impersonate="chrome110")
-            if respuesta.status_code != 200:
+    # Iteramos por los dos endpoints: pasados/en juego ("last") y futuros ("next")
+    for tipo_endpoint in ["last", "next"]:
+        pagina = 0
+        print(f"  📡 Extrayendo lote: {tipo_endpoint.upper()}...")
+        while True:
+            # Usamos el dominio www principal en vez del subdominio api
+            url = (
+                f"https://www.sofascore.com/api/v1/unique-tournament/{UNIQUE_TOURNAMENT_ID}"
+                f"/season/{SEASON_ID}/events/{tipo_endpoint}/{pagina}"
+            )
+            try:
+                respuesta = session.get(url, headers=headers, timeout=15)
+                
+                if respuesta.status_code == 403:
+                    print("     ❌ HTTP 403: Muro antibot detectado.")
+                    break
+                if respuesta.status_code != 200:
+                    break
+
+                datos = respuesta.json()
+                eventos_pagina = datos.get('events', [])
+                
+                # Añadimos solo eventos que no hayamos guardado ya
+                for ev in eventos_pagina:
+                    ev_id = ev.get('id')
+                    if ev_id not in eventos_ids:
+                        eventos_ids.add(ev_id)
+                        todos_los_eventos.append(ev)
+
+                if not datos.get('hasNextPage', False) or not eventos_pagina:
+                    break
+                pagina += 1
+
+            except Exception as e:
+                print(f"❌ Error de conexión con SofaScore: {e}")
                 break
 
-            datos = respuesta.json()
-            eventos_pagina = datos.get('events', [])
-            todos_los_eventos.extend(eventos_pagina)
-
-            if not datos.get('hasNextPage', False) or not eventos_pagina:
-                break
-            pagina += 1
-
-        except Exception as e:
-            print(f"❌ Error de conexión con SofaScore: {e}")
-            break
-
-    print(f"✅ Extraídos {len(todos_los_eventos)} partidos en bruto del servidor.")
+    print(f"✅ Extraídos {len(todos_los_eventos)} partidos únicos en bruto del servidor.")
     return todos_los_eventos
 
 
