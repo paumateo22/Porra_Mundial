@@ -23,7 +23,7 @@
         "puntos_jornadas": 0,
         "desglose_jornadas": {}
     },
-    "pau": {
+    "carlinhos_jr": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
@@ -31,7 +31,7 @@
         "puntos_jornadas": 0,
         "desglose_jornadas": {}
     },
-    "carlinhos_jr": {
+    "pau": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,

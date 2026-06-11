@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏆 Porra Mundial 2026</title>
-    <link rel="stylesheet" href="theme.css">
-</head>
-<body>
-    
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Pronósticos Finales | Aitor</title>
+                <link rel="stylesheet" href="../../../theme.css">
+                <style>
+                    .match-grid-2col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+                    .group-grid-2col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+                    @media (max-width: 768px) { .match-grid-2col, .group-grid-2col { grid-template-columns: 1fr; } }
+                    .pred-summary { margin:0; cursor:pointer; list-style:none; outline:none; }
+                    .pred-summary::-webkit-details-marker { display:none; }
+                    .pred-summary::marker { display:none; }
+                    .pred-card-details { margin:0 auto; width: 100%; max-width: 350px; background: #1a1a1a; padding: 10px; border-radius: 6px; border: 1px solid #333; }
+                    .pred-card-details[open] { background: #1f1f1f; }
+                    .jornada-details > summary h3::after, .jornada-details > summary h2::after { content: ' ▼'; font-size: 0.7em; color: gray; transition: 0.3s; margin-left: 8px; }
+                    .jornada-details[open] > summary h3::after, .jornada-details[open] > summary h2::after { content: ' ▲'; color: var(--gold); }
+                </style>
+                <script>
+                    function openTab(tabName) {
+                        document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+                        document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+                        document.getElementById(tabName).classList.add('active');
+                        event.currentTarget.classList.add('active');
+                    }
+                    
+                    // Función para forzar la apertura del candado en el cliente
+                    function verificarClaveFase() {
+                        const inputClave = document.getElementById("bypass-pass").value;
+                        const claveCorrecta = "Alguien05";
+                        if (inputClave === claveCorrecta) {
+                            document.getElementById("lock-screen-container").style.display = "none";
+                            document.getElementById("protected-content-container").style.display = "block";
+                        } else {
+                            const errEl = document.getElementById("bypass-error");
+                            errEl.style.display = "block";
+                            errEl.innerText = "⚠️ Contraseña incorrecta. Pídesela al administrador o al participante.";
+                        }
+                    }
+                </script>
+            </head>
+            <body>
+                
     <style>
         /* Estilos críticos para asegurar que el menú quede por encima de todo */
         .sidenav {
@@ -25,13 +59,13 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">🏠 Clasificación Global</a>
-        <a href="calendario.html">📅 Calendario Oficial</a>
-        <a href="jornadas.html">📈 Análisis por Jornadas</a>
-        <a href="participantes.html">👥 Participantes</a>
-        <a href="instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro & Reglamento</a>
+        <a href="../../../index.html">🏠 Clasificación Global</a>
+        <a href="../../../calendario.html">📅 Calendario Oficial</a>
+        <a href="../../../jornadas.html">📈 Análisis por Jornadas</a>
+        <a href="../../../participantes.html">👥 Participantes</a>
+        <a href="../../../instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro & Reglamento</a>
         <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">🔗 Infobae</a>
-        <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
+        <a href="../../../generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
         <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">🔗 SofaScore</a>
     </div>
     <div class="menu-btn" onclick="openNav()">☰</div>
@@ -40,7 +74,7 @@
         function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
     </script>
     
-    
+                
     <header style="padding: 20px 10px; padding-bottom: 30px;">
         <style>
             .header-main-container {
@@ -200,15 +234,15 @@
 
             <!-- CENTRO -->
             <div class="header-center">
-                <h1 style="margin-top:0; font-size: 2.2em;">🏆 Porra Mundial 2026</h1>
-                <p style="font-size: 0.9em;">Panel de Estadísticas Oficiales | Actualizado: 11/06/2026 13:11</p>
+                <h1 style="margin-top:0; font-size: 2.2em;"> 📓 Pronósticos : Aitor</h1>
+                <p style="font-size: 0.9em;">Pronóstico enviado en la fase: <strong>Finales</strong></p>
                 <div class="top-nav" style="margin: 10px 0;">
-                    <a href="index.html" class="home-btn">🏠 Inicio</a>
+                    <a href="../../../index.html" class="home-btn">🏠 Inicio</a>
                     <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Infobae</a>
-                    <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
+                    <a href="../../../generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
                     <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">SofaScore</a>
                 </div>
-                <div style="text-align:center; margin-top:20px;"><a href="instrucciones.html" class="btn-participa" style="display:inline-block; padding:15px 30px; font-size:1.2em; border-radius:30px; background:var(--gold); color:black; font-weight:bold; text-decoration:none; box-shadow:0 0 15px rgba(218,165,32,0.5);">¡PARTICIPA AHORA!</a></div>
+                
             </div>
 
             <!-- WIDGETS DERECHOS (apilados verticalmente) -->
@@ -239,7 +273,7 @@
         </div>
 
         <script>
-            const FASES_TORNEO = [{"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": "2026-06-11T21:00:00", "link": "https://www.infobae.com/mundial-2026/simulador/"}, {"id": "dieciseisavos", "name": "Dieciseisavos (1/16)", "predict": "2026-06-28T08:00:00", "start": "2026-06-28T21:00:00", "link": "generador_pronosticos.html"}, {"id": "octavos", "name": "Octavos (1/8)", "predict": "2026-07-04T06:00:00", "start": "2026-07-04T19:00:00", "link": "generador_pronosticos.html"}, {"id": "cuartos", "name": "Cuartos (1/4)", "predict": "2026-07-08T00:30:00", "start": "2026-07-09T22:00:00", "link": "generador_pronosticos.html"}, {"id": "semifinales", "name": "Semifinales", "predict": "2026-07-12T06:00:00", "start": "2026-07-14T21:00:00", "link": "generador_pronosticos.html"}, {"id": "finales", "name": "Finales", "predict": "2026-07-15T23:59:00", "start": "2026-07-18T23:00:00", "link": "generador_pronosticos.html"}];
+            const FASES_TORNEO = [{"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": "2026-06-11T21:00:00", "link": "https://www.infobae.com/mundial-2026/simulador/"}, {"id": "dieciseisavos", "name": "Dieciseisavos (1/16)", "predict": "2026-06-28T08:00:00", "start": "2026-06-28T21:00:00", "link": "../../../generador_pronosticos.html"}, {"id": "octavos", "name": "Octavos (1/8)", "predict": "2026-07-04T06:00:00", "start": "2026-07-04T19:00:00", "link": "../../../generador_pronosticos.html"}, {"id": "cuartos", "name": "Cuartos (1/4)", "predict": "2026-07-08T00:30:00", "start": "2026-07-09T22:00:00", "link": "../../../generador_pronosticos.html"}, {"id": "semifinales", "name": "Semifinales", "predict": "2026-07-12T06:00:00", "start": "2026-07-14T21:00:00", "link": "../../../generador_pronosticos.html"}, {"id": "finales", "name": "Finales", "predict": "2026-07-15T23:59:00", "start": "2026-07-18T23:00:00", "link": "../../../generador_pronosticos.html"}];
             const NEXT_MATCH_ISO = "2026-06-11T21:00:00";
 
             function formatDiff(ms) {
@@ -313,92 +347,32 @@
         
     </header>
     
-    <div class="container">
-
-        <details open>
-            <summary><h2>📊 Resumen General</h2></summary>
-            <div class="table-wrapper">
-                <table>
-                    <tr>
-                        <th>Pos</th><th>Jugador</th><th>Aciertos<br><span style="font-size:0.8em">(Exactos / 1x2)</span></th>
-                        <th>Pase a Elim.<br><span style="font-size:0.8em">(Posición / Pasan)</span></th>
-                        <th>Sorpresa | Decepción</th><th>Extras<br>(Premios)</th><th>Récord<br>(Ganador/Perdedor)</th><th>Total</th>
-                    </tr>
-
-                    <tr>
-                        <td>🥇 1º</td>
-                        <td><a href="participantes/manu/vistas/dashboard.html" style="color:var(--gold); font-weight:bold; text-decoration:none;">manu</a></td>
-                        <td>0 / 0</td>
-                        <td>0 / 0</td>
-                        <td>+0 | +20</td>
-                        <td>0.00</td>
-                        <td>0W - 0L</td>
-                        <td class="pts-totales">0</td>
-                    </tr>
-                    <tr>
-                        <td>🥈 2º</td>
-                        <td><a href="participantes/miguel_dykan/vistas/dashboard.html" style="color:var(--gold); font-weight:bold; text-decoration:none;">miguel_dykan</a></td>
-                        <td>0 / 0</td>
-                        <td>0 / 0</td>
-                        <td>+0 | +20</td>
-                        <td>0.00</td>
-                        <td>0W - 0L</td>
-                        <td class="pts-totales">0</td>
-                    </tr>
-                    <tr>
-                        <td>🥉 3º</td>
-                        <td><a href="participantes/aitor/vistas/dashboard.html" style="color:var(--gold); font-weight:bold; text-decoration:none;">aitor</a></td>
-                        <td>0 / 0</td>
-                        <td>0 / 0</td>
-                        <td>+0 | +20</td>
-                        <td>0.00</td>
-                        <td>0W - 0L</td>
-                        <td class="pts-totales">0</td>
-                    </tr>
-                    <tr>
-                        <td>4º</td>
-                        <td><a href="participantes/carlinhos_jr/vistas/dashboard.html" style="color:var(--gold); font-weight:bold; text-decoration:none;">carlinhos_jr</a></td>
-                        <td>0 / 0</td>
-                        <td>0 / 0</td>
-                        <td>+0 | +0</td>
-                        <td>0.00</td>
-                        <td>0W - 0L</td>
-                        <td class="pts-totales">0</td>
-                    </tr>
-                    <tr>
-                        <td>5º</td>
-                        <td><a href="participantes/pau/vistas/dashboard.html" style="color:var(--gold); font-weight:bold; text-decoration:none;">pau</a></td>
-                        <td>0 / 0</td>
-                        <td>0 / 0</td>
-                        <td>+0 | +0</td>
-                        <td>0.00</td>
-                        <td>0W - 0L</td>
-                        <td class="pts-totales">0</td>
-                    </tr>
-                </table>
-            </div>
-        </details>
-
-        <h2 style="margin-top:40px;">🔥 Últimos Partidos 
-            <a href="calendario.html" style="font-size:0.5em; float:right; color:var(--table-header); text-decoration:none; margin-top:10px;">Ver Calendario ➡️</a>
-        </h2>
-        <div class="latest-grid" style="margin-bottom:40px;">
-    <p style='color:gray;'>Aún no hay partidos finalizados.</p></div>
-        <details open>
-            <summary><h2>📅 Rendimiento por Jornadas</h2></summary>
-            <div class="table-wrapper">
-                <table>
-                    <tr><th>Pos</th><th>Jugador</th>
-<th>J1.1</th><th>J1.2</th><th>J2.1</th><th>J2.2</th><th>J3.1</th><th>J3.2</th><th>DIECISEISAVOS.1</th><th>DIECISEISAVOS.2</th><th>OCTAVOS</th><th>CUARTOS</th><th>SEMIFINALES</th><th>FINALES</th></tr>
-<tr><td>1º</td><td>manu</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td>2º</td><td>miguel_dykan</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td>3º</td><td>aitor</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td>4º</td><td>carlinhos_jr</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td>5º</td><td>pau</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-
-                </table>
-            </div>
-        </details>
+                <div class="sticky-nav" style="position: sticky; top: 0; z-index: 1000; background: rgba(18,18,18,0.95); padding: 12px; border-bottom: 2px solid var(--gold); display: flex; gap: 10px; justify-content: center; overflow-x: auto; flex-wrap: nowrap; backdrop-filter: blur(5px); box-shadow: 0 4px 10px rgba(0,0,0,0.5); margin-bottom: 20px;">
+        <a href="dashboard.html" style="background:#111; color:gray;">⬅️ Volver al Dashboard</a>
+        <span style="border-left:1px solid #444; margin:0 5px;"></span>
+        <a href="pronostico_grupos.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:#333; color:white; border:1px solid #444;">Grupos</a>
+        <a href="pronostico_dieciseisavos.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:#333; color:white; border:1px solid #444;">1/16</a>
+        <a href="pronostico_octavos.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:#333; color:white; border:1px solid #444;">1/8</a>
+        <a href="pronostico_cuartos.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:#333; color:white; border:1px solid #444;">1/4</a>
+        <a href="pronostico_semifinales.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:#333; color:white; border:1px solid #444;">Semis</a>
+        <a href="pronostico_finales.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:var(--gold); color:black; border-color:var(--gold);">Finales</a>
+        <a href="pronostico_premios.html" style="text-decoration:none; font-size:0.85em; font-weight:bold; white-space:nowrap; padding:8px 15px; border-radius:4px; transition:0.3s; background:#333; color:white; border:1px solid #444;">Premios</a>
     </div>
-</body>
-</html>
+                <div class="container">
+            
+                <div id="lock-screen-container" style="display:block; background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
+                    <div style="font-size:3.5em; margin-bottom:15px;">🔒</div>
+                    <h2 style="color:var(--gold); margin-top:0;">Pronóstico Protegido</h2>
+                    <p style="color:#ddd; font-size:1.1em; margin-bottom:5px;">El pronóstico de <strong>Aitor</strong> ha sido recibido y está guardado a salvo.</p>
+                    <p style="color:gray; font-size:0.95em; margin-bottom:25px;">Se revelará públicamente el <strong>18/07/2026 a las 23:00</strong> (Hora Peninsular).</p>
+                    
+                    <div style="max-width:320px; margin:0 auto; padding-top:20px; border-top:1px dashed #333;">
+                        <label style="display:block; font-size:0.85em; color:gray; margin-bottom:8px; font-weight:bold;">🔓 DESBLOQUEO MANUAL CON CONTRASEÑA</label>
+                        <input type="password" id="bypass-pass" placeholder="Introduce la clave de acceso" style="width:100%; padding:10px; border-radius:6px; border:1px solid #444; background:#222; color:white; box-sizing:border-box; text-align:center; margin-bottom:10px; font-size:1em;">
+                        <button onclick="verificarClaveFase()" style="width:100%; padding:10px; border-radius:6px; background:var(--gold); color:black; font-weight:bold; border:none; cursor:pointer; font-size:0.95em; transition:0.2s;">Desbloquear Vista</button>
+                        <p id="bypass-error" style="color:#ff4d4d; font-size:0.85em; margin-top:10px; display:none; font-weight:bold;"></p>
+                    </div>
+                </div>
+            <div id="protected-content-container" style="display:none;"><div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
+                    <h3>El archivo de pronóstico para Finales no existe o no se rellenó.</h3>
+                </div></div></div></body></html>
