@@ -1,11 +1,17 @@
 {
+    "javi": {
+        "puntos_partidos": 0,
+        "total_aciertos_1x2": 0,
+        "total_aciertos_exactos": 0,
+        "historial_jornadas": {}
+    },
     "manu": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {}
     },
-    "quesadator": {
+    "adrián_montes": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
@@ -23,19 +29,19 @@
         "total_aciertos_exactos": 0,
         "historial_jornadas": {}
     },
-    "pau": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {}
-    },
-    "javi": {
+    "quesadator": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {}
     },
     "carlinhos_jr": {
+        "puntos_partidos": 0,
+        "total_aciertos_1x2": 0,
+        "total_aciertos_exactos": 0,
+        "historial_jornadas": {}
+    },
+    "pau": {
         "puntos_partidos": 0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
