@@ -1,5 +1,6 @@
 import sys
 import json
+import csv  # Inyectamos csv para procesar el archivo de registro
 from pathlib import Path
 from datetime import datetime
 
@@ -68,7 +69,6 @@ def render_bracket_futuro(eliminatorias_dict, fase_inicio):
     
     if not fases_dibujar: return "<p style='color:gray; text-align:center; padding: 20px;'>No hay rondas posteriores en esta proyección.</p>"
 
-    # --- DISEÑO DINÁMICO: Más pequeño para Grupos y 1/16 ---
     es_fase_temprana = fase_inicio in ["grupos", "dieciseisavos"]
     
     col_min_width = "110px" if es_fase_temprana else "160px"
@@ -115,7 +115,6 @@ def render_bracket_futuro(eliminatorias_dict, fase_inicio):
             </div>
         </div>"""
 
-    # DOBLE WRAPPER: Soluciona el problema de que se corte la izquierda en flexbox
     html = f"""
     <div style="width:100%; overflow-x:auto;">
         <div style="display:flex; justify-content:center; align-items:stretch; gap:{gap_cols}; padding:20px 10px; min-width:max-content; margin:0 auto;">
@@ -175,6 +174,20 @@ def generar_vistas_pronosticos():
     realidad_dict = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
     premios_reales = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "premios_oficiales.json") or {}
     
+    # -----------------------------------------------------
+    # 🔐 EXTRACCIÓN DE CONTRASEÑAS DESDE INSCRIPCION.CSV
+    # -----------------------------------------------------
+    ruta_csv = ROOT_DIR / "inscripcion.csv"
+    claves_usuarios = {}
+    if ruta_csv.exists():
+        with open(ruta_csv, mode='r', encoding='utf-8') as f:
+            lector = csv.DictReader(f)
+            for fila in lector:
+                nom_limpio = fila.get('Nombre', '').strip().lower().replace(' ', '_')
+                clave = fila.get('clave_acceso', '').strip()
+                if nom_limpio and clave:
+                    claves_usuarios[nom_limpio] = clave
+
     dict_reales = {}
     for g, partidos in realidad_dict.get("fase_grupos", {}).items():
         for p in partidos: dict_reales[f"{p['local']}_vs_{p['visitante']}"] = p
@@ -204,12 +217,13 @@ def generar_vistas_pronosticos():
         libro_stats = html_utils.cargar_json(j_dir / "estadisticas" / "historial_puntos.json") or {}
         desglose_j = libro_stats.get("desglose_jornadas", {})
         desglose_p = libro_stats.get("desglose_partidos", {})
+        
+        clave_usuario = claves_usuarios.get(j_dir.name, "adminporra2026") # Clave por defecto si no se encuentra
 
         # ==========================================
         # 1. FASES DEL TORNEO (Grupos -> Finales)
         # ==========================================
         for fase in FASES_ORDEN:
-            # RUTAS ESTRICTAS
             if fase == "grupos":
                 ruta_json = j_dir / "pronosticos" / "grupos" / f"{j_dir.name}_base.json"
             else:
@@ -217,7 +231,6 @@ def generar_vistas_pronosticos():
             
             pronostico_data = html_utils.cargar_json(ruta_json) or {}
             
-            # Reconstruir dict_preds como lo hace el dashboard
             dict_preds = {}
             if fase == "grupos":
                 for p_list in pronostico_data.get("fase_grupos", {}).values():
@@ -260,6 +273,20 @@ def generar_vistas_pronosticos():
                         document.getElementById(tabName).classList.add('active');
                         event.currentTarget.classList.add('active');
                     }}
+                    
+                    // Función para forzar la apertura del candado en el cliente
+                    function verificarClaveFase() {{
+                        const inputClave = document.getElementById("bypass-pass").value;
+                        const claveCorrecta = "{clave_usuario}";
+                        if (inputClave === claveCorrecta) {{
+                            document.getElementById("lock-screen-container").style.display = "none";
+                            document.getElementById("protected-content-container").style.display = "block";
+                        }} else {{
+                            const errEl = document.getElementById("bypass-error");
+                            errEl.style.display = "block";
+                            errEl.innerText = "⚠️ Contraseña incorrecta. Pídesela al administrador o al participante.";
+                        }}
+                    }}
                 </script>
             </head>
             <body>
@@ -269,236 +296,244 @@ def generar_vistas_pronosticos():
                 <div class="container">
             """
 
-            if not pronostico_data:
-                html += f"""<div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
-                    <h3>El archivo de pronóstico para {format_fase(fase)} no existe o no se rellenó.</h3>
-                </div></div></body></html>"""
-                with open(dir_vistas / f"pronostico_{fase}.html", 'w', encoding='utf-8') as f: f.write(html)
-                continue
-
             bloqueado, fecha_apertura = esta_bloqueado(fase)
-            if bloqueado:
-                html += f"""
-                <div style="background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
+            
+            # Bloque de interfaz de Candado (Solo visible si 'bloqueado' es True)
+            display_candado = "block" if bloqueado else "none"
+            html += f"""
+                <div id="lock-screen-container" style="display:{display_candado}; background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
                     <div style="font-size:3.5em; margin-bottom:15px;">🔒</div>
                     <h2 style="color:var(--gold); margin-top:0;">Pronóstico Protegido</h2>
                     <p style="color:#ddd; font-size:1.1em; margin-bottom:5px;">El pronóstico de <strong>{nombre}</strong> ha sido recibido y está guardado a salvo.</p>
-                    <p style="color:gray; font-size:0.95em;">Se revelará públicamente el <strong>{fecha_apertura}</strong> (Hora Peninsular).</p>
-                </div></div></body></html>"""
-                with open(dir_vistas / f"pronostico_{fase}.html", 'w', encoding='utf-8') as f: f.write(html)
-                continue
-
-            # --- SECCIÓN 1: COMPARATIVA DE LA FASE ACTUAL ---
-            if fase == "grupos":
-                html += f"""
-                <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
-                    <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0; color:var(--gold);">🌍 FASE DE GRUPOS (Comparativa)</h2></summary>
-                    <div class="tabs-container">
-                        <button class="tab-btn active" onclick="openTab('tab-grupos-jaj')">Jornada a Jornada (JaJ)</button>
-                        <button class="tab-btn" onclick="openTab('tab-grupos-gag')">Grupo a Grupo (GaG)</button>
+                    <p style="color:gray; font-size:0.95em; margin-bottom:25px;">Se revelará públicamente el <strong>{fecha_apertura}</strong> (Hora Peninsular).</p>
+                    
+                    <div style="max-width:320px; margin:0 auto; padding-top:20px; border-top:1px dashed #333;">
+                        <label style="display:block; font-size:0.85em; color:gray; margin-bottom:8px; font-weight:bold;">🔓 DESBLOQUEO MANUAL CON CONTRASEÑA</label>
+                        <input type="password" id="bypass-pass" placeholder="Introduce la clave de acceso" style="width:100%; padding:10px; border-radius:6px; border:1px solid #444; background:#222; color:white; box-sizing:border-box; text-align:center; margin-bottom:10px; font-size:1em;">
+                        <button onclick="verificarClaveFase()" style="width:100%; padding:10px; border-radius:6px; background:var(--gold); color:black; font-weight:bold; border:none; cursor:pointer; font-size:0.95em; transition:0.2s;">Desbloquear Vista</button>
+                        <p id="bypass-error" style="color:#ff4d4d; font-size:0.85em; margin-top:10px; display:none; font-weight:bold;"></p>
                     </div>
-                    <div id="tab-grupos-jaj" class="tab-content active">
-                """
-                jornadas_grupos = [k for k in jornadas_keys if k.startswith("J")]
-                
-                for j_key in jornadas_grupos:
-                    html += f"<details class='jornada-details' open style='margin-bottom:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333;'>"
-                    html += f"<summary style='border:none; padding:0; margin:0; outline:none; cursor:pointer;'><h3 style='color:var(--table-header); margin-top:0; text-align:center; border-bottom:1px solid #444; padding-bottom:5px; display:inline-block; width:100%;'>📌 {format_fase(j_key)}</h3></summary>"
-                    html += "<div class='match-grid-2col' style='margin-top:15px;'>"
-                    
-                    pts_jornada = exactos_j = 0
-                    for p in jornadas_dict[j_key]:
-                        clave = f"{p['local']}_vs_{p['visitante']}"
-                        info_p = desglose_p.get(clave, {})
-                        p_real = dict_reales.get(clave, {})
-                        p_pred = dict_preds.get(clave, {})
-                        
-                        # ESCUDO: Si no hay realidad, cogemos el nombre de jornadas_dict (p)
-                        loc_r = p_real.get("local") or p.get("local", "TBD")
-                        vis_r = p_real.get("visitante") or p.get("visitante", "TBD")
-                        pred_txt = f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}" if p_pred else "-"
-                        real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
-                        
-                        ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
-                        if ac_ex: pred_styled = f"<span class='pred-exact'>{pred_txt} ({PTS_1X2} + {PTS_EX})</span>"
-                        elif ac_1x2: pred_styled = f"<span class='pred-1x2'>{pred_txt} ({PTS_1X2})</span>"
-                        else: pred_styled = f"<span class='pred-miss'>{pred_txt} (0)</span>"
+                </div>
+            """
 
-                        pts = info_p.get("puntos_conseguidos", 0)
-                        if ac_ex: exactos_j += 1
-                        pts_jornada += pts
-                        
-                        html += f"""
-                        <div style="background:#1a1a1a; border:1px solid #333; border-radius:4px; padding:10px;">
-                            <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-weight:bold; font-size:1em;">
-                                <span style="flex:1; text-align:right;">{loc_r}</span>
-                                <span style="flex:0.4; text-align:center; color:white; background:#222; border-radius:4px; padding:2px; margin:0 5px;">{real_txt}</span>
-                                <span style="flex:1; text-align:left;">{vis_r}</span>
-                            </div>
-                            <div style="font-size:0.9em; color:gray; text-align:left; border-top:1px dashed #333; padding-top:8px; display:flex; justify-content:space-between; align-items:center;">
-                                <span style="flex:1; text-align:center;">Pronóstico: <strong>{pred_styled}</strong></span>
-                                <span style="color:var(--gold); font-weight:bold; font-size:1.1em;">{pts} pts</span>
-                            </div>
-                        </div>
-                        """
-                    html += "</div>"
+            # Contenedor del contenido del pronóstico (Oculto si está bloqueado)
+            display_contenido = "none" if bloqueado else "block"
+            html += f"""<div id="protected-content-container" style="display:{display_contenido};">"""
 
-                    info_dj = desglose_j.get(j_key, {})
-                    res_bono = info_dj.get("resultado", "Neutral")
-                    res_val = info_dj.get('puntos_bono', 0)
-                    signo = "+" if res_val > 0 else ""
-                    rank_j = rankings_jornada.get(j_key, {}).get(j_dir.name, "-")
-                    
-                    html += f"""
-                    <div style="background:#222; padding:10px; margin-top:15px; border-left:4px solid var(--gold); border-radius:4px; font-size:0.9em; line-height:1.4;">
-                        Resumen {format_fase(j_key)}: {exactos_j}/{info_dj.get('aciertos_1x2', 0)} (Clavados/Aciertos). Posición {rank_j} de {total_jugadores}.<br>
-                        Resultado: {res_bono} ({signo}{res_val} pts)<br>
-                        TOTAL JORNADA: {pts_jornada + res_val} pts
-                    </div></details>"""
-                html += "</div>" # Cierre Tab JaJ
-                
-                # Tab GaG
-                html += """<div id="tab-grupos-gag" class="tab-content"><div class="group-grid-2col">"""
-                for grupo, partidos in sorted(pronostico_data.get("fase_grupos", {}).items()):
-                    html += f"""<div class="card" style="padding:15px; cursor:default;"><h3 style="color:var(--gold); border-bottom:1px solid #333; padding-bottom:5px; margin-top:0;">{grupo}</h3><table class="gag-table">"""
-                    pts_grupo = 0
-                    for p in partidos:
-                        clave = f"{p['local']}_vs_{p['visitante']}"
-                        info_p = desglose_p.get(clave, {})
-                        p_real = dict_reales.get(clave, {})
-                        
-                        real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
-                        pred_txt = f"{p.get('goles_local','-')} - {p.get('goles_visitante','-')}"
-                        
-                        ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
-                        if ac_ex: pred_styled = f"<span class='pred-exact'>{pred_txt} ({PTS_1X2} + {PTS_EX})</span>"
-                        elif ac_1x2: pred_styled = f"<span class='pred-1x2'>{pred_txt} ({PTS_1X2})</span>"
-                        else: pred_styled = f"<span class='pred-miss'>{pred_txt} (0)</span>"
-                        
-                        pts = info_p.get("puntos_conseguidos", 0)
-                        pts_grupo += pts
-                        html += f"""<tr class="gag-match-row"><td style="text-align:right; width:40%;">{p['local']}</td><td style="width:20%;">{real_txt}</td><td style="text-align:left; width:40%;">{p['visitante']}</td></tr>
-                                    <tr class="gag-pred-row"><td colspan="3" style="padding-top:2px; padding-bottom:8px; color:gray;">Pronóstico: {pred_styled} <span style="float:right; color:var(--gold); font-weight:bold;">{pts} pts</span></td></tr>"""
-                    html += f"""<tr><td colspan="3" class="gag-total-row">Total Grupo: {pts_grupo} pts</td></tr></table></div>"""
-                html += "</div></div></details>"
-
+            if not pronostico_data:
+                html += f"""<div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
+                    <h3>El archivo de pronóstico para {format_fase(fase)} no existe o no se rellenó.</h3>
+                </div>"""
             else:
-                # FASE ELIMINATORIA ACTUAL
-                html += f"""
-                <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
-                    <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0; color:var(--accent);">⚔️ {format_fase(fase).upper()} (Comparativa Real)</h2></summary>
-                """
-                j_keys_fase = [k for k in jornadas_keys if k.lower().startswith(fase.lower())]
-                
-                for j_key in j_keys_fase:
-                    fase_limpia = j_key.split(".")[0] if "." in j_key else j_key
-                    html += f"<details class='jornada-details' open style='margin-bottom:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333;'>"
-                    html += f"<summary style='border:none; padding:0; margin:0; outline:none; cursor:pointer;'><h3 style='color:var(--accent); margin-top:0; text-align:center; border-bottom:1px solid #444; padding-bottom:5px; display:inline-block; width:100%;'>📌 {format_fase(j_key)}</h3></summary>"
-                    html += "<div class='match-grid-2col' style='margin-top:15px;'>"
+                # --- SECCIÓN 1: COMPARATIVA DE LA FASE ACTUAL ---
+                if fase == "grupos":
+                    html += f"""
+                    <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
+                        <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0; color:var(--gold);">🌍 FASE DE GRUPOS (Comparativa)</h2></summary>
+                        <div class="tabs-container">
+                            <button class="tab-btn active" onclick="openTab('tab-grupos-jaj')">Jornada a Jornada (JaJ)</button>
+                            <button class="tab-btn" onclick="openTab('tab-grupos-gag')">Grupo a Grupo (GaG)</button>
+                        </div>
+                        <div id="tab-grupos-jaj" class="tab-content active">
+                    """
+                    jornadas_grupos = [k for k in jornadas_keys if k.startswith("J")]
                     
-                    pts_jornada = exactos_j = 0
-                    for p in jornadas_dict[j_key]:
-                        clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
-                        info_p = desglose_p.get(clave, {})
-                        p_real = dict_reales.get(clave, {})
-                        p_pred = dict_preds.get(clave, {})
+                    for j_key in jornadas_grupos:
+                        html += f"<details class='jornada-details' open style='margin-bottom:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333;'>"
+                        html += f"<summary style='border:none; padding:0; margin:0; outline:none; cursor:pointer;'><h3 style='color:var(--table-header); margin-top:0; text-align:center; border-bottom:1px solid #444; padding-bottom:5px; display:inline-block; width:100%;'>📌 {format_fase(j_key)}</h3></summary>"
+                        html += "<div class='match-grid-2col' style='margin-top:15pxFilter;'>"
                         
-                        # ESCUDO: Si no hay realidad, busca en jornadas_dict el local o un placeholder
-                        loc_r = p_real.get("local") or p.get("local") or p.get("placeholder_local", "TBD")
-                        vis_r = p_real.get("visitante") or p.get("visitante") or p.get("placeholder_visitante", "TBD")
-                        if loc_r == "TBD" and "id_partido" in p: loc_r, vis_r = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
-                        
-                        subtitle_html = ""
-                        if j_key.lower() == "finales":
-                            if "103" in str(p.get("id_partido", "")): subtitle_html = "<div style='text-align:center; color:#a9b7c6; font-size:0.85em; font-weight:bold; margin-bottom:10px;'>🥉 3º Puesto</div>"
-                            elif "104" in str(p.get("id_partido", "")): subtitle_html = "<div style='text-align:center; color:var(--gold); font-size:0.85em; font-weight:bold; margin-bottom:10px;'>🏆 Final</div>"
-
-                        if p_pred:
-                            loc_p, vis_p = p_pred.get("local", ""), p_pred.get("visitante", "")
-                            pred_txt = f"{loc_p} {p_pred.get('goles_local','-')}-{p_pred.get('goles_visitante','-')} {vis_p}" if (loc_p != loc_r or vis_p != vis_r) else f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}"
-                        else: pred_txt = "-"
-                        
-                        real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
-                        
-                        ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
-                        mult = info_p.get("multiplicador_aplicado", 1.0)
-                        pts = info_p.get("puntos_conseguidos", 0)
-                        
-                        if ac_ex: 
-                            pred_styled = f"<span class='pred-exact'>{pred_txt}</span>"
-                            desglose_html = f"<span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>{PTS_1X2} Ac</span> + <span class='pred-exact'>{PTS_EX} Ex</span> ] &times; {mult}</span>"
-                        elif ac_1x2: 
-                            pred_styled = f"<span class='pred-1x2'>{pred_txt}</span>"
-                            desglose_html = f"<span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>{PTS_1X2} Ac</span> ] &times; {mult}</span>"
-                        else: 
-                            pred_styled = f"<span class='pred-miss'>{pred_txt}</span>"
-                            desglose_html = f"<span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; {mult}</span>"
-
-                        if ac_ex: exactos_j += 1
-                        pts_jornada += pts
-                        
-                        import re
-                        mult_html = f"""<div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;"><div style="margin-bottom:8px;">{desglose_html}</div>"""
-                        if mult > 1.0 and p_real.get("estado") == "finished":
-                            r_loc = html_utils.obtener_racha_fases(j_dir, p_real.get("local"), fase_limpia)
-                            r_vis = html_utils.obtener_racha_fases(j_dir, p_real.get("visitante"), fase_limpia)
-                            r_loc_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
-                            r_vis_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) if r_vis else "<span style='color:gray;'>-</span>"
-                            if "base.html" in r_loc_html: r_loc_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_loc_html)
-                            if "base.html" in r_vis_html: r_vis_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_vis_html)
-                            mult_html += f"""<div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;"><div style="flex:1; padding-right:5px;"><strong>{p_real.get('local')}</strong><br>{r_loc_html}</div><div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>{p_real.get('visitante')}</strong><br>{r_vis_html}</div></div>"""
-                        mult_html += "</div>"
+                        pts_jornada = exactos_j = 0
+                        for p in jornadas_dict[j_key]:
+                            clave = f"{p['local']}_vs_{p['visitante']}"
+                            info_p = desglose_p.get(clave, {})
+                            p_real = dict_reales.get(clave, {})
+                            p_pred = dict_preds.get(clave, {})
                             
-                        html += f"""
-                        <div style="background:#1a1a1a; border:1px solid #333; border-radius:4px; padding:15px; display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                {subtitle_html}
-                                <div style="display:flex; justify-content:space-between; margin-bottom:15px; font-size:1.1em; font-weight:bold;">
+                            loc_r = p_real.get("local") or p.get("local", "TBD")
+                            vis_r = p_real.get("visitante") or p.get("visitante", "TBD")
+                            pred_txt = f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}" if p_pred else "-"
+                            real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                            
+                            ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
+                            if ac_ex: pred_styled = f"<span class='pred-exact'>{pred_txt} ({PTS_1X2} + {PTS_EX})</span>"
+                            elif ac_1x2: pred_styled = f"<span class='pred-1x2'>{pred_txt} ({PTS_1X2})</span>"
+                            else: pred_styled = f"<span class='pred-miss'>{pred_txt} (0)</span>"
+
+                            pts = info_p.get("puntos_conseguidos", 0)
+                            if ac_ex: exactos_j += 1
+                            pts_jornada += pts
+                            
+                            html += f"""
+                            <div style="background:#111; border:1px solid #333; border-radius:4px; padding:10px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-weight:bold; font-size:1em;">
                                     <span style="flex:1; text-align:right;">{loc_r}</span>
-                                    <span style="flex:0.3; text-align:center; color:white; background:#222; border-radius:4px; padding:2px; margin:0 10px;">{real_txt}</span>
+                                    <span style="flex:0.4; text-align:center; color:white; background:#222; border-radius:4px; padding:2px; margin:0 5px;">{real_txt}</span>
                                     <span style="flex:1; text-align:left;">{vis_r}</span>
                                 </div>
-                            </div>
-                            <div style="display:flex; align-items:flex-start; gap:10px; border-top:1px dashed #444; padding-top:15px;">
-                                <div style="flex:1; text-align:center;">
-                                    <details class="pred-card-details">
-                                        <summary class="pred-summary" style="padding: 5px;">Tu Pronóstico: <strong>{pred_styled}</strong></summary>
-                                        {mult_html}
-                                    </details>
+                                <div style="font-size:0.9em; color:gray; text-align:left; border-top:1px dashed #333; padding-top:8px; display:flex; justify-content:space-between; align-items:center;">
+                                    <span style="flex:1; text-align:center;">Pronóstico: <strong>{pred_styled}</strong></span>
+                                    <span style="color:var(--gold); font-weight:bold; font-size:1.1em;">{pts} pts</span>
                                 </div>
-                                <div style="color:var(--gold); font-weight:bold; font-size:1.4em; align-self:center; padding-right:5px;">{pts}</div>
                             </div>
-                        </div>
-                        """
+                            """
+                        html += "</div>"
+
+                        info_dj = desglose_j.get(j_key, {})
+                        res_bono = info_dj.get("resultado", "Neutral")
+                        res_val = info_dj.get('puntos_bono', 0)
+                        signo = "+" if res_val > 0 else ""
+                        rank_j = rankings_jornada.get(j_key, {}).get(j_dir.name, "-")
+                        
+                        html += f"""
+                        <div style="background:#222; padding:10px; margin-top:15px; border-left:4px solid var(--gold); border-radius:4px; font-size:0.9em; line-height:1.4;">
+                            Resumen {format_fase(j_key)}: {exactos_j}/{info_dj.get('aciertos_1x2', 0)} (Clavados/Aciertos). Posición {rank_j} de {total_jugadores}.<br>
+                            Resultado: {res_bono} ({signo}{res_val} pts)<br>
+                            TOTAL JORNADA: {pts_jornada + res_val} pts
+                        </div></details>"""
                     html += "</div>"
-
-                    info_dj = desglose_j.get(j_key, {})
-                    res_bono = info_dj.get("resultado", "Neutral")
-                    res_val = info_dj.get('puntos_bono', 0)
-                    signo = "+" if res_val > 0 else ""
-                    rank_j = rankings_jornada.get(j_key, {}).get(j_dir.name, "-")
                     
+                    html += """<div id="tab-grupos-gag" class="tab-content"><div class="group-grid-2col">"""
+                    for grupo, partidos in sorted(pronostico_data.get("fase_grupos", {}).items()):
+                        html += f"""<div class="card" style="padding:15px; cursor:default;"><h3 style="color:var(--gold); border-bottom:1px solid #333; padding-bottom:5px; margin-top:0;">{grupo}</h3><table class="gag-table">"""
+                        pts_grupo = 0
+                        for p in partidos:
+                            clave = f"{p['local']}_vs_{p['visitante']}"
+                            info_p = desglose_p.get(clave, {})
+                            p_real = dict_reales.get(clave, {})
+                            
+                            real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                            pred_txt = f"{p.get('goles_local','-')} - {p.get('goles_visitante','-')}"
+                            
+                            ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
+                            if ac_ex: pred_styled = f"<span class='pred-exact'>{pred_txt} ({PTS_1X2} + {PTS_EX})</span>"
+                            elif ac_1x2: pred_styled = f"<span class='pred-1x2'>{pred_txt} ({PTS_1X2})</span>"
+                            else: pred_styled = f"<span class='pred-miss'>{pred_txt} (0)</span>"
+                            
+                            pts = info_p.get("puntos_conseguidos", 0)
+                            pts_grupo += pts
+                            html += f"""<tr class="gag-match-row"><td style="text-align:right; width:40%;">{p['local']}</td><td style="width:20%;">{real_txt}</td><td style="text-align:left; width:40%;">{p['visitante']}</td></tr>
+                                        <tr class="gag-pred-row"><td colspan="3" style="padding-top:2px; padding-bottom:8px; color:gray;">Pronóstico: {pred_styled} <span style="float:right; color:var(--gold); font-weight:bold;">{pts} pts</span></td></tr>"""
+                        html += f"""<tr><td colspan="3" class="gag-total-row">Total Grupo: {pts_grupo} pts</td></tr></table></div>"""
+                    html += "</div></div></details>"
+
+                else:
+                    # FASE ELIMINATORIA ACTUAL
                     html += f"""
-                    <div style="background:#222; padding:10px; margin-top:15px; border-left:4px solid var(--gold); border-radius:4px; font-size:0.9em; line-height:1.4;">
-                        Resumen {format_fase(j_key)}: {exactos_j}/{info_dj.get('aciertos_1x2', 0)} (Clavados/Aciertos). Posición {rank_j} de {total_jugadores}.<br>
-                        Resultado: {res_bono} ({signo}{res_val} pts)<br>
-                        TOTAL JORNADA: {pts_jornada + res_val} pts
-                    </div></details>"""
-                html += "</details>"
+                    <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
+                        <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0; color:var(--accent);">⚔️ {format_fase(fase).upper()} (Comparativa Real)</h2></summary>
+                    """
+                    j_keys_fase = [k for k in jornadas_keys if k.lower().startswith(fase.lower())]
+                    
+                    for j_key in j_keys_fase:
+                        fase_limpia = j_key.split(".")[0] if "." in j_key else j_key
+                        html += f"<details class='jornada-details' open style='margin-bottom:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333;'>"
+                        html += f"<summary style='border:none; padding:0; margin:0; outline:none; cursor:pointer;'><h3 style='color:var(--accent); margin-top:0; text-align:center; border-bottom:1px solid #444; padding-bottom:5px; display:inline-block; width:100%;'>📌 {format_fase(j_key)}</h3></summary>"
+                        html += "<div class='match-grid-2col' style='margin-top:15pxFilter;'>"
+                        
+                        pts_jornada = exactos_j = 0
+                        for p in jornadas_dict[j_key]:
+                            clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
+                            info_p = desglose_p.get(clave, {})
+                            p_real = dict_reales.get(clave, {})
+                            p_pred = dict_preds.get(clave, {})
+                            
+                            loc_r = p_real.get("local") or p.get("local") or p.get("placeholder_local", "TBD")
+                            vis_r = p_real.get("visitante") or p.get("visitante") or p.get("placeholder_visitante", "TBD")
+                            if loc_r == "TBD" and "id_partido" in p: loc_r, vis_r = f"Eq. {p['id_partido']}A", f"Eq. {p['id_partido']}B"
+                            
+                            subtitle_html = ""
+                            if j_key.lower() == "finales":
+                                if "103" in str(p.get("id_partido", "")): subtitle_html = "<div style='text-align:center; color:#a9b7c6; font-size:0.85em; font-weight:bold; margin-bottom:10px;'>🥉 3º Puesto</div>"
+                                if "104" in str(p.get("id_partido", "")): subtitle_html = "<div style='text-align:center; color:var(--gold); font-size:0.85em; font-weight:bold; margin-bottom:10px;'>🏆 Final</div>"
 
-            # --- SECCIÓN 2: ÁRBOL FUTURO (PROYECCIÓN) ---
-            if fase != "finales":
-                html += f"""
-                <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
-                    <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0; color:#4ade80;">🌳 Proyección del Torneo</h2></summary>
-                    <p style="color:gray; font-size:0.9em; margin-bottom:15px;">Así veías tú el resto del torneo desde esta fase (Sin comparar con la realidad).</p>
-                """
-                if fase == "grupos": bracket_data = pronostico_data.get("eliminatorias", {})
-                else: bracket_data = pronostico_data.get("predicciones", {})
-                
-                html += render_bracket_futuro(bracket_data, fase)
-                html += "</details>"
+                            if p_pred:
+                                loc_p, vis_p = p_pred.get("local", ""), p_pred.get("visitante", "")
+                                pred_txt = f"{loc_p} {p_pred.get('goles_local','-')}-{p_pred.get('goles_visitante','-')} {vis_p}" if (loc_p != loc_r or vis_p != vis_r) else f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}"
+                            else: pred_txt = "-"
+                            
+                            real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                            
+                            ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
+                            mult = info_p.get("multiplicador_aplicado", 1.0)
+                            pts = info_p.get("puntos_conseguidos", 0)
+                            
+                            if ac_ex: 
+                                pred_styled = f"<span class='pred-exact'>{pred_txt}</span>"
+                                desglose_html = f"<span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>{PTS_1X2} Ac</span> + <span class='pred-exact'>{PTS_EX} Ex</span> ] &times; {mult}</span>"
+                            elif ac_1x2: 
+                                pred_styled = f"<span class='pred-1x2'>{pred_txt}</span>"
+                                desglose_html = f"<span style='color:#ccc; font-size:0.85em;'>[ <span class='pred-1x2'>{PTS_1X2} Ac</span> ] &times; {mult}</span>"
+                            else: 
+                                pred_styled = f"<span class='pred-miss'>{pred_txt}</span>"
+                                desglose_html = f"<span style='color:gray; font-size:0.85em;'>[ <span class='pred-miss'>0</span> ] &times; {mult}</span>"
 
+                            if ac_ex: exactos_j += 1
+                            pts_jornada += pts
+                            
+                            import re
+                            mult_html = f"""<div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;"><div style="margin-bottom:8px;">{desglose_html}</div>"""
+                            if mult > 1.0 and p_real.get("estado") == "finished":
+                                r_loc = html_utils.obtener_racha_fases(j_dir, p_real.get("local"), fase_limpia)
+                                r_vis = html_utils.obtener_racha_fases(j_dir, p_real.get("visitante"), fase_limpia)
+                                r_loc_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
+                                r_vis_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_vis]) if r_vis else "<span style='color:gray;'>-</span>"
+                                if "base.html" in r_loc_html: r_loc_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_loc_html)
+                                if "base.html" in r_vis_html: r_vis_html = re.sub(r'pronostico_[^"\'\s]+_base\.html', 'pronostico_grupos.html', r_vis_html)
+                                mult_html += f"""<div style="display:flex; justify-content:space-between; text-align:center; font-size:0.85em;"><div style="flex:1; padding-right:5px;"><strong>{p_real.get('local')}</strong><br>{r_loc_html}</div><div style="flex:1; padding-left:5px; border-left:1px solid #333;"><strong>{p_real.get('visitante')}</strong><br>{r_vis_html}</div></div>"""
+                            mult_html += "</div>"
+                                
+                            html += f"""
+                            <div style="background:#1a1a1a; border:1px solid #333; border-radius:4px; padding:15px; display:flex; flex-direction:column; justify-content:space-between;">
+                                <div>
+                                    {subtitle_html}
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:15px; font-size:1.1em; font-weight:bold;">
+                                        <span style="flex:1; text-align:right;">{loc_r}</span>
+                                        <span style="flex:0.3; text-align:center; color:white; background:#222; border-radius:4px; padding:2px; margin:0 10px;">{real_txt}</span>
+                                        <span style="flex:1; text-align:left;">{vis_r}</span>
+                                    </div>
+                                </div>
+                                <div style="display:flex; align-items:flex-start; gap:10px; border-top:1px dashed #444; padding-top:15px;">
+                                    <div style="flex:1; text-align:center;">
+                                        <details class="pred-card-details">
+                                            <summary class="pred-summary" style="padding: 5px;">Tu Pronóstico: <strong>{pred_styled}</strong></summary>
+                                            {mult_html}
+                                        </details>
+                                    </div>
+                                    <div style="color:var(--gold); font-weight:bold; font-size:1.4em; align-self:center; padding-right:5px;">{pts}</div>
+                                </div>
+                            </div>
+                            """
+                        html += "</div>"
+
+                        info_dj = desglose_j.get(j_key, {})
+                        res_bono = info_dj.get("resultado", "Neutral")
+                        res_val = info_dj.get('puntos_bono', 0)
+                        signo = "+" if res_val > 0 else ""
+                        rank_j = rankings_jornada.get(j_key, {}).get(j_dir.name, "-")
+                        
+                        html += f"""
+                        <div style="background:#222; padding:10px; margin-top:15px; border-left:4px solid var(--gold); border-radius:4px; font-size:0.9em; line-height:1.4;">
+                            Resumen {format_fase(j_key)}: {exactos_j}/{info_dj.get('aciertos_1x2', 0)} (Clavados/Aciertos). Posición {rank_j} de {total_jugadores}.<br>
+                            Resultado: {res_bono} ({signo}{res_val} pts)<br>
+                            TOTAL JORNADA: {pts_jornada + res_val} pts
+                        </div></details>"""
+                    html += "</details>"
+
+                # --- SECCIÓN 2: ÁRBOL FUTURO (PROYECCIÓN) ---
+                if fase != "finales":
+                    html += f"""
+                    <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
+                        <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0; color:#4ade80;">🌳 Proyección del Torneo</h2></summary>
+                        <p style="color:gray; font-size:0.9em; margin-bottom:15px;">Así veías tú el resto del torneo desde esta fase (Sin comparar con la realidad).</p>
+                    """
+                    if fase == "grupos": bracket_data = pronostico_data.get("eliminatorias", {})
+                    else: bracket_data = pronostico_data.get("predicciones", {})
+                    
+                    html += render_bracket_futuro(bracket_data, fase)
+                    html += "</details>"
+
+            html += "</div>" # Cierre de protected-content-container
             html += "</div></body></html>"
             with open(dir_vistas / f"pronostico_{fase}.html", 'w', encoding='utf-8') as f: f.write(html)
 
@@ -515,6 +550,20 @@ def generar_vistas_pronosticos():
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Pronósticos Premios | {nombre}</title>
             <link rel="stylesheet" href="../../../theme.css">
+            <script>
+                function verificarClavePremios() {{
+                    const inputClave = document.getElementById("bypass-pass").value;
+                    const claveCorrecta = "{clave_usuario}";
+                    if (inputClave === claveCorrecta) {{
+                        document.getElementById("lock-screen-container").style.display = "none";
+                        document.getElementById("protected-content-container").style.display = "block";
+                    }} else {{
+                        const errEl = document.getElementById("bypass-error");
+                        errEl.style.display = "block";
+                        errEl.innerText = "⚠️ Contraseña incorrecta. Pídesela al administrador o al participante.";
+                    }}
+                }}
+            </script>
         </head>
         <body>
             {html_utils.get_sidebar_html("../../../")}
@@ -523,74 +572,82 @@ def generar_vistas_pronosticos():
             <div class="container">
         """
 
-        if not premios_pred:
-            html += f"""<div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
-                <h3>Aún no has rellenado el formulario de Premios Individuales.</h3>
-            </div></div></body></html>"""
-            with open(dir_vistas / "pronostico_premios.html", 'w', encoding='utf-8') as f: f.write(html)
-            continue
-
         bloqueado_premios, fecha_apertura_premios = esta_bloqueado("premios")
-        if bloqueado_premios:
-            html += f"""
-            <div style="background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
+        
+        display_candado_p = "block" if bloqueado_premios else "none"
+        html += f"""
+            <div id="lock-screen-container" style="display:{display_candado_p}; background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
                 <div style="font-size:3.5em; margin-bottom:15px;">🔒</div>
                 <h2 style="color:var(--gold); margin-top:0;">Pronóstico Protegido</h2>
                 <p style="color:#ddd; font-size:1.1em; margin-bottom:5px;">El pronóstico de <strong>{nombre}</strong> ha sido recibido y está guardado a salvo.</p>
-                <p style="color:gray; font-size:0.95em;">Se revelará públicamente el <strong>{fecha_apertura_premios}</strong> (Hora Peninsular).</p>
-            </div></div></body></html>"""
-            with open(dir_vistas / "pronostico_premios.html", 'w', encoding='utf-8') as f: f.write(html)
-            continue
-
-        html += f"""
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div style="background:#151515; padding:20px; border-radius:8px; border:1px solid #333;">
-                <h2 style="color:var(--gold); border-bottom:1px solid #444; padding-bottom:10px; margin-top:0; text-align:center; width:100%; display:block;">Tu Pronóstico</h2>
-                <div style="display:flex; flex-direction:column; gap:15px; margin-top:15px;">
-        """
-        for k, v in premios_pred.items():
-            if k == "participante": continue
-            
-            # Comprobar si coincide con la realidad
-            val_real = premios_reales.get(k, "")
-            color_valor = "#4ade80" if val_real and str(v).lower().strip() == str(val_real).lower().strip() else "white"
-            
-            html += f"""
-                <div style="background:#111; border:1px solid #222; border-radius:4px; padding:10px; text-align:center;">
-                    <div style="font-size:0.8em; color:gray; text-transform:uppercase; margin-bottom:5px; font-weight:bold;">{k.replace('_', ' ')}</div>
-                    <div style="font-size:1.2em; font-weight:bold; color:{color_valor};">{v}</div>
-                </div>
-            """
-        html += """
+                <p style="color:gray; font-size:0.95em; margin-bottom:25px;">Se revelará públicamente el <strong>{fecha_apertura_premios}</strong> (Hora Peninsular).</p>
+                
+                <div style="max-width:320px; margin:0 auto; padding-top:20px; border-top:1px dashed #333;">
+                    <label style="display:block; font-size:0.85em; color:gray; margin-bottom:8px; font-weight:bold;">🔓 DESBLOQUEO MANUAL CON CONTRASEÑA</label>
+                    <input type="password" id="bypass-pass" placeholder="Introduce la clave de acceso" style="width:100%; padding:10px; border-radius:6px; border:1px solid #444; background:#222; color:white; box-sizing:border-box; text-align:center; margin-bottom:10px; font-size:1em;">
+                    <button onclick="verificarClavePremios()" style="width:100%; padding:10px; border-radius:6px; background:var(--gold); color:black; font-weight:bold; border:none; cursor:pointer; font-size:0.95em; transition:0.2s;">Desbloquear Vista</button>
+                    <p id="bypass-error" style="color:#ff4d4d; font-size:0.85em; margin-top:10px; display:none; font-weight:bold;"></p>
                 </div>
             </div>
-            
-            <div style="background:#151515; padding:20px; border-radius:8px; border:1px solid #333;">
-                <h2 style="color:var(--accent); border-bottom:1px solid #444; padding-bottom:10px; margin-top:0; text-align:center; width:100%; display:block;">Realidad</h2>
-                <div style="display:flex; flex-direction:column; gap:15px; margin-top:15px; height:100%;">
         """
-        if not premios_reales:
-            html += """
-                <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; background:rgba(218, 165, 32, 0.1); border:1px dashed var(--gold); border-radius:8px; padding:20px; text-align:center;">
-                    <div style="font-size:2em; margin-bottom:10px;">🔒</div>
-                    <div style="color:var(--gold); font-weight:bold;">Aún no se conocen los premios oficiales</div>
-                    <div style="color:gray; font-size:0.85em; margin-top:5px;">Se revelarán al finalizar el torneo.</div>
-                </div>
-            """
+
+        display_contenido_p = "none" if bloqueado_premios else "block"
+        html += f"""<div id="protected-content-container" style="display:{display_contenido_p};">"""
+
+        if not premios_pred:
+            html += f"""<div style="background:#111; padding:30px; text-align:center; border:1px solid #333; border-radius:8px; color:gray;">
+                <h3>Aún no has rellenado el formulario de Premios Individuales.</h3>
+            </div>"""
         else:
-            for k, v in premios_reales.items():
+            html += f"""
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="background:#151515; padding:20px; border-radius:8px; border:1px solid #333;">
+                    <h2 style="color:var(--gold); border-bottom:1px solid #444; padding-bottom:10px; margin-top:0; text-align:center; width:100%; display:block;">Tu Pronóstico</h2>
+                    <div style="display:flex; flex-direction:column; gap:15px; margin-top:15px;">
+            """
+            for k, v in premios_pred.items():
+                if k == "participante": continue
+                val_real = premios_reales.get(k, "")
+                color_valor = "#4ade80" if val_real and str(v).lower().strip() == str(val_real).lower().strip() else "white"
+                
                 html += f"""
                     <div style="background:#111; border:1px solid #222; border-radius:4px; padding:10px; text-align:center;">
                         <div style="font-size:0.8em; color:gray; text-transform:uppercase; margin-bottom:5px; font-weight:bold;">{k.replace('_', ' ')}</div>
-                        <div style="font-size:1.2em; font-weight:bold; color:var(--accent);">{v}</div>
+                        <div style="font-size:1.2em; font-weight:bold; color:{color_valor};">{v}</div>
                     </div>
                 """
-        html += """
+            html += """
+                    </div>
+                </div>
+                
+                <div style="background:#151515; padding:20px; border-radius:8px; border:1px solid #333;">
+                    <h2 style="color:var(--accent); border-bottom:1px solid #444; padding-bottom:10px; margin-top:0; text-align:center; width:100%; display:block;">Realidad</h2>
+                    <div style="display:flex; flex-direction:column; gap:15px; margin-top:15px; height:100%;">
+            """
+            if not premios_reales:
+                html += """
+                    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; background:rgba(218, 165, 32, 0.1); border:1px dashed var(--gold); border-radius:8px; padding:20px; text-align:center;">
+                        <div style="font-size:2em; margin-bottom:10px;">🔒</div>
+                        <div style="color:var(--gold); font-weight:bold;">Aún no se conocen los premios oficiales</div>
+                        <div style="color:gray; font-size:0.85em; margin-top:5px;">Se revelarán al finalizar el torneo.</div>
+                    </div>
+                """
+            else:
+                for k, v in premios_reales.items():
+                    html += f"""
+                        <div style="background:#111; border:1px solid #222; border-radius:4px; padding:10px; text-align:center;">
+                            <div style="font-size:0.8em; color:gray; text-transform:uppercase; margin-bottom:5px; font-weight:bold;">{k.replace('_', ' ')}</div>
+                            <div style="font-size:1.2em; font-weight:bold; color:var(--accent);">{v}</div>
+                        </div>
+                    """
+            html += """
+                    </div>
                 </div>
             </div>
-        </div>
-        </div></body></html>
-        """
+            """
+            
+        html += "</div>" # Cierre de protected-content-container
+        html += "</div></body></html>"
         with open(dir_vistas / "pronostico_premios.html", 'w', encoding='utf-8') as f: f.write(html)
 
 if __name__ == "__main__":
