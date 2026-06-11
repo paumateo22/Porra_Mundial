@@ -2,7 +2,7 @@ name: Scraper Horario SofaScore
 
 on:
   schedule:
-    # Se ejecuta en el minuto 0 de cada hora (* * * * * significa cada minuto, 0 es la hora en punto)
+    # Se ejecuta en los minutos 11, 33 y 52 de cada hora
     - cron: '11,33,52 * * * *'
   # Dejamos el botón manual por si quieres forzar una actualización
   workflow_dispatch:
@@ -15,6 +15,10 @@ permissions:
 jobs:
   actualizar-resultados:
     runs-on: windows-latest
+    env:
+      PYTHONUTF8: 1
+      PYTHONIOENCODING: utf-8
+      
     steps:
       - name: 🛡️ Comprobar ventana de fechas (Mundial 2026)
         id: date_check
