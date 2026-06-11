@@ -155,7 +155,8 @@ def generar_jornadas_html():
             </div></div>"""
             continue
             
-        partidos_jornada = jornadas_dict[j_key]
+        # Ordenamos los partidos cronológicamente antes de dibujar la tabla
+        partidos_jornada = sorted(jornadas_dict[j_key], key=lambda x: dict_reales.get(f"ID_{x['id_partido']}" if "id_partido" in x else f"{x['local']}_vs_{x['visitante']}", {}).get("fecha", ""))
         ranking_jornada = []
         
         for j_id, d in datos_globales.items():

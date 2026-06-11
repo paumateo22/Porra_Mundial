@@ -418,7 +418,8 @@ def generar_dashboards_html():
                 html += "<div class='match-grid-2col' style='margin-top:15px;'>"
                 
                 pts_jornada = exactos_j = 0
-                for p in jornadas_dict[j_key]:
+                partidos_ordenados = sorted(jornadas_dict[j_key], key=lambda x: dict_reales.get(f"{x['local']}_vs_{x['visitante']}", {}).get("fecha", ""))
+                for p in partidos_ordenados:
                     clave = f"{p['local']}_vs_{p['visitante']}"
                     info_p = desglose_p.get(clave, {})
                     p_real = dict_reales.get(clave, {})
@@ -571,7 +572,8 @@ def generar_dashboards_html():
                     html += "<div class='match-grid-2col' style='margin-top:15px;'>"
                     
                     pts_jornada = exactos_j = 0
-                    for p in jornadas_dict[j_key]:
+                    partidos_ordenados = sorted(jornadas_dict[j_key], key=lambda x: dict_reales.get(f"ID_{x['id_partido']}" if "id_partido" in x else f"{x['local']}_vs_{x['visitante']}", {}).get("fecha", ""))
+                    for p in partidos_ordenados:
                         clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
                         info_p = desglose_p.get(clave, {})
                         p_real = dict_reales.get(clave, {})
