@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
@@ -73,11 +74,23 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
 
     last_match = None
     next_match = None
+    ahora = datetime.now(ZoneInfo("Europe/Madrid"))
+
     for p in todos_partidos:
         if p.get("estado") == "finished":
             last_match = p
         elif p.get("estado") == "notstarted" and not next_match:
-            next_match = p
+            # LÓGICA DE FILTRADO TEMPORAL
+            # Si el partido no ha empezado oficialmente en SofaScore pero ya ha
+            # superado la hora actual, lo saltamos y buscamos el siguiente.
+            fecha_p = p.get("fecha", "")
+            try:
+                dt_p = datetime.fromisoformat(fecha_p).replace(tzinfo=ZoneInfo("Europe/Madrid"))
+                if dt_p > ahora:
+                    next_match = p
+            except Exception:
+                # Fallback por si la fecha tiene un formato anómalo
+                next_match = p
 
     # --- Renderizado Ultimo Partido ---
     last_html = "<div style='color:#555; padding-top:20px; font-weight:bold;'>No se ha jugado ningún partido todavía</div>"
@@ -283,7 +296,6 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
         </style>
 
         <div class="header-main-container">
-            <!-- WIDGET IZQUIERDO -->
             <div class="blob-widget left-blob">
                 <div class="blob-title" id="w-fase-name">CARGANDO FASE...</div>
 
@@ -298,7 +310,6 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
                 </div>
             </div>
 
-            <!-- CENTRO -->
             <div class="header-center">
                 <h1 style="margin-top:0; font-size: 2.2em;">{title}</h1>
                 <p style="font-size: 0.9em;">{subtitle}</p>
@@ -311,16 +322,13 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
                 {participa_btn}
             </div>
 
-            <!-- WIDGETS DERECHOS (apilados verticalmente) -->
             <div class="right-widgets-stack">
 
-                <!-- ÚLTIMO PARTIDO -->
                 <div class="blob-widget right-blob-top">
                     <div class="blob-title">ÚLTIMO PARTIDO</div>
                     {last_html}
                 </div>
 
-                <!-- PRÓXIMO PARTIDO -->
                 <div class="blob-widget right-blob-bottom">
                     <div class="blob-title">PRÓXIMO PARTIDO</div>
                     {next_html_pre}
@@ -389,8 +397,9 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
                         if (now < matchDate) {{
                             timerEl.innerText = formatDiff(matchDate - now);
                         }} else {{
-                            timerEl.innerText = "¡EN JUEGO!";
-                            timerEl.style.color = "green";
+                            // Si el usuario deja la pestaña abierta pasada la hora
+                            timerEl.innerText = "00:00:00";
+                            timerEl.style.color = "#d9381e";
                         }}
                     }}
                 }}
@@ -400,7 +409,7 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
             updateWidgets();
         </script>
 
-        <script data-goatcounter="https://porramundial.goatcounter.com/count"async src="//gc.zgo.at/count.js"></script>
+        <script data-goatcounter="https://porramundial.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
         
     </header>
     """
