@@ -1,0 +1,703 @@
+{
+    "participante": "manu",
+    "fase_prediccion": "grupos_base",
+    "campeon": "",
+    "fase_grupos": {
+        "Grupo J": [
+            {
+                "local": "Argentina",
+                "visitante": "Argelia",
+                "goles_local": "2",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Austria",
+                "visitante": "Jordania",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Austria",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Jordania",
+                "visitante": "Argelia",
+                "goles_local": "1",
+                "goles_visitante": "2"
+            },
+            {
+                "local": "Argelia",
+                "visitante": "Austria",
+                "goles_local": "1",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "Jordania",
+                "visitante": "Argentina",
+                "goles_local": "0",
+                "goles_visitante": "2"
+            }
+        ],
+        "Grupo K": [
+            {
+                "local": "Portugal",
+                "visitante": "RD Congo",
+                "goles_local": "4",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Uzbekistán",
+                "visitante": "Colombia",
+                "goles_local": "0",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "Portugal",
+                "visitante": "Uzbekistán",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Colombia",
+                "visitante": "RD Congo",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "RD Congo",
+                "visitante": "Uzbekistán",
+                "goles_local": "1",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Colombia",
+                "visitante": "Portugal",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            }
+        ],
+        "Grupo L": [
+            {
+                "local": "Inglaterra",
+                "visitante": "Croacia",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Ghana",
+                "visitante": "Panamá",
+                "goles_local": "1",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Inglaterra",
+                "visitante": "Ghana",
+                "goles_local": "3",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Panamá",
+                "visitante": "Croacia",
+                "goles_local": "1",
+                "goles_visitante": "2"
+            },
+            {
+                "local": "Croacia",
+                "visitante": "Ghana",
+                "goles_local": "1",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Panamá",
+                "visitante": "Inglaterra",
+                "goles_local": "1",
+                "goles_visitante": "3"
+            }
+        ],
+        "Grupo G": [
+            {
+                "local": "Bélgica",
+                "visitante": "Egipto",
+                "goles_local": "3",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Irán",
+                "visitante": "Nueva Zelanda",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Bélgica",
+                "visitante": "Irán",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Nueva Zelanda",
+                "visitante": "Egipto",
+                "goles_local": "0",
+                "goles_visitante": "2"
+            },
+            {
+                "local": "Nueva Zelanda",
+                "visitante": "Bélgica",
+                "goles_local": "0",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "Egipto",
+                "visitante": "Irán",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            }
+        ],
+        "Grupo H": [
+            {
+                "local": "España",
+                "visitante": "Cabo Verde",
+                "goles_local": "5",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Arabia Saudita",
+                "visitante": "Uruguay",
+                "goles_local": "1",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "España",
+                "visitante": "Arabia Saudita",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Uruguay",
+                "visitante": "Cabo Verde",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Cabo Verde",
+                "visitante": "Arabia Saudita",
+                "goles_local": "2",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "Uruguay",
+                "visitante": "España",
+                "goles_local": "0",
+                "goles_visitante": "1"
+            }
+        ],
+        "Grupo I": [
+            {
+                "local": "Francia",
+                "visitante": "Senegal",
+                "goles_local": "3",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Irak",
+                "visitante": "Noruega",
+                "goles_local": "1",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "Francia",
+                "visitante": "Irak",
+                "goles_local": "4",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Noruega",
+                "visitante": "Senegal",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Senegal",
+                "visitante": "Irak",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Noruega",
+                "visitante": "Francia",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            }
+        ],
+        "Grupo D": [
+            {
+                "local": "Estados Unidos",
+                "visitante": "Paraguay",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Australia",
+                "visitante": "Turquía",
+                "goles_local": "0",
+                "goles_visitante": "2"
+            },
+            {
+                "local": "Estados Unidos",
+                "visitante": "Australia",
+                "goles_local": "1",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Turquía",
+                "visitante": "Paraguay",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Paraguay",
+                "visitante": "Australia",
+                "goles_local": "0",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Turquía",
+                "visitante": "Estados Unidos",
+                "goles_local": "2",
+                "goles_visitante": "0"
+            }
+        ],
+        "Grupo F": [
+            {
+                "local": "Países Bajos",
+                "visitante": "Japón",
+                "goles_local": "2",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "Suecia",
+                "visitante": "Túnez",
+                "goles_local": "2",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Países Bajos",
+                "visitante": "Suecia",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Túnez",
+                "visitante": "Japón",
+                "goles_local": "0",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Japón",
+                "visitante": "Suecia",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Túnez",
+                "visitante": "Países Bajos",
+                "goles_local": "0",
+                "goles_visitante": "2"
+            }
+        ],
+        "Grupo E": [
+            {
+                "local": "Alemania",
+                "visitante": "Curazao",
+                "goles_local": "4",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Costa de Marfil",
+                "visitante": "Ecuador",
+                "goles_local": "1",
+                "goles_visitante": "3"
+            },
+            {
+                "local": "Alemania",
+                "visitante": "Costa de Marfil",
+                "goles_local": "3",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Ecuador",
+                "visitante": "Curazao",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Curazao",
+                "visitante": "Costa de Marfil",
+                "goles_local": "0",
+                "goles_visitante": "2"
+            },
+            {
+                "local": "Ecuador",
+                "visitante": "Alemania",
+                "goles_local": "2",
+                "goles_visitante": "2"
+            }
+        ],
+        "Grupo A": [
+            {
+                "local": "México",
+                "visitante": "Sudáfrica",
+                "goles_local": "2",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Corea del Sur",
+                "visitante": "República Checa",
+                "goles_local": "0",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "República Checa",
+                "visitante": "Sudáfrica",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "México",
+                "visitante": "Corea del Sur",
+                "goles_local": "1",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Sudáfrica",
+                "visitante": "Corea del Sur",
+                "goles_local": "0",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "República Checa",
+                "visitante": "México",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            }
+        ],
+        "Grupo C": [
+            {
+                "local": "Brasil",
+                "visitante": "Marruecos",
+                "goles_local": "2",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Haití",
+                "visitante": "Escocia",
+                "goles_local": "0",
+                "goles_visitante": "4"
+            },
+            {
+                "local": "Escocia",
+                "visitante": "Marruecos",
+                "goles_local": "2",
+                "goles_visitante": "2"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Haití",
+                "goles_local": "4",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Escocia",
+                "visitante": "Brasil",
+                "goles_local": "3",
+                "goles_visitante": "2"
+            },
+            {
+                "local": "Marruecos",
+                "visitante": "Haití",
+                "goles_local": "2",
+                "goles_visitante": "0"
+            }
+        ],
+        "Grupo B": [
+            {
+                "local": "Canadá",
+                "visitante": "Bosnia-Herzegovina",
+                "goles_local": "0",
+                "goles_visitante": "1"
+            },
+            {
+                "local": "Qatar",
+                "visitante": "Suiza",
+                "goles_local": "0",
+                "goles_visitante": "4"
+            },
+            {
+                "local": "Suiza",
+                "visitante": "Bosnia-Herzegovina",
+                "goles_local": "2",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Canadá",
+                "visitante": "Qatar",
+                "goles_local": "0",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Bosnia-Herzegovina",
+                "visitante": "Qatar",
+                "goles_local": "1",
+                "goles_visitante": "0"
+            },
+            {
+                "local": "Suiza",
+                "visitante": "Canadá",
+                "goles_local": "3",
+                "goles_visitante": "0"
+            }
+        ]
+    },
+    "clasificados_a_dieciseisavos": [
+        "República Checa",
+        "México",
+        "Corea del Sur",
+        "Suiza",
+        "Bosnia-Herzegovina",
+        "Escocia",
+        "Brasil",
+        "Marruecos",
+        "Turquía",
+        "Estados Unidos",
+        "Australia",
+        "Alemania",
+        "Ecuador",
+        "Costa de Marfil",
+        "Japón",
+        "Países Bajos",
+        "Suecia",
+        "Bélgica",
+        "Egipto",
+        "Irán",
+        "España",
+        "Uruguay",
+        "Noruega",
+        "Francia",
+        "Senegal",
+        "Argentina",
+        "Austria",
+        "Colombia",
+        "Portugal",
+        "Inglaterra",
+        "Croacia",
+        "Ghana"
+    ],
+    "eliminatorias": {
+        "dieciseisavos": [
+            {
+                "id_partido": 73,
+                "local": "México",
+                "visitante": "Bosnia-Herzegovina",
+                "pasa": ""
+            },
+            {
+                "id_partido": 74,
+                "local": "Alemania",
+                "visitante": "Corea del Sur",
+                "pasa": ""
+            },
+            {
+                "id_partido": 75,
+                "local": "Japón",
+                "visitante": "Brasil",
+                "pasa": ""
+            },
+            {
+                "id_partido": 76,
+                "local": "Escocia",
+                "visitante": "Países Bajos",
+                "pasa": ""
+            },
+            {
+                "id_partido": 77,
+                "local": "Noruega",
+                "visitante": "Irán",
+                "pasa": ""
+            },
+            {
+                "id_partido": 78,
+                "local": "Ecuador",
+                "visitante": "Francia",
+                "pasa": ""
+            },
+            {
+                "id_partido": 79,
+                "local": "República Checa",
+                "visitante": "Costa de Marfil",
+                "pasa": ""
+            },
+            {
+                "id_partido": 80,
+                "local": "Inglaterra",
+                "visitante": "Senegal",
+                "pasa": ""
+            },
+            {
+                "id_partido": 81,
+                "local": "Turquía",
+                "visitante": "Suecia",
+                "pasa": ""
+            },
+            {
+                "id_partido": 82,
+                "local": "Bélgica",
+                "visitante": "Marruecos",
+                "pasa": ""
+            },
+            {
+                "id_partido": 83,
+                "local": "Portugal",
+                "visitante": "Croacia",
+                "pasa": ""
+            },
+            {
+                "id_partido": 84,
+                "local": "España",
+                "visitante": "Austria",
+                "pasa": ""
+            },
+            {
+                "id_partido": 85,
+                "local": "Suiza",
+                "visitante": "Australia",
+                "pasa": ""
+            },
+            {
+                "id_partido": 86,
+                "local": "Argentina",
+                "visitante": "Uruguay",
+                "pasa": ""
+            },
+            {
+                "id_partido": 87,
+                "local": "Colombia",
+                "visitante": "Ghana",
+                "pasa": ""
+            },
+            {
+                "id_partido": 88,
+                "local": "Estados Unidos",
+                "visitante": "Egipto",
+                "pasa": ""
+            }
+        ],
+        "octavos": [
+            {
+                "id_partido": 89,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 90,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 91,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 92,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 93,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 94,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 95,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 96,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            }
+        ],
+        "cuartos": [
+            {
+                "id_partido": 97,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 98,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 99,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 100,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            }
+        ],
+        "semifinales": [
+            {
+                "id_partido": 101,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            },
+            {
+                "id_partido": 102,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            }
+        ],
+        "tercer_puesto": [
+            {
+                "id_partido": 103,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            }
+        ],
+        "final": [
+            {
+                "id_partido": 104,
+                "local": "____",
+                "visitante": "____",
+                "pasa": ""
+            }
+        ]
+    }
+}
