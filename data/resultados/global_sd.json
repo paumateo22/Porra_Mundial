@@ -1,6 +1,6 @@
 {
     "Alemania": {
-        "media": 1.25,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -21,6 +21,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -35,7 +42,7 @@
         ]
     },
     "Arabia Saudita": {
-        "media": 0.5,
+        "media": 0.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -56,6 +63,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -70,7 +84,7 @@
         ]
     },
     "Argelia": {
-        "media": 0.75,
+        "media": 0.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -91,6 +105,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -105,7 +126,7 @@
         ]
     },
     "Argentina": {
-        "media": 1.5,
+        "media": 1.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -131,6 +152,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 3,
@@ -140,7 +168,7 @@
         ]
     },
     "Australia": {
-        "media": 0.25,
+        "media": 0.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -161,6 +189,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -201,6 +236,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
@@ -210,7 +252,7 @@
         ]
     },
     "Bosnia-Herzegovina": {
-        "media": 1.0,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -232,6 +274,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -245,7 +294,7 @@
         ]
     },
     "Brasil": {
-        "media": 1.25,
+        "media": 2.0,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -267,6 +316,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -301,6 +357,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -341,6 +404,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
@@ -350,7 +420,7 @@
         ]
     },
     "Canadá": {
-        "media": 0.5,
+        "media": 0.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -371,6 +441,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -385,7 +462,7 @@
         ]
     },
     "Colombia": {
-        "media": 1.25,
+        "media": 1.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -407,6 +484,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -446,6 +530,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 2,
@@ -455,7 +546,7 @@
         ]
     },
     "Costa de Marfil": {
-        "media": 1.0,
+        "media": 1.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -477,6 +568,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -511,6 +609,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -551,6 +656,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
@@ -560,7 +672,7 @@
         ]
     },
     "Ecuador": {
-        "media": 1.0,
+        "media": 1.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -582,6 +694,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -616,6 +735,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -656,6 +782,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
@@ -665,7 +798,7 @@
         ]
     },
     "España": {
-        "media": 2.0,
+        "media": 2.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -673,20 +806,27 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 5,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -700,7 +840,7 @@
         ]
     },
     "Estados Unidos": {
-        "media": 0.75,
+        "media": 1.0,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -726,6 +866,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
@@ -735,7 +882,7 @@
         ]
     },
     "Francia": {
-        "media": 1.75,
+        "media": 1.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -757,6 +904,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -791,6 +945,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -831,6 +992,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
@@ -840,7 +1008,7 @@
         ]
     },
     "Inglaterra": {
-        "media": 1.75,
+        "media": 1.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -862,6 +1030,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -901,6 +1076,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
@@ -910,7 +1092,7 @@
         ]
     },
     "Irán": {
-        "media": 0.25,
+        "media": 0.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -931,6 +1113,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -945,7 +1134,7 @@
         ]
     },
     "Japón": {
-        "media": 0.75,
+        "media": 0.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -967,6 +1156,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1001,6 +1197,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1041,6 +1244,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
@@ -1050,7 +1260,7 @@
         ]
     },
     "México": {
-        "media": 1.25,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1071,6 +1281,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1085,7 +1302,7 @@
         ]
     },
     "Noruega": {
-        "media": 1.5,
+        "media": 1.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1107,6 +1324,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1141,6 +1365,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1181,6 +1412,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
@@ -1190,7 +1428,7 @@
         ]
     },
     "Paraguay": {
-        "media": 0.75,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1198,20 +1436,27 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 0,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1225,7 +1470,7 @@
         ]
     },
     "Países Bajos": {
-        "media": 1.5,
+        "media": 1.8,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1247,6 +1492,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 3,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1260,7 +1512,7 @@
         ]
     },
     "Portugal": {
-        "media": 2.0,
+        "media": 2.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1268,20 +1520,27 @@
                 "jugador_id": "manu",
                 "jugador_nombre": "Manu",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "miguel_dykan",
                 "jugador_nombre": "Miguel Dykan",
                 "fase_pronostico": 1,
-                "puntos": 0,
-                "resultado": "Ninguno"
+                "puntos": 10,
+                "resultado": "Decepción"
             },
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 10,
+                "resultado": "Decepción"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 4,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1321,6 +1580,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 0,
@@ -1330,7 +1596,7 @@
         ]
     },
     "RD Congo": {
-        "media": 0.25,
+        "media": 0.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1352,6 +1618,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1365,7 +1638,7 @@
         ]
     },
     "República Checa": {
-        "media": 0.75,
+        "media": 0.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1386,6 +1659,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1400,7 +1680,7 @@
         ]
     },
     "Senegal": {
-        "media": 1.25,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1421,6 +1701,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1435,7 +1722,7 @@
         ]
     },
     "Sudáfrica": {
-        "media": 0.25,
+        "media": 0.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1457,6 +1744,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1470,7 +1764,7 @@
         ]
     },
     "Suecia": {
-        "media": 0.75,
+        "media": 0.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1492,6 +1786,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1505,7 +1806,7 @@
         ]
     },
     "Suiza": {
-        "media": 1.25,
+        "media": 1.2,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1526,6 +1827,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 1,
                 "puntos": 0,
                 "resultado": "Ninguno"
@@ -1540,7 +1848,7 @@
         ]
     },
     "Turquía": {
-        "media": 1.5,
+        "media": 1.6,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1562,6 +1870,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1575,7 +1890,7 @@
         ]
     },
     "Túnez": {
-        "media": 0.0,
+        "media": 0.4,
         "realidad": 0,
         "umbral": 1.0,
         "predicciones": [
@@ -1597,6 +1912,13 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
                 "puntos": 0,
                 "resultado": "Ninguno"
             },
@@ -1636,6 +1958,13 @@
                 "resultado": "Ninguno"
             },
             {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
                 "jugador_id": "pau",
                 "jugador_nombre": "Pau",
                 "fase_pronostico": 1,
@@ -1666,6 +1995,13 @@
             {
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
+                "fase_pronostico": 0,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
                 "fase_pronostico": 0,
                 "puntos": 0,
                 "resultado": "Ninguno"
