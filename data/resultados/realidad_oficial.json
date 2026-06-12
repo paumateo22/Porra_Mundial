@@ -455,17 +455,17 @@
                 "local": "México",
                 "visitante": "Sudáfrica",
                 "fecha": "2026-06-11T21:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "2",
+                "goles_visitante": "0",
+                "estado": "finished"
             },
             {
                 "local": "Corea del Sur",
                 "visitante": "República Checa",
                 "fecha": "2026-06-12T04:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "2",
+                "goles_visitante": "1",
+                "estado": "finished"
             },
             {
                 "local": "República Checa",
@@ -601,7 +601,40 @@
             }
         ]
     },
-    "clasificados_a_dieciseisavos": [],
+    "clasificados_a_dieciseisavos": [
+        "1A",
+        "1B",
+        "1C",
+        "1D",
+        "1E",
+        "1F",
+        "1I",
+        "1J",
+        "1K",
+        "1L",
+        "2A",
+        "2B",
+        "2C",
+        "2D",
+        "2E",
+        "2F",
+        "2I",
+        "2J",
+        "2K",
+        "2L",
+        "3A/3B/3C/3D/3F",
+        "3A/3E/3H/3I/3J",
+        "3B/3E/3F/3I/3J",
+        "3C/3D/3F/3G/3H",
+        "3C/3E/3F/3H/3I",
+        "3D/3E/3I/3J/3L",
+        "3E/3F/3G/3I/3J",
+        "3E/3H/3I/3J/3K",
+        "G1",
+        "G2",
+        "H1",
+        "H2"
+    ],
     "eliminatorias": {
         "dieciseisavos": [
             {
@@ -651,7 +684,7 @@
             },
             {
                 "id_partido": 78,
-                "local": "1H",
+                "local": "H1",
                 "visitante": "2J",
                 "fecha": "2026-07-02T21:00:00",
                 "estado": "notstarted",
@@ -669,7 +702,7 @@
             },
             {
                 "id_partido": 80,
-                "local": "1G",
+                "local": "G1",
                 "visitante": "3A/3E/3H/3I/3J",
                 "fecha": "2026-07-01T22:00:00",
                 "estado": "notstarted",
@@ -715,7 +748,7 @@
             {
                 "id_partido": 85,
                 "local": "1J",
-                "visitante": "2H",
+                "visitante": "H2",
                 "fecha": "2026-07-04T00:00:01",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -724,7 +757,7 @@
             {
                 "id_partido": 86,
                 "local": "2D",
-                "visitante": "2G",
+                "visitante": "G2",
                 "fecha": "2026-07-03T20:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -752,8 +785,8 @@
         "octavos": [
             {
                 "id_partido": 89,
-                "local": "Ganador 73",
-                "visitante": "Ganador 74",
+                "local": "W74",
+                "visitante": "W77",
                 "fecha": "2026-07-04T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -761,8 +794,8 @@
             },
             {
                 "id_partido": 90,
-                "local": "Ganador 75",
-                "visitante": "Ganador 76",
+                "local": "W73",
+                "visitante": "W75",
                 "fecha": "2026-07-04T19:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -770,8 +803,8 @@
             },
             {
                 "id_partido": 91,
-                "local": "Ganador 77",
-                "visitante": "Ganador 78",
+                "local": "W83",
+                "visitante": "W84",
                 "fecha": "2026-07-06T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -779,8 +812,8 @@
             },
             {
                 "id_partido": 92,
-                "local": "Ganador 79",
-                "visitante": "Ganador 80",
+                "local": "W81",
+                "visitante": "W82",
                 "fecha": "2026-07-07T02:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -788,8 +821,8 @@
             },
             {
                 "id_partido": 93,
-                "local": "Ganador 81",
-                "visitante": "Ganador 82",
+                "local": "W76",
+                "visitante": "W78",
                 "fecha": "2026-07-05T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -797,8 +830,8 @@
             },
             {
                 "id_partido": 94,
-                "local": "Ganador 83",
-                "visitante": "Ganador 84",
+                "local": "W79",
+                "visitante": "W80",
                 "fecha": "2026-07-06T02:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -806,8 +839,8 @@
             },
             {
                 "id_partido": 95,
-                "local": "Ganador 85",
-                "visitante": "Ganador 86",
+                "local": "W86",
+                "visitante": "W88",
                 "fecha": "2026-07-07T18:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -815,8 +848,8 @@
             },
             {
                 "id_partido": 96,
-                "local": "Ganador 87",
-                "visitante": "Ganador 88",
+                "local": "W85",
+                "visitante": "W87",
                 "fecha": "2026-07-07T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -826,8 +859,8 @@
         "cuartos": [
             {
                 "id_partido": 97,
-                "local": "Ganador 89",
-                "visitante": "Ganador 90",
+                "local": "W89",
+                "visitante": "W90",
                 "fecha": "2026-07-09T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -835,8 +868,8 @@
             },
             {
                 "id_partido": 98,
-                "local": "Ganador 91",
-                "visitante": "Ganador 92",
+                "local": "W93",
+                "visitante": "W94",
                 "fecha": "2026-07-10T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -844,8 +877,8 @@
             },
             {
                 "id_partido": 99,
-                "local": "Ganador 93",
-                "visitante": "Ganador 94",
+                "local": "W91",
+                "visitante": "W92",
                 "fecha": "2026-07-11T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -853,8 +886,8 @@
             },
             {
                 "id_partido": 100,
-                "local": "Ganador 95",
-                "visitante": "Ganador 96",
+                "local": "W95",
+                "visitante": "W96",
                 "fecha": "2026-07-12T03:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -864,8 +897,8 @@
         "semifinales": [
             {
                 "id_partido": 101,
-                "local": "Ganador 97",
-                "visitante": "Ganador 98",
+                "local": "W97",
+                "visitante": "W98",
                 "fecha": "2026-07-14T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -873,8 +906,8 @@
             },
             {
                 "id_partido": 102,
-                "local": "Ganador 99",
-                "visitante": "Ganador 100",
+                "local": "W99",
+                "visitante": "W100",
                 "fecha": "2026-07-15T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -884,23 +917,25 @@
         "tercer_puesto": [
             {
                 "id_partido": 103,
-                "local": "Perdedor 101",
-                "visitante": "Perdedor 102",
+                "local": "L101",
+                "visitante": "L102",
                 "fecha": "2026-07-18T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
-                "goles_visitante": ""
+                "goles_visitante": "",
+                "ganador": "TBD"
             }
         ],
         "final": [
             {
                 "id_partido": 104,
-                "local": "Ganador 101",
-                "visitante": "Ganador 102",
+                "local": "W101",
+                "visitante": "W102",
                 "fecha": "2026-07-19T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
-                "goles_visitante": ""
+                "goles_visitante": "",
+                "ganador": "TBD"
             }
         ]
     }

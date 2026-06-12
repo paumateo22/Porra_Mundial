@@ -1,8 +1,29 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 0,
-    "desglose_partidos": {},
-    "desglose_jornadas": {},
+    "puntos_totales": -2.0,
+    "desglose_partidos": {
+        "México_vs_Sudáfrica": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Corea del Sur_vs_República Checa": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        }
+    },
+    "desglose_jornadas": {
+        "J1.1": {
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
+        }
+    },
     "premios_finales": {
         "formularios": {
             "detalles": {
@@ -400,5 +421,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 9
 }

@@ -1,83 +1,200 @@
 {
     "adri": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
+        "puntos_partidos": 1.0,
+        "total_aciertos_1x2": 1,
         "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            }
+        },
         "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
+            }
+        },
         "puntos_grupos": 0
     },
     "aitor": {
-        "puntos_partidos": 0,
+        "puntos_partidos": 0.0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
-        "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            }
+        },
+        "puntos_jornadas": -2,
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
+            }
+        },
         "puntos_grupos": 0
     },
     "carlinhos_jr": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
+        "puntos_partidos": 2.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
-        "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": true
+            }
+        },
+        "puntos_jornadas": 2,
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
+            }
+        },
         "puntos_grupos": 0
     },
     "javi": {
-        "puntos_partidos": 0,
+        "puntos_partidos": 0.0,
         "total_aciertos_1x2": 0,
         "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
-        "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            }
+        },
+        "puntos_jornadas": -2,
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
+            }
+        },
         "puntos_grupos": 0
     },
     "manu": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
+        "puntos_partidos": 4.0,
+        "total_aciertos_1x2": 1,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            }
+        },
         "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
+            }
+        },
         "puntos_grupos": 0
     },
     "miguel_dykan": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
+        "puntos_partidos": 4.0,
+        "total_aciertos_1x2": 1,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            }
+        },
         "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
+            }
+        },
         "puntos_grupos": 0
     },
     "pau": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
+        "puntos_partidos": 2.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
-        "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": true
+            }
+        },
+        "puntos_jornadas": 2,
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
+            }
+        },
         "puntos_grupos": 0
     },
     "quesadator": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
+        "puntos_partidos": 4.0,
+        "total_aciertos_1x2": 1,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            }
+        },
         "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
+            }
+        },
         "puntos_grupos": 0
     },
     "álvaro": {
-        "puntos_partidos": 0,
-        "total_aciertos_1x2": 0,
+        "puntos_partidos": 1.0,
+        "total_aciertos_1x2": 1,
         "total_aciertos_exactos": 0,
-        "historial_jornadas": {},
+        "historial_jornadas": {
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            }
+        },
         "puntos_jornadas": 0,
-        "desglose_jornadas": {},
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
+            }
+        },
         "puntos_grupos": 0
     }
 }
