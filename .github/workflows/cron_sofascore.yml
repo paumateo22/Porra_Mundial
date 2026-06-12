@@ -1,8 +1,8 @@
 name: Scraper Horario SofaScore
 
 on:
-  schedule:
-    - cron: '11,33,52 * * * *'
+  # schedule:
+    # - cron: '11,33,52 * * * *'
   workflow_dispatch:
 
 permissions:
