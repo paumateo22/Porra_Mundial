@@ -2,12 +2,9 @@ name: Scraper Horario SofaScore
 
 on:
   schedule:
-    # Se ejecuta en los minutos 11, 33 y 52 de cada hora
     - cron: '11,33,52 * * * *'
-  # Dejamos el botón manual por si quieres forzar una actualización
   workflow_dispatch:
 
-# Necesitamos permisos para subir código (contents) y llamar al otro workflow (actions)
 permissions:
   contents: write
   actions: write
@@ -22,20 +19,18 @@ jobs:
     steps:
       - name: 🛡️ Comprobar ventana de fechas (Mundial 2026)
         id: date_check
-        shell: bash
         run: |
-          # Formato YYYYMMDD
-          TODAY=$(date +%Y%m%d)
-          START=20260611 # 09 de Junio de 2026
-          END=20260720   # 20 de Julio de 2026 (Dejamos un día extra por diferencias horarias)
+          $TODAY = (Get-Date).ToString("yyyyMMdd")
+          $START = "20260611"
+          $END = "20260720"
           
-          if [ "$TODAY" -ge "$START" ] && [ "$TODAY" -le "$END" ]; then
-            echo "is_active=true" >> $GITHUB_OUTPUT
-            echo "🟢 Dentro de las fechas del torneo. Arrancando motores."
-          else
-            echo "is_active=false" >> $GITHUB_OUTPUT
-            echo "🔴 Fuera de la fecha del torneo. Abortando ejecución silenciosamente."
-          fi
+          if ($TODAY -ge $START -and $TODAY -le $END) {
+            echo "is_active=true" >> $env:GITHUB_OUTPUT
+            Write-Host "🟢 Dentro de las fechas del torneo. Arrancando motores."
+          } else {
+            echo "is_active=false" >> $env:GITHUB_OUTPUT
+            Write-Host "🔴 Fuera de la fecha del torneo. Abortando ejecución silenciosamente."
+          }
 
       - name: Clonar el repositorio
         if: steps.date_check.outputs.is_active == 'true'
@@ -61,27 +56,26 @@ jobs:
       - name: 💾 Guardar cambios (Auto-Commit)
         if: steps.date_check.outputs.is_active == 'true'
         id: commit_step
-        shell: bash
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/resultados/realidad_oficial.json
           
-          # Comprobamos si el extractor ha cambiado algo realmente
-          if git diff --staged --quiet; then
-            echo "No hay cambios nuevos en los resultados de SofaScore."
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          else
+          $changes = git status --porcelain
+          if ([string]::IsNullOrWhiteSpace($changes)) {
+            Write-Host "No hay cambios nuevos en los resultados de SofaScore."
+            echo "has_changes=false" >> $env:GITHUB_OUTPUT
+          } else {
             git commit -m "Auto-Update: Resultados en vivo actualizados desde SofaScore"
             git push
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "Cambios subidos a la rama principal."
-          fi
+            echo "has_changes=true" >> $env:GITHUB_OUTPUT
+            Write-Host "Cambios subidos a la rama principal."
+          }
 
       - name: 🚀 Lanzar Actualizador Global
         if: steps.commit_step.outputs.has_changes == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Como hubo cambios reales, disparamos la cascada completa
+          # Arranca el actualizador mediante GitHub CLI
           gh workflow run actualizador.yml
