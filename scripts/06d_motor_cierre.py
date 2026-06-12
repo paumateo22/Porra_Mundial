@@ -81,8 +81,22 @@ def ejecutar_06d_motor_cierre():
     print(f"{'Pos':<4} | {'Jugador':<15} | {'Base (Part+Jorn)':<18} | {'Grupos':<8} | {'Podio+Extra':<13} | {'TOTAL':<5}")
     print("-" * 90)
 
+    # --- LÓGICA DE EMPATES REALES ---
+    posicion_real = 1
     for i, j in enumerate(ranking_ordenado):
-        j["Posicion"] = i + 1
+        if i > 0:
+            j_ant = ranking_ordenado[i-1]
+            
+            # Comparamos la tupla exacta de puntuación y desempates con el jugador anterior
+            tupla_actual = (j["TOTAL"], j["Crit_1"], j["Crit_2"], j["Crit_3"])
+            tupla_anterior = (j_ant["TOTAL"], j_ant["Crit_1"], j_ant["Crit_2"], j_ant["Crit_3"])
+            
+            # Si este jugador tiene resultados estrictamente peores, su posición cae a su índice real + 1
+            if tupla_actual < tupla_anterior:
+                posicion_real = i + 1
+                
+        j["Posicion"] = posicion_real
+        
         pts_base = j["Puntos_Partidos"] + j["Puntos_Jornadas"]
         pts_extra = j["Puntos_Podio"] + j["Puntos_Forms"]
         print(f"{j['Posicion']:<4} | {j['Jugador'].title():<15} | {pts_base:<18.2f} | {j['Puntos_Grupos']:<8} | {pts_extra:<13.2f} | {j['TOTAL']:.2f}")

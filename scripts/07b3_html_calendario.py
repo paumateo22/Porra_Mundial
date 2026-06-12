@@ -59,7 +59,12 @@ def generar_calendario_html():
             html += f"""<div class="card" style="padding:15px; cursor:default;"><h3 style="color:var(--gold); border-bottom:1px solid #333; padding-bottom:5px;">{grupo}</h3><table style="width:100%; font-size:0.9em; margin-top:10px;">"""
             for p in partidos: 
                 gl, gv = p.get('goles_local', '-'), p.get('goles_visitante', '-')
-                est = "⏳" if p.get('estado') == "notstarted" else "✅"
+                if p.get('estado') == "jugandose":
+                    est = "<span class='live-ball'>⚽</span>"
+                elif p.get('estado') == "notstarted":
+                    est = "⏳"
+                else:
+                    est = "✅"
                 html += f"<tr><td style='text-align:right; border:none; padding:5px; width:40%;'>{p['local']}</td><td style='border:none; font-weight:bold; padding:5px; width:20%; text-align:center;'>{gl} - {gv}</td><td style='text-align:left; border:none; padding:5px; width:40%;'>{p['visitante']}</td><td style='border:none;'>{est}</td></tr>"
             html += "</table></div>"
         html += "</div></details></div>" # Cerramos el .container aquí

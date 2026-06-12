@@ -234,10 +234,13 @@ def estructurar_resultados_oficiales(eventos_crudos):
     }
 
     for evento in eventos_crudos:
-        estado         = evento.get('status', {}).get('type')
+        estado_crudo   = evento.get('status', {}).get('type')
         nombre_ronda   = evento.get('roundInfo', {}).get('name', '')
         nombre_ronda_n = nombre_ronda.strip().lower()  # normalizado para comparación
         timestamp_unix = evento.get('startTimestamp', 0)
+
+        # Mapeo de estado: si está en juego, marcamos "jugandose"
+        estado_formateado = "jugandose" if estado_crudo == "inprogress" else estado_crudo
 
         # ---- Determinar si es fase de grupos o eliminatoria ----
         fase_interna = RONDA_A_FASE.get(nombre_ronda_n)  # None si es grupos
@@ -254,7 +257,7 @@ def estructurar_resultados_oficiales(eventos_crudos):
             penaltis_loc = score_home.get('penalties') or 0
             penaltis_vis = score_away.get('penalties') or 0
 
-            if estado == 'notstarted':
+            if estado_crudo == 'notstarted':
                 goles_loc_str = ""
                 goles_vis_str = ""
             else:
@@ -272,7 +275,7 @@ def estructurar_resultados_oficiales(eventos_crudos):
                 "visitante":       visitante_raw,
                 "goles_local":     goles_loc_str,
                 "goles_visitante": goles_vis_str,
-                "estado":          estado,
+                "estado":          estado_formateado,
                 "_timestamp":      timestamp_unix
             })
 
@@ -289,7 +292,7 @@ def estructurar_resultados_oficiales(eventos_crudos):
                 "local":           local_es,
                 "visitante":       visitante_es,
                 "pasa":            pasa,
-                "estado":          estado,
+                "estado":          estado_formateado,
                 "goles_local":     goles_loc,
                 "goles_visitante": goles_vis,
                 "_timestamp":      timestamp_unix

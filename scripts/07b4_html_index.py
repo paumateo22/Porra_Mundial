@@ -173,12 +173,12 @@ def generar_index_html():
     ultimos_terminados = []
     for g, partidos in realidad_dict.get("fase_grupos", {}).items():
         for p in partidos:
-            if p.get("estado") == "finished": ultimos_terminados.append({"fase": g, "data": p, "limpia": "grupos"})
+            if p.get("estado") in ["finished", "jugandose"]: ultimos_terminados.append({"fase": g, "data": p, "limpia": "grupos"})
     
     fases_elim = [("dieciseisavos", "1/16"), ("octavos", "1/8"), ("cuartos", "1/4"), ("semifinales", "Semis"), ("tercer_puesto", "3º Puesto"), ("final", "Final")]
     for clave, nombre in fases_elim:
         for p in realidad_dict.get("eliminatorias", {}).get(clave, []):
-            if p.get("estado") == "finished": ultimos_terminados.append({"fase": nombre, "data": p, "limpia": clave})
+            if p.get("estado") in ["finished", "jugandose"]: ultimos_terminados.append({"fase": nombre, "data": p, "limpia": clave})
             
     ultimos_4 = ultimos_terminados[-4:]
     ultimos_4.reverse()
@@ -262,12 +262,15 @@ def generar_index_html():
                 })
 
             stats_match.sort(key=lambda x: x['pts'], reverse=True)
+            
+            score_clase = "live-score" if p_real.get("estado") == "jugandose" else ""
+            balon_html = "<span class='live-ball'>⚽</span>" if p_real.get("estado") == "jugandose" else ""
 
             html += f"""
             <details class="match-card" open>
                 <summary>
                     <div class="match-header" style="text-align: center;">{fase_txt}</div>
-                    <div class="match-score">{loc_r} <span>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span> {vis_r}</div>
+                    <div class="match-score">{loc_r} <span class="{score_clase}">{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span>{balon_html} {vis_r}</div>
                 </summary>
                 <div class="match-breakdown">
                     <table style="font-size:0.9em; background:transparent;">

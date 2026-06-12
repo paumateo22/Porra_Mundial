@@ -47,7 +47,6 @@ def generar_jornadas_html():
     jornadas_keys = list(jornadas_dict.keys())
     realidad_dict = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
     
-    # Preparamos los nombres reales para los multiplicadores
     dict_reales = {}
     for g, partidos in realidad_dict.get("fase_grupos", {}).items():
         for p in partidos: dict_reales[f"{p['local']}_vs_{p['visitante']}"] = p
@@ -55,7 +54,6 @@ def generar_jornadas_html():
         for p in partidos:
             if "id_partido" in p: dict_reales[f"ID_{p['id_partido']}"] = p
 
-    # Cargar participantes
     dir_participantes = ROOT_DIR / "participantes"
     jugadores = [p for p in dir_participantes.iterdir() if p.is_dir()]
     
@@ -94,7 +92,6 @@ def generar_jornadas_html():
     <link rel="stylesheet" href="theme.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        /* Expansión del contenedor central solo para esta vista */
         .container {{ max-width: 1450px !important; margin: 0 auto; }}
 
         .sticky-nav {{ position: sticky; top: 0; z-index: 1000; background: rgba(18,18,18,0.95); padding: 12px; border-bottom: 2px solid var(--gold); display: flex; gap: 10px; justify-content: center; overflow-x: auto; flex-wrap: nowrap; backdrop-filter: blur(5px); box-shadow: 0 4px 10px rgba(0,0,0,0.5); margin-bottom: 20px; }}
@@ -105,13 +102,18 @@ def generar_jornadas_html():
         .tab-content.active {{ display: block; }}
         @keyframes fadeIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
         
-        .mvp-card {{ background: linear-gradient(135deg, #DAA520 0%, #b8860b 100%); color: black; border-radius: 12px; padding: 20px; text-align: center; margin: 0 auto 30px auto; max-width: 400px; box-shadow: 0 8px 20px rgba(0,0,0,0.5); position: relative; overflow: hidden; border: 2px solid #fff; }}
+        .cards-wrapper {{ display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }}
+        
+        .mvp-card {{ flex: 1; min-width: 280px; max-width: 450px; background: linear-gradient(135deg, #DAA520 0%, #b8860b 100%); color: black; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.5); position: relative; overflow: hidden; border: 2px solid #fff; }}
         .mvp-card::after {{ content: '👑'; position: absolute; font-size: 6em; opacity: 0.15; right: -10px; top: -20px; transform: rotate(15deg); pointer-events: none; }}
-        .mvp-title {{ font-weight: 900; font-size: 1.2em; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; opacity: 0.9; }}
-        .mvp-name {{ font-size: 2.2em; font-weight: 900; margin: 5px 0; }}
-        .mvp-pts {{ font-size: 1.4em; font-family: monospace; font-weight: bold; background: rgba(0,0,0,0.1); display: inline-block; padding: 5px 15px; border-radius: 20px; }}
+        
+        .loser-card {{ flex: 1; min-width: 280px; max-width: 450px; background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%); color: white; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.5); position: relative; overflow: hidden; border: 2px solid #555; }}
+        .loser-card::after {{ content: '🐢'; position: absolute; font-size: 6em; opacity: 0.10; right: -10px; top: -20px; transform: rotate(15deg); pointer-events: none; }}
+        
+        .card-title {{ font-weight: 900; font-size: 1.1em; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; opacity: 0.9; }}
+        .card-name {{ font-weight: 900; margin: 5px 0; }}
+        .card-pts {{ font-size: 1.3em; font-family: monospace; font-weight: bold; background: rgba(0,0,0,0.15); display: inline-block; padding: 5px 15px; border-radius: 20px; }}
 
-        /* Ajustes de Tabla para evitar desbordamientos */
         .table-wrapper-spaced {{ overflow-x: auto; padding-bottom: 120px; margin-bottom: -90px; }}
         .table-jornada {{ width: 100%; min-width: 1100px; border-collapse: collapse; }}
         .table-jornada th {{ text-align: center; font-size: 0.8em; padding: 12px 4px; border-bottom: 2px solid #333; }}
@@ -119,7 +121,6 @@ def generar_jornadas_html():
         .cell-pts {{ color: var(--gold); font-weight: bold; font-size: 1.1em; }}
         .cell-pred {{ margin-bottom: 4px; display: block; color: #ddd; letter-spacing: 1px; }}
         
-        /* Desplegable Multiplicador CSS mejorado */
         .cell-mult-details {{ position: relative; display: inline-block; margin-top: 4px; }}
         .cell-mult-details summary {{ font-size: 0.75em; background: rgba(218,165,32,0.1); color: var(--gold); border-radius: 4px; padding: 3px 8px; cursor: pointer; list-style: none; border: 1px dashed rgba(218,165,32,0.5); font-weight: bold; transition: 0.2s; }}
         .cell-mult-details summary:hover {{ background: rgba(218,165,32,0.25); }}
@@ -140,6 +141,8 @@ def generar_jornadas_html():
         html += f"""<button class="nav-btn {active_class}" onclick="openJornada('{j_key}', this)">{get_nombre_bonito(j_key)}</button>"""
     html += "</div><div class='container'>"
 
+    rankings_por_jornada = {}
+
     for i, j_key in enumerate(jornadas_keys):
         active_class = "active" if i == 0 else ""
         html += f"""<div id="{j_key}" class="tab-content {active_class}">"""
@@ -155,15 +158,43 @@ def generar_jornadas_html():
             </div></div>"""
             continue
             
-        # Ordenamos los partidos cronológicamente antes de dibujar la tabla
         partidos_jornada = sorted(jornadas_dict[j_key], key=lambda x: dict_reales.get(f"ID_{x['id_partido']}" if "id_partido" in x else f"{x['local']}_vs_{x['visitante']}", {}).get("fecha", ""))
         ranking_jornada = []
         
         for j_id, d in datos_globales.items():
             pts_suma_manual = 0
+            pts_exacto = 0
+            pts_1x2 = 0
+            pts_mult = 0
+            
+            count_1x2 = 0
+            count_exacto = 0
+            
             for p in partidos_jornada:
                 clave_p = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
-                pts_suma_manual += d["libro"].get("desglose_partidos", {}).get(clave_p, {}).get("puntos_conseguidos", 0)
+                info_p = d["libro"].get("desglose_partidos", {}).get(clave_p, {})
+                pts = info_p.get("puntos_conseguidos", 0)
+                mult = info_p.get("multiplicador_aplicado", 1.0)
+                pts_suma_manual += pts
+                
+                pred_p = d["preds"].get(clave_p, {})
+                p_real = dict_reales.get(clave_p, {})
+                if pts > 0 and pred_p and p_real:
+                    pts_base = pts / mult
+                    pts_mult += (pts - pts_base)
+                    
+                    gl_p, gv_p = str(pred_p.get('goles_local', '-')), str(pred_p.get('goles_visitante', '-'))
+                    gl_r, gv_r = str(p_real.get('goles_local', 'X')), str(p_real.get('goles_visitante', 'Y'))
+                    
+                    if gl_p == gl_r and gv_p == gv_r:
+                        count_1x2 += 1
+                        count_exacto += 1
+                        # Reparto de puntos: 1 por acertar el 1X2, el resto (ej. 3) por clavarlo exacto
+                        pts_1x2 += 1.0
+                        pts_exacto += (pts_base - 1.0)
+                    else:
+                        count_1x2 += 1
+                        pts_1x2 += pts_base
                 
             bono = d["libro"].get("desglose_jornadas", {}).get(j_key, {}).get("puntos_bono", 0)
             pts_totales_j = pts_suma_manual + bono
@@ -172,34 +203,79 @@ def generar_jornadas_html():
                 "id": j_id,
                 "nombre": d["nombre"],
                 "total": pts_totales_j,
+                "exactos": pts_exacto,
+                "p1x2": pts_1x2,
+                "mult": pts_mult,
+                "bono": bono,
+                "count_1x2": count_1x2,
+                "count_exacto": count_exacto,
                 "libro": d["libro"],
                 "preds": d["preds"],
                 "dir_path": d["dir_path"]
             })
             
-        ranking_jornada.sort(key=lambda x: x["total"], reverse=True)
+        # ORDENACIÓN CON DESEMPATE: Total -> Nº Aciertos 1X2 -> Nº Aciertos Exactos
+        ranking_jornada.sort(key=lambda x: (x["total"], x["count_1x2"], x["count_exacto"]), reverse=True)
+        rankings_por_jornada[j_key] = ranking_jornada
 
-        if ranking_jornada and ranking_jornada[0]["total"] > 0:
-            mvp = ranking_jornada[0]
+        if ranking_jornada:
+            # Encontrar el máximo y mínimo de aciertos 1X2 para las tarjetas
+            max_aciertos = max([j["count_1x2"] for j in ranking_jornada])
+            min_aciertos = min([j["count_1x2"] for j in ranking_jornada])
+            
+            ganadores = [j for j in ranking_jornada if j["count_1x2"] == max_aciertos]
+            perdedores = [j for j in ranking_jornada if j["count_1x2"] == min_aciertos]
+            
+            def formatear_nombres(lista_jugadores):
+                nombres = [g["nombre"] for g in lista_jugadores]
+                if len(nombres) == 1: return nombres[0]
+                return " y ".join(nombres) if len(nombres) == 2 else ", ".join(nombres[:-1]) + " y " + nombres[-1]
+
+            nombres_ganadores = formatear_nombres(ganadores)
+            nombres_perdedores = formatear_nombres(perdedores)
+            
+            tit_ganador = "Campeón de la Jornada" if len(ganadores) == 1 else "Campeones de la Jornada"
+            tit_perdedor = "Perdedor de la Jornada" if len(perdedores) == 1 else "Perdedores de la Jornada"
+            
+            style_g = "font-size: 1.6em;" if len(ganadores) >= 3 else "font-size: 2.2em;"
+            style_p = "font-size: 1.6em;" if len(perdedores) >= 3 else "font-size: 2.2em;"
+
             html += f"""
-            <div class="mvp-card">
-                <div class="mvp-title">MVP de la Jornada</div>
-                <div class="mvp-name">{mvp["nombre"]}</div>
-                <div class="mvp-pts">{mvp["total"]} Puntos</div>
+            <div class="cards-wrapper">
+                <div class="mvp-card">
+                    <div class="card-title">{tit_ganador}</div>
+                    <div class="card-name" style="{style_g}">{nombres_ganadores}</div>
+                    <div class="card-pts">{max_aciertos} Aciertos</div>
+                </div>
+                <div class="loser-card">
+                    <div class="card-title">{tit_perdedor}</div>
+                    <div class="card-name" style="{style_p}">{nombres_perdedores}</div>
+                    <div class="card-pts">{min_aciertos} Aciertos</div>
+                </div>
             </div>
             """
 
-        # Tabla de Partidos
-        html += """<div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:left; color:#ccc;">PARTICIPANTE</th>"""
+        html += """<div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:center; color:#ccc;">PARTICIPANTE</th>"""
         for p in partidos_jornada:
             loc = p.get("local", "")
             vis = p.get("visitante", "")
             if not loc and "id_partido" in p: loc, vis = f"Eq.{p['id_partido']}A", f"Eq.{p['id_partido']}B"
-            html += f"<th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>{loc[:3]} - {vis[:3]}</span></th>"
+            
+            clave_p = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
+            p_real = dict_reales.get(clave_p, {})
+            
+            if p_real.get("estado") == "jugandose":
+                marcador = f"<br><span class='live-score'>{p_real.get('goles_local')} - {p_real.get('goles_visitante')}</span><span class='live-ball'>⚽</span>"
+            elif p_real.get("estado") == "finished":
+                marcador = f"<br><span style='font-size:0.8em; color:#888;'>{p_real.get('goles_local')} - {p_real.get('goles_visitante')}</span>"
+            else:
+                marcador = ""
+                
+            html += f"<th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>{loc[:3]} - {vis[:3]}</span>{marcador}</th>"
         html += "<th style='color:#ccc;'>TOTAL</th></tr>"
 
         for j in ranking_jornada:
-            html += f"<tr><td style='text-align:left; font-weight:bold;'><a href='participantes/{j['id']}/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>{j['nombre']}</a></td>"
+            html += f"<tr><td style='text-align:center; font-weight:bold;'><a href='participantes/{j['id']}/vistas/dashboard.html' style='color:white; text-decoration:none; font-size:1.1em;'>{j['nombre']}</a></td>"
             
             for p in partidos_jornada:
                 clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
@@ -214,13 +290,23 @@ def generar_jornadas_html():
                 pts = info_p.get('puntos_conseguidos', 0)
                 mult = info_p.get('multiplicador_aplicado', 1.0)
                 
-                color_pts = "var(--gold)" if pts > 0 else "gray"
+                p_real = dict_reales.get(clave, {})
+                gl_r = str(p_real.get("goles_local", "X"))
+                gv_r = str(p_real.get("goles_visitante", "Y"))
+                
+                if pts > 0:
+                    if str(gl_p) == gl_r and str(gv_p) == gv_r:
+                        color_pts = "#4CAF50" # Verde (Exacto)
+                    else:
+                        color_pts = "#64B5F6" # Azul (1X2)
+                else:
+                    color_pts = "gray" 
+                
                 celda = f"<span class='cell-pred'>{gl_p} - {gv_p}</span>"
                 celda += f"<span style='color:{color_pts}; font-weight:bold;'>{pts:.1f} pts</span>"
                 
                 if mult > 1.0:
                     fase_limpia = j_key.split(".")[0] if "." in j_key else j_key
-                    p_real = dict_reales.get(clave, {})
                     loc_r = p_real.get("local") or p.get("local", "")
                     vis_r = p_real.get("visitante") or p.get("visitante", "")
                     
@@ -272,18 +358,35 @@ def generar_jornadas_html():
         bloq, _ = esta_bloqueado(j_key)
         if bloq: continue
         
-        r = []
-        for j_id, d in datos_globales.items():
-            pts_suma_manual = 0
-            for p in jornadas_dict[j_key]:
-                clave_p = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
-                pts_suma_manual += d["libro"].get("desglose_partidos", {}).get(clave_p, {}).get("puntos_conseguidos", 0)
-            bono = d["libro"].get("desglose_jornadas", {}).get(j_key, {}).get("puntos_bono", 0)
-            r.append({"n": d["nombre"], "t": pts_suma_manual + bono})
+        r = rankings_por_jornada.get(j_key, [])
+        
+        # --- Lógica de degradado dinámico ---
+        puntos = [x["total"] for x in r]
+        max_p = max(puntos) if puntos else 0
+        min_p = min(puntos) if puntos else 0
+        
+        bg_colors = []
+        bd_colors = []
+        for x in r:
+            if max_p == min_p or max_p == 0:
+                opacidad = 0.8 # Si todos empatan, dorado fuerte para todos
+            else:
+                # Interpolación matemática: Máximo = 1.0 (100%), Mínimo = 0.2 (20%)
+                opacidad = 0.2 + 0.8 * ((x["total"] - min_p) / (max_p - min_p))
             
-        r.sort(key=lambda x: x["t"], reverse=True)
-        lbls = json.dumps([x["n"] for x in r])
-        dats = json.dumps([x["t"] for x in r])
+            bg_colors.append(f"rgba(218, 165, 32, {opacidad:.2f})")
+            bd_colors.append(f"rgba(218, 165, 32, {min(1.0, opacidad + 0.2):.2f})")
+        # ------------------------------------
+        
+        lbls = json.dumps([x["nombre"] for x in r])
+        dats_total = json.dumps([round(x["total"], 2) for x in r])
+        dats_ex = json.dumps([round(x["exactos"], 2) for x in r])
+        dats_1x2 = json.dumps([round(x["p1x2"], 2) for x in r])
+        dats_mult = json.dumps([round(x["mult"], 2) for x in r])
+        dats_bn = json.dumps([round(x["bono"], 2) for x in r])
+        
+        bg_colors_json = json.dumps(bg_colors)
+        bd_colors_json = json.dumps(bd_colors)
         
         html += f"""
         setTimeout(() => {{
@@ -295,9 +398,9 @@ def generar_jornadas_html():
                         labels: {lbls},
                         datasets: [{{
                             label: 'Puntos Totales',
-                            data: {dats},
-                            backgroundColor: 'rgba(218, 165, 32, 0.7)',
-                            borderColor: 'rgba(218, 165, 32, 1)',
+                            data: {dats_total},
+                            backgroundColor: {bg_colors_json},
+                            borderColor: {bd_colors_json},
                             borderWidth: 1,
                             borderRadius: 4
                         }}]
@@ -309,7 +412,28 @@ def generar_jornadas_html():
                             legend: {{ display: false }},
                             tooltip: {{
                                 callbacks: {{
-                                    label: function(context) {{ return context.parsed.y + ' pts'; }}
+                                    label: function(context) {{
+                                        let idx = context.dataIndex;
+                                        let total = context.parsed.y;
+                                        
+                                        let arr_ex = {dats_ex};
+                                        let arr_1x2 = {dats_1x2};
+                                        let arr_mult = {dats_mult};
+                                        let arr_bn = {dats_bn};
+                                        
+                                        let ex = arr_ex[idx];
+                                        let p1x2 = arr_1x2[idx];
+                                        let mult = arr_mult[idx];
+                                        let bn = arr_bn[idx];
+                                        
+                                        let lines = ['Total: ' + total + ' pts'];
+                                        if (bn !== 0) lines.push((bn > 0 ? '+' : '') + bn + ' por jornada (ganar/perder)');
+                                        if (ex > 0) lines.push('+' + ex + ' por acierto exacto');
+                                        if (p1x2 > 0) lines.push('+' + p1x2 + ' por acierto 1X2');
+                                        if (mult > 0) lines.push('+' + mult + ' gracias a multiplicadores');
+                                        
+                                        return lines;
+                                    }}
                                 }}
                             }}
                         }},

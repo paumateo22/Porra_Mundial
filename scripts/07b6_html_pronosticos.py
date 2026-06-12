@@ -1,6 +1,6 @@
 import sys
 import json
-import csv  # Inyectamos csv para procesar el archivo de registro
+import csv  
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -47,7 +47,6 @@ def get_nav_html(fase_actual):
     return nav
 
 def esta_bloqueado(fase):
-    """Comprueba si la fase actual tiene un bloqueo de tiempo en settings.json"""
     horarios = html_utils.CONFIG.get("horarios", {})
     fecha_str = horarios.get(f"apertura_{fase}")
     if not fecha_str:
@@ -63,7 +62,6 @@ def esta_bloqueado(fase):
     return False, ""
 
 def render_bracket_futuro(eliminatorias_dict, fase_inicio):
-    """Genera el árbol (bracket) de torneo convergente para la proyección futura."""
     if not eliminatorias_dict: return "<p style='color:gray; text-align:center; padding: 20px;'>No hay predicciones futuras registradas en este archivo.</p>"
     
     idx_inicio = FASES_ORDEN.index(fase_inicio) if fase_inicio in FASES_ORDEN else 0
@@ -176,9 +174,6 @@ def generar_vistas_pronosticos():
     realidad_dict = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json") or {}
     premios_reales = html_utils.cargar_json(ROOT_DIR / "data" / "resultados" / "premios_oficiales.json") or {}
     
-    # -----------------------------------------------------
-    # 🔐 EXTRACCIÓN DE CONTRASEÑAS DESDE INSCRIPCION.CSV
-    # -----------------------------------------------------
     ruta_csv = ROOT_DIR / "inscripcion.csv"
     claves_usuarios = {}
     if ruta_csv.exists():
@@ -220,11 +215,8 @@ def generar_vistas_pronosticos():
         desglose_j = libro_stats.get("desglose_jornadas", {})
         desglose_p = libro_stats.get("desglose_partidos", {})
         
-        clave_usuario = claves_usuarios.get(j_dir.name, "adminporra2026") # Clave por defecto si no se encuentra
+        clave_usuario = claves_usuarios.get(j_dir.name, "adminporra2026")
 
-        # ==========================================
-        # 1. FASES DEL TORNEO (Grupos -> Finales)
-        # ==========================================
         for fase in FASES_ORDEN:
             if fase == "grupos":
                 ruta_json = j_dir / "pronosticos" / "grupos" / f"{j_dir.name}_base.json"
@@ -276,7 +268,6 @@ def generar_vistas_pronosticos():
                         event.currentTarget.classList.add('active');
                     }}
                     
-                    // Función para forzar la apertura del candado en el cliente
                     function verificarClaveFase() {{
                         const inputClave = document.getElementById("bypass-pass").value;
                         const claveCorrecta = "{clave_usuario}";
@@ -300,7 +291,6 @@ def generar_vistas_pronosticos():
 
             bloqueado, fecha_apertura = esta_bloqueado(fase)
             
-            # Bloque de interfaz de Candado (Solo visible si 'bloqueado' es True)
             display_candado = "block" if bloqueado else "none"
             html += f"""
                 <div id="lock-screen-container" style="display:{display_candado}; background:#111; padding:40px 20px; text-align:center; border:1px solid #333; border-radius:8px; margin-top:20px;">
@@ -318,7 +308,6 @@ def generar_vistas_pronosticos():
                 </div>
             """
 
-            # Contenedor del contenido del pronóstico (Oculto si está bloqueado)
             display_contenido = "none" if bloqueado else "block"
             html += f"""<div id="protected-content-container" style="display:{display_contenido};">"""
 
@@ -327,7 +316,6 @@ def generar_vistas_pronosticos():
                     <h3>El archivo de pronóstico para {format_fase(fase)} no existe o no se rellenó.</h3>
                 </div>"""
             else:
-                # --- SECCIÓN 1: COMPARATIVA DE LA FASE ACTUAL ---
                 if fase == "grupos":
                     html += f"""
                     <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
@@ -343,7 +331,7 @@ def generar_vistas_pronosticos():
                     for j_key in jornadas_grupos:
                         html += f"<details class='jornada-details' open style='margin-bottom:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333;'>"
                         html += f"<summary style='border:none; padding:0; margin:0; outline:none; cursor:pointer;'><h3 style='color:var(--table-header); margin-top:0; text-align:center; border-bottom:1px solid #444; padding-bottom:5px; display:inline-block; width:100%;'>📌 {format_fase(j_key)}</h3></summary>"
-                        html += "<div class='match-grid-2col' style='margin-top:15pxFilter;'>"
+                        html += "<div class='match-grid-2col' style='margin-top:15px;'>"
                         
                         pts_jornada = exactos_j = 0
                         partidos_ordenados = sorted(jornadas_dict[j_key], key=lambda x: dict_reales.get(f"{x['local']}_vs_{x['visitante']}", {}).get("fecha", ""))
@@ -356,7 +344,13 @@ def generar_vistas_pronosticos():
                             loc_r = p_real.get("local") or p.get("local", "TBD")
                             vis_r = p_real.get("visitante") or p.get("visitante", "TBD")
                             pred_txt = f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}" if p_pred else "-"
-                            real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                            
+                            if p_real.get("estado") == "jugandose":
+                                real_txt = f"<span class='live-score'>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span><span class='live-ball'>⚽</span>"
+                            elif p_real.get("estado") == "finished":
+                                real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}"
+                            else:
+                                real_txt = "⏳"
                             
                             ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
                             if ac_ex: pred_styled = f"<span class='pred-exact'>{pred_txt} ({PTS_1X2} + {PTS_EX})</span>"
@@ -405,7 +399,13 @@ def generar_vistas_pronosticos():
                             info_p = desglose_p.get(clave, {})
                             p_real = dict_reales.get(clave, {})
                             
-                            real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                            if p_real.get("estado") == "jugandose":
+                                real_txt = f"<span class='live-score'>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span><span class='live-ball'>⚽</span>"
+                            elif p_real.get("estado") == "finished":
+                                real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}"
+                            else:
+                                real_txt = "⏳"
+                                
                             pred_txt = f"{p.get('goles_local','-')} - {p.get('goles_visitante','-')}"
                             
                             ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
@@ -421,7 +421,6 @@ def generar_vistas_pronosticos():
                     html += "</div></div></details>"
 
                 else:
-                    # FASE ELIMINATORIA ACTUAL
                     html += f"""
                     <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
                         <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0; color:var(--accent);">⚔️ {format_fase(fase).upper()} (Comparativa Real)</h2></summary>
@@ -432,7 +431,7 @@ def generar_vistas_pronosticos():
                         fase_limpia = j_key.split(".")[0] if "." in j_key else j_key
                         html += f"<details class='jornada-details' open style='margin-bottom:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333;'>"
                         html += f"<summary style='border:none; padding:0; margin:0; outline:none; cursor:pointer;'><h3 style='color:var(--accent); margin-top:0; text-align:center; border-bottom:1px solid #444; padding-bottom:5px; display:inline-block; width:100%;'>📌 {format_fase(j_key)}</h3></summary>"
-                        html += "<div class='match-grid-2col' style='margin-top:15pxFilter;'>"
+                        html += "<div class='match-grid-2col' style='margin-top:15px;'>"
                         
                         pts_jornada = exactos_j = 0
                         partidos_ordenados = sorted(jornadas_dict[j_key], key=lambda x: dict_reales.get(f"ID_{x['id_partido']}" if "id_partido" in x else f"{x['local']}_vs_{x['visitante']}", {}).get("fecha", ""))
@@ -456,7 +455,12 @@ def generar_vistas_pronosticos():
                                 pred_txt = f"{loc_p} {p_pred.get('goles_local','-')}-{p_pred.get('goles_visitante','-')} {vis_p}" if (loc_p != loc_r or vis_p != vis_r) else f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}"
                             else: pred_txt = "-"
                             
-                            real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                            if p_real.get("estado") == "jugandose":
+                                real_txt = f"<span class='live-score'>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span><span class='live-ball'>⚽</span>"
+                            elif p_real.get("estado") == "finished":
+                                real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}"
+                            else:
+                                real_txt = "⏳"
                             
                             ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
                             mult = info_p.get("multiplicador_aplicado", 1.0)
@@ -477,7 +481,7 @@ def generar_vistas_pronosticos():
                             
                             import re
                             mult_html = f"""<div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;"><div style="margin-bottom:8px;">{desglose_html}</div>"""
-                            if mult > 1.0 and p_real.get("estado") == "finished":
+                            if mult > 1.0 and p_real.get("estado") in ["finished", "jugandose"]:
                                 r_loc = html_utils.obtener_racha_fases(j_dir, p_real.get("local"), fase_limpia)
                                 r_vis = html_utils.obtener_racha_fases(j_dir, p_real.get("visitante"), fase_limpia)
                                 r_loc_html = "<br>".join([f"<a href='../../../{r[1]}' target='_blank' style='color:#88b04b; text-decoration:none;'>+{html_utils.CONFIG['multiplicadores']['incremento_racha_por_fase']} ({r[0]})</a>" for r in r_loc]) if r_loc else "<span style='color:gray;'>-</span>"
@@ -524,7 +528,6 @@ def generar_vistas_pronosticos():
                         </div></details>"""
                     html += "</details>"
 
-                # --- SECCIÓN 2: ÁRBOL FUTURO (PROYECCIÓN) ---
                 if fase != "finales":
                     html += f"""
                     <details class="jornada-details" open style="margin-bottom:20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
@@ -537,13 +540,10 @@ def generar_vistas_pronosticos():
                     html += render_bracket_futuro(bracket_data, fase)
                     html += "</details>"
 
-            html += "</div>" # Cierre de protected-content-container
+            html += "</div>" 
             html += "</div></body></html>"
             with open(dir_vistas / f"pronostico_{fase}.html", 'w', encoding='utf-8') as f: f.write(html)
 
-        # ==========================================
-        # 2. PREMIOS INDIVIDUALES
-        # ==========================================
         ruta_premios = j_dir / "pronosticos" / "premios" / "premios_formulario.json"
         premios_pred = html_utils.cargar_json(ruta_premios) or {}
         
@@ -650,7 +650,7 @@ def generar_vistas_pronosticos():
             </div>
             """
             
-        html += "</div>" # Cierre de protected-content-container
+        html += "</div>"
         html += "</div></body></html>"
         with open(dir_vistas / "pronostico_premios.html", 'w', encoding='utf-8') as f: f.write(html)
 

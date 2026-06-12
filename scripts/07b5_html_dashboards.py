@@ -54,7 +54,6 @@ def map_fase_to_num(val):
         return 0
 
 def esta_bloqueado(fase):
-    """Comprueba si la fase actual tiene un bloqueo de tiempo en settings.json"""
     horarios = html_utils.CONFIG.get("horarios", {})
     fecha_str = horarios.get(f"apertura_{fase}")
     if not fecha_str:
@@ -111,9 +110,6 @@ def generar_dashboards_html():
         with open(ruta_csv, 'r', encoding='utf-8') as f:
             for row in csv.DictReader(f): csv_data[row['Jugador'].replace(' ', '_').lower()] = row
 
-    # ==========================================
-    # CREACIÓN DE DASHBOARDS
-    # ==========================================
     for jugador_dir in jugadores:
         nombre = jugador_dir.name.replace('_', ' ').title()
         libro = html_utils.cargar_json(jugador_dir / "estadisticas" / "historial_puntos.json")
@@ -122,7 +118,6 @@ def generar_dashboards_html():
         dir_vistas = jugador_dir / "vistas"
         dir_vistas.mkdir(parents=True, exist_ok=True)
         
-        # [NUEVO ESCUDO] Inicialización de predicciones globales
         dict_preds_global = {}
         for p_list in base_pred.get("fase_grupos", {}).values():
             for pp in p_list: dict_preds_global[f"{pp['local']}_vs_{pp['visitante']}"] = pp
@@ -229,9 +224,6 @@ def generar_dashboards_html():
 
     <div class="container">
     """
-        # ==========================================
-        # 0. PRONÓSTICOS (CÁPSULA DEL TIEMPO)
-        # ==========================================
         html += f"""
         <details id="pronosticos" class="jornada-details" open style="margin-bottom: 20px; background:#151515; padding:15px; border-radius:8px; border:1px solid #333;">
             <summary style="cursor:pointer; border:none; outline:none;">
@@ -248,9 +240,7 @@ def generar_dashboards_html():
             </div>
         </details>
         """
-        # ==========================================
-        # 1. INFORMACIÓN GENERAL (ANCHO COMPLETO)
-        # ==========================================
+
         html += f"""
         <details id="info" class="jornada-details" open>
             <summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0;">📊 Información General</h2></summary>
@@ -293,16 +283,13 @@ def generar_dashboards_html():
             html += f"<td{clase_css}><strong>{ex_j} / {ac_1x2_j}</strong><br><span style='font-size:0.85em; font-weight:normal; opacity:0.85;'>{pts_str} pts</span></td>"
         html += "</tr></table></div></details>"
 
-        # ==========================================
-        # 2. ÚLTIMOS DESEMPEÑOS
-        # ==========================================
         ultimos_terminados = []
         for g, partidos in realidad_dict.get("fase_grupos", {}).items():
             for p in partidos:
-                if p.get("estado") == "finished": ultimos_terminados.append({"fase": g, "data": p, "limpia": "grupos"})
+                if p.get("estado") in ["finished", "jugandose"]: ultimos_terminados.append({"fase": g, "data": p, "limpia": "grupos"})
         for clave, nombre_fase in [("dieciseisavos", "1/16"), ("octavos", "1/8"), ("cuartos", "1/4"), ("semifinales", "1/2"), ("tercer_puesto", "3º Puesto"), ("final", "Final")]:
             for p in realidad_dict.get("eliminatorias", {}).get(clave, []):
-                if p.get("estado") == "finished": ultimos_terminados.append({"fase": nombre_fase, "data": p, "limpia": clave})
+                if p.get("estado") in ["finished", "jugandose"]: ultimos_terminados.append({"fase": nombre_fase, "data": p, "limpia": clave})
                 
         ultimos_4 = ultimos_terminados[-4:]
         ultimos_4.reverse()
@@ -341,7 +328,7 @@ def generar_dashboards_html():
                 <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                     <div style="margin-bottom:8px;">{desglose_html}</div>"""
                 
-                if mult > 1.0 and p_real.get("estado") == "finished":
+                if mult > 1.0 and p_real.get("estado") in ["finished", "jugandose"]:
                     r_loc = html_utils.obtener_racha_fases(jugador_dir, p_real.get("local"), fase_limpia)
                     r_vis = html_utils.obtener_racha_fases(jugador_dir, p_real.get("visitante"), fase_limpia)
                     
@@ -358,6 +345,9 @@ def generar_dashboards_html():
                     </div>"""
                 mult_html += "</div>"
 
+                score_clase = "live-score" if p_real.get("estado") == "jugandose" else ""
+                balon_html = "<span class='live-ball'>⚽</span>" if p_real.get("estado") == "jugandose" else ""
+
                 html += f"""
                 <div style="background:#111; border:1px solid #222; border-radius:4px; padding:15px; display:flex; flex-direction:column; justify-content:space-between;">
                     <div>
@@ -366,7 +356,7 @@ def generar_dashboards_html():
                         </div>
                         <div style="display:flex; justify-content:space-between; margin-bottom:15px; font-size:1.1em; font-weight:bold;">
                             <span style="flex:1; text-align:right;">{loc_r}</span>
-                            <span style="flex:0.3; text-align:center; color:white; background:#222; border-radius:4px; padding:2px; margin:0 10px;">{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span>
+                            <span style="flex:0.3; text-align:center; color:white; background:#222; border-radius:4px; padding:2px; margin:0 10px;"><span class="{score_clase}">{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span>{balon_html}</span>
                             <span style="flex:1; text-align:left;">{vis_r}</span>
                         </div>
                     </div>
@@ -382,9 +372,6 @@ def generar_dashboards_html():
                 </div>"""
             html += "</div></details>"
 
-        # ==========================================
-        # 3. FASE DE GRUPOS (JaJ / GaG)
-        # ==========================================
         bloqueado_grupos, fecha_grupos = esta_bloqueado("grupos")
         
         html += """
@@ -428,7 +415,13 @@ def generar_dashboards_html():
                     loc_r = p_real.get("local") or p.get("local", "TBD")
                     vis_r = p_real.get("visitante") or p.get("visitante", "TBD")
                     pred_txt = f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}" if p_pred else "-"
-                    real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                    
+                    if p_real.get("estado") == "jugandose":
+                        real_txt = f"<span class='live-score'>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span><span class='live-ball'>⚽</span>"
+                    elif p_real.get("estado") == "finished":
+                        real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}"
+                    else:
+                        real_txt = "⏳"
                     
                     ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
                     if ac_ex: pred_styled = f"<span class='pred-exact'>{pred_txt} ({PTS_1X2} + {PTS_EX})</span>"
@@ -469,7 +462,6 @@ def generar_dashboards_html():
                 </div></details>"""
             html += "</div>"
 
-            # PESTAÑA GRUPOS GaG
             html += """<div id="tab-grupos-gag" class="tab-content">
                 <div style="background:rgba(218, 165, 32, 0.1); border-left:4px solid var(--gold); padding:10px; margin-bottom:20px; font-size:0.85em; text-align:center;">
                     <i>⚠️ Nota: Los puntos oficiales se reparten Jornada a Jornada. Esta vista es puramente una alternativa de visualización.</i>
@@ -484,7 +476,13 @@ def generar_dashboards_html():
                     info_p = desglose_p.get(clave, {})
                     p_real = dict_reales.get(clave, {})
                     
-                    real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                    if p_real.get("estado") == "jugandose":
+                        real_txt = f"<span class='live-score'>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span><span class='live-ball'>⚽</span>"
+                    elif p_real.get("estado") == "finished":
+                        real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}"
+                    else:
+                        real_txt = "⏳"
+                        
                     pred_txt = f"{p.get('goles_local','-')} - {p.get('goles_visitante','-')}"
                     
                     ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
@@ -500,9 +498,6 @@ def generar_dashboards_html():
                 html += f"""<tr><td colspan="3" class="gag-total-row">Total Grupo: {pts_grupo} pts</td></tr></table></div>"""
             html += "</div></div></details>"
 
-        # ==========================================
-        # 4. BALANCE FASE DE GRUPOS (Tarjetas)
-        # ==========================================
         bloqueado_balance, _ = esta_bloqueado("fin_fase_grupos")
 
         if not bloqueado_balance:
@@ -548,9 +543,6 @@ def generar_dashboards_html():
                 </div>"""
             html += "</div></details>"
 
-        # ==========================================
-        # 5. ELIMINATORIAS (Estilo JaJ Avanzado)
-        # ==========================================
         jornadas_elim = [k for k in jornadas_keys if not k.startswith("J")]
         if jornadas_elim:
             html += """<details id="eliminatorias" class="jornada-details" open><summary style="cursor:pointer; border:none; outline:none;"><h2 style="display:inline-block; margin-top:0;">⚔️ Eliminatorias</h2></summary>"""
@@ -595,7 +587,12 @@ def generar_dashboards_html():
                             pred_txt = f"{loc_p} {p_pred.get('goles_local','-')}-{p_pred.get('goles_visitante','-')} {vis_p}" if (loc_p != loc_r or vis_p != vis_r) else f"{p_pred.get('goles_local','-')} - {p_pred.get('goles_visitante','-')}"
                         else: pred_txt = "-"
                         
-                        real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}" if p_real.get("estado") == "finished" else "⏳"
+                        if p_real.get("estado") == "jugandose":
+                            real_txt = f"<span class='live-score'>{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}</span><span class='live-ball'>⚽</span>"
+                        elif p_real.get("estado") == "finished":
+                            real_txt = f"{p_real.get('goles_local','-')} - {p_real.get('goles_visitante','-')}"
+                        else:
+                            real_txt = "⏳"
                         
                         ac_ex, ac_1x2 = info_p.get("acierto_exacto", False), info_p.get("acierto_1x2", False)
                         mult = info_p.get("multiplicador_aplicado", 1.0)
@@ -618,7 +615,7 @@ def generar_dashboards_html():
                         <div style="margin-top:10px; padding-top:10px; border-top:1px dotted #555; text-align:center;">
                             <div style="margin-bottom:8px;">{desglose_html}</div>"""
                         
-                        if mult > 1.0 and p_real.get("estado") == "finished":
+                        if mult > 1.0 and p_real.get("estado") in ["finished", "jugandose"]:
                             r_loc = html_utils.obtener_racha_fases(jugador_dir, p_real.get("local"), fase_limpia)
                             r_vis = html_utils.obtener_racha_fases(jugador_dir, p_real.get("visitante"), fase_limpia)
                             
@@ -672,9 +669,6 @@ def generar_dashboards_html():
                     </div></details>"""
             html += "</details>"
 
-        # ==========================================
-        # 6. SORPRESAS Y DECEPCIONES (TIMELINE ABSOLUTA)
-        # ==========================================
         bloqueado_sd, _ = esta_bloqueado("fin_fase_grupos")
 
         if not bloqueado_sd:
@@ -705,7 +699,6 @@ def generar_dashboards_html():
                     html += f"""<div class="sd-flag-btn" style="{color_style}" onclick="showSD('{eq_id}')">{eq}</div>"""
                 html += "</div><div id='sd-details-container'>"
                 
-                # Ajuste matemático: (val + 0.5) / 6.0 centra los valores enteros (0=Grupos, 1=1/16, etc.) en las columnas CSS
                 def get_x_percent(val): return max(0, min(100, ((val + 0.5) / 6.0) * 100.0))
 
                 for eq, datos_global in sorted(global_sd.items()):
@@ -714,29 +707,24 @@ def generar_dashboards_html():
                     R_val = datos_global["realidad"]
                     U_val = datos_global["umbral"]
                     
-                    # Datos del jugador actual para esta tarjeta
                     datos_tu = matriz_sd.get(eq, {})
                     P_val = map_fase_to_num(datos_tu.get("pronostico", -1))
                     puntos_tu = datos_tu.get("puntos", 0)
                     res_tu = datos_tu.get("resultado_calculo", "")
                     
-                    # --- ALINEACIÓN EXACTA CON LOS MÁRGENES DE LAS FASES ---
                     limite_rojo_visual = math.ceil(M_val - U_val) - 1
                     limite_verde_visual = math.floor(M_val + U_val) + 1
                     
-                    # --- CALCULO DE PORCENTAJES CON ALINEACIÓN A BORDES ---
                     w_dec = get_x_percent(limite_rojo_visual + 0.5)
                     left_sorp = get_x_percent(limite_verde_visual - 0.5)
                     w_sorp = 100.0 - left_sorp
 
                     pos_M = get_x_percent(M_val)
                     
-                    # Calculo de la ventana dorada (R_val ± UMB_R_P)
                     gold_left = get_x_percent(R_val - UMB_R_P)
                     gold_right = get_x_percent(R_val + UMB_R_P)
                     w_gold = gold_right - gold_left
 
-                    # === 1. INICIALIZAMOS timeline_html ===
                     timeline_html = f"""
                     <div style="overflow-x:auto; padding-bottom:10px;">
                         <div style="position:relative; width:100%; min-width:700px; border:1px solid #333; border-radius:6px; background:#111; overflow:hidden; margin-top:20px; display:flex;">
@@ -749,7 +737,6 @@ def generar_dashboards_html():
 
                     M_idx = int(M_val)
 
-                    # === 2. BUCLE DE LAS COLUMNAS ===
                     for idx_fase, nom_fase in enumerate(nombres_columnas_sd):
                         inds_html = ""
                         
@@ -784,7 +771,6 @@ def generar_dashboards_html():
                                         link = f"../../{p_id}/vistas/dashboard.html"
                                         pills_html += f"<a href='{link}' style='text-decoration:none;'><div class='sd-player-pill'>{nombre_mostrar}</div></a>"
                                     
-                        # === 3. AÑADIMOS AL timeline_html ===
                         timeline_html += f"""
                             <div style="flex:1; padding:10px; border-right:1px solid #333; display:flex; flex-direction:column; align-items:center; z-index:3; position:relative;">
                                 <div style="height:75px; width:100%; display:flex; flex-direction:column; justify-content:flex-end; gap:4px; align-items:center; margin-top:15px;">
@@ -796,7 +782,6 @@ def generar_dashboards_html():
                                 </div>
                             </div>"""
                     
-                    # === 4. CERRAMOS EL TIMELINE ===
                     timeline_html += "</div></div>"
 
                     html += f"""
