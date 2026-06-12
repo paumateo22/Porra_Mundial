@@ -9,6 +9,9 @@
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
             }
         }
     },
@@ -22,25 +25,31 @@
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
             }
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 2.0,
-        "total_aciertos_1x2": 2,
+        "puntos_partidos": 3.0,
+        "total_aciertos_1x2": 3,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
             "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
             }
         }
     },
     "javi": {
-        "puntos_partidos": 0.0,
-        "total_aciertos_1x2": 0,
+        "puntos_partidos": 1.0,
+        "total_aciertos_1x2": 1,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "México_vs_Sudáfrica": {
@@ -48,19 +57,25 @@
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
             }
         }
     },
     "manu": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 1,
-        "total_aciertos_exactos": 1,
+        "puntos_partidos": 8.0,
+        "total_aciertos_1x2": 2,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
             }
         }
     },
@@ -73,6 +88,9 @@
                 "acierto_1x2": true
             },
             "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             }
         }
@@ -87,6 +105,9 @@
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
             }
         }
     },
@@ -100,12 +121,15 @@
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 1.0,
-        "total_aciertos_1x2": 1,
+        "puntos_partidos": 2.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "México_vs_Sudáfrica": {
@@ -113,6 +137,9 @@
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
             }
         }
     }
