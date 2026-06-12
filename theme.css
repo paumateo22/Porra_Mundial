@@ -107,3 +107,16 @@ tr:hover { background-color: #2a2a2a; }
 .ind-real { background: var(--gold); color: black; }
 .ind-media { background: white; color: black; }
 .ind-tu { background: #3b82f6; color: white; }
+
+/* Animaciones Partidos en Vivo */
+@keyframes blinkLive { 
+    0% { opacity: 1; text-shadow: 0 0 8px rgba(255,255,255,0.8); } 
+    50% { opacity: 0.6; text-shadow: none; } 
+    100% { opacity: 1; text-shadow: 0 0 8px rgba(255,255,255,0.8); } 
+}
+@keyframes bounceBall { 
+    0%, 100% { transform: translateY(0); } 
+    50% { transform: translateY(-4px); } 
+}
+.live-score { animation: blinkLive 1.5s infinite; color: white; font-weight: bold; }
+.live-ball { display: inline-block; animation: bounceBall 0.8s infinite; margin-left: 6px; font-size: 1.1em; }
