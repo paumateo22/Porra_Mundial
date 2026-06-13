@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 3.0,
+    "puntos_totales": -1.0,
     "desglose_partidos": {
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -32,15 +32,15 @@
         },
         "Qatar_vs_Suiza": {
             "fase": "grupos",
-            "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_1x2": false,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 4.0
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
         "J1.1": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 1,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }
@@ -442,5 +442,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 8
 }
