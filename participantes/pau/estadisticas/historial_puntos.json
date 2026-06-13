@@ -2,6 +2,13 @@
     "jugador": "Pau",
     "puntos_totales": 8.0,
     "desglose_partidos": {
+        "Estados Unidos_vs_Paraguay": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
             "acierto_1x2": true,

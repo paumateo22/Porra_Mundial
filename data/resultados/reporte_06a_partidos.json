@@ -1,9 +1,12 @@
 {
     "adri": {
-        "puntos_partidos": 1.0,
-        "total_aciertos_1x2": 1,
+        "puntos_partidos": 2.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -20,6 +23,9 @@
         "total_aciertos_1x2": 1,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
             },
@@ -36,6 +42,9 @@
         "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -48,10 +57,13 @@
         }
     },
     "javi": {
-        "puntos_partidos": 0.0,
-        "total_aciertos_1x2": 0,
+        "puntos_partidos": 1.0,
+        "total_aciertos_1x2": 1,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
             },
@@ -64,10 +76,13 @@
         }
     },
     "manu": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 1,
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -80,10 +95,13 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 1,
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -100,6 +118,9 @@
         "total_aciertos_1x2": 3,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -112,10 +133,13 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 1,
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -132,6 +156,9 @@
         "total_aciertos_1x2": 1,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },

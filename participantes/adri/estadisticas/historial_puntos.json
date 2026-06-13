@@ -1,7 +1,14 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 1.0,
+    "puntos_totales": 2.0,
     "desglose_partidos": {
+        "Estados Unidos_vs_Paraguay": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
             "acierto_1x2": true,
@@ -26,7 +33,7 @@
     },
     "desglose_jornadas": {
         "J1.1": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 2,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -428,5 +435,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 5
 }
