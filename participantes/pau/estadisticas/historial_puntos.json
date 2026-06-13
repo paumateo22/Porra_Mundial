@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 8.0,
+    "puntos_totales": 9.0,
     "desglose_partidos": {
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -29,11 +29,18 @@
             "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 4.0
+        },
+        "Qatar_vs_Suiza": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         }
     },
     "desglose_jornadas": {
         "J1.1": {
-            "aciertos_1x2": 3,
+            "aciertos_1x2": 4,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }

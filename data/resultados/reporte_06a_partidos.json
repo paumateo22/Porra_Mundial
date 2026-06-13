@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 2.0,
-        "total_aciertos_1x2": 2,
+        "puntos_partidos": 3.0,
+        "total_aciertos_1x2": 3,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -15,12 +15,15 @@
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": true
             }
         }
     },
     "aitor": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 1,
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -33,11 +36,146 @@
                 "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Qatar_vs_Suiza": {
                 "acierto_1x2": true
             }
         }
     },
     "carlinhos_jr": {
+        "puntos_partidos": 3.0,
+        "total_aciertos_1x2": 3,
+        "total_aciertos_exactos": 0,
+        "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": true
+            }
+        }
+    },
+    "javi": {
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 2,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": true
+            }
+        }
+    },
+    "manu": {
+        "puntos_partidos": 6.0,
+        "total_aciertos_1x2": 3,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": true
+            }
+        }
+    },
+    "miguel_dykan": {
+        "puntos_partidos": 6.0,
+        "total_aciertos_1x2": 3,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": true
+            }
+        }
+    },
+    "pau": {
+        "puntos_partidos": 7.0,
+        "total_aciertos_1x2": 4,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": true
+            }
+        }
+    },
+    "quesadator": {
+        "puntos_partidos": 6.0,
+        "total_aciertos_1x2": 3,
+        "total_aciertos_exactos": 1,
+        "historial_jornadas": {
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": true
+            }
+        }
+    },
+    "álvaro": {
         "puntos_partidos": 2.0,
         "total_aciertos_1x2": 2,
         "total_aciertos_exactos": 0,
@@ -49,124 +187,13 @@
                 "acierto_1x2": true
             },
             "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": true
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            }
-        }
-    },
-    "javi": {
-        "puntos_partidos": 1.0,
-        "total_aciertos_1x2": 1,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": true
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": false
-            },
-            "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
-            }
-        }
-    },
-    "manu": {
-        "puntos_partidos": 5.0,
-        "total_aciertos_1x2": 2,
-        "total_aciertos_exactos": 1,
-        "historial_jornadas": {
-            "Estados Unidos_vs_Paraguay": {
+            },
+            "Qatar_vs_Suiza": {
                 "acierto_1x2": true
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": false
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            }
-        }
-    },
-    "miguel_dykan": {
-        "puntos_partidos": 5.0,
-        "total_aciertos_1x2": 2,
-        "total_aciertos_exactos": 1,
-        "historial_jornadas": {
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": true
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": false
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            }
-        }
-    },
-    "pau": {
-        "puntos_partidos": 6.0,
-        "total_aciertos_1x2": 3,
-        "total_aciertos_exactos": 1,
-        "historial_jornadas": {
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": true
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": true
-            }
-        }
-    },
-    "quesadator": {
-        "puntos_partidos": 5.0,
-        "total_aciertos_1x2": 2,
-        "total_aciertos_exactos": 1,
-        "historial_jornadas": {
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": true
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": false
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            }
-        }
-    },
-    "álvaro": {
-        "puntos_partidos": 1.0,
-        "total_aciertos_1x2": 1,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": false
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
             }
         }
     }

@@ -563,9 +563,9 @@
                 "local": "Qatar",
                 "visitante": "Suiza",
                 "fecha": "2026-06-13T21:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "1",
+                "estado": "jugandose"
             },
             {
                 "local": "Suiza",
