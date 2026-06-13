@@ -23,6 +23,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Brasil_vs_Marruecos": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Canadá_vs_Bosnia-Herzegovina": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -442,5 +449,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 6
 }

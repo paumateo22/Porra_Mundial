@@ -505,9 +505,9 @@
                 "local": "Brasil",
                 "visitante": "Marruecos",
                 "fecha": "2026-06-14T00:00:01",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "1",
+                "goles_visitante": "1",
+                "estado": "jugandose"
             },
             {
                 "local": "Haití",

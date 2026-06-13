@@ -13,6 +13,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -42,6 +45,9 @@
                 "acierto_1x2": false
             },
             "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
@@ -75,6 +81,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": true
             },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -93,9 +102,9 @@
         "puntos_grupos": 0
     },
     "javi": {
-        "puntos_partidos": 1.0,
-        "total_aciertos_1x2": 1,
-        "total_aciertos_exactos": 0,
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 2,
+        "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -106,6 +115,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -113,12 +125,12 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 2,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 0
@@ -135,6 +147,9 @@
                 "acierto_1x2": true
             },
             "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
@@ -168,6 +183,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -198,6 +216,9 @@
             },
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": true
+            },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
@@ -230,6 +251,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -259,6 +283,9 @@
                 "acierto_1x2": true
             },
             "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
