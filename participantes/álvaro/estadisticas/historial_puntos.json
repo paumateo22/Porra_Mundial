@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 3.0,
+    "puntos_totales": 4.0,
     "desglose_partidos": {
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -15,6 +15,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Alemania_vs_Curazao": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
@@ -61,7 +68,7 @@
     },
     "desglose_jornadas": {
         "J1.1": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }
