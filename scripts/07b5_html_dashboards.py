@@ -291,6 +291,8 @@ def generar_dashboards_html():
             for p in realidad_dict.get("eliminatorias", {}).get(clave, []):
                 if p.get("estado") in ["finished", "jugandose"]: ultimos_terminados.append({"fase": nombre_fase, "data": p, "limpia": clave})
                 
+        ultimos_terminados.sort(key=lambda x: x["data"].get("fecha", x["data"].get("startTimestamp_iso_utc", "")))
+        
         ultimos_4 = ultimos_terminados[-4:]
         ultimos_4.reverse()
         
