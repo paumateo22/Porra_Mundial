@@ -7,6 +7,9 @@
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -42,6 +45,9 @@
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
@@ -81,6 +87,9 @@
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -117,6 +126,9 @@
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
+            },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
@@ -155,6 +167,9 @@
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -192,6 +207,9 @@
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -227,6 +245,9 @@
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
@@ -266,6 +287,9 @@
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -301,6 +325,9 @@
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
