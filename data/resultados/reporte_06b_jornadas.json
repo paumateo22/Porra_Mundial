@@ -10,6 +10,9 @@
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": false
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -52,6 +55,9 @@
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": false
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -84,8 +90,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 4,
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -93,6 +99,9 @@
             },
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -116,12 +125,12 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
-                "aciertos_1x2": 4,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 5,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
@@ -134,6 +143,9 @@
                 "acierto_1x2": true
             },
             "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
@@ -178,6 +190,9 @@
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": false
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -218,6 +233,9 @@
                 "acierto_1x2": true
             },
             "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
@@ -262,6 +280,9 @@
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": false
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -304,6 +325,9 @@
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": false
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -344,6 +368,9 @@
                 "acierto_1x2": false
             },
             "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
