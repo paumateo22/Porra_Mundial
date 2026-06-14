@@ -185,9 +185,9 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 8.0,
+        "puntos_partidos": 11.0,
         "total_aciertos_1x2": 5,
-        "total_aciertos_exactos": 1,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -222,9 +222,9 @@
         }
     },
     "pau": {
-        "puntos_partidos": 12.0,
+        "puntos_partidos": 9.0,
         "total_aciertos_1x2": 6,
-        "total_aciertos_exactos": 2,
+        "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -259,9 +259,9 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 8.0,
+        "puntos_partidos": 11.0,
         "total_aciertos_1x2": 5,
-        "total_aciertos_exactos": 1,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true

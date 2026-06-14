@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 8.0,
+    "puntos_totales": 11.0,
     "desglose_partidos": {
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -19,9 +19,9 @@
         "Países Bajos_vs_Japón": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": false,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 4.0
         },
         "Alemania_vs_Curazao": {
             "fase": "grupos",
