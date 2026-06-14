@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 4,
+        "puntos_partidos": 3.0,
+        "total_aciertos_1x2": 3,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -11,7 +11,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -37,8 +37,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 7.0,
-        "total_aciertos_1x2": 4,
+        "puntos_partidos": 6.0,
+        "total_aciertos_1x2": 3,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -48,7 +48,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -74,8 +74,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 4.0,
-        "total_aciertos_1x2": 4,
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -85,7 +85,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -111,8 +111,8 @@
         }
     },
     "javi": {
-        "puntos_partidos": 8.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 7.0,
+        "total_aciertos_1x2": 4,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -122,7 +122,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -185,9 +185,9 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 11.0,
-        "total_aciertos_1x2": 5,
-        "total_aciertos_exactos": 2,
+        "puntos_partidos": 7.0,
+        "total_aciertos_1x2": 4,
+        "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -196,7 +196,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -222,8 +222,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 9.0,
-        "total_aciertos_1x2": 6,
+        "puntos_partidos": 8.0,
+        "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -233,7 +233,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -259,9 +259,9 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 11.0,
-        "total_aciertos_1x2": 5,
-        "total_aciertos_exactos": 2,
+        "puntos_partidos": 7.0,
+        "total_aciertos_1x2": 4,
+        "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -270,7 +270,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
@@ -296,8 +296,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 7.0,
-        "total_aciertos_1x2": 4,
+        "puntos_partidos": 6.0,
+        "total_aciertos_1x2": 3,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -307,7 +307,7 @@
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true

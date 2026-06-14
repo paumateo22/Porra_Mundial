@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 8.0,
+    "puntos_totales": 7.0,
     "desglose_partidos": {
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -18,10 +18,10 @@
         },
         "Países Bajos_vs_Japón": {
             "fase": "grupos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 0.0
         },
         "Alemania_vs_Curazao": {
             "fase": "grupos",
@@ -75,7 +75,7 @@
     },
     "desglose_jornadas": {
         "J1.1": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 4,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -477,5 +477,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 3
 }
