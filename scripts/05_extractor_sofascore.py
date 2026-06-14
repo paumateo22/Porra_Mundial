@@ -82,7 +82,7 @@ TRADUCCIONES = {
     "Colombia":             "Colombia",
     "Costa Rica":           "Costa Rica",
     "Cuba":                 "Cuba",
-    "Curacao":              "Curazao",
+    "Curaçao":              "Curazao",
     "Czech Republic":       "República Checa",
     "Czechia":              "República Checa",
     "DR Congo":             "RD Congo",
