@@ -180,6 +180,9 @@ def generar_index_html():
         for p in realidad_dict.get("eliminatorias", {}).get(clave, []):
             if p.get("estado") in ["finished", "jugandose"]: ultimos_terminados.append({"fase": nombre, "data": p, "limpia": clave})
             
+    # Ordenar estrictamente por fecha para asegurar que son los últimos reales
+    ultimos_terminados.sort(key=lambda x: x["data"].get("fecha", x["data"].get("startTimestamp_iso_utc", "")))
+    
     ultimos_4 = ultimos_terminados[-4:]
     ultimos_4.reverse()
 
