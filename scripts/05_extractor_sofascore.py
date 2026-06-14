@@ -107,6 +107,7 @@ TRADUCCIONES = {
     "Sweden":               "Suecia",
     "Turkey":               "Turquía",
     "Turkiye":              "Turquía",
+    "Türkiye":               "Turquía",
     "Ukraine":              "Ucrania",
     "Uzbekistan":           "Uzbekistán",
     "Venezuela":            "Venezuela",
