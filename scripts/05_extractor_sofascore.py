@@ -93,7 +93,7 @@ TRADUCCIONES = {
     "Indonesia":            "Indonesia",
     "Iraq":                 "Irak",
     "Ivory Coast":          "Costa de Marfil",
-    "Cote d'Ivoire":        "Costa de Marfil",
+    "Côte d'Ivoire":        "Costa de Marfil",
     "Jamaica":              "Jamaica",
     "Jordan":               "Jordania",
     "New Zealand":          "Nueva Zelanda",
