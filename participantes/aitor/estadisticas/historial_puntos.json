@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 5.0,
+    "puntos_totales": 8.0,
     "desglose_partidos": {
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -31,6 +31,13 @@
             "puntos_conseguidos": 1.0
         },
         "Alemania_vs_Curazao": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Costa de Marfil_vs_Ecuador": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -82,9 +89,9 @@
     },
     "desglose_jornadas": {
         "J1.1": {
-            "aciertos_1x2": 4,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 5,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -484,5 +491,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 2
 }

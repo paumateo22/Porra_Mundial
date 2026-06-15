@@ -19,6 +19,9 @@
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -48,8 +51,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 7.0,
-        "total_aciertos_1x2": 4,
+        "puntos_partidos": 8.0,
+        "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Estados Unidos_vs_Paraguay": {
@@ -65,6 +68,9 @@
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
+                "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
                 "acierto_1x2": true
             },
             "México_vs_Sudáfrica": {
@@ -86,12 +92,12 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
-                "aciertos_1x2": 4,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 5,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         }
     },
@@ -114,6 +120,9 @@
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
@@ -163,6 +172,9 @@
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
             },
@@ -210,6 +222,9 @@
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
@@ -259,6 +274,9 @@
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -306,6 +324,9 @@
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
@@ -355,6 +376,9 @@
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -402,6 +426,9 @@
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
