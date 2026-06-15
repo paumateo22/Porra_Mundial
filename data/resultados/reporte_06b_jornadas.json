@@ -4,6 +4,9 @@
         "total_aciertos_1x2": 4,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -63,6 +66,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -122,6 +128,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -181,6 +190,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -240,6 +252,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -299,6 +314,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -358,6 +376,9 @@
         "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -417,6 +438,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
@@ -476,6 +500,9 @@
         "total_aciertos_1x2": 4,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },

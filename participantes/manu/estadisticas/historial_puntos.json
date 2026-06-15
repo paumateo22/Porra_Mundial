@@ -2,6 +2,13 @@
     "jugador": "Manu",
     "puntos_totales": 8.0,
     "desglose_partidos": {
+        "Bélgica_vs_Egipto": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "España_vs_Cabo Verde": {
             "fase": "grupos",
             "acierto_1x2": false,
