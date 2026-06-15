@@ -66,8 +66,8 @@
         "puntos_grupos": 0
     },
     "aitor": {
-        "puntos_partidos": 8.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 9.0,
+        "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -77,7 +77,7 @@
                 "acierto_1x2": false
             },
             "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -111,6 +111,72 @@
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": false
+            }
+        },
+        "puntos_jornadas": 2,
+        "desglose_jornadas": {
+            "J1.1": {
+                "aciertos_1x2": 5,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
+            },
+            "J1.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
+            }
+        },
+        "puntos_grupos": 0
+    },
+    "carlinhos_jr": {
+        "puntos_partidos": 5.0,
+        "total_aciertos_1x2": 5,
+        "total_aciertos_exactos": 0,
+        "historial_jornadas": {
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Suecia_vs_Túnez": {
+                "acierto_1x2": false
+            },
+            "Alemania_vs_Curazao": {
+                "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": true
+            },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
+            },
+            "Haití_vs_Escocia": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
@@ -131,75 +197,9 @@
         },
         "puntos_grupos": 0
     },
-    "carlinhos_jr": {
-        "puntos_partidos": 6.0,
-        "total_aciertos_1x2": 6,
-        "total_aciertos_exactos": 0,
-        "historial_jornadas": {
-            "Bélgica_vs_Egipto": {
-                "acierto_1x2": false
-            },
-            "España_vs_Cabo Verde": {
-                "acierto_1x2": false
-            },
-            "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": true
-            },
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "Australia_vs_Turquía": {
-                "acierto_1x2": false
-            },
-            "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
-            },
-            "Suecia_vs_Túnez": {
-                "acierto_1x2": false
-            },
-            "Alemania_vs_Curazao": {
-                "acierto_1x2": true
-            },
-            "Costa de Marfil_vs_Ecuador": {
-                "acierto_1x2": false
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": true
-            },
-            "Brasil_vs_Marruecos": {
-                "acierto_1x2": false
-            },
-            "Haití_vs_Escocia": {
-                "acierto_1x2": true
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            },
-            "Qatar_vs_Suiza": {
-                "acierto_1x2": false
-            }
-        },
-        "puntos_jornadas": 2,
-        "desglose_jornadas": {
-            "J1.1": {
-                "aciertos_1x2": 5,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
-            },
-            "J1.2": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
-            }
-        },
-        "puntos_grupos": 0
-    },
     "javi": {
-        "puntos_partidos": 9.0,
-        "total_aciertos_1x2": 6,
+        "puntos_partidos": 8.0,
+        "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -209,7 +209,7 @@
                 "acierto_1x2": false
             },
             "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -248,7 +248,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -256,9 +256,9 @@
                 "resultado": "Neutral"
             },
             "J1.2": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         },
         "puntos_grupos": 0
@@ -528,8 +528,8 @@
         "puntos_grupos": 0
     },
     "álvaro": {
-        "puntos_partidos": 8.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 7.0,
+        "total_aciertos_1x2": 4,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -539,7 +539,7 @@
                 "acierto_1x2": false
             },
             "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -578,7 +578,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -586,9 +586,9 @@
                 "resultado": "Perdedor"
             },
             "J1.2": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         },
         "puntos_grupos": 0
