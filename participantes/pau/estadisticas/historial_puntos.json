@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 11.0,
+    "puntos_totales": 9.0,
     "desglose_partidos": {
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -10,6 +10,13 @@
             "puntos_conseguidos": 0.0
         },
         "España_vs_Cabo Verde": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Arabia Saudita_vs_Uruguay": {
             "fase": "grupos",
             "acierto_1x2": false,
             "acierto_exacto": false,
@@ -109,8 +116,8 @@
         },
         "J1.2": {
             "aciertos_1x2": 0,
-            "puntos_bono": 0,
-            "resultado": "Empate Masivo"
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
@@ -510,5 +517,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 1
+    "posicion_final_ranking": 2
 }

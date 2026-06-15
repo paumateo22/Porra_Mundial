@@ -10,6 +10,9 @@
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -59,6 +62,9 @@
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -98,8 +104,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 5.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 6.0,
+        "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -107,6 +113,9 @@
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -147,8 +156,8 @@
         }
     },
     "javi": {
-        "puntos_partidos": 8.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 9.0,
+        "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -156,6 +165,9 @@
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -204,6 +216,9 @@
                 "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
@@ -255,6 +270,9 @@
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -302,6 +320,9 @@
                 "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
@@ -353,6 +374,9 @@
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
             },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -392,8 +416,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 7.0,
-        "total_aciertos_1x2": 4,
+        "puntos_partidos": 8.0,
+        "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -401,6 +425,9 @@
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
