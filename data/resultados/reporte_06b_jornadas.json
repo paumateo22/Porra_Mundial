@@ -4,6 +4,9 @@
         "total_aciertos_1x2": 4,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -47,6 +50,11 @@
                 "aciertos_1x2": 4,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -55,6 +63,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -98,6 +109,11 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -106,6 +122,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -149,6 +168,11 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -157,6 +181,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -200,6 +227,11 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -208,6 +240,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -251,6 +286,11 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -259,6 +299,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -302,6 +345,11 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -310,6 +358,9 @@
         "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -353,6 +404,11 @@
                 "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -361,6 +417,9 @@
         "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -404,6 +463,11 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -412,6 +476,9 @@
         "total_aciertos_1x2": 4,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -455,6 +522,11 @@
                 "aciertos_1x2": 4,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "J1.2": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     }
