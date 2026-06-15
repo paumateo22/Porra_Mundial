@@ -47,7 +47,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -4,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -56,19 +56,19 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
     },
     "aitor": {
-        "puntos_partidos": 9.0,
-        "total_aciertos_1x2": 6,
+        "puntos_partidos": 8.0,
+        "total_aciertos_1x2": 5,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -110,7 +110,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -118,9 +118,9 @@
                 "resultado": "Neutral"
             },
             "J1.2": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
@@ -173,7 +173,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -182,8 +182,8 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
@@ -236,7 +236,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -245,8 +245,8 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
@@ -299,7 +299,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -308,8 +308,8 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
@@ -362,7 +362,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -371,8 +371,8 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
@@ -425,7 +425,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -434,8 +434,8 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
@@ -488,7 +488,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -497,8 +497,8 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0
@@ -551,7 +551,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -4,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -560,8 +560,8 @@
             },
             "J1.2": {
                 "aciertos_1x2": 0,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 0

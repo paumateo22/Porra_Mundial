@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 0.0,
+    "puntos_totales": 2.0,
     "desglose_partidos": {
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -109,8 +109,8 @@
         },
         "J1.2": {
             "aciertos_1x2": 0,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "puntos_bono": 0,
+            "resultado": "Empate Masivo"
         }
     },
     "premios_finales": {
