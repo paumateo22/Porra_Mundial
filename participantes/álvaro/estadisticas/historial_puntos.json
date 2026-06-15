@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 3.0,
+    "puntos_totales": 11.0,
     "desglose_partidos": {
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -18,10 +18,10 @@
         },
         "Arabia Saudita_vs_Uruguay": {
             "fase": "grupos",
-            "acierto_1x2": false,
-            "acierto_exacto": false,
+            "acierto_1x2": true,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 4.0
         },
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -115,9 +115,9 @@
             "resultado": "Perdedor"
         },
         "J1.2": {
-            "aciertos_1x2": 0,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 1,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
@@ -517,5 +517,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 8
+    "posicion_final_ranking": 3
 }
