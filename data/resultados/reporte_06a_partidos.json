@@ -19,6 +19,9 @@
             "Francia_vs_Senegal": {
                 "acierto_1x2": false
             },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -77,6 +80,9 @@
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
             },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -133,6 +139,9 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
+                "acierto_1x2": false
+            },
+            "Irak_vs_Noruega": {
                 "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
@@ -193,6 +202,9 @@
             "Francia_vs_Senegal": {
                 "acierto_1x2": false
             },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -250,6 +262,9 @@
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
+            },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -309,6 +324,9 @@
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
             },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -366,6 +384,9 @@
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
+            },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -425,6 +446,9 @@
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
             },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -482,6 +506,9 @@
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
+            },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false

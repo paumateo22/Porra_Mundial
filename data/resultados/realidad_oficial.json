@@ -263,9 +263,9 @@
                 "local": "Irak",
                 "visitante": "Noruega",
                 "fecha": "2026-06-17T00:00:01",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "0",
+                "estado": "jugandose"
             },
             {
                 "local": "Francia",
