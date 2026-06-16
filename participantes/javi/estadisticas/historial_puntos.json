@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 14.0,
+    "puntos_totales": 15.0,
     "desglose_partidos": {
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -8,6 +8,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Irán_vs_Nueva Zelanda": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "España_vs_Cabo Verde": {
             "fase": "grupos",
@@ -115,7 +122,7 @@
             "resultado": "Neutral"
         },
         "J1.2": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 2,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }

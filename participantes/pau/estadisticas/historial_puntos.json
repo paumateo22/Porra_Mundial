@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 9.0,
+    "puntos_totales": 12.0,
     "desglose_partidos": {
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -8,6 +8,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Irán_vs_Nueva Zelanda": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "España_vs_Cabo Verde": {
             "fase": "grupos",
@@ -115,9 +122,9 @@
             "resultado": "Ganador"
         },
         "J1.2": {
-            "aciertos_1x2": 0,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 1,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -517,5 +524,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 2
 }
