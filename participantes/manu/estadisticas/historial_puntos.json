@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 7.0,
+    "puntos_totales": 10.0,
     "desglose_partidos": {
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -33,9 +33,9 @@
         "Francia_vs_Senegal": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": false,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 4.0
         },
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",

@@ -255,9 +255,9 @@
                 "local": "Francia",
                 "visitante": "Senegal",
                 "fecha": "2026-06-16T21:00:00",
-                "goles_local": "2",
-                "goles_visitante": "0",
-                "estado": "jugandose"
+                "goles_local": "3",
+                "goles_visitante": "1",
+                "estado": "finished"
             },
             {
                 "local": "Irak",

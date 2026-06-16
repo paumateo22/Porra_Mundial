@@ -71,9 +71,9 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 9.0,
+        "puntos_partidos": 12.0,
         "total_aciertos_1x2": 6,
-        "total_aciertos_exactos": 1,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -284,9 +284,9 @@
         }
     },
     "manu": {
-        "puntos_partidos": 9.0,
+        "puntos_partidos": 12.0,
         "total_aciertos_1x2": 6,
-        "total_aciertos_exactos": 1,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -355,9 +355,9 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 10.0,
+        "puntos_partidos": 13.0,
         "total_aciertos_1x2": 7,
-        "total_aciertos_exactos": 1,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -426,9 +426,9 @@
         }
     },
     "pau": {
-        "puntos_partidos": 11.0,
+        "puntos_partidos": 14.0,
         "total_aciertos_1x2": 8,
-        "total_aciertos_exactos": 1,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -568,9 +568,9 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 12.0,
+        "puntos_partidos": 15.0,
         "total_aciertos_1x2": 6,
-        "total_aciertos_exactos": 2,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
