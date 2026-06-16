@@ -16,6 +16,9 @@
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
             },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -55,8 +58,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 8.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 9.0,
+        "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -70,6 +73,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -126,6 +132,9 @@
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": true
             },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -181,6 +190,9 @@
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": true
             },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -220,8 +232,8 @@
         }
     },
     "manu": {
-        "puntos_partidos": 8.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 9.0,
+        "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -235,6 +247,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -275,8 +290,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 9.0,
-        "total_aciertos_1x2": 6,
+        "puntos_partidos": 10.0,
+        "total_aciertos_1x2": 7,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -290,6 +305,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -330,8 +348,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 10.0,
-        "total_aciertos_1x2": 7,
+        "puntos_partidos": 11.0,
+        "total_aciertos_1x2": 8,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -345,6 +363,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -385,8 +406,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 9.0,
-        "total_aciertos_1x2": 6,
+        "puntos_partidos": 10.0,
+        "total_aciertos_1x2": 7,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -400,6 +421,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -440,8 +464,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 11.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 12.0,
+        "total_aciertos_1x2": 6,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Bélgica_vs_Egipto": {
@@ -454,6 +478,9 @@
                 "acierto_1x2": false
             },
             "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
+            },
+            "Francia_vs_Senegal": {
                 "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
