@@ -16,6 +16,20 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 4.0
         },
+        "Portugal_vs_RD Congo": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Inglaterra_vs_Croacia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
             "acierto_1x2": false,

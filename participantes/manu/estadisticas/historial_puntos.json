@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 15.0,
+    "puntos_totales": 13.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -15,6 +15,20 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
+        },
+        "Portugal_vs_RD Congo": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Inglaterra_vs_Croacia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -151,8 +165,8 @@
         },
         "J1.2": {
             "aciertos_1x2": 4,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {

@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 6.0,
+    "puntos_totales": 9.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -10,6 +10,20 @@
             "puntos_conseguidos": 1.0
         },
         "Austria_vs_Jordania": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Portugal_vs_RD Congo": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Inglaterra_vs_Croacia": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -150,9 +164,9 @@
             "resultado": "Perdedor"
         },
         "J1.2": {
-            "aciertos_1x2": 4,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "aciertos_1x2": 5,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {

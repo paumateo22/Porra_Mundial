@@ -1,13 +1,19 @@
 {
     "adri": {
-        "puntos_partidos": 8.0,
-        "total_aciertos_1x2": 8,
+        "puntos_partidos": 9.0,
+        "total_aciertos_1x2": 9,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
@@ -77,6 +83,12 @@
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -134,14 +146,20 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 14.0,
-        "total_aciertos_1x2": 8,
+        "puntos_partidos": 15.0,
+        "total_aciertos_1x2": 9,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
             },
             "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
@@ -211,6 +229,12 @@
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -277,6 +301,12 @@
             },
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -345,6 +375,12 @@
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -411,6 +447,12 @@
             },
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -479,6 +521,12 @@
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -545,6 +593,12 @@
             },
             "Austria_vs_Jordania": {
                 "acierto_1x2": true
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
