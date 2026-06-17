@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 22.0,
+    "puntos_totales": 23.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -24,6 +24,13 @@
             "puntos_conseguidos": 0.0
         },
         "Inglaterra_vs_Croacia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Ghana_vs_Panamá": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -164,7 +171,7 @@
             "resultado": "Perdedor"
         },
         "J1.2": {
-            "aciertos_1x2": 6,
+            "aciertos_1x2": 7,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -566,5 +573,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 3
+    "posicion_final_ranking": 1
 }

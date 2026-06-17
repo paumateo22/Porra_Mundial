@@ -30,6 +30,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Ghana_vs_Panamá": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
             "acierto_1x2": false,
