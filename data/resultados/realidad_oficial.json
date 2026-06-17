@@ -5,17 +5,17 @@
                 "local": "Argentina",
                 "visitante": "Argelia",
                 "fecha": "2026-06-17T03:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "3",
+                "goles_visitante": "0",
+                "estado": "finished"
             },
             {
                 "local": "Austria",
                 "visitante": "Jordania",
                 "fecha": "2026-06-17T06:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "3",
+                "goles_visitante": "1",
+                "estado": "finished"
             },
             {
                 "local": "Argentina",
@@ -263,9 +263,9 @@
                 "local": "Irak",
                 "visitante": "Noruega",
                 "fecha": "2026-06-17T00:00:01",
-                "goles_local": "0",
-                "goles_visitante": "0",
-                "estado": "jugandose"
+                "goles_local": "1",
+                "goles_visitante": "4",
+                "estado": "finished"
             },
             {
                 "local": "Francia",

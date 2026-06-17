@@ -1,9 +1,15 @@
 {
     "adri": {
-        "puntos_partidos": 5.0,
-        "total_aciertos_1x2": 5,
+        "puntos_partidos": 8.0,
+        "total_aciertos_1x2": 8,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -20,7 +26,7 @@
                 "acierto_1x2": false
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -61,10 +67,16 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 12.0,
-        "total_aciertos_1x2": 6,
+        "puntos_partidos": 15.0,
+        "total_aciertos_1x2": 9,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -81,7 +93,7 @@
                 "acierto_1x2": true
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -122,10 +134,16 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 9.0,
-        "total_aciertos_1x2": 6,
-        "total_aciertos_exactos": 1,
+        "puntos_partidos": 14.0,
+        "total_aciertos_1x2": 8,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": false
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -142,7 +160,7 @@
                 "acierto_1x2": false
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -183,10 +201,16 @@
         }
     },
     "javi": {
-        "puntos_partidos": 13.0,
-        "total_aciertos_1x2": 7,
+        "puntos_partidos": 16.0,
+        "total_aciertos_1x2": 10,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -203,7 +227,7 @@
                 "acierto_1x2": false
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -244,10 +268,16 @@
         }
     },
     "manu": {
-        "puntos_partidos": 12.0,
-        "total_aciertos_1x2": 6,
+        "puntos_partidos": 15.0,
+        "total_aciertos_1x2": 9,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -264,7 +294,7 @@
                 "acierto_1x2": true
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -305,10 +335,16 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 13.0,
-        "total_aciertos_1x2": 7,
-        "total_aciertos_exactos": 2,
+        "puntos_partidos": 19.0,
+        "total_aciertos_1x2": 10,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -325,7 +361,7 @@
                 "acierto_1x2": true
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -366,10 +402,16 @@
         }
     },
     "pau": {
-        "puntos_partidos": 14.0,
-        "total_aciertos_1x2": 8,
+        "puntos_partidos": 17.0,
+        "total_aciertos_1x2": 11,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -386,7 +428,7 @@
                 "acierto_1x2": true
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -427,10 +469,16 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 10.0,
-        "total_aciertos_1x2": 7,
+        "puntos_partidos": 13.0,
+        "total_aciertos_1x2": 10,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -447,7 +495,7 @@
                 "acierto_1x2": true
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -488,10 +536,16 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 15.0,
-        "total_aciertos_1x2": 6,
-        "total_aciertos_exactos": 3,
+        "puntos_partidos": 21.0,
+        "total_aciertos_1x2": 9,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -508,7 +562,7 @@
                 "acierto_1x2": true
             },
             "Irak_vs_Noruega": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false

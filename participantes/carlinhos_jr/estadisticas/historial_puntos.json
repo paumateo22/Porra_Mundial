@@ -1,7 +1,21 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 7.0,
+    "puntos_totales": 12.0,
     "desglose_partidos": {
+        "Argentina_vs_Argelia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Austria_vs_Jordania": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -39,10 +53,10 @@
         },
         "Irak_vs_Noruega": {
             "fase": "grupos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.0
         },
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -136,7 +150,7 @@
             "resultado": "Neutral"
         },
         "J1.2": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 3,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }
