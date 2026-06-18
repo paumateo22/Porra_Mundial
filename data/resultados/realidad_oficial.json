@@ -113,9 +113,9 @@
                 "local": "Ghana",
                 "visitante": "Panamá",
                 "fecha": "2026-06-18T01:00:00",
-                "goles_local": "0",
+                "goles_local": "1",
                 "goles_visitante": "0",
-                "estado": "jugandose"
+                "estado": "finished"
             },
             {
                 "local": "Inglaterra",

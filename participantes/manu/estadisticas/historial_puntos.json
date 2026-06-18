@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 16.0,
+    "puntos_totales": 20.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -32,10 +32,10 @@
         },
         "Ghana_vs_Panamá": {
             "fase": "grupos",
-            "acierto_1x2": false,
-            "acierto_exacto": false,
+            "acierto_1x2": true,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 4.0
         },
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -171,7 +171,7 @@
             "resultado": "Neutral"
         },
         "J1.2": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 6,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -573,5 +573,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 6
+    "posicion_final_ranking": 4
 }
