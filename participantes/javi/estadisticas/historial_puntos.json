@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 20.0,
+    "puntos_totales": 21.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -22,6 +22,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Uzbekistán_vs_Colombia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "Inglaterra_vs_Croacia": {
             "fase": "grupos",
@@ -171,7 +178,7 @@
             "resultado": "Neutral"
         },
         "J1.2": {
-            "aciertos_1x2": 7,
+            "aciertos_1x2": 8,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -573,5 +580,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 3
+    "posicion_final_ranking": 4
 }
