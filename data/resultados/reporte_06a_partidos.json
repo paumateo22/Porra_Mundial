@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 10.0,
-        "total_aciertos_1x2": 10,
+        "puntos_partidos": 12.0,
+        "total_aciertos_1x2": 12,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -64,6 +64,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -75,13 +78,19 @@
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
             }
         }
     },
     "aitor": {
-        "puntos_partidos": 18.0,
-        "total_aciertos_1x2": 12,
-        "total_aciertos_exactos": 2,
+        "puntos_partidos": 23.0,
+        "total_aciertos_1x2": 14,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -143,6 +152,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -153,14 +165,20 @@
                 "acierto_1x2": true
             },
             "Qatar_vs_Suiza": {
+                "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
                 "acierto_1x2": false
             }
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 16.0,
-        "total_aciertos_1x2": 10,
-        "total_aciertos_exactos": 2,
+        "puntos_partidos": 21.0,
+        "total_aciertos_1x2": 12,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -222,6 +240,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": true
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -233,12 +254,18 @@
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
             }
         }
     },
     "javi": {
-        "puntos_partidos": 19.0,
-        "total_aciertos_1x2": 13,
+        "puntos_partidos": 20.0,
+        "total_aciertos_1x2": 14,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -301,6 +328,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": true
             },
@@ -312,12 +342,18 @@
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
             }
         }
     },
     "manu": {
-        "puntos_partidos": 21.0,
-        "total_aciertos_1x2": 12,
+        "puntos_partidos": 22.0,
+        "total_aciertos_1x2": 13,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -380,6 +416,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -391,12 +430,18 @@
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": false
             }
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 25.0,
-        "total_aciertos_1x2": 13,
+        "puntos_partidos": 27.0,
+        "total_aciertos_1x2": 15,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -459,6 +504,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -470,12 +518,18 @@
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
             }
         }
     },
     "pau": {
-        "puntos_partidos": 20.0,
-        "total_aciertos_1x2": 14,
+        "puntos_partidos": 22.0,
+        "total_aciertos_1x2": 16,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -538,6 +592,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": true
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -549,12 +606,18 @@
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
             }
         }
     },
     "quesadator": {
-        "puntos_partidos": 15.0,
-        "total_aciertos_1x2": 12,
+        "puntos_partidos": 17.0,
+        "total_aciertos_1x2": 14,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -617,6 +680,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -628,12 +694,18 @@
             },
             "Qatar_vs_Suiza": {
                 "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 26.0,
-        "total_aciertos_1x2": 11,
+        "puntos_partidos": 27.0,
+        "total_aciertos_1x2": 12,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -696,6 +768,9 @@
             "Corea del Sur_vs_República Checa": {
                 "acierto_1x2": false
             },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -706,6 +781,12 @@
                 "acierto_1x2": false
             },
             "Qatar_vs_Suiza": {
+                "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
                 "acierto_1x2": false
             }
         }

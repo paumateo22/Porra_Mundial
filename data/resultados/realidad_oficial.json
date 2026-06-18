@@ -471,9 +471,9 @@
                 "local": "República Checa",
                 "visitante": "Sudáfrica",
                 "fecha": "2026-06-18T18:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "1",
+                "goles_visitante": "1",
+                "estado": "finished"
             },
             {
                 "local": "México",
@@ -571,17 +571,17 @@
                 "local": "Suiza",
                 "visitante": "Bosnia-Herzegovina",
                 "fecha": "2026-06-18T21:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "4",
+                "goles_visitante": "1",
+                "estado": "finished"
             },
             {
                 "local": "Canadá",
                 "visitante": "Qatar",
                 "fecha": "2026-06-19T00:00:01",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "3",
+                "goles_visitante": "0",
+                "estado": "jugandose"
             },
             {
                 "local": "Bosnia-Herzegovina",
