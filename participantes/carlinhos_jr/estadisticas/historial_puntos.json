@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 23.0,
+    "puntos_totales": 24.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -177,6 +177,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Escocia_vs_Marruecos": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
         "Canadá_vs_Bosnia-Herzegovina": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -218,7 +225,7 @@
             "resultado": "Perdedor"
         },
         "J2.1": {
-            "aciertos_1x2": 3,
+            "aciertos_1x2": 4,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -620,5 +627,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 8
 }

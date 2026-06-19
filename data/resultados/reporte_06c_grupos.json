@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 13.0,
-        "total_aciertos_1x2": 13,
+        "puntos_partidos": 14.0,
+        "total_aciertos_1x2": 14,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -79,6 +79,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": false
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -105,7 +108,7 @@
                 "resultado": "Neutral"
             },
             "J2.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -192,6 +195,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
             },
@@ -226,8 +232,8 @@
         "puntos_grupos": 1
     },
     "carlinhos_jr": {
-        "puntos_partidos": 22.0,
-        "total_aciertos_1x2": 13,
+        "puntos_partidos": 23.0,
+        "total_aciertos_1x2": 14,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -305,6 +311,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -331,7 +340,7 @@
                 "resultado": "Perdedor"
             },
             "J2.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -339,9 +348,9 @@
         "puntos_grupos": 3
     },
     "javi": {
-        "puntos_partidos": 20.0,
-        "total_aciertos_1x2": 14,
-        "total_aciertos_exactos": 2,
+        "puntos_partidos": 24.0,
+        "total_aciertos_1x2": 15,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -418,6 +427,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -444,7 +456,7 @@
                 "resultado": "Ganador"
             },
             "J2.1": {
-                "aciertos_1x2": 1,
+                "aciertos_1x2": 2,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
@@ -531,6 +543,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -544,7 +559,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -558,15 +573,15 @@
             },
             "J2.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         },
         "puntos_grupos": 1
     },
     "miguel_dykan": {
-        "puntos_partidos": 32.0,
-        "total_aciertos_1x2": 17,
+        "puntos_partidos": 33.0,
+        "total_aciertos_1x2": 18,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -644,6 +659,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -670,7 +688,7 @@
                 "resultado": "Ganador"
             },
             "J2.1": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -678,8 +696,8 @@
         "puntos_grupos": 3
     },
     "pau": {
-        "puntos_partidos": 23.0,
-        "total_aciertos_1x2": 17,
+        "puntos_partidos": 24.0,
+        "total_aciertos_1x2": 18,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -757,6 +775,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
             },
@@ -783,7 +804,7 @@
                 "resultado": "Ganador"
             },
             "J2.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -791,8 +812,8 @@
         "puntos_grupos": 1
     },
     "quesadator": {
-        "puntos_partidos": 19.0,
-        "total_aciertos_1x2": 16,
+        "puntos_partidos": 20.0,
+        "total_aciertos_1x2": 17,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -870,6 +891,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -896,7 +920,7 @@
                 "resultado": "Neutral"
             },
             "J2.1": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -983,6 +1007,9 @@
             "Haití_vs_Escocia": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -996,7 +1023,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -1010,8 +1037,8 @@
             },
             "J2.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         },
         "puntos_grupos": 3
