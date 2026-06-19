@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 16.0,
+    "puntos_totales": 14.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -94,6 +94,13 @@
             "puntos_conseguidos": 1.0
         },
         "Australia_vs_Turquía": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Estados Unidos_vs_Australia": {
             "fase": "grupos",
             "acierto_1x2": false,
             "acierto_exacto": false,
@@ -212,8 +219,8 @@
         },
         "J2.1": {
             "aciertos_1x2": 3,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {

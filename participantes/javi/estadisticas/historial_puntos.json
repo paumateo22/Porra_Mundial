@@ -100,6 +100,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Estados Unidos_vs_Australia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Países Bajos_vs_Japón": {
             "fase": "grupos",
             "acierto_1x2": false,

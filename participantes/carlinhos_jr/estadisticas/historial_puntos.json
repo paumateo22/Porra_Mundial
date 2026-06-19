@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 22.0,
+    "puntos_totales": 23.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -99,6 +99,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Estados Unidos_vs_Australia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "Países Bajos_vs_Japón": {
             "fase": "grupos",
@@ -211,7 +218,7 @@
             "resultado": "Perdedor"
         },
         "J2.1": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }

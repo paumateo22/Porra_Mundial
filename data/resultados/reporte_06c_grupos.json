@@ -46,6 +46,9 @@
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -89,7 +92,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -103,16 +106,16 @@
             },
             "J2.1": {
                 "aciertos_1x2": 3,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 3
     },
     "aitor": {
-        "puntos_partidos": 23.0,
-        "total_aciertos_1x2": 14,
-        "total_aciertos_exactos": 3,
+        "puntos_partidos": 27.0,
+        "total_aciertos_1x2": 15,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -155,6 +158,9 @@
             },
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
             },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
@@ -212,7 +218,7 @@
                 "resultado": "Neutral"
             },
             "J2.1": {
-                "aciertos_1x2": 2,
+                "aciertos_1x2": 3,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -220,8 +226,8 @@
         "puntos_grupos": 1
     },
     "carlinhos_jr": {
-        "puntos_partidos": 21.0,
-        "total_aciertos_1x2": 12,
+        "puntos_partidos": 22.0,
+        "total_aciertos_1x2": 13,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -265,6 +271,9 @@
             },
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
             },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": true
@@ -322,7 +331,7 @@
                 "resultado": "Perdedor"
             },
             "J2.1": {
-                "aciertos_1x2": 2,
+                "aciertos_1x2": 3,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -374,6 +383,9 @@
                 "acierto_1x2": true
             },
             "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
                 "acierto_1x2": false
             },
             "Países Bajos_vs_Japón": {
@@ -486,6 +498,9 @@
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
             },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -550,9 +565,9 @@
         "puntos_grupos": 1
     },
     "miguel_dykan": {
-        "puntos_partidos": 31.0,
-        "total_aciertos_1x2": 16,
-        "total_aciertos_exactos": 5,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 17,
+        "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -595,6 +610,9 @@
             },
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
             },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
@@ -652,7 +670,7 @@
                 "resultado": "Ganador"
             },
             "J2.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -660,8 +678,8 @@
         "puntos_grupos": 3
     },
     "pau": {
-        "puntos_partidos": 22.0,
-        "total_aciertos_1x2": 16,
+        "puntos_partidos": 23.0,
+        "total_aciertos_1x2": 17,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -705,6 +723,9 @@
             },
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
             },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
@@ -762,7 +783,7 @@
                 "resultado": "Ganador"
             },
             "J2.1": {
-                "aciertos_1x2": 2,
+                "aciertos_1x2": 3,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -770,8 +791,8 @@
         "puntos_grupos": 1
     },
     "quesadator": {
-        "puntos_partidos": 18.0,
-        "total_aciertos_1x2": 15,
+        "puntos_partidos": 19.0,
+        "total_aciertos_1x2": 16,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -815,6 +836,9 @@
             },
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
             },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
@@ -872,7 +896,7 @@
                 "resultado": "Neutral"
             },
             "J2.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -880,9 +904,9 @@
         "puntos_grupos": 3
     },
     "álvaro": {
-        "puntos_partidos": 27.0,
-        "total_aciertos_1x2": 12,
-        "total_aciertos_exactos": 5,
+        "puntos_partidos": 31.0,
+        "total_aciertos_1x2": 13,
+        "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -925,6 +949,9 @@
             },
             "Australia_vs_Turquía": {
                 "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
             },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
@@ -969,7 +996,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -4,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -982,9 +1009,9 @@
                 "resultado": "Neutral"
             },
             "J2.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 2,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 3
