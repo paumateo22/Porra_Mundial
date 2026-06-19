@@ -246,7 +246,7 @@
             "México": {
                 "pronostico": 1,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -636,7 +636,7 @@
             "México": {
                 "pronostico": 1,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1026,7 +1026,7 @@
             "México": {
                 "pronostico": 1,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1416,7 +1416,7 @@
             "México": {
                 "pronostico": 1,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1806,7 +1806,7 @@
             "México": {
                 "pronostico": 2,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2196,7 +2196,7 @@
             "México": {
                 "pronostico": 2,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2586,7 +2586,7 @@
             "México": {
                 "pronostico": 2,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2976,7 +2976,7 @@
             "México": {
                 "pronostico": 2,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -3366,7 +3366,7 @@
             "México": {
                 "pronostico": 2,
                 "media_grupo": 1.56,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0

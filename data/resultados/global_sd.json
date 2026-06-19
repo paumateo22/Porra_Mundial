@@ -2101,7 +2101,7 @@
     },
     "México": {
         "media": 1.56,
-        "realidad": 0,
+        "realidad": 1,
         "umbral": 1.0,
         "predicciones": [
             {

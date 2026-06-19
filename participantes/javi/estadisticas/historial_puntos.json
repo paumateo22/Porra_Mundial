@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 20.0,
+    "puntos_totales": 21.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -149,6 +149,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "México_vs_Corea del Sur": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Brasil_vs_Marruecos": {
             "fase": "grupos",
             "acierto_1x2": true,
@@ -218,7 +225,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 0
+        "puntos_conseguidos": 1
     },
     "matriz_sorpresas_decepciones": {
         "Alemania": {
@@ -464,7 +471,7 @@
         "México": {
             "pronostico": 1,
             "media_grupo": 1.56,
-            "realidad": 0,
+            "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
@@ -606,5 +613,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 6
+    "posicion_final_ranking": 8
 }

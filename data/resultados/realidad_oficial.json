@@ -479,9 +479,9 @@
                 "local": "México",
                 "visitante": "Corea del Sur",
                 "fecha": "2026-06-19T03:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "1",
+                "goles_visitante": "0",
+                "estado": "finished"
             },
             {
                 "local": "Sudáfrica",
@@ -579,9 +579,9 @@
                 "local": "Canadá",
                 "visitante": "Qatar",
                 "fecha": "2026-06-19T00:00:01",
-                "goles_local": "3",
+                "goles_local": "6",
                 "goles_visitante": "0",
-                "estado": "jugandose"
+                "estado": "finished"
             },
             {
                 "local": "Bosnia-Herzegovina",
@@ -602,7 +602,6 @@
         ]
     },
     "clasificados_a_dieciseisavos": [
-        "1A",
         "1B",
         "1C",
         "1D",
@@ -633,7 +632,8 @@
         "G1",
         "G2",
         "H1",
-        "H2"
+        "H2",
+        "México"
     ],
     "eliminatorias": {
         "dieciseisavos": [
@@ -729,7 +729,7 @@
             },
             {
                 "id_partido": 83,
-                "local": "1A",
+                "local": "México",
                 "visitante": "3C/3E/3F/3H/3I",
                 "fecha": "2026-07-01T03:00:00",
                 "estado": "notstarted",
