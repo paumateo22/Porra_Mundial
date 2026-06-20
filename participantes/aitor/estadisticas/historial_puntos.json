@@ -128,6 +128,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Países Bajos_vs_Suecia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Alemania_vs_Curazao": {
             "fase": "grupos",
             "acierto_1x2": true,
@@ -641,5 +648,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 8
 }

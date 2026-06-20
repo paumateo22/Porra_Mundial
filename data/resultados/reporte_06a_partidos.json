@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 15.0,
-        "total_aciertos_1x2": 15,
+        "puntos_partidos": 16.0,
+        "total_aciertos_1x2": 16,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -56,6 +56,9 @@
                 "acierto_1x2": false
             },
             "Suecia_vs_Túnez": {
+                "acierto_1x2": true
+            },
+            "Países Bajos_vs_Suecia": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -161,6 +164,9 @@
             "Suecia_vs_Túnez": {
                 "acierto_1x2": true
             },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": false
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -206,8 +212,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 24.0,
-        "total_aciertos_1x2": 15,
+        "puntos_partidos": 25.0,
+        "total_aciertos_1x2": 16,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -264,6 +270,9 @@
             "Suecia_vs_Túnez": {
                 "acierto_1x2": false
             },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": true
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -309,8 +318,8 @@
         }
     },
     "javi": {
-        "puntos_partidos": 28.0,
-        "total_aciertos_1x2": 16,
+        "puntos_partidos": 29.0,
+        "total_aciertos_1x2": 17,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -365,6 +374,9 @@
                 "acierto_1x2": false
             },
             "Suecia_vs_Túnez": {
+                "acierto_1x2": true
+            },
+            "Países Bajos_vs_Suecia": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -412,8 +424,8 @@
         }
     },
     "manu": {
-        "puntos_partidos": 27.0,
-        "total_aciertos_1x2": 15,
+        "puntos_partidos": 28.0,
+        "total_aciertos_1x2": 16,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -470,6 +482,9 @@
             "Suecia_vs_Túnez": {
                 "acierto_1x2": true
             },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": true
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -515,8 +530,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 34.0,
-        "total_aciertos_1x2": 19,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 20,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -573,6 +588,9 @@
             "Suecia_vs_Túnez": {
                 "acierto_1x2": true
             },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": true
+            },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
             },
@@ -618,8 +636,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 25.0,
-        "total_aciertos_1x2": 19,
+        "puntos_partidos": 26.0,
+        "total_aciertos_1x2": 20,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -674,6 +692,9 @@
                 "acierto_1x2": false
             },
             "Suecia_vs_Túnez": {
+                "acierto_1x2": true
+            },
+            "Países Bajos_vs_Suecia": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -721,8 +742,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 24.0,
-        "total_aciertos_1x2": 18,
+        "puntos_partidos": 25.0,
+        "total_aciertos_1x2": 19,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -777,6 +798,9 @@
                 "acierto_1x2": false
             },
             "Suecia_vs_Túnez": {
+                "acierto_1x2": true
+            },
+            "Países Bajos_vs_Suecia": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -881,6 +905,9 @@
             },
             "Suecia_vs_Túnez": {
                 "acierto_1x2": true
+            },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": false
             },
             "Alemania_vs_Curazao": {
                 "acierto_1x2": true
