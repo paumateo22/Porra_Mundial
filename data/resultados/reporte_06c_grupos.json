@@ -128,9 +128,9 @@
         "puntos_grupos": 4
     },
     "aitor": {
-        "puntos_partidos": 25.0,
-        "total_aciertos_1x2": 16,
-        "total_aciertos_exactos": 3,
+        "puntos_partidos": 29.0,
+        "total_aciertos_1x2": 17,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -196,7 +196,7 @@
                 "acierto_1x2": true
             },
             "Alemania_vs_Costa de Marfil": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
@@ -248,7 +248,7 @@
                 "resultado": "Neutral"
             },
             "J2.1": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -384,9 +384,9 @@
         "puntos_grupos": 4
     },
     "javi": {
-        "puntos_partidos": 29.0,
-        "total_aciertos_1x2": 17,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 33.0,
+        "total_aciertos_1x2": 18,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -452,7 +452,7 @@
                 "acierto_1x2": false
             },
             "Alemania_vs_Costa de Marfil": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
@@ -504,7 +504,7 @@
                 "resultado": "Ganador"
             },
             "J2.1": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
