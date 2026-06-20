@@ -1401,7 +1401,7 @@
     },
     "Estados Unidos": {
         "media": 1.22,
-        "realidad": 0,
+        "realidad": 1,
         "umbral": 1.0,
         "predicciones": [
             {
@@ -1415,8 +1415,8 @@
                 "jugador_id": "aitor",
                 "jugador_nombre": "Aitor",
                 "fase_pronostico": 0,
-                "puntos": 10,
-                "resultado": "Decepción"
+                "puntos": 0,
+                "resultado": "Ninguno"
             },
             {
                 "jugador_id": "carlinhos_jr",

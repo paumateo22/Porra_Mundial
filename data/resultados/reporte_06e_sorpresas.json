@@ -166,7 +166,7 @@
             "Estados Unidos": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -391,7 +391,7 @@
     },
     "aitor": {
         "puntos_sorpresas": 0,
-        "puntos_decepciones": 20,
+        "puntos_decepciones": 10,
         "detalles_equipos": {
             "Alemania": {
                 "pronostico": 1,
@@ -556,10 +556,10 @@
             "Estados Unidos": {
                 "pronostico": 0,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
-                "resultado_calculo": "Decepción",
-                "puntos": 10
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
             },
             "Francia": {
                 "pronostico": 4,
@@ -946,7 +946,7 @@
             "Estados Unidos": {
                 "pronostico": 2,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1336,7 +1336,7 @@
             "Estados Unidos": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1726,7 +1726,7 @@
             "Estados Unidos": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2116,7 +2116,7 @@
             "Estados Unidos": {
                 "pronostico": 2,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2506,7 +2506,7 @@
             "Estados Unidos": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2896,7 +2896,7 @@
             "Estados Unidos": {
                 "pronostico": 2,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -3286,7 +3286,7 @@
             "Estados Unidos": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0

@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 40.0,
+    "puntos_totales": 42.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -107,6 +107,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Turquía_vs_Paraguay": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Países Bajos_vs_Japón": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -184,6 +191,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Brasil_vs_Haití": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
         "Canadá_vs_Bosnia-Herzegovina": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -225,7 +239,7 @@
             "resultado": "Ganador"
         },
         "J2.1": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 6,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -239,7 +253,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 3
+        "puntos_conseguidos": 4
     },
     "matriz_sorpresas_decepciones": {
         "Alemania": {
@@ -405,7 +419,7 @@
         "Estados Unidos": {
             "pronostico": 2,
             "media_grupo": 1.22,
-            "realidad": 0,
+            "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0

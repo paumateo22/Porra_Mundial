@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 25.0,
+    "puntos_totales": 26.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -107,6 +107,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Turquía_vs_Paraguay": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Países Bajos_vs_Japón": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -184,6 +191,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Brasil_vs_Haití": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
         "Canadá_vs_Bosnia-Herzegovina": {
             "fase": "grupos",
             "acierto_1x2": true,
@@ -225,7 +239,7 @@
             "resultado": "Neutral"
         },
         "J2.1": {
-            "aciertos_1x2": 3,
+            "aciertos_1x2": 4,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -234,7 +248,7 @@
         "formularios": {
             "detalles": {
                 "sorpresa": 0,
-                "decepcion": 20
+                "decepcion": 10
             }
         }
     },
@@ -405,10 +419,10 @@
         "Estados Unidos": {
             "pronostico": 0,
             "media_grupo": 1.22,
-            "realidad": 0,
+            "realidad": 1,
             "umbral_aplicado": 1.0,
-            "resultado_calculo": "Decepción",
-            "puntos": 10
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         },
         "Francia": {
             "pronostico": 4,
@@ -627,5 +641,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 7
 }

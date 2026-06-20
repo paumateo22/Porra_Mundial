@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 14.0,
-        "total_aciertos_1x2": 14,
+        "puntos_partidos": 15.0,
+        "total_aciertos_1x2": 15,
         "total_aciertos_exactos": 0,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -49,6 +49,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": false
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -80,6 +83,9 @@
                 "acierto_1x2": false
             },
             "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
+            "Brasil_vs_Haití": {
                 "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
@@ -97,8 +103,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 24.0,
-        "total_aciertos_1x2": 15,
+        "puntos_partidos": 25.0,
+        "total_aciertos_1x2": 16,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -146,6 +152,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": true
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -178,6 +187,9 @@
             },
             "Escocia_vs_Marruecos": {
                 "acierto_1x2": false
+            },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
@@ -194,8 +206,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 23.0,
-        "total_aciertos_1x2": 14,
+        "puntos_partidos": 24.0,
+        "total_aciertos_1x2": 15,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -243,6 +255,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": true
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": true
             },
@@ -274,6 +289,9 @@
                 "acierto_1x2": true
             },
             "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
+            "Brasil_vs_Haití": {
                 "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
@@ -291,9 +309,9 @@
         }
     },
     "javi": {
-        "puntos_partidos": 24.0,
-        "total_aciertos_1x2": 15,
-        "total_aciertos_exactos": 3,
+        "puntos_partidos": 28.0,
+        "total_aciertos_1x2": 16,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -340,6 +358,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": false
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -373,6 +394,9 @@
             "Escocia_vs_Marruecos": {
                 "acierto_1x2": true
             },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -388,8 +412,8 @@
         }
     },
     "manu": {
-        "puntos_partidos": 26.0,
-        "total_aciertos_1x2": 14,
+        "puntos_partidos": 27.0,
+        "total_aciertos_1x2": 15,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -437,6 +461,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": false
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -470,6 +497,9 @@
             "Escocia_vs_Marruecos": {
                 "acierto_1x2": false
             },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -485,8 +515,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 33.0,
-        "total_aciertos_1x2": 18,
+        "puntos_partidos": 34.0,
+        "total_aciertos_1x2": 19,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -534,6 +564,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": true
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -567,6 +600,9 @@
             "Escocia_vs_Marruecos": {
                 "acierto_1x2": true
             },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -582,8 +618,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 24.0,
-        "total_aciertos_1x2": 18,
+        "puntos_partidos": 25.0,
+        "total_aciertos_1x2": 19,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -631,6 +667,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": true
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -664,6 +703,9 @@
             "Escocia_vs_Marruecos": {
                 "acierto_1x2": true
             },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
             },
@@ -679,9 +721,9 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 20.0,
-        "total_aciertos_1x2": 17,
-        "total_aciertos_exactos": 1,
+        "puntos_partidos": 24.0,
+        "total_aciertos_1x2": 18,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -728,6 +770,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": true
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -761,6 +806,9 @@
             "Escocia_vs_Marruecos": {
                 "acierto_1x2": true
             },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -776,8 +824,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 28.0,
-        "total_aciertos_1x2": 13,
+        "puntos_partidos": 29.0,
+        "total_aciertos_1x2": 14,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -825,6 +873,9 @@
             "Estados Unidos_vs_Australia": {
                 "acierto_1x2": true
             },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -857,6 +908,9 @@
             },
             "Escocia_vs_Marruecos": {
                 "acierto_1x2": false
+            },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
