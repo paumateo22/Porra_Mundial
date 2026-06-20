@@ -149,6 +149,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Alemania_vs_Costa de Marfil": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
             "acierto_1x2": false,
