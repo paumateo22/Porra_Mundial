@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 32.0,
+    "puntos_totales": 33.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -151,10 +151,10 @@
         },
         "Alemania_vs_Costa de Marfil": {
             "fase": "grupos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.0
         },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
@@ -253,7 +253,7 @@
             "resultado": "Ganador"
         },
         "J2.1": {
-            "aciertos_1x2": 6,
+            "aciertos_1x2": 7,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
