@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 26.0,
+    "puntos_totales": 27.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -71,6 +71,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "España_vs_Arabia Saudita": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "Francia_vs_Senegal": {
             "fase": "grupos",
@@ -270,6 +277,11 @@
             "aciertos_1x2": 5,
             "puntos_bono": -2,
             "resultado": "Perdedor"
+        },
+        "J2.2": {
+            "aciertos_1x2": 1,
+            "puntos_bono": 0,
+            "resultado": "Empate Masivo"
         }
     },
     "premios_finales": {

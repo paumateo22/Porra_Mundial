@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 21.0,
-        "total_aciertos_1x2": 18,
+        "puntos_partidos": 22.0,
+        "total_aciertos_1x2": 19,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -33,6 +33,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": false
@@ -129,13 +132,18 @@
                 "aciertos_1x2": 8,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 7
     },
     "aitor": {
-        "puntos_partidos": 26.0,
-        "total_aciertos_1x2": 17,
+        "puntos_partidos": 27.0,
+        "total_aciertos_1x2": 18,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -167,6 +175,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
@@ -263,13 +274,18 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 2
     },
     "carlinhos_jr": {
-        "puntos_partidos": 27.0,
-        "total_aciertos_1x2": 18,
+        "puntos_partidos": 28.0,
+        "total_aciertos_1x2": 19,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -300,6 +316,9 @@
                 "acierto_1x2": false
             },
             "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
+            },
+            "España_vs_Arabia Saudita": {
                 "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
@@ -397,13 +416,18 @@
                 "aciertos_1x2": 8,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 5
     },
     "javi": {
-        "puntos_partidos": 30.0,
-        "total_aciertos_1x2": 18,
+        "puntos_partidos": 31.0,
+        "total_aciertos_1x2": 19,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -434,6 +458,9 @@
                 "acierto_1x2": false
             },
             "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
+            },
+            "España_vs_Arabia Saudita": {
                 "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
@@ -531,14 +558,19 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 5
     },
     "manu": {
-        "puntos_partidos": 30.0,
-        "total_aciertos_1x2": 18,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 34.0,
+        "total_aciertos_1x2": 19,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -569,6 +601,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
@@ -665,13 +700,18 @@
                 "aciertos_1x2": 6,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 5
     },
     "miguel_dykan": {
-        "puntos_partidos": 40.0,
-        "total_aciertos_1x2": 22,
+        "puntos_partidos": 41.0,
+        "total_aciertos_1x2": 23,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -703,6 +743,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
@@ -799,14 +842,19 @@
                 "aciertos_1x2": 9,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 7
     },
     "pau": {
-        "puntos_partidos": 28.0,
-        "total_aciertos_1x2": 22,
-        "total_aciertos_exactos": 2,
+        "puntos_partidos": 32.0,
+        "total_aciertos_1x2": 23,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -837,6 +885,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
@@ -933,13 +984,18 @@
                 "aciertos_1x2": 8,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 5
     },
     "quesadator": {
-        "puntos_partidos": 30.0,
-        "total_aciertos_1x2": 21,
+        "puntos_partidos": 31.0,
+        "total_aciertos_1x2": 22,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -971,6 +1027,9 @@
             },
             "Arabia Saudita_vs_Uruguay": {
                 "acierto_1x2": false
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
                 "acierto_1x2": true
@@ -1067,13 +1126,18 @@
                 "aciertos_1x2": 9,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 7
     },
     "álvaro": {
-        "puntos_partidos": 34.0,
-        "total_aciertos_1x2": 16,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 17,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1104,6 +1168,9 @@
                 "acierto_1x2": false
             },
             "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
+            },
+            "España_vs_Arabia Saudita": {
                 "acierto_1x2": true
             },
             "Francia_vs_Senegal": {
@@ -1201,6 +1268,11 @@
                 "aciertos_1x2": 5,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "J2.2": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         },
         "puntos_grupos": 7
