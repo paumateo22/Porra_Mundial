@@ -8,7 +8,7 @@ import html_utils
 
 def generar_timeline():
     print("=======================================================")
-    print(" 🚀 [07B9] GENERANDO MOTOR GRÁFICO (CÁMARA INTELIGENTE) 🚀")
+    print(" 🚀 [07B9] GENERANDO MOTOR GRÁFICO (RESPONSIVO MÓVIL) 🚀")
     print("=======================================================")
 
     jornadas_dict = html_utils.cargar_json(ROOT_DIR / "config" / "jornadas.json") or {}
@@ -38,7 +38,7 @@ def generar_timeline():
     frames.append({
         "type": "start",
         "title": "ARRANQUE",
-        "subtitle": "¡Comienza el Mundial!",
+        "subtitle": "¡Comienza el Torneo!",
         "scores": clone_scores(),
         "diffs": {j: 0 for j in jugadores},
         "exactos": {j: False for j in jugadores}
@@ -49,10 +49,21 @@ def generar_timeline():
         partidos_ordenados = sorted(partidos, key=lambda x: dict_reales.get(f"ID_{x['id_partido']}" if "id_partido" in x else f"{x['local']}_vs_{x['visitante']}", {}).get("fecha", ""))
         
         for p in partidos_ordenados:
-            clave = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
-            p_real = dict_reales.get(clave, {})
+            if "id_partido" in p:
+                clave_principal = f"ID_{p['id_partido']}"
+                clave_secundaria = clave_principal
+            else:
+                clave_principal = f"{p['local']}_vs_{p['visitante']}"
+                clave_secundaria = f"{p['visitante']}_vs_{p['local']}"
+                
+            p_real = dict_reales.get(clave_principal)
+            clave_activa = clave_principal
             
-            if p_real.get("estado") != "finished":
+            if not p_real:
+                p_real = dict_reales.get(clave_secundaria, {})
+                clave_activa = clave_secundaria
+            
+            if p_real.get("estado") not in ["finished", "jugandose"]:
                 continue
             
             partidos_jugados_en_jornada += 1
@@ -65,7 +76,7 @@ def generar_timeline():
             diffs = {}
             exactos = {}
             for jug in jugadores:
-                info_p = historiales[jug].get("desglose_partidos", {}).get(clave, {})
+                info_p = historiales[jug].get("desglose_partidos", {}).get(clave_activa, {})
                 pts = info_p.get("puntos_conseguidos", 0)
                 is_exact = info_p.get("acierto_exacto", False)
                 
@@ -143,86 +154,132 @@ def generar_timeline():
         })
 
     frames_json = json.dumps(frames)
-    altura_marcador = max(400, len(jugadores) * 55)
+    
+    # Altura compactada para los nombres (40px por fila + márgenes)
+    altura_marcador = len(jugadores) * 46 + 20
 
     html = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeline | Anti-Colisión y Cámara Dinámica</title>
+    <title>Timeline | Animación Fluida</title>
     <link rel="stylesheet" href="theme.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {{ overflow-x: hidden; background-color: var(--bg-dark); }}
         
-        /* Contenedor principal que se hará pantalla completa */
+        /* Contenedor FullScreen */
         #fullscreen-zone {{
             background-color: var(--bg-dark);
             padding: 10px;
             min-height: 100vh;
+            overflow-y: auto; /* Permite scroll vertical en móviles */
+            box-sizing: border-box;
         }}
         
+        /* Layout Base (Escritorio) */
         .timeline-layout {{ display: flex; gap: 20px; margin-top: 10px; align-items: flex-start; height: 100%; }}
-        @media (max-width: 1000px) {{ .timeline-layout {{ flex-direction: column; }} .chart-wrapper, .scoreboard-wrapper {{ width: 100% !important; }} }}
         
         .big-present-banner {{
             background: linear-gradient(180deg, #111, #1a1a1a);
             border: 2px solid var(--gold);
             border-radius: 12px;
-            padding: 20px;
+            padding: 15px 20px;
             text-align: center;
             margin-bottom: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(218, 165, 32, 0.2);
-            position: relative;
-            overflow: hidden;
         }}
-        .big-subtitle {{ font-size: 1.2em; color: #a9b7c6; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }}
-        .big-title {{ font-size: 3.5em; font-weight: 900; color: white; text-shadow: 0 0 15px rgba(255,255,255,0.3); margin: 0; line-height: 1.1; }}
+        .big-subtitle {{ font-size: 1.1em; color: #a9b7c6; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }}
+        .big-title {{ font-size: 3em; font-weight: 900; color: white; text-shadow: 0 0 15px rgba(255,255,255,0.3); margin: 0; line-height: 1.1; }}
         
         .chart-wrapper {{
             flex: 7; background: #111; border: 1px solid #333; border-radius: 8px;
-            padding: 15px; box-shadow: inset 0 0 15px rgba(0,0,0,0.5); height: 750px;
+            padding: 15px; box-shadow: inset 0 0 15px rgba(0,0,0,0.5); min-width: 0; height: 650px;
         }}
         
         .scoreboard-wrapper {{
             flex: 3; background: #111; border: 1px solid #333; border-radius: 8px;
-            padding: 15px; position: relative; height: {altura_marcador}px;
-            overflow: hidden; box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+            padding: 15px; box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+            display: flex; flex-direction: column;
         }}
         
+        #scoreboard {{ position: relative; min-height: {altura_marcador}px; width: 100%; }}
+        
+        /* Filas de jugadores más compactas */
         .player-row {{
-            position: absolute; left: 15px; right: 15px; height: 45px;
+            position: absolute; left: 0; right: 0; height: 40px;
             background: #1a1a1a; border: 1px solid #333; border-radius: 6px;
-            display: flex; align-items: center; padding: 0 15px;
+            display: flex; align-items: center; padding: 0 10px;
             transition: top 0.4s ease-out, background 0.3s, opacity 0.3s, filter 0.3s;
-            cursor: pointer;
+            cursor: pointer; box-sizing: border-box;
         }}
         .player-row:hover {{ border-color: #666; background: #222; }}
         
-        .p-color-dot {{ width: 12px; height: 12px; border-radius: 50%; margin-right: 15px; box-shadow: 0 0 5px rgba(255,255,255,0.3); }}
-        .p-name {{ flex: 1; font-weight: 900; color: #eee; text-transform: uppercase; font-size: 0.95em; }}
-        .p-score {{ font-weight: 900; font-size: 1.2em; color: white; width: 60px; text-align: right; }}
-        .p-diff {{ width: 50px; text-align: right; font-weight: 900; font-size: 1.1em; margin-left: 10px; }}
+        .p-color-dot {{ width: 10px; height: 10px; border-radius: 50%; margin-right: 10px; flex-shrink: 0; box-shadow: 0 0 5px rgba(255,255,255,0.3); }}
+        .p-name {{ flex: 1; font-weight: 900; color: #eee; text-transform: uppercase; font-size: 0.9em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+        .p-score {{ font-weight: 900; font-size: 1.1em; color: white; width: 45px; text-align: right; }}
+        .p-diff {{ width: 45px; text-align: right; font-weight: 900; font-size: 1em; margin-left: 5px; }}
 
         .controls-container {{
             background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #333;
-            margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+            margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
         }}
-        .btn-control {{ background: #252525; color: white; border: 1px solid #444; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; }}
+        .btn-control {{ background: #252525; color: white; border: 1px solid #444; padding: 8px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; font-size: 0.9em; }}
         .btn-control:hover {{ background: var(--gold); color: black; border-color: var(--gold); }}
-        .btn-play {{ background: var(--gold); color: black; border-color: var(--gold); min-width: 120px; font-size: 1.1em; }}
+        .btn-play {{ background: var(--gold); color: black; border-color: var(--gold); min-width: 100px; font-size: 1em; }}
         .btn-play:hover {{ background: #b8860b; }}
         .btn-fs {{ background: #2b5876; color: white; border-color: #1a2a6c; }}
         .btn-fs:hover {{ background: #1a2a6c; border-color: var(--gold); color: white; }}
 
-        #timeline-progress {{ flex: 1; min-width: 200px; margin: 0 10px; cursor: pointer; accent-color: var(--gold); height: 8px; }}
-        .hint-text {{ text-align: center; color: #888; font-size: 0.85em; margin-top: 5px; font-style: italic; }}
+        #timeline-progress {{ flex: 1; min-width: 150px; margin: 0 10px; cursor: pointer; accent-color: var(--gold); height: 8px; }}
+        .hint-text {{ text-align: center; color: #888; font-size: 0.8em; margin-top: 15px; font-style: italic; }}
+
+        /* ========================================= */
+        /* MEDIA QUERIES PARA MÓVILES (PORTRAIT)     */
+        /* ========================================= */
+        @media (max-width: 1000px) and (orientation: portrait) {{
+            .timeline-layout {{ flex-direction: column; align-items: stretch; }}
+            .chart-wrapper, .scoreboard-wrapper {{ width: 100% !important; flex: none; }}
+            
+            /* Gráfica más pequeña, marcador ocupa su alto real */
+            .chart-wrapper {{ height: 350px; padding: 10px; }}
+            .scoreboard-wrapper {{ height: auto; }}
+            
+            /* Banner encogido para que no coma pantalla */
+            .big-present-banner {{ padding: 10px; margin-bottom: 10px; }}
+            .big-title {{ font-size: 1.8em !important; }}
+            .big-subtitle {{ font-size: 0.85em !important; margin-bottom: 2px; }}
+            
+            .controls-container {{ padding: 10px; justify-content: center; gap: 5px; }}
+            .btn-control {{ padding: 6px 10px; font-size: 0.85em; }}
+            .btn-fs {{ width: 100%; margin-bottom: 5px; }} /* Botón FS ocupa toda la fila en móvil vertical */
+        }}
+
+        /* ========================================= */
+        /* MEDIA QUERIES PARA MÓVILES (LANDSCAPE)    */
+        /* ========================================= */
+        @media (max-width: 1000px) and (orientation: landscape) {{
+            .timeline-layout {{ flex-direction: row; height: calc(100vh - 120px); align-items: stretch; }}
+            .chart-wrapper {{ height: 100%; width: 65% !important; flex: none; padding: 10px; }}
+            
+            /* El marcador a la derecha, con scroll si no cabe */
+            .scoreboard-wrapper {{ height: 100%; width: 35% !important; flex: none; overflow-y: auto; padding: 10px; }}
+            
+            /* Banner extra plano */
+            .big-present-banner {{ padding: 5px 15px; margin-bottom: 5px; display: flex; align-items: center; justify-content: center; gap: 15px; flex-direction: row-reverse; }}
+            .big-title {{ font-size: 1.4em !important; margin: 0; }}
+            .big-subtitle {{ font-size: 0.8em !important; margin: 0; }}
+            
+            .controls-container {{ padding: 5px 10px; margin-bottom: 5px; gap: 5px; }}
+            .btn-control {{ padding: 4px 8px; font-size: 0.8em; }}
+            .btn-fs {{ display: none; }} /* Ocultamos el botón de FS si ya está en horizontal */
+        }}
     </style>
 </head>
 <body>
     {html_utils.get_sidebar_html("")}
-    {html_utils.get_header_html("🎬 Rendering en Tiempo Real", "Cámara Inteligente y FullScreen Dinámico", "")}
+    {html_utils.get_header_html("🎬 Rendering Dinámico", "Cámara Inteligente y Responsivo", "")}
     
     <div id="fullscreen-zone">
         <div class="big-present-banner">
@@ -231,13 +288,13 @@ def generar_timeline():
         </div>
 
         <div class="controls-container">
-            <button class="btn-control btn-fs" onclick="toggleFullScreen()">📺 Pantalla Completa</button>
-            <button class="btn-control" onclick="seekRelative(-1)">⏮️ Ant.</button>
+            <button class="btn-control btn-fs" onclick="toggleFullScreen()">📺 Pantalla Completa Mágica</button>
+            <button class="btn-control" onclick="seekRelative(-1)">⏮️</button>
             <button class="btn-control btn-play" id="btn-play" onclick="togglePlay()">▶️ PLAY</button>
             <input type="range" id="timeline-progress" min="0" step="0.001" value="0" oninput="seekManual(this.value)">
-            <button class="btn-control" onclick="seekRelative(1)">⏭️ Sig.</button>
+            <button class="btn-control" onclick="seekRelative(1)">⏭️</button>
             <select id="speed-selector" class="btn-control">
-                <option value="0.25">0.25x (Lento)</option>
+                <option value="0.25">0.25x</option>
                 <option value="0.5">0.5x</option>
                 <option value="1" selected>1x (Normal)</option>
                 <option value="1.5">1.5x</option>
@@ -272,28 +329,29 @@ def generar_timeline():
         let lastTime = 0;
         let animationReq;
         
-        // CÁMARA DINÁMICA (Suelo y Techo Suavizados)
+        // CÁMARA DINÁMICA
         let smoothedYMax = 10;
         let smoothedYMin = 0;
 
-        // PANTALLA COMPLETA
+        // --- PANTALLA COMPLETA + GIRO AUTOMÁTICO ---
         function toggleFullScreen() {{
             const zone = document.getElementById("fullscreen-zone");
             if (!document.fullscreenElement) {{
                 zone.requestFullscreen().then(() => {{
-                    // Si estamos en móvil, forzar giro a horizontal
+                    // Forzar modo horizontal en móviles si lo soporta
                     if (screen.orientation && screen.orientation.lock) {{
-                        screen.orientation.lock('landscape').catch((e) => console.log("Giro automático no soportado:", e));
+                        screen.orientation.lock('landscape').catch((e) => console.log("Giro automático ignorado por el navegador."));
                     }}
                 }}).catch(err => {{
                     console.log(`Error al abrir pantalla completa: ${{err.message}}`);
                 }});
             }} else {{
                 if (document.exitFullscreen) document.exitFullscreen();
+                if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock();
             }}
         }}
 
-        // TOGGLE JUGADORES
+        // --- TOGGLE JUGADORES ---
         function togglePlayer(jug) {{
             const dsIndex = progressionChart.data.datasets.findIndex(ds => ds.jugador_id === jug);
             const meta = progressionChart.getDatasetMeta(dsIndex);
@@ -322,14 +380,14 @@ def generar_timeline():
             
             row.innerHTML = `
                 <div class="p-color-dot" style="background: ${{playerColors[jug]}}"></div>
-                <div class="p-name">${{jug.replace('_', ' ')}}</div>
+                <div class="p-name" title="${{jug.replace('_', ' ')}}">${{jug.replace('_', ' ')}}</div>
                 <div class="p-score" id="score-${{jug}}">0.0</div>
                 <div class="p-diff" id="diff-${{jug}}">+0.0</div>
             `;
             scoreboard.appendChild(row);
         }});
 
-        // --- PLUGIN 1: MARCAS DE FONDO CON ZIG-ZAG ---
+        // --- PLUGIN 1: MARCAS DE FONDO CON ZIG-ZAG HORIZONTAL ---
         const backgroundPlugin = {{
             id: 'backgroundMarks',
             beforeDraw(chart) {{
@@ -343,7 +401,7 @@ def generar_timeline():
                         ctx.save();
                         
                         if (f.type === 'match') {{
-                            // Línea fina del partido
+                            // Línea fina
                             ctx.beginPath();
                             ctx.moveTo(x, yAxis.top);
                             ctx.lineTo(x, yAxis.bottom);
@@ -351,16 +409,18 @@ def generar_timeline():
                             ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
                             ctx.stroke();
                             
-                            // Textos de partidos horizontales en blanco
-                            // Para evitar superposiciones, alternamos su altura en Zig-Zag
-                            const zigzagOffset = (index % 3) * 20; // Crea 3 niveles distintos
-                            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                            // Textos horizontales en Zig-Zag (Tres niveles)
+                            const isMobile = window.innerWidth <= 1000;
+                            const levelSize = isMobile ? 12 : 20; 
+                            const zigzagOffset = (index % 3) * levelSize; 
+                            
+                            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
                             ctx.textAlign = 'center';
-                            ctx.font = 'bold 10px Arial';
-                            ctx.fillText(f.title, x, yAxis.bottom - 20 - zigzagOffset);
+                            ctx.font = isMobile ? 'bold 9px Arial' : 'bold 10px Arial';
+                            ctx.fillText(f.title, x, yAxis.bottom - 10 - zigzagOffset);
                             
                         }} else if (f.type !== 'start') {{
-                            // Hitos
+                            // Hitos de Jornada
                             ctx.beginPath();
                             ctx.moveTo(x, yAxis.top + 20);
                             ctx.lineTo(x, yAxis.bottom);
@@ -404,9 +464,8 @@ def generar_timeline():
                     }}
                 }});
 
-                // Algoritmo Anti-Colisión (Stacking)
                 points.sort((a, b) => a.actualY - b.actualY);
-                const LABEL_HEIGHT = 30; 
+                const LABEL_HEIGHT = window.innerWidth <= 1000 ? 25 : 30; 
                 for(let iter=0; iter<10; iter++){{
                     for(let j=0; j<points.length - 1; j++){{
                         let p1 = points[j];
@@ -449,13 +508,13 @@ def generar_timeline():
                     ctx.textAlign = 'left';
                     const valNum = chart.scales.y.getValueForPixel(p.actualY);
                     
-                    ctx.font = 'bold 12px Arial';
+                    ctx.font = 'bold 11px Arial';
                     ctx.fillStyle = p.color;
-                    ctx.fillText(`${{p.jug.toUpperCase()}} ${{valNum.toFixed(1)}}`, p.x + 12, p.drawY - 4);
+                    ctx.fillText(`${{p.jug.toUpperCase()[:4]}} ${{valNum.toFixed(1)}}`, p.x + 12, p.drawY - 4);
                     
-                    ctx.font = 'bold 12px Arial';
+                    ctx.font = 'bold 11px Arial';
                     ctx.fillStyle = dColor;
-                    ctx.fillText(dTxt, p.x + 12, p.drawY + 10);
+                    ctx.fillText(dTxt, p.x + 12, p.drawY + 8);
                     ctx.restore();
                 }});
             }}
@@ -467,7 +526,7 @@ def generar_timeline():
             data: [], 
             borderColor: playerColors[jug],
             backgroundColor: playerColors[jug],
-            borderWidth: 3,
+            borderWidth: 2.5,
             pointRadius: 0, 
             tension: 0.1
         }}));
@@ -486,7 +545,7 @@ def generar_timeline():
                     tooltip: {{ enabled: false }}
                 }},
                 layout: {{
-                    padding: {{ right: 80, bottom: 20 }} // Espacio para textos extra
+                    padding: {{ right: 60, bottom: 20 }} 
                 }},
                 scales: {{
                     x: {{
@@ -496,7 +555,7 @@ def generar_timeline():
                     }},
                     y: {{
                         grid: {{ color: 'rgba(255,255,255,0.05)' }},
-                        ticks: {{ color: '#aaa', font: {{ weight: 'bold', size: 12 }} }},
+                        ticks: {{ color: '#aaa', font: {{ weight: 'bold', size: 10 }} }},
                         suggestedMin: 0
                     }}
                 }}
@@ -506,7 +565,7 @@ def generar_timeline():
 
         document.getElementById("timeline-progress").max = frames.length - 1;
 
-        // --- CEREBRO: CÁMARA Y MARCADOR ---
+        // --- CEREBRO: CÁMARA INTELIGENTE ---
         function renderAtProgress(p) {{
             const baseIdx = Math.floor(p);
             const nextIdx = Math.min(baseIdx + 1, frames.length - 1);
@@ -552,12 +611,11 @@ def generar_timeline():
 
             if (minVisibleScore === Infinity) minVisibleScore = 0;
 
-            // Escala Y Dinámica (Suelo y Techo Suaves)
+            // Escala Y Dinámica 
             const targetYMax = maxVisibleScore + Math.max(5, (maxVisibleScore - minVisibleScore) * 0.15); 
             smoothedYMax += (targetYMax - smoothedYMax) * 0.08; 
             progressionChart.options.scales.y.max = smoothedYMax;
 
-            // El margen inferior sube dinámicamente persiguiendo al último
             const targetYMin = Math.max(0, minVisibleScore - 5); 
             smoothedYMin += (targetYMin - smoothedYMin) * 0.08;
             progressionChart.options.scales.y.min = smoothedYMin;
@@ -567,7 +625,7 @@ def generar_timeline():
             const sortedPlayers = [...jugadores].sort((a, b) => currentScores[b] - currentScores[a]);
             sortedPlayers.forEach((jug, rank) => {{
                 const row = document.getElementById("row-" + jug);
-                row.style.top = (rank * 55 + 10) + "px"; 
+                row.style.top = (rank * 46 + 5) + "px"; // 46px = 40px alto + 6px gap
                 
                 if(rank === 0) {{
                     row.style.borderColor = "var(--gold)";
@@ -650,6 +708,11 @@ def generar_timeline():
             renderAtProgress(progress);
         }}
 
+        // Si cambia el tamaño de la ventana, forzamos un mini render para ajustar el canvas
+        window.addEventListener('resize', () => {{
+            if (!isPlaying) renderAtProgress(progress);
+        }});
+
         renderAtProgress(0);
         animationReq = requestAnimationFrame(animateLoop);
     </script>
@@ -661,7 +724,7 @@ def generar_timeline():
     with open(ruta_salida, 'w', encoding='utf-8') as f:
         f.write(html)
         
-    print(f"✅ ¡Motor de Pantalla Completa + Dinámica Y listo en: {ruta_salida}")
+    print(f"✅ ¡Motor Responsivo para Móviles generado en: {ruta_salida}")
 
 if __name__ == "__main__":
     generar_timeline()
