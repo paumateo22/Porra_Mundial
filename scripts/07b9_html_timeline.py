@@ -284,7 +284,7 @@ def generar_timeline():
         </div>
 
         <div class="controls-container">
-            <button class="btn-control btn-fs" onclick="toggleFullScreen()">📺 Pantalla Completa</button>
+            <button class="btn-control btn-fs" onclick="toggleFullScreen()">📺 Pantalla Completa Mágica</button>
             <button class="btn-control" onclick="seekRelative(-1)">⏮️</button>
             <button class="btn-control btn-play" id="btn-play" onclick="togglePlay()">▶️ PLAY</button>
             <input type="range" id="timeline-progress" min="0" step="0.001" value="0" oninput="seekManual(this.value)">
@@ -503,7 +503,7 @@ def generar_timeline():
                     ctx.font = 'bold 11px Arial';
                     ctx.fillStyle = p.color;
                     
-                    // --- LA LÍNEA MÁGICA ARREGLADA EN JS (.slice en lugar de [:4]) ---
+                    // --- LA LÍNEA MÁGICA ARREGLADA (.slice en lugar de [:4]) ---
                     ctx.fillText(`${{p.jug.toUpperCase().slice(0, 4)}} ${{valNum.toFixed(1)}}`, p.x + 12, p.drawY - 4);
                     
                     ctx.font = 'bold 11px Arial';
@@ -711,3 +711,13 @@ def generar_timeline():
     </script>
 </body>
 </html>
+    """
+    
+    ruta_salida = ROOT_DIR / "timeline.html"
+    with open(ruta_salida, 'w', encoding='utf-8') as f:
+        f.write(html)
+        
+    print(f"✅ ¡Motor Responsivo para Móviles generado en: {ruta_salida}")
+
+if __name__ == "__main__":
+    generar_timeline()
