@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 39.0,
+    "puntos_totales": 36.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -75,9 +75,9 @@
         "España_vs_Arabia Saudita": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 4.0
+            "puntos_conseguidos": 1.0
         },
         "Francia_vs_Senegal": {
             "fase": "grupos",
@@ -296,5 +296,5 @@
         "puntos_conseguidos": 5
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 6
 }

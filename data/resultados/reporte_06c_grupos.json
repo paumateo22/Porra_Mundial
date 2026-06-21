@@ -568,9 +568,9 @@
         "puntos_grupos": 5
     },
     "manu": {
-        "puntos_partidos": 34.0,
+        "puntos_partidos": 31.0,
         "total_aciertos_1x2": 19,
-        "total_aciertos_exactos": 5,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -852,9 +852,9 @@
         "puntos_grupos": 7
     },
     "pau": {
-        "puntos_partidos": 32.0,
+        "puntos_partidos": 29.0,
         "total_aciertos_1x2": 23,
-        "total_aciertos_exactos": 3,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
