@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 27.0,
+    "puntos_totales": 25.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -287,8 +287,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 1,
-            "puntos_bono": 0,
-            "resultado": "Empate Masivo"
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {

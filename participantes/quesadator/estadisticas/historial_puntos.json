@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 40.0,
+    "puntos_totales": 38.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -287,8 +287,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 1,
-            "puntos_bono": 0,
-            "resultado": "Empate Masivo"
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
@@ -303,5 +303,5 @@
         "puntos_conseguidos": 7
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 2
+    "posicion_final_ranking": 3
 }
