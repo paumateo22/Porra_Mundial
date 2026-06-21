@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 36.0,
+    "puntos_totales": 37.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -88,10 +88,10 @@
         },
         "Uruguay_vs_Cabo Verde": {
             "fase": "grupos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.0
         },
         "Francia_vs_Senegal": {
             "fase": "grupos",
@@ -293,7 +293,7 @@
             "resultado": "Neutral"
         },
         "J2.2": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 2,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }
@@ -310,5 +310,5 @@
         "puntos_conseguidos": 5
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 5
 }
