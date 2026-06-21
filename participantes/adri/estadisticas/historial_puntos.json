@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 22.0,
+    "puntos_totales": 26.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -135,6 +135,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Túnez_vs_Japón": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
         "Alemania_vs_Curazao": {
             "fase": "grupos",
             "acierto_1x2": true,
@@ -155,6 +162,13 @@
             "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 4.0
+        },
+        "Ecuador_vs_Curazao": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
@@ -253,7 +267,7 @@
             "resultado": "Neutral"
         },
         "J2.1": {
-            "aciertos_1x2": 7,
+            "aciertos_1x2": 8,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -267,13 +281,13 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 4
+        "puntos_conseguidos": 7
     },
     "matriz_sorpresas_decepciones": {
         "Alemania": {
             "pronostico": 2,
             "media_grupo": 1.78,
-            "realidad": 0,
+            "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
@@ -655,5 +669,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 9
+    "posicion_final_ranking": 8
 }

@@ -6,7 +6,7 @@
             "Alemania": {
                 "pronostico": 2,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -396,7 +396,7 @@
             "Alemania": {
                 "pronostico": 1,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -786,7 +786,7 @@
             "Alemania": {
                 "pronostico": 1,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1176,7 +1176,7 @@
             "Alemania": {
                 "pronostico": 2,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1566,7 +1566,7 @@
             "Alemania": {
                 "pronostico": 2,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1956,7 +1956,7 @@
             "Alemania": {
                 "pronostico": 2,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2346,7 +2346,7 @@
             "Alemania": {
                 "pronostico": 2,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2736,7 +2736,7 @@
             "Alemania": {
                 "pronostico": 2,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -3126,7 +3126,7 @@
             "Alemania": {
                 "pronostico": 2,
                 "media_grupo": 1.78,
-                "realidad": 0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
