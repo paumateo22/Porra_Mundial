@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline | Anti-Colisión y Cámara Dinámica</title>
+    <link rel="stylesheet" href="theme.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { overflow-x: hidden; background-color: var(--bg-dark); }
+        
+        /* Contenedor principal que se hará pantalla completa */
+        #fullscreen-zone {
+            background-color: var(--bg-dark);
+            padding: 10px;
+            min-height: 100vh;
+        }
+        
+        .timeline-layout { display: flex; gap: 20px; margin-top: 10px; align-items: flex-start; height: 100%; }
+        @media (max-width: 1000px) { .timeline-layout { flex-direction: column; } .chart-wrapper, .scoreboard-wrapper { width: 100% !important; } }
+        
+        .big-present-banner {
+            background: linear-gradient(180deg, #111, #1a1a1a);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(218, 165, 32, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .big-subtitle { font-size: 1.2em; color: #a9b7c6; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        .big-title { font-size: 3.5em; font-weight: 900; color: white; text-shadow: 0 0 15px rgba(255,255,255,0.3); margin: 0; line-height: 1.1; }
+        
+        .chart-wrapper {
+            flex: 7; background: #111; border: 1px solid #333; border-radius: 8px;
+            padding: 15px; box-shadow: inset 0 0 15px rgba(0,0,0,0.5); height: 750px;
+        }
+        
+        .scoreboard-wrapper {
+            flex: 3; background: #111; border: 1px solid #333; border-radius: 8px;
+            padding: 15px; position: relative; height: 495px;
+            overflow: hidden; box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+        }
+        
+        .player-row {
+            position: absolute; left: 15px; right: 15px; height: 45px;
+            background: #1a1a1a; border: 1px solid #333; border-radius: 6px;
+            display: flex; align-items: center; padding: 0 15px;
+            transition: top 0.4s ease-out, background 0.3s, opacity 0.3s, filter 0.3s;
+            cursor: pointer;
+        }
+        .player-row:hover { border-color: #666; background: #222; }
+        
+        .p-color-dot { width: 12px; height: 12px; border-radius: 50%; margin-right: 15px; box-shadow: 0 0 5px rgba(255,255,255,0.3); }
+        .p-name { flex: 1; font-weight: 900; color: #eee; text-transform: uppercase; font-size: 0.95em; }
+        .p-score { font-weight: 900; font-size: 1.2em; color: white; width: 60px; text-align: right; }
+        .p-diff { width: 50px; text-align: right; font-weight: 900; font-size: 1.1em; margin-left: 10px; }
+
+        .controls-container {
+            background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #333;
+            margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+        }
+        .btn-control { background: #252525; color: white; border: 1px solid #444; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        .btn-control:hover { background: var(--gold); color: black; border-color: var(--gold); }
+        .btn-play { background: var(--gold); color: black; border-color: var(--gold); min-width: 120px; font-size: 1.1em; }
+        .btn-play:hover { background: #b8860b; }
+        .btn-fs { background: #2b5876; color: white; border-color: #1a2a6c; }
+        .btn-fs:hover { background: #1a2a6c; border-color: var(--gold); color: white; }
+
+        #timeline-progress { flex: 1; min-width: 200px; margin: 0 10px; cursor: pointer; accent-color: var(--gold); height: 8px; }
+        .hint-text { text-align: center; color: #888; font-size: 0.85em; margin-top: 5px; font-style: italic; }
+    </style>
+</head>
+<body>
+    
+    <style>
+        /* Estilos críticos para asegurar que el menú quede por encima de todo */
+        .sidenav {
+            position: fixed; /* Obligatorio para que funcione z-index */
+            z-index: 2147483647; /* El z-index máximo posible en navegadores */
+        }
+        
+        /* Asegura que el botón de hamburguesa flote correctamente debajo del menú desplegado */
+        .menu-btn {
+            position: fixed;     
+            z-index: 2147483640; 
+            cursor: pointer;     
+        }
+    </style>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">🏠 Clasificación Global</a>
+        <a href="calendario.html">📅 Calendario Oficial</a>
+        <a href="jornadas.html">📈 Análisis Jornadas</a>
+        <a href="timeline.html">🎬 Carrera Interactiva</a>
+        <a href="participantes.html">👥 Participantes</a>
+        <a href="instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro & Reglamento</a>
+        <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">🔗 Infobae</a>
+        <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
+        <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">🔗 SofaScore</a>
+    </div>
+    <div class="menu-btn" onclick="openNav()">☰</div>
+    <script>
+        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+    </script>
+    
+    
+    <header style="padding: 20px 10px; padding-bottom: 30px;">
+        <style>
+            .header-main-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1300px;
+                margin: 0 auto;
+                gap: 15px;
+            }
+
+            .header-center {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                min-width: 380px;
+            }
+
+            .blob-widget {
+                background: var(--gold, #DAA520);
+                color: black;
+                width: 420px;
+                padding: 15px 25px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 2px solid #111;
+                box-shadow: -4px 6px 0px rgba(0,0,0,0.4);
+                overflow: hidden;
+            }
+
+            .left-blob {
+                border-radius: 40px 15px 50px 20px;
+                width: 380px;
+                height: 220px;
+                min-height: 180px;
+            }
+
+            .right-blob-top {
+                border-radius: 20px 40px 10px 20px;
+                min-height: 80px;
+            }
+
+            .right-blob-bottom {
+                border-radius: 10px 20px 40px 15px;
+                min-height: 100px;
+            }
+
+            .right-widgets-stack {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                width: 280px;
+            }
+
+            .blob-title {
+                font-family: Arial, sans-serif;
+                font-weight: 900;
+                font-size: 1.05em;
+                margin: 0 0 10px 0;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-align: center;
+                border-bottom: 1px dashed rgba(0,0,0,0.35);
+                padding-bottom: 6px;
+            }
+
+            .phase-row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .phase-label {
+                font-size: 0.78em;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 4px;
+                text-align: center;
+            }
+
+            .phase-timer {
+                font-size: 2em;
+                font-family: monospace;
+                font-weight: 1500;
+                background: rgba(0,0,0,0.1);
+                padding: 4px 10px;
+                border-radius: 8px;
+                border: 1px solid rgba(0,0,0,0.2);
+                display: inline-block;
+            }
+
+            .btn-pred-now {
+                display: inline-block;
+                background: #111;
+                color: var(--gold);
+                font-size: 0.95em;
+                font-weight: 900;
+                padding: 8px 16px;
+                border-radius: 30px;
+                text-decoration: none;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                border: 2px solid #111;
+                transition: 0.3s;
+                margin: 4px auto;
+                text-align: center;
+            }
+
+            .btn-pred-now:hover {
+                background: transparent;
+                color: #111;
+            }
+
+            @media (max-width: 950px) {
+                .header-main-container {
+                    flex-direction: column;
+                    gap: 25px;
+                }
+
+                .blob-widget,
+                .left-blob,
+                .right-widgets-stack {
+                    width: 100%;
+                    max-width: 380px;
+                }
+
+                .blob-widget {
+                    height: auto;
+                    min-height: 100px;
+                    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+                    border-radius: 25px !important;
+                }
+            }
+        </style>
+
+        <div class="header-main-container">
+            <div class="blob-widget left-blob">
+                <div class="blob-title" id="w-fase-name">CARGANDO FASE...</div>
+
+                <div id="w-predict-container" style="min-height: 52px; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                    <div class="phase-label">Apertura Pronosticos</div>
+                    <div class="phase-timer" id="w-timer-pred">--:--:--</div>
+                </div>
+
+                <div class="phase-row" style="margin-top:6px; margin-bottom:0;">
+                    <div class="phase-label" style="font-size:1em;">Comienzo de Fase</div>
+                    <div class="phase-timer" id="w-timer-start" style="color:#d9381e;">--:--:--</div>
+                </div>
+            </div>
+
+            <div class="header-center">
+                <h1 style="margin-top:0; font-size: 2.2em;">🎬 Rendering en Tiempo Real</h1>
+                <p style="font-size: 0.9em;">Cámara Inteligente y FullScreen Dinámico</p>
+                <div class="top-nav" style="margin: 10px 0;">
+                    <a href="index.html" class="home-btn">🏠 Inicio</a>
+                    <a href="jornadas.html">📈 Análisis Jornadas</a>
+                    <a href="timeline.html">🎬 Carrera Interactiva</a>
+                    <a href="generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
+                    <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">SofaScore</a>
+                </div>
+                
+            </div>
+
+            <div class="right-widgets-stack">
+
+                <div class="blob-widget right-blob-top">
+                    <div class="blob-title">ÚLTIMO PARTIDO</div>
+                    
+        <div style="font-weight:bold; color:#111; letter-spacing:1px; margin-bottom:10px; font-size:1.1em;">GRUPO H</div>
+        <div style="font-size:1.15em; color:black; font-weight:900; margin-bottom:8px; line-height:1.3;">
+            España <span style="background:#111; color:white; padding:2px 8px; border-radius:4px; margin:0 5px;">4-0</span> Arabia Saudita
+        </div>
+        <div style="font-size:0.85em; color:#333; font-weight:bold; border-top:1px dashed rgba(0,0,0,0.3); padding-top:5px;">
+            Finalizado: 21/06 18:00
+        </div>
+        
+                </div>
+
+                <div class="blob-widget right-blob-bottom">
+                    <div class="blob-title">PRÓXIMO PARTIDO</div>
+                    
+        <div style="font-weight:bold; color:#111; letter-spacing:1px; margin-bottom:10px; font-size:1.1em;">GRUPO H</div>
+        <div style="font-size:1.15em; color:black; font-weight:900; margin-bottom:8px; line-height:1.3;">
+            Uruguay - Cabo Verde
+        </div>
+        <div style="font-size:1.2em; color:#333; font-weight:500; border-top:1px dashed rgba(0,0,0,0.3); padding-top:5px; margin-bottom:5px;">
+            Inicio: 22/06 00:00
+        </div>
+        <div id="w-timer-next-match" style="font-size:2em; font-weight:1500; color:#d9381e; font-family:monospace;">--:--:--</div>
+        
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            const FASES_TORNEO = [{"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": "2026-06-11T21:00:00", "link": "jornadas.html"}, {"id": "dieciseisavos", "name": "Dieciseisavos (1/16)", "predict": "2026-06-28T08:00:00", "start": "2026-06-28T21:00:00", "link": "generador_pronosticos.html"}, {"id": "octavos", "name": "Octavos (1/8)", "predict": "2026-07-04T06:00:00", "start": "2026-07-04T19:00:00", "link": "generador_pronosticos.html"}, {"id": "cuartos", "name": "Cuartos (1/4)", "predict": "2026-07-08T00:30:00", "start": "2026-07-09T22:00:00", "link": "generador_pronosticos.html"}, {"id": "semifinales", "name": "Semifinales", "predict": "2026-07-12T06:00:00", "start": "2026-07-14T21:00:00", "link": "generador_pronosticos.html"}, {"id": "finales", "name": "Finales", "predict": "2026-07-15T23:59:00", "start": "2026-07-18T23:00:00", "link": "generador_pronosticos.html"}];
+            const NEXT_MATCH_ISO = "2026-06-22T00:00:01";
+
+            function formatDiff(ms) {
+                if (ms <= 0) return "00:00:00";
+                let d = Math.floor(ms / (1000 * 60 * 60 * 24));
+                let h = Math.floor((ms / (1000 * 60 * 60)) % 24);
+                let m = Math.floor((ms / 1000 / 60) % 60);
+                let s = Math.floor((ms / 1000) % 60);
+
+                let res = "";
+                if (d > 0) res += d + "d, ";
+                res += h.toString().padStart(2, "0") + ":" + m.toString().padStart(2, "0") + ":" + s.toString().padStart(2, "0");
+                return res;
+            }
+
+            function updateWidgets() {
+                const now = new Date();
+
+                // Widget izquierdo
+                let currentFase = null;
+                for (let i = 0; i < FASES_TORNEO.length; i++) {
+                    if (FASES_TORNEO[i].start && new Date(FASES_TORNEO[i].start) > now) {
+                        currentFase = FASES_TORNEO[i];
+                        break;
+                    }
+                }
+
+                if (!currentFase) {
+                    document.getElementById("w-fase-name").innerText = "TORNEO FINALIZADO";
+                    document.getElementById("w-predict-container").innerHTML = "<div style='font-size:1em; font-weight:bold; text-align:center;'>Gracias por jugar</div>";
+                    document.getElementById("w-timer-start").innerHTML = "CERRADO";
+                } else {
+                    document.getElementById("w-fase-name").innerText = currentFase.name;
+
+                    const startPredict = new Date(currentFase.predict);
+                    const endPredict = new Date(currentFase.start);
+                    const predContainer = document.getElementById("w-predict-container");
+
+                    if (now < startPredict) {
+                        predContainer.innerHTML = `<div class="phase-label">Apertura Pronosticos</div><div class="phase-timer">${formatDiff(startPredict - now)}</div>`;
+                    } else if (now >= startPredict && now < endPredict) {
+                        predContainer.innerHTML = `<a href="${currentFase.link}" class="btn-pred-now">¡PRONOSTICAR AHORA!</a>`;
+                    } else {
+                        predContainer.innerHTML = `<div class="phase-label">Pronosticos</div><div class="phase-timer">CERRADOS</div>`;
+                    }
+
+                    document.getElementById("w-timer-start").innerText = formatDiff(endPredict - now);
+                }
+
+                // Widgets derechos - countdown próximo partido
+                if (NEXT_MATCH_ISO) {
+                    const matchDate = new Date(NEXT_MATCH_ISO);
+                    const timerEl = document.getElementById("w-timer-next-match");
+
+                    if (timerEl) {
+                        if (now < matchDate) {
+                            timerEl.innerText = formatDiff(matchDate - now);
+                        } else {
+                            // Si el usuario deja la pestaña abierta pasada la hora
+                            timerEl.innerText = "00:00:00";
+                            timerEl.style.color = "#d9381e";
+                        }
+                    }
+                }
+            }
+
+            setInterval(updateWidgets, 1000);
+            updateWidgets();
+        </script>
+
+        <script data-goatcounter="https://porramundial.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        
+    </header>
+    
+    
+    <div id="fullscreen-zone">
+        <div class="big-present-banner">
+            <div class="big-subtitle" id="pm-subtitle">PREPARANDO TORNEO...</div>
+            <div class="big-title" id="pm-title">CARGANDO DATOS</div>
+        </div>
+
+        <div class="controls-container">
+            <button class="btn-control btn-fs" onclick="toggleFullScreen()">📺 Pantalla Completa</button>
+            <button class="btn-control" onclick="seekRelative(-1)">⏮️ Ant.</button>
+            <button class="btn-control btn-play" id="btn-play" onclick="togglePlay()">▶️ PLAY</button>
+            <input type="range" id="timeline-progress" min="0" step="0.001" value="0" oninput="seekManual(this.value)">
+            <button class="btn-control" onclick="seekRelative(1)">⏭️ Sig.</button>
+            <select id="speed-selector" class="btn-control">
+                <option value="0.25">0.25x (Lento)</option>
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x (Normal)</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x (Rápido)</option>
+                <option value="4">4x (Turbo)</option>
+            </select>
+        </div>
+
+        <div class="timeline-layout">
+            <div class="chart-wrapper">
+                <canvas id="progressionChart"></canvas>
+            </div>
+            <div class="scoreboard-wrapper">
+                <div id="scoreboard"></div>
+                <div class="hint-text">💡 Clic en un jugador para ocultar/mostrar su línea.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const frames = [{"type": "start", "title": "ARRANQUE", "subtitle": "\u00a1Comienza el Mundial!", "scores": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "diffs": {"adri": 0, "aitor": 0, "carlinhos_jr": 0, "javi": 0, "manu": 0, "miguel_dykan": 0, "pau": 0, "quesadator": 0, "\u00e1lvaro": 0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "M\u00c9X 2-0 SUD", "subtitle": "M\u00e9xico vs Sud\u00e1frica", "scores": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 0.0, "manu": 4.0, "miguel_dykan": 4.0, "pau": 1.0, "quesadator": 4.0, "\u00e1lvaro": 1.0}, "diffs": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 0.0, "manu": 4.0, "miguel_dykan": 4.0, "pau": 1.0, "quesadator": 4.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": true, "miguel_dykan": true, "pau": false, "quesadator": true, "\u00e1lvaro": false}}, {"type": "match", "title": "COR 2-1 REP", "subtitle": "Corea del Sur vs Rep\u00fablica Checa", "scores": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 2.0, "javi": 0.0, "manu": 4.0, "miguel_dykan": 4.0, "pau": 2.0, "quesadator": 4.0, "\u00e1lvaro": 1.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 1.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "CAN 1-1 BOS", "subtitle": "Canad\u00e1 vs Bosnia-Herzegovina", "scores": {"adri": 1.0, "aitor": 4.0, "carlinhos_jr": 2.0, "javi": 0.0, "manu": 4.0, "miguel_dykan": 4.0, "pau": 6.0, "quesadator": 4.0, "\u00e1lvaro": 1.0}, "diffs": {"adri": 0.0, "aitor": 4.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 4.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": true, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": true, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "EST 4-1 PAR", "subtitle": "Estados Unidos vs Paraguay", "scores": {"adri": 2.0, "aitor": 4.0, "carlinhos_jr": 2.0, "javi": 1.0, "manu": 5.0, "miguel_dykan": 5.0, "pau": 6.0, "quesadator": 5.0, "\u00e1lvaro": 1.0}, "diffs": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 0.0, "quesadator": 1.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "QAT 1-1 SUI", "subtitle": "Qatar vs Suiza", "scores": {"adri": 2.0, "aitor": 4.0, "carlinhos_jr": 2.0, "javi": 1.0, "manu": 5.0, "miguel_dykan": 5.0, "pau": 6.0, "quesadator": 5.0, "\u00e1lvaro": 1.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "BRA 1-1 MAR", "subtitle": "Brasil vs Marruecos", "scores": {"adri": 2.0, "aitor": 4.0, "carlinhos_jr": 2.0, "javi": 5.0, "manu": 5.0, "miguel_dykan": 5.0, "pau": 6.0, "quesadator": 5.0, "\u00e1lvaro": 1.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 4.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": true, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "HAI 0-1 ESC", "subtitle": "Hait\u00ed vs Escocia", "scores": {"adri": 2.0, "aitor": 5.0, "carlinhos_jr": 3.0, "javi": 6.0, "manu": 6.0, "miguel_dykan": 6.0, "pau": 7.0, "quesadator": 6.0, "\u00e1lvaro": 5.0}, "diffs": {"adri": 0.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 4.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": true}}, {"type": "match", "title": "AUS 2-0 TUR", "subtitle": "Australia vs Turqu\u00eda", "scores": {"adri": 2.0, "aitor": 5.0, "carlinhos_jr": 3.0, "javi": 6.0, "manu": 6.0, "miguel_dykan": 6.0, "pau": 7.0, "quesadator": 6.0, "\u00e1lvaro": 5.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ALE 7-1 CUR", "subtitle": "Alemania vs Curazao", "scores": {"adri": 3.0, "aitor": 6.0, "carlinhos_jr": 4.0, "javi": 7.0, "manu": 7.0, "miguel_dykan": 7.0, "pau": 8.0, "quesadator": 7.0, "\u00e1lvaro": 6.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "PA\u00cd 2-2 JAP", "subtitle": "Pa\u00edses Bajos vs Jap\u00f3n", "scores": {"adri": 3.0, "aitor": 6.0, "carlinhos_jr": 5.0, "javi": 7.0, "manu": 7.0, "miguel_dykan": 7.0, "pau": 8.0, "quesadator": 7.0, "\u00e1lvaro": 6.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "COS 1-0 ECU", "subtitle": "Costa de Marfil vs Ecuador", "scores": {"adri": 3.0, "aitor": 7.0, "carlinhos_jr": 5.0, "javi": 7.0, "manu": 7.0, "miguel_dykan": 7.0, "pau": 8.0, "quesadator": 7.0, "\u00e1lvaro": 6.0}, "diffs": {"adri": 0.0, "aitor": 1.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "SUE 5-1 T\u00daN", "subtitle": "Suecia vs T\u00fanez", "scores": {"adri": 4.0, "aitor": 8.0, "carlinhos_jr": 5.0, "javi": 8.0, "manu": 8.0, "miguel_dykan": 8.0, "pau": 9.0, "quesadator": 8.0, "\u00e1lvaro": 7.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 0.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "jornada", "title": "FIN J1.1", "subtitle": "Ganador: Pau | Perdedor: Adri, \u00c1lvaro", "scores": {"adri": 2.0, "aitor": 8.0, "carlinhos_jr": 5.0, "javi": 8.0, "manu": 8.0, "miguel_dykan": 8.0, "pau": 11.0, "quesadator": 8.0, "\u00e1lvaro": 5.0}, "diffs": {"adri": -2, "aitor": 0, "carlinhos_jr": 0, "javi": 0, "manu": 0, "miguel_dykan": 0, "pau": 2, "quesadator": 0, "\u00e1lvaro": -2}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ESP 0-0 CAB", "subtitle": "Espa\u00f1a vs Cabo Verde", "scores": {"adri": 2.0, "aitor": 8.0, "carlinhos_jr": 5.0, "javi": 8.0, "manu": 8.0, "miguel_dykan": 8.0, "pau": 11.0, "quesadator": 8.0, "\u00e1lvaro": 5.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "B\u00c9L 1-1 EGI", "subtitle": "B\u00e9lgica vs Egipto", "scores": {"adri": 2.0, "aitor": 8.0, "carlinhos_jr": 5.0, "javi": 8.0, "manu": 8.0, "miguel_dykan": 8.0, "pau": 11.0, "quesadator": 8.0, "\u00e1lvaro": 5.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ARA 1-1 URU", "subtitle": "Arabia Saudita vs Uruguay", "scores": {"adri": 2.0, "aitor": 8.0, "carlinhos_jr": 9.0, "javi": 12.0, "manu": 8.0, "miguel_dykan": 8.0, "pau": 11.0, "quesadator": 8.0, "\u00e1lvaro": 9.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 4.0, "javi": 4.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 4.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": true, "javi": true, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": true}}, {"type": "match", "title": "IR\u00c1 2-2 NUE", "subtitle": "Ir\u00e1n vs Nueva Zelanda", "scores": {"adri": 3.0, "aitor": 8.0, "carlinhos_jr": 9.0, "javi": 13.0, "manu": 8.0, "miguel_dykan": 9.0, "pau": 12.0, "quesadator": 9.0, "\u00e1lvaro": 9.0}, "diffs": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 1.0, "manu": 0.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "FRA 3-1 SEN", "subtitle": "Francia vs Senegal", "scores": {"adri": 3.0, "aitor": 12.0, "carlinhos_jr": 9.0, "javi": 13.0, "manu": 12.0, "miguel_dykan": 13.0, "pau": 16.0, "quesadator": 10.0, "\u00e1lvaro": 13.0}, "diffs": {"adri": 0.0, "aitor": 4.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 4.0, "miguel_dykan": 4.0, "pau": 4.0, "quesadator": 1.0, "\u00e1lvaro": 4.0}, "exactos": {"adri": false, "aitor": true, "carlinhos_jr": false, "javi": false, "manu": true, "miguel_dykan": true, "pau": true, "quesadator": false, "\u00e1lvaro": true}}, {"type": "match", "title": "IRA 1-4 NOR", "subtitle": "Irak vs Noruega", "scores": {"adri": 4.0, "aitor": 13.0, "carlinhos_jr": 10.0, "javi": 14.0, "manu": 13.0, "miguel_dykan": 14.0, "pau": 17.0, "quesadator": 11.0, "\u00e1lvaro": 14.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ARG 3-0 ARG", "subtitle": "Argentina vs Argelia", "scores": {"adri": 5.0, "aitor": 14.0, "carlinhos_jr": 10.0, "javi": 15.0, "manu": 14.0, "miguel_dykan": 15.0, "pau": 18.0, "quesadator": 12.0, "\u00e1lvaro": 18.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 0.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 4.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": true}}, {"type": "match", "title": "AUS 3-1 JOR", "subtitle": "Austria vs Jordania", "scores": {"adri": 6.0, "aitor": 15.0, "carlinhos_jr": 14.0, "javi": 16.0, "manu": 15.0, "miguel_dykan": 19.0, "pau": 19.0, "quesadator": 13.0, "\u00e1lvaro": 19.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 4.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 4.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": true, "javi": false, "manu": false, "miguel_dykan": true, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "POR 1-1 RD ", "subtitle": "Portugal vs RD Congo", "scores": {"adri": 6.0, "aitor": 15.0, "carlinhos_jr": 14.0, "javi": 16.0, "manu": 15.0, "miguel_dykan": 19.0, "pau": 19.0, "quesadator": 13.0, "\u00e1lvaro": 19.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ING 4-2 CRO", "subtitle": "Inglaterra vs Croacia", "scores": {"adri": 6.0, "aitor": 16.0, "carlinhos_jr": 14.0, "javi": 17.0, "manu": 16.0, "miguel_dykan": 20.0, "pau": 20.0, "quesadator": 14.0, "\u00e1lvaro": 20.0}, "diffs": {"adri": 0.0, "aitor": 1.0, "carlinhos_jr": 0.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "GHA 1-0 PAN", "subtitle": "Ghana vs Panam\u00e1", "scores": {"adri": 7.0, "aitor": 17.0, "carlinhos_jr": 15.0, "javi": 18.0, "manu": 20.0, "miguel_dykan": 21.0, "pau": 21.0, "quesadator": 14.0, "\u00e1lvaro": 20.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 4.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": true, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "UZB 1-3 COL", "subtitle": "Uzbekist\u00e1n vs Colombia", "scores": {"adri": 8.0, "aitor": 18.0, "carlinhos_jr": 16.0, "javi": 19.0, "manu": 21.0, "miguel_dykan": 25.0, "pau": 22.0, "quesadator": 15.0, "\u00e1lvaro": 24.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 4.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 4.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": true, "pau": false, "quesadator": false, "\u00e1lvaro": true}}, {"type": "jornada", "title": "FIN J1.2", "subtitle": "Ganador: Javi, Miguel Dykan, Pau | Perdedor: Carlinhos Jr", "scores": {"adri": 8.0, "aitor": 18.0, "carlinhos_jr": 14.0, "javi": 21.0, "manu": 21.0, "miguel_dykan": 27.0, "pau": 24.0, "quesadator": 15.0, "\u00e1lvaro": 24.0}, "diffs": {"adri": 0, "aitor": 0, "carlinhos_jr": -2, "javi": 2, "manu": 0, "miguel_dykan": 2, "pau": 2, "quesadator": 0, "\u00e1lvaro": 0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "REP 1-1 SUD", "subtitle": "Rep\u00fablica Checa vs Sud\u00e1frica", "scores": {"adri": 8.0, "aitor": 22.0, "carlinhos_jr": 18.0, "javi": 21.0, "manu": 21.0, "miguel_dykan": 27.0, "pau": 24.0, "quesadator": 15.0, "\u00e1lvaro": 24.0}, "diffs": {"adri": 0.0, "aitor": 4.0, "carlinhos_jr": 4.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": true, "carlinhos_jr": true, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "SUI 4-1 BOS", "subtitle": "Suiza vs Bosnia-Herzegovina", "scores": {"adri": 9.0, "aitor": 23.0, "carlinhos_jr": 18.0, "javi": 21.0, "manu": 22.0, "miguel_dykan": 28.0, "pau": 25.0, "quesadator": 16.0, "\u00e1lvaro": 25.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "CAN 6-0 QAT", "subtitle": "Canad\u00e1 vs Qatar", "scores": {"adri": 10.0, "aitor": 23.0, "carlinhos_jr": 19.0, "javi": 22.0, "manu": 22.0, "miguel_dykan": 29.0, "pau": 26.0, "quesadator": 17.0, "\u00e1lvaro": 25.0}, "diffs": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 0.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "M\u00c9X 1-0 COR", "subtitle": "M\u00e9xico vs Corea del Sur", "scores": {"adri": 11.0, "aitor": 23.0, "carlinhos_jr": 19.0, "javi": 22.0, "manu": 26.0, "miguel_dykan": 33.0, "pau": 26.0, "quesadator": 18.0, "\u00e1lvaro": 25.0}, "diffs": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 4.0, "miguel_dykan": 4.0, "pau": 0.0, "quesadator": 1.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": true, "miguel_dykan": true, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "EST 2-0 AUS", "subtitle": "Estados Unidos vs Australia", "scores": {"adri": 11.0, "aitor": 24.0, "carlinhos_jr": 20.0, "javi": 22.0, "manu": 26.0, "miguel_dykan": 34.0, "pau": 27.0, "quesadator": 19.0, "\u00e1lvaro": 26.0}, "diffs": {"adri": 0.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ESC 0-1 MAR", "subtitle": "Escocia vs Marruecos", "scores": {"adri": 12.0, "aitor": 24.0, "carlinhos_jr": 21.0, "javi": 26.0, "manu": 26.0, "miguel_dykan": 35.0, "pau": 28.0, "quesadator": 20.0, "\u00e1lvaro": 26.0}, "diffs": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 4.0, "manu": 0.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": true, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "BRA 3-0 HAI", "subtitle": "Brasil vs Hait\u00ed", "scores": {"adri": 13.0, "aitor": 25.0, "carlinhos_jr": 22.0, "javi": 30.0, "manu": 27.0, "miguel_dykan": 36.0, "pau": 29.0, "quesadator": 24.0, "\u00e1lvaro": 27.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 4.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 4.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": true, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": true, "\u00e1lvaro": false}}, {"type": "match", "title": "TUR 0-1 PAR", "subtitle": "Turqu\u00eda vs Paraguay", "scores": {"adri": 13.0, "aitor": 25.0, "carlinhos_jr": 22.0, "javi": 30.0, "manu": 27.0, "miguel_dykan": 36.0, "pau": 29.0, "quesadator": 24.0, "\u00e1lvaro": 27.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "PA\u00cd 5-1 SUE", "subtitle": "Pa\u00edses Bajos vs Suecia", "scores": {"adri": 14.0, "aitor": 25.0, "carlinhos_jr": 23.0, "javi": 31.0, "manu": 28.0, "miguel_dykan": 37.0, "pau": 30.0, "quesadator": 25.0, "\u00e1lvaro": 27.0}, "diffs": {"adri": 1.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ALE 2-1 COS", "subtitle": "Alemania vs Costa de Marfil", "scores": {"adri": 18.0, "aitor": 25.0, "carlinhos_jr": 24.0, "javi": 31.0, "manu": 29.0, "miguel_dykan": 41.0, "pau": 31.0, "quesadator": 29.0, "\u00e1lvaro": 31.0}, "diffs": {"adri": 4.0, "aitor": 0.0, "carlinhos_jr": 1.0, "javi": 0.0, "manu": 1.0, "miguel_dykan": 4.0, "pau": 1.0, "quesadator": 4.0, "\u00e1lvaro": 4.0}, "exactos": {"adri": true, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": true, "pau": false, "quesadator": true, "\u00e1lvaro": true}}, {"type": "match", "title": "ECU 0-0 CUR", "subtitle": "Ecuador vs Curazao", "scores": {"adri": 18.0, "aitor": 25.0, "carlinhos_jr": 24.0, "javi": 31.0, "manu": 29.0, "miguel_dykan": 41.0, "pau": 31.0, "quesadator": 29.0, "\u00e1lvaro": 31.0}, "diffs": {"adri": 0.0, "aitor": 0.0, "carlinhos_jr": 0.0, "javi": 0.0, "manu": 0.0, "miguel_dykan": 0.0, "pau": 0.0, "quesadator": 0.0, "\u00e1lvaro": 0.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "T\u00daN 0-4 JAP", "subtitle": "T\u00fanez vs Jap\u00f3n", "scores": {"adri": 19.0, "aitor": 26.0, "carlinhos_jr": 25.0, "javi": 32.0, "manu": 30.0, "miguel_dykan": 42.0, "pau": 32.0, "quesadator": 30.0, "\u00e1lvaro": 32.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "jornada", "title": "FIN J2.1", "subtitle": "Ganador: Miguel Dykan, Quesadator | Perdedor: Aitor, Javi, \u00c1lvaro", "scores": {"adri": 19.0, "aitor": 24.0, "carlinhos_jr": 25.0, "javi": 30.0, "manu": 30.0, "miguel_dykan": 44.0, "pau": 32.0, "quesadator": 32.0, "\u00e1lvaro": 30.0}, "diffs": {"adri": 0, "aitor": -2, "carlinhos_jr": 0, "javi": -2, "manu": 0, "miguel_dykan": 2, "pau": 0, "quesadator": 2, "\u00e1lvaro": -2}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "match", "title": "ESP 4-0 ARA", "subtitle": "Espa\u00f1a vs Arabia Saudita", "scores": {"adri": 20.0, "aitor": 25.0, "carlinhos_jr": 26.0, "javi": 31.0, "manu": 31.0, "miguel_dykan": 45.0, "pau": 33.0, "quesadator": 33.0, "\u00e1lvaro": 31.0}, "diffs": {"adri": 1.0, "aitor": 1.0, "carlinhos_jr": 1.0, "javi": 1.0, "manu": 1.0, "miguel_dykan": 1.0, "pau": 1.0, "quesadator": 1.0, "\u00e1lvaro": 1.0}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}, {"type": "jornada", "title": "FIN J2.2", "subtitle": "Ganador: Carlinhos Jr, \u00c1lvaro | Perdedor: Adri, Aitor, Javi, Manu, Miguel Dykan, Pau, Quesadator", "scores": {"adri": 18.0, "aitor": 23.0, "carlinhos_jr": 28.0, "javi": 29.0, "manu": 29.0, "miguel_dykan": 43.0, "pau": 31.0, "quesadator": 31.0, "\u00e1lvaro": 33.0}, "diffs": {"adri": -2, "aitor": -2, "carlinhos_jr": 2, "javi": -2, "manu": -2, "miguel_dykan": -2, "pau": -2, "quesadator": -2, "\u00e1lvaro": 2}, "exactos": {"adri": false, "aitor": false, "carlinhos_jr": false, "javi": false, "manu": false, "miguel_dykan": false, "pau": false, "quesadator": false, "\u00e1lvaro": false}}];
+        const jugadores = ["adri", "aitor", "carlinhos_jr", "javi", "manu", "miguel_dykan", "pau", "quesadator", "\u00e1lvaro"];
+        
+        const VIEW_RADIUS = 4; // 4 atrás, 4 adelante
+        
+        const palette = ["#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0", "#9966FF", "#FF9F40", "#00FA9A", "#DC143C", "#00BFFF", "#FFD700", "#FF1493", "#00FF7F"];
+        const playerColors = {};
+        jugadores.forEach((j, i) => playerColors[j] = palette[i % palette.length]);
+
+        let progress = 0; 
+        let isPlaying = false;
+        let lastTime = 0;
+        let animationReq;
+        
+        // CÁMARA DINÁMICA (Suelo y Techo Suavizados)
+        let smoothedYMax = 10;
+        let smoothedYMin = 0;
+
+        // PANTALLA COMPLETA
+        function toggleFullScreen() {
+            const zone = document.getElementById("fullscreen-zone");
+            if (!document.fullscreenElement) {
+                zone.requestFullscreen().then(() => {
+                    // Si estamos en móvil, forzar giro a horizontal
+                    if (screen.orientation && screen.orientation.lock) {
+                        screen.orientation.lock('landscape').catch((e) => console.log("Giro automático no soportado:", e));
+                    }
+                }).catch(err => {
+                    console.log(`Error al abrir pantalla completa: ${err.message}`);
+                });
+            } else {
+                if (document.exitFullscreen) document.exitFullscreen();
+            }
+        }
+
+        // TOGGLE JUGADORES
+        function togglePlayer(jug) {
+            const dsIndex = progressionChart.data.datasets.findIndex(ds => ds.jugador_id === jug);
+            const meta = progressionChart.getDatasetMeta(dsIndex);
+            
+            meta.hidden = !meta.hidden;
+            
+            const row = document.getElementById("row-" + jug);
+            if (meta.hidden) {
+                row.style.opacity = "0.3";
+                row.style.filter = "grayscale(100%)";
+                row.classList.remove("active-player");
+            } else {
+                row.style.opacity = "1";
+                row.style.filter = "none";
+                row.classList.add("active-player");
+            }
+            progressionChart.update('none'); 
+        }
+
+        const scoreboard = document.getElementById("scoreboard");
+        jugadores.forEach(jug => {
+            const row = document.createElement("div");
+            row.className = "player-row active-player"; 
+            row.id = "row-" + jug;
+            row.onclick = () => togglePlayer(jug);
+            
+            row.innerHTML = `
+                <div class="p-color-dot" style="background: ${playerColors[jug]}"></div>
+                <div class="p-name">${jug.replace('_', ' ')}</div>
+                <div class="p-score" id="score-${jug}">0.0</div>
+                <div class="p-diff" id="diff-${jug}">+0.0</div>
+            `;
+            scoreboard.appendChild(row);
+        });
+
+        // --- PLUGIN 1: MARCAS DE FONDO CON ZIG-ZAG ---
+        const backgroundPlugin = {
+            id: 'backgroundMarks',
+            beforeDraw(chart) {
+                const ctx = chart.ctx;
+                const xAxis = chart.scales.x;
+                const yAxis = chart.scales.y;
+                
+                frames.forEach((f, index) => {
+                    if (index >= xAxis.min && index <= xAxis.max) {
+                        const x = xAxis.getPixelForValue(index);
+                        ctx.save();
+                        
+                        if (f.type === 'match') {
+                            // Línea fina del partido
+                            ctx.beginPath();
+                            ctx.moveTo(x, yAxis.top);
+                            ctx.lineTo(x, yAxis.bottom);
+                            ctx.lineWidth = 1;
+                            ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
+                            ctx.stroke();
+                            
+                            // Textos de partidos horizontales en blanco
+                            // Para evitar superposiciones, alternamos su altura en Zig-Zag
+                            const zigzagOffset = (index % 3) * 20; // Crea 3 niveles distintos
+                            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                            ctx.textAlign = 'center';
+                            ctx.font = 'bold 10px Arial';
+                            ctx.fillText(f.title, x, yAxis.bottom - 20 - zigzagOffset);
+                            
+                        } else if (f.type !== 'start') {
+                            // Hitos
+                            ctx.beginPath();
+                            ctx.moveTo(x, yAxis.top + 20);
+                            ctx.lineTo(x, yAxis.bottom);
+                            ctx.lineWidth = 2;
+                            ctx.strokeStyle = 'rgba(218, 165, 32, 0.4)';
+                            ctx.setLineDash([5, 5]);
+                            ctx.stroke();
+                            
+                            ctx.fillStyle = 'rgba(218, 165, 32, 0.9)';
+                            ctx.textAlign = 'center';
+                            ctx.font = 'bold 12px Arial';
+                            ctx.fillText(f.title, x, yAxis.top + 10);
+                        }
+                        ctx.restore();
+                    }
+                });
+            }
+        };
+
+        // --- PLUGIN 2: TEXTOS Y ANTI-COLISIÓN ---
+        const drawHeadPlugin = {
+            id: 'drawHeads',
+            afterDatasetsDraw(chart) {
+                const ctx = chart.ctx;
+                const baseIdx = Math.floor(progress);
+                const nextIdx = Math.min(baseIdx + 1, frames.length - 1);
+                
+                let points = [];
+                chart.data.datasets.forEach((ds, i) => {
+                    const meta = chart.getDatasetMeta(i);
+                    if (!meta.hidden && meta.data.length > 0) {
+                        const lastPoint = meta.data[meta.data.length - 1];
+                        points.push({
+                            dsIndex: i,
+                            jug: ds.jugador_id,
+                            actualY: lastPoint.y,
+                            drawY: lastPoint.y,
+                            x: lastPoint.x,
+                            color: ds.borderColor
+                        });
+                    }
+                });
+
+                // Algoritmo Anti-Colisión (Stacking)
+                points.sort((a, b) => a.actualY - b.actualY);
+                const LABEL_HEIGHT = 30; 
+                for(let iter=0; iter<10; iter++){
+                    for(let j=0; j<points.length - 1; j++){
+                        let p1 = points[j];
+                        let p2 = points[j+1];
+                        let diff = p2.drawY - p1.drawY;
+                        if (diff < LABEL_HEIGHT) {
+                            let overlap = LABEL_HEIGHT - diff;
+                            p1.drawY -= overlap / 2;
+                            p2.drawY += overlap / 2;
+                        }
+                    }
+                }
+
+                points.forEach(p => {
+                    if (Math.abs(p.drawY - p.actualY) > 5) {
+                        ctx.save();
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.actualY);
+                        ctx.lineTo(p.x + 10, p.drawY);
+                        ctx.strokeStyle = p.color;
+                        ctx.lineWidth = 1;
+                        ctx.setLineDash([2, 2]);
+                        ctx.stroke();
+                        ctx.restore();
+                    }
+
+                    const diff = frames[nextIdx].diffs[p.jug] || 0;
+                    const isExact = frames[nextIdx].exactos && frames[nextIdx].exactos[p.jug];
+                    let dTxt = "+0.0";
+                    let dColor = "#666";
+                    if(diff > 0) {
+                        dTxt = "+" + diff.toFixed(1);
+                        dColor = isExact ? "#4ade80" : "#3b82f6";
+                    } else if (diff < 0) {
+                        dTxt = diff.toFixed(1);
+                        dColor = "#ef4444";
+                    }
+
+                    ctx.save();
+                    ctx.textAlign = 'left';
+                    const valNum = chart.scales.y.getValueForPixel(p.actualY);
+                    
+                    ctx.font = 'bold 12px Arial';
+                    ctx.fillStyle = p.color;
+                    ctx.fillText(`${p.jug.toUpperCase()} ${valNum.toFixed(1)}`, p.x + 12, p.drawY - 4);
+                    
+                    ctx.font = 'bold 12px Arial';
+                    ctx.fillStyle = dColor;
+                    ctx.fillText(dTxt, p.x + 12, p.drawY + 10);
+                    ctx.restore();
+                });
+            }
+        };
+
+        const datasetsInit = jugadores.map(jug => ({
+            jugador_id: jug,
+            label: jug.replace('_', ' ').toUpperCase(),
+            data: [], 
+            borderColor: playerColors[jug],
+            backgroundColor: playerColors[jug],
+            borderWidth: 3,
+            pointRadius: 0, 
+            tension: 0.1
+        }));
+
+        const ctx = document.getElementById('progressionChart').getContext('2d');
+        const progressionChart = new Chart(ctx, {
+            type: 'line',
+            data: { datasets: datasetsInit },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false, 
+                interaction: { mode: 'nearest', intersect: false },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { enabled: false }
+                },
+                layout: {
+                    padding: { right: 80, bottom: 20 } // Espacio para textos extra
+                },
+                scales: {
+                    x: {
+                        type: 'linear',
+                        grid: { display: false },
+                        ticks: { display: false } 
+                    },
+                    y: {
+                        grid: { color: 'rgba(255,255,255,0.05)' },
+                        ticks: { color: '#aaa', font: { weight: 'bold', size: 12 } },
+                        suggestedMin: 0
+                    }
+                }
+            },
+            plugins: [backgroundPlugin, drawHeadPlugin]
+        });
+
+        document.getElementById("timeline-progress").max = frames.length - 1;
+
+        // --- CEREBRO: CÁMARA Y MARCADOR ---
+        function renderAtProgress(p) {
+            const baseIdx = Math.floor(p);
+            const nextIdx = Math.min(baseIdx + 1, frames.length - 1);
+            const fraction = p - baseIdx;
+            
+            const targetFrame = frames[nextIdx];
+            document.getElementById("pm-title").innerText = targetFrame.title;
+            document.getElementById("pm-subtitle").innerText = targetFrame.subtitle;
+
+            progressionChart.options.scales.x.min = p - VIEW_RADIUS;
+            progressionChart.options.scales.x.max = p + VIEW_RADIUS;
+
+            const currentScores = {};
+            let maxVisibleScore = 5;
+            let minVisibleScore = Infinity;
+
+            progressionChart.data.datasets.forEach(ds => {
+                const jug = ds.jugador_id;
+                let dataPoints = [];
+                
+                for (let j = 0; j <= baseIdx; j++) {
+                    dataPoints.push({ x: j, y: frames[j].scores[jug] });
+                }
+                
+                if (fraction > 0 && nextIdx > baseIdx) {
+                    const y0 = frames[baseIdx].scores[jug];
+                    const y1 = frames[nextIdx].scores[jug];
+                    const currentY = y0 + (y1 - y0) * fraction;
+                    dataPoints.push({ x: p, y: currentY });
+                    currentScores[jug] = currentY;
+                } else {
+                    currentScores[jug] = frames[baseIdx].scores[jug];
+                }
+                
+                ds.data = dataPoints;
+
+                const rowObj = document.getElementById("row-" + jug);
+                if (rowObj.classList.contains("active-player")) {
+                    if (currentScores[jug] > maxVisibleScore) maxVisibleScore = currentScores[jug];
+                    if (currentScores[jug] < minVisibleScore) minVisibleScore = currentScores[jug];
+                }
+            });
+
+            if (minVisibleScore === Infinity) minVisibleScore = 0;
+
+            // Escala Y Dinámica (Suelo y Techo Suaves)
+            const targetYMax = maxVisibleScore + Math.max(5, (maxVisibleScore - minVisibleScore) * 0.15); 
+            smoothedYMax += (targetYMax - smoothedYMax) * 0.08; 
+            progressionChart.options.scales.y.max = smoothedYMax;
+
+            // El margen inferior sube dinámicamente persiguiendo al último
+            const targetYMin = Math.max(0, minVisibleScore - 5); 
+            smoothedYMin += (targetYMin - smoothedYMin) * 0.08;
+            progressionChart.options.scales.y.min = smoothedYMin;
+
+            progressionChart.update();
+
+            const sortedPlayers = [...jugadores].sort((a, b) => currentScores[b] - currentScores[a]);
+            sortedPlayers.forEach((jug, rank) => {
+                const row = document.getElementById("row-" + jug);
+                row.style.top = (rank * 55 + 10) + "px"; 
+                
+                if(rank === 0) {
+                    row.style.borderColor = "var(--gold)";
+                    row.style.boxShadow = "0 0 10px rgba(218, 165, 32, 0.2)";
+                } else {
+                    row.style.borderColor = "#333";
+                    row.style.boxShadow = "none";
+                }
+                
+                document.getElementById("score-" + jug).innerText = currentScores[jug].toFixed(1);
+                
+                const diffEl = document.getElementById("diff-" + jug);
+                const pts = frames[nextIdx].diffs[jug] || 0;
+                const isExact = frames[nextIdx].exactos && frames[nextIdx].exactos[jug];
+                
+                if (pts > 0) {
+                    diffEl.innerText = "+" + pts.toFixed(1);
+                    diffEl.style.color = isExact ? "#4ade80" : "#3b82f6"; 
+                } else if (pts < 0) {
+                    diffEl.innerText = pts.toFixed(1);
+                    diffEl.style.color = "#ef4444"; 
+                } else {
+                    diffEl.innerText = "+0.0";
+                    diffEl.style.color = "#666"; 
+                }
+            });
+        }
+
+        function animateLoop(time) {
+            if (!lastTime) lastTime = time;
+            const delta = time - lastTime;
+            lastTime = time;
+
+            if (isPlaying) {
+                const speedMult = parseFloat(document.getElementById("speed-selector").value);
+                const baseIdx = Math.floor(progress);
+                const nextIdx = Math.min(baseIdx + 1, frames.length - 1);
+                const isMilestone = (frames[nextIdx].type !== 'match' && frames[nextIdx].type !== 'start');
+                
+                const speedFactor = isMilestone ? 0.00015 : 0.0004; 
+                progress += (delta * speedFactor) * speedMult;
+                
+                if (progress >= frames.length - 1) {
+                    progress = frames.length - 1;
+                    isPlaying = false;
+                    document.getElementById("btn-play").innerText = "▶️ PLAY";
+                    document.getElementById("btn-play").classList.remove("active");
+                }
+                
+                document.getElementById("timeline-progress").value = progress;
+                renderAtProgress(progress);
+            }
+            
+            animationReq = requestAnimationFrame(animateLoop);
+        }
+
+        function togglePlay() {
+            const btn = document.getElementById("btn-play");
+            if (isPlaying) {
+                isPlaying = false;
+                btn.innerText = "▶️ PLAY";
+                btn.classList.remove("active");
+            } else {
+                if (progress >= frames.length - 1) progress = 0;
+                isPlaying = true;
+                lastTime = performance.now(); 
+                btn.innerText = "⏸️ PAUSA";
+                btn.classList.add("active");
+            }
+        }
+
+        function seekManual(val) {
+            progress = parseFloat(val);
+            renderAtProgress(progress);
+        }
+        
+        function seekRelative(step) {
+            progress = Math.max(0, Math.min(frames.length - 1, progress + step));
+            document.getElementById("timeline-progress").value = progress;
+            renderAtProgress(progress);
+        }
+
+        renderAtProgress(0);
+        animationReq = requestAnimationFrame(animateLoop);
+    </script>
+</body>
+</html>
+    
