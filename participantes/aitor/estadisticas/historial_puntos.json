@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 27.0,
+    "puntos_totales": 25.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -52,6 +52,13 @@
             "puntos_conseguidos": 0.0
         },
         "Irán_vs_Nueva Zelanda": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Bélgica_vs_Irán": {
             "fase": "grupos",
             "acierto_1x2": false,
             "acierto_exacto": false,
@@ -280,8 +287,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 1,
-            "puntos_bono": 0,
-            "resultado": "Empate Masivo"
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
