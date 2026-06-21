@@ -242,8 +242,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 29.0,
-        "total_aciertos_1x2": 20,
+        "puntos_partidos": 28.0,
+        "total_aciertos_1x2": 19,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -271,7 +271,7 @@
                 "acierto_1x2": false
             },
             "Bélgica_vs_Irán": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -968,8 +968,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 36.0,
-        "total_aciertos_1x2": 18,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 17,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -997,7 +997,7 @@
                 "acierto_1x2": false
             },
             "Bélgica_vs_Irán": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
