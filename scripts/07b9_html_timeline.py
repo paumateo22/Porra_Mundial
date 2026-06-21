@@ -174,7 +174,7 @@ def generar_timeline():
             background-color: var(--bg-dark);
             padding: 10px;
             min-height: 100vh;
-            overflow-y: auto; /* Permite scroll vertical en móviles */
+            overflow-y: auto; 
             box-sizing: border-box;
         }}
         
@@ -242,18 +242,16 @@ def generar_timeline():
             .timeline-layout {{ flex-direction: column; align-items: stretch; }}
             .chart-wrapper, .scoreboard-wrapper {{ width: 100% !important; flex: none; }}
             
-            /* Gráfica más pequeña, marcador ocupa su alto real */
             .chart-wrapper {{ height: 350px; padding: 10px; }}
             .scoreboard-wrapper {{ height: auto; }}
             
-            /* Banner encogido para que no coma pantalla */
             .big-present-banner {{ padding: 10px; margin-bottom: 10px; }}
             .big-title {{ font-size: 1.8em !important; }}
             .big-subtitle {{ font-size: 0.85em !important; margin-bottom: 2px; }}
             
             .controls-container {{ padding: 10px; justify-content: center; gap: 5px; }}
             .btn-control {{ padding: 6px 10px; font-size: 0.85em; }}
-            .btn-fs {{ width: 100%; margin-bottom: 5px; }} /* Botón FS ocupa toda la fila en móvil vertical */
+            .btn-fs {{ width: 100%; margin-bottom: 5px; }} 
         }}
 
         /* ========================================= */
@@ -263,17 +261,15 @@ def generar_timeline():
             .timeline-layout {{ flex-direction: row; height: calc(100vh - 120px); align-items: stretch; }}
             .chart-wrapper {{ height: 100%; width: 65% !important; flex: none; padding: 10px; }}
             
-            /* El marcador a la derecha, con scroll si no cabe */
             .scoreboard-wrapper {{ height: 100%; width: 35% !important; flex: none; overflow-y: auto; padding: 10px; }}
             
-            /* Banner extra plano */
             .big-present-banner {{ padding: 5px 15px; margin-bottom: 5px; display: flex; align-items: center; justify-content: center; gap: 15px; flex-direction: row-reverse; }}
             .big-title {{ font-size: 1.4em !important; margin: 0; }}
             .big-subtitle {{ font-size: 0.8em !important; margin: 0; }}
             
             .controls-container {{ padding: 5px 10px; margin-bottom: 5px; gap: 5px; }}
             .btn-control {{ padding: 4px 8px; font-size: 0.8em; }}
-            .btn-fs {{ display: none; }} /* Ocultamos el botón de FS si ya está en horizontal */
+            .btn-fs {{ display: none; }} 
         }}
     </style>
 </head>
@@ -288,7 +284,7 @@ def generar_timeline():
         </div>
 
         <div class="controls-container">
-            <button class="btn-control btn-fs" onclick="toggleFullScreen()">📺 Pantalla Completa Mágica</button>
+            <button class="btn-control btn-fs" onclick="toggleFullScreen()">📺 Pantalla Completa</button>
             <button class="btn-control" onclick="seekRelative(-1)">⏮️</button>
             <button class="btn-control btn-play" id="btn-play" onclick="togglePlay()">▶️ PLAY</button>
             <input type="range" id="timeline-progress" min="0" step="0.001" value="0" oninput="seekManual(this.value)">
@@ -338,7 +334,6 @@ def generar_timeline():
             const zone = document.getElementById("fullscreen-zone");
             if (!document.fullscreenElement) {{
                 zone.requestFullscreen().then(() => {{
-                    // Forzar modo horizontal en móviles si lo soporta
                     if (screen.orientation && screen.orientation.lock) {{
                         screen.orientation.lock('landscape').catch((e) => console.log("Giro automático ignorado por el navegador."));
                     }}
@@ -401,7 +396,6 @@ def generar_timeline():
                         ctx.save();
                         
                         if (f.type === 'match') {{
-                            // Línea fina
                             ctx.beginPath();
                             ctx.moveTo(x, yAxis.top);
                             ctx.lineTo(x, yAxis.bottom);
@@ -409,7 +403,6 @@ def generar_timeline():
                             ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
                             ctx.stroke();
                             
-                            // Textos horizontales en Zig-Zag (Tres niveles)
                             const isMobile = window.innerWidth <= 1000;
                             const levelSize = isMobile ? 12 : 20; 
                             const zigzagOffset = (index % 3) * levelSize; 
@@ -420,7 +413,6 @@ def generar_timeline():
                             ctx.fillText(f.title, x, yAxis.bottom - 10 - zigzagOffset);
                             
                         }} else if (f.type !== 'start') {{
-                            // Hitos de Jornada
                             ctx.beginPath();
                             ctx.moveTo(x, yAxis.top + 20);
                             ctx.lineTo(x, yAxis.bottom);
@@ -510,7 +502,9 @@ def generar_timeline():
                     
                     ctx.font = 'bold 11px Arial';
                     ctx.fillStyle = p.color;
-                    ctx.fillText(`${{p.jug.toUpperCase()[:4]}} ${{valNum.toFixed(1)}}`, p.x + 12, p.drawY - 4);
+                    
+                    // --- LA LÍNEA MÁGICA ARREGLADA EN JS (.slice en lugar de [:4]) ---
+                    ctx.fillText(`${{p.jug.toUpperCase().slice(0, 4)}} ${{valNum.toFixed(1)}}`, p.x + 12, p.drawY - 4);
                     
                     ctx.font = 'bold 11px Arial';
                     ctx.fillStyle = dColor;
@@ -625,7 +619,7 @@ def generar_timeline():
             const sortedPlayers = [...jugadores].sort((a, b) => currentScores[b] - currentScores[a]);
             sortedPlayers.forEach((jug, rank) => {{
                 const row = document.getElementById("row-" + jug);
-                row.style.top = (rank * 46 + 5) + "px"; // 46px = 40px alto + 6px gap
+                row.style.top = (rank * 46 + 5) + "px"; 
                 
                 if(rank === 0) {{
                     row.style.borderColor = "var(--gold)";
@@ -708,7 +702,6 @@ def generar_timeline():
             renderAtProgress(progress);
         }}
 
-        // Si cambia el tamaño de la ventana, forzamos un mini render para ajustar el canvas
         window.addEventListener('resize', () => {{
             if (!isPlaying) renderAtProgress(progress);
         }});
@@ -718,13 +711,3 @@ def generar_timeline():
     </script>
 </body>
 </html>
-    """
-    
-    ruta_salida = ROOT_DIR / "timeline.html"
-    with open(ruta_salida, 'w', encoding='utf-8') as f:
-        f.write(html)
-        
-    print(f"✅ ¡Motor Responsivo para Móviles generado en: {ruta_salida}")
-
-if __name__ == "__main__":
-    generar_timeline()
