@@ -26,39 +26,26 @@ def ejecutar_06d_motor_cierre():
 
     ranking = []
     
-    # Preparamos los criterios de desempate desde settings
-    criterios = settings.get("desempates", {})
-    
     for jugador, stats in reporte_06c.items():
-        # Recuperar el historial del jugador para comprobar desempates complejos (ej. Campeón)
         ruta_libro = ROOT_DIR / "participantes" / jugador.replace(' ', '_').lower() / "estadisticas" / "historial_puntos.json"
         libro = cargar_json(ruta_libro) or {}
         
-        # 1. Recuperar los puntos extra calculados en el 06f
         stats_premios = reporte_06f.get(jugador, {})
         pts_podio = stats_premios.get("puntos_podio", 0) 
         pts_forms = stats_premios.get("puntos_formulario", 0) 
         
-        # 2. Sumar el total absoluto
+        # Puntos de Sorpresas y Decepciones
+        sd_details = libro.get("premios_finales", {}).get("formularios", {}).get("detalles", {})
+        pts_sd = sd_details.get("sorpresa", 0) + sd_details.get("decepcion", 0)
+        
         pts_base = stats["puntos_partidos"] + stats["puntos_jornadas"]
         pts_grupos = stats["puntos_grupos"]
-        total = pts_base + pts_grupos + pts_podio + pts_forms
+        total = pts_base + pts_grupos + pts_podio + pts_forms + pts_sd
         
-        # 3. Extraer métricas para desempates
+        # Métricas para desempates forzados (Ignorando settings.json)
         aciertos_1x2 = stats.get("total_aciertos_1x2", 0)
         aciertos_exactos = stats.get("total_aciertos_exactos", 0)
-        acierto_campeon = 1 if libro.get("premios_finales", {}).get("podio", {}).get("detalles", {}).get("campeon", 0) > 0 else 0
-
-        # Mapeo dinámico de desempates según settings
-        valores_desempate = {
-            "acierto_1x2": aciertos_1x2,
-            "acierto_exacto": aciertos_exactos,
-            "campeon": acierto_campeon
-        }
-        
-        v_crit_1 = valores_desempate.get(criterios.get("criterio_1"), 0)
-        v_crit_2 = valores_desempate.get(criterios.get("criterio_2"), 0)
-        v_crit_3 = valores_desempate.get(criterios.get("criterio_3"), 0)
+        victorias_j = sum(1 for j in libro.get("desglose_jornadas", {}).values() if j.get("resultado") == "Ganador")
 
         ranking.append({
             "Jugador": jugador,
@@ -68,13 +55,13 @@ def ejecutar_06d_motor_cierre():
             "Puntos_Podio": pts_podio,
             "Puntos_Forms": pts_forms,
             "TOTAL": total,
-            "Crit_1": v_crit_1,
-            "Crit_2": v_crit_2,
-            "Crit_3": v_crit_3
+            "Ac_1x2": aciertos_1x2,
+            "Ac_Ex": aciertos_exactos,
+            "Victorias": victorias_j
         })
 
-    # Ordenar por: Total -> Criterio 1 -> Criterio 2 -> Criterio 3
-    ranking_ordenado = sorted(ranking, key=lambda x: (x["TOTAL"], x["Crit_1"], x["Crit_2"], x["Crit_3"]), reverse=True)
+    # Ordenar rígidamente por: Total -> Aciertos 1X2 -> Aciertos Exactos -> Victorias de Jornada
+    ranking_ordenado = sorted(ranking, key=lambda x: (x["TOTAL"], x["Ac_1x2"], x["Ac_Ex"], x["Victorias"]), reverse=True)
 
     print("\n📊 CLASIFICACIÓN FINAL DEL MUNDIAL 📊")
     print("-" * 90)
@@ -87,11 +74,10 @@ def ejecutar_06d_motor_cierre():
         if i > 0:
             j_ant = ranking_ordenado[i-1]
             
-            # Comparamos la tupla exacta de puntuación y desempates con el jugador anterior
-            tupla_actual = (j["TOTAL"], j["Crit_1"], j["Crit_2"], j["Crit_3"])
-            tupla_anterior = (j_ant["TOTAL"], j_ant["Crit_1"], j_ant["Crit_2"], j_ant["Crit_3"])
+            # Comparamos la tupla estricta
+            tupla_actual = (j["TOTAL"], j["Ac_1x2"], j["Ac_Ex"], j["Victorias"])
+            tupla_anterior = (j_ant["TOTAL"], j_ant["Ac_1x2"], j_ant["Ac_Ex"], j_ant["Victorias"])
             
-            # Si este jugador tiene resultados estrictamente peores, su posición cae a su índice real + 1
             if tupla_actual < tupla_anterior:
                 posicion_real = i + 1
                 

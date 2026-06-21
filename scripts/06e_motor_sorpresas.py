@@ -65,20 +65,36 @@ def determinar_fase_caida_jugador(jugador, equipo):
     return 0
 
 def determinar_fase_caida_real(equipo, realidad_dict):
-    if equipo not in realidad_dict.get("clasificados_a_dieciseisavos", []): return 0
+    if equipo not in realidad_dict.get("clasificados_a_dieciseisavos", []): 
+        # Verificar si el equipo quedó eliminado en grupos (último partido finalizado)
+        partidos_equipo = []
+        for grp in realidad_dict.get("fase_grupos", {}).values():
+            for p in grp:
+                if p.get("local") == equipo or p.get("visitante") == equipo:
+                    partidos_equipo.append(p)
+        if all(p.get("estado") == "finished" for p in partidos_equipo):
+            return 0
+        return -1 # El mundial de este equipo aún no ha terminado
+
     eliminatorias = realidad_dict.get("eliminatorias", {})
     
-    for p in eliminatorias.get("finales", []) + eliminatorias.get("final", []):
-        if p.get("local") == equipo or p.get("visitante") == equipo: return 4 if p.get("id_partido") == 103 else 5
-    for p in eliminatorias.get("semifinales", []) + eliminatorias.get("tercer_puesto", []):
-        if p.get("local") == equipo or p.get("visitante") == equipo: return 4
-    for p in eliminatorias.get("cuartos", []):
-        if p.get("local") == equipo or p.get("visitante") == equipo: return 3
-    for p in eliminatorias.get("octavos", []):
-        if p.get("local") == equipo or p.get("visitante") == equipo: return 2
-    for p in eliminatorias.get("dieciseisavos", []):
-        if p.get("local") == equipo or p.get("visitante") == equipo: return 1
-    return 0
+    # 5: Final / 4: Tercer Puesto o Semifinales / 3: Cuartos / 2: Octavos / 1: Dieciseisavos
+    fases_buscar = [
+        (eliminatorias.get("finales", []) + eliminatorias.get("final", []), 5),
+        (eliminatorias.get("semifinales", []) + eliminatorias.get("tercer_puesto", []), 4),
+        (eliminatorias.get("cuartos", []), 3),
+        (eliminatorias.get("octavos", []), 2),
+        (eliminatorias.get("dieciseisavos", []), 1)
+    ]
+
+    for partidos, valor_fase in fases_buscar:
+        for p in partidos:
+            if p.get("local") == equipo or p.get("visitante") == equipo:
+                # Solo puntúa si el partido ya terminó (el equipo está oficialmente eliminado o es campeón)
+                if p.get("estado") == "finished":
+                    return 4 if p.get("id_partido") == 103 else valor_fase
+                return -1 # Sigue vivo en el torneo
+    return -1
 
 def ejecutar_06e_motor_sorpresas():
     print("=======================================================")
@@ -147,9 +163,11 @@ def ejecutar_06e_motor_sorpresas():
         total_sorpresas = total_decepciones = 0
 
         for eq in todos_equipos:
+            R = mapa_valores_caida[eq]["realidad"]
+            if R == -1: continue # El equipo sigue vivo en el torneo, no evaluamos SD aún
+
             P = mapa_valores_caida[eq]["jugadores"][jug]
             M = mapa_valores_caida[eq]["media"]
-            R = mapa_valores_caida[eq]["realidad"]
             U = umbral_global
 
             cumple_p_m = abs(P - M) > U

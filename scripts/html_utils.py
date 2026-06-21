@@ -32,7 +32,7 @@ def get_sidebar_html(depth=""):
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="{depth}index.html">🏠 Clasificación Global</a>
         <a href="{depth}calendario.html">📅 Calendario Oficial</a>
-        <a href="{depth}jornadas.html">📈 Análisis por Jornadas</a>
+        <a href="{depth}jornadas.html">📈 Análisis Jornadas</a>
         <a href="{depth}participantes.html">👥 Participantes</a>
         <a href="{depth}instrucciones.html" style="color:var(--gold);">📖 Instrucciones & Registro & Reglamento</a>
         <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">🔗 Infobae</a>
@@ -144,7 +144,7 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
 
     horarios = CONFIG.get("horarios", {})
     fases_js = [
-        {"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": horarios.get("apertura_grupos", ""), "link": "https://www.infobae.com/mundial-2026/simulador/"},
+        {"id": "grupos", "name": "Fase de Grupos", "predict": "2000-01-01T00:00:00", "start": horarios.get("apertura_grupos", ""), "link": f"{depth}jornadas.html"},
         {"id": "dieciseisavos", "name": "Dieciseisavos (1/16)", "predict": horarios.get("apertura_fin_fase_grupos", ""), "start": horarios.get("apertura_dieciseisavos", ""), "link": f"{depth}generador_pronosticos.html"},
         {"id": "octavos", "name": "Octavos (1/8)", "predict": horarios.get("apertura_fin_dieciseisavos", ""), "start": horarios.get("apertura_octavos", ""), "link": f"{depth}generador_pronosticos.html"},
         {"id": "cuartos", "name": "Cuartos (1/4)", "predict": horarios.get("apertura_fin_octavos", ""), "start": horarios.get("apertura_cuartos", ""), "link": f"{depth}generador_pronosticos.html"},
@@ -315,7 +315,7 @@ def get_header_html(title, subtitle, depth="", show_participa=False):
                 <p style="font-size: 0.9em;">{subtitle}</p>
                 <div class="top-nav" style="margin: 10px 0;">
                     <a href="{depth}index.html" class="home-btn">🏠 Inicio</a>
-                    <a href="https://www.infobae.com/mundial-2026/simulador/" target="_blank">Infobae</a>
+                    <a href="{depth}jornadas.html">📈 Análisis Jornadas</a>
                     <a href="{depth}generador_pronosticos.html" class="participa-btn">🛠️ Pronosticar Eliminatorias</a>
                     <a href="https://www.sofascore.com/es-la/football/tournament/world/world-championship/16#id:58210" target="_blank">SofaScore</a>
                 </div>
