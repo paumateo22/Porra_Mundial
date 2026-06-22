@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 40.0,
+    "puntos_totales": 41.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -123,10 +123,10 @@
         },
         "Francia_vs_Irak": {
             "fase": "grupos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.0
         },
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -314,7 +314,7 @@
             "resultado": "Neutral"
         },
         "J2.2": {
-            "aciertos_1x2": 3,
+            "aciertos_1x2": 4,
             "puntos_bono": 0,
             "resultado": "Empate Masivo"
         }

@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 24.0,
-        "total_aciertos_1x2": 21,
+        "puntos_partidos": 25.0,
+        "total_aciertos_1x2": 22,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -56,7 +56,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -149,7 +149,7 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -157,8 +157,8 @@
         "puntos_grupos": 7
     },
     "aitor": {
-        "puntos_partidos": 29.0,
-        "total_aciertos_1x2": 20,
+        "puntos_partidos": 30.0,
+        "total_aciertos_1x2": 21,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -213,7 +213,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -306,7 +306,7 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -314,8 +314,8 @@
         "puntos_grupos": 2
     },
     "carlinhos_jr": {
-        "puntos_partidos": 30.0,
-        "total_aciertos_1x2": 21,
+        "puntos_partidos": 31.0,
+        "total_aciertos_1x2": 22,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -370,7 +370,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -463,7 +463,7 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -471,8 +471,8 @@
         "puntos_grupos": 5
     },
     "javi": {
-        "puntos_partidos": 33.0,
-        "total_aciertos_1x2": 21,
+        "puntos_partidos": 34.0,
+        "total_aciertos_1x2": 22,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -527,7 +527,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -620,7 +620,7 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -628,8 +628,8 @@
         "puntos_grupos": 5
     },
     "manu": {
-        "puntos_partidos": 33.0,
-        "total_aciertos_1x2": 21,
+        "puntos_partidos": 34.0,
+        "total_aciertos_1x2": 22,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -684,7 +684,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -777,7 +777,7 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -785,8 +785,8 @@
         "puntos_grupos": 5
     },
     "miguel_dykan": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 25,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 26,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -841,7 +841,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -934,7 +934,7 @@
                 "resultado": "Ganador"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -942,8 +942,8 @@
         "puntos_grupos": 7
     },
     "pau": {
-        "puntos_partidos": 31.0,
-        "total_aciertos_1x2": 25,
+        "puntos_partidos": 32.0,
+        "total_aciertos_1x2": 26,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -998,7 +998,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -1091,7 +1091,7 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -1099,8 +1099,8 @@
         "puntos_grupos": 5
     },
     "quesadator": {
-        "puntos_partidos": 33.0,
-        "total_aciertos_1x2": 24,
+        "puntos_partidos": 34.0,
+        "total_aciertos_1x2": 25,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1155,7 +1155,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -1248,7 +1248,7 @@
                 "resultado": "Ganador"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
@@ -1256,8 +1256,8 @@
         "puntos_grupos": 7
     },
     "álvaro": {
-        "puntos_partidos": 37.0,
-        "total_aciertos_1x2": 19,
+        "puntos_partidos": 38.0,
+        "total_aciertos_1x2": 20,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1312,7 +1312,7 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -1405,7 +1405,7 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Empate Masivo"
             }
