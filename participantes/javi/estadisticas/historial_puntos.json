@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 41.0,
+    "puntos_totales": 38.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -19,9 +19,9 @@
         "Argentina_vs_Austria": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 4.0
+            "puntos_conseguidos": 1.0
         },
         "Portugal_vs_RD Congo": {
             "fase": "grupos",
@@ -324,5 +324,5 @@
         "puntos_conseguidos": 5
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 3
+    "posicion_final_ranking": 5
 }

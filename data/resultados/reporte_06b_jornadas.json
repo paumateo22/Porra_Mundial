@@ -459,9 +459,9 @@
         }
     },
     "javi": {
-        "puntos_partidos": 36.0,
+        "puntos_partidos": 33.0,
         "total_aciertos_1x2": 21,
-        "total_aciertos_exactos": 5,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
