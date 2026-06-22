@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 50.0,
+    "puntos_totales": 51.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -64,6 +64,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Nueva Zelanda_vs_Egipto": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "España_vs_Cabo Verde": {
             "fase": "grupos",
@@ -293,7 +300,7 @@
             "resultado": "Ganador"
         },
         "J2.2": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 2,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }

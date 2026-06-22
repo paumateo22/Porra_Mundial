@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 34.0,
+    "puntos_totales": 35.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -59,6 +59,13 @@
             "puntos_conseguidos": 0.0
         },
         "Bélgica_vs_Irán": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Nueva Zelanda_vs_Egipto": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -293,7 +300,7 @@
             "resultado": "Neutral"
         },
         "J2.2": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
