@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 35.0,
+    "puntos_totales": 33.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -15,6 +15,13 @@
             "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 4.0
+        },
+        "Argentina_vs_Austria": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "Portugal_vs_RD Congo": {
             "fase": "grupos",
@@ -301,8 +308,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 3,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Empate Masivo"
         }
     },
     "premios_finales": {
@@ -317,5 +324,5 @@
         "puntos_conseguidos": 5
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 7
 }

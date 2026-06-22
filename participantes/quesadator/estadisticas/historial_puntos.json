@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 39.0,
+    "puntos_totales": 42.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -10,6 +10,13 @@
             "puntos_conseguidos": 1.0
         },
         "Austria_vs_Jordania": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Argentina_vs_Austria": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -300,9 +307,9 @@
             "resultado": "Ganador"
         },
         "J2.2": {
-            "aciertos_1x2": 2,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 3,
+            "puntos_bono": 0,
+            "resultado": "Empate Masivo"
         }
     },
     "premios_finales": {
@@ -317,5 +324,5 @@
         "puntos_conseguidos": 7
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 3
+    "posicion_final_ranking": 2
 }
