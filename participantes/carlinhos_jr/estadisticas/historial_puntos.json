@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 34.0,
+    "puntos_totales": 32.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -127,6 +127,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
+        },
+        "Noruega_vs_Senegal": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -315,8 +322,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 4,
-            "puntos_bono": 0,
-            "resultado": "Empate Masivo"
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {

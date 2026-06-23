@@ -58,6 +58,9 @@
             "Francia_vs_Irak": {
                 "acierto_1x2": true
             },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -190,6 +193,9 @@
             },
             "Francia_vs_Irak": {
                 "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -324,6 +330,9 @@
             "Francia_vs_Irak": {
                 "acierto_1x2": true
             },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
             },
@@ -399,9 +408,9 @@
         }
     },
     "javi": {
-        "puntos_partidos": 34.0,
+        "puntos_partidos": 37.0,
         "total_aciertos_1x2": 22,
-        "total_aciertos_exactos": 4,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -456,6 +465,9 @@
             },
             "Francia_vs_Irak": {
                 "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
@@ -590,6 +602,9 @@
             "Francia_vs_Irak": {
                 "acierto_1x2": true
             },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -723,6 +738,9 @@
             "Francia_vs_Irak": {
                 "acierto_1x2": true
             },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": false
+            },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": true
             },
@@ -798,9 +816,9 @@
         }
     },
     "pau": {
-        "puntos_partidos": 32.0,
+        "puntos_partidos": 35.0,
         "total_aciertos_1x2": 26,
-        "total_aciertos_exactos": 2,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -855,6 +873,9 @@
             },
             "Francia_vs_Irak": {
                 "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": false
             },
             "Estados Unidos_vs_Paraguay": {
                 "acierto_1x2": false
@@ -931,8 +952,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 34.0,
-        "total_aciertos_1x2": 25,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 26,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -987,6 +1008,9 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
+                "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
                 "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
@@ -1064,9 +1088,9 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 38.0,
-        "total_aciertos_1x2": 20,
-        "total_aciertos_exactos": 6,
+        "puntos_partidos": 42.0,
+        "total_aciertos_1x2": 21,
+        "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1120,6 +1144,9 @@
                 "acierto_1x2": true
             },
             "Francia_vs_Irak": {
+                "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
                 "acierto_1x2": true
             },
             "Estados Unidos_vs_Paraguay": {
