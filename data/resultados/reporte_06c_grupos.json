@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 25.0,
-        "total_aciertos_1x2": 22,
+        "puntos_partidos": 26.0,
+        "total_aciertos_1x2": 23,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -22,11 +22,17 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": false
             },
             "Ghana_vs_Panamá": {
                 "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -155,7 +161,7 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
@@ -163,8 +169,8 @@
         "puntos_grupos": 10
     },
     "aitor": {
-        "puntos_partidos": 35.0,
-        "total_aciertos_1x2": 23,
+        "puntos_partidos": 37.0,
+        "total_aciertos_1x2": 25,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -185,10 +191,16 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Ghana_vs_Panamá": {
+                "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
                 "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
@@ -318,7 +330,7 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 6,
+                "aciertos_1x2": 8,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -326,8 +338,8 @@
         "puntos_grupos": 5
     },
     "carlinhos_jr": {
-        "puntos_partidos": 35.0,
-        "total_aciertos_1x2": 23,
+        "puntos_partidos": 36.0,
+        "total_aciertos_1x2": 24,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -348,11 +360,17 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": false
             },
             "Ghana_vs_Panamá": {
                 "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -481,7 +499,7 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -489,8 +507,8 @@
         "puntos_grupos": 8
     },
     "javi": {
-        "puntos_partidos": 35.0,
-        "total_aciertos_1x2": 23,
+        "puntos_partidos": 36.0,
+        "total_aciertos_1x2": 24,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -511,11 +529,17 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Ghana_vs_Panamá": {
                 "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -644,7 +668,7 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -652,8 +676,8 @@
         "puntos_grupos": 8
     },
     "manu": {
-        "puntos_partidos": 39.0,
-        "total_aciertos_1x2": 24,
+        "puntos_partidos": 40.0,
+        "total_aciertos_1x2": 25,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -674,11 +698,17 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Ghana_vs_Panamá": {
                 "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -789,7 +819,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -807,16 +837,16 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 6,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 7,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 8
     },
     "miguel_dykan": {
-        "puntos_partidos": 46.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 47.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -837,11 +867,17 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Ghana_vs_Panamá": {
                 "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -952,7 +988,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -970,16 +1006,16 @@
                 "resultado": "Ganador"
             },
             "J2.2": {
-                "aciertos_1x2": 6,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 7,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 10
     },
     "pau": {
-        "puntos_partidos": 34.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1000,11 +1036,17 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Ghana_vs_Panamá": {
                 "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -1115,7 +1157,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -1133,16 +1175,16 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 6,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 7,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 8
     },
     "quesadator": {
-        "puntos_partidos": 37.0,
-        "total_aciertos_1x2": 25,
+        "puntos_partidos": 38.0,
+        "total_aciertos_1x2": 26,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1163,10 +1205,16 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Ghana_vs_Panamá": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
@@ -1296,7 +1344,7 @@
                 "resultado": "Ganador"
             },
             "J2.2": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
@@ -1304,8 +1352,8 @@
         "puntos_grupos": 10
     },
     "álvaro": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 21,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 22,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1326,10 +1374,16 @@
             "Uzbekistán_vs_Colombia": {
                 "acierto_1x2": true
             },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
             "Inglaterra_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Ghana_vs_Panamá": {
+                "acierto_1x2": false
+            },
+            "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
             },
             "Bélgica_vs_Egipto": {
@@ -1459,7 +1513,7 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }

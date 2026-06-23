@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 41.0,
+    "puntos_totales": 42.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -44,6 +44,13 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "Portugal_vs_Uzbekistán": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
         "Inglaterra_vs_Croacia": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -57,6 +64,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
+        },
+        "Inglaterra_vs_Ghana": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -328,7 +342,7 @@
             "resultado": "Neutral"
         },
         "J2.2": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 6,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -345,5 +359,5 @@
         "puntos_conseguidos": 8
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 8
 }
