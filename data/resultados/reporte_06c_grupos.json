@@ -13,6 +13,9 @@
             "Argentina_vs_Austria": {
                 "acierto_1x2": true
             },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
+            },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
             },
@@ -157,11 +160,11 @@
                 "resultado": "Perdedor"
             }
         },
-        "puntos_grupos": 7
+        "puntos_grupos": 10
     },
     "aitor": {
-        "puntos_partidos": 34.0,
-        "total_aciertos_1x2": 22,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 23,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -171,6 +174,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -312,17 +318,17 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 2
+        "puntos_grupos": 5
     },
     "carlinhos_jr": {
-        "puntos_partidos": 32.0,
+        "puntos_partidos": 35.0,
         "total_aciertos_1x2": 23,
-        "total_aciertos_exactos": 3,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -331,6 +337,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": false
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": false
             },
             "Portugal_vs_RD Congo": {
@@ -454,7 +463,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -473,11 +482,11 @@
             },
             "J2.2": {
                 "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 5
+        "puntos_grupos": 8
     },
     "javi": {
         "puntos_partidos": 35.0,
@@ -493,6 +502,9 @@
             "Argentina_vs_Austria": {
                 "acierto_1x2": true
             },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
+            },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
             },
@@ -614,7 +626,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -633,16 +645,16 @@
             },
             "J2.2": {
                 "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 5
+        "puntos_grupos": 8
     },
     "manu": {
-        "puntos_partidos": 35.0,
-        "total_aciertos_1x2": 23,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 39.0,
+        "total_aciertos_1x2": 24,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -651,6 +663,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -792,16 +807,16 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 5
+        "puntos_grupos": 8
     },
     "miguel_dykan": {
-        "puntos_partidos": 45.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 46.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -811,6 +826,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -952,16 +970,16 @@
                 "resultado": "Ganador"
             },
             "J2.2": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 7
+        "puntos_grupos": 10
     },
     "pau": {
-        "puntos_partidos": 33.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 34.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -971,6 +989,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -1112,12 +1133,12 @@
                 "resultado": "Neutral"
             },
             "J2.2": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 5
+        "puntos_grupos": 8
     },
     "quesadator": {
         "puntos_partidos": 37.0,
@@ -1132,6 +1153,9 @@
             },
             "Argentina_vs_Austria": {
                 "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
             },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
@@ -1277,12 +1301,12 @@
                 "resultado": "Perdedor"
             }
         },
-        "puntos_grupos": 7
+        "puntos_grupos": 10
     },
     "álvaro": {
-        "puntos_partidos": 38.0,
-        "total_aciertos_1x2": 20,
-        "total_aciertos_exactos": 6,
+        "puntos_partidos": 42.0,
+        "total_aciertos_1x2": 21,
+        "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1292,6 +1316,9 @@
             },
             "Argentina_vs_Austria": {
                 "acierto_1x2": false
+            },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
@@ -1414,7 +1441,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -6,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -1432,11 +1459,11 @@
                 "resultado": "Perdedor"
             },
             "J2.2": {
-                "aciertos_1x2": 4,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 5,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 7
+        "puntos_grupos": 10
     }
 }

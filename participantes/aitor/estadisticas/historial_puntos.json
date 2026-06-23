@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 36.0,
+    "puntos_totales": 40.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -17,6 +17,13 @@
             "puntos_conseguidos": 1.0
         },
         "Argentina_vs_Austria": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Jordania_vs_Argelia": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -321,7 +328,7 @@
             "resultado": "Perdedor"
         },
         "J2.2": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 6,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -335,7 +342,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 2
+        "puntos_conseguidos": 5
     },
     "matriz_sorpresas_decepciones": {},
     "posicion_final_ranking": 8

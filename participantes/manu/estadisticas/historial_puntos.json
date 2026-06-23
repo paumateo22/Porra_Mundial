@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 42.0,
+    "puntos_totales": 49.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -22,6 +22,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
+        },
+        "Jordania_vs_Argelia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
         },
         "Portugal_vs_RD Congo": {
             "fase": "grupos",
@@ -321,7 +328,7 @@
             "resultado": "Neutral"
         },
         "J2.2": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 6,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -335,8 +342,8 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 5
+        "puntos_conseguidos": 8
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 2
 }

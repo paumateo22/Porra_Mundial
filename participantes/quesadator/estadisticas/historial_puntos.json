@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 44.0,
+    "puntos_totales": 47.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -22,6 +22,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
+        },
+        "Jordania_vs_Argelia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "Portugal_vs_RD Congo": {
             "fase": "grupos",
@@ -335,8 +342,8 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 7
+        "puntos_conseguidos": 10
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 3
+    "posicion_final_ranking": 5
 }

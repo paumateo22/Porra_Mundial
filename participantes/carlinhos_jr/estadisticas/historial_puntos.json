@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 37.0,
+    "puntos_totales": 41.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -17,6 +17,13 @@
             "puntos_conseguidos": 4.0
         },
         "Argentina_vs_Austria": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Jordania_vs_Argelia": {
             "fase": "grupos",
             "acierto_1x2": false,
             "acierto_exacto": false,
@@ -131,9 +138,9 @@
         "Noruega_vs_Senegal": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": false,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 4.0
         },
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -322,8 +329,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 5,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -335,7 +342,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 5
+        "puntos_conseguidos": 8
     },
     "matriz_sorpresas_decepciones": {},
     "posicion_final_ranking": 7

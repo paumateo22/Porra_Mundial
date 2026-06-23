@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 42.0,
+    "puntos_totales": 43.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -22,6 +22,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
+        },
+        "Jordania_vs_Argelia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "Portugal_vs_RD Congo": {
             "fase": "grupos",
@@ -322,8 +329,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 5,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -335,8 +342,8 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 5
+        "puntos_conseguidos": 8
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 6
 }

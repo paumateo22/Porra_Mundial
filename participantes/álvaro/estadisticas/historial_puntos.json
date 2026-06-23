@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 39.0,
+    "puntos_totales": 48.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -22,6 +22,13 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Jordania_vs_Argelia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
         },
         "Portugal_vs_RD Congo": {
             "fase": "grupos",
@@ -321,9 +328,9 @@
             "resultado": "Perdedor"
         },
         "J2.2": {
-            "aciertos_1x2": 4,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 5,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -335,8 +342,8 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 7
+        "puntos_conseguidos": 10
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 6
+    "posicion_final_ranking": 4
 }

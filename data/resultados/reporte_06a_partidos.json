@@ -13,6 +13,9 @@
             "Argentina_vs_Austria": {
                 "acierto_1x2": true
             },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
+            },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
             },
@@ -136,8 +139,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 34.0,
-        "total_aciertos_1x2": 22,
+        "puntos_partidos": 35.0,
+        "total_aciertos_1x2": 23,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -147,6 +150,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -272,9 +278,9 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 32.0,
+        "puntos_partidos": 35.0,
         "total_aciertos_1x2": 23,
-        "total_aciertos_exactos": 3,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -283,6 +289,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": false
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": false
             },
             "Portugal_vs_RD Congo": {
@@ -421,6 +430,9 @@
             "Argentina_vs_Austria": {
                 "acierto_1x2": true
             },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
+            },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
             },
@@ -544,9 +556,9 @@
         }
     },
     "manu": {
-        "puntos_partidos": 35.0,
-        "total_aciertos_1x2": 23,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 39.0,
+        "total_aciertos_1x2": 24,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -555,6 +567,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -680,8 +695,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 45.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 46.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -691,6 +706,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -816,8 +834,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 33.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 34.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -827,6 +845,9 @@
                 "acierto_1x2": true
             },
             "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
                 "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
@@ -965,6 +986,9 @@
             "Argentina_vs_Austria": {
                 "acierto_1x2": true
             },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
+            },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
             },
@@ -1088,9 +1112,9 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 38.0,
-        "total_aciertos_1x2": 20,
-        "total_aciertos_exactos": 6,
+        "puntos_partidos": 42.0,
+        "total_aciertos_1x2": 21,
+        "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1100,6 +1124,9 @@
             },
             "Argentina_vs_Austria": {
                 "acierto_1x2": false
+            },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": true
             },
             "Portugal_vs_RD Congo": {
                 "acierto_1x2": false
