@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 54.0,
+    "puntos_totales": 51.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -341,9 +341,9 @@
         "Bosnia-Herzegovina_vs_Qatar": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 4.0
+            "puntos_conseguidos": 1.0
         },
         "Suiza_vs_Canadá": {
             "fase": "grupos",
@@ -392,5 +392,5 @@
         "puntos_conseguidos": 8
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 3
+    "posicion_final_ranking": 4
 }
