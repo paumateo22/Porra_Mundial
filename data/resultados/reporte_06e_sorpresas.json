@@ -2,46 +2,271 @@
     "adri": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 2,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "aitor": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "carlinhos_jr": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "javi": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "manu": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "miguel_dykan": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 2,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "pau": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 1,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "quesadator": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 2,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     },
     "álvaro": {
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
-        "detalles_equipos": {}
+        "detalles_equipos": {
+            "Bosnia-Herzegovina": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Qatar": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            }
+        }
     }
 }

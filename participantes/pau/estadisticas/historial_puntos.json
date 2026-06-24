@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 56.0,
+    "puntos_totales": 59.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -389,8 +389,33 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 8
+        "puntos_conseguidos": 11
     },
-    "matriz_sorpresas_decepciones": {},
+    "matriz_sorpresas_decepciones": {
+        "Bosnia-Herzegovina": {
+            "pronostico": 1,
+            "media_grupo": 1.33,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Canadá": {
+            "pronostico": 1,
+            "media_grupo": 0.78,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Qatar": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        }
+    },
     "posicion_final_ranking": 2
 }

@@ -589,7 +589,7 @@
                 "fecha": "2026-06-24T21:00:00",
                 "goles_local": "3",
                 "goles_visitante": "1",
-                "estado": "jugandose"
+                "estado": "finished"
             },
             {
                 "local": "Suiza",
@@ -597,12 +597,11 @@
                 "fecha": "2026-06-24T21:00:00",
                 "goles_local": "2",
                 "goles_visitante": "1",
-                "estado": "jugandose"
+                "estado": "finished"
             }
         ]
     },
     "clasificados_a_dieciseisavos": [
-        "1B",
         "1C",
         "1F",
         "1I",
@@ -633,7 +632,8 @@
         "G2",
         "H1",
         "H2",
-        "México"
+        "México",
+        "Suiza"
     ],
     "eliminatorias": {
         "dieciseisavos": [
@@ -765,7 +765,7 @@
             },
             {
                 "id_partido": 87,
-                "local": "1B",
+                "local": "Suiza",
                 "visitante": "3E/3F/3G/3I/3J",
                 "fecha": "2026-07-03T05:00:00",
                 "estado": "notstarted",
