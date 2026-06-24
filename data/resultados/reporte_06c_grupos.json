@@ -372,9 +372,9 @@
         "puntos_grupos": 5
     },
     "carlinhos_jr": {
-        "puntos_partidos": 39.0,
+        "puntos_partidos": 42.0,
         "total_aciertos_1x2": 27,
-        "total_aciertos_exactos": 4,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -930,9 +930,9 @@
         "puntos_grupos": 8
     },
     "miguel_dykan": {
-        "puntos_partidos": 57.0,
+        "puntos_partidos": 54.0,
         "total_aciertos_1x2": 33,
-        "total_aciertos_exactos": 8,
+        "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
