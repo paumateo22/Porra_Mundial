@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 48.0,
+    "puntos_totales": 49.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -45,6 +45,13 @@
             "puntos_conseguidos": 1.0
         },
         "Portugal_vs_Uzbekistán": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Colombia_vs_RD Congo": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -349,7 +356,7 @@
             "resultado": "Neutral"
         },
         "J2.2": {
-            "aciertos_1x2": 8,
+            "aciertos_1x2": 9,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
