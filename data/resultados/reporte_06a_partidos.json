@@ -314,9 +314,9 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 42.0,
+        "puntos_partidos": 39.0,
         "total_aciertos_1x2": 27,
-        "total_aciertos_exactos": 5,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -785,9 +785,9 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 54.0,
+        "puntos_partidos": 57.0,
         "total_aciertos_1x2": 33,
-        "total_aciertos_exactos": 7,
+        "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -942,9 +942,9 @@
         }
     },
     "pau": {
-        "puntos_partidos": 39.0,
+        "puntos_partidos": 42.0,
         "total_aciertos_1x2": 33,
-        "total_aciertos_exactos": 2,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1256,9 +1256,9 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 49.0,
+        "puntos_partidos": 52.0,
         "total_aciertos_1x2": 25,
-        "total_aciertos_exactos": 8,
+        "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
