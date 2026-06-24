@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 26.0,
-        "total_aciertos_1x2": 23,
+        "puntos_partidos": 27.0,
+        "total_aciertos_1x2": 24,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -33,6 +33,9 @@
             },
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -145,8 +148,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 37.0,
-        "total_aciertos_1x2": 25,
+        "puntos_partidos": 38.0,
+        "total_aciertos_1x2": 26,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -177,6 +180,9 @@
                 "acierto_1x2": true
             },
             "Inglaterra_vs_Ghana": {
+                "acierto_1x2": true
+            },
+            "Panamá_vs_Croacia": {
                 "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
@@ -324,6 +330,9 @@
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
             },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": false
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -469,6 +478,9 @@
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
             },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": false
+            },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
             },
@@ -580,8 +592,8 @@
         }
     },
     "manu": {
-        "puntos_partidos": 40.0,
-        "total_aciertos_1x2": 25,
+        "puntos_partidos": 41.0,
+        "total_aciertos_1x2": 26,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -613,6 +625,9 @@
             },
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -725,8 +740,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 47.0,
-        "total_aciertos_1x2": 29,
+        "puntos_partidos": 48.0,
+        "total_aciertos_1x2": 30,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -758,6 +773,9 @@
             },
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -870,8 +888,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 35.0,
-        "total_aciertos_1x2": 29,
+        "puntos_partidos": 36.0,
+        "total_aciertos_1x2": 30,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -903,6 +921,9 @@
             },
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -1015,8 +1036,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 38.0,
-        "total_aciertos_1x2": 26,
+        "puntos_partidos": 39.0,
+        "total_aciertos_1x2": 27,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1048,6 +1069,9 @@
             },
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false
@@ -1160,8 +1184,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 22,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 23,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1193,6 +1217,9 @@
             },
             "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": true
             },
             "Bélgica_vs_Egipto": {
                 "acierto_1x2": false

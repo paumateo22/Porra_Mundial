@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 42.0,
+    "puntos_totales": 40.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -66,6 +66,13 @@
             "puntos_conseguidos": 1.0
         },
         "Inglaterra_vs_Ghana": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Panamá_vs_Croacia": {
             "fase": "grupos",
             "acierto_1x2": false,
             "acierto_exacto": false,
@@ -343,8 +350,8 @@
         },
         "J2.2": {
             "aciertos_1x2": 6,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
