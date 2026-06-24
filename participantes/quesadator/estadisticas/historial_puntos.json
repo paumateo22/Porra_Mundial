@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 54.0,
+    "puntos_totales": 49.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -347,10 +347,10 @@
         },
         "Suiza_vs_Canadá": {
             "fase": "grupos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -375,9 +375,9 @@
             "resultado": "Perdedor"
         },
         "J3.1": {
-            "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 1,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
@@ -392,5 +392,5 @@
         "puntos_conseguidos": 10
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 2
+    "posicion_final_ranking": 6
 }

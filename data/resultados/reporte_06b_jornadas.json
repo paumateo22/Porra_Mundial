@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 29.0,
-        "total_aciertos_1x2": 26,
+        "puntos_partidos": 30.0,
+        "total_aciertos_1x2": 27,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -152,10 +152,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -4,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -178,15 +178,15 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "aitor": {
-        "puntos_partidos": 40.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 41.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -337,10 +337,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -363,15 +363,15 @@
                 "resultado": "Ganador"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 38.0,
-        "total_aciertos_1x2": 26,
+        "puntos_partidos": 39.0,
+        "total_aciertos_1x2": 27,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -522,10 +522,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -4,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -548,16 +548,16 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "javi": {
-        "puntos_partidos": 38.0,
-        "total_aciertos_1x2": 26,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 42.0,
+        "total_aciertos_1x2": 27,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -707,10 +707,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -733,15 +733,15 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "manu": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -892,10 +892,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -918,15 +918,15 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 53.0,
-        "total_aciertos_1x2": 32,
+        "puntos_partidos": 54.0,
+        "total_aciertos_1x2": 33,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1077,10 +1077,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1103,15 +1103,15 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "pau": {
-        "puntos_partidos": 38.0,
-        "total_aciertos_1x2": 32,
+        "puntos_partidos": 39.0,
+        "total_aciertos_1x2": 33,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1262,10 +1262,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -1288,15 +1288,15 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "quesadator": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 41.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1447,10 +1447,10 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1473,15 +1473,15 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 2,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 1,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 48.0,
-        "total_aciertos_1x2": 24,
+        "puntos_partidos": 49.0,
+        "total_aciertos_1x2": 25,
         "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1632,7 +1632,7 @@
                 "acierto_1x2": false
             },
             "Suiza_vs_Canadá": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": -6,
@@ -1658,7 +1658,7 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 0,
+                "aciertos_1x2": 1,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }

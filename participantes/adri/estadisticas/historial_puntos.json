@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 35.0,
+    "puntos_totales": 38.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -347,10 +347,10 @@
         },
         "Suiza_vs_Canadá": {
             "fase": "grupos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.0
         }
     },
     "desglose_jornadas": {
@@ -375,9 +375,9 @@
             "resultado": "Perdedor"
         },
         "J3.1": {
-            "aciertos_1x2": 1,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "aciertos_1x2": 2,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
