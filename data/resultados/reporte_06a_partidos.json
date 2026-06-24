@@ -326,8 +326,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -466,7 +466,7 @@
                 "acierto_1x2": false
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false

@@ -382,8 +382,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -522,7 +522,7 @@
                 "acierto_1x2": false
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -543,7 +543,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -4,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -566,9 +566,9 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 2,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 3,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
