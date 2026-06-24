@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 50.0,
+    "puntos_totales": 54.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -337,6 +337,20 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Bosnia-Herzegovina_vs_Qatar": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Suiza_vs_Canadá": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -359,6 +373,11 @@
             "aciertos_1x2": 9,
             "puntos_bono": 0,
             "resultado": "Neutral"
+        },
+        "J3.1": {
+            "aciertos_1x2": 1,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -373,5 +392,5 @@
         "puntos_conseguidos": 8
     },
     "matriz_sorpresas_decepciones": {},
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 3
 }

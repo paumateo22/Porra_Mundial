@@ -1,8 +1,8 @@
 {
     "adri": {
-        "puntos_partidos": 28.0,
-        "total_aciertos_1x2": 25,
-        "total_aciertos_exactos": 1,
+        "puntos_partidos": 32.0,
+        "total_aciertos_1x2": 26,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -147,465 +147,18 @@
             },
             "Canadá_vs_Qatar": {
                 "acierto_1x2": true
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
+                "acierto_1x2": false
             }
         }
     },
     "aitor": {
-        "puntos_partidos": 39.0,
-        "total_aciertos_1x2": 27,
-        "total_aciertos_exactos": 4,
-        "historial_jornadas": {
-            "Argentina_vs_Argelia": {
-                "acierto_1x2": true
-            },
-            "Austria_vs_Jordania": {
-                "acierto_1x2": true
-            },
-            "Argentina_vs_Austria": {
-                "acierto_1x2": true
-            },
-            "Jordania_vs_Argelia": {
-                "acierto_1x2": true
-            },
-            "Portugal_vs_RD Congo": {
-                "acierto_1x2": false
-            },
-            "Uzbekistán_vs_Colombia": {
-                "acierto_1x2": true
-            },
-            "Portugal_vs_Uzbekistán": {
-                "acierto_1x2": true
-            },
-            "Colombia_vs_RD Congo": {
-                "acierto_1x2": true
-            },
-            "Inglaterra_vs_Croacia": {
-                "acierto_1x2": true
-            },
-            "Ghana_vs_Panamá": {
-                "acierto_1x2": true
-            },
-            "Inglaterra_vs_Ghana": {
-                "acierto_1x2": true
-            },
-            "Panamá_vs_Croacia": {
-                "acierto_1x2": true
-            },
-            "Bélgica_vs_Egipto": {
-                "acierto_1x2": false
-            },
-            "Irán_vs_Nueva Zelanda": {
-                "acierto_1x2": false
-            },
-            "Bélgica_vs_Irán": {
-                "acierto_1x2": false
-            },
-            "Nueva Zelanda_vs_Egipto": {
-                "acierto_1x2": true
-            },
-            "España_vs_Cabo Verde": {
-                "acierto_1x2": false
-            },
-            "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": false
-            },
-            "España_vs_Arabia Saudita": {
-                "acierto_1x2": true
-            },
-            "Uruguay_vs_Cabo Verde": {
-                "acierto_1x2": false
-            },
-            "Francia_vs_Senegal": {
-                "acierto_1x2": true
-            },
-            "Irak_vs_Noruega": {
-                "acierto_1x2": true
-            },
-            "Francia_vs_Irak": {
-                "acierto_1x2": true
-            },
-            "Noruega_vs_Senegal": {
-                "acierto_1x2": true
-            },
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "Australia_vs_Turquía": {
-                "acierto_1x2": false
-            },
-            "Estados Unidos_vs_Australia": {
-                "acierto_1x2": true
-            },
-            "Turquía_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "Países Bajos_vs_Japón": {
-                "acierto_1x2": false
-            },
-            "Suecia_vs_Túnez": {
-                "acierto_1x2": true
-            },
-            "Países Bajos_vs_Suecia": {
-                "acierto_1x2": false
-            },
-            "Túnez_vs_Japón": {
-                "acierto_1x2": true
-            },
-            "Alemania_vs_Curazao": {
-                "acierto_1x2": true
-            },
-            "Costa de Marfil_vs_Ecuador": {
-                "acierto_1x2": true
-            },
-            "Alemania_vs_Costa de Marfil": {
-                "acierto_1x2": false
-            },
-            "Ecuador_vs_Curazao": {
-                "acierto_1x2": false
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": false
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": false
-            },
-            "República Checa_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "México_vs_Corea del Sur": {
-                "acierto_1x2": false
-            },
-            "Brasil_vs_Marruecos": {
-                "acierto_1x2": false
-            },
-            "Haití_vs_Escocia": {
-                "acierto_1x2": true
-            },
-            "Escocia_vs_Marruecos": {
-                "acierto_1x2": false
-            },
-            "Brasil_vs_Haití": {
-                "acierto_1x2": true
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": true
-            },
-            "Qatar_vs_Suiza": {
-                "acierto_1x2": false
-            },
-            "Suiza_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": true
-            },
-            "Canadá_vs_Qatar": {
-                "acierto_1x2": false
-            }
-        }
-    },
-    "carlinhos_jr": {
-        "puntos_partidos": 37.0,
-        "total_aciertos_1x2": 25,
-        "total_aciertos_exactos": 4,
-        "historial_jornadas": {
-            "Argentina_vs_Argelia": {
-                "acierto_1x2": false
-            },
-            "Austria_vs_Jordania": {
-                "acierto_1x2": true
-            },
-            "Argentina_vs_Austria": {
-                "acierto_1x2": false
-            },
-            "Jordania_vs_Argelia": {
-                "acierto_1x2": false
-            },
-            "Portugal_vs_RD Congo": {
-                "acierto_1x2": false
-            },
-            "Uzbekistán_vs_Colombia": {
-                "acierto_1x2": true
-            },
-            "Portugal_vs_Uzbekistán": {
-                "acierto_1x2": true
-            },
-            "Colombia_vs_RD Congo": {
-                "acierto_1x2": true
-            },
-            "Inglaterra_vs_Croacia": {
-                "acierto_1x2": false
-            },
-            "Ghana_vs_Panamá": {
-                "acierto_1x2": true
-            },
-            "Inglaterra_vs_Ghana": {
-                "acierto_1x2": false
-            },
-            "Panamá_vs_Croacia": {
-                "acierto_1x2": false
-            },
-            "Bélgica_vs_Egipto": {
-                "acierto_1x2": false
-            },
-            "Irán_vs_Nueva Zelanda": {
-                "acierto_1x2": false
-            },
-            "Bélgica_vs_Irán": {
-                "acierto_1x2": true
-            },
-            "Nueva Zelanda_vs_Egipto": {
-                "acierto_1x2": true
-            },
-            "España_vs_Cabo Verde": {
-                "acierto_1x2": false
-            },
-            "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": true
-            },
-            "España_vs_Arabia Saudita": {
-                "acierto_1x2": true
-            },
-            "Uruguay_vs_Cabo Verde": {
-                "acierto_1x2": false
-            },
-            "Francia_vs_Senegal": {
-                "acierto_1x2": false
-            },
-            "Irak_vs_Noruega": {
-                "acierto_1x2": true
-            },
-            "Francia_vs_Irak": {
-                "acierto_1x2": true
-            },
-            "Noruega_vs_Senegal": {
-                "acierto_1x2": true
-            },
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "Australia_vs_Turquía": {
-                "acierto_1x2": false
-            },
-            "Estados Unidos_vs_Australia": {
-                "acierto_1x2": true
-            },
-            "Turquía_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "Países Bajos_vs_Japón": {
-                "acierto_1x2": true
-            },
-            "Suecia_vs_Túnez": {
-                "acierto_1x2": false
-            },
-            "Países Bajos_vs_Suecia": {
-                "acierto_1x2": true
-            },
-            "Túnez_vs_Japón": {
-                "acierto_1x2": true
-            },
-            "Alemania_vs_Curazao": {
-                "acierto_1x2": true
-            },
-            "Costa de Marfil_vs_Ecuador": {
-                "acierto_1x2": false
-            },
-            "Alemania_vs_Costa de Marfil": {
-                "acierto_1x2": true
-            },
-            "Ecuador_vs_Curazao": {
-                "acierto_1x2": false
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": true
-            },
-            "República Checa_vs_Sudáfrica": {
-                "acierto_1x2": true
-            },
-            "México_vs_Corea del Sur": {
-                "acierto_1x2": false
-            },
-            "Brasil_vs_Marruecos": {
-                "acierto_1x2": false
-            },
-            "Haití_vs_Escocia": {
-                "acierto_1x2": true
-            },
-            "Escocia_vs_Marruecos": {
-                "acierto_1x2": true
-            },
-            "Brasil_vs_Haití": {
-                "acierto_1x2": true
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            },
-            "Qatar_vs_Suiza": {
-                "acierto_1x2": false
-            },
-            "Suiza_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            },
-            "Canadá_vs_Qatar": {
-                "acierto_1x2": true
-            }
-        }
-    },
-    "javi": {
-        "puntos_partidos": 37.0,
-        "total_aciertos_1x2": 25,
-        "total_aciertos_exactos": 4,
-        "historial_jornadas": {
-            "Argentina_vs_Argelia": {
-                "acierto_1x2": true
-            },
-            "Austria_vs_Jordania": {
-                "acierto_1x2": true
-            },
-            "Argentina_vs_Austria": {
-                "acierto_1x2": true
-            },
-            "Jordania_vs_Argelia": {
-                "acierto_1x2": false
-            },
-            "Portugal_vs_RD Congo": {
-                "acierto_1x2": false
-            },
-            "Uzbekistán_vs_Colombia": {
-                "acierto_1x2": true
-            },
-            "Portugal_vs_Uzbekistán": {
-                "acierto_1x2": true
-            },
-            "Colombia_vs_RD Congo": {
-                "acierto_1x2": true
-            },
-            "Inglaterra_vs_Croacia": {
-                "acierto_1x2": true
-            },
-            "Ghana_vs_Panamá": {
-                "acierto_1x2": true
-            },
-            "Inglaterra_vs_Ghana": {
-                "acierto_1x2": false
-            },
-            "Panamá_vs_Croacia": {
-                "acierto_1x2": false
-            },
-            "Bélgica_vs_Egipto": {
-                "acierto_1x2": false
-            },
-            "Irán_vs_Nueva Zelanda": {
-                "acierto_1x2": true
-            },
-            "Bélgica_vs_Irán": {
-                "acierto_1x2": false
-            },
-            "Nueva Zelanda_vs_Egipto": {
-                "acierto_1x2": true
-            },
-            "España_vs_Cabo Verde": {
-                "acierto_1x2": false
-            },
-            "Arabia Saudita_vs_Uruguay": {
-                "acierto_1x2": true
-            },
-            "España_vs_Arabia Saudita": {
-                "acierto_1x2": true
-            },
-            "Uruguay_vs_Cabo Verde": {
-                "acierto_1x2": false
-            },
-            "Francia_vs_Senegal": {
-                "acierto_1x2": false
-            },
-            "Irak_vs_Noruega": {
-                "acierto_1x2": true
-            },
-            "Francia_vs_Irak": {
-                "acierto_1x2": true
-            },
-            "Noruega_vs_Senegal": {
-                "acierto_1x2": true
-            },
-            "Estados Unidos_vs_Paraguay": {
-                "acierto_1x2": true
-            },
-            "Australia_vs_Turquía": {
-                "acierto_1x2": false
-            },
-            "Estados Unidos_vs_Australia": {
-                "acierto_1x2": false
-            },
-            "Turquía_vs_Paraguay": {
-                "acierto_1x2": false
-            },
-            "Países Bajos_vs_Japón": {
-                "acierto_1x2": false
-            },
-            "Suecia_vs_Túnez": {
-                "acierto_1x2": true
-            },
-            "Países Bajos_vs_Suecia": {
-                "acierto_1x2": true
-            },
-            "Túnez_vs_Japón": {
-                "acierto_1x2": true
-            },
-            "Alemania_vs_Curazao": {
-                "acierto_1x2": true
-            },
-            "Costa de Marfil_vs_Ecuador": {
-                "acierto_1x2": false
-            },
-            "Alemania_vs_Costa de Marfil": {
-                "acierto_1x2": false
-            },
-            "Ecuador_vs_Curazao": {
-                "acierto_1x2": false
-            },
-            "México_vs_Sudáfrica": {
-                "acierto_1x2": false
-            },
-            "Corea del Sur_vs_República Checa": {
-                "acierto_1x2": false
-            },
-            "República Checa_vs_Sudáfrica": {
-                "acierto_1x2": false
-            },
-            "México_vs_Corea del Sur": {
-                "acierto_1x2": false
-            },
-            "Brasil_vs_Marruecos": {
-                "acierto_1x2": true
-            },
-            "Haití_vs_Escocia": {
-                "acierto_1x2": true
-            },
-            "Escocia_vs_Marruecos": {
-                "acierto_1x2": true
-            },
-            "Brasil_vs_Haití": {
-                "acierto_1x2": true
-            },
-            "Canadá_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            },
-            "Qatar_vs_Suiza": {
-                "acierto_1x2": false
-            },
-            "Suiza_vs_Bosnia-Herzegovina": {
-                "acierto_1x2": false
-            },
-            "Canadá_vs_Qatar": {
-                "acierto_1x2": true
-            }
-        }
-    },
-    "manu": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -639,6 +192,477 @@
                 "acierto_1x2": true
             },
             "Inglaterra_vs_Ghana": {
+                "acierto_1x2": true
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": true
+            },
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
+            "Irán_vs_Nueva Zelanda": {
+                "acierto_1x2": false
+            },
+            "Bélgica_vs_Irán": {
+                "acierto_1x2": false
+            },
+            "Nueva Zelanda_vs_Egipto": {
+                "acierto_1x2": true
+            },
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": false
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
+            },
+            "Uruguay_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": true
+            },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": true
+            },
+            "Francia_vs_Irak": {
+                "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": true
+            },
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
+            },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": false
+            },
+            "Suecia_vs_Túnez": {
+                "acierto_1x2": true
+            },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": false
+            },
+            "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Alemania_vs_Curazao": {
+                "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": true
+            },
+            "Alemania_vs_Costa de Marfil": {
+                "acierto_1x2": false
+            },
+            "Ecuador_vs_Curazao": {
+                "acierto_1x2": false
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "México_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
+            },
+            "Haití_vs_Escocia": {
+                "acierto_1x2": true
+            },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": false
+            },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": false
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
+                "acierto_1x2": false
+            }
+        }
+    },
+    "carlinhos_jr": {
+        "puntos_partidos": 38.0,
+        "total_aciertos_1x2": 26,
+        "total_aciertos_exactos": 4,
+        "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": false
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
+            "Argentina_vs_Austria": {
+                "acierto_1x2": false
+            },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Uzbekistán_vs_Colombia": {
+                "acierto_1x2": true
+            },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
+            "Colombia_vs_RD Congo": {
+                "acierto_1x2": true
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": false
+            },
+            "Ghana_vs_Panamá": {
+                "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": false
+            },
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
+            "Irán_vs_Nueva Zelanda": {
+                "acierto_1x2": false
+            },
+            "Bélgica_vs_Irán": {
+                "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Egipto": {
+                "acierto_1x2": true
+            },
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
+            },
+            "Uruguay_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": false
+            },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": true
+            },
+            "Francia_vs_Irak": {
+                "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": true
+            },
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": true
+            },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Suecia_vs_Túnez": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": true
+            },
+            "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Alemania_vs_Curazao": {
+                "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
+            },
+            "Alemania_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Curazao": {
+                "acierto_1x2": false
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": true
+            },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": true
+            },
+            "México_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": false
+            },
+            "Haití_vs_Escocia": {
+                "acierto_1x2": true
+            },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
+                "acierto_1x2": false
+            }
+        }
+    },
+    "javi": {
+        "puntos_partidos": 38.0,
+        "total_aciertos_1x2": 26,
+        "total_aciertos_exactos": 4,
+        "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
+            "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": false
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Uzbekistán_vs_Colombia": {
+                "acierto_1x2": true
+            },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
+            "Colombia_vs_RD Congo": {
+                "acierto_1x2": true
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": true
+            },
+            "Ghana_vs_Panamá": {
+                "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
+                "acierto_1x2": false
+            },
+            "Panamá_vs_Croacia": {
+                "acierto_1x2": false
+            },
+            "Bélgica_vs_Egipto": {
+                "acierto_1x2": false
+            },
+            "Irán_vs_Nueva Zelanda": {
+                "acierto_1x2": true
+            },
+            "Bélgica_vs_Irán": {
+                "acierto_1x2": false
+            },
+            "Nueva Zelanda_vs_Egipto": {
+                "acierto_1x2": true
+            },
+            "España_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Arabia Saudita_vs_Uruguay": {
+                "acierto_1x2": true
+            },
+            "España_vs_Arabia Saudita": {
+                "acierto_1x2": true
+            },
+            "Uruguay_vs_Cabo Verde": {
+                "acierto_1x2": false
+            },
+            "Francia_vs_Senegal": {
+                "acierto_1x2": false
+            },
+            "Irak_vs_Noruega": {
+                "acierto_1x2": true
+            },
+            "Francia_vs_Irak": {
+                "acierto_1x2": true
+            },
+            "Noruega_vs_Senegal": {
+                "acierto_1x2": true
+            },
+            "Estados Unidos_vs_Paraguay": {
+                "acierto_1x2": true
+            },
+            "Australia_vs_Turquía": {
+                "acierto_1x2": false
+            },
+            "Estados Unidos_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Paraguay": {
+                "acierto_1x2": false
+            },
+            "Países Bajos_vs_Japón": {
+                "acierto_1x2": false
+            },
+            "Suecia_vs_Túnez": {
+                "acierto_1x2": true
+            },
+            "Países Bajos_vs_Suecia": {
+                "acierto_1x2": true
+            },
+            "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Alemania_vs_Curazao": {
+                "acierto_1x2": true
+            },
+            "Costa de Marfil_vs_Ecuador": {
+                "acierto_1x2": false
+            },
+            "Alemania_vs_Costa de Marfil": {
+                "acierto_1x2": false
+            },
+            "Ecuador_vs_Curazao": {
+                "acierto_1x2": false
+            },
+            "México_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
+            "Corea del Sur_vs_República Checa": {
+                "acierto_1x2": false
+            },
+            "República Checa_vs_Sudáfrica": {
+                "acierto_1x2": false
+            },
+            "México_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "Brasil_vs_Marruecos": {
+                "acierto_1x2": true
+            },
+            "Haití_vs_Escocia": {
+                "acierto_1x2": true
+            },
+            "Escocia_vs_Marruecos": {
+                "acierto_1x2": true
+            },
+            "Brasil_vs_Haití": {
+                "acierto_1x2": true
+            },
+            "Canadá_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Qatar_vs_Suiza": {
+                "acierto_1x2": false
+            },
+            "Suiza_vs_Bosnia-Herzegovina": {
+                "acierto_1x2": false
+            },
+            "Canadá_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
+                "acierto_1x2": false
+            }
+        }
+    },
+    "manu": {
+        "puntos_partidos": 46.0,
+        "total_aciertos_1x2": 28,
+        "total_aciertos_exactos": 6,
+        "historial_jornadas": {
+            "Argentina_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Austria_vs_Jordania": {
+                "acierto_1x2": true
+            },
+            "Argentina_vs_Austria": {
+                "acierto_1x2": true
+            },
+            "Jordania_vs_Argelia": {
+                "acierto_1x2": true
+            },
+            "Portugal_vs_RD Congo": {
+                "acierto_1x2": false
+            },
+            "Uzbekistán_vs_Colombia": {
+                "acierto_1x2": true
+            },
+            "Portugal_vs_Uzbekistán": {
+                "acierto_1x2": true
+            },
+            "Colombia_vs_RD Congo": {
+                "acierto_1x2": true
+            },
+            "Inglaterra_vs_Croacia": {
+                "acierto_1x2": true
+            },
+            "Ghana_vs_Panamá": {
+                "acierto_1x2": true
+            },
+            "Inglaterra_vs_Ghana": {
                 "acierto_1x2": false
             },
             "Panamá_vs_Croacia": {
@@ -751,12 +775,18 @@
             },
             "Canadá_vs_Qatar": {
                 "acierto_1x2": false
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
+                "acierto_1x2": false
             }
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 49.0,
-        "total_aciertos_1x2": 31,
+        "puntos_partidos": 50.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -902,12 +932,18 @@
             },
             "Canadá_vs_Qatar": {
                 "acierto_1x2": true
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
+                "acierto_1x2": false
             }
         }
     },
     "pau": {
-        "puntos_partidos": 37.0,
-        "total_aciertos_1x2": 31,
+        "puntos_partidos": 38.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1053,13 +1089,19 @@
             },
             "Canadá_vs_Qatar": {
                 "acierto_1x2": true
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
+                "acierto_1x2": false
             }
         }
     },
     "quesadator": {
-        "puntos_partidos": 40.0,
-        "total_aciertos_1x2": 28,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 45.0,
+        "total_aciertos_1x2": 30,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1203,6 +1245,12 @@
                 "acierto_1x2": true
             },
             "Canadá_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": true
+            },
+            "Suiza_vs_Canadá": {
                 "acierto_1x2": true
             }
         }
@@ -1354,6 +1402,12 @@
                 "acierto_1x2": true
             },
             "Canadá_vs_Qatar": {
+                "acierto_1x2": false
+            },
+            "Bosnia-Herzegovina_vs_Qatar": {
+                "acierto_1x2": false
+            },
+            "Suiza_vs_Canadá": {
                 "acierto_1x2": false
             }
         }
