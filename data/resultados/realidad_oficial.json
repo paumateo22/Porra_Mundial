@@ -537,17 +537,17 @@
                 "local": "Escocia",
                 "visitante": "Brasil",
                 "fecha": "2026-06-25T00:00:01",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "2",
+                "estado": "jugandose"
             },
             {
                 "local": "Marruecos",
                 "visitante": "Haití",
                 "fecha": "2026-06-25T00:00:01",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "1",
+                "estado": "jugandose"
             }
         ],
         "Grupo B": [
@@ -608,7 +608,6 @@
         "1K",
         "1L",
         "2A",
-        "2B",
         "2C",
         "2D",
         "2E",
@@ -627,6 +626,7 @@
         "3E/3H/3I/3J/3K",
         "Alemania",
         "Argentina",
+        "Canadá",
         "Estados Unidos",
         "G1",
         "G2",
@@ -658,7 +658,7 @@
             {
                 "id_partido": 75,
                 "local": "2A",
-                "visitante": "2B",
+                "visitante": "Canadá",
                 "fecha": "2026-06-28T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

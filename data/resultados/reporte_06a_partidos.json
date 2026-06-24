@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 30.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 31.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 1,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -136,6 +136,12 @@
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": true
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -157,8 +163,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 41.0,
-        "total_aciertos_1x2": 29,
+        "puntos_partidos": 42.0,
+        "total_aciertos_1x2": 30,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -292,6 +298,12 @@
             },
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
+            },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": true
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
@@ -450,6 +462,12 @@
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": false
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -471,8 +489,8 @@
         }
     },
     "javi": {
-        "puntos_partidos": 39.0,
-        "total_aciertos_1x2": 27,
+        "puntos_partidos": 40.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -606,6 +624,12 @@
             },
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
+            },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": true
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -764,6 +788,12 @@
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": false
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -785,8 +815,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 54.0,
-        "total_aciertos_1x2": 33,
+        "puntos_partidos": 55.0,
+        "total_aciertos_1x2": 34,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -921,6 +951,12 @@
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": true
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -942,8 +978,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 33,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 34,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1077,6 +1113,12 @@
             },
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
+            },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": true
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
@@ -1235,6 +1277,12 @@
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
             },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": false
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
+            },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
             },
@@ -1391,6 +1439,12 @@
             },
             "Brasil_vs_Haití": {
                 "acierto_1x2": true
+            },
+            "Escocia_vs_Brasil": {
+                "acierto_1x2": false
+            },
+            "Marruecos_vs_Haití": {
+                "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false

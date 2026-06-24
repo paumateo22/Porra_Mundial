@@ -11,14 +11,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Canadá": {
-                "pronostico": 2,
-                "media_grupo": 0.78,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -36,14 +28,6 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
-            "Canadá": {
-                "pronostico": 0,
-                "media_grupo": 0.78,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -71,14 +55,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Canadá": {
-                "pronostico": 0,
-                "media_grupo": 0.78,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -96,14 +72,6 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
                 "media_grupo": 1.33,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
-            "Canadá": {
-                "pronostico": 0,
-                "media_grupo": 0.78,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -131,14 +99,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Canadá": {
-                "pronostico": 0,
-                "media_grupo": 0.78,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -156,14 +116,6 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
-            "Canadá": {
-                "pronostico": 2,
-                "media_grupo": 0.78,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -191,14 +143,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Canadá": {
-                "pronostico": 1,
-                "media_grupo": 0.78,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -221,14 +165,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Canadá": {
-                "pronostico": 2,
-                "media_grupo": 0.78,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -246,14 +182,6 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
                 "media_grupo": 1.33,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
-            "Canadá": {
-                "pronostico": 0,
-                "media_grupo": 0.78,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
