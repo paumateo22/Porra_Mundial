@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 60.0,
+    "puntos_totales": 62.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -257,16 +257,16 @@
         "Curazao_vs_Costa de Marfil": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": false,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 4.0
         },
         "Ecuador_vs_Alemania": {
             "fase": "grupos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 0.0
         },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
@@ -417,7 +417,7 @@
             "resultado": "Neutral"
         },
         "J3.1": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 4,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -445,6 +445,30 @@
         "Corea del Sur": {
             "pronostico": 1,
             "media_grupo": 0.89,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Costa de Marfil": {
+            "pronostico": 1,
+            "media_grupo": 1.44,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Curazao": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Ecuador": {
+            "pronostico": 1,
+            "media_grupo": 1.78,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -483,5 +507,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 8
 }

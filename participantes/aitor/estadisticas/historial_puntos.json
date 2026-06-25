@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 60.0,
+    "puntos_totales": 62.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -418,8 +418,8 @@
         },
         "J3.1": {
             "aciertos_1x2": 6,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
@@ -445,6 +445,30 @@
         "Corea del Sur": {
             "pronostico": 2,
             "media_grupo": 0.89,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Costa de Marfil": {
+            "pronostico": 3,
+            "media_grupo": 1.44,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Curazao": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Ecuador": {
+            "pronostico": 1,
+            "media_grupo": 1.78,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -483,5 +507,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 6
+    "posicion_final_ranking": 7
 }

@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 55.0,
+    "puntos_totales": 65.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -426,7 +426,7 @@
         "formularios": {
             "detalles": {
                 "sorpresa": 0,
-                "decepcion": 0
+                "decepcion": 10
             }
         }
     },
@@ -445,6 +445,30 @@
         "Corea del Sur": {
             "pronostico": 1,
             "media_grupo": 0.89,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Costa de Marfil": {
+            "pronostico": 0,
+            "media_grupo": 1.44,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Decepción",
+            "puntos": 10
+        },
+        "Curazao": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Ecuador": {
+            "pronostico": 3,
+            "media_grupo": 1.78,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -483,5 +507,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 8
+    "posicion_final_ranking": 4
 }

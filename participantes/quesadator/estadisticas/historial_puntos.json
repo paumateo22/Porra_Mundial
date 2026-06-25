@@ -450,6 +450,30 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Costa de Marfil": {
+            "pronostico": 1,
+            "media_grupo": 1.44,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Curazao": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Ecuador": {
+            "pronostico": 1,
+            "media_grupo": 1.78,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Escocia": {
             "pronostico": 1,
             "media_grupo": 1.22,
@@ -483,5 +507,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 6
 }
