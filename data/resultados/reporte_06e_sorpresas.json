@@ -1,11 +1,27 @@
 {
     "adri": {
         "puntos_sorpresas": 0,
-        "puntos_decepciones": 0,
+        "puntos_decepciones": 10,
         "detalles_equipos": {
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Escocia": {
+                "pronostico": 0,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Decepción",
+                "puntos": 10
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -33,6 +49,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Escocia": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -50,6 +82,22 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
                 "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Escocia": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -77,6 +125,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Escocia": {
+                "pronostico": 3,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -94,6 +158,22 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Escocia": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -121,6 +201,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Escocia": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -138,6 +234,22 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Escocia": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -165,6 +277,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Escocia": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -182,6 +310,22 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
                 "media_grupo": 1.33,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Escocia": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Haití": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",

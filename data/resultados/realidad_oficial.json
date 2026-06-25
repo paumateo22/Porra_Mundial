@@ -487,17 +487,17 @@
                 "local": "Sudáfrica",
                 "visitante": "Corea del Sur",
                 "fecha": "2026-06-25T03:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "0",
+                "estado": "jugandose"
             },
             {
                 "local": "República Checa",
                 "visitante": "México",
                 "fecha": "2026-06-25T03:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "0",
+                "estado": "jugandose"
             }
         ],
         "Grupo C": [
@@ -538,16 +538,16 @@
                 "visitante": "Brasil",
                 "fecha": "2026-06-25T00:00:01",
                 "goles_local": "0",
-                "goles_visitante": "2",
-                "estado": "jugandose"
+                "goles_visitante": "3",
+                "estado": "finished"
             },
             {
                 "local": "Marruecos",
                 "visitante": "Haití",
                 "fecha": "2026-06-25T00:00:01",
-                "goles_local": "2",
+                "goles_local": "4",
                 "goles_visitante": "2",
-                "estado": "jugandose"
+                "estado": "finished"
             }
         ],
         "Grupo B": [
@@ -602,13 +602,11 @@
         ]
     },
     "clasificados_a_dieciseisavos": [
-        "1C",
         "1F",
         "1I",
         "1K",
         "1L",
         "2A",
-        "2C",
         "2D",
         "2E",
         "2F",
@@ -626,12 +624,14 @@
         "3E/3H/3I/3J/3K",
         "Alemania",
         "Argentina",
+        "Brasil",
         "Canadá",
         "Estados Unidos",
         "G1",
         "G2",
         "H1",
         "H2",
+        "Marruecos",
         "México",
         "Suiza"
     ],
@@ -667,7 +667,7 @@
             {
                 "id_partido": 76,
                 "local": "1F",
-                "visitante": "2C",
+                "visitante": "Marruecos",
                 "fecha": "2026-06-30T03:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -711,7 +711,7 @@
             },
             {
                 "id_partido": 81,
-                "local": "1C",
+                "local": "Brasil",
                 "visitante": "2F",
                 "fecha": "2026-06-29T19:00:00",
                 "estado": "notstarted",

@@ -1,8 +1,8 @@
 {
     "adri": {
-        "puntos_partidos": 31.0,
-        "total_aciertos_1x2": 28,
-        "total_aciertos_exactos": 1,
+        "puntos_partidos": 36.0,
+        "total_aciertos_1x2": 30,
+        "total_aciertos_exactos": 2,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -124,6 +124,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": true
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": true
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -140,7 +146,7 @@
                 "acierto_1x2": true
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -161,7 +167,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -184,16 +190,16 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 5,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 16
+        "puntos_grupos": 22
     },
     "aitor": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -316,6 +322,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": false
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": true
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -332,7 +344,7 @@
                 "acierto_1x2": true
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
@@ -353,7 +365,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -376,12 +388,12 @@
                 "resultado": "Ganador"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 5,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 8
+        "puntos_grupos": 14
     },
     "carlinhos_jr": {
         "puntos_partidos": 43.0,
@@ -508,6 +520,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": false
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": true
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -524,7 +542,7 @@
                 "acierto_1x2": false
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -545,7 +563,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": -6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -569,15 +587,15 @@
             },
             "J3.1": {
                 "aciertos_1x2": 3,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         },
-        "puntos_grupos": 11
+        "puntos_grupos": 15
     },
     "javi": {
-        "puntos_partidos": 40.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 41.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -700,6 +718,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": false
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": true
             },
@@ -716,7 +740,7 @@
                 "acierto_1x2": true
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -737,7 +761,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -760,16 +784,16 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 4,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 9
+        "puntos_grupos": 15
     },
     "manu": {
-        "puntos_partidos": 44.0,
-        "total_aciertos_1x2": 29,
+        "puntos_partidos": 45.0,
+        "total_aciertos_1x2": 30,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -892,6 +916,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": true
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -908,7 +938,7 @@
                 "acierto_1x2": false
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -929,7 +959,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -952,16 +982,16 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 2,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 3,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         },
-        "puntos_grupos": 11
+        "puntos_grupos": 13
     },
     "miguel_dykan": {
-        "puntos_partidos": 55.0,
-        "total_aciertos_1x2": 34,
+        "puntos_partidos": 58.0,
+        "total_aciertos_1x2": 37,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1084,6 +1114,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": true
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": true
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": true
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -1100,7 +1136,7 @@
                 "acierto_1x2": true
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -1144,16 +1180,16 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 16
+        "puntos_grupos": 22
     },
     "pau": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 34,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 35,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1276,6 +1312,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": false
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": false
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -1292,7 +1334,7 @@
                 "acierto_1x2": true
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": true
@@ -1313,7 +1355,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -1336,16 +1378,16 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 4,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 14
+        "puntos_grupos": 20
     },
     "quesadator": {
-        "puntos_partidos": 41.0,
-        "total_aciertos_1x2": 29,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 31,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1468,6 +1510,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": true
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": false
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": true
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -1484,7 +1532,7 @@
                 "acierto_1x2": false
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -1528,16 +1576,16 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
+                "aciertos_1x2": 3,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
         },
-        "puntos_grupos": 16
+        "puntos_grupos": 22
     },
     "álvaro": {
-        "puntos_partidos": 52.0,
-        "total_aciertos_1x2": 25,
+        "puntos_partidos": 55.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1660,6 +1708,12 @@
             "México_vs_Corea del Sur": {
                 "acierto_1x2": false
             },
+            "Sudáfrica_vs_Corea del Sur": {
+                "acierto_1x2": true
+            },
+            "República Checa_vs_México": {
+                "acierto_1x2": true
+            },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
             },
@@ -1676,7 +1730,7 @@
                 "acierto_1x2": false
             },
             "Marruecos_vs_Haití": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Canadá_vs_Bosnia-Herzegovina": {
                 "acierto_1x2": false
@@ -1697,7 +1751,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -6,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -1720,11 +1774,11 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 1,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 4,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 13
+        "puntos_grupos": 17
     }
 }

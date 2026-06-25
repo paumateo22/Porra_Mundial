@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 59.0,
+    "puntos_totales": 68.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -282,6 +282,20 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Sudáfrica_vs_Corea del Sur": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "República Checa_vs_México": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
         "Brasil_vs_Marruecos": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -319,10 +333,10 @@
         },
         "Marruecos_vs_Haití": {
             "fase": "grupos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.0
         },
         "Canadá_vs_Bosnia-Herzegovina": {
             "fase": "grupos",
@@ -389,9 +403,9 @@
             "resultado": "Neutral"
         },
         "J3.1": {
-            "aciertos_1x2": 1,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 4,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -403,12 +417,28 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 13
+        "puntos_conseguidos": 17
     },
     "matriz_sorpresas_decepciones": {
         "Bosnia-Herzegovina": {
             "pronostico": 2,
             "media_grupo": 1.33,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Escocia": {
+            "pronostico": 1,
+            "media_grupo": 1.22,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Haití": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
