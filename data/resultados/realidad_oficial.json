@@ -487,17 +487,17 @@
                 "local": "Sudáfrica",
                 "visitante": "Corea del Sur",
                 "fecha": "2026-06-25T03:00:00",
-                "goles_local": "0",
+                "goles_local": "1",
                 "goles_visitante": "0",
-                "estado": "jugandose"
+                "estado": "finished"
             },
             {
                 "local": "República Checa",
                 "visitante": "México",
                 "fecha": "2026-06-25T03:00:00",
                 "goles_local": "0",
-                "goles_visitante": "0",
-                "estado": "jugandose"
+                "goles_visitante": "3",
+                "estado": "finished"
             }
         ],
         "Grupo C": [
@@ -606,7 +606,6 @@
         "1I",
         "1K",
         "1L",
-        "2A",
         "2D",
         "2E",
         "2F",
@@ -633,6 +632,7 @@
         "H2",
         "Marruecos",
         "México",
+        "Sudáfrica",
         "Suiza"
     ],
     "eliminatorias": {
@@ -657,7 +657,7 @@
             },
             {
                 "id_partido": 75,
-                "local": "2A",
+                "local": "Sudáfrica",
                 "visitante": "Canadá",
                 "fecha": "2026-06-28T21:00:00",
                 "estado": "notstarted",

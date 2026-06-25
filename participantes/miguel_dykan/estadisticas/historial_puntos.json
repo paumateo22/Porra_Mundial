@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 86.0,
+    "puntos_totales": 82.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -284,17 +284,17 @@
         },
         "Sudáfrica_vs_Corea del Sur": {
             "fase": "grupos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 0.0
         },
         "República Checa_vs_México": {
             "fase": "grupos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 0.0
         },
         "Brasil_vs_Marruecos": {
             "fase": "grupos",
@@ -403,9 +403,9 @@
             "resultado": "Neutral"
         },
         "J3.1": {
-            "aciertos_1x2": 6,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 4,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -423,6 +423,14 @@
         "Bosnia-Herzegovina": {
             "pronostico": 1,
             "media_grupo": 1.33,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Corea del Sur": {
+            "pronostico": 0,
+            "media_grupo": 0.89,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -447,6 +455,14 @@
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "República Checa": {
+            "pronostico": 1,
+            "media_grupo": 0.89,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",

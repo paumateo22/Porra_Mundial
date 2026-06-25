@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 56.0,
+    "puntos_totales": 58.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -404,8 +404,8 @@
         },
         "J3.1": {
             "aciertos_1x2": 3,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -423,6 +423,14 @@
         "Bosnia-Herzegovina": {
             "pronostico": 1,
             "media_grupo": 1.33,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Corea del Sur": {
+            "pronostico": 1,
+            "media_grupo": 0.89,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -447,6 +455,14 @@
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "República Checa": {
+            "pronostico": 2,
+            "media_grupo": 0.89,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",

@@ -1,8 +1,8 @@
 {
     "adri": {
-        "puntos_partidos": 36.0,
+        "puntos_partidos": 39.0,
         "total_aciertos_1x2": 30,
-        "total_aciertos_exactos": 2,
+        "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -125,10 +125,10 @@
                 "acierto_1x2": true
             },
             "Sudáfrica_vs_Corea del Sur": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "República Checa_vs_México": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
@@ -294,10 +294,10 @@
                 "acierto_1x2": false
             },
             "Sudáfrica_vs_Corea del Sur": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "República Checa_vs_México": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
@@ -463,10 +463,10 @@
                 "acierto_1x2": false
             },
             "Sudáfrica_vs_Corea del Sur": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "República Checa_vs_México": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
@@ -507,8 +507,8 @@
         }
     },
     "javi": {
-        "puntos_partidos": 41.0,
-        "total_aciertos_1x2": 29,
+        "puntos_partidos": 42.0,
+        "total_aciertos_1x2": 30,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -635,7 +635,7 @@
                 "acierto_1x2": false
             },
             "República Checa_vs_México": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": true
@@ -845,8 +845,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 58.0,
-        "total_aciertos_1x2": 37,
+        "puntos_partidos": 56.0,
+        "total_aciertos_1x2": 35,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -970,10 +970,10 @@
                 "acierto_1x2": true
             },
             "Sudáfrica_vs_Corea del Sur": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "República Checa_vs_México": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
@@ -1014,8 +1014,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 44.0,
-        "total_aciertos_1x2": 35,
+        "puntos_partidos": 45.0,
+        "total_aciertos_1x2": 36,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1142,7 +1142,7 @@
                 "acierto_1x2": false
             },
             "República Checa_vs_México": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
@@ -1183,8 +1183,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 31,
+        "puntos_partidos": 42.0,
+        "total_aciertos_1x2": 30,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1311,7 +1311,7 @@
                 "acierto_1x2": false
             },
             "República Checa_vs_México": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false
@@ -1352,8 +1352,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 55.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 53.0,
+        "total_aciertos_1x2": 26,
         "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1477,10 +1477,10 @@
                 "acierto_1x2": false
             },
             "Sudáfrica_vs_Corea del Sur": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "República Checa_vs_México": {
-                "acierto_1x2": true
+                "acierto_1x2": false
             },
             "Brasil_vs_Marruecos": {
                 "acierto_1x2": false

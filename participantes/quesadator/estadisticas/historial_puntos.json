@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 63.0,
+    "puntos_totales": 62.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -291,10 +291,10 @@
         },
         "República Checa_vs_México": {
             "fase": "grupos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 1.0
+            "puntos_conseguidos": 0.0
         },
         "Brasil_vs_Marruecos": {
             "fase": "grupos",
@@ -403,7 +403,7 @@
             "resultado": "Perdedor"
         },
         "J3.1": {
-            "aciertos_1x2": 3,
+            "aciertos_1x2": 2,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }
@@ -428,6 +428,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Corea del Sur": {
+            "pronostico": 1,
+            "media_grupo": 0.89,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Escocia": {
             "pronostico": 1,
             "media_grupo": 1.22,
@@ -447,6 +455,14 @@
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "República Checa": {
+            "pronostico": 1,
+            "media_grupo": 0.89,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
