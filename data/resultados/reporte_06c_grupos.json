@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 39.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 41.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -112,6 +112,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -190,7 +196,7 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 7,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -198,8 +204,8 @@
         "puntos_grupos": 23
     },
     "aitor": {
-        "puntos_partidos": 44.0,
-        "total_aciertos_1x2": 32,
+        "puntos_partidos": 45.0,
+        "total_aciertos_1x2": 33,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -310,6 +316,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
             },
@@ -365,7 +377,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -388,16 +400,16 @@
                 "resultado": "Ganador"
             },
             "J3.1": {
-                "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 6,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 15
     },
     "carlinhos_jr": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -508,6 +520,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -586,7 +604,7 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -706,6 +724,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": false
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
             },
@@ -761,7 +785,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -785,15 +809,15 @@
             },
             "J3.1": {
                 "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 15
     },
     "manu": {
-        "puntos_partidos": 45.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 47.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -904,6 +928,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -982,7 +1012,7 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -990,8 +1020,8 @@
         "puntos_grupos": 13
     },
     "miguel_dykan": {
-        "puntos_partidos": 56.0,
-        "total_aciertos_1x2": 35,
+        "puntos_partidos": 57.0,
+        "total_aciertos_1x2": 36,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1102,6 +1132,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -1180,7 +1216,7 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -1188,8 +1224,8 @@
         "puntos_grupos": 22
     },
     "pau": {
-        "puntos_partidos": 45.0,
-        "total_aciertos_1x2": 36,
+        "puntos_partidos": 47.0,
+        "total_aciertos_1x2": 38,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1300,6 +1336,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -1378,7 +1420,7 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 7,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -1386,8 +1428,8 @@
         "puntos_grupos": 20
     },
     "quesadator": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 31,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1498,6 +1540,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -1576,7 +1624,7 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 2,
+                "aciertos_1x2": 3,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
@@ -1584,8 +1632,8 @@
         "puntos_grupos": 22
     },
     "álvaro": {
-        "puntos_partidos": 53.0,
-        "total_aciertos_1x2": 26,
+        "puntos_partidos": 55.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1696,6 +1744,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -1751,7 +1805,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -6,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -1774,9 +1828,9 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 2,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 4,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 17

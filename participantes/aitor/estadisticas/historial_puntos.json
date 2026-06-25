@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 61.0,
+    "puntos_totales": 60.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -254,6 +254,20 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Curazao_vs_Costa de Marfil": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Ecuador_vs_Alemania": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "México_vs_Sudáfrica": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -403,9 +417,9 @@
             "resultado": "Ganador"
         },
         "J3.1": {
-            "aciertos_1x2": 5,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 6,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {

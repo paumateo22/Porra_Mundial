@@ -437,17 +437,17 @@
                 "local": "Curazao",
                 "visitante": "Costa de Marfil",
                 "fecha": "2026-06-25T22:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "1",
+                "estado": "jugandose"
             },
             {
                 "local": "Ecuador",
                 "visitante": "Alemania",
                 "fecha": "2026-06-25T22:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "1",
+                "goles_visitante": "1",
+                "estado": "jugandose"
             }
         ],
         "Grupo A": [

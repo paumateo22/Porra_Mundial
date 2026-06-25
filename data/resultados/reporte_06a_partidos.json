@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 39.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 41.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -112,6 +112,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -169,8 +175,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 44.0,
-        "total_aciertos_1x2": 32,
+        "puntos_partidos": 45.0,
+        "total_aciertos_1x2": 33,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -281,6 +287,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
             },
@@ -338,8 +350,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 28,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 29,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -448,6 +460,12 @@
                 "acierto_1x2": true
             },
             "Ecuador_vs_Curazao": {
+                "acierto_1x2": false
+            },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
                 "acierto_1x2": false
             },
             "México_vs_Sudáfrica": {
@@ -619,6 +637,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": false
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": false
             },
@@ -676,8 +700,8 @@
         }
     },
     "manu": {
-        "puntos_partidos": 45.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 47.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -788,6 +812,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -845,8 +875,8 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 56.0,
-        "total_aciertos_1x2": 35,
+        "puntos_partidos": 57.0,
+        "total_aciertos_1x2": 36,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -957,6 +987,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -1014,8 +1050,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 45.0,
-        "total_aciertos_1x2": 36,
+        "puntos_partidos": 47.0,
+        "total_aciertos_1x2": 38,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1126,6 +1162,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -1183,8 +1225,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 31,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1295,6 +1337,12 @@
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
             },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": false
+            },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
             },
@@ -1352,8 +1400,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 53.0,
-        "total_aciertos_1x2": 26,
+        "puntos_partidos": 55.0,
+        "total_aciertos_1x2": 28,
         "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1463,6 +1511,12 @@
             },
             "Ecuador_vs_Curazao": {
                 "acierto_1x2": false
+            },
+            "Curazao_vs_Costa de Marfil": {
+                "acierto_1x2": true
+            },
+            "Ecuador_vs_Alemania": {
+                "acierto_1x2": true
             },
             "México_vs_Sudáfrica": {
                 "acierto_1x2": true
