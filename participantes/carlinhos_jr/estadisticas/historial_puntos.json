@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 59.0,
+    "puntos_totales": 73.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -198,6 +198,20 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Paraguay_vs_Australia": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Turquía_vs_Estados Unidos": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
         "Países Bajos_vs_Japón": {
             "fase": "grupos",
             "acierto_1x2": true,
@@ -220,6 +234,20 @@
             "puntos_conseguidos": 1.0
         },
         "Túnez_vs_Japón": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Japón_vs_Suecia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Túnez_vs_Países Bajos": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -417,7 +445,7 @@
             "resultado": "Perdedor"
         },
         "J3.1": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 8,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -431,28 +459,12 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 15
+        "puntos_conseguidos": 23
     },
     "matriz_sorpresas_decepciones": {
-        "Bosnia-Herzegovina": {
-            "pronostico": 2,
-            "media_grupo": 1.33,
-            "realidad": 0,
-            "umbral_aplicado": 1.0,
-            "resultado_calculo": "Ninguno",
-            "puntos": 0
-        },
         "Corea del Sur": {
             "pronostico": 1,
             "media_grupo": 0.89,
-            "realidad": 0,
-            "umbral_aplicado": 1.0,
-            "resultado_calculo": "Ninguno",
-            "puntos": 0
-        },
-        "Costa de Marfil": {
-            "pronostico": 3,
-            "media_grupo": 1.44,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -490,6 +502,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Paraguay": {
+            "pronostico": 3,
+            "media_grupo": 1.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -505,7 +525,31 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Suecia": {
+            "pronostico": 0,
+            "media_grupo": 1.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Turquía": {
+            "pronostico": 2,
+            "media_grupo": 2.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Túnez": {
+            "pronostico": 2,
+            "media_grupo": 0.22,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         }
     },
-    "posicion_final_ranking": 9
+    "posicion_final_ranking": 6
 }

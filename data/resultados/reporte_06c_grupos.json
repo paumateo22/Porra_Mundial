@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 40.0,
-        "total_aciertos_1x2": 31,
+        "puntos_partidos": 43.0,
+        "total_aciertos_1x2": 34,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -88,6 +88,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -98,6 +104,12 @@
                 "acierto_1x2": true
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": true
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -196,16 +208,16 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 6,
+                "aciertos_1x2": 9,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 23
+        "puntos_grupos": 34
     },
     "aitor": {
-        "puntos_partidos": 45.0,
-        "total_aciertos_1x2": 33,
+        "puntos_partidos": 48.0,
+        "total_aciertos_1x2": 36,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -292,6 +304,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": true
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -302,6 +320,12 @@
                 "acierto_1x2": false
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": false
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -400,17 +424,17 @@
                 "resultado": "Ganador"
             },
             "J3.1": {
-                "aciertos_1x2": 6,
+                "aciertos_1x2": 9,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 15
+        "puntos_grupos": 20
     },
     "carlinhos_jr": {
-        "puntos_partidos": 48.0,
-        "total_aciertos_1x2": 30,
-        "total_aciertos_exactos": 6,
+        "puntos_partidos": 54.0,
+        "total_aciertos_1x2": 33,
+        "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -496,6 +520,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": true
             },
@@ -506,6 +536,12 @@
                 "acierto_1x2": true
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": true
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -604,16 +640,16 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 8,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 15
+        "puntos_grupos": 23
     },
     "javi": {
-        "puntos_partidos": 42.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 44.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -700,6 +736,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -710,6 +752,12 @@
                 "acierto_1x2": true
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": false
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -808,16 +856,16 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 7,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 15
+        "puntos_grupos": 25
     },
     "manu": {
-        "puntos_partidos": 49.0,
-        "total_aciertos_1x2": 31,
+        "puntos_partidos": 51.0,
+        "total_aciertos_1x2": 33,
         "total_aciertos_exactos": 6,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -904,6 +952,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -914,6 +968,12 @@
                 "acierto_1x2": true
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": false
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -1012,16 +1072,16 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 6,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 13
+        "puntos_grupos": 18
     },
     "miguel_dykan": {
-        "puntos_partidos": 60.0,
-        "total_aciertos_1x2": 36,
+        "puntos_partidos": 63.0,
+        "total_aciertos_1x2": 39,
         "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1108,6 +1168,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": true
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -1118,6 +1184,12 @@
                 "acierto_1x2": true
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": false
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -1216,16 +1288,16 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 8,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 22
+        "puntos_grupos": 32
     },
     "pau": {
-        "puntos_partidos": 46.0,
-        "total_aciertos_1x2": 37,
+        "puntos_partidos": 48.0,
+        "total_aciertos_1x2": 39,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1312,6 +1384,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -1322,6 +1400,12 @@
                 "acierto_1x2": true
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": false
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -1397,7 +1481,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -1420,16 +1504,16 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 6,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "aciertos_1x2": 8,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 20
+        "puntos_grupos": 30
     },
     "quesadator": {
-        "puntos_partidos": 43.0,
-        "total_aciertos_1x2": 31,
+        "puntos_partidos": 46.0,
+        "total_aciertos_1x2": 34,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1516,6 +1600,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": true
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -1526,6 +1616,12 @@
                 "acierto_1x2": true
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": true
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -1601,7 +1697,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1624,17 +1720,17 @@
                 "resultado": "Perdedor"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 6,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 22
+        "puntos_grupos": 32
     },
     "álvaro": {
-        "puntos_partidos": 54.0,
-        "total_aciertos_1x2": 27,
-        "total_aciertos_exactos": 9,
+        "puntos_partidos": 62.0,
+        "total_aciertos_1x2": 29,
+        "total_aciertos_exactos": 11,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1720,6 +1816,12 @@
             "Turquía_vs_Paraguay": {
                 "acierto_1x2": false
             },
+            "Paraguay_vs_Australia": {
+                "acierto_1x2": false
+            },
+            "Turquía_vs_Estados Unidos": {
+                "acierto_1x2": false
+            },
             "Países Bajos_vs_Japón": {
                 "acierto_1x2": false
             },
@@ -1730,6 +1832,12 @@
                 "acierto_1x2": false
             },
             "Túnez_vs_Japón": {
+                "acierto_1x2": true
+            },
+            "Japón_vs_Suecia": {
+                "acierto_1x2": true
+            },
+            "Túnez_vs_Países Bajos": {
                 "acierto_1x2": true
             },
             "Alemania_vs_Curazao": {
@@ -1828,11 +1936,11 @@
                 "resultado": "Neutral"
             },
             "J3.1": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 5,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
         },
-        "puntos_grupos": 17
+        "puntos_grupos": 23
     }
 }

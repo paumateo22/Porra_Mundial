@@ -337,17 +337,17 @@
                 "local": "Paraguay",
                 "visitante": "Australia",
                 "fecha": "2026-06-26T04:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "0",
+                "estado": "finished"
             },
             {
                 "local": "Turquía",
                 "visitante": "Estados Unidos",
                 "fecha": "2026-06-26T04:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "3",
+                "goles_visitante": "2",
+                "estado": "finished"
             }
         ],
         "Grupo F": [
@@ -387,17 +387,17 @@
                 "local": "Japón",
                 "visitante": "Suecia",
                 "fecha": "2026-06-26T01:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "1",
+                "goles_visitante": "1",
+                "estado": "finished"
             },
             {
                 "local": "Túnez",
                 "visitante": "Países Bajos",
                 "fecha": "2026-06-26T01:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "1",
+                "goles_visitante": "3",
+                "estado": "finished"
             }
         ],
         "Grupo E": [
@@ -602,20 +602,15 @@
         ]
     },
     "clasificados_a_dieciseisavos": [
-        "1F",
         "1I",
         "1K",
         "1L",
-        "2D",
-        "2E",
-        "2F",
         "2I",
         "2J",
         "2K",
         "2L",
         "3A/3B/3C/3D/3F",
         "3A/3E/3H/3I/3J",
-        "3B/3E/3F/3I/3J",
         "3C/3D/3F/3G/3H",
         "3C/3E/3F/3H/3I",
         "3D/3E/3I/3J/3L",
@@ -623,15 +618,20 @@
         "3E/3H/3I/3J/3K",
         "Alemania",
         "Argentina",
+        "Australia",
+        "Bosnia-Herzegovina",
         "Brasil",
         "Canadá",
+        "Costa de Marfil",
         "Estados Unidos",
         "G1",
         "G2",
         "H1",
         "H2",
+        "Japón",
         "Marruecos",
         "México",
+        "Países Bajos",
         "Sudáfrica",
         "Suiza"
     ],
@@ -666,7 +666,7 @@
             },
             {
                 "id_partido": 76,
-                "local": "1F",
+                "local": "Países Bajos",
                 "visitante": "Marruecos",
                 "fecha": "2026-06-30T03:00:00",
                 "estado": "notstarted",
@@ -694,7 +694,7 @@
             {
                 "id_partido": 79,
                 "local": "Estados Unidos",
-                "visitante": "3B/3E/3F/3I/3J",
+                "visitante": "Bosnia-Herzegovina",
                 "fecha": "2026-07-02T02:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -712,7 +712,7 @@
             {
                 "id_partido": 81,
                 "local": "Brasil",
-                "visitante": "2F",
+                "visitante": "Japón",
                 "fecha": "2026-06-29T19:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -720,7 +720,7 @@
             },
             {
                 "id_partido": 82,
-                "local": "2E",
+                "local": "Costa de Marfil",
                 "visitante": "2I",
                 "fecha": "2026-06-30T19:00:00",
                 "estado": "notstarted",
@@ -756,7 +756,7 @@
             },
             {
                 "id_partido": 86,
-                "local": "2D",
+                "local": "Australia",
                 "visitante": "G2",
                 "fecha": "2026-07-03T20:00:00",
                 "estado": "notstarted",
