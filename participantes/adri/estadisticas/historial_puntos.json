@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 85.0,
+    "puntos_totales": 89.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -169,6 +169,20 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Senegal_vs_Irak": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Noruega_vs_Francia": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "Estados Unidos_vs_Paraguay": {
             "fase": "grupos",
@@ -446,6 +460,11 @@
         },
         "J3.1": {
             "aciertos_1x2": 9,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
+        },
+        "J3.2": {
+            "aciertos_1x2": 2,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }

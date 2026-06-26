@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 82.0,
+    "puntos_totales": 86.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -164,6 +164,20 @@
             "puntos_conseguidos": 1.0
         },
         "Noruega_vs_Senegal": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Senegal_vs_Irak": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Noruega_vs_Francia": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -448,6 +462,11 @@
             "aciertos_1x2": 8,
             "puntos_bono": 0,
             "resultado": "Neutral"
+        },
+        "J3.2": {
+            "aciertos_1x2": 2,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {

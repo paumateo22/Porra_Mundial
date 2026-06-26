@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 78.0,
+    "puntos_totales": 79.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -164,6 +164,20 @@
             "puntos_conseguidos": 4.0
         },
         "Noruega_vs_Senegal": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Senegal_vs_Irak": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Noruega_vs_Francia": {
             "fase": "grupos",
             "acierto_1x2": false,
             "acierto_exacto": false,
@@ -446,6 +460,11 @@
         },
         "J3.1": {
             "aciertos_1x2": 6,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
+        },
+        "J3.2": {
+            "aciertos_1x2": 1,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
