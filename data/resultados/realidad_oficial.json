@@ -289,15 +289,15 @@
                 "fecha": "2026-06-26T21:00:00",
                 "goles_local": "5",
                 "goles_visitante": "0",
-                "estado": "jugandose"
+                "estado": "finished"
             },
             {
                 "local": "Noruega",
                 "visitante": "Francia",
                 "fecha": "2026-06-26T21:00:00",
                 "goles_local": "1",
-                "goles_visitante": "3",
-                "estado": "jugandose"
+                "goles_visitante": "4",
+                "estado": "finished"
             }
         ],
         "Grupo D": [
@@ -602,10 +602,8 @@
         ]
     },
     "clasificados_a_dieciseisavos": [
-        "1I",
         "1K",
         "1L",
-        "2I",
         "2J",
         "2K",
         "2L",
@@ -624,6 +622,7 @@
         "Canadá",
         "Costa de Marfil",
         "Estados Unidos",
+        "Francia",
         "G1",
         "G2",
         "H1",
@@ -631,6 +630,7 @@
         "Japón",
         "Marruecos",
         "México",
+        "Noruega",
         "Países Bajos",
         "Sudáfrica",
         "Suiza"
@@ -648,7 +648,7 @@
             },
             {
                 "id_partido": 74,
-                "local": "1I",
+                "local": "Francia",
                 "visitante": "3C/3D/3F/3G/3H",
                 "fecha": "2026-06-30T23:00:00",
                 "estado": "notstarted",
@@ -721,7 +721,7 @@
             {
                 "id_partido": 82,
                 "local": "Costa de Marfil",
-                "visitante": "2I",
+                "visitante": "Noruega",
                 "fecha": "2026-06-30T19:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

@@ -43,6 +43,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 0,
                 "media_grupo": 1.0,
@@ -62,6 +70,14 @@
             "República Checa": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -137,6 +153,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -156,6 +180,14 @@
             "República Checa": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -231,6 +263,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 3,
                 "media_grupo": 1.0,
@@ -250,6 +290,14 @@
             "República Checa": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -325,6 +373,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 0,
                 "media_grupo": 1.0,
@@ -344,6 +400,14 @@
             "República Checa": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -419,6 +483,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 0,
                 "media_grupo": 1.0,
@@ -438,6 +510,14 @@
             "República Checa": {
                 "pronostico": 2,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -513,6 +593,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 0,
                 "media_grupo": 1.0,
@@ -532,6 +620,14 @@
             "República Checa": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -607,6 +703,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 2,
                 "media_grupo": 1.0,
@@ -626,6 +730,14 @@
             "República Checa": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -701,6 +813,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -720,6 +840,14 @@
             "República Checa": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -795,6 +923,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Paraguay": {
                 "pronostico": 2,
                 "media_grupo": 1.0,
@@ -814,6 +950,14 @@
             "República Checa": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",

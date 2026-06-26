@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 68.0,
+    "puntos_totales": 70.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -478,7 +478,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 25
+        "puntos_conseguidos": 27
     },
     "matriz_sorpresas_decepciones": {
         "Corea del Sur": {
@@ -521,6 +521,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Irak": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Paraguay": {
             "pronostico": 0,
             "media_grupo": 1.0,
@@ -540,6 +548,14 @@
         "República Checa": {
             "pronostico": 1,
             "media_grupo": 0.89,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Senegal": {
+            "pronostico": 1,
+            "media_grupo": 1.22,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",

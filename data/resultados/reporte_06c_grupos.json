@@ -224,7 +224,7 @@
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 34
+        "puntos_grupos": 38
     },
     "aitor": {
         "puntos_partidos": 49.0,
@@ -451,7 +451,7 @@
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 20
+        "puntos_grupos": 26
     },
     "carlinhos_jr": {
         "puntos_partidos": 54.0,
@@ -678,7 +678,7 @@
                 "resultado": "Perdedor"
             }
         },
-        "puntos_grupos": 23
+        "puntos_grupos": 25
     },
     "javi": {
         "puntos_partidos": 45.0,
@@ -905,7 +905,7 @@
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 25
+        "puntos_grupos": 27
     },
     "manu": {
         "puntos_partidos": 52.0,
@@ -1132,7 +1132,7 @@
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 18
+        "puntos_grupos": 20
     },
     "miguel_dykan": {
         "puntos_partidos": 65.0,
@@ -1359,7 +1359,7 @@
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 32
+        "puntos_grupos": 38
     },
     "pau": {
         "puntos_partidos": 50.0,
@@ -1586,7 +1586,7 @@
                 "resultado": "Ganador"
             }
         },
-        "puntos_grupos": 30
+        "puntos_grupos": 36
     },
     "quesadator": {
         "puntos_partidos": 47.0,
@@ -1813,7 +1813,7 @@
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 32
+        "puntos_grupos": 38
     },
     "álvaro": {
         "puntos_partidos": 63.0,
@@ -2040,6 +2040,6 @@
                 "resultado": "Neutral"
             }
         },
-        "puntos_grupos": 23
+        "puntos_grupos": 29
     }
 }
