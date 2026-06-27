@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 86.0,
+    "puntos_totales": 89.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -117,9 +117,9 @@
         "Nueva Zelanda_vs_Bélgica": {
             "fase": "grupos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
-            "puntos_conseguidos": 4.0
+            "puntos_conseguidos": 1.0
         },
         "Egipto_vs_Irán": {
             "fase": "grupos",
@@ -506,7 +506,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 26
+        "puntos_conseguidos": 32
     },
     "matriz_sorpresas_decepciones": {
         "Arabia Saudita": {
@@ -565,6 +565,22 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Irán": {
+            "pronostico": 1,
+            "media_grupo": 0.22,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Nueva Zelanda": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -614,5 +630,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 6
 }

@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 96.0,
+    "puntos_totales": 102.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -506,7 +506,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 40
+        "puntos_conseguidos": 46
     },
     "matriz_sorpresas_decepciones": {
         "Arabia Saudita": {
@@ -558,6 +558,22 @@
             "puntos": 0
         },
         "Irak": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Irán": {
+            "pronostico": 0,
+            "media_grupo": 0.22,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Nueva Zelanda": {
             "pronostico": 0,
             "media_grupo": 0.0,
             "realidad": 0,

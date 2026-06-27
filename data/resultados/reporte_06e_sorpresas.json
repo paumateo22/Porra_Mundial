@@ -59,6 +59,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -162,6 +178,22 @@
                 "puntos": 0
             },
             "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
@@ -279,6 +311,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -382,6 +430,22 @@
                 "puntos": 0
             },
             "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
@@ -499,6 +563,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irán": {
+                "pronostico": 1,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -602,6 +682,22 @@
                 "puntos": 0
             },
             "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
@@ -719,6 +815,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -829,6 +941,22 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Irán": {
+                "pronostico": 0,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -932,6 +1060,22 @@
                 "puntos": 0
             },
             "Irak": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Irán": {
+                "pronostico": 1,
+                "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,

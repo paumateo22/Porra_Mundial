@@ -187,9 +187,9 @@
                 "local": "Nueva Zelanda",
                 "visitante": "Bélgica",
                 "fecha": "2026-06-27T05:00:00",
-                "goles_local": "0",
-                "goles_visitante": "3",
-                "estado": "jugandose"
+                "goles_local": "1",
+                "goles_visitante": "5",
+                "estado": "finished"
             },
             {
                 "local": "Egipto",
@@ -197,7 +197,7 @@
                 "fecha": "2026-06-27T05:00:00",
                 "goles_local": "1",
                 "goles_visitante": "1",
-                "estado": "jugandose"
+                "estado": "finished"
             }
         ],
         "Grupo H": [
@@ -617,14 +617,14 @@
         "Australia",
         "Bosnia-Herzegovina",
         "Brasil",
+        "Bélgica",
         "Cabo Verde",
         "Canadá",
         "Costa de Marfil",
+        "Egipto",
         "España",
         "Estados Unidos",
         "Francia",
-        "G1",
-        "G2",
         "Japón",
         "Marruecos",
         "México",
