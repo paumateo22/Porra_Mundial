@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 93.0,
+    "puntos_totales": 95.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -108,6 +108,20 @@
             "puntos_conseguidos": 1.0
         },
         "Nueva Zelanda_vs_Egipto": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Nueva Zelanda_vs_Bélgica": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Egipto_vs_Irán": {
             "fase": "grupos",
             "acierto_1x2": true,
             "acierto_exacto": false,
@@ -478,7 +492,7 @@
             "resultado": "Perdedor"
         },
         "J3.2": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 3,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }

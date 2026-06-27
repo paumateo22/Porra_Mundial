@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 83.0,
+    "puntos_totales": 87.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -113,6 +113,20 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
+        },
+        "Nueva Zelanda_vs_Bélgica": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
+        "Egipto_vs_Irán": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
         },
         "España_vs_Cabo Verde": {
             "fase": "grupos",
@@ -478,7 +492,7 @@
             "resultado": "Ganador"
         },
         "J3.2": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }

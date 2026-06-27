@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 47.0,
-        "total_aciertos_1x2": 38,
+        "puntos_partidos": 48.0,
+        "total_aciertos_1x2": 39,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -51,6 +51,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -199,9 +205,9 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 50.0,
-        "total_aciertos_1x2": 38,
-        "total_aciertos_exactos": 4,
+        "puntos_partidos": 54.0,
+        "total_aciertos_1x2": 39,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -250,6 +256,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -398,8 +410,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 54.0,
-        "total_aciertos_1x2": 33,
+        "puntos_partidos": 55.0,
+        "total_aciertos_1x2": 34,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -449,6 +461,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -597,8 +615,8 @@
         }
     },
     "javi": {
-        "puntos_partidos": 46.0,
-        "total_aciertos_1x2": 34,
+        "puntos_partidos": 47.0,
+        "total_aciertos_1x2": 35,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -648,6 +666,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -796,9 +820,9 @@
         }
     },
     "manu": {
-        "puntos_partidos": 56.0,
-        "total_aciertos_1x2": 35,
-        "total_aciertos_exactos": 7,
+        "puntos_partidos": 60.0,
+        "total_aciertos_1x2": 36,
+        "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -847,6 +871,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -995,9 +1025,9 @@
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 66.0,
-        "total_aciertos_1x2": 42,
-        "total_aciertos_exactos": 8,
+        "puntos_partidos": 70.0,
+        "total_aciertos_1x2": 43,
+        "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1046,6 +1076,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -1194,8 +1230,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 51.0,
-        "total_aciertos_1x2": 42,
+        "puntos_partidos": 52.0,
+        "total_aciertos_1x2": 43,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1245,6 +1281,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -1393,8 +1435,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 48.0,
-        "total_aciertos_1x2": 36,
+        "puntos_partidos": 49.0,
+        "total_aciertos_1x2": 37,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1444,6 +1486,12 @@
             },
             "Nueva Zelanda_vs_Egipto": {
                 "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
+                "acierto_1x2": false
             },
             "España_vs_Cabo Verde": {
                 "acierto_1x2": false
@@ -1592,8 +1640,8 @@
         }
     },
     "álvaro": {
-        "puntos_partidos": 63.0,
-        "total_aciertos_1x2": 30,
+        "puntos_partidos": 65.0,
+        "total_aciertos_1x2": 32,
         "total_aciertos_exactos": 11,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1642,6 +1690,12 @@
                 "acierto_1x2": true
             },
             "Nueva Zelanda_vs_Egipto": {
+                "acierto_1x2": true
+            },
+            "Nueva Zelanda_vs_Bélgica": {
+                "acierto_1x2": true
+            },
+            "Egipto_vs_Irán": {
                 "acierto_1x2": true
             },
             "España_vs_Cabo Verde": {
