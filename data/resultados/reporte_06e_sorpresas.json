@@ -3,6 +3,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 10,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 0,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -51,14 +59,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 0,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -83,14 +83,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Suecia": {
-                "pronostico": 2,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Turquía": {
                 "pronostico": 2,
                 "media_grupo": 2.0,
@@ -106,6 +98,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
             }
         }
     },
@@ -113,6 +113,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 1,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 2,
                 "media_grupo": 0.89,
@@ -161,14 +169,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 1,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -193,14 +193,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Suecia": {
-                "pronostico": 1,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Turquía": {
                 "pronostico": 1,
                 "media_grupo": 2.0,
@@ -216,6 +208,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 2,
+                "media_grupo": 1.11,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
             }
         }
     },
@@ -223,6 +223,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 1,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -271,14 +279,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 3,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -303,14 +303,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Suecia": {
-                "pronostico": 0,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Turquía": {
                 "pronostico": 2,
                 "media_grupo": 2.0,
@@ -322,6 +314,14 @@
             "Túnez": {
                 "pronostico": 2,
                 "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -333,6 +333,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 1,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -381,14 +389,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 0,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -413,14 +413,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Suecia": {
-                "pronostico": 1,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Turquía": {
                 "pronostico": 2,
                 "media_grupo": 2.0,
@@ -432,6 +424,14 @@
             "Túnez": {
                 "pronostico": 0,
                 "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -443,6 +443,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 0,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -491,14 +499,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 0,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -523,14 +523,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Suecia": {
-                "pronostico": 2,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Turquía": {
                 "pronostico": 1,
                 "media_grupo": 2.0,
@@ -542,6 +534,14 @@
             "Túnez": {
                 "pronostico": 0,
                 "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -553,6 +553,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 1,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -601,14 +609,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 0,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -633,14 +633,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Suecia": {
-                "pronostico": 1,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Turquía": {
                 "pronostico": 2,
                 "media_grupo": 2.0,
@@ -652,6 +644,14 @@
             "Túnez": {
                 "pronostico": 0,
                 "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -663,6 +663,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 0,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 2,
                 "media_grupo": 0.89,
@@ -711,14 +719,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 2,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -743,14 +743,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Suecia": {
-                "pronostico": 0,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Turquía": {
                 "pronostico": 3,
                 "media_grupo": 2.0,
@@ -762,6 +754,14 @@
             "Túnez": {
                 "pronostico": 0,
                 "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -773,6 +773,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 1,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -821,14 +829,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 1,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -848,14 +848,6 @@
             "Senegal": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
-            "Suecia": {
-                "pronostico": 1,
-                "media_grupo": 1.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -876,6 +868,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
             }
         }
     },
@@ -883,6 +883,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Arabia Saudita": {
+                "pronostico": 1,
+                "media_grupo": 0.67,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -931,14 +939,6 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
-            "Paraguay": {
-                "pronostico": 2,
-                "media_grupo": 1.0,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
             "Qatar": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -958,14 +958,6 @@
             "Senegal": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
-                "realidad": 0,
-                "umbral_aplicado": 1.0,
-                "resultado_calculo": "Ninguno",
-                "puntos": 0
-            },
-            "Suecia": {
-                "pronostico": 1,
-                "media_grupo": 1.0,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -982,6 +974,14 @@
             "Túnez": {
                 "pronostico": 0,
                 "media_grupo": 0.22,
+                "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Uruguay": {
+                "pronostico": 1,
+                "media_grupo": 1.11,
                 "realidad": 0,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",

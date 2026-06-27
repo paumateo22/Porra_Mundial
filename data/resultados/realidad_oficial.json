@@ -239,7 +239,7 @@
                 "fecha": "2026-06-27T02:00:00",
                 "goles_local": "0",
                 "goles_visitante": "0",
-                "estado": "jugandose"
+                "estado": "finished"
             },
             {
                 "local": "Uruguay",
@@ -247,7 +247,7 @@
                 "fecha": "2026-06-27T02:00:00",
                 "goles_local": "0",
                 "goles_visitante": "1",
-                "estado": "jugandose"
+                "estado": "finished"
             }
         ],
         "Grupo I": [
@@ -607,9 +607,7 @@
         "2J",
         "2K",
         "2L",
-        "3A/3B/3C/3D/3F",
         "3A/3E/3H/3I/3J",
-        "3C/3D/3F/3G/3H",
         "3C/3E/3F/3H/3I",
         "3D/3E/3I/3J/3L",
         "3E/3F/3G/3I/3J",
@@ -619,20 +617,22 @@
         "Australia",
         "Bosnia-Herzegovina",
         "Brasil",
+        "Cabo Verde",
         "Canadá",
         "Costa de Marfil",
+        "España",
         "Estados Unidos",
         "Francia",
         "G1",
         "G2",
-        "H1",
-        "H2",
         "Japón",
         "Marruecos",
         "México",
         "Noruega",
+        "Paraguay",
         "Países Bajos",
         "Sudáfrica",
+        "Suecia",
         "Suiza"
     ],
     "eliminatorias": {
@@ -640,7 +640,7 @@
             {
                 "id_partido": 73,
                 "local": "Alemania",
-                "visitante": "3A/3B/3C/3D/3F",
+                "visitante": "Paraguay",
                 "fecha": "2026-06-29T22:30:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -649,7 +649,7 @@
             {
                 "id_partido": 74,
                 "local": "Francia",
-                "visitante": "3C/3D/3F/3G/3H",
+                "visitante": "Suecia",
                 "fecha": "2026-06-30T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

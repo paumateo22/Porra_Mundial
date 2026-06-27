@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 86.0,
+    "puntos_totales": 95.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -492,9 +492,17 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 38
+        "puntos_conseguidos": 47
     },
     "matriz_sorpresas_decepciones": {
+        "Arabia Saudita": {
+            "pronostico": 1,
+            "media_grupo": 0.67,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Corea del Sur": {
             "pronostico": 1,
             "media_grupo": 0.89,
@@ -543,14 +551,6 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
-        "Paraguay": {
-            "pronostico": 1,
-            "media_grupo": 1.0,
-            "realidad": 0,
-            "umbral_aplicado": 1.0,
-            "resultado_calculo": "Ninguno",
-            "puntos": 0
-        },
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -575,14 +575,6 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
-        "Suecia": {
-            "pronostico": 1,
-            "media_grupo": 1.0,
-            "realidad": 0,
-            "umbral_aplicado": 1.0,
-            "resultado_calculo": "Ninguno",
-            "puntos": 0
-        },
         "Turquía": {
             "pronostico": 2,
             "media_grupo": 2.0,
@@ -594,6 +586,14 @@
         "Túnez": {
             "pronostico": 0,
             "media_grupo": 0.22,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Uruguay": {
+            "pronostico": 1,
+            "media_grupo": 1.11,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
