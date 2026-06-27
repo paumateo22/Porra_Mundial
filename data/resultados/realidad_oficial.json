@@ -237,17 +237,17 @@
                 "local": "Cabo Verde",
                 "visitante": "Arabia Saudita",
                 "fecha": "2026-06-27T02:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "0",
+                "estado": "jugandose"
             },
             {
                 "local": "Uruguay",
                 "visitante": "España",
                 "fecha": "2026-06-27T02:00:00",
-                "goles_local": "",
-                "goles_visitante": "",
-                "estado": "notstarted"
+                "goles_local": "0",
+                "goles_visitante": "1",
+                "estado": "jugandose"
             }
         ],
         "Grupo I": [

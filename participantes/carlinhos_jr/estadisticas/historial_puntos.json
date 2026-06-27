@@ -142,6 +142,20 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Cabo Verde_vs_Arabia Saudita": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Uruguay_vs_España": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Francia_vs_Senegal": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -586,5 +600,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 8
 }

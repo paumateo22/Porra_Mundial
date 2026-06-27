@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 109.0,
+    "puntos_totales": 108.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -141,6 +141,20 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Cabo Verde_vs_Arabia Saudita": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Uruguay_vs_España": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "Francia_vs_Senegal": {
             "fase": "grupos",
@@ -464,9 +478,9 @@
             "resultado": "Neutral"
         },
         "J3.2": {
-            "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 3,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
