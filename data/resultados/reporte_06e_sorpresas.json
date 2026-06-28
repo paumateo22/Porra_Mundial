@@ -11,6 +11,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 2,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -99,6 +107,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Sudáfrica": {
+                "pronostico": 1,
+                "media_grupo": 0.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Turquía": {
                 "pronostico": 2,
                 "media_grupo": 2.0,
@@ -141,6 +157,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -229,6 +253,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 2,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -279,6 +311,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -363,6 +403,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -413,6 +461,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -497,6 +553,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -547,6 +611,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -631,6 +703,14 @@
                 "pronostico": 2,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -681,6 +761,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 2,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -765,6 +853,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -815,6 +911,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 1,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 2,
                 "media_grupo": 0.89,
@@ -899,6 +1003,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -949,6 +1061,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 2,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1033,6 +1153,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1083,6 +1211,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Canadá": {
+                "pronostico": 0,
+                "media_grupo": 0.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -1167,6 +1303,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Sudáfrica": {
+                "pronostico": 0,
+                "media_grupo": 0.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
