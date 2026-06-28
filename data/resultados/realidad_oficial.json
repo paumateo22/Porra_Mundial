@@ -684,7 +684,7 @@
             },
             {
                 "id_partido": 78,
-                "local": "H1",
+                "local": "España",
                 "visitante": "Austria",
                 "fecha": "2026-07-02T21:00:00",
                 "estado": "notstarted",
@@ -702,7 +702,7 @@
             },
             {
                 "id_partido": 80,
-                "local": "G1",
+                "local": "Bélgica",
                 "visitante": "Senegal",
                 "fecha": "2026-07-01T22:00:00",
                 "estado": "notstarted",
@@ -748,7 +748,7 @@
             {
                 "id_partido": 85,
                 "local": "Argentina",
-                "visitante": "H2",
+                "visitante": "Cabo Verde",
                 "fecha": "2026-07-04T00:00:01",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -757,7 +757,7 @@
             {
                 "id_partido": 86,
                 "local": "Australia",
-                "visitante": "G2",
+                "visitante": "Egipto",
                 "fecha": "2026-07-03T20:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
