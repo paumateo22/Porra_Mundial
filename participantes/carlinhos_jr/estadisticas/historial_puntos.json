@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 86.0,
+    "puntos_totales": 109.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -30,6 +30,20 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
         },
+        "Argelia_vs_Austria": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
+        },
+        "Jordania_vs_Argentina": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 4.0
+        },
         "Portugal_vs_RD Congo": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -58,6 +72,20 @@
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 1.0
         },
+        "RD Congo_vs_Uzbekistán": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Colombia_vs_Portugal": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
         "Inglaterra_vs_Croacia": {
             "fase": "grupos",
             "acierto_1x2": false,
@@ -85,6 +113,20 @@
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 0.0
+        },
+        "Croacia_vs_Ghana": {
+            "fase": "grupos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 0.0
+        },
+        "Panamá_vs_Inglaterra": {
+            "fase": "grupos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "puntos_conseguidos": 1.0
         },
         "Bélgica_vs_Egipto": {
             "fase": "grupos",
@@ -492,7 +534,7 @@
             "resultado": "Neutral"
         },
         "J3.2": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 4,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }
@@ -506,7 +548,7 @@
         }
     },
     "resolucion_fase_grupos": {
-        "puntos_conseguidos": 37
+        "puntos_conseguidos": 54
     },
     "matriz_sorpresas_decepciones": {
         "Arabia Saudita": {
@@ -528,14 +570,6 @@
         "Curazao": {
             "pronostico": 0,
             "media_grupo": 0.0,
-            "realidad": 0,
-            "umbral_aplicado": 1.0,
-            "resultado_calculo": "Ninguno",
-            "puntos": 0
-        },
-        "Ecuador": {
-            "pronostico": 4,
-            "media_grupo": 1.78,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -573,7 +607,23 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Jordania": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Nueva Zelanda": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Panamá": {
             "pronostico": 0,
             "media_grupo": 0.0,
             "realidad": 0,
@@ -592,14 +642,6 @@
         "República Checa": {
             "pronostico": 0,
             "media_grupo": 0.89,
-            "realidad": 0,
-            "umbral_aplicado": 1.0,
-            "resultado_calculo": "Ninguno",
-            "puntos": 0
-        },
-        "Senegal": {
-            "pronostico": 1,
-            "media_grupo": 1.22,
             "realidad": 0,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
@@ -628,7 +670,15 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Uzbekistán": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
         }
     },
-    "posicion_final_ranking": 8
+    "posicion_final_ranking": 7
 }
