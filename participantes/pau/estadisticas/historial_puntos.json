@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 132.5,
+    "puntos_totales": 127.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -508,11 +508,11 @@
         },
         "ID_75": {
             "fase": "dieciseisavos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.5,
             "racha_detectada": "0 (Sudáfrica) / 1 (Canadá)",
-            "puntos_conseguidos": 1.5
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -547,9 +547,9 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.1": {
-            "aciertos_1x2": 1,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
@@ -693,5 +693,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 2
+    "posicion_final_ranking": 4
 }
