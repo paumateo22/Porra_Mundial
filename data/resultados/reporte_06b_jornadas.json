@@ -219,9 +219,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -252,6 +255,11 @@
                 "aciertos_1x2": 10,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
@@ -475,9 +483,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -508,6 +519,11 @@
                 "aciertos_1x2": 6,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
@@ -731,9 +747,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -6,
+        "puntos_jornadas": -8,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -762,6 +781,11 @@
             },
             "J3.2": {
                 "aciertos_1x2": 4,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 0,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
@@ -987,9 +1011,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1020,6 +1047,11 @@
                 "aciertos_1x2": 7,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
@@ -1243,9 +1275,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1276,6 +1311,11 @@
                 "aciertos_1x2": 7,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
@@ -1499,9 +1539,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1532,12 +1575,17 @@
                 "aciertos_1x2": 7,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
     "pau": {
-        "puntos_partidos": 58.0,
-        "total_aciertos_1x2": 46,
+        "puntos_partidos": 59.5,
+        "total_aciertos_1x2": 47,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1755,9 +1803,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -1788,6 +1839,11 @@
                 "aciertos_1x2": 7,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
@@ -2011,9 +2067,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": false
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -2044,12 +2103,17 @@
                 "aciertos_1x2": 7,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 0,
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 69.0,
-        "total_aciertos_1x2": 36,
+        "puntos_partidos": 70.0,
+        "total_aciertos_1x2": 37,
         "total_aciertos_exactos": 11,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -2267,9 +2331,12 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -6,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -2300,6 +2367,11 @@
                 "aciertos_1x2": 7,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
+            },
+            "dieciseisavos.1": {
+                "aciertos_1x2": 1,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     }

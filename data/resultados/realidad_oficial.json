@@ -660,9 +660,9 @@
                 "local": "Sudáfrica",
                 "visitante": "Canadá",
                 "fecha": "2026-06-28T21:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "jugandose",
+                "goles_local": "0",
+                "goles_visitante": "0"
             },
             {
                 "id_partido": 76,

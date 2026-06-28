@@ -219,6 +219,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         }
     },
@@ -442,6 +445,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         }
     },
@@ -665,6 +671,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         }
     },
@@ -888,6 +897,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         }
     },
@@ -1111,6 +1123,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         }
     },
@@ -1334,12 +1349,15 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         }
     },
     "pau": {
-        "puntos_partidos": 58.0,
-        "total_aciertos_1x2": 46,
+        "puntos_partidos": 59.5,
+        "total_aciertos_1x2": 47,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1556,6 +1574,9 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
+                "acierto_1x2": true
+            },
+            "ID_75": {
                 "acierto_1x2": true
             }
         }
@@ -1780,12 +1801,15 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": false
+            },
+            "ID_75": {
+                "acierto_1x2": false
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 69.0,
-        "total_aciertos_1x2": 36,
+        "puntos_partidos": 70.0,
+        "total_aciertos_1x2": 37,
         "total_aciertos_exactos": 11,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -2002,6 +2026,9 @@
                 "acierto_1x2": false
             },
             "Suiza_vs_Canadá": {
+                "acierto_1x2": true
+            },
+            "ID_75": {
                 "acierto_1x2": true
             }
         }

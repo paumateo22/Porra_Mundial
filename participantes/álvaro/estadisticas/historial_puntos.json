@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 121.0,
+    "puntos_totales": 124.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -505,6 +505,14 @@
             "acierto_exacto": true,
             "multiplicador_aplicado": 1.0,
             "puntos_conseguidos": 4.0
+        },
+        "ID_75": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "racha_detectada": "0 (Sudáfrica) / 0 (Canadá)",
+            "puntos_conseguidos": 1.0
         }
     },
     "desglose_jornadas": {
@@ -537,6 +545,11 @@
             "aciertos_1x2": 7,
             "puntos_bono": 0,
             "resultado": "Neutral"
+        },
+        "dieciseisavos.1": {
+            "aciertos_1x2": 1,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
@@ -680,5 +693,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 4
 }
