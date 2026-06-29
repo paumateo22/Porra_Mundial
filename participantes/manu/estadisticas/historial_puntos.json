@@ -580,6 +580,14 @@
         "puntos_conseguidos": 54
     },
     "matriz_sorpresas_decepciones": {
+        "Alemania": {
+            "pronostico": 2,
+            "media_grupo": 1.78,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Arabia Saudita": {
             "pronostico": 0,
             "media_grupo": 0.67,

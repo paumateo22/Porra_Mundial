@@ -3,6 +3,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 10,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 0,
                 "media_grupo": 0.67,
@@ -153,6 +161,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 1,
                 "media_grupo": 0.67,
@@ -303,6 +319,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 1,
                 "media_grupo": 0.67,
@@ -453,6 +477,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 1,
                 "media_grupo": 0.67,
@@ -603,6 +635,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 0,
                 "media_grupo": 0.67,
@@ -753,6 +793,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 1,
                 "media_grupo": 0.67,
@@ -903,6 +951,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 0,
                 "media_grupo": 0.67,
@@ -1053,6 +1109,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 1,
                 "media_grupo": 0.67,
@@ -1203,6 +1267,14 @@
         "puntos_sorpresas": 0,
         "puntos_decepciones": 0,
         "detalles_equipos": {
+            "Alemania": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Arabia Saudita": {
                 "pronostico": 1,
                 "media_grupo": 0.67,
