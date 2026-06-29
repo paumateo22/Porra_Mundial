@@ -464,9 +464,9 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 64.0,
-        "total_aciertos_1x2": 39,
-        "total_aciertos_exactos": 8,
+        "puntos_partidos": 72.0,
+        "total_aciertos_1x2": 40,
+        "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -685,7 +685,7 @@
                 "acierto_1x2": true
             },
             "ID_73": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "ID_75": {
                 "acierto_1x2": true

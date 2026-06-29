@@ -230,7 +230,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -264,8 +264,8 @@
             },
             "dieciseisavos.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 69
@@ -501,7 +501,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -535,16 +535,16 @@
             },
             "dieciseisavos.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 51
     },
     "carlinhos_jr": {
-        "puntos_partidos": 64.0,
-        "total_aciertos_1x2": 39,
-        "total_aciertos_exactos": 8,
+        "puntos_partidos": 72.0,
+        "total_aciertos_1x2": 40,
+        "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": false
@@ -763,7 +763,7 @@
                 "acierto_1x2": true
             },
             "ID_73": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             },
             "ID_75": {
                 "acierto_1x2": true
@@ -805,7 +805,7 @@
                 "resultado": "Perdedor"
             },
             "dieciseisavos.1": {
-                "aciertos_1x2": 2,
+                "aciertos_1x2": 3,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -1043,7 +1043,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": -2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1077,8 +1077,8 @@
             },
             "dieciseisavos.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 52
@@ -1585,7 +1585,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1619,8 +1619,8 @@
             },
             "dieciseisavos.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 71
@@ -2127,7 +2127,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 2,
+        "puntos_jornadas": 0,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -2161,8 +2161,8 @@
             },
             "dieciseisavos.1": {
                 "aciertos_1x2": 2,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 68
