@@ -220,6 +220,9 @@
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
             },
+            "ID_73": {
+                "acierto_1x2": false
+            },
             "ID_75": {
                 "acierto_1x2": true
             },
@@ -487,6 +490,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_73": {
+                "acierto_1x2": false
             },
             "ID_75": {
                 "acierto_1x2": true
@@ -756,6 +762,9 @@
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
             },
+            "ID_73": {
+                "acierto_1x2": false
+            },
             "ID_75": {
                 "acierto_1x2": true
             },
@@ -1023,6 +1032,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_73": {
+                "acierto_1x2": false
             },
             "ID_75": {
                 "acierto_1x2": true
@@ -1292,6 +1304,9 @@
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
             },
+            "ID_73": {
+                "acierto_1x2": false
+            },
             "ID_75": {
                 "acierto_1x2": false
             },
@@ -1559,6 +1574,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_73": {
+                "acierto_1x2": false
             },
             "ID_75": {
                 "acierto_1x2": true
@@ -1828,6 +1846,9 @@
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
             },
+            "ID_73": {
+                "acierto_1x2": false
+            },
             "ID_75": {
                 "acierto_1x2": false
             },
@@ -2094,6 +2115,9 @@
                 "acierto_1x2": true
             },
             "Suiza_vs_Canadá": {
+                "acierto_1x2": false
+            },
+            "ID_73": {
                 "acierto_1x2": false
             },
             "ID_75": {
@@ -2363,6 +2387,9 @@
             },
             "Suiza_vs_Canadá": {
                 "acierto_1x2": true
+            },
+            "ID_73": {
+                "acierto_1x2": false
             },
             "ID_75": {
                 "acierto_1x2": false

@@ -642,9 +642,9 @@
                 "local": "Alemania",
                 "visitante": "Paraguay",
                 "fecha": "2026-06-29T22:30:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "jugandose",
+                "goles_local": "0",
+                "goles_visitante": "0"
             },
             {
                 "id_partido": 74,
