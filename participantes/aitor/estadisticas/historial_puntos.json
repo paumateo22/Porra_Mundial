@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 114.0,
+    "puntos_totales": 112.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -508,11 +508,11 @@
         },
         "ID_73": {
             "fase": "dieciseisavos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Alemania) / 1 (Paraguay)",
-            "puntos_conseguidos": 2.0
+            "puntos_conseguidos": 0.0
         },
         "ID_75": {
             "fase": "dieciseisavos",
@@ -563,7 +563,7 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.1": {
-            "aciertos_1x2": 3,
+            "aciertos_1x2": 2,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -725,5 +725,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 8
 }
