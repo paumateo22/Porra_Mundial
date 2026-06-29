@@ -24,33 +24,45 @@ def arrastrar_clasificados():
     for fase, partidos in realidad.get("eliminatorias", {}).items():
         for p in partidos:
             if p.get("estado") == "finished" and p.get("pasa") and p.get("pasa") != "TBD":
-                id_p = p.get("id_partido")
+                id_p = str(p.get("id_partido"))
                 ganador = p["pasa"]
                 
-                # Averiguar quién es el perdedor (para el 3º y 4º puesto)
-                if p["local"] == ganador:
-                    perdedor = p["visitante"]
+                if p.get("local") == ganador:
+                    perdedor = p.get("visitante")
                 else:
-                    perdedor = p["local"]
+                    perdedor = p.get("local")
                 
+                # Guardamos todas las nomenclaturas posibles para que el match sea perfecto
                 diccionario_avances[f"Ganador {id_p}"] = ganador
+                diccionario_avances[f"W{id_p}"] = ganador
                 diccionario_avances[f"Perdedor {id_p}"] = perdedor
+                diccionario_avances[f"L{id_p}"] = perdedor
 
-    # 2. Aplicar los avances en los cruces posteriores
-    cambios = 0
-    for fase, partidos in realidad.get("eliminatorias", {}).items():
-        for p in partidos:
-            if p["local"] in diccionario_avances:
-                p["local"] = diccionario_avances[p["local"]]
-                cambios += 1
-            if p["visitante"] in diccionario_avances:
-                p["visitante"] = diccionario_avances[p["visitante"]]
-                cambios += 1
+    # 2. Aplicar los avances en cascada (bucle por si hay saltos múltiples en un día)
+    cambios_totales = 0
+    while True:
+        cambios_iter = 0
+        for fase, partidos in realidad.get("eliminatorias", {}).items():
+            for p in partidos:
+                loc = str(p.get("local", ""))
+                vis = str(p.get("visitante", ""))
+                
+                if loc in diccionario_avances and p["local"] != diccionario_avances[loc]:
+                    p["local"] = diccionario_avances[loc]
+                    cambios_iter += 1
+                    
+                if vis in diccionario_avances and p["visitante"] != diccionario_avances[vis]:
+                    p["visitante"] = diccionario_avances[vis]
+                    cambios_iter += 1
+                    
+        cambios_totales += cambios_iter
+        if cambios_iter == 0:
+            break
 
-    if cambios > 0:
+    if cambios_totales > 0:
         with open(ruta_realidad, 'w', encoding='utf-8') as f:
             json.dump(realidad, f, ensure_ascii=False, indent=4)
-        print(f"✅ Cuadro actualizado: Se han arrastrado {cambios} equipos a la siguiente ronda.")
+        print(f"✅ Cuadro actualizado: Se han propagado {cambios_totales} equipos a las siguientes rondas.")
     else:
         print("ℹ️ No hay nuevos clasificados que arrastrar en el cuadro.")
 

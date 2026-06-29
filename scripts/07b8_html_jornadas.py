@@ -1,6 +1,5 @@
 import sys
 import json
-import re
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -37,6 +36,13 @@ def get_nombre_bonito(jornada_key):
         "semifinales": "Semifinales", "finales": "Finales"
     }
     return mapeo.get(jornada_key, jornada_key.upper())
+
+def acortar_nombre(n):
+    if not n: return ""
+    if n.startswith("Ganador "): return "W" + n.split(" ")[1]
+    if n.startswith("Perdedor "): return "L" + n.split(" ")[1]
+    if n.startswith("W") and n[1:].isdigit(): return n
+    return n[:3].upper()
 
 def generar_jornadas_html():
     print("=======================================================")
@@ -189,7 +195,6 @@ def generar_jornadas_html():
                     if gl_p == gl_r and gv_p == gv_r:
                         count_1x2 += 1
                         count_exacto += 1
-                        # Reparto de puntos: 1 por acertar el 1X2, el resto (ej. 3) por clavarlo exacto
                         pts_1x2 += 1.0
                         pts_exacto += (pts_base - 1.0)
                     else:
@@ -214,12 +219,10 @@ def generar_jornadas_html():
                 "dir_path": d["dir_path"]
             })
             
-        # ORDENACIÓN CON DESEMPATE: Total -> Nº Aciertos 1X2 -> Nº Aciertos Exactos
         ranking_jornada.sort(key=lambda x: (x["total"], x["count_1x2"], x["count_exacto"]), reverse=True)
         rankings_por_jornada[j_key] = ranking_jornada
 
         if ranking_jornada:
-            # Encontrar el máximo y mínimo de aciertos 1X2 para las tarjetas
             max_aciertos = max([j["count_1x2"] for j in ranking_jornada])
             min_aciertos = min([j["count_1x2"] for j in ranking_jornada])
             
@@ -257,12 +260,15 @@ def generar_jornadas_html():
 
         html += """<div class="table-wrapper-spaced"><table class="table-jornada"><tr><th style="text-align:center; color:#ccc;">PARTICIPANTE</th>"""
         for p in partidos_jornada:
-            loc = p.get("local", "")
-            vis = p.get("visitante", "")
-            if not loc and "id_partido" in p: loc, vis = f"Eq.{p['id_partido']}A", f"Eq.{p['id_partido']}B"
-            
             clave_p = f"ID_{p['id_partido']}" if "id_partido" in p else f"{p['local']}_vs_{p['visitante']}"
             p_real = dict_reales.get(clave_p, {})
+            
+            loc = p_real.get("local") or p.get("local", "")
+            vis = p_real.get("visitante") or p.get("visitante", "")
+            if not loc and "id_partido" in p: loc, vis = f"Eq.{p['id_partido']}A", f"Eq.{p['id_partido']}B"
+            
+            loc_short = acortar_nombre(loc)
+            vis_short = acortar_nombre(vis)
             
             if p_real.get("estado") == "jugandose":
                 marcador = f"<br><span class='live-score'>{p_real.get('goles_local')} - {p_real.get('goles_visitante')}</span><span class='live-ball'>⚽</span>"
@@ -271,7 +277,7 @@ def generar_jornadas_html():
             else:
                 marcador = ""
                 
-            html += f"<th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>{loc[:3]} - {vis[:3]}</span>{marcador}</th>"
+            html += f"<th><span style='font-size:0.8em; color:gray;'>MATCH</span><br><span style='color:white; font-size:1.1em;'>{loc_short} - {vis_short}</span>{marcador}</th>"
         html += "<th style='color:#ccc;'>TOTAL</th></tr>"
 
         for j in ranking_jornada:
@@ -296,9 +302,9 @@ def generar_jornadas_html():
                 
                 if pts > 0:
                     if str(gl_p) == gl_r and str(gv_p) == gv_r:
-                        color_pts = "#4CAF50" # Verde (Exacto)
+                        color_pts = "#4CAF50" 
                     else:
-                        color_pts = "#64B5F6" # Azul (1X2)
+                        color_pts = "#64B5F6" 
                 else:
                     color_pts = "gray" 
                 
@@ -323,8 +329,8 @@ def generar_jornadas_html():
                     
                     content_html = f"""
                     <div style='display:flex; justify-content:space-between; gap:10px; font-size:0.9em;'>
-                        <div style='flex:1; text-align:right;'><strong>{loc_r[:3]}</strong><br>{r_loc_html}</div>
-                        <div style='flex:1; text-align:left; border-left:1px solid #444; padding-left:10px;'><strong>{vis_r[:3]}</strong><br>{r_vis_html}</div>
+                        <div style='flex:1; text-align:right;'><strong>{acortar_nombre(loc_r)}</strong><br>{r_loc_html}</div>
+                        <div style='flex:1; text-align:left; border-left:1px solid #444; padding-left:10px;'><strong>{acortar_nombre(vis_r)}</strong><br>{r_vis_html}</div>
                     </div>
                     """
                     celda += f"<br><details class='cell-mult-details'><summary>x{mult} ▼</summary><div class='cell-mult-content'>{content_html}</div></details>"
@@ -360,7 +366,6 @@ def generar_jornadas_html():
         
         r = rankings_por_jornada.get(j_key, [])
         
-        # --- Lógica de degradado dinámico ---
         puntos = [x["total"] for x in r]
         max_p = max(puntos) if puntos else 0
         min_p = min(puntos) if puntos else 0
@@ -369,14 +374,12 @@ def generar_jornadas_html():
         bd_colors = []
         for x in r:
             if max_p == min_p or max_p == 0:
-                opacidad = 0.8 # Si todos empatan, dorado fuerte para todos
+                opacidad = 0.8
             else:
-                # Interpolación matemática: Máximo = 1.0 (100%), Mínimo = 0.2 (20%)
                 opacidad = 0.2 + 0.8 * ((x["total"] - min_p) / (max_p - min_p))
             
             bg_colors.append(f"rgba(218, 165, 32, {opacidad:.2f})")
             bd_colors.append(f"rgba(218, 165, 32, {min(1.0, opacidad + 0.2):.2f})")
-        # ------------------------------------
         
         lbls = json.dumps([x["nombre"] for x in r])
         dats_total = json.dumps([round(x["total"], 2) for x in r])

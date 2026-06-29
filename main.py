@@ -71,7 +71,7 @@ def mostrar_menu():
                 ejecutar_script("00b_esqueleto_eliminatorias.py")
             
         elif opcion == "4":
-            ejecutar_script("05_scraper_sofascore.py")
+            ejecutar_script("05_extractor_sofascore.py")
             
         elif opcion == "5":
             print("\n🔄 Iniciando cálculo en cascada...")
@@ -101,7 +101,7 @@ def mostrar_menu():
             
         elif opcion == "10":
             print("\n⚡ Iniciando actualización absoluta...")
-            if ejecutar_script("05_scraper_sofascore.py"):
+            if ejecutar_script("05_extractor_sofascore.py"):
                 if ejecutar_script("06a_motor_partidos.py"):
                     if ejecutar_script("06b_motor_jornadas.py"):
                         if ejecutar_script("06c_motor_fase_grupos.py"):

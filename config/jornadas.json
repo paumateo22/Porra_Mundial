@@ -301,51 +301,51 @@
     ],
     "dieciseisavos.1": [
         {
-            "id_partido": 73
-        },
-        {
-            "id_partido": 74
-        },
-        {
             "id_partido": 75
+        },
+        {
+            "id_partido": 81
+        },
+        {
+            "id_partido": 73
         },
         {
             "id_partido": 76
         },
         {
-            "id_partido": 77
-        },
-        {
-            "id_partido": 78
-        },
-        {
-            "id_partido": 79
-        },
-        {
-            "id_partido": 80
-        }
-    ],
-    "dieciseisavos.2": [
-        {
-            "id_partido": 81
-        },
-        {
             "id_partido": 82
+        },
+        {
+            "id_partido": 74
         },
         {
             "id_partido": 83
         },
         {
             "id_partido": 84
+        }
+    ],
+    "dieciseisavos.2": [
+        {
+            "id_partido": 80
         },
         {
-            "id_partido": 85
+            "id_partido": 79
+        },
+        {
+            "id_partido": 78
+        },
+        {
+            "id_partido": 77
+        },
+        {
+            "id_partido": 87
         },
         {
             "id_partido": 86
         },
         {
-            "id_partido": 87
+            "id_partido": 85
         },
         {
             "id_partido": 88

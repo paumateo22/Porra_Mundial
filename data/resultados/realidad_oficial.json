@@ -715,9 +715,10 @@
                 "local": "Brasil",
                 "visitante": "Japón",
                 "fecha": "2026-06-29T19:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "2",
+                "goles_visitante": "1",
+                "pasa": "Brasil"
             },
             {
                 "id_partido": 82,
@@ -795,7 +796,7 @@
             },
             {
                 "id_partido": 90,
-                "local": "W75",
+                "local": "Canadá",
                 "visitante": "W76",
                 "fecha": "2026-07-04T19:00:00",
                 "estado": "notstarted",
@@ -822,7 +823,7 @@
             },
             {
                 "id_partido": 93,
-                "local": "W81",
+                "local": "Brasil",
                 "visitante": "W82",
                 "fecha": "2026-07-05T22:00:00",
                 "estado": "notstarted",

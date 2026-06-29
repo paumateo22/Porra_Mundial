@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 136.0,
+    "puntos_totales": 138.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -513,6 +513,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Sudáfrica) / 1 (Canadá)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_81": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Brasil) / 1 (Japón)",
+            "puntos_conseguidos": 2.0
         }
     },
     "desglose_jornadas": {
@@ -547,7 +555,7 @@
             "resultado": "Ganador"
         },
         "dieciseisavos.1": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 2,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -568,14 +576,6 @@
             "pronostico": 0,
             "media_grupo": 0.67,
             "realidad": 0,
-            "umbral_aplicado": 1.0,
-            "resultado_calculo": "Ninguno",
-            "puntos": 0
-        },
-        "Canadá": {
-            "pronostico": 2,
-            "media_grupo": 0.78,
-            "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
@@ -624,6 +624,14 @@
             "pronostico": 0,
             "media_grupo": 0.22,
             "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Japón": {
+            "pronostico": 1,
+            "media_grupo": 1.11,
+            "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
