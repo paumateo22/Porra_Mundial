@@ -671,9 +671,10 @@
                 "local": "Países Bajos",
                 "visitante": "Marruecos",
                 "fecha": "2026-06-30T03:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "1",
+                "goles_visitante": "1",
+                "pasa": "Marruecos"
             },
             {
                 "id_partido": 77,
@@ -798,7 +799,7 @@
             {
                 "id_partido": 90,
                 "local": "Canadá",
-                "visitante": "W76",
+                "visitante": "Marruecos",
                 "fecha": "2026-07-04T19:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

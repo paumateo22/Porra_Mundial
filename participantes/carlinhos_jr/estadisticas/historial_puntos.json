@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 114.0,
+    "puntos_totales": 112.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -522,6 +522,14 @@
             "racha_detectada": "0 (Sudáfrica) / 0 (Canadá)",
             "puntos_conseguidos": 1.0
         },
+        "ID_76": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Países Bajos) / 1 (Marruecos)",
+            "puntos_conseguidos": 0.0
+        },
         "ID_81": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
@@ -564,8 +572,8 @@
         },
         "dieciseisavos.1": {
             "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -676,6 +684,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Países Bajos": {
+            "pronostico": 3,
+            "media_grupo": 2.89,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -733,5 +749,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 9
 }
