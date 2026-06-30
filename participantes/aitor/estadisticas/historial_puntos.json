@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 114.0,
+    "puntos_totales": 120.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -517,10 +517,10 @@
         "ID_74": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
-            "acierto_exacto": false,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Francia) / 1 (Suecia)",
-            "puntos_conseguidos": 2.0
+            "puntos_conseguidos": 8.0
         },
         "ID_75": {
             "fase": "dieciseisavos",
