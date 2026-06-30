@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 123.0,
+    "puntos_totales": 129.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -541,10 +541,10 @@
         "ID_82": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
-            "acierto_exacto": false,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Costa de Marfil) / 1 (Noruega)",
-            "puntos_conseguidos": 2.0
+            "puntos_conseguidos": 8.0
         }
     },
     "desglose_jornadas": {
@@ -616,6 +616,14 @@
             "pronostico": 0,
             "media_grupo": 0.89,
             "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Costa de Marfil": {
+            "pronostico": 1,
+            "media_grupo": 1.44,
+            "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0

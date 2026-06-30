@@ -620,6 +620,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Costa de Marfil": {
+            "pronostico": 1,
+            "media_grupo": 1.44,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Curazao": {
             "pronostico": 0,
             "media_grupo": 0.0,

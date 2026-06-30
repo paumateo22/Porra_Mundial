@@ -727,9 +727,10 @@
                 "local": "Costa de Marfil",
                 "visitante": "Noruega",
                 "fecha": "2026-06-30T19:00:00",
-                "estado": "jugandose",
-                "goles_local": "0",
-                "goles_visitante": "1"
+                "estado": "finished",
+                "goles_local": "1",
+                "goles_visitante": "2",
+                "pasa": "Noruega"
             },
             {
                 "id_partido": 83,
@@ -826,7 +827,7 @@
             {
                 "id_partido": 93,
                 "local": "Brasil",
-                "visitante": "W82",
+                "visitante": "Noruega",
                 "fecha": "2026-07-05T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
