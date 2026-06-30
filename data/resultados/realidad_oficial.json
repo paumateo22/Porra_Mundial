@@ -652,9 +652,9 @@
                 "local": "Francia",
                 "visitante": "Suecia",
                 "fecha": "2026-06-30T23:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "jugandose",
+                "goles_local": "1",
+                "goles_visitante": "0"
             },
             {
                 "id_partido": 75,
