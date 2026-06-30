@@ -279,9 +279,9 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 67.0,
+        "puntos_partidos": 61.0,
         "total_aciertos_1x2": 46,
-        "total_aciertos_exactos": 5,
+        "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -837,9 +837,9 @@
         }
     },
     "javi": {
-        "puntos_partidos": 65.0,
+        "puntos_partidos": 71.0,
         "total_aciertos_1x2": 43,
-        "total_aciertos_exactos": 6,
+        "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -1953,9 +1953,9 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 83.5,
+        "puntos_partidos": 89.5,
         "total_aciertos_1x2": 46,
-        "total_aciertos_exactos": 8,
+        "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true

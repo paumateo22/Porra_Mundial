@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 125.0,
+    "puntos_totales": 131.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -517,10 +517,10 @@
         "ID_74": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
-            "acierto_exacto": false,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Francia) / 1 (Suecia)",
-            "puntos_conseguidos": 2.0
+            "puntos_conseguidos": 8.0
         },
         "ID_75": {
             "fase": "dieciseisavos",
@@ -773,5 +773,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 6
 }
