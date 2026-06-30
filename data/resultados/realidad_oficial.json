@@ -652,9 +652,10 @@
                 "local": "Francia",
                 "visitante": "Suecia",
                 "fecha": "2026-06-30T23:00:00",
-                "estado": "jugandose",
+                "estado": "finished",
                 "goles_local": "3",
-                "goles_visitante": "0"
+                "goles_visitante": "0",
+                "pasa": "Francia"
             },
             {
                 "id_partido": 75,
@@ -791,7 +792,7 @@
             {
                 "id_partido": 89,
                 "local": "Paraguay",
-                "visitante": "W74",
+                "visitante": "Francia",
                 "fecha": "2026-07-04T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

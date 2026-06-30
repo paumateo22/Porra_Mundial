@@ -740,6 +740,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Suecia": {
+            "pronostico": 2,
+            "media_grupo": 1.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Turquía": {
             "pronostico": 1,
             "media_grupo": 2.0,
