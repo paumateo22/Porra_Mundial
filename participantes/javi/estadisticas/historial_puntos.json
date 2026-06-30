@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 117.0,
+    "puntos_totales": 118.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -540,11 +540,11 @@
         },
         "ID_82": {
             "fase": "dieciseisavos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.5,
             "racha_detectada": "0 (Costa de Marfil) / 1 (Noruega)",
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.5
         }
     },
     "desglose_jornadas": {
@@ -579,7 +579,7 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.1": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
