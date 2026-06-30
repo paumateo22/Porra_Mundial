@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 136.0,
+    "puntos_totales": 140.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -537,6 +537,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Brasil) / 1 (Japón)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_82": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Costa de Marfil) / 1 (Noruega)",
+            "puntos_conseguidos": 2.0
         }
     },
     "desglose_jornadas": {
@@ -571,9 +579,9 @@
             "resultado": "Ganador"
         },
         "dieciseisavos.1": {
-            "aciertos_1x2": 2,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "aciertos_1x2": 3,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {

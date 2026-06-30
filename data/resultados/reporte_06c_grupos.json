@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 57.0,
-        "total_aciertos_1x2": 46,
+        "puntos_partidos": 59.0,
+        "total_aciertos_1x2": 47,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -231,9 +231,12 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -266,9 +269,9 @@
                 "resultado": "Ganador"
             },
             "dieciseisavos.1": {
-                "aciertos_1x2": 2,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 3,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         },
         "puntos_grupos": 69
@@ -505,6 +508,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 4,
@@ -779,6 +785,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -6,
@@ -1053,6 +1062,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -2,
@@ -1327,6 +1339,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -2,
@@ -1601,6 +1616,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 4,
@@ -1875,6 +1893,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 2,
@@ -2149,6 +2170,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 2,
@@ -2423,6 +2447,9 @@
             },
             "ID_81": {
                 "acierto_1x2": true
+            },
+            "ID_82": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -8,

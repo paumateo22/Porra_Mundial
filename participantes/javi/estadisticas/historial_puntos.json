@@ -537,6 +537,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Brasil) / 1 (Japón)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_82": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "0 (Costa de Marfil) / 1 (Noruega)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
