@@ -709,9 +709,9 @@
                 "local": "Bélgica",
                 "visitante": "Senegal",
                 "fecha": "2026-07-01T22:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "jugandose",
+                "goles_local": "0",
+                "goles_visitante": "1"
             },
             {
                 "id_partido": 81,

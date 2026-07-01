@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 61.0,
-        "total_aciertos_1x2": 48,
+        "puntos_partidos": 63.0,
+        "total_aciertos_1x2": 49,
         "total_aciertos_exactos": 3,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -232,6 +232,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_80": {
+                "acierto_1x2": true
+            },
             "ID_81": {
                 "acierto_1x2": true
             },
@@ -247,8 +250,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 63.0,
-        "total_aciertos_1x2": 47,
+        "puntos_partidos": 65.0,
+        "total_aciertos_1x2": 48,
         "total_aciertos_exactos": 4,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -477,6 +480,9 @@
                 "acierto_1x2": true
             },
             "ID_76": {
+                "acierto_1x2": true
+            },
+            "ID_80": {
                 "acierto_1x2": true
             },
             "ID_81": {
@@ -726,6 +732,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_80": {
+                "acierto_1x2": false
+            },
             "ID_81": {
                 "acierto_1x2": true
             },
@@ -741,9 +750,9 @@
         }
     },
     "javi": {
-        "puntos_partidos": 73.0,
-        "total_aciertos_1x2": 44,
-        "total_aciertos_exactos": 7,
+        "puntos_partidos": 81.0,
+        "total_aciertos_1x2": 45,
+        "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
@@ -973,6 +982,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_80": {
+                "acierto_1x2": true
+            },
             "ID_81": {
                 "acierto_1x2": true
             },
@@ -988,8 +1000,8 @@
         }
     },
     "manu": {
-        "puntos_partidos": 74.5,
-        "total_aciertos_1x2": 44,
+        "puntos_partidos": 76.5,
+        "total_aciertos_1x2": 45,
         "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1219,6 +1231,9 @@
             },
             "ID_76": {
                 "acierto_1x2": false
+            },
+            "ID_80": {
+                "acierto_1x2": true
             },
             "ID_81": {
                 "acierto_1x2": true
@@ -1467,6 +1482,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_80": {
+                "acierto_1x2": false
+            },
             "ID_81": {
                 "acierto_1x2": true
             },
@@ -1482,8 +1500,8 @@
         }
     },
     "pau": {
-        "puntos_partidos": 73.0,
-        "total_aciertos_1x2": 51,
+        "puntos_partidos": 75.0,
+        "total_aciertos_1x2": 52,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1714,6 +1732,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_80": {
+                "acierto_1x2": true
+            },
             "ID_81": {
                 "acierto_1x2": true
             },
@@ -1729,8 +1750,8 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 93.0,
-        "total_aciertos_1x2": 48,
+        "puntos_partidos": 95.0,
+        "total_aciertos_1x2": 49,
         "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1959,6 +1980,9 @@
                 "acierto_1x2": true
             },
             "ID_76": {
+                "acierto_1x2": true
+            },
+            "ID_80": {
                 "acierto_1x2": true
             },
             "ID_81": {
@@ -2206,6 +2230,9 @@
                 "acierto_1x2": false
             },
             "ID_76": {
+                "acierto_1x2": false
+            },
+            "ID_80": {
                 "acierto_1x2": false
             },
             "ID_81": {
