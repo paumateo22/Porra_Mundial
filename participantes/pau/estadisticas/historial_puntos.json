@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 148.0,
+    "puntos_totales": 142.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -540,11 +540,11 @@
         },
         "ID_80": {
             "fase": "dieciseisavos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Bélgica) / 1 (Senegal)",
-            "puntos_conseguidos": 2.0
+            "puntos_conseguidos": 0.0
         },
         "ID_81": {
             "fase": "dieciseisavos",
@@ -616,9 +616,9 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 1,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {

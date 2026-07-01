@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 111.5,
+    "puntos_totales": 123.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -540,11 +540,11 @@
         },
         "ID_80": {
             "fase": "dieciseisavos",
-            "acierto_1x2": false,
-            "acierto_exacto": false,
+            "acierto_1x2": true,
+            "acierto_exacto": true,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Bélgica) / 1 (Senegal)",
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 8.0
         },
         "ID_81": {
             "fase": "dieciseisavos",
@@ -616,9 +616,9 @@
             "resultado": "Perdedor"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 0,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 1,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
@@ -826,5 +826,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 9
+    "posicion_final_ranking": 8
 }
