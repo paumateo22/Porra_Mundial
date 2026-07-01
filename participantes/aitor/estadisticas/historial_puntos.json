@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 114.0,
+    "puntos_totales": 116.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -564,11 +564,11 @@
         },
         "ID_84": {
             "fase": "dieciseisavos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Inglaterra) / 1 (RD Congo)",
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 2.0
         }
     },
     "desglose_jornadas": {
@@ -603,7 +603,7 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.1": {
-            "aciertos_1x2": 4,
+            "aciertos_1x2": 5,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }

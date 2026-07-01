@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 136.0,
+    "puntos_totales": 138.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -564,11 +564,11 @@
         },
         "ID_84": {
             "fase": "dieciseisavos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Inglaterra) / 1 (RD Congo)",
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 2.0
         }
     },
     "desglose_jornadas": {
@@ -603,7 +603,7 @@
             "resultado": "Ganador"
         },
         "dieciseisavos.1": {
-            "aciertos_1x2": 3,
+            "aciertos_1x2": 4,
             "puntos_bono": -2,
             "resultado": "Perdedor"
         }
