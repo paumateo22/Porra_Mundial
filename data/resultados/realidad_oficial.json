@@ -748,9 +748,9 @@
                 "local": "Inglaterra",
                 "visitante": "RD Congo",
                 "fecha": "2026-07-01T18:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "jugandose",
+                "goles_local": "0",
+                "goles_visitante": "1"
             },
             {
                 "id_partido": 85,

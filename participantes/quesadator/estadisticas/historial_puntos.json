@@ -561,6 +561,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (México) / 1 (Ecuador)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_84": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (Inglaterra) / 0 (RD Congo)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
