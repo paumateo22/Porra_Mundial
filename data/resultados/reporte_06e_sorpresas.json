@@ -147,6 +147,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Sudáfrica": {
                 "pronostico": 1,
                 "media_grupo": 0.33,
@@ -341,6 +349,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -543,6 +559,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Sudáfrica": {
                 "pronostico": 0,
                 "media_grupo": 0.33,
@@ -737,6 +761,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -939,6 +971,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Sudáfrica": {
                 "pronostico": 0,
                 "media_grupo": 0.33,
@@ -1133,6 +1173,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1335,6 +1383,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Senegal": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Sudáfrica": {
                 "pronostico": 0,
                 "media_grupo": 0.33,
@@ -1533,6 +1589,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Sudáfrica": {
                 "pronostico": 0,
                 "media_grupo": 0.33,
@@ -1727,6 +1791,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.89,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Senegal": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
