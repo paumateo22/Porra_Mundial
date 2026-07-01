@@ -738,9 +738,10 @@
                 "local": "México",
                 "visitante": "Ecuador",
                 "fecha": "2026-07-01T03:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "2",
+                "goles_visitante": "0",
+                "pasa": "México"
             },
             {
                 "id_partido": 84,
@@ -836,7 +837,7 @@
             },
             {
                 "id_partido": 94,
-                "local": "W83",
+                "local": "México",
                 "visitante": "W84",
                 "fecha": "2026-07-06T02:00:00",
                 "estado": "notstarted",

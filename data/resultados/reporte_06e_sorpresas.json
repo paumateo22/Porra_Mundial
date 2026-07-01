@@ -43,6 +43,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ecuador": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 0,
                 "media_grupo": 1.22,
@@ -221,6 +229,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ecuador": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -407,6 +423,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ecuador": {
+                "pronostico": 4,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
@@ -585,6 +609,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ecuador": {
+                "pronostico": 3,
+                "media_grupo": 1.78,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -771,6 +803,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ecuador": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 2,
                 "media_grupo": 1.22,
@@ -949,6 +989,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ecuador": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1135,6 +1183,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ecuador": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
@@ -1317,6 +1373,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ecuador": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
@@ -1495,6 +1559,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ecuador": {
+                "pronostico": 2,
+                "media_grupo": 1.78,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
