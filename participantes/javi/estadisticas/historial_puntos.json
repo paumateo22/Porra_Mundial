@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 143.0,
+    "puntos_totales": 137.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -541,10 +541,10 @@
         "ID_80": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Bélgica) / 1 (Senegal)",
-            "puntos_conseguidos": 8.0
+            "puntos_conseguidos": 2.0
         },
         "ID_81": {
             "fase": "dieciseisavos",
@@ -826,5 +826,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 6
 }
