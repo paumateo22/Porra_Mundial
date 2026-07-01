@@ -16,18 +16,15 @@ UNIQUE_TOURNAMENT_ID = 16
 SEASON_ID = 58210  # ID actual de SofaScore para 2026. Revisar días antes del torneo.
 
 # Zona horaria de España en verano (junio/julio 2026) = UTC+2
-# Nuestros ISOs están en hora local española, SofaScore devuelve UTC puro.
-# Al convertir nuestros ISOs a timestamp restamos este offset para comparar contra UTC.
 OFFSET_LOCAL_UTC = timedelta(hours=2)
 
-# Tolerancia para el matching por fecha: ±15 minutos
+# Tolerancia estricta inicial: ±15 minutos
 TOLERANCIA_FECHA_SEGUNDOS = 900
+# Tolerancia del Plan B (por nombre): ±12 horas
+TOLERANCIA_AMPLIADA_SEGUNDOS = 43200 
 
-# Mapeo exacto de roundInfo_name de SofaScore → clave interna
-# Usamos comparación EXACTA (== en minúsculas) para evitar falsos positivos
-# como "semifinals" conteniendo "final".
 RONDA_A_FASE = {
-    "round of 32":      "dieciseisavos",   # por si 2026 usa este nombre
+    "round of 32":      "dieciseisavos",
     "round of 16":      "octavos",
     "quarterfinals":    "cuartos",
     "semifinals":       "semifinales",
@@ -35,10 +32,6 @@ RONDA_A_FASE = {
     "final":            "final",
 }
 
-# Diccionario traductor inglés → español para equipos en eliminatorias.
-# Solo se usa en eliminatorias; en grupos solo actualizamos goles/estado.
-# TODO: completar/ajustar cuando comiencen los partidos del Mundial 2026
-# y veamos exactamente cómo escribe SofaScore cada nombre.
 TRADUCCIONES = {
     # Confirmados en test 2022
     "Argentina":            "Argentina",
@@ -113,7 +106,6 @@ TRADUCCIONES = {
     "Venezuela":            "Venezuela",
 }
 
-
 # ====================================================================
 # DESCARGA
 # ====================================================================
@@ -129,7 +121,6 @@ def obtener_partidos_mundial():
 
     print(f"🔍 Buscando partidos del Mundial 2026 (Torneo: {UNIQUE_TOURNAMENT_ID}, Temp: {SEASON_ID})...")
 
-    # Bypass antibot avanzado
     session = requests.Session(impersonate="chrome120")
     print("  🕵️ Haciendo visita de 'calentamiento' a la portada para coger cookies...")
     try:
@@ -138,14 +129,12 @@ def obtener_partidos_mundial():
         pass
 
     todos_los_eventos = []
-    eventos_ids = set() # Set para evitar duplicados entre last y next
+    eventos_ids = set()
 
-    # Iteramos por los dos endpoints: pasados/en juego ("last") y futuros ("next")
     for tipo_endpoint in ["last", "next"]:
         pagina = 0
         print(f"  📡 Extrayendo lote: {tipo_endpoint.upper()}...")
         while True:
-            # Usamos el dominio www principal en vez del subdominio api
             url = (
                 f"https://www.sofascore.com/api/v1/unique-tournament/{UNIQUE_TOURNAMENT_ID}"
                 f"/season/{SEASON_ID}/events/{tipo_endpoint}/{pagina}"
@@ -162,7 +151,6 @@ def obtener_partidos_mundial():
                 datos = respuesta.json()
                 eventos_pagina = datos.get('events', [])
                 
-                # Añadimos solo eventos que no hayamos guardado ya
                 for ev in eventos_pagina:
                     ev_id = ev.get('id')
                     if ev_id not in eventos_ids:
@@ -180,13 +168,11 @@ def obtener_partidos_mundial():
     print(f"✅ Extraídos {len(todos_los_eventos)} partidos únicos en bruto del servidor.")
     return todos_los_eventos
 
-
 # ====================================================================
 # ESTRUCTURACIÓN
 # ====================================================================
 
 def calcular_goles_y_pasa(evento, local_es, visitante_es):
-    """Extrae goles sin penaltis y determina qué equipo pasa."""
     estado = evento.get('status', {}).get('type')
     score_home = evento.get('homeScore', {})
     score_away = evento.get('awayScore', {})
@@ -208,7 +194,6 @@ def calcular_goles_y_pasa(evento, local_es, visitante_es):
         elif gv > gl:
             pasa = visitante_es
         else:
-            # Empate en tiempo reglamentario → penaltis
             if penaltis_loc > penaltis_vis:
                 pasa = local_es
             elif penaltis_vis > penaltis_loc:
@@ -218,13 +203,6 @@ def calcular_goles_y_pasa(evento, local_es, visitante_es):
 
 
 def estructurar_resultados_oficiales(eventos_crudos):
-    """
-    Clasifica los eventos en fase_grupos y eliminatorias.
-
-    - Fase de grupos: NO traduce nombres (solo goles/estado se usarán en el merge).
-    - Eliminatorias:  SÍ traduce nombres (se inyectarán cuando los placeholders se resuelvan).
-    - Guarda _timestamp UTC para el matching por fecha.
-    """
     resultados = {
         "fase_grupos": {},
         "clasificados_a_dieciseisavos": [],
@@ -237,22 +215,15 @@ def estructurar_resultados_oficiales(eventos_crudos):
     for evento in eventos_crudos:
         estado_crudo   = evento.get('status', {}).get('type')
         nombre_ronda   = evento.get('roundInfo', {}).get('name', '')
-        nombre_ronda_n = nombre_ronda.strip().lower()  # normalizado para comparación
+        nombre_ronda_n = nombre_ronda.strip().lower()
         timestamp_unix = evento.get('startTimestamp', 0)
 
-        # Mapeo de estado: si está en juego, marcamos "jugandose"
         estado_formateado = "jugandose" if estado_crudo == "inprogress" else estado_crudo
-
-        # ---- Determinar si es fase de grupos o eliminatoria ----
-        fase_interna = RONDA_A_FASE.get(nombre_ronda_n)  # None si es grupos
+        fase_interna = RONDA_A_FASE.get(nombre_ronda_n)
 
         if fase_interna is None:
-            # FASE DE GRUPOS
-            # No necesitamos traducir los nombres porque el merge de grupos
-            # solo actualizará goles/estado (matching por nombre ya en español).
             local_raw     = evento.get('homeTeam', {}).get('name', 'TBD')
             visitante_raw = evento.get('awayTeam', {}).get('name', 'TBD')
-
             score_home = evento.get('homeScore', {})
             score_away = evento.get('awayScore', {})
             penaltis_loc = score_home.get('penalties') or 0
@@ -272,7 +243,7 @@ def estructurar_resultados_oficiales(eventos_crudos):
                 resultados["fase_grupos"][grupo] = []
 
             resultados["fase_grupos"][grupo].append({
-                "local":           local_raw,      # en inglés, solo para el matching interno
+                "local":           local_raw,
                 "visitante":       visitante_raw,
                 "goles_local":     goles_loc_str,
                 "goles_visitante": goles_vis_str,
@@ -281,7 +252,6 @@ def estructurar_resultados_oficiales(eventos_crudos):
             })
 
         else:
-            # ELIMINATORIAS — aquí sí traducimos porque inyectaremos los nombres
             local_eng     = evento.get('homeTeam', {}).get('name', 'TBD')
             visitante_eng = evento.get('awayTeam', {}).get('name', 'TBD')
             local_es      = TRADUCCIONES.get(local_eng, local_eng)
@@ -306,53 +276,32 @@ def estructurar_resultados_oficiales(eventos_crudos):
 
     resultados["fase_grupos"] = dict(sorted(resultados["fase_grupos"].items()))
 
-    # Deducir clasificados desde los equipos conocidos en dieciseisavos (o octavos)
     ronda_corte = "dieciseisavos" if resultados["eliminatorias"]["dieciseisavos"] else "octavos"
     clasificados = set()
     for p in resultados["eliminatorias"][ronda_corte]:
-        if p["local"] not in ("TBD", ""):
-            clasificados.add(p["local"])
-        if p["visitante"] not in ("TBD", ""):
-            clasificados.add(p["visitante"])
+        if p["local"] not in ("TBD", ""): clasificados.add(p["local"])
+        if p["visitante"] not in ("TBD", ""): clasificados.add(p["visitante"])
     resultados["clasificados_a_dieciseisavos"] = sorted(list(clasificados))
 
     return resultados
 
 
-# ====================================================================
-# CONVERSIÓN DE FECHAS
-# ====================================================================
-
 def iso_local_a_timestamp_utc(fecha_iso: str) -> int:
-    """
-    Convierte una fecha ISO en hora local española (UTC+2 en verano)
-    a timestamp Unix UTC, para poder comparar contra los timestamps de SofaScore.
-    """
     if not fecha_iso:
         return 0
     try:
         dt_local = datetime.fromisoformat(fecha_iso)
-        # Restamos el offset para obtener UTC
         dt_utc = dt_local - OFFSET_LOCAL_UTC
         return int(dt_utc.replace(tzinfo=timezone.utc).timestamp())
     except Exception:
         return 0
 
-
-# ====================================================================
-# HELPERS
-# ====================================================================
-
 def _es_placeholder(nombre: str) -> bool:
-    """
-    Devuelve True si el nombre es un placeholder (1E, 3A/3B/3C, Ganador 73...)
-    en lugar de un nombre de país real.
-    """
     if not nombre:
         return False
-    if re.match(r'^\d[A-Z]', nombre):   # "1E", "2A", "3F"
+    if re.match(r'^\d[A-Z]', nombre):
         return True
-    if "/" in nombre:                    # "3A/3B/3C/3D/3F"
+    if "/" in nombre:
         return True
     if re.match(r'^(Ganador|Perdedor)\s+\d+$', nombre, re.IGNORECASE):
         return True
@@ -360,31 +309,13 @@ def _es_placeholder(nombre: str) -> bool:
         return True
     return False
 
-
 # ====================================================================
-# MERGE SELECTIVO
+# MERGE SELECTIVO CON PLAN B
 # ====================================================================
 
 def hacer_update_selectivo(realidad_actual, resultados_nuevos):
-    """
-    Actualiza realidad_oficial.json con los datos de SofaScore.
-
-    FASE DE GRUPOS:
-        Matching por nombre de equipo (local + visitante, ya en español en nuestro JSON).
-        Solo sobreescribe goles_local, goles_visitante y estado.
-        NO toca local/visitante (ya están bien desde el principio).
-
-    ELIMINATORIAS:
-        Matching por fecha/hora UTC con tolerancia ±15 min.
-        Sobreescribe goles, estado y pasa.
-        Si el local/visitante actual es un placeholder, lo sustituye por el nombre
-        real que devuelve SofaScore (ya traducido al español).
-    """
-
-    # ---- 1. FASE DE GRUPOS: matching por nombre ----
+    # ---- 1. FASE DE GRUPOS ----
     for grupo, partidos_actuales in realidad_actual.get("fase_grupos", {}).items():
-        # Construimos un índice rápido por (local_en_inglés, visitante_en_inglés)
-        # de los partidos nuevos
         index_grupos = {}
         for p_nuevo in resultados_nuevos.get("fase_grupos", {}).get(grupo, []):
             key_directo  = (p_nuevo["local"],     p_nuevo["visitante"])
@@ -393,13 +324,8 @@ def hacer_update_selectivo(realidad_actual, resultados_nuevos):
             index_grupos[key_invertido] = ("invertido", p_nuevo)
 
         for p_act in partidos_actuales:
-            # Nuestro JSON tiene los nombres en español → los traducimos al inglés
-            # para buscar en el índice de SofaScore.
-            # Estrategia más robusta: buscar directamente comparando los valores
-            # en inglés que SofaScore devuelve contra los valores traducidos que tenemos.
             local_act = p_act.get("local", "")
             vis_act   = p_act.get("visitante", "")
-
             match_found = None
             invertido   = False
 
@@ -421,30 +347,24 @@ def hacer_update_selectivo(realidad_actual, resultados_nuevos):
                     p_act["goles_local"]     = match_found["goles_local"]
                     p_act["goles_visitante"] = match_found["goles_visitante"]
                 else:
-                    # SofaScore tiene los equipos al revés
                     p_act["goles_local"]     = match_found["goles_visitante"]
                     p_act["goles_visitante"] = match_found["goles_local"]
                 p_act["estado"] = match_found["estado"]
 
-    # ---- 2. ELIMINATORIAS: matching por fecha UTC ----
+    # ---- 2. ELIMINATORIAS ----
     for fase, partidos_actuales in realidad_actual.get("eliminatorias", {}).items():
         partidos_nuevos = resultados_nuevos.get("eliminatorias", {}).get(fase, [])
         if not partidos_nuevos:
             continue
 
-        # Índice timestamp_utc → partido nuevo
-        index_elim = {
-            p["_timestamp"]: p
-            for p in partidos_nuevos
-            if p.get("_timestamp")
-        }
+        index_elim = {p["_timestamp"]: p for p in partidos_nuevos if p.get("_timestamp")}
 
         for p_act in partidos_actuales:
             ts_act = iso_local_a_timestamp_utc(p_act.get("fecha", ""))
             if not ts_act:
                 continue
 
-            # Buscar el partido más cercano en tiempo
+            # A) PLAN A: Búsqueda estricta por fecha/hora
             mejor_match  = None
             menor_diff   = float('inf')
             for ts_nuevo, p_nuevo in index_elim.items():
@@ -453,12 +373,37 @@ def hacer_update_selectivo(realidad_actual, resultados_nuevos):
                     menor_diff  = diff
                     mejor_match = p_nuevo
 
+            # B) PLAN B: Fallback por nombres si la hora difiere más de 15 mins
             if not mejor_match or menor_diff > TOLERANCIA_FECHA_SEGUNDOS:
-                continue
+                loc_act = p_act.get("local", "")
+                vis_act = p_act.get("visitante", "")
+                
+                match_fallback = None
+                for p_nuevo in partidos_nuevos:
+                    ts_nuevo = p_nuevo.get("_timestamp", 0)
+                    
+                    # Chequeo de seguridad: debe estar en una ventana de 12 horas
+                    if ts_act and ts_nuevo and abs(ts_act - ts_nuevo) <= TOLERANCIA_AMPLIADA_SEGUNDOS:
+                        loc_n = p_nuevo.get("local", "")
+                        vis_n = p_nuevo.get("visitante", "")
+                        
+                        # Si el equipo local o visitante es un país real y coincide en este partido
+                        match_loc = (not _es_placeholder(loc_act)) and (loc_act in (loc_n, vis_n))
+                        match_vis = (not _es_placeholder(vis_act)) and (vis_act in (loc_n, vis_n))
+                        
+                        if match_loc or match_vis:
+                            match_fallback = p_nuevo
+                            print(f"  🚑 [Plan B] Partido recuperado por nombre de equipo en {fase}: {loc_n} vs {vis_n}")
+                            break
+                            
+                if match_fallback:
+                    mejor_match = match_fallback
+                else:
+                    continue # Falla el Plan A y el Plan B. Pasamos de este partido.
 
             p_nuevo = mejor_match
 
-            # Actualizar goles, estado y quién pasa
+            # Actualizar datos
             p_act["goles_local"]     = p_nuevo["goles_local"]
             p_act["goles_visitante"] = p_nuevo["goles_visitante"]
             p_act["estado"]          = p_nuevo["estado"]
@@ -469,31 +414,23 @@ def hacer_update_selectivo(realidad_actual, resultados_nuevos):
             if p_nuevo.get("ganador"):
                 p_act["ganador"] = p_nuevo["ganador"]
 
-            # Inyectar nombres reales si los actuales son placeholders
             local_act = p_act.get("local", "")
             vis_act   = p_act.get("visitante", "")
 
             if _es_placeholder(local_act) and p_nuevo["local"] not in ("TBD", ""):
-                print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: "
-                      f"'{local_act}' → '{p_nuevo['local']}'")
+                print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: '{local_act}' → '{p_nuevo['local']}'")
                 p_act["local"] = p_nuevo["local"]
 
             if _es_placeholder(vis_act) and p_nuevo["visitante"] not in ("TBD", ""):
-                print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: "
-                      f"'{vis_act}' → '{p_nuevo['visitante']}'")
+                print(f"  ✏️  [{fase}] ID {p_act.get('id_partido', '?')}: '{vis_act}' → '{p_nuevo['visitante']}'")
                 p_act["visitante"] = p_nuevo["visitante"]
 
     # ---- 3. Clasificados ----
     if resultados_nuevos.get("clasificados_a_dieciseisavos"):
-        realidad_actual["clasificados_a_dieciseisavos"] = \
-            resultados_nuevos["clasificados_a_dieciseisavos"]
+        realidad_actual["clasificados_a_dieciseisavos"] = resultados_nuevos["clasificados_a_dieciseisavos"]
 
     return realidad_actual
 
-
-# ====================================================================
-# PUNTO DE ENTRADA
-# ====================================================================
 
 def ejecutar_05_scraper():
     print("=======================================================")
@@ -526,20 +463,16 @@ def ejecutar_05_scraper():
     print("\n🔄 Iniciando merge selectivo...")
     realidad_actualizada = hacer_update_selectivo(realidad_actual, resultados_nuevos)
 
-    # Limpiar campos auxiliares antes de escribir
     for partidos in realidad_actualizada.get("fase_grupos", {}).values():
-        for p in partidos:
-            p.pop("_timestamp", None)
+        for p in partidos: p.pop("_timestamp", None)
     for partidos in realidad_actualizada.get("eliminatorias", {}).values():
-        for p in partidos:
-            p.pop("_timestamp", None)
+        for p in partidos: p.pop("_timestamp", None)
 
     with open(ruta_guardado, 'w', encoding='utf-8') as f:
         json.dump(realidad_actualizada, f, ensure_ascii=False, indent=4)
 
     print(f"\n💾 Realidad oficial actualizada en: {ruta_guardado.relative_to(ROOT_DIR)}")
-    print("   Grupos → matching por nombre | Eliminatorias → matching por fecha UTC")
-
+    print("   Grupos → matching por nombre | Eliminatorias → estricto + Plan B extendido")
 
 if __name__ == "__main__":
     ejecutar_05_scraper()
