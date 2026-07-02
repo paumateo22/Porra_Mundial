@@ -19,6 +19,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
@@ -229,6 +237,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -447,6 +463,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
                 "media_grupo": 1.33,
@@ -657,6 +681,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -875,6 +907,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
@@ -1085,6 +1125,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1303,6 +1351,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
@@ -1517,6 +1573,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
@@ -1727,6 +1791,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Austria": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
