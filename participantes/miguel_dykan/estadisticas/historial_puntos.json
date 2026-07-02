@@ -538,6 +538,14 @@
             "racha_detectada": "1 (Países Bajos) / 1 (Marruecos)",
             "puntos_conseguidos": 0.0
         },
+        "ID_78": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (España) / 1 (Austria)",
+            "puntos_conseguidos": 0.0
+        },
         "ID_79": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,

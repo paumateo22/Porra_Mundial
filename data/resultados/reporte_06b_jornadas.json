@@ -232,6 +232,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_78": {
+                "acierto_1x2": false
+            },
             "ID_79": {
                 "acierto_1x2": true
             },
@@ -528,6 +531,9 @@
             "ID_76": {
                 "acierto_1x2": true
             },
+            "ID_78": {
+                "acierto_1x2": false
+            },
             "ID_79": {
                 "acierto_1x2": true
             },
@@ -822,6 +828,9 @@
                 "acierto_1x2": true
             },
             "ID_76": {
+                "acierto_1x2": false
+            },
+            "ID_78": {
                 "acierto_1x2": false
             },
             "ID_79": {
@@ -1120,6 +1129,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_78": {
+                "acierto_1x2": false
+            },
             "ID_79": {
                 "acierto_1x2": true
             },
@@ -1414,6 +1426,9 @@
                 "acierto_1x2": false
             },
             "ID_76": {
+                "acierto_1x2": false
+            },
+            "ID_78": {
                 "acierto_1x2": false
             },
             "ID_79": {
@@ -1712,6 +1727,9 @@
             "ID_76": {
                 "acierto_1x2": false
             },
+            "ID_78": {
+                "acierto_1x2": false
+            },
             "ID_79": {
                 "acierto_1x2": true
             },
@@ -2006,6 +2024,9 @@
                 "acierto_1x2": false
             },
             "ID_76": {
+                "acierto_1x2": false
+            },
+            "ID_78": {
                 "acierto_1x2": false
             },
             "ID_79": {
@@ -2304,6 +2325,9 @@
             "ID_76": {
                 "acierto_1x2": true
             },
+            "ID_78": {
+                "acierto_1x2": false
+            },
             "ID_79": {
                 "acierto_1x2": true
             },
@@ -2598,6 +2622,9 @@
                 "acierto_1x2": false
             },
             "ID_76": {
+                "acierto_1x2": false
+            },
+            "ID_78": {
                 "acierto_1x2": false
             },
             "ID_79": {
