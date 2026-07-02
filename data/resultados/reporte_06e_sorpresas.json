@@ -19,6 +19,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -221,6 +229,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -431,6 +447,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Bosnia-Herzegovina": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -633,6 +657,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bosnia-Herzegovina": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -843,6 +875,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1045,6 +1085,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1255,6 +1303,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 2,
                 "media_grupo": 0.89,
@@ -1461,6 +1517,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Bosnia-Herzegovina": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1663,6 +1727,14 @@
                 "pronostico": 1,
                 "media_grupo": 0.67,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bosnia-Herzegovina": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0

@@ -700,9 +700,10 @@
                 "local": "Estados Unidos",
                 "visitante": "Bosnia-Herzegovina",
                 "fecha": "2026-07-02T02:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "2",
+                "goles_visitante": "0",
+                "pasa": "Estados Unidos"
             },
             {
                 "id_partido": 80,
@@ -821,7 +822,7 @@
             },
             {
                 "id_partido": 92,
-                "local": "W79",
+                "local": "Estados Unidos",
                 "visitante": "Bélgica",
                 "fecha": "2026-07-07T02:00:00",
                 "estado": "notstarted",
