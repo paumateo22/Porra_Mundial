@@ -1200,9 +1200,9 @@
         "puntos_grupos": 52
     },
     "manu": {
-        "puntos_partidos": 78.5,
+        "puntos_partidos": 84.5,
         "total_aciertos_1x2": 46,
-        "total_aciertos_exactos": 8,
+        "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true
