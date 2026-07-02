@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 122.0,
+    "puntos_totales": 124.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -540,11 +540,11 @@
         },
         "ID_78": {
             "fase": "dieciseisavos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (España) / 1 (Austria)",
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 2.0
         },
         "ID_79": {
             "fase": "dieciseisavos",
@@ -632,7 +632,7 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 2,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
