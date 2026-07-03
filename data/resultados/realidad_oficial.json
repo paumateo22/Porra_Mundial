@@ -762,9 +762,9 @@
                 "local": "Argentina",
                 "visitante": "Cabo Verde",
                 "fecha": "2026-07-04T00:00:01",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "jugandose",
+                "goles_local": "1",
+                "goles_visitante": "0"
             },
             {
                 "id_partido": 86,
