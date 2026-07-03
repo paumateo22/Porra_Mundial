@@ -771,9 +771,10 @@
                 "local": "Australia",
                 "visitante": "Egipto",
                 "fecha": "2026-07-03T20:00:00",
-                "estado": "jugandose",
+                "estado": "finished",
                 "goles_local": "1",
-                "goles_visitante": "1"
+                "goles_visitante": "1",
+                "pasa": "Egipto"
             },
             {
                 "id_partido": 87,
@@ -853,7 +854,7 @@
             {
                 "id_partido": 95,
                 "local": "W85",
-                "visitante": "W86",
+                "visitante": "Egipto",
                 "fecha": "2026-07-07T18:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
