@@ -602,6 +602,14 @@
             "racha_detectada": "1 (Inglaterra) / 1 (RD Congo)",
             "puntos_conseguidos": 2.0
         },
+        "ID_86": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Australia) / 1 (Egipto)",
+            "puntos_conseguidos": 0.0
+        },
         "ID_87": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
@@ -898,5 +906,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 5
 }

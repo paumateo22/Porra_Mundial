@@ -256,6 +256,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": true
             }
@@ -517,6 +520,9 @@
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_86": {
+                "acierto_1x2": false
             },
             "ID_87": {
                 "acierto_1x2": true
@@ -780,6 +786,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": false
             }
@@ -1041,6 +1050,9 @@
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_86": {
+                "acierto_1x2": false
             },
             "ID_87": {
                 "acierto_1x2": true
@@ -1304,6 +1316,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": true
             }
@@ -1566,14 +1581,17 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": true
             }
         }
     },
     "pau": {
-        "puntos_partidos": 79.0,
-        "total_aciertos_1x2": 54,
+        "puntos_partidos": 80.5,
+        "total_aciertos_1x2": 55,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1826,6 +1844,9 @@
                 "acierto_1x2": true
             },
             "ID_84": {
+                "acierto_1x2": true
+            },
+            "ID_86": {
                 "acierto_1x2": true
             },
             "ID_87": {
@@ -2090,6 +2111,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": true
             }
@@ -2351,6 +2375,9 @@
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_86": {
+                "acierto_1x2": false
             },
             "ID_87": {
                 "acierto_1x2": true

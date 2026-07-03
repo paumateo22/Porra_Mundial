@@ -256,6 +256,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": true
             }
@@ -561,6 +564,9 @@
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_86": {
+                "acierto_1x2": false
             },
             "ID_87": {
                 "acierto_1x2": true
@@ -868,6 +874,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": false
             }
@@ -1173,6 +1182,9 @@
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_86": {
+                "acierto_1x2": false
             },
             "ID_87": {
                 "acierto_1x2": true
@@ -1480,6 +1492,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": true
             }
@@ -1786,6 +1801,9 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": false
+            },
             "ID_87": {
                 "acierto_1x2": true
             }
@@ -1836,8 +1854,8 @@
         "puntos_grupos": 71
     },
     "pau": {
-        "puntos_partidos": 79.0,
-        "total_aciertos_1x2": 54,
+        "puntos_partidos": 80.5,
+        "total_aciertos_1x2": 55,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -2092,11 +2110,14 @@
             "ID_84": {
                 "acierto_1x2": true
             },
+            "ID_86": {
+                "acierto_1x2": true
+            },
             "ID_87": {
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -2134,9 +2155,9 @@
                 "resultado": "Neutral"
             },
             "dieciseisavos.2": {
-                "aciertos_1x2": 3,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 4,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         },
         "puntos_grupos": 67
@@ -2397,6 +2418,9 @@
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_86": {
+                "acierto_1x2": false
             },
             "ID_87": {
                 "acierto_1x2": true
@@ -2703,6 +2727,9 @@
             },
             "ID_84": {
                 "acierto_1x2": true
+            },
+            "ID_86": {
+                "acierto_1x2": false
             },
             "ID_87": {
                 "acierto_1x2": true
