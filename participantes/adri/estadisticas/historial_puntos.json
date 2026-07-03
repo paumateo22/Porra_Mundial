@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 142.0,
+    "puntos_totales": 148.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -538,6 +538,14 @@
             "racha_detectada": "1 (Países Bajos) / 1 (Marruecos)",
             "puntos_conseguidos": 0.0
         },
+        "ID_77": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Portugal) / 1 (Croacia)",
+            "puntos_conseguidos": 0.0
+        },
         "ID_78": {
             "fase": "dieciseisavos",
             "acierto_1x2": true,
@@ -593,6 +601,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Inglaterra) / 1 (RD Congo)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_87": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (Suiza) / 0 (Argelia)",
+            "puntos_conseguidos": 6.0
         }
     },
     "desglose_jornadas": {
@@ -632,7 +648,7 @@
             "resultado": "Perdedor"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -665,6 +681,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Argelia": {
+            "pronostico": 0,
+            "media_grupo": 0.56,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Austria": {
             "pronostico": 1,
             "media_grupo": 1.0,
@@ -692,6 +716,14 @@
         "Costa de Marfil": {
             "pronostico": 2,
             "media_grupo": 1.44,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Croacia": {
+            "pronostico": 1,
+            "media_grupo": 1.0,
             "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",

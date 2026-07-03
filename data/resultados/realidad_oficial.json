@@ -682,9 +682,10 @@
                 "local": "Portugal",
                 "visitante": "Croacia",
                 "fecha": "2026-07-03T01:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "2",
+                "goles_visitante": "1",
+                "pasa": "Portugal"
             },
             {
                 "id_partido": 78,
@@ -779,9 +780,10 @@
                 "local": "Suiza",
                 "visitante": "Argelia",
                 "fecha": "2026-07-03T05:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "2",
+                "goles_visitante": "0",
+                "pasa": "Suiza"
             },
             {
                 "id_partido": 88,
@@ -814,7 +816,7 @@
             },
             {
                 "id_partido": 91,
-                "local": "W77",
+                "local": "Portugal",
                 "visitante": "España",
                 "fecha": "2026-07-06T21:00:00",
                 "estado": "notstarted",
@@ -859,7 +861,7 @@
             },
             {
                 "id_partido": 96,
-                "local": "W87",
+                "local": "Suiza",
                 "visitante": "W88",
                 "fecha": "2026-07-07T22:00:00",
                 "estado": "notstarted",

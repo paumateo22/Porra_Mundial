@@ -19,6 +19,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 0,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -46,6 +54,14 @@
             "Costa de Marfil": {
                 "pronostico": 2,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -241,6 +257,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 1,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -268,6 +292,14 @@
             "Costa de Marfil": {
                 "pronostico": 3,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -463,6 +495,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 1,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -490,6 +530,14 @@
             "Costa de Marfil": {
                 "pronostico": 3,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -685,6 +733,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 0,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -712,6 +768,14 @@
             "Costa de Marfil": {
                 "pronostico": 0,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -907,6 +971,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 0,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -934,6 +1006,14 @@
             "Costa de Marfil": {
                 "pronostico": 1,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1129,6 +1209,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 1,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -1156,6 +1244,14 @@
             "Costa de Marfil": {
                 "pronostico": 1,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1351,6 +1447,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 1,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -1378,6 +1482,14 @@
             "Costa de Marfil": {
                 "pronostico": 1,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1573,6 +1685,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 0,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -1600,6 +1720,14 @@
             "Costa de Marfil": {
                 "pronostico": 1,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1795,6 +1923,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Argelia": {
+                "pronostico": 1,
+                "media_grupo": 0.56,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Austria": {
                 "pronostico": 1,
                 "media_grupo": 1.0,
@@ -1822,6 +1958,14 @@
             "Costa de Marfil": {
                 "pronostico": 1,
                 "media_grupo": 1.44,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Croacia": {
+                "pronostico": 1,
+                "media_grupo": 1.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
