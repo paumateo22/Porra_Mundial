@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 150.0,
+    "puntos_totales": 153.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -604,11 +604,11 @@
         },
         "ID_86": {
             "fase": "dieciseisavos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.5,
             "racha_detectada": "0 (Australia) / 1 (Egipto)",
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 1.5
         },
         "ID_87": {
             "fase": "dieciseisavos",
@@ -656,9 +656,9 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 3,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "aciertos_1x2": 4,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
@@ -906,5 +906,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 4
 }

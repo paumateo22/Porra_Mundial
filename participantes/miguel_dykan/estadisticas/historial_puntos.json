@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 176.5,
+    "puntos_totales": 175.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -604,11 +604,11 @@
         },
         "ID_86": {
             "fase": "dieciseisavos",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 1.5,
             "racha_detectada": "0 (Australia) / 1 (Egipto)",
-            "puntos_conseguidos": 1.5
+            "puntos_conseguidos": 0.0
         },
         "ID_87": {
             "fase": "dieciseisavos",
@@ -656,7 +656,7 @@
             "resultado": "Neutral"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 4,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -906,5 +906,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 1
+    "posicion_final_ranking": 2
 }
