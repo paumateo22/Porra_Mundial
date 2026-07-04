@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 182.5,
+    "puntos_totales": 192.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -693,7 +693,7 @@
     "premios_finales": {
         "formularios": {
             "detalles": {
-                "sorpresa": 0,
+                "sorpresa": 10,
                 "decepcion": 0
             }
         }
@@ -757,6 +757,14 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Canadá": {
+            "pronostico": 2,
+            "media_grupo": 0.78,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Sorpresa",
+            "puntos": 10
         },
         "Corea del Sur": {
             "pronostico": 0,

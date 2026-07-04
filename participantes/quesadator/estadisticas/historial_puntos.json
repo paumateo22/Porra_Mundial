@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 191.5,
+    "puntos_totales": 195.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -637,10 +637,10 @@
         "ID_90": {
             "fase": "octavos",
             "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "2 (Canadá) / 0 (Marruecos)",
-            "puntos_conseguidos": 8.0
+            "puntos_conseguidos": 2.0
         }
     },
     "desglose_jornadas": {
@@ -693,7 +693,7 @@
     "premios_finales": {
         "formularios": {
             "detalles": {
-                "sorpresa": 0,
+                "sorpresa": 10,
                 "decepcion": 0
             }
         }
@@ -757,6 +757,14 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Canadá": {
+            "pronostico": 2,
+            "media_grupo": 0.78,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Sorpresa",
+            "puntos": 10
         },
         "Corea del Sur": {
             "pronostico": 1,

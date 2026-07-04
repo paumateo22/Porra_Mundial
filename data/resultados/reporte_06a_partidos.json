@@ -1918,9 +1918,9 @@
         }
     },
     "quesadator": {
-        "puntos_partidos": 117.5,
+        "puntos_partidos": 111.5,
         "total_aciertos_1x2": 55,
-        "total_aciertos_exactos": 11,
+        "total_aciertos_exactos": 10,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true

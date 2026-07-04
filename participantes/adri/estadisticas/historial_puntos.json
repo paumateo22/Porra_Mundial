@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 160.0,
+    "puntos_totales": 170.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -693,7 +693,7 @@
     "premios_finales": {
         "formularios": {
             "detalles": {
-                "sorpresa": 0,
+                "sorpresa": 10,
                 "decepcion": 10
             }
         }
@@ -757,6 +757,14 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Canadá": {
+            "pronostico": 2,
+            "media_grupo": 0.78,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Sorpresa",
+            "puntos": 10
         },
         "Corea del Sur": {
             "pronostico": 0,
@@ -959,5 +967,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 3
 }

@@ -813,9 +813,10 @@
                 "local": "Canadá",
                 "visitante": "Marruecos",
                 "fecha": "2026-07-04T19:00:00",
-                "estado": "jugandose",
+                "estado": "finished",
                 "goles_local": "0",
-                "goles_visitante": "2"
+                "goles_visitante": "3",
+                "pasa": "Marruecos"
             },
             {
                 "id_partido": 91,
@@ -876,7 +877,7 @@
             {
                 "id_partido": 97,
                 "local": "W89",
-                "visitante": "W90",
+                "visitante": "Marruecos",
                 "fecha": "2026-07-09T22:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
