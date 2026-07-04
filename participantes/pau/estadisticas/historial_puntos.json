@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 157.0,
+    "puntos_totales": 155.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -633,6 +633,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Colombia) / 1 (Ghana)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_90": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "racha_detectada": "Fallo de cruce",
+            "puntos_conseguidos": 0
         }
     },
     "desglose_jornadas": {
@@ -675,6 +683,11 @@
             "aciertos_1x2": 6,
             "puntos_bono": 2,
             "resultado": "Ganador"
+        },
+        "octavos": {
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {

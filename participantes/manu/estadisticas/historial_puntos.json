@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 160.0,
+    "puntos_totales": 164.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -633,6 +633,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "1 (Colombia) / 1 (Ghana)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_90": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "0 (Canadá) / 2 (Marruecos)",
+            "puntos_conseguidos": 2.0
         }
     },
     "desglose_jornadas": {
@@ -673,6 +681,11 @@
         },
         "dieciseisavos.2": {
             "aciertos_1x2": 6,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
+        },
+        "octavos": {
+            "aciertos_1x2": 1,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
