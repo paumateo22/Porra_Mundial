@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 170.0,
+    "puntos_totales": 172.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -634,6 +634,14 @@
             "racha_detectada": "1 (Colombia) / 1 (Ghana)",
             "puntos_conseguidos": 2.0
         },
+        "ID_89": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "0 (Paraguay) / 2 (Francia)",
+            "puntos_conseguidos": 2.0
+        },
         "ID_90": {
             "fase": "octavos",
             "acierto_1x2": true,
@@ -685,7 +693,7 @@
             "resultado": "Neutral"
         },
         "octavos": {
-            "aciertos_1x2": 1,
+            "aciertos_1x2": 2,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }

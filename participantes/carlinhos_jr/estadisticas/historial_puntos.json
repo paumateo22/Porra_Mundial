@@ -634,6 +634,14 @@
             "racha_detectada": "1 (Colombia) / 1 (Ghana)",
             "puntos_conseguidos": 2.0
         },
+        "ID_89": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Paraguay) / 1 (Francia)",
+            "puntos_conseguidos": 0.0
+        },
         "ID_90": {
             "fase": "octavos",
             "acierto_1x2": false,
