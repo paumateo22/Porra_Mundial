@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 155.0,
+    "puntos_totales": 160.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -636,11 +636,11 @@
         },
         "ID_90": {
             "fase": "octavos",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
-            "multiplicador_aplicado": 1.0,
-            "racha_detectada": "Fallo de cruce",
-            "puntos_conseguidos": 0
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (Canadá) / 0 (Marruecos)",
+            "puntos_conseguidos": 1.5
         }
     },
     "desglose_jornadas": {
@@ -685,9 +685,9 @@
             "resultado": "Ganador"
         },
         "octavos": {
-            "aciertos_1x2": 0,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 1,
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
