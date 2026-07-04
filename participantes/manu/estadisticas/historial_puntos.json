@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 158.0,
+    "puntos_totales": 160.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -625,6 +625,14 @@
             "multiplicador_aplicado": 1.5,
             "racha_detectada": "1 (Suiza) / 0 (Argelia)",
             "puntos_conseguidos": 6.0
+        },
+        "ID_88": {
+            "fase": "dieciseisavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "1 (Colombia) / 1 (Ghana)",
+            "puntos_conseguidos": 2.0
         }
     },
     "desglose_jornadas": {
@@ -664,7 +672,7 @@
             "resultado": "Perdedor"
         },
         "dieciseisavos.2": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 6,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -781,6 +789,14 @@
             "pronostico": 2,
             "media_grupo": 1.22,
             "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Ghana": {
+            "pronostico": 1,
+            "media_grupo": 0.89,
+            "realidad": 1,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0

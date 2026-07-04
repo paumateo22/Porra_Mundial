@@ -107,6 +107,14 @@
                 "resultado_calculo": "Decepción",
                 "puntos": 10
             },
+            "Ghana": {
+                "pronostico": 1,
+                "media_grupo": 0.89,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Haití": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -357,6 +365,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ghana": {
+                "pronostico": 1,
+                "media_grupo": 0.89,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -615,6 +631,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ghana": {
+                "pronostico": 1,
+                "media_grupo": 0.89,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Haití": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -865,6 +889,14 @@
                 "pronostico": 3,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ghana": {
+                "pronostico": 2,
+                "media_grupo": 0.89,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1123,6 +1155,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ghana": {
+                "pronostico": 1,
+                "media_grupo": 0.89,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Haití": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1373,6 +1413,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ghana": {
+                "pronostico": 1,
+                "media_grupo": 0.89,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1631,6 +1679,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ghana": {
+                "pronostico": 1,
+                "media_grupo": 0.89,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Haití": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1885,6 +1941,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Ghana": {
+                "pronostico": 0,
+                "media_grupo": 0.89,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Haití": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -2135,6 +2199,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Ghana": {
+                "pronostico": 0,
+                "media_grupo": 0.89,
+                "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
