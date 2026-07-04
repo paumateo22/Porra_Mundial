@@ -1,0 +1,126 @@
+{
+    "participante": "manu",
+    "fase_origen": "octavos",
+    "predicciones": {
+        "octavos": [
+            {
+                "local": "Paraguay",
+                "visitante": "Francia",
+                "goles_local": 0,
+                "goles_visitante": 2,
+                "pasa": "Francia"
+            },
+            {
+                "local": "Canadá",
+                "visitante": "Marruecos",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Marruecos"
+            },
+            {
+                "local": "Portugal",
+                "visitante": "España",
+                "goles_local": 0,
+                "goles_visitante": 2,
+                "pasa": "España"
+            },
+            {
+                "local": "Estados Unidos",
+                "visitante": "Bélgica",
+                "goles_local": 2,
+                "goles_visitante": 2,
+                "pasa": "Estados Unidos"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Noruega",
+                "goles_local": 3,
+                "goles_visitante": 2,
+                "pasa": "Brasil"
+            },
+            {
+                "local": "México",
+                "visitante": "Inglaterra",
+                "goles_local": 1,
+                "goles_visitante": 1,
+                "pasa": "Inglaterra"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Egipto",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            },
+            {
+                "local": "Suiza",
+                "visitante": "Colombia",
+                "goles_local": 0,
+                "goles_visitante": 1,
+                "pasa": "Colombia"
+            }
+        ],
+        "cuartos": [
+            {
+                "local": "Francia",
+                "visitante": "Marruecos",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Francia"
+            },
+            {
+                "local": "España",
+                "visitante": "Estados Unidos",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Inglaterra",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Brasil"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Colombia",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            }
+        ],
+        "semifinales": [
+            {
+                "local": "Francia",
+                "visitante": "España",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Francia",
+                "visitante": "Brasil",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Francia"
+            },
+            {
+                "local": "España",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            }
+        ]
+    }
+}
