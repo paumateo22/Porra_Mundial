@@ -804,9 +804,10 @@
                 "local": "Paraguay",
                 "visitante": "Francia",
                 "fecha": "2026-07-04T23:00:00",
-                "estado": "jugandose",
+                "estado": "finished",
                 "goles_local": "0",
-                "goles_visitante": "1"
+                "goles_visitante": "1",
+                "pasa": "Francia"
             },
             {
                 "id_partido": 90,
@@ -876,7 +877,7 @@
         "cuartos": [
             {
                 "id_partido": 97,
-                "local": "W89",
+                "local": "Francia",
                 "visitante": "Marruecos",
                 "fecha": "2026-07-09T22:00:00",
                 "estado": "notstarted",
