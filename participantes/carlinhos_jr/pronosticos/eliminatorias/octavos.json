@@ -1,0 +1,126 @@
+{
+    "participante": "Carlinhos",
+    "fase_origen": "octavos",
+    "predicciones": {
+        "octavos": [
+            {
+                "local": "Paraguay",
+                "visitante": "Francia",
+                "goles_local": 2,
+                "goles_visitante": 2,
+                "pasa": "Paraguay"
+            },
+            {
+                "local": "Canadá",
+                "visitante": "Marruecos",
+                "goles_local": 1,
+                "goles_visitante": 1,
+                "pasa": "Canadá"
+            },
+            {
+                "local": "Portugal",
+                "visitante": "España",
+                "goles_local": 2,
+                "goles_visitante": 3,
+                "pasa": "España"
+            },
+            {
+                "local": "Estados Unidos",
+                "visitante": "Bélgica",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Bélgica"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Noruega",
+                "goles_local": 3,
+                "goles_visitante": 2,
+                "pasa": "Brasil"
+            },
+            {
+                "local": "México",
+                "visitante": "Inglaterra",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Inglaterra"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Egipto",
+                "goles_local": 3,
+                "goles_visitante": 1,
+                "pasa": "Argentina"
+            },
+            {
+                "local": "Suiza",
+                "visitante": "Colombia",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Colombia"
+            }
+        ],
+        "cuartos": [
+            {
+                "local": "Paraguay",
+                "visitante": "Canadá",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Paraguay"
+            },
+            {
+                "local": "España",
+                "visitante": "Bélgica",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Inglaterra",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Brasil"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Colombia",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            }
+        ],
+        "semifinales": [
+            {
+                "local": "Paraguay",
+                "visitante": "España",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            },
+            {
+                "local": "Brasil",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Brasil"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Paraguay",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            },
+            {
+                "local": "España",
+                "visitante": "Brasil",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            }
+        ]
+    }
+}
