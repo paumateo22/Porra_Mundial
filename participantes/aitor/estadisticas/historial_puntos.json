@@ -729,6 +729,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Cabo Verde": {
+            "pronostico": 0,
+            "media_grupo": 0.0,
+            "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Corea del Sur": {
             "pronostico": 2,
             "media_grupo": 0.89,

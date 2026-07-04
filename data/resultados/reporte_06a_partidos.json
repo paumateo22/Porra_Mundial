@@ -1,8 +1,8 @@
 {
     "adri": {
-        "puntos_partidos": 72.5,
+        "puntos_partidos": 77.0,
         "total_aciertos_1x2": 52,
-        "total_aciertos_exactos": 4,
+        "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
                 "acierto_1x2": true

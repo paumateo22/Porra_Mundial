@@ -762,9 +762,10 @@
                 "local": "Argentina",
                 "visitante": "Cabo Verde",
                 "fecha": "2026-07-04T00:00:01",
-                "estado": "jugandose",
-                "goles_local": "1",
-                "goles_visitante": "0"
+                "estado": "finished",
+                "goles_local": "3",
+                "goles_visitante": "2",
+                "pasa": "Argentina"
             },
             {
                 "id_partido": 86,
@@ -853,7 +854,7 @@
             },
             {
                 "id_partido": 95,
-                "local": "W85",
+                "local": "Argentina",
                 "visitante": "Egipto",
                 "fecha": "2026-07-07T18:00:00",
                 "estado": "notstarted",

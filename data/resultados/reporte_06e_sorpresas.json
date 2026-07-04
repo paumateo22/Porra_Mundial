@@ -51,6 +51,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -292,6 +300,14 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -543,6 +559,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -784,6 +808,14 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
                 "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1035,6 +1067,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1276,6 +1316,14 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 1,
                 "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1527,6 +1575,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 2,
                 "media_grupo": 0.89,
@@ -1773,6 +1829,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -2014,6 +2078,14 @@
             "Bosnia-Herzegovina": {
                 "pronostico": 2,
                 "media_grupo": 1.33,
+                "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Cabo Verde": {
+                "pronostico": 0,
+                "media_grupo": 0.0,
                 "realidad": 1,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
