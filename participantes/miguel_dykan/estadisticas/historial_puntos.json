@@ -766,6 +766,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Brasil": {
+            "pronostico": 4,
+            "media_grupo": 3.33,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Cabo Verde": {
             "pronostico": 0,
             "media_grupo": 0.0,

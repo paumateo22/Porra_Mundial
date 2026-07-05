@@ -842,9 +842,10 @@
                 "local": "Brasil",
                 "visitante": "Noruega",
                 "fecha": "2026-07-05T22:00:00",
-                "estado": "jugandose",
-                "goles_local": "0",
-                "goles_visitante": "2"
+                "estado": "finished",
+                "goles_local": "1",
+                "goles_visitante": "2",
+                "pasa": "Noruega"
             },
             {
                 "id_partido": 94,
@@ -895,7 +896,7 @@
             },
             {
                 "id_partido": 99,
-                "local": "W93",
+                "local": "Noruega",
                 "visitante": "W94",
                 "fecha": "2026-07-11T23:00:00",
                 "estado": "notstarted",
