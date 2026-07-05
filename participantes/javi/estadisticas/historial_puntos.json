@@ -649,6 +649,14 @@
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "1 (Canadá) / 2 (Marruecos)",
             "puntos_conseguidos": 0.0
+        },
+        "ID_93": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Brasil) / 2 (Noruega)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {

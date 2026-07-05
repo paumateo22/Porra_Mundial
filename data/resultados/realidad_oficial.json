@@ -842,9 +842,9 @@
                 "local": "Brasil",
                 "visitante": "Noruega",
                 "fecha": "2026-07-05T22:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "jugandose",
+                "goles_local": "0",
+                "goles_visitante": "2"
             },
             {
                 "id_partido": 94,

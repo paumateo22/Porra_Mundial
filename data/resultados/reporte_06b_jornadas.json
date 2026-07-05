@@ -273,6 +273,9 @@
             },
             "ID_90": {
                 "acierto_1x2": true
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 0,
@@ -598,6 +601,9 @@
             },
             "ID_90": {
                 "acierto_1x2": true
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 6,
@@ -922,6 +928,9 @@
                 "acierto_1x2": false
             },
             "ID_90": {
+                "acierto_1x2": false
+            },
+            "ID_93": {
                 "acierto_1x2": false
             }
         },
@@ -1248,6 +1257,9 @@
             },
             "ID_90": {
                 "acierto_1x2": false
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 0,
@@ -1573,6 +1585,9 @@
             },
             "ID_90": {
                 "acierto_1x2": true
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 2,
@@ -1898,6 +1913,9 @@
             },
             "ID_90": {
                 "acierto_1x2": true
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -2223,6 +2241,9 @@
             },
             "ID_90": {
                 "acierto_1x2": true
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -2548,6 +2569,9 @@
             },
             "ID_90": {
                 "acierto_1x2": true
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 6,
@@ -2873,6 +2897,9 @@
             },
             "ID_90": {
                 "acierto_1x2": true
+            },
+            "ID_93": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -4,
