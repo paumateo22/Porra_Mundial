@@ -824,9 +824,10 @@
                 "local": "Portugal",
                 "visitante": "España",
                 "fecha": "2026-07-06T21:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "0",
+                "goles_visitante": "1",
+                "pasa": "España"
             },
             {
                 "id_partido": 92,
@@ -888,7 +889,7 @@
             },
             {
                 "id_partido": 98,
-                "local": "W91",
+                "local": "España",
                 "visitante": "W92",
                 "fecha": "2026-07-10T21:00:00",
                 "estado": "notstarted",

@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 170.0,
+    "puntos_totales": 173.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -650,6 +650,14 @@
             "racha_detectada": "2 (Canadá) / 0 (Marruecos)",
             "puntos_conseguidos": 2.0
         },
+        "ID_91": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Portugal) / 2 (España)",
+            "puntos_conseguidos": 3.0
+        },
         "ID_93": {
             "fase": "octavos",
             "acierto_1x2": false,
@@ -709,7 +717,7 @@
             "resultado": "Neutral"
         },
         "octavos": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 0,
             "resultado": "Neutral"
         }
@@ -934,6 +942,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Portugal": {
+            "pronostico": 4,
+            "media_grupo": 4.11,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Qatar": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -1015,5 +1031,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 5
 }
