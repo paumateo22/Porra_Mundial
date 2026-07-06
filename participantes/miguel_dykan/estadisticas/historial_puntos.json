@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 194.5,
+    "puntos_totales": 206.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -657,6 +657,14 @@
             "multiplicador_aplicado": 3.0,
             "racha_detectada": "2 (Brasil) / 2 (Noruega)",
             "puntos_conseguidos": 0.0
+        },
+        "ID_94": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": true,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (México) / 2 (Inglaterra)",
+            "puntos_conseguidos": 12.0
         }
     },
     "desglose_jornadas": {
@@ -701,7 +709,7 @@
             "resultado": "Ganador"
         },
         "octavos": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }
@@ -886,6 +894,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "México": {
+            "pronostico": 2,
+            "media_grupo": 1.56,
+            "realidad": 2,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Nueva Zelanda": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -999,5 +1015,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 2
+    "posicion_final_ranking": 1
 }

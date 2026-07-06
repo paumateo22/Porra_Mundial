@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 172.0,
+    "puntos_totales": 170.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -657,6 +657,14 @@
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "2 (Brasil) / 1 (Noruega)",
             "puntos_conseguidos": 0.0
+        },
+        "ID_94": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.0,
+            "racha_detectada": "0 (México) / 2 (Inglaterra)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -702,8 +710,8 @@
         },
         "octavos": {
             "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -882,6 +890,14 @@
             "pronostico": 0,
             "media_grupo": 0.0,
             "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "México": {
+            "pronostico": 1,
+            "media_grupo": 1.56,
+            "realidad": 2,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0

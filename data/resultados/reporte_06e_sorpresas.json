@@ -171,6 +171,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "México": {
+                "pronostico": 1,
+                "media_grupo": 1.56,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -453,6 +461,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "México": {
+                "pronostico": 1,
+                "media_grupo": 1.56,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -743,6 +759,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "México": {
+                "pronostico": 1,
+                "media_grupo": 1.56,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1025,6 +1049,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "México": {
+                "pronostico": 1,
+                "media_grupo": 1.56,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1315,6 +1347,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "México": {
+                "pronostico": 2,
+                "media_grupo": 1.56,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1597,6 +1637,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "México": {
+                "pronostico": 2,
+                "media_grupo": 1.56,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1887,6 +1935,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "México": {
+                "pronostico": 2,
+                "media_grupo": 1.56,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -2173,6 +2229,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "México": {
+                "pronostico": 2,
+                "media_grupo": 1.56,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -2455,6 +2519,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "México": {
+                "pronostico": 2,
+                "media_grupo": 1.56,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
