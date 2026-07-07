@@ -689,6 +689,14 @@
             "multiplicador_aplicado": 3.0,
             "racha_detectada": "2 (Argentina) / 2 (Egipto)",
             "puntos_conseguidos": 3.0
+        },
+        "ID_96": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Suiza) / 2 (Colombia)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {

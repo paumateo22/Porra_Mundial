@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 89.0,
-        "total_aciertos_1x2": 57,
+        "puntos_partidos": 91.5,
+        "total_aciertos_1x2": 58,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -287,6 +287,9 @@
                 "acierto_1x2": false
             },
             "ID_95": {
+                "acierto_1x2": true
+            },
+            "ID_96": {
                 "acierto_1x2": true
             }
         },
@@ -333,7 +336,7 @@
                 "resultado": "Neutral"
             },
             "octavos": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
@@ -341,8 +344,8 @@
         "puntos_grupos": 69
     },
     "aitor": {
-        "puntos_partidos": 90.0,
-        "total_aciertos_1x2": 58,
+        "puntos_partidos": 93.0,
+        "total_aciertos_1x2": 59,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -629,6 +632,9 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": 6,
@@ -674,7 +680,7 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 5,
+                "aciertos_1x2": 6,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
@@ -970,6 +976,9 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -10,
@@ -1311,6 +1320,9 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -2,
@@ -1652,6 +1664,9 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 0,
@@ -1993,9 +2008,12 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 8,
+        "puntos_jornadas": 6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -2039,8 +2057,8 @@
             },
             "octavos": {
                 "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 71
@@ -2334,6 +2352,9 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 6,
@@ -2675,9 +2696,12 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -2721,8 +2745,8 @@
             },
             "octavos": {
                 "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 68
@@ -3016,9 +3040,12 @@
             },
             "ID_95": {
                 "acierto_1x2": true
+            },
+            "ID_96": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -4,
+        "puntos_jornadas": -6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -3062,8 +3089,8 @@
             },
             "octavos": {
                 "aciertos_1x2": 5,
-                "puntos_bono": 2,
-                "resultado": "Ganador"
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         },
         "puntos_grupos": 58

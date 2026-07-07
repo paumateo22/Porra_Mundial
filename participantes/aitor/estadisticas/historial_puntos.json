@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 157.0,
+    "puntos_totales": 160.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -689,6 +689,14 @@
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "2 (Argentina) / 1 (Egipto)",
             "puntos_conseguidos": 2.5
+        },
+        "ID_96": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Suiza) / 2 (Colombia)",
+            "puntos_conseguidos": 3.0
         }
     },
     "desglose_jornadas": {
@@ -733,7 +741,7 @@
             "resultado": "Ganador"
         },
         "octavos": {
-            "aciertos_1x2": 5,
+            "aciertos_1x2": 6,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }

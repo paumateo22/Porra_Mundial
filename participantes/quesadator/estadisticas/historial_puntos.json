@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 205.5,
+    "puntos_totales": 203.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -689,6 +689,14 @@
             "multiplicador_aplicado": 2.0,
             "racha_detectada": "2 (Argentina) / 0 (Egipto)",
             "puntos_conseguidos": 2.0
+        },
+        "ID_96": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "2 (Suiza) / 2 (Colombia)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -734,8 +742,8 @@
         },
         "octavos": {
             "aciertos_1x2": 5,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
