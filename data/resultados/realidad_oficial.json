@@ -874,9 +874,10 @@
                 "local": "Suiza",
                 "visitante": "Colombia",
                 "fecha": "2026-07-07T22:00:00",
-                "estado": "jugandose",
+                "estado": "finished",
                 "goles_local": "0",
-                "goles_visitante": "0"
+                "goles_visitante": "0",
+                "pasa": "Suiza"
             }
         ],
         "cuartos": [
@@ -910,7 +911,7 @@
             {
                 "id_partido": 100,
                 "local": "Argentina",
-                "visitante": "W96",
+                "visitante": "Suiza",
                 "fecha": "2026-07-12T03:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

@@ -75,6 +75,14 @@
                 "resultado_calculo": "Sorpresa",
                 "puntos": 10
             },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -388,6 +396,14 @@
             "Canadá": {
                 "pronostico": 0,
                 "media_grupo": 0.78,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
                 "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -711,6 +727,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1024,6 +1048,14 @@
             "Canadá": {
                 "pronostico": 0,
                 "media_grupo": 0.78,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
                 "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -1347,6 +1379,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Colombia": {
+                "pronostico": 3,
+                "media_grupo": 2.11,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1665,6 +1705,14 @@
                 "resultado_calculo": "Sorpresa",
                 "puntos": 10
             },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -1978,6 +2026,14 @@
             "Canadá": {
                 "pronostico": 1,
                 "media_grupo": 0.78,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
                 "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
@@ -2301,6 +2357,14 @@
                 "resultado_calculo": "Sorpresa",
                 "puntos": 10
             },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Corea del Sur": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -2614,6 +2678,14 @@
             "Canadá": {
                 "pronostico": 0,
                 "media_grupo": 0.78,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Colombia": {
+                "pronostico": 2,
+                "media_grupo": 2.11,
                 "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
