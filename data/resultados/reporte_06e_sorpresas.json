@@ -115,6 +115,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Egipto": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 0,
                 "media_grupo": 1.22,
@@ -421,6 +429,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.78,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Egipto": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -735,6 +751,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Egipto": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
@@ -1041,6 +1065,14 @@
                 "pronostico": 3,
                 "media_grupo": 1.78,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Egipto": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1355,6 +1387,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Egipto": {
+                "pronostico": 2,
+                "media_grupo": 1.33,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 2,
                 "media_grupo": 1.22,
@@ -1661,6 +1701,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.78,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Egipto": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1975,6 +2023,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Egipto": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
@@ -2285,6 +2341,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Egipto": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Escocia": {
                 "pronostico": 1,
                 "media_grupo": 1.22,
@@ -2591,6 +2655,14 @@
                 "pronostico": 2,
                 "media_grupo": 1.78,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Egipto": {
+                "pronostico": 1,
+                "media_grupo": 1.33,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0

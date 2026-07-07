@@ -864,9 +864,10 @@
                 "local": "Argentina",
                 "visitante": "Egipto",
                 "fecha": "2026-07-07T18:00:00",
-                "estado": "jugandose",
-                "goles_local": "0",
-                "goles_visitante": "1"
+                "estado": "finished",
+                "goles_local": "3",
+                "goles_visitante": "2",
+                "pasa": "Argentina"
             },
             {
                 "id_partido": 96,
@@ -908,7 +909,7 @@
             },
             {
                 "id_partido": 100,
-                "local": "W95",
+                "local": "Argentina",
                 "visitante": "W96",
                 "fecha": "2026-07-12T03:00:00",
                 "estado": "notstarted",

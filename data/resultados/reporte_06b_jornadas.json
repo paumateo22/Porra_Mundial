@@ -1,7 +1,7 @@
 {
     "adri": {
-        "puntos_partidos": 86.0,
-        "total_aciertos_1x2": 56,
+        "puntos_partidos": 89.0,
+        "total_aciertos_1x2": 57,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -287,7 +287,7 @@
                 "acierto_1x2": false
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": -2,
@@ -333,15 +333,15 @@
                 "resultado": "Neutral"
             },
             "octavos": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         }
     },
     "aitor": {
-        "puntos_partidos": 87.5,
-        "total_aciertos_1x2": 57,
+        "puntos_partidos": 90.0,
+        "total_aciertos_1x2": 58,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -627,7 +627,7 @@
                 "acierto_1x2": false
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": 6,
@@ -673,15 +673,15 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 80.0,
-        "total_aciertos_1x2": 47,
+        "puntos_partidos": 82.5,
+        "total_aciertos_1x2": 48,
         "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -967,7 +967,7 @@
                 "acierto_1x2": true
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": -10,
@@ -1013,15 +1013,15 @@
                 "resultado": "Perdedor"
             },
             "octavos": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         }
     },
     "javi": {
-        "puntos_partidos": 99.5,
-        "total_aciertos_1x2": 52,
+        "puntos_partidos": 102.5,
+        "total_aciertos_1x2": 53,
         "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1307,7 +1307,7 @@
                 "acierto_1x2": false
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": -2,
@@ -1353,15 +1353,15 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 2,
+                "aciertos_1x2": 3,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
             }
         }
     },
     "manu": {
-        "puntos_partidos": 103.0,
-        "total_aciertos_1x2": 53,
+        "puntos_partidos": 106.0,
+        "total_aciertos_1x2": 54,
         "total_aciertos_exactos": 10,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1647,7 +1647,7 @@
                 "acierto_1x2": false
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": 0,
@@ -1693,15 +1693,15 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         }
     },
     "miguel_dykan": {
-        "puntos_partidos": 120.5,
-        "total_aciertos_1x2": 62,
+        "puntos_partidos": 123.0,
+        "total_aciertos_1x2": 63,
         "total_aciertos_exactos": 11,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1987,7 +1987,7 @@
                 "acierto_1x2": true
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": 8,
@@ -2033,15 +2033,15 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         }
     },
     "pau": {
-        "puntos_partidos": 91.0,
-        "total_aciertos_1x2": 60,
+        "puntos_partidos": 93.5,
+        "total_aciertos_1x2": 61,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -2327,7 +2327,7 @@
                 "acierto_1x2": false
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": 6,
@@ -2373,15 +2373,15 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 3,
+                "aciertos_1x2": 4,
                 "puntos_bono": 0,
                 "resultado": "Neutral"
             }
         }
     },
     "quesadator": {
-        "puntos_partidos": 119.5,
-        "total_aciertos_1x2": 58,
+        "puntos_partidos": 121.5,
+        "total_aciertos_1x2": 59,
         "total_aciertos_exactos": 10,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -2667,7 +2667,7 @@
                 "acierto_1x2": true
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": 6,
@@ -2713,15 +2713,15 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 103.0,
-        "total_aciertos_1x2": 50,
+        "puntos_partidos": 105.0,
+        "total_aciertos_1x2": 51,
         "total_aciertos_exactos": 12,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -3007,7 +3007,7 @@
                 "acierto_1x2": true
             },
             "ID_95": {
-                "acierto_1x2": false
+                "acierto_1x2": true
             }
         },
         "puntos_jornadas": -4,
@@ -3053,7 +3053,7 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 4,
+                "aciertos_1x2": 5,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
             }
