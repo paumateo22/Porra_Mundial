@@ -658,6 +658,14 @@
             "racha_detectada": "2 (Portugal) / 2 (España)",
             "puntos_conseguidos": 3.0
         },
+        "ID_92": {
+            "fase": "octavos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.5,
+            "racha_detectada": "1 (Estados Unidos) / 0 (Bélgica)",
+            "puntos_conseguidos": 0.0
+        },
         "ID_93": {
             "fase": "octavos",
             "acierto_1x2": false,
@@ -850,6 +858,14 @@
             "pronostico": 1,
             "media_grupo": 1.22,
             "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Estados Unidos": {
+            "pronostico": 1,
+            "media_grupo": 1.22,
+            "realidad": 2,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0

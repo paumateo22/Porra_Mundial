@@ -834,9 +834,10 @@
                 "local": "Estados Unidos",
                 "visitante": "Bélgica",
                 "fecha": "2026-07-07T02:00:00",
-                "estado": "notstarted",
-                "goles_local": "",
-                "goles_visitante": ""
+                "estado": "finished",
+                "goles_local": "1",
+                "goles_visitante": "4",
+                "pasa": "Bélgica"
             },
             {
                 "id_partido": 93,
@@ -890,7 +891,7 @@
             {
                 "id_partido": 98,
                 "local": "España",
-                "visitante": "W92",
+                "visitante": "Bélgica",
                 "fecha": "2026-07-10T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

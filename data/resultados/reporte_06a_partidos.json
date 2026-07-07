@@ -277,6 +277,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -286,8 +289,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 85.5,
-        "total_aciertos_1x2": 56,
+        "puntos_partidos": 87.5,
+        "total_aciertos_1x2": 57,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -563,6 +566,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": true
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -572,8 +578,8 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 77.5,
-        "total_aciertos_1x2": 46,
+        "puntos_partidos": 80.0,
+        "total_aciertos_1x2": 47,
         "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -847,6 +853,9 @@
                 "acierto_1x2": false
             },
             "ID_91": {
+                "acierto_1x2": true
+            },
+            "ID_92": {
                 "acierto_1x2": true
             },
             "ID_93": {
@@ -1135,6 +1144,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -1420,6 +1432,9 @@
             },
             "ID_91": {
                 "acierto_1x2": true
+            },
+            "ID_92": {
+                "acierto_1x2": false
             },
             "ID_93": {
                 "acierto_1x2": false
@@ -1707,6 +1722,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -1992,6 +2010,9 @@
             },
             "ID_91": {
                 "acierto_1x2": true
+            },
+            "ID_92": {
+                "acierto_1x2": false
             },
             "ID_93": {
                 "acierto_1x2": false
@@ -2279,6 +2300,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -2564,6 +2588,9 @@
             },
             "ID_91": {
                 "acierto_1x2": true
+            },
+            "ID_92": {
+                "acierto_1x2": false
             },
             "ID_93": {
                 "acierto_1x2": false

@@ -277,6 +277,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -334,8 +337,8 @@
         }
     },
     "aitor": {
-        "puntos_partidos": 85.5,
-        "total_aciertos_1x2": 56,
+        "puntos_partidos": 87.5,
+        "total_aciertos_1x2": 57,
         "total_aciertos_exactos": 5,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -611,6 +614,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": true
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -618,7 +624,7 @@
                 "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 4,
+        "puntos_jornadas": 6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -661,15 +667,15 @@
                 "resultado": "Ganador"
             },
             "octavos": {
-                "aciertos_1x2": 3,
-                "puntos_bono": 0,
-                "resultado": "Neutral"
+                "aciertos_1x2": 4,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
     "carlinhos_jr": {
-        "puntos_partidos": 77.5,
-        "total_aciertos_1x2": 46,
+        "puntos_partidos": 80.0,
+        "total_aciertos_1x2": 47,
         "total_aciertos_exactos": 8,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -945,6 +951,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": true
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -952,7 +961,7 @@
                 "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -12,
+        "puntos_jornadas": -10,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -995,9 +1004,9 @@
                 "resultado": "Perdedor"
             },
             "octavos": {
-                "aciertos_1x2": 2,
-                "puntos_bono": -2,
-                "resultado": "Perdedor"
+                "aciertos_1x2": 3,
+                "puntos_bono": 0,
+                "resultado": "Neutral"
             }
         }
     },
@@ -1278,6 +1287,9 @@
             },
             "ID_91": {
                 "acierto_1x2": true
+            },
+            "ID_92": {
+                "acierto_1x2": false
             },
             "ID_93": {
                 "acierto_1x2": false
@@ -1613,6 +1625,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -1946,6 +1961,9 @@
             },
             "ID_91": {
                 "acierto_1x2": true
+            },
+            "ID_92": {
+                "acierto_1x2": false
             },
             "ID_93": {
                 "acierto_1x2": false
@@ -2281,6 +2299,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -2615,6 +2636,9 @@
             "ID_91": {
                 "acierto_1x2": true
             },
+            "ID_92": {
+                "acierto_1x2": false
+            },
             "ID_93": {
                 "acierto_1x2": false
             },
@@ -2948,6 +2972,9 @@
             },
             "ID_91": {
                 "acierto_1x2": true
+            },
+            "ID_92": {
+                "acierto_1x2": false
             },
             "ID_93": {
                 "acierto_1x2": false

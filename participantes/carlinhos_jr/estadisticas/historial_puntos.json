@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 119.5,
+    "puntos_totales": 124.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -658,6 +658,14 @@
             "racha_detectada": "1 (Portugal) / 2 (España)",
             "puntos_conseguidos": 2.5
         },
+        "ID_92": {
+            "fase": "octavos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Estados Unidos) / 1 (Bélgica)",
+            "puntos_conseguidos": 2.5
+        },
         "ID_93": {
             "fase": "octavos",
             "acierto_1x2": false,
@@ -717,9 +725,9 @@
             "resultado": "Perdedor"
         },
         "octavos": {
-            "aciertos_1x2": 2,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 3,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -850,6 +858,14 @@
             "pronostico": 1,
             "media_grupo": 1.22,
             "realidad": 0,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Estados Unidos": {
+            "pronostico": 2,
+            "media_grupo": 1.22,
+            "realidad": 2,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0

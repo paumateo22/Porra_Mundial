@@ -123,6 +123,14 @@
                 "resultado_calculo": "Decepción",
                 "puntos": 10
             },
+            "Estados Unidos": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Ghana": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -421,6 +429,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Estados Unidos": {
+                "pronostico": 0,
+                "media_grupo": 1.22,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -727,6 +743,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Estados Unidos": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Ghana": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1025,6 +1049,14 @@
                 "pronostico": 3,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Estados Unidos": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1331,6 +1363,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Estados Unidos": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Ghana": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -1629,6 +1669,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Estados Unidos": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1935,6 +1983,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Estados Unidos": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Ghana": {
                 "pronostico": 1,
                 "media_grupo": 0.89,
@@ -2237,6 +2293,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Estados Unidos": {
+                "pronostico": 2,
+                "media_grupo": 1.22,
+                "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Ghana": {
                 "pronostico": 0,
                 "media_grupo": 0.89,
@@ -2535,6 +2599,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.22,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Estados Unidos": {
+                "pronostico": 1,
+                "media_grupo": 1.22,
+                "realidad": 2,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
