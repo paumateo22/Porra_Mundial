@@ -291,6 +291,9 @@
             },
             "ID_96": {
                 "acierto_1x2": true
+            },
+            "ID_97": {
+                "acierto_1x2": false
             }
         }
     },
@@ -586,6 +589,9 @@
             },
             "ID_96": {
                 "acierto_1x2": true
+            },
+            "ID_97": {
+                "acierto_1x2": false
             }
         }
     },
@@ -881,12 +887,15 @@
             },
             "ID_96": {
                 "acierto_1x2": false
+            },
+            "ID_97": {
+                "acierto_1x2": false
             }
         }
     },
     "javi": {
-        "puntos_partidos": 102.5,
-        "total_aciertos_1x2": 53,
+        "puntos_partidos": 106.5,
+        "total_aciertos_1x2": 54,
         "total_aciertos_exactos": 9,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1176,6 +1185,9 @@
             },
             "ID_96": {
                 "acierto_1x2": false
+            },
+            "ID_97": {
+                "acierto_1x2": true
             }
         }
     },
@@ -1470,6 +1482,9 @@
                 "acierto_1x2": true
             },
             "ID_96": {
+                "acierto_1x2": false
+            },
+            "ID_97": {
                 "acierto_1x2": false
             }
         }
@@ -1766,6 +1781,9 @@
             },
             "ID_96": {
                 "acierto_1x2": false
+            },
+            "ID_97": {
+                "acierto_1x2": false
             }
         }
     },
@@ -2060,6 +2078,9 @@
                 "acierto_1x2": true
             },
             "ID_96": {
+                "acierto_1x2": false
+            },
+            "ID_97": {
                 "acierto_1x2": false
             }
         }
@@ -2356,12 +2377,15 @@
             },
             "ID_96": {
                 "acierto_1x2": false
+            },
+            "ID_97": {
+                "acierto_1x2": false
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 105.0,
-        "total_aciertos_1x2": 51,
+        "puntos_partidos": 108.0,
+        "total_aciertos_1x2": 52,
         "total_aciertos_exactos": 12,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -2651,6 +2675,9 @@
             },
             "ID_96": {
                 "acierto_1x2": false
+            },
+            "ID_97": {
+                "acierto_1x2": true
             }
         }
     }

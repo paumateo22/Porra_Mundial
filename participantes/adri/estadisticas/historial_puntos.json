@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 178.5,
+    "puntos_totales": 176.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -697,6 +697,14 @@
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "1 (Suiza) / 2 (Colombia)",
             "puntos_conseguidos": 2.5
+        },
+        "ID_97": {
+            "fase": "cuartos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "3 (Francia) / 1 (Marruecos)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -744,6 +752,11 @@
             "aciertos_1x2": 5,
             "puntos_bono": 0,
             "resultado": "Neutral"
+        },
+        "cuartos": {
+            "aciertos_1x2": 0,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
@@ -1079,5 +1092,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 5
 }
