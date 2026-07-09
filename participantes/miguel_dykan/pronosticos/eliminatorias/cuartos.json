@@ -1,0 +1,68 @@
+{
+    "participante": "miguel_dykan",
+    "fase_origen": "cuartos",
+    "predicciones": {
+        "cuartos": [
+            {
+                "local": "Francia",
+                "visitante": "Marruecos",
+                "goles_local": 3,
+                "goles_visitante": 2,
+                "pasa": "Francia"
+            },
+            {
+                "local": "España",
+                "visitante": "Bélgica",
+                "goles_local": 2,
+                "goles_visitante": 0,
+                "pasa": "España"
+            },
+            {
+                "local": "Noruega",
+                "visitante": "Inglaterra",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "Inglaterra"
+            },
+            {
+                "local": "Argentina",
+                "visitante": "Suiza",
+                "goles_local": 3,
+                "goles_visitante": 1,
+                "pasa": "Argentina"
+            }
+        ],
+        "semifinales": [
+            {
+                "local": "Francia",
+                "visitante": "España",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            },
+            {
+                "local": "Inglaterra",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Argentina"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Francia",
+                "visitante": "Inglaterra",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Francia"
+            },
+            {
+                "local": "España",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            }
+        ]
+    }
+}
