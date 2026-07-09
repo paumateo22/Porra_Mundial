@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 170.5,
+    "puntos_totales": 180.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -762,7 +762,7 @@
     "premios_finales": {
         "formularios": {
             "detalles": {
-                "sorpresa": 0,
+                "sorpresa": 10,
                 "decepcion": 20
             }
         }
@@ -962,6 +962,14 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Marruecos": {
+            "pronostico": 4,
+            "media_grupo": 1.78,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Sorpresa",
+            "puntos": 10
         },
         "México": {
             "pronostico": 1,

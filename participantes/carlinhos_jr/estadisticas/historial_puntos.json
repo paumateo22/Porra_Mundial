@@ -963,6 +963,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Marruecos": {
+            "pronostico": 1,
+            "media_grupo": 1.78,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "México": {
             "pronostico": 1,
             "media_grupo": 1.56,

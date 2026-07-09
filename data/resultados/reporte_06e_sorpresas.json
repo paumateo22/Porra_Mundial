@@ -195,6 +195,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "México": {
                 "pronostico": 1,
                 "media_grupo": 1.56,
@@ -326,7 +334,7 @@
         }
     },
     "aitor": {
-        "puntos_sorpresas": 0,
+        "puntos_sorpresas": 10,
         "puntos_decepciones": 10,
         "detalles_equipos": {
             "Alemania": {
@@ -520,6 +528,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Marruecos": {
+                "pronostico": 3,
+                "media_grupo": 1.78,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Sorpresa",
+                "puntos": 10
             },
             "México": {
                 "pronostico": 1,
@@ -847,6 +863,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "México": {
                 "pronostico": 1,
                 "media_grupo": 1.56,
@@ -978,7 +1002,7 @@
         }
     },
     "javi": {
-        "puntos_sorpresas": 0,
+        "puntos_sorpresas": 10,
         "puntos_decepciones": 20,
         "detalles_equipos": {
             "Alemania": {
@@ -1172,6 +1196,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Marruecos": {
+                "pronostico": 4,
+                "media_grupo": 1.78,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Sorpresa",
+                "puntos": 10
             },
             "México": {
                 "pronostico": 1,
@@ -1304,7 +1336,7 @@
         }
     },
     "manu": {
-        "puntos_sorpresas": 0,
+        "puntos_sorpresas": 10,
         "puntos_decepciones": 20,
         "detalles_equipos": {
             "Alemania": {
@@ -1498,6 +1530,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Marruecos": {
+                "pronostico": 3,
+                "media_grupo": 1.78,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Sorpresa",
+                "puntos": 10
             },
             "México": {
                 "pronostico": 2,
@@ -1821,6 +1861,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2151,6 +2199,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "México": {
                 "pronostico": 2,
                 "media_grupo": 1.56,
@@ -2477,6 +2533,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "México": {
                 "pronostico": 2,
                 "media_grupo": 1.56,
@@ -2799,6 +2863,14 @@
                 "pronostico": 0,
                 "media_grupo": 0.0,
                 "realidad": 0,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Marruecos": {
+                "pronostico": 1,
+                "media_grupo": 1.78,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
