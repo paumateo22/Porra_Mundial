@@ -294,6 +294,9 @@
             },
             "ID_97": {
                 "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 0,
@@ -645,6 +648,9 @@
             },
             "ID_97": {
                 "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -996,6 +1002,9 @@
             },
             "ID_97": {
                 "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -8,
@@ -1346,6 +1355,9 @@
                 "acierto_1x2": false
             },
             "ID_97": {
+                "acierto_1x2": false
+            },
+            "ID_98": {
                 "acierto_1x2": false
             }
         },
@@ -1698,6 +1710,9 @@
             },
             "ID_97": {
                 "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 2,
@@ -2049,6 +2064,9 @@
             },
             "ID_97": {
                 "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -2400,6 +2418,9 @@
             },
             "ID_97": {
                 "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -2751,6 +2772,9 @@
             },
             "ID_97": {
                 "acierto_1x2": true
+            },
+            "ID_98": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 6,
@@ -3101,6 +3125,9 @@
                 "acierto_1x2": false
             },
             "ID_97": {
+                "acierto_1x2": false
+            },
+            "ID_98": {
                 "acierto_1x2": false
             }
         },
