@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 218.0,
+    "puntos_totales": 228.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -770,7 +770,7 @@
     "premios_finales": {
         "formularios": {
             "detalles": {
-                "sorpresa": 10,
+                "sorpresa": 20,
                 "decepcion": 0
             }
         }
@@ -834,6 +834,14 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Bélgica": {
+            "pronostico": 3,
+            "media_grupo": 1.89,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Sorpresa",
+            "puntos": 10
         },
         "Cabo Verde": {
             "pronostico": 0,

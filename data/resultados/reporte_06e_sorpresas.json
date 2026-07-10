@@ -1,6 +1,6 @@
 {
     "adri": {
-        "puntos_sorpresas": 10,
+        "puntos_sorpresas": 20,
         "puntos_decepciones": 10,
         "detalles_equipos": {
             "Alemania": {
@@ -58,6 +58,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Bélgica": {
+                "pronostico": 3,
+                "media_grupo": 1.89,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Sorpresa",
+                "puntos": 10
             },
             "Cabo Verde": {
                 "pronostico": 0,
@@ -393,6 +401,14 @@
                 "resultado_calculo": "Decepción",
                 "puntos": 10
             },
+            "Bélgica": {
+                "pronostico": 2,
+                "media_grupo": 1.89,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Cabo Verde": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -723,6 +739,14 @@
                 "pronostico": 5,
                 "media_grupo": 3.33,
                 "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bélgica": {
+                "pronostico": 1,
+                "media_grupo": 1.89,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1061,6 +1085,14 @@
                 "resultado_calculo": "Decepción",
                 "puntos": 10
             },
+            "Bélgica": {
+                "pronostico": 1,
+                "media_grupo": 1.89,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Cabo Verde": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1395,6 +1427,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Bélgica": {
+                "pronostico": 1,
+                "media_grupo": 1.89,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Cabo Verde": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1670,7 +1710,7 @@
         }
     },
     "miguel_dykan": {
-        "puntos_sorpresas": 10,
+        "puntos_sorpresas": 20,
         "puntos_decepciones": 0,
         "detalles_equipos": {
             "Alemania": {
@@ -1728,6 +1768,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Bélgica": {
+                "pronostico": 3,
+                "media_grupo": 1.89,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Sorpresa",
+                "puntos": 10
             },
             "Cabo Verde": {
                 "pronostico": 0,
@@ -2063,6 +2111,14 @@
                 "resultado_calculo": "Decepción",
                 "puntos": 10
             },
+            "Bélgica": {
+                "pronostico": 1,
+                "media_grupo": 1.89,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Cabo Verde": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -2338,7 +2394,7 @@
         }
     },
     "quesadator": {
-        "puntos_sorpresas": 10,
+        "puntos_sorpresas": 20,
         "puntos_decepciones": 0,
         "detalles_equipos": {
             "Alemania": {
@@ -2396,6 +2452,14 @@
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
+            },
+            "Bélgica": {
+                "pronostico": 3,
+                "media_grupo": 1.89,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Sorpresa",
+                "puntos": 10
             },
             "Cabo Verde": {
                 "pronostico": 0,
@@ -2727,6 +2791,14 @@
                 "pronostico": 3,
                 "media_grupo": 3.33,
                 "realidad": 2,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Bélgica": {
+                "pronostico": 2,
+                "media_grupo": 1.89,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0

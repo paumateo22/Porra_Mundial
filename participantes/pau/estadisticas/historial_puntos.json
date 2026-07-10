@@ -835,6 +835,14 @@
             "resultado_calculo": "Decepción",
             "puntos": 10
         },
+        "Bélgica": {
+            "pronostico": 1,
+            "media_grupo": 1.89,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Cabo Verde": {
             "pronostico": 0,
             "media_grupo": 0.0,

@@ -1,6 +1,6 @@
 {
     "jugador": "Adri",
-    "puntos_totales": 186.5,
+    "puntos_totales": 196.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -770,7 +770,7 @@
     "premios_finales": {
         "formularios": {
             "detalles": {
-                "sorpresa": 10,
+                "sorpresa": 20,
                 "decepcion": 10
             }
         }
@@ -834,6 +834,14 @@
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0
+        },
+        "Bélgica": {
+            "pronostico": 3,
+            "media_grupo": 1.89,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Sorpresa",
+            "puntos": 10
         },
         "Cabo Verde": {
             "pronostico": 0,
@@ -1108,5 +1116,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 4
 }
