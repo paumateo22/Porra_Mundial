@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 184.0,
+    "puntos_totales": 186.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -713,6 +713,14 @@
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "3 (España) / 0 (Bélgica)",
             "puntos_conseguidos": 2.5
+        },
+        "ID_99": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "2 (Noruega) / 1 (Inglaterra)",
+            "puntos_conseguidos": 2.5
         }
     },
     "desglose_jornadas": {
@@ -762,7 +770,7 @@
             "resultado": "Neutral"
         },
         "cuartos": {
-            "aciertos_1x2": 2,
+            "aciertos_1x2": 3,
             "puntos_bono": 2,
             "resultado": "Ganador"
         }

@@ -1,6 +1,6 @@
 {
     "jugador": "Quesadator",
-    "puntos_totales": 221.5,
+    "puntos_totales": 219.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -713,6 +713,14 @@
             "multiplicador_aplicado": 3.0,
             "racha_detectada": "3 (España) / 1 (Bélgica)",
             "puntos_conseguidos": 3.0
+        },
+        "ID_99": {
+            "fase": "cuartos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 3.0,
+            "racha_detectada": "1 (Noruega) / 3 (Inglaterra)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -763,8 +771,8 @@
         },
         "cuartos": {
             "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
