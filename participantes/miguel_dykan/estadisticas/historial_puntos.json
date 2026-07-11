@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 226.0,
+    "puntos_totales": 228.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -771,8 +771,8 @@
         },
         "cuartos": {
             "aciertos_1x2": 2,
-            "puntos_bono": 0,
-            "resultado": "Neutral"
+            "puntos_bono": 2,
+            "resultado": "Ganador"
         }
     },
     "premios_finales": {
