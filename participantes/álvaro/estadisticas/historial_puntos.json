@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 181.5,
+    "puntos_totales": 167.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -716,11 +716,19 @@
         },
         "ID_99": {
             "fase": "cuartos",
-            "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_1x2": false,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "0 (Noruega) / 3 (Inglaterra)",
-            "puntos_conseguidos": 10.0
+            "puntos_conseguidos": 0.0
+        },
+        "ID_100": {
+            "fase": "cuartos",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "3 (Argentina) / 0 (Suiza)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -770,9 +778,9 @@
             "resultado": "Neutral"
         },
         "cuartos": {
-            "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 1,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
@@ -1003,6 +1011,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Noruega": {
+            "pronostico": 1,
+            "media_grupo": 2.0,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Nueva Zelanda": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -1087,6 +1103,14 @@
             "pronostico": 1,
             "media_grupo": 1.0,
             "realidad": 1,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
+        "Suiza": {
+            "pronostico": 1,
+            "media_grupo": 1.67,
+            "realidad": 3,
             "umbral_aplicado": 1.0,
             "resultado_calculo": "Ninguno",
             "puntos": 0

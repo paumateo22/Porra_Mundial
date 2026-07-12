@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 183.0,
+    "puntos_totales": 187.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -721,6 +721,14 @@
             "multiplicador_aplicado": 3.0,
             "racha_detectada": "3 (Noruega) / 1 (Inglaterra)",
             "puntos_conseguidos": 0.0
+        },
+        "ID_100": {
+            "fase": "cuartos",
+            "acierto_1x2": true,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 2.5,
+            "racha_detectada": "3 (Argentina) / 0 (Suiza)",
+            "puntos_conseguidos": 2.5
         }
     },
     "desglose_jornadas": {
@@ -770,9 +778,9 @@
             "resultado": "Perdedor"
         },
         "cuartos": {
-            "aciertos_1x2": 1,
-            "puntos_bono": -2,
-            "resultado": "Perdedor"
+            "aciertos_1x2": 2,
+            "puntos_bono": 0,
+            "resultado": "Neutral"
         }
     },
     "premios_finales": {
@@ -1003,6 +1011,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Noruega": {
+            "pronostico": 3,
+            "media_grupo": 2.0,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Nueva Zelanda": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -1091,6 +1107,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Suiza": {
+            "pronostico": 2,
+            "media_grupo": 1.67,
+            "realidad": 3,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Turquía": {
             "pronostico": 2,
             "media_grupo": 2.0,
@@ -1124,5 +1148,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 7
+    "posicion_final_ranking": 6
 }

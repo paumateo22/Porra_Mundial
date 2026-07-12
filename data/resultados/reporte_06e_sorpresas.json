@@ -219,6 +219,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 1,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -303,6 +311,14 @@
                 "pronostico": 2,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 1,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -561,6 +577,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 1,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -645,6 +669,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 2,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -903,6 +935,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 2,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -987,6 +1027,14 @@
                 "pronostico": 0,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 1,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1245,6 +1293,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 3,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1329,6 +1385,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 2,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1587,6 +1651,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 3,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -1671,6 +1743,14 @@
                 "pronostico": 2,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 2,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -1929,6 +2009,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 2,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -2013,6 +2101,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 2,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2271,6 +2367,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 3,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -2355,6 +2459,14 @@
                 "pronostico": 0,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 2,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2613,6 +2725,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 2,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -2697,6 +2817,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 2,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
@@ -2955,6 +3083,14 @@
                 "resultado_calculo": "Ninguno",
                 "puntos": 0
             },
+            "Noruega": {
+                "pronostico": 1,
+                "media_grupo": 2.0,
+                "realidad": 3,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
             "Nueva Zelanda": {
                 "pronostico": 0,
                 "media_grupo": 0.0,
@@ -3039,6 +3175,14 @@
                 "pronostico": 1,
                 "media_grupo": 1.0,
                 "realidad": 1,
+                "umbral_aplicado": 1.0,
+                "resultado_calculo": "Ninguno",
+                "puntos": 0
+            },
+            "Suiza": {
+                "pronostico": 1,
+                "media_grupo": 1.67,
+                "realidad": 3,
                 "umbral_aplicado": 1.0,
                 "resultado_calculo": "Ninguno",
                 "puntos": 0

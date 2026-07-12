@@ -1915,9 +1915,73 @@
     },
     "Noruega": {
         "media": 2.0,
-        "realidad": -1,
+        "realidad": 3,
         "umbral": 1.0,
-        "predicciones": []
+        "predicciones": [
+            {
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "javi",
+                "jugador_nombre": "Javi",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "manu",
+                "jugador_nombre": "Manu",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "miguel_dykan",
+                "jugador_nombre": "Miguel Dykan",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 3,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
     },
     "Nueva Zelanda": {
         "media": 0.0,
@@ -2691,9 +2755,73 @@
     },
     "Suiza": {
         "media": 1.67,
-        "realidad": -1,
+        "realidad": 3,
         "umbral": 1.0,
-        "predicciones": []
+        "predicciones": [
+            {
+                "jugador_id": "adri",
+                "jugador_nombre": "Adri",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "aitor",
+                "jugador_nombre": "Aitor",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "carlinhos_jr",
+                "jugador_nombre": "Carlinhos Jr",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "javi",
+                "jugador_nombre": "Javi",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "manu",
+                "jugador_nombre": "Manu",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "miguel_dykan",
+                "jugador_nombre": "Miguel Dykan",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "pau",
+                "jugador_nombre": "Pau",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "quesadator",
+                "jugador_nombre": "Quesadator",
+                "fase_pronostico": 2,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            },
+            {
+                "jugador_id": "álvaro",
+                "jugador_nombre": "Álvaro",
+                "fase_pronostico": 1,
+                "puntos": 0,
+                "resultado": "Ninguno"
+            }
+        ]
     },
     "Turquía": {
         "media": 2.0,
