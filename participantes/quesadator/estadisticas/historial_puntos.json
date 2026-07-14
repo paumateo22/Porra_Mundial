@@ -729,6 +729,14 @@
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "3 (Argentina) / 0 (Suiza)",
             "puntos_conseguidos": 2.5
+        },
+        "ID_101": {
+            "fase": "semifinales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 5.0,
+            "racha_detectada": "4 (Francia) / 4 (España)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -781,6 +789,11 @@
             "aciertos_1x2": 4,
             "puntos_bono": 2,
             "resultado": "Ganador"
+        },
+        "semifinales": {
+            "aciertos_1x2": 0,
+            "puntos_bono": 0,
+            "resultado": "Empate Masivo"
         }
     },
     "premios_finales": {
