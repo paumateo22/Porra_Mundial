@@ -1,0 +1,38 @@
+{
+    "participante": "Javi",
+    "fase_origen": "semifinales",
+    "predicciones": {
+        "semifinales": [
+            {
+                "local": "Francia",
+                "visitante": "España",
+                "goles_local": 1,
+                "goles_visitante": 2,
+                "pasa": "España"
+            },
+            {
+                "local": "Inglaterra",
+                "visitante": "Argentina",
+                "goles_local": 2,
+                "goles_visitante": 3,
+                "pasa": "Argentina"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Francia",
+                "visitante": "Inglaterra",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Francia"
+            },
+            {
+                "local": "España",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            }
+        ]
+    }
+}
