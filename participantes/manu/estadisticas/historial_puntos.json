@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 196.5,
+    "puntos_totales": 201.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -732,11 +732,11 @@
         },
         "ID_101": {
             "fase": "semifinales",
-            "acierto_1x2": false,
+            "acierto_1x2": true,
             "acierto_exacto": false,
             "multiplicador_aplicado": 5.0,
             "racha_detectada": "4 (Francia) / 4 (España)",
-            "puntos_conseguidos": 0.0
+            "puntos_conseguidos": 5.0
         }
     },
     "desglose_jornadas": {
@@ -791,7 +791,7 @@
             "resultado": "Neutral"
         },
         "semifinales": {
-            "aciertos_1x2": 0,
+            "aciertos_1x2": 1,
             "puntos_bono": 0,
             "resultado": "Empate Masivo"
         }
