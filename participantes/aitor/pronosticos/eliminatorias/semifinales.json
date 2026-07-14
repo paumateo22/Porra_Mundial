@@ -1,0 +1,38 @@
+{
+    "participante": "aitor",
+    "fase_origen": "semifinales",
+    "predicciones": {
+        "semifinales": [
+            {
+                "local": "Francia",
+                "visitante": "España",
+                "goles_local": 2,
+                "goles_visitante": 3,
+                "pasa": "España"
+            },
+            {
+                "local": "Inglaterra",
+                "visitante": "Argentina",
+                "goles_local": 2,
+                "goles_visitante": 2,
+                "pasa": "Inglaterra"
+            }
+        ],
+        "finales": [
+            {
+                "local": "Francia",
+                "visitante": "Argentina",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "Francia"
+            },
+            {
+                "local": "España",
+                "visitante": "Inglaterra",
+                "goles_local": 0,
+                "goles_visitante": 0,
+                "pasa": "España"
+            }
+        ]
+    }
+}
