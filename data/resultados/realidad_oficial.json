@@ -928,9 +928,10 @@
                 "local": "Francia",
                 "visitante": "España",
                 "fecha": "2026-07-14T21:00:00",
-                "estado": "jugandose",
+                "estado": "finished",
                 "goles_local": "0",
-                "goles_visitante": "2"
+                "goles_visitante": "2",
+                "pasa": "España"
             },
             {
                 "id_partido": 102,
@@ -945,7 +946,7 @@
         "tercer_puesto": [
             {
                 "id_partido": 103,
-                "local": "L101",
+                "local": "Francia",
                 "visitante": "L102",
                 "fecha": "2026-07-18T23:00:00",
                 "estado": "notstarted",
@@ -957,7 +958,7 @@
         "final": [
             {
                 "id_partido": 104,
-                "local": "W101",
+                "local": "España",
                 "visitante": "W102",
                 "fecha": "2026-07-19T21:00:00",
                 "estado": "notstarted",
