@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 257.5,
+    "puntos_totales": 251.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -740,11 +740,11 @@
         },
         "ID_102": {
             "fase": "semifinales",
-            "acierto_1x2": true,
+            "acierto_1x2": false,
             "acierto_exacto": false,
             "multiplicador_aplicado": 2.5,
             "racha_detectada": "1 (Inglaterra) / 2 (Argentina)",
-            "puntos_conseguidos": 2.5
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -799,9 +799,9 @@
             "resultado": "Ganador"
         },
         "semifinales": {
-            "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 1,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
