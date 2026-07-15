@@ -306,9 +306,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -362,14 +365,14 @@
             },
             "semifinales": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
     "aitor": {
-        "puntos_partidos": 124.5,
-        "total_aciertos_1x2": 64,
+        "puntos_partidos": 127.5,
+        "total_aciertos_1x2": 65,
         "total_aciertos_exactos": 7,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -674,9 +677,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 8,
+        "puntos_jornadas": 10,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -729,9 +735,9 @@
                 "resultado": "Ganador"
             },
             "semifinales": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
@@ -1042,9 +1048,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -10,
+        "puntos_jornadas": -12,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1098,8 +1107,8 @@
             },
             "semifinales": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
@@ -1410,9 +1419,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": -2,
+        "puntos_jornadas": -4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1466,14 +1478,14 @@
             },
             "semifinales": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
     "manu": {
-        "puntos_partidos": 117.5,
-        "total_aciertos_1x2": 57,
+        "puntos_partidos": 120.5,
+        "total_aciertos_1x2": 58,
         "total_aciertos_exactos": 10,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -1778,9 +1790,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": 0,
+        "puntos_jornadas": 2,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -1833,9 +1848,9 @@
                 "resultado": "Neutral"
             },
             "semifinales": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     },
@@ -2146,9 +2161,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 8,
+        "puntos_jornadas": 6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -2202,8 +2220,8 @@
             },
             "semifinales": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
@@ -2514,9 +2532,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 6,
@@ -2570,8 +2591,8 @@
             },
             "semifinales": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
@@ -2882,9 +2903,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": false
             }
         },
-        "puntos_jornadas": 6,
+        "puntos_jornadas": 4,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 5,
@@ -2938,14 +2962,14 @@
             },
             "semifinales": {
                 "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "puntos_bono": -2,
+                "resultado": "Perdedor"
             }
         }
     },
     "álvaro": {
-        "puntos_partidos": 111.0,
-        "total_aciertos_1x2": 53,
+        "puntos_partidos": 115.5,
+        "total_aciertos_1x2": 54,
         "total_aciertos_exactos": 12,
         "historial_jornadas": {
             "Argentina_vs_Argelia": {
@@ -3250,9 +3274,12 @@
             },
             "ID_101": {
                 "acierto_1x2": true
+            },
+            "ID_102": {
+                "acierto_1x2": true
             }
         },
-        "puntos_jornadas": -8,
+        "puntos_jornadas": -6,
         "desglose_jornadas": {
             "J1.1": {
                 "aciertos_1x2": 4,
@@ -3305,9 +3332,9 @@
                 "resultado": "Perdedor"
             },
             "semifinales": {
-                "aciertos_1x2": 1,
-                "puntos_bono": 0,
-                "resultado": "Empate Masivo"
+                "aciertos_1x2": 2,
+                "puntos_bono": 2,
+                "resultado": "Ganador"
             }
         }
     }
