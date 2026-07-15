@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 191.0,
+    "puntos_totales": 169.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -740,11 +740,11 @@
         },
         "ID_102": {
             "fase": "semifinales",
-            "acierto_1x2": true,
-            "acierto_exacto": true,
+            "acierto_1x2": false,
+            "acierto_exacto": false,
             "multiplicador_aplicado": 4.5,
             "racha_detectada": "3 (Inglaterra) / 4 (Argentina)",
-            "puntos_conseguidos": 18.0
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
@@ -799,9 +799,9 @@
             "resultado": "Perdedor"
         },
         "semifinales": {
-            "aciertos_1x2": 2,
-            "puntos_bono": 2,
-            "resultado": "Ganador"
+            "aciertos_1x2": 1,
+            "puntos_bono": -2,
+            "resultado": "Perdedor"
         }
     },
     "premios_finales": {
@@ -992,6 +992,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Inglaterra": {
+            "pronostico": 5,
+            "media_grupo": 3.11,
+            "realidad": 4,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Irak": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -1177,5 +1185,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 6
+    "posicion_final_ranking": 8
 }

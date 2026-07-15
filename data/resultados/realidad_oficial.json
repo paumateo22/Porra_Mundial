@@ -938,16 +938,17 @@
                 "local": "Inglaterra",
                 "visitante": "Argentina",
                 "fecha": "2026-07-15T21:00:00",
-                "estado": "jugandose",
+                "estado": "finished",
                 "goles_local": "1",
-                "goles_visitante": "1"
+                "goles_visitante": "2",
+                "pasa": "Argentina"
             }
         ],
         "tercer_puesto": [
             {
                 "id_partido": 103,
                 "local": "Francia",
-                "visitante": "L102",
+                "visitante": "Inglaterra",
                 "fecha": "2026-07-18T23:00:00",
                 "estado": "notstarted",
                 "goles_local": "",
@@ -959,7 +960,7 @@
             {
                 "id_partido": 104,
                 "local": "España",
-                "visitante": "W102",
+                "visitante": "Argentina",
                 "fecha": "2026-07-19T21:00:00",
                 "estado": "notstarted",
                 "goles_local": "",

@@ -992,6 +992,14 @@
             "resultado_calculo": "Ninguno",
             "puntos": 0
         },
+        "Inglaterra": {
+            "pronostico": 3,
+            "media_grupo": 3.11,
+            "realidad": 4,
+            "umbral_aplicado": 1.0,
+            "resultado_calculo": "Ninguno",
+            "puntos": 0
+        },
         "Irak": {
             "pronostico": 0,
             "media_grupo": 0.0,
@@ -1177,5 +1185,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 1
+    "posicion_final_ranking": 2
 }
