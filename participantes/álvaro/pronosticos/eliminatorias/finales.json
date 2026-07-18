@@ -1,0 +1,22 @@
+{
+    "participante": "Álvaro",
+    "fase_origen": "finales",
+    "predicciones": {
+        "finales": [
+            {
+                "local": "Francia",
+                "visitante": "Inglaterra",
+                "goles_local": 3,
+                "goles_visitante": 2,
+                "pasa": "Francia"
+            },
+            {
+                "local": "España",
+                "visitante": "Argentina",
+                "goles_local": 2,
+                "goles_visitante": 1,
+                "pasa": "España"
+            }
+        ]
+    }
+}
