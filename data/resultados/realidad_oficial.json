@@ -950,10 +950,11 @@
                 "local": "Francia",
                 "visitante": "Inglaterra",
                 "fecha": "2026-07-18T23:00:00",
-                "estado": "jugandose",
-                "goles_local": "3",
-                "goles_visitante": "4",
-                "ganador": "TBD"
+                "estado": "finished",
+                "goles_local": "4",
+                "goles_visitante": "6",
+                "ganador": "Inglaterra",
+                "pasa": "Inglaterra"
             }
         ],
         "final": [
