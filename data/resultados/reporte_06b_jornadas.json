@@ -309,6 +309,9 @@
             },
             "ID_102": {
                 "acierto_1x2": false
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -4,
@@ -367,6 +370,11 @@
                 "aciertos_1x2": 1,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -680,6 +688,9 @@
             },
             "ID_102": {
                 "acierto_1x2": false
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 6,
@@ -738,6 +749,11 @@
                 "aciertos_1x2": 1,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -1051,6 +1067,9 @@
             },
             "ID_102": {
                 "acierto_1x2": true
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -8,
@@ -1109,6 +1128,11 @@
                 "aciertos_1x2": 2,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -1422,6 +1446,9 @@
             },
             "ID_102": {
                 "acierto_1x2": true
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 0,
@@ -1480,6 +1507,11 @@
                 "aciertos_1x2": 2,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -1793,6 +1825,9 @@
             },
             "ID_102": {
                 "acierto_1x2": false
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -2,
@@ -1851,6 +1886,11 @@
                 "aciertos_1x2": 1,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -2164,6 +2204,9 @@
             },
             "ID_102": {
                 "acierto_1x2": false
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 6,
@@ -2222,6 +2265,11 @@
                 "aciertos_1x2": 1,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -2535,6 +2583,9 @@
             },
             "ID_102": {
                 "acierto_1x2": true
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -2593,6 +2644,11 @@
                 "aciertos_1x2": 2,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -2906,6 +2962,9 @@
             },
             "ID_102": {
                 "acierto_1x2": true
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -2964,6 +3023,11 @@
                 "aciertos_1x2": 2,
                 "puntos_bono": 2,
                 "resultado": "Ganador"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     },
@@ -3277,6 +3341,9 @@
             },
             "ID_102": {
                 "acierto_1x2": false
+            },
+            "ID_103": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -10,
@@ -3335,6 +3402,11 @@
                 "aciertos_1x2": 1,
                 "puntos_bono": -2,
                 "resultado": "Perdedor"
+            },
+            "finales": {
+                "aciertos_1x2": 0,
+                "puntos_bono": 0,
+                "resultado": "Empate Masivo"
             }
         }
     }
