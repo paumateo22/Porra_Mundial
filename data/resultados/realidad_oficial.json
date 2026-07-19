@@ -963,10 +963,11 @@
                 "local": "España",
                 "visitante": "Argentina",
                 "fecha": "2026-07-19T21:00:00",
-                "estado": "jugandose",
-                "goles_local": "0",
+                "estado": "finished",
+                "goles_local": "1",
                 "goles_visitante": "0",
-                "ganador": "TBD"
+                "ganador": "España",
+                "pasa": "España"
             }
         ]
     }
