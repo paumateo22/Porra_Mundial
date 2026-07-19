@@ -753,6 +753,14 @@
             "multiplicador_aplicado": 1.0,
             "racha_detectada": "Fallo de cruce",
             "puntos_conseguidos": 0
+        },
+        "ID_104": {
+            "fase": "finales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 1.0,
+            "racha_detectada": "Fallo de cruce",
+            "puntos_conseguidos": 0
         }
     },
     "desglose_jornadas": {

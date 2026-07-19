@@ -312,6 +312,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -4,
@@ -691,6 +694,9 @@
                 "acierto_1x2": false
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         },
@@ -1072,6 +1078,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -8,
@@ -1451,6 +1460,9 @@
                 "acierto_1x2": true
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         },
@@ -1832,6 +1844,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": -2,
@@ -2211,6 +2226,9 @@
                 "acierto_1x2": false
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         },
@@ -2592,6 +2610,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -2972,6 +2993,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         },
         "puntos_jornadas": 8,
@@ -3351,6 +3375,9 @@
                 "acierto_1x2": false
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         },

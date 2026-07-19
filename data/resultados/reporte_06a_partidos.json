@@ -312,6 +312,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         }
     },
@@ -627,6 +630,9 @@
                 "acierto_1x2": false
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         }
@@ -944,6 +950,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         }
     },
@@ -1259,6 +1268,9 @@
                 "acierto_1x2": true
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         }
@@ -1576,6 +1588,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         }
     },
@@ -1891,6 +1906,9 @@
                 "acierto_1x2": false
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         }
@@ -2208,6 +2226,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         }
     },
@@ -2524,6 +2545,9 @@
             },
             "ID_103": {
                 "acierto_1x2": false
+            },
+            "ID_104": {
+                "acierto_1x2": false
             }
         }
     },
@@ -2839,6 +2863,9 @@
                 "acierto_1x2": false
             },
             "ID_103": {
+                "acierto_1x2": false
+            },
+            "ID_104": {
                 "acierto_1x2": false
             }
         }

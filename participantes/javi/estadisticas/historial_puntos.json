@@ -753,6 +753,14 @@
             "multiplicador_aplicado": 4.5,
             "racha_detectada": "5 (Francia) / 2 (Inglaterra)",
             "puntos_conseguidos": 0.0
+        },
+        "ID_104": {
+            "fase": "finales",
+            "acierto_1x2": false,
+            "acierto_exacto": false,
+            "multiplicador_aplicado": 5.5,
+            "racha_detectada": "5 (España) / 4 (Argentina)",
+            "puntos_conseguidos": 0.0
         }
     },
     "desglose_jornadas": {
