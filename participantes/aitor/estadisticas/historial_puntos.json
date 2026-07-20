@@ -835,27 +835,27 @@
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
                     "pronostico": "Lamine Yamal",
-                    "realidad": "",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "guante_oro": {
                     "pronostico": "Dibu Martinez",
-                    "realidad": "",
+                    "realidad": "Unai Simón",
                     "puntos": 0
                 },
                 "mejor_joven": {
                     "pronostico": "Lamine Yamal",
-                    "realidad": "",
+                    "realidad": "Pau Cubrasí",
                     "puntos": 0
                 },
                 "gol_torneo": {
                     "pronostico": "Luis Diaz",
-                    "realidad": "",
+                    "realidad": "Lopes Cabral",
                     "puntos": 0
                 }
             }
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 3
+    "posicion_final_ranking": 5
 }

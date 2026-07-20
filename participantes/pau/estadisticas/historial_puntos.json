@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 202.0,
+    "puntos_totales": 207.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -831,31 +831,31 @@
                 "sorpresa": 0,
                 "decepcion": 10
             },
-            "puntos_individuales": 0,
+            "puntos_individuales": 5,
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Mbappe",
-                    "realidad": "",
-                    "puntos": 0
+                    "realidad": "Mbappe",
+                    "puntos": 5
                 },
                 "balon_oro": {
                     "pronostico": "Pedri",
-                    "realidad": "",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "guante_oro": {
                     "pronostico": "Diogo Costa",
-                    "realidad": "",
+                    "realidad": "Unai Simón",
                     "puntos": 0
                 },
                 "mejor_joven": {
                     "pronostico": "Lamine Yamal",
-                    "realidad": "",
+                    "realidad": "Pau Cubrasí",
                     "puntos": 0
                 },
                 "gol_torneo": {
                     "pronostico": "Jhon Arias",
-                    "realidad": "",
+                    "realidad": "Lopes Cabral",
                     "puntos": 0
                 }
             }
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 6
+    "posicion_final_ranking": 4
 }

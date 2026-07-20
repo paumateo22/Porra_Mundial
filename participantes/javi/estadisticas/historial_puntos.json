@@ -1,6 +1,6 @@
 {
     "jugador": "Javi",
-    "puntos_totales": 205.0,
+    "puntos_totales": 210.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -831,31 +831,31 @@
                 "sorpresa": 10,
                 "decepcion": 20
             },
-            "puntos_individuales": 0,
+            "puntos_individuales": 5,
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Oyarzabal",
-                    "realidad": "",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
                     "pronostico": "Lamine Yamal",
-                    "realidad": "",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "guante_oro": {
                     "pronostico": "Unai Simón",
-                    "realidad": "",
-                    "puntos": 0
+                    "realidad": "Unai Simón",
+                    "puntos": 5
                 },
                 "mejor_joven": {
                     "pronostico": "Lamine Yamal",
-                    "realidad": "",
+                    "realidad": "Pau Cubrasí",
                     "puntos": 0
                 },
                 "gol_torneo": {
                     "pronostico": "Lionel Messi",
-                    "realidad": "",
+                    "realidad": "Lopes Cabral",
                     "puntos": 0
                 }
             }
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 3
 }

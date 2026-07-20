@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 156.5,
+    "puntos_totales": 161.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -831,31 +831,31 @@
                 "sorpresa": 0,
                 "decepcion": 0
             },
-            "puntos_individuales": 0,
+            "puntos_individuales": 5,
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Ferran Torres",
-                    "realidad": "",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
                     "pronostico": "Lamine Yamal",
-                    "realidad": "",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "guante_oro": {
                     "pronostico": "Unai Simón",
-                    "realidad": "",
-                    "puntos": 0
+                    "realidad": "Unai Simón",
+                    "puntos": 5
                 },
                 "mejor_joven": {
                     "pronostico": "Endrick",
-                    "realidad": "",
+                    "realidad": "Pau Cubrasí",
                     "puntos": 0
                 },
                 "gol_torneo": {
                     "pronostico": "Endrick",
-                    "realidad": "",
+                    "realidad": "Lopes Cabral",
                     "puntos": 0
                 }
             }
