@@ -1,0 +1,145 @@
+import sys
+import json
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(ROOT_DIR))
+
+def cargar_json(ruta):
+    if not ruta.exists(): return {}
+    with open(ruta, 'r', encoding='utf-8') as f:
+        try: return json.load(f)
+        except: return {}
+
+def guardar_json(datos, ruta):
+    ruta.parent.mkdir(parents=True, exist_ok=True)
+    with open(ruta, 'w', encoding='utf-8') as f:
+        json.dump(datos, f, ensure_ascii=False, indent=4)
+
+def obtener_podio_real(realidad):
+    podio = {"campeon": "", "subcampeon": "", "tercero": "", "cuarto": ""}
+    
+    # Final
+    final = realidad.get("eliminatorias", {}).get("final", [])
+    if final and final[0].get("estado") == "finished":
+        p = final[0]
+        ganador = p.get("pasa", "")
+        perdedor = p["visitante"] if p["local"] == ganador else p["local"]
+        podio["campeon"] = ganador
+        podio["subcampeon"] = perdedor
+        
+    # Tercer puesto
+    tercer = realidad.get("eliminatorias", {}).get("tercer_puesto", [])
+    if tercer and tercer[0].get("estado") == "finished":
+        p = tercer[0]
+        ganador = p.get("pasa", "")
+        perdedor = p["visitante"] if p["local"] == ganador else p["local"]
+        podio["tercero"] = ganador
+        podio["cuarto"] = perdedor
+        
+    return podio
+
+def ejecutar_06f_premios():
+    print("=======================================================")
+    print(" 🏅 [06F] INICIANDO MOTOR DE PREMIOS Y PODIO 🏅")
+    print("=======================================================")
+
+    settings = cargar_json(ROOT_DIR / "config" / "settings.json")
+    realidad = cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json")
+    premios_oficiales = cargar_json(ROOT_DIR / "data" / "resultados" / "premios_oficiales.json")
+    
+    # Puntuaciones configuradas (con valores por defecto por seguridad)
+    pts_conf = settings.get("puntuaciones", {}).get("premios_finales", {})
+    pts_campeon = pts_conf.get("campeon", 10)
+    pts_subcampeon = pts_conf.get("subcampeon", 7)
+    pts_tercero = pts_conf.get("tercero", 5)
+    pts_cuarto = pts_conf.get("cuarto", 3)
+    pts_individual = pts_conf.get("galardones", 5) 
+
+    podio_real = obtener_podio_real(realidad)
+    premios_individuales_reales = premios_oficiales.get("premios_individuales", {})
+
+    dir_participantes = ROOT_DIR / "participantes"
+    jugadores = [p for p in dir_participantes.iterdir() if p.is_dir()]
+    
+    reporte_06f = {}
+
+    for j_dir in jugadores:
+        jug = j_dir.name
+        form_pred = cargar_json(j_dir / "pronosticos" / "premios" / "premios_formulario.json")
+        
+        pts_podio = 0
+        pts_forms = 0
+        detalles_podio = {}
+        detalles_forms = {}
+
+        if form_pred:
+            # 1. Evaluar Podio Automático
+            for pos, pts_premio in [("campeon", pts_campeon), ("subcampeon", pts_subcampeon), ("tercero", pts_tercero), ("cuarto", pts_cuarto)]:
+                pred_val = str(form_pred.get(pos, "")).strip().lower()
+                real_val = str(podio_real.get(pos, "")).strip().lower()
+                
+                ganado = 0
+                if real_val and pred_val == real_val:
+                    ganado = pts_premio
+                    pts_podio += ganado
+                    
+                detalles_podio[pos] = {
+                    "pronostico": form_pred.get(pos, ""),
+                    "realidad": podio_real.get(pos, ""),
+                    "puntos": ganado
+                }
+
+            # 2. Evaluar Premios Individuales Manuales
+            for premio in ["bota_oro", "balon_oro", "guante_oro", "mejor_joven", "gol_torneo"]:
+                pred_val = str(form_pred.get(premio, "")).strip().lower()
+                
+                real_vals_raw = premios_individuales_reales.get(premio, [])
+                if isinstance(real_vals_raw, str):
+                    real_vals = [real_vals_raw]
+                else:
+                    real_vals = real_vals_raw
+                    
+                real_vals_clean = [str(x).strip().lower() for x in real_vals if str(x).strip()]
+                
+                ganado = 0
+                if real_vals_clean and pred_val in real_vals_clean:
+                    ganado = pts_individual
+                    pts_forms += ganado
+                    
+                detalles_forms[premio] = {
+                    "pronostico": form_pred.get(premio, ""),
+                    "realidad": ", ".join([str(x) for x in real_vals if str(x).strip()]),
+                    "puntos": ganado
+                }
+
+        reporte_06f[jug] = {
+            "puntos_podio": pts_podio,
+            "puntos_formulario": pts_forms,
+            "detalles": {
+                "podio": detalles_podio,
+                "individuales": detalles_forms
+            }
+        }
+
+        # Guardar en el historial del jugador
+        ruta_libro = j_dir / "estadisticas" / "historial_puntos.json"
+        libro = cargar_json(ruta_libro)
+        if libro:
+            if "premios_finales" not in libro: libro["premios_finales"] = {}
+            libro["premios_finales"]["podio"] = {"puntos_conseguidos": pts_podio, "detalles": detalles_podio}
+            
+            if "formularios" not in libro["premios_finales"]: libro["premios_finales"]["formularios"] = {}
+            libro["premios_finales"]["formularios"]["puntos_individuales"] = pts_forms
+            libro["premios_finales"]["formularios"]["detalles_individuales"] = detalles_forms
+            
+            guardar_json(libro, ruta_libro)
+            
+        print(f"👤 {jug.title()}: Podio (+{pts_podio} pts) | Premios Indiv (+{pts_forms} pts)")
+
+    ruta_reporte = ROOT_DIR / "data" / "resultados" / "reporte_06f_premios.json"
+    guardar_json(reporte_06f, ruta_reporte)
+    print(f"\n✅ Informe 06f generado con éxito en: {ruta_reporte.relative_to(ROOT_DIR)}")
+
+if __name__ == "__main__":
+    ejecutar_06f_premios()
