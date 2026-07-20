@@ -547,6 +547,20 @@ def generar_vistas_pronosticos():
         ruta_premios = j_dir / "pronosticos" / "premios" / "premios_formulario.json"
         premios_pred = html_utils.cargar_json(ruta_premios) or {}
         
+        # Desempaquetar la estructura anidada si existe
+        premios_reales_dict = premios_reales.get("premios_individuales", premios_reales)
+        
+        # Comprobación inteligente para quitar el candado: ¿Hay algún premio relleno?
+        hay_premios_oficiales = False
+        if premios_reales_dict:
+            for ganadores in premios_reales_dict.values():
+                if isinstance(ganadores, list) and any(str(g).strip() for g in ganadores):
+                    hay_premios_oficiales = True
+                    break
+                elif isinstance(ganadores, str) and str(ganadores).strip():
+                    hay_premios_oficiales = True
+                    break
+        
         html = f"""<!DOCTYPE html>
         <html lang="es">
         <head>
@@ -611,8 +625,17 @@ def generar_vistas_pronosticos():
             """
             for k, v in premios_pred.items():
                 if k == "participante": continue
-                val_real = premios_reales.get(k, "")
-                color_valor = "#4ade80" if val_real and str(v).lower().strip() == str(val_real).lower().strip() else "white"
+                
+                val_real = premios_reales_dict.get(k, [])
+                v_clean = str(v).lower().strip()
+                
+                is_correct = False
+                if isinstance(val_real, list):
+                    is_correct = any(v_clean == str(x).lower().strip() for x in val_real if str(x).strip())
+                elif isinstance(val_real, str):
+                    is_correct = (v_clean == str(val_real).lower().strip()) and bool(val_real.strip())
+                
+                color_valor = "#4ade80" if is_correct else "white"
                 
                 html += f"""
                     <div style="background:#111; border:1px solid #222; border-radius:4px; padding:10px; text-align:center;">
@@ -628,7 +651,7 @@ def generar_vistas_pronosticos():
                     <h2 style="color:var(--accent); border-bottom:1px solid #444; padding-bottom:10px; margin-top:0; text-align:center; width:100%; display:block;">Realidad</h2>
                     <div style="display:flex; flex-direction:column; gap:15px; margin-top:15px; height:100%;">
             """
-            if not premios_reales:
+            if not hay_premios_oficiales:
                 html += """
                     <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; background:rgba(218, 165, 32, 0.1); border:1px dashed var(--gold); border-radius:8px; padding:20px; text-align:center;">
                         <div style="font-size:2em; margin-bottom:10px;">🔒</div>
@@ -637,11 +660,14 @@ def generar_vistas_pronosticos():
                     </div>
                 """
             else:
-                for k, v in premios_reales.items():
+                for k, v in premios_reales_dict.items():
+                    display_val = ", ".join([str(x) for x in v if str(x).strip()]) if isinstance(v, list) else v
+                    if not display_val: continue
+                    
                     html += f"""
                         <div style="background:#111; border:1px solid #222; border-radius:4px; padding:10px; text-align:center;">
                             <div style="font-size:0.8em; color:gray; text-transform:uppercase; margin-bottom:5px; font-weight:bold;">{k.replace('_', ' ')}</div>
-                            <div style="font-size:1.2em; font-weight:bold; color:var(--accent);">{v}</div>
+                            <div style="font-size:1.2em; font-weight:bold; color:var(--accent);">{display_val}</div>
                         </div>
                     """
             html += """
