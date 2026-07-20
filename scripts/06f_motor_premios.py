@@ -40,44 +40,54 @@ def obtener_podio_real(realidad):
     return podio
 
 def extraer_podio_pronosticado(base_pronostico):
-    """
-    Busca en el archivo base de grupos de cada jugador cómo pronosticó el podio
-    analizando la fase de finales / final / tercer puesto en sus pronósticos de eliminatorias.
-    """
     podio = {"campeon": "", "subcampeon": "", "tercero": "", "cuarto": ""}
     
     eliminatorias = base_pronostico.get("eliminatorias", {})
     if not eliminatorias:
         eliminatorias = base_pronostico.get("predicciones", {})
         
-    # Buscar partidos de finales (final y tercer puesto)
-    partidos_finales = []
-    if "finales" in eliminatorias:
-        partidos_finales = eliminatorias["finales"]
-    else:
-        if "final" in eliminatorias: partidos_finales.extend(eliminatorias["final"])
-        if "tercer_puesto" in eliminatorias: partidos_finales.extend(eliminatorias["tercer_puesto"])
-        
-    for p in partidos_finales:
-        id_p = str(p.get("id_partido", ""))
+    # 1. Buscar en la lista de la final (id_partido 104)
+    lista_final = eliminatorias.get("final", [])
+    for p in lista_final:
+        if str(p.get("id_partido")) == "104":
+            ganador = p.get("pasa", "")
+            local = p.get("local", "")
+            visitante = p.get("visitante", "")
+            if ganador:
+                podio["campeon"] = ganador
+                podio["subcampeon"] = visitante if ganador == local else local
+            break
+            
+    # Si no se encontró por ID 104 pero hay elementos en la lista, cogemos el primero
+    if not podio["campeon"] and lista_final:
+        p = lista_final[0]
+        ganador = p.get("pasa", "")
         local = p.get("local", "")
         visitante = p.get("visitante", "")
-        pasa = p.get("pasa", "")
-        
-        # Identificar si es la Final (id 104 o última) o 3º puesto (id 103)
-        if "104" in id_p or (not id_p and len(partidos_finales) == 2 and p == partidos_finales[1]):
-            if pasa:
-                podio["campeon"] = pasa
-                podio["subcampeon"] = visitante if pasa == local else local
-        elif "103" in id_p or (not id_p and len(partidos_finales) == 2 and p == partidos_finales[0]):
-            if pasa:
-                podio["tercero"] = pasa
-                podio["cuarto"] = visitante if pasa == local else local
-        elif len(partidos_finales) == 1:
-            # Si solo hay un partido guardado, asumimos que es la final
-            if pasa:
-                podio["campeon"] = pasa
-                podio["subcampeon"] = visitante if pasa == local else local
+        if ganador:
+            podio["campeon"] = ganador
+            podio["subcampeon"] = visitante if ganador == local else local
+
+    # 2. Buscar en la lista de tercer puesto (id_partido 103)
+    lista_tercero = eliminatorias.get("tercer_puesto", [])
+    for p in lista_tercero:
+        if str(p.get("id_partido")) == "103":
+            ganador = p.get("pasa", "")
+            local = p.get("local", "")
+            visitante = p.get("visitante", "")
+            if ganador:
+                podio["tercero"] = ganador
+                podio["cuarto"] = visitante if ganador == local else local
+            break
+            
+    if not podio["tercero"] and lista_tercero:
+        p = lista_tercero[0]
+        ganador = p.get("pasa", "")
+        local = p.get("local", "")
+        visitante = p.get("visitante", "")
+        if ganador:
+            podio["tercero"] = ganador
+            podio["cuarto"] = visitante if ganador == local else local
 
     return podio
 
@@ -104,7 +114,7 @@ def ejecutar_06f_premios():
     for j_dir in jugadores:
         jug = j_dir.name
         
-        # Cargar archivo base de pronósticos de grupos donde reside la estructura de eliminatorias
+        # Cargar archivo base de grupos de cada participante
         ruta_base = j_dir / "pronosticos" / "grupos" / f"{jug}_base.json"
         base_pred = cargar_json(ruta_base)
         podio_pred = extraer_podio_pronosticado(base_pred)
@@ -117,12 +127,12 @@ def ejecutar_06f_premios():
         detalles_podio = {}
         detalles_forms = {}
 
-        # 1. Evaluar Podio Pronosticado desde su base de grupos
+        # 1. Evaluar Podio con las llaves de settings.json (campeon, subcampeon, tercer_puesto)
         mapeo_podio = [
             ("campeon", "campeon"), 
             ("subcampeon", "subcampeon"), 
             ("tercero", "tercer_puesto"), 
-            ("cuarto", "tercer_puesto") 
+            ("cuarto", "tercer_puesto") # El cuarto puesto comparte la configuración de puntos del tercer puesto
         ]
         
         for pos, clave_settings in mapeo_podio:
@@ -144,7 +154,7 @@ def ejecutar_06f_premios():
                 "puntos": ganado
             }
 
-        # 2. Evaluar Premios Individuales desde el formulario de premios
+        # 2. Evaluar Premios Individuales desde el formulario
         if form_pred:
             for premio in ["bota_oro", "balon_oro", "guante_oro", "mejor_joven", "gol_torneo"]:
                 if habilitadores.get(premio, 1) == 0:
