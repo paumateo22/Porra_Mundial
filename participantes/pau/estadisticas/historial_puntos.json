@@ -864,22 +864,22 @@
             "puntos_conseguidos": 0,
             "detalles": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "España",
                     "puntos": 0
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Inglaterra",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 7
 }

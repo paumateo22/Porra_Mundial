@@ -1,6 +1,6 @@
 {
     "jugador": "Carlinhos Jr",
-    "puntos_totales": 171.5,
+    "puntos_totales": 186.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -861,25 +861,25 @@
             }
         },
         "podio": {
-            "puntos_conseguidos": 0,
+            "puntos_conseguidos": 15,
             "detalles": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Brasil",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Ecuador",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "Francia",
                     "puntos": 0
                 }

@@ -1,26 +1,26 @@
 {
     "adri": {
-        "puntos_podio": 0,
+        "puntos_podio": 15,
         "puntos_formulario": 0,
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Brasil",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Países Bajos",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -55,27 +55,27 @@
         }
     },
     "aitor": {
-        "puntos_podio": 0,
+        "puntos_podio": 15,
         "puntos_formulario": 0,
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Países Bajos",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -110,27 +110,27 @@
         }
     },
     "carlinhos_jr": {
-        "puntos_podio": 0,
+        "puntos_podio": 15,
         "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Brasil",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Ecuador",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -165,27 +165,27 @@
         }
     },
     "javi": {
-        "puntos_podio": 0,
+        "puntos_podio": 15,
         "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Marruecos",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -220,27 +220,27 @@
         }
     },
     "manu": {
-        "puntos_podio": 0,
+        "puntos_podio": 15,
         "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Brasil",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Argentina",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -280,22 +280,22 @@
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "España",
                     "puntos": 0
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Brasil",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -335,22 +335,22 @@
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "España",
                     "puntos": 0
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Inglaterra",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -385,27 +385,27 @@
         }
     },
     "quesadator": {
-        "puntos_podio": 0,
+        "puntos_podio": 15,
         "puntos_formulario": 0,
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Inglaterra",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -440,27 +440,27 @@
         }
     },
     "álvaro": {
-        "puntos_podio": 0,
+        "puntos_podio": 15,
         "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Inglaterra",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Países Bajos",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Argentina",
                     "realidad": "Francia",
                     "puntos": 0
                 }

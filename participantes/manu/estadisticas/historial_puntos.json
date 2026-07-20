@@ -1,6 +1,6 @@
 {
     "jugador": "Manu",
-    "puntos_totales": 212.5,
+    "puntos_totales": 227.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -861,25 +861,25 @@
             }
         },
         "podio": {
-            "puntos_conseguidos": 0,
+            "puntos_conseguidos": 15,
             "detalles": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Brasil",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Argentina",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 5
+    "posicion_final_ranking": 4
 }

@@ -1,6 +1,6 @@
 {
     "jugador": "Aitor",
-    "puntos_totales": 207.0,
+    "puntos_totales": 222.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -861,25 +861,25 @@
             }
         },
         "podio": {
-            "puntos_conseguidos": 0,
+            "puntos_conseguidos": 15,
             "detalles": {
                 "campeon": {
-                    "pronostico": "",
+                    "pronostico": "España",
                     "realidad": "España",
-                    "puntos": 0
+                    "puntos": 15
                 },
                 "subcampeon": {
-                    "pronostico": "",
+                    "pronostico": "Portugal",
                     "realidad": "Argentina",
                     "puntos": 0
                 },
                 "tercero": {
-                    "pronostico": "",
+                    "pronostico": "Francia",
                     "realidad": "Inglaterra",
                     "puntos": 0
                 },
                 "cuarto": {
-                    "pronostico": "",
+                    "pronostico": "Países Bajos",
                     "realidad": "Francia",
                     "puntos": 0
                 }
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 6
+    "posicion_final_ranking": 5
 }
