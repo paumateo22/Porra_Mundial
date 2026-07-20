@@ -441,7 +441,7 @@
     },
     "álvaro": {
         "puntos_podio": 0,
-        "puntos_formulario": 0,
+        "puntos_formulario": 5,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -477,9 +477,9 @@
                     "puntos": 0
                 },
                 "guante_oro": {
-                    "pronostico": "Unai Simon",
+                    "pronostico": "Unai Simón",
                     "realidad": "Unai Simón",
-                    "puntos": 0
+                    "puntos": 5
                 },
                 "mejor_joven": {
                     "pronostico": "Lamine Yamal",
