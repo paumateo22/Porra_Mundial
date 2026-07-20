@@ -1,10 +1,10 @@
 Posicion,Jugador,Puntos_Partidos,Puntos_Jornadas,Puntos_Grupos,Puntos_Podio,Puntos_Forms,TOTAL
-1,quesadator,170.5,10,68,0,0,268.5
-2,miguel_dykan,168.0,8,71,0,0,267.0
+1,miguel_dykan,168.0,8,71,0,15,282.0
+2,quesadator,170.5,10,68,0,0,268.5
 3,javi,121.0,2,52,0,15,220.0
-4,manu,117.5,-4,54,0,15,212.5
-5,aitor,128.0,8,51,0,0,207.0
-6,adri,105.5,-2,69,0,0,202.5
-7,pau,115.0,10,67,0,0,202.0
+4,pau,115.0,10,67,0,15,217.0
+5,manu,117.5,-4,54,0,15,212.5
+6,aitor,128.0,8,51,0,0,207.0
+7,adri,105.5,-2,69,0,0,202.5
 8,álvaro,115.5,-8,58,0,15,190.5
 9,carlinhos_jr,108.5,-6,54,0,15,171.5

@@ -835,7 +835,7 @@
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Oyarzabal",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 5
 }

@@ -28,7 +28,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Ferran Torres",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -83,7 +83,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -138,7 +138,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Ferran Torres",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -193,7 +193,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Oyarzabal",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -248,7 +248,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Oyarzabal",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -276,7 +276,7 @@
     },
     "miguel_dykan": {
         "puntos_podio": 0,
-        "puntos_formulario": 0,
+        "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -303,8 +303,8 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Mbappe",
-                    "realidad": "Rodri",
-                    "puntos": 0
+                    "realidad": "Mbappe",
+                    "puntos": 15
                 },
                 "balon_oro": {
                     "pronostico": "Mbappe",
@@ -331,7 +331,7 @@
     },
     "pau": {
         "puntos_podio": 0,
-        "puntos_formulario": 0,
+        "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -358,8 +358,8 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Mbappe",
-                    "realidad": "Rodri",
-                    "puntos": 0
+                    "realidad": "Mbappe",
+                    "puntos": 15
                 },
                 "balon_oro": {
                     "pronostico": "Pedri",
@@ -413,7 +413,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -468,7 +468,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "Rodri",
+                    "realidad": "Mbappe",
                     "puntos": 0
                 },
                 "balon_oro": {

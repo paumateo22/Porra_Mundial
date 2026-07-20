@@ -1,6 +1,6 @@
 {
     "jugador": "Miguel Dykan",
-    "puntos_totales": 267.0,
+    "puntos_totales": 282.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -831,12 +831,12 @@
                 "sorpresa": 20,
                 "decepcion": 0
             },
-            "puntos_individuales": 0,
+            "puntos_individuales": 15,
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Mbappe",
-                    "realidad": "Rodri",
-                    "puntos": 0
+                    "realidad": "Mbappe",
+                    "puntos": 15
                 },
                 "balon_oro": {
                     "pronostico": "Mbappe",
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 2
+    "posicion_final_ranking": 1
 }
