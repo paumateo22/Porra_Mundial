@@ -830,6 +830,59 @@
             "detalles": {
                 "sorpresa": 0,
                 "decepcion": 10
+            },
+            "puntos_individuales": 0,
+            "detalles_individuales": {
+                "bota_oro": {
+                    "pronostico": "Mbappe",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Pedri",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Diogo Costa",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Jhon Arias",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        },
+        "podio": {
+            "puntos_conseguidos": 0,
+            "detalles": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
             }
         }
     },

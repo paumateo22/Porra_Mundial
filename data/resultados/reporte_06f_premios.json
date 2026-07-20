@@ -1,0 +1,497 @@
+{
+    "adri": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Ferran Torres",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Pedri",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Allison Becker",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Tim Payne",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "aitor": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Harry Kane",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Dibu Martinez",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Luis Diaz",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "carlinhos_jr": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Ferran Torres",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Unai Simón",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Endrick",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Endrick",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "javi": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Oyarzabal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Unai Simón",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Lionel Messi",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "manu": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Oyarzabal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Unai Simón",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Victor Muñoz",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Vitinha",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "miguel_dykan": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Mbappe",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Mbappe",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Alisson",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Vinicius Jr",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "pau": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Mbappe",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Pedri",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Diogo Costa",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Jhon Arias",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "quesadator": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Harry Kane",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Pedri",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Diogo Costa",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Mikel Oyarzabal",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    },
+    "álvaro": {
+        "puntos_podio": 0,
+        "puntos_formulario": 0,
+        "detalles": {
+            "podio": {
+                "campeon": {
+                    "pronostico": "",
+                    "realidad": "España",
+                    "puntos": 0
+                },
+                "subcampeon": {
+                    "pronostico": "",
+                    "realidad": "Argentina",
+                    "puntos": 0
+                },
+                "tercero": {
+                    "pronostico": "",
+                    "realidad": "Inglaterra",
+                    "puntos": 0
+                },
+                "cuarto": {
+                    "pronostico": "",
+                    "realidad": "Francia",
+                    "puntos": 0
+                }
+            },
+            "individuales": {
+                "bota_oro": {
+                    "pronostico": "Harry Kane",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "balon_oro": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "guante_oro": {
+                    "pronostico": "Unai Simon",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "mejor_joven": {
+                    "pronostico": "Lamine Yamal",
+                    "realidad": "",
+                    "puntos": 0
+                },
+                "gol_torneo": {
+                    "pronostico": "Miguel Almiron",
+                    "realidad": "",
+                    "puntos": 0
+                }
+            }
+        }
+    }
+}
