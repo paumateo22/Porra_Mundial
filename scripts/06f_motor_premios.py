@@ -48,13 +48,8 @@ def ejecutar_06f_premios():
     realidad = cargar_json(ROOT_DIR / "data" / "resultados" / "realidad_oficial.json")
     premios_oficiales = cargar_json(ROOT_DIR / "data" / "resultados" / "premios_oficiales.json")
     
-    # Puntuaciones configuradas (con valores por defecto por seguridad)
+    habilitadores = settings.get("habilitadores", {})
     pts_conf = settings.get("puntuaciones", {}).get("premios_finales", {})
-    pts_campeon = pts_conf.get("campeon", 10)
-    pts_subcampeon = pts_conf.get("subcampeon", 7)
-    pts_tercero = pts_conf.get("tercero", 5)
-    pts_cuarto = pts_conf.get("cuarto", 3)
-    pts_individual = pts_conf.get("galardones", 5) 
 
     podio_real = obtener_podio_real(realidad)
     premios_individuales_reales = premios_oficiales.get("premios_individuales", {})
@@ -74,8 +69,19 @@ def ejecutar_06f_premios():
         detalles_forms = {}
 
         if form_pred:
-            # 1. Evaluar Podio Automático
-            for pos, pts_premio in [("campeon", pts_campeon), ("subcampeon", pts_subcampeon), ("tercero", pts_tercero), ("cuarto", pts_cuarto)]:
+            # 1. Evaluar Podio Automático (campeon, subcampeon, tercer_puesto)
+            mapeo_podio = [
+                ("campeon", "campeon"), 
+                ("subcampeon", "subcampeon"), 
+                ("tercero", "tercer_puesto"), 
+                ("cuarto", "tercer_puesto") # Usualmente el cuarto se asocia a la lógica del tercer puesto en config
+            ]
+            
+            for pos, clave_settings in mapeo_podio:
+                if habilitadores.get(clave_settings, 1) == 0:
+                    continue
+                    
+                pts_premio = pts_conf.get(clave_settings, 0)
                 pred_val = str(form_pred.get(pos, "")).strip().lower()
                 real_val = str(podio_real.get(pos, "")).strip().lower()
                 
@@ -90,8 +96,12 @@ def ejecutar_06f_premios():
                     "puntos": ganado
                 }
 
-            # 2. Evaluar Premios Individuales Manuales
+            # 2. Evaluar Premios Individuales leyendo dinámicamente de settings.json
             for premio in ["bota_oro", "balon_oro", "guante_oro", "mejor_joven", "gol_torneo"]:
+                if habilitadores.get(premio, 1) == 0:
+                    continue
+
+                pts_premio_indiv = pts_conf.get(premio, 0)
                 pred_val = str(form_pred.get(premio, "")).strip().lower()
                 
                 real_vals_raw = premios_individuales_reales.get(premio, [])
@@ -104,7 +114,7 @@ def ejecutar_06f_premios():
                 
                 ganado = 0
                 if real_vals_clean and pred_val in real_vals_clean:
-                    ganado = pts_individual
+                    ganado = pts_premio_indiv
                     pts_forms += ganado
                     
                 detalles_forms[premio] = {
