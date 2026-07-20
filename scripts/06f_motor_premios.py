@@ -39,6 +39,48 @@ def obtener_podio_real(realidad):
         
     return podio
 
+def extraer_podio_pronosticado(base_pronostico):
+    """
+    Busca en el archivo base de grupos de cada jugador cómo pronosticó el podio
+    analizando la fase de finales / final / tercer puesto en sus pronósticos de eliminatorias.
+    """
+    podio = {"campeon": "", "subcampeon": "", "tercero": "", "cuarto": ""}
+    
+    eliminatorias = base_pronostico.get("eliminatorias", {})
+    if not eliminatorias:
+        eliminatorias = base_pronostico.get("predicciones", {})
+        
+    # Buscar partidos de finales (final y tercer puesto)
+    partidos_finales = []
+    if "finales" in eliminatorias:
+        partidos_finales = eliminatorias["finales"]
+    else:
+        if "final" in eliminatorias: partidos_finales.extend(eliminatorias["final"])
+        if "tercer_puesto" in eliminatorias: partidos_finales.extend(eliminatorias["tercer_puesto"])
+        
+    for p in partidos_finales:
+        id_p = str(p.get("id_partido", ""))
+        local = p.get("local", "")
+        visitante = p.get("visitante", "")
+        pasa = p.get("pasa", "")
+        
+        # Identificar si es la Final (id 104 o última) o 3º puesto (id 103)
+        if "104" in id_p or (not id_p and len(partidos_finales) == 2 and p == partidos_finales[1]):
+            if pasa:
+                podio["campeon"] = pasa
+                podio["subcampeon"] = visitante if pasa == local else local
+        elif "103" in id_p or (not id_p and len(partidos_finales) == 2 and p == partidos_finales[0]):
+            if pasa:
+                podio["tercero"] = pasa
+                podio["cuarto"] = visitante if pasa == local else local
+        elif len(partidos_finales) == 1:
+            # Si solo hay un partido guardado, asumimos que es la final
+            if pasa:
+                podio["campeon"] = pasa
+                podio["subcampeon"] = visitante if pasa == local else local
+
+    return podio
+
 def ejecutar_06f_premios():
     print("=======================================================")
     print(" 🏅 [06F] INICIANDO MOTOR DE PREMIOS Y PODIO 🏅")
@@ -61,6 +103,13 @@ def ejecutar_06f_premios():
 
     for j_dir in jugadores:
         jug = j_dir.name
+        
+        # Cargar archivo base de pronósticos de grupos donde reside la estructura de eliminatorias
+        ruta_base = j_dir / "pronosticos" / "grupos" / f"{jug}_base.json"
+        base_pred = cargar_json(ruta_base)
+        podio_pred = extraer_podio_pronosticado(base_pred)
+
+        # Cargar formulario de premios individuales
         form_pred = cargar_json(j_dir / "pronosticos" / "premios" / "premios_formulario.json")
         
         pts_podio = 0
@@ -68,35 +117,35 @@ def ejecutar_06f_premios():
         detalles_podio = {}
         detalles_forms = {}
 
-        if form_pred:
-            # 1. Evaluar Podio Automático (campeon, subcampeon, tercer_puesto)
-            mapeo_podio = [
-                ("campeon", "campeon"), 
-                ("subcampeon", "subcampeon"), 
-                ("tercero", "tercer_puesto"), 
-                ("cuarto", "tercer_puesto") # Usualmente el cuarto se asocia a la lógica del tercer puesto en config
-            ]
-            
-            for pos, clave_settings in mapeo_podio:
-                if habilitadores.get(clave_settings, 1) == 0:
-                    continue
-                    
-                pts_premio = pts_conf.get(clave_settings, 0)
-                pred_val = str(form_pred.get(pos, "")).strip().lower()
-                real_val = str(podio_real.get(pos, "")).strip().lower()
+        # 1. Evaluar Podio Pronosticado desde su base de grupos
+        mapeo_podio = [
+            ("campeon", "campeon"), 
+            ("subcampeon", "subcampeon"), 
+            ("tercero", "tercer_puesto"), 
+            ("cuarto", "tercer_puesto") 
+        ]
+        
+        for pos, clave_settings in mapeo_podio:
+            if habilitadores.get(clave_settings, 1) == 0:
+                continue
                 
-                ganado = 0
-                if real_val and pred_val == real_val:
-                    ganado = pts_premio
-                    pts_podio += ganado
-                    
-                detalles_podio[pos] = {
-                    "pronostico": form_pred.get(pos, ""),
-                    "realidad": podio_real.get(pos, ""),
-                    "puntos": ganado
-                }
+            pts_premio = pts_conf.get(clave_settings, 0)
+            pred_val = str(podio_pred.get(pos, "")).strip().lower()
+            real_val = str(podio_real.get(pos, "")).strip().lower()
+            
+            ganado = 0
+            if real_val and pred_val == real_val:
+                ganado = pts_premio
+                pts_podio += ganado
+                
+            detalles_podio[pos] = {
+                "pronostico": podio_pred.get(pos, ""),
+                "realidad": podio_real.get(pos, ""),
+                "puntos": ganado
+            }
 
-            # 2. Evaluar Premios Individuales leyendo dinámicamente de settings.json
+        # 2. Evaluar Premios Individuales desde el formulario de premios
+        if form_pred:
             for premio in ["bota_oro", "balon_oro", "guante_oro", "mejor_joven", "gol_torneo"]:
                 if habilitadores.get(premio, 1) == 0:
                     continue
@@ -132,7 +181,7 @@ def ejecutar_06f_premios():
             }
         }
 
-        # Guardar en el historial del jugador
+        # Guardar en el libro de cuentas del jugador
         ruta_libro = j_dir / "estadisticas" / "historial_puntos.json"
         libro = cargar_json(ruta_libro)
         if libro:
