@@ -28,7 +28,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Ferran Torres",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -83,7 +83,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -111,7 +111,7 @@
     },
     "carlinhos_jr": {
         "puntos_podio": 0,
-        "puntos_formulario": 5,
+        "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -138,7 +138,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Ferran Torres",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -149,7 +149,7 @@
                 "guante_oro": {
                     "pronostico": "Unai Simón",
                     "realidad": "Unai Simón",
-                    "puntos": 5
+                    "puntos": 15
                 },
                 "mejor_joven": {
                     "pronostico": "Endrick",
@@ -166,7 +166,7 @@
     },
     "javi": {
         "puntos_podio": 0,
-        "puntos_formulario": 5,
+        "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -193,7 +193,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Oyarzabal",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -204,7 +204,7 @@
                 "guante_oro": {
                     "pronostico": "Unai Simón",
                     "realidad": "Unai Simón",
-                    "puntos": 5
+                    "puntos": 15
                 },
                 "mejor_joven": {
                     "pronostico": "Lamine Yamal",
@@ -221,7 +221,7 @@
     },
     "manu": {
         "puntos_podio": 0,
-        "puntos_formulario": 5,
+        "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -248,7 +248,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Oyarzabal",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -259,7 +259,7 @@
                 "guante_oro": {
                     "pronostico": "Unai Simón",
                     "realidad": "Unai Simón",
-                    "puntos": 5
+                    "puntos": 15
                 },
                 "mejor_joven": {
                     "pronostico": "Victor Muñoz",
@@ -276,7 +276,7 @@
     },
     "miguel_dykan": {
         "puntos_podio": 0,
-        "puntos_formulario": 5,
+        "puntos_formulario": 0,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -303,8 +303,8 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Mbappe",
-                    "realidad": "Mbappe",
-                    "puntos": 5
+                    "realidad": "Rodri",
+                    "puntos": 0
                 },
                 "balon_oro": {
                     "pronostico": "Mbappe",
@@ -331,7 +331,7 @@
     },
     "pau": {
         "puntos_podio": 0,
-        "puntos_formulario": 5,
+        "puntos_formulario": 0,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -358,8 +358,8 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Mbappe",
-                    "realidad": "Mbappe",
-                    "puntos": 5
+                    "realidad": "Rodri",
+                    "puntos": 0
                 },
                 "balon_oro": {
                     "pronostico": "Pedri",
@@ -413,7 +413,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -441,7 +441,7 @@
     },
     "álvaro": {
         "puntos_podio": 0,
-        "puntos_formulario": 5,
+        "puntos_formulario": 15,
         "detalles": {
             "podio": {
                 "campeon": {
@@ -468,7 +468,7 @@
             "individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -479,7 +479,7 @@
                 "guante_oro": {
                     "pronostico": "Unai Simón",
                     "realidad": "Unai Simón",
-                    "puntos": 5
+                    "puntos": 15
                 },
                 "mejor_joven": {
                     "pronostico": "Lamine Yamal",

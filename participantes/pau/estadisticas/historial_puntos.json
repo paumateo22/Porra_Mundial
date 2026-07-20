@@ -1,6 +1,6 @@
 {
     "jugador": "Pau",
-    "puntos_totales": 207.0,
+    "puntos_totales": 202.0,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -831,12 +831,12 @@
                 "sorpresa": 0,
                 "decepcion": 10
             },
-            "puntos_individuales": 5,
+            "puntos_individuales": 0,
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Mbappe",
-                    "realidad": "Mbappe",
-                    "puntos": 5
+                    "realidad": "Rodri",
+                    "puntos": 0
                 },
                 "balon_oro": {
                     "pronostico": "Pedri",
@@ -1275,5 +1275,5 @@
             "puntos": 0
         }
     },
-    "posicion_final_ranking": 4
+    "posicion_final_ranking": 7
 }

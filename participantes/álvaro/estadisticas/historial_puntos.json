@@ -1,6 +1,6 @@
 {
     "jugador": "Álvaro",
-    "puntos_totales": 180.5,
+    "puntos_totales": 190.5,
     "desglose_partidos": {
         "Argentina_vs_Argelia": {
             "fase": "grupos",
@@ -831,11 +831,11 @@
                 "sorpresa": 0,
                 "decepcion": 10
             },
-            "puntos_individuales": 5,
+            "puntos_individuales": 15,
             "detalles_individuales": {
                 "bota_oro": {
                     "pronostico": "Harry Kane",
-                    "realidad": "Mbappe",
+                    "realidad": "Rodri",
                     "puntos": 0
                 },
                 "balon_oro": {
@@ -846,7 +846,7 @@
                 "guante_oro": {
                     "pronostico": "Unai Simón",
                     "realidad": "Unai Simón",
-                    "puntos": 5
+                    "puntos": 15
                 },
                 "mejor_joven": {
                     "pronostico": "Lamine Yamal",
